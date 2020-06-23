@@ -42,7 +42,7 @@ Hooks.on('diceSoNiceReady', (dice3d) => {
           edge: '#d9a463',
           foreground: '#d9a463',
           default: true
-        });
+        },"force");
     });
   });
   
