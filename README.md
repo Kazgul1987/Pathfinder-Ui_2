@@ -1,3 +1,2 @@
-# Pathfinder Ui
-
-A dodgy fork of Fantasy Ui by Iotech with a Pathfinder 2e theme.
+# Pathfinder-ui
+A fork of Fantasy-UI for Pathfinder on Foundry VTT
