@@ -1,0 +1,31 @@
+{
+  "name": "pathfinder-ui",
+  "title": "Pathfinder UI",
+  "description": "Theme pour Pathfinder 1 & 2. <p> *** Rejoignez la communauté Discord FR :<a href='https://discord.gg/pPSDNJk'> https://discord.gg/pPSDNJk </a></p>",
+  "version": "1.1.0",
+  "minimumCoreVersion": "0.6.0",
+  "compatibleCoreVersion": "1.0.0",
+  "author": "Sasmira",
+  "scripts": [ 
+    "scripts/pathfinder-chat-color.js",
+    "scripts/dicefinder.js"
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    },
+    {
+      "lang": "fr",
+      "name": "French (French)",
+      "path": "lang/fr.json"
+    }
+  ],
+  "styles": [ "pathfinderui.css" ],
+  "esmodules": [],
+  "packs": [],
+  "url": "https://gitlab.com/sasmira/pathfinder-ui",
+  "manifest": "https://gitlab.com/sasmira/pathfinder-ui/-/raw/master/module.json",
+  "download": "https://gitlab.com/sasmira/pathfinder-ui/-/jobs/artifacts/v1.1.0/raw/pathfinder-ui.zip?job=build"
+}
