@@ -1,6 +1,6 @@
 Hooks.on('init', () => {
     // Register module settings.
-	game.settings.register('pathfinder-chat-colors', 'icBgColor', {
+	game.settings.register('pathfinder-ui', 'icBgColor', {
 		name: game.i18n.localize('IC.BG.COLOR'),
 		hint: game.i18n.localize('HEXA.COLOR'),
 		default: "#D3E5F5",
@@ -8,7 +8,7 @@ Hooks.on('init', () => {
 		scope: 'client',
 		config: true
 	});
-	game.settings.register('pathfinder-chat-colors', 'icTextColor', {
+	game.settings.register('pathfinder-ui', 'icTextColor', {
 		name: game.i18n.localize('IC.TEXT.COLOR'),
 		hint: game.i18n.localize('HEXA.COLOR'),
 		default: "#000000",
@@ -16,7 +16,7 @@ Hooks.on('init', () => {
 		scope: 'client',
 		config: true
 	});
-	game.settings.register('pathfinder-chat-colors', 'emoteBgColor', {
+	game.settings.register('pathfinder-ui', 'emoteBgColor', {
 		name: game.i18n.localize('EMOTE.BG.COLOR'),
 		hint: game.i18n.localize('HEXA.COLOR'),
 		default: "#D1F5D1",
@@ -24,7 +24,7 @@ Hooks.on('init', () => {
 		scope: 'client',
 		config: true
 	});
-	game.settings.register('pathfinder-chat-colors', 'emoteTextColor', {
+	game.settings.register('pathfinder-ui', 'emoteTextColor', {
 		name: game.i18n.localize('EMOTE.TEXT.COLOR'),
 		hint: game.i18n.localize('HEXA.COLOR'),
 		default: "#000000",
@@ -32,7 +32,7 @@ Hooks.on('init', () => {
 		scope: 'client',
 		config: true
 	});
-	game.settings.register('pathfinder-chat-colors', 'rollBgColor', {
+	game.settings.register('pathfinder-ui', 'rollBgColor', {
 		name: game.i18n.localize('ROLL.BG.COLOR'),
 		hint: game.i18n.localize('HEXA.COLOR'),
 		default: "#E6BB81",
@@ -40,7 +40,7 @@ Hooks.on('init', () => {
 		scope: 'client',
 		config: true
 	});
-	game.settings.register('pathfinder-chat-colors', 'rollTextColor', {
+	game.settings.register('pathfinder-ui', 'rollTextColor', {
 		name: game.i18n.localize('ROLL.TEXT.COLOR'),
 		hint: game.i18n.localize('HEXA.COLOR'),
 		default: "#000000",
@@ -48,7 +48,7 @@ Hooks.on('init', () => {
 		scope: 'client',
 		config: true
 	});
-	game.settings.register('pathfinder-chat-colors', 'otherBgColor', {
+	game.settings.register('pathfinder-ui', 'otherBgColor', {
 		name: game.i18n.localize('OTHER.BG.COLOR'),
 		hint: game.i18n.localize('HEXA.COLOR'),
 		default: "#DBD9CD",
@@ -56,7 +56,7 @@ Hooks.on('init', () => {
 		scope: 'client',
 		config: true
 	});
-	game.settings.register('pathfinder-chat-colors', 'otherTextColor', {
+	game.settings.register('pathfinder-ui', 'otherTextColor', {
 		name: game.i18n.localize('OTHER.TEXT.COLOR'),
 		hint: game.i18n.localize('HEXA.COLOR'),
 		default: "#000000",
@@ -64,7 +64,7 @@ Hooks.on('init', () => {
 		scope: 'client',
 		config: true
 	});
-	game.settings.register('pathfinder-chat-colors', 'defaultChatPrefix', {
+	game.settings.register('pathfinder-ui', 'defaultChatPrefix', {
 		name: game.i18n.localize('DEF.CHAT.PREF'),
 		hint: game.i18n.localize('SPE.CHAT.PREF'),
 		default: "",
@@ -76,14 +76,14 @@ Hooks.on('init', () => {
 
 Hooks.on("renderChatLog", (log, html) => {
     // Prepend inline CSS to the chatlog to style the chat messages.
-    icBgColor = game.settings.get('pathfinder-chat-colors', 'icBgColor');
-    icTextColor = game.settings.get('pathfinder-chat-colors', 'icTextColor');
-    emoteBgColor = game.settings.get('pathfinder-chat-colors', 'emoteBgColor');
-    emoteTextColor = game.settings.get('pathfinder-chat-colors', 'emoteTextColor');
-    rollBgColor = game.settings.get('pathfinder-chat-colors', 'rollBgColor');
-    rollTextColor = game.settings.get('pathfinder-chat-colors', 'rollTextColor');
-    otherBgColor = game.settings.get('pathfinder-chat-colors', 'otherBgColor');
-    otherTextColor = game.settings.get('pathfinder-chat-colors', 'otherTextColor');
+    icBgColor = game.settings.get('pathfinder-ui', 'icBgColor');
+    icTextColor = game.settings.get('pathfinder-ui', 'icTextColor');
+    emoteBgColor = game.settings.get('pathfinder-ui', 'emoteBgColor');
+    emoteTextColor = game.settings.get('pathfinder-ui', 'emoteTextColor');
+    rollBgColor = game.settings.get('pathfinder-ui', 'rollBgColor');
+    rollTextColor = game.settings.get('pathfinder-ui', 'rollTextColor');
+    otherBgColor = game.settings.get('pathfinder-ui', 'otherBgColor');
+    otherTextColor = game.settings.get('pathfinder-ui', 'otherTextColor');
     $("<style type='text/css'> #chat-log .message.ic { background: " + icBgColor+ "; color: " + icTextColor + 
     " }\n #chat-log .message.ic .message-header { color: " + icTextColor + 
     " }\n #chat-log .message.emote { background: " + emoteBgColor +
@@ -99,8 +99,8 @@ Hooks.on("renderChatLog", (log, html) => {
 });
 
 Hooks.on("chatMessage", (chatLog, message, chatData) => {
-    if (game.settings.get('pathfinder-chat-colors', 'defaultChatPrefix')) {
-        prefix = game.settings.get('pathfinder-chat-colors', 'defaultChatPrefix');
+    if (game.settings.get('pathfinder-ui', 'defaultChatPrefix')) {
+        prefix = game.settings.get('pathfinder-ui', 'defaultChatPrefix');
         
         // Check if the message begins with any command.
         let [command, match] = chatLog.constructor.parse(message);
