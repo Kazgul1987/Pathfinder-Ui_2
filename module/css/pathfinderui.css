@@ -1,4 +1,6 @@
-/* #region Sidebar*/
+/*************************************************************/
+/*======================= SIDEBAR ===========================*/
+/*************************************************************/
 
 #sidebar {
 
@@ -15,7 +17,7 @@
     margin: 0;
     /* padding: 30px 0 0 10px; */
     border: 30px solid transparent;
-    border-image-source: url(/modules/pathfinder-ui/ui/frame/chatbox.png);
+    border-image-source: url(../ui/frames/Chat-box.png);
     border-image-slice: 30 fill;
     /* display: inline-block !important; */
     background-position: center !important;
@@ -35,7 +37,7 @@
     height: 410px !important;
     padding-left: 5px;
     border: 15px solid transparent;
-    border-image-source: url(/modules/pathfinder-ui/ui/frame/chatbox.png);
+    border-image-source: url(../ui/frames/Chat-box.png);
     border-image-slice: 35 fill;
     background-position: center !important;
     background-size: 100% 100%!important;
@@ -52,7 +54,7 @@
 
 #sidebar #sidebar-tabs i.fa-comments {
     content: "";
-    background-image: url("/modules/pathfinder-ui/ui/sidebar/chat.png") !important;
+    background-image: url("../ui/sidebar/sidebar_button-chat.png") !important;
     width: 24px !important;
     height: 25px !important;
     display: inline-block !important;
@@ -78,7 +80,7 @@
 
 #sidebar #sidebar-tabs i.fa-fist-raised {
     content: "";
-    background-image: url("/modules/pathfinder-ui/ui/sidebar/combat-tracker.png") !important;
+    background-image: url("../ui/sidebar/sidebar_button-combat-tracker.png") !important;
     width: 24px !important;
     height: 25px !important;
     display: inline-block !important;
@@ -92,7 +94,7 @@
 
 #sidebar #sidebar-tabs i.fa-map {
     content: "";
-    background-image: url("/modules/pathfinder-ui/ui/sidebar/scenes.png") !important;
+    background-image: url("../ui/sidebar/sidebar_button-scenes.png") !important;
     width: 24px !important;
     height: 25px !important;
     display: inline-block !important;
@@ -106,7 +108,7 @@
 
 #sidebar #sidebar-tabs i.fa-users {
     content: "";
-    background-image: url("/modules/pathfinder-ui/ui/sidebar/actors.png") !important;
+    background-image: url("../ui/sidebar/sidebar_button-actors.png") !important;
     width: 24px !important;
     height: 25px !important;
     display: inline-block !important;
@@ -120,7 +122,7 @@
 
 #sidebar #sidebar-tabs i.fa-suitcase {
     content: "";
-    background-image: url("/modules/pathfinder-ui/ui/sidebar/object.png") !important;
+    background-image: url("../ui/sidebar/sidebar_button-object.png") !important;
     width: 24px !important;
     height: 25px !important;
     display: inline-block !important;
@@ -134,7 +136,7 @@
 
 #sidebar #sidebar-tabs i.fa-book-open {
     content: "";
-    background-image: url("/modules/pathfinder-ui/ui/sidebar/journal.png") !important;
+    background-image: url("../ui/sidebar/sidebar_button-journal.png") !important;
     width: 24px !important;
     height: 25px !important;
     display: inline-block !important;
@@ -148,7 +150,7 @@
 
 #sidebar #sidebar-tabs i.fa-th-list {
     content: "";
-    background-image: url("/modules/pathfinder-ui/ui/sidebar/rolltable.png") !important;
+    background-image: url("../ui/sidebar/sidebar_button-rolltable.png") !important;
     width: 24px !important;
     height: 25px !important;
     display: inline-block !important;
@@ -162,7 +164,7 @@
 
 #sidebar #sidebar-tabs i.fa-music {
     content: "";
-    background-image: url("/modules/pathfinder-ui/ui/sidebar/playlist.png") !important;
+    background-image: url("../ui/sidebar/sidebar_button-playlist.png") !important;
     width: 24px !important;
     height: 25px !important;
     display: inline-block !important;
@@ -176,7 +178,7 @@
 
 #sidebar #sidebar-tabs i.fa-atlas {
     content: "";
-    background-image: url("/modules/pathfinder-ui/ui/sidebar/compendium.png") !important;
+    background-image: url("../ui/sidebar/sidebar_button-compendium.png") !important;
     width: 24px !important;
     height: 25px !important;
     display: inline-block !important;
@@ -190,7 +192,7 @@
 
 #sidebar #sidebar-tabs i.fa-cogs {
     content: "";
-    background-image: url("/modules/pathfinder-ui/ui/sidebar/settings.png") !important;
+    background-image: url("../ui/sidebar/sidebar_button-settings.png") !important;
     width: 24px !important;
     height: 25px !important;
     display: inline-block !important;
@@ -201,9 +203,10 @@
 #sidebar #sidebar-tabs i.fa-cogs::before {
     content: "";
 }
-/* #endregion */
 
-/* #region Chat Tab*/
+/*************************************************************/
+/*======================= CHAT TAB ==========================*/
+/*************************************************************/
 .message-sender {
     color: darkred;
     font-weight: bold;
@@ -211,7 +214,7 @@
     text-decoration: underline;
 }
 #chat-message{
-    background-image: url(/modules/pathfinder-ui/ui/frame/chattexture.png) !important;
+    background-image: url(../ui/frames/chat-texture.png) !important;
 }
 
 .polyglot-lang-select{
@@ -226,12 +229,12 @@
     height: 24px;
     top: 7px;
     padding-top: 0px;
-    background: url(/modules/pathfinder-ui/ui/frame/chattexture.png) repeat !important;
+    background: url(../ui/frames/chat-texture.png) repeat !important;
     background-position-x: 0%;
     background-position-y: 0%;
     background-position: initial;
     box-shadow: inset 0 0 10px #000000;
-    border-image: url(/modules/pathfinder-ui/ui/frame/chat-controls-border.png) 4 repeat;
+    border-image: url(../ui/frames/chat-controls-border.png) 4 repeat;
     border-image-width: 4px;
     border-image-outset: 3px 2px 2px 2px;
     color: #520000;
@@ -267,19 +270,20 @@
     height: 24px;
     top: 7px;
     padding-top: 3px;
-    background: url(/modules/pathfinder-ui/ui/frame/chattexture.png) repeat;
+    background: url(../ui/frames/chat-texture.png) repeat;
     background-position-x: 0%;
     background-position-y: 0%;
     background-position: initial;
     box-shadow: inset 0 0 10px #000000;
-    border-image: url(/modules/pathfinder-ui/ui/frame/chat-controls-border.png) 4 repeat;
+    border-image: url(../ui/frames/chat-controls-border.png) 4 repeat;
     border-image-width: 4px;
     border-image-outset: 3px 2px 2px 2px;
     color: #520000;
 }
-/* #endregion */
 
-/* #region Combat Tab*/
+/*************************************************************/
+/*====================== COMBAT TAB =========================*/
+/*************************************************************/
 .fa-plus{
     color: #e88b49;
 }
@@ -296,15 +300,16 @@
     color: #e88b49;
 }
 #combat-controls .combat-control{
-    background-image: url(/modules/pathfinder-ui/ui/buttons/buttonredlight.png);
+    background-image: url(../ui/buttons/button-red.png);
     text-align: center;
     background-position: center !important;
     background-size: 260px 100%!important;
     background-repeat: no-repeat;
 }
-/* #endregion*/
 
-/* #region Sidebar Folder and widgets*/
+/*************************************************************/
+/*================= SIDEBAR FOLDER & WIDGETS ================*/
+/*************************************************************/
 .sidebar-tab .directory-header .header-search input {
     font-family: CaslonPro;
     font-weight: 500;
@@ -314,12 +319,12 @@
     height: 24px;
     top: 7px;
     padding-top: 3px;
-    background: url(/modules/pathfinder-ui/ui/frame/chattexture.png) repeat;
+    background: url(../ui/frames/chat-texture.png) repeat;
     background-position-x: 0%;
     background-position-y: 0%;
     background-position: initial;
     box-shadow: inset 0 0 10px #000000;
-    border-image: url(/modules/pathfinder-ui/ui/frame/chat-controls-border.png) 4 repeat;
+    border-image: url(../ui/frames/chat-controls-border.png) 4 repeat;
     border-image-width: 4px;
     border-image-outset: 3px 2px 2px 2px;
     color: #520000;
@@ -336,7 +341,7 @@
 }
 
 .sidebar-tab .directory-footer button{
-    background-image: url(/modules/pathfinder-ui/ui/buttons/buttongreenlight.png);
+    background-image: url(../ui/buttons/button-green.png);
     text-align: center;
     background-position: center !important;
     background-size: 100% 100% !important;
@@ -347,11 +352,12 @@
     color : white;
     text-shadow: 2px 2px black ;
 }
-/* #endregion */
 
-/* #region Folders as buttons */
+/*************************************************************/
+/*=============== SIDEBAR FOLDERs AS BUTTONS ================*/
+/*************************************************************/
 .sidebar-tab .folder .folder-header {
-    background-image: url(/modules/pathfinder-ui/ui/buttons/buttonlight3.png)  !important;
+    background-image: url(../ui/buttons/button-grey.png)  !important;
     text-align: center;
     background-position: center !important;
     background-size: 100% 55px!important;
@@ -383,9 +389,9 @@ li.folder.collapsed > .folder-header h3 {
     border-left: 2px solid #585858 !important;
 }
 
-/* #endregion */
-
-/* #region Compendium headers */
+/*************************************************************/
+/*================== COMPENDIUM HEADERS =====================*/
+/*************************************************************/
 #compendium h3 {
     text-align: left;
     position: relative;
@@ -393,13 +399,13 @@ li.folder.collapsed > .folder-header h3 {
     top: 7px;
     padding-top: 20px;
     padding-left: 30px;
-    background: url(/modules/pathfinder-ui/ui/buttons/buttonredlight.png) no-repeat;
+    background: url(../ui/buttons/button-red.png) no-repeat;
     background-position-x: 0%;
     background-size: 100% 55px;
     background-position-y: 0%;
     background-position: initial;
     box-shadow: inset 0 0 10px #000000;
-    border-image: url(/modules/pathfinder-ui/ui/frame/chat-controls-border.png) 4 repeat;
+    border-image: url(../ui//frames/chat-controls-border.png) 4 repeat;
     border-image-width: 4px;
     border-image-outset: 3px 2px 2px 2px;
     color: #eeede0;
@@ -443,4 +449,198 @@ li.folder.collapsed > .folder-header h3 {
     content: " (Blind Roll) " !important;
     float: left;
 }
-/* #endregion */
+
+/*************************************************************/
+/*================== NAVIGATION BAR =========================*/
+/*************************************************************/
+#navigation #scene-list .scene.view, #navigation #scene-list .scene.context {
+    cursor: default; 
+    color: #FFF;
+    background: url(../ui/sidebar/sidebar_button-background_red.png) repeat;
+    background-origin: padding-box;
+    border-image: url(../ui/sidebar/sidebar_button-footer-button.png) 10 repeat;
+    border-image-width: 4px;
+    border-image-outset: 0px;
+    box-shadow: 0 0 3px #ff6400;
+  }
+  
+  #navigation #nav-toggle {
+    cursor: default; 
+    color: #FFF;
+    background: url(../ui/sidebar/sidebar_button-background_cyan.png) repeat;
+    background-origin: padding-box;
+    border-image: url(../ui/sidebar/sidebar_button-footer-button.png) 10 repeat;
+    border-image-width: 4px;
+    border-image-outset: 0px;
+    font-family: CaslonPro;
+    font-weight: 500;
+    font-size: 14px;
+    padding-top: 3px;
+    height: 36px;
+  }
+  
+  #navigation #scene-list .scene.nav-item {
+    cursor: default; 
+    color: #FFF;
+    background: url(../ui/sidebar/sidebar_button-background_cyan.png) repeat;
+    background-origin: padding-box;
+    border-image: url(../ui/sidebar/sidebar_button-footer-button.png) 10 repeat;
+    border-image-width: 4px;
+    border-image-outset: 0px;
+    font-family: CaslonPro;
+    font-weight: 500;
+    font-size: 14px;
+    padding-top: 2px;
+  }
+  #navigation #scene-list .scene.nav-item.active {
+    background: url(../ui/sidebar/sidebar_button-background_red.png) repeat;
+  }
+    #navigation #scene-list .scene li.scene-player {
+      float: left;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px 0 0;
+      line-height: 12px;
+      padding-top: 1px;
+      text-align: center;
+      color: #000000e8;
+      font-weight: 600;
+      background: #97dff4;
+      border: 1px solid #000;
+      border-radius: 8px;
+      font-family: "Signika", "Palatino Linotype", serif;
+      font-size: 13px;
+      box-shadow: inset 0 0 3px #000000;
+    }
+  
+  /*************************************************************/
+  /*=================== SCENE CONTROLS ========================*/
+  /*************************************************************/
+  #controls .scene-control.active, #controls .control-tool.active, #controls .scene-control:hover, #controls .control-tool:hover {
+  cursor: default; 
+  color: #FFF;
+  background: url(../ui/sidebar/sidebar_button-background_red.png) repeat !important;
+  background-origin: padding-box !important;
+  border-image: url(../ui/sidebar/sidebar_button-footer-button.png) 10 repeat !important;
+  border-image-width: 4px !important;
+  border-image-outset: 0px !important;
+  box-shadow: 0 0 3px #ff6400 !important;
+  }
+  
+  #controls .scene-control, #controls .control-tool {
+  width: 36px !important;
+  height: 36px !important;
+  box-sizing: content-box !important;
+  font-size: 19px !important;
+  line-height: 36px !important;
+  background: rgba(0, 0, 0, 0.5) !important;
+  box-shadow: 0 0 3px #000 !important;
+  margin: 0 0 8px !important;
+  color: #BBB !important;
+  text-align: center !important;
+  border: 1px solid #000 !important;
+  border-radius: 5px !important;
+  cursor: pointer !important; 
+  cursor: default !important; 
+  color: #FFF !important;
+  background: url(../ui/sidebar/sidebar_button-background_cyan.png) repeat !important;
+  background-origin: padding-box !important;
+  border-image: url(../ui/sidebar/sidebar_button-footer-button.png) 10 repeat !important;
+  border-image-width: 4px !important;
+  border-image-outset: 0px !important;
+  }
+
+/*************************************************************/
+/*=================== PLAYERS LIST ==========================*/
+/*************************************************************/
+#players {
+    position: fixed;
+    bottom: 25px;
+    left: 13px;
+    width: 200px;
+    border: 1px solid blue;
+    border-image: url(../ui/frames/players-border.png) 21 repeat;
+    border-image-slice: 23 19 23 19;
+    border-image-width: 23px 19px 23px 19px;
+    border-image-outset: 22px 17px 16px 14px;
+    border-radius: 0px;
+    box-shadow: inset 0 0 10px #000000;
+    background: #000000e8;
+    font-family: CaslonPro;
+    font-weight: 500;
+    font-size: 14px;
+  }
+    #players h3 .fas.fa-users {
+      margin-right: 10px;
+      display: none;
+    }
+  #players ol .player-name {
+    overflow: hidden;
+    white-space: nowrap;
+    word-break: break-all;
+    padding-top: 3px;
+  }
+
+/******************************************************************/
+/*========================= HOTBAR ===============================*/
+/******************************************************************/
+
+  /* ==================== (A) WINDOW FRAMEWORK ================== */
+  #hotbar {
+    font-family: CaslonPro;
+    font-weight: 500;
+    font-size: 14px;
+    width: 600px;
+    height: 60px;
+  }    
+
+  #hotbar #action-bar {
+    flex: 1;
+    height: 100%;
+    justify-content: space-evenly;
+  }
+  #hotbar #action-bar #macro-list {
+    flex: 0 0 510px;
+    height: 100%;
+    list-style: none;
+    margin: 0 0px;
+    padding: 5px 0px 4px 0px;
+    border: none;
+    border-radius: 4px;
+    justify-content: center;
+    background: url(../ui/frames/hotkeybox-macro-list.png);
+    box-shadow: 2px 2px 5px #000000;
+  }
+    #hotbar #action-bar .macro {
+      border-image: url(../ui/frames/hotkeybox.png) 21 repeat;
+      border-image-slice: 6 6 6 6 fill;
+      border-image-width: 6px 6px 6px 6px;
+      border-image-outset: 0px 0px 0px 0px;
+      border-radius: 0px;
+    }   
+      #hotbar .macro .macro-key {
+        position: absolute;
+        top: 2px;
+        right: 2px;
+        padding: 3px 3px;
+        text-shadow: 1px 1px 1px black;
+        color: #f0f0e0;
+        font-weight: normal;
+        background: #000000e0;
+        max-height: 19px;
+        border-radius: 6px;
+        box-shadow: 0px 0px 5px black;
+      }
+  #hotbar .bar-controls {
+    background: #000000de;
+    box-shadow: 0 0 4px black;
+    border-radius: 16px;
+    border: 2px solid #540e0ec2;
+  }
+    #hotbar .bar-controls span.page-number {
+      display: block;
+      font-size: 20px;
+      line-height: 8px;
+      position: relative;
+      top: 4px;
+    }
