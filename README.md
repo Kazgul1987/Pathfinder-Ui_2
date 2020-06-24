@@ -25,4 +25,5 @@ To install, follow these instructions:
 
 ## Compatibility
 
-Tested on 0.6.4 version.
+
+- [ ] Tested on 0.6.4 version.
