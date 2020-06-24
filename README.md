@@ -10,10 +10,11 @@ To install, follow these instructions:
 3.  Click Install and wait for installation to complete.
 
 ## Pathfinder Ui, it's :
-- __**New icons for Pathfinder**__
-- __**Chat colors**__
-- __**Dicefinder**__, new dice for Pathfinder ! require [Dice-So-Nice](https://gitlab.com/riccisi/foundryvtt-dice-so-nice)
-- __**Translation**__, French and English !
+
+1.  __**New icons for Pathfinder**__
+2.  __**Chat colors**__
+3.  __**Dicefinder**__, new dice for Pathfinder ! require [Dice-So-Nice](https://gitlab.com/riccisi/foundryvtt-dice-so-nice)
+4.  __**Translation**__, French and English !
 
 ![Pathfinder-icons](Pathfinder-icons.png)
 
