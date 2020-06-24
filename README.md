@@ -16,7 +16,7 @@ To install, follow these instructions:
 3.  __**Dicefinder**__, new dice for Pathfinder ! require [Dice-So-Nice](https://gitlab.com/riccisi/foundryvtt-dice-so-nice)
 4.  __**Translation**__, French and English !
 
-![Pathfinder-icons](Pathfinder-icons.png)
+![Pathfinder-icons](Pathfinder-icons-v2.png)
 
 ![chat-colors](chat-colors.png)
 
