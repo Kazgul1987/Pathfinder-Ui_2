@@ -4,8 +4,7 @@
 - Tested on 0.6.4 version.
 
 ## v2.1.0
-- New theme for dice
-![Dicefinder](Dicefinder-v2.png)
+- New theme for dice.
 
 ## v2.0.3
 - Folder colors work now.
