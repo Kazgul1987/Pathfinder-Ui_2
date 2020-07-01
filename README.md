@@ -20,7 +20,7 @@ To install, follow these instructions:
 
 ![chat-colors](chat-colors.png)
 
-![Dicefinder](Dicefinder.png)
+![Dicefinder](Dicefinder-v2.png)
 
 
 ## Version & Compatibility

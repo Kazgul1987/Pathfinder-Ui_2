@@ -2,7 +2,7 @@
   "name": "pathfinder-ui",
   "title": "Pathfinder Ui",
   "description": "Theme for Pathfinder 1e/2e. <p> *** Rejoignez la communauté Discord FR :<a href='https://discord.gg/pPSDNJk'> https://discord.gg/pPSDNJk </a></p>",
-  "version": "2.0.3",
+  "version": "2.1.0",
   "minimumCoreVersion": "0.6.0",
   "compatibleCoreVersion": "1.0.0",
   "author": "Sasmira",
@@ -28,5 +28,5 @@
   "packs": [],
   "url": "https://gitlab.com/sasmira/pathfinder-ui",
   "manifest": "https://gitlab.com/sasmira/pathfinder-ui/-/raw/master/module/module.json",
-  "download": "https://gitlab.com/sasmira/pathfinder-ui/-/jobs/artifacts/v2.0.3/raw/pathfinder-ui.zip?job=build"
+  "download": "https://gitlab.com/sasmira/pathfinder-ui/-/jobs/artifacts/v2.1.0/raw/pathfinder-ui.zip?job=build"
 }

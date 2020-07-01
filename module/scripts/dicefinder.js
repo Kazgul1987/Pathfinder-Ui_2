@@ -1,5 +1,5 @@
 Hooks.on('diceSoNiceReady', (dice3d) => {
-    dice3d.addSystem({id: "PF", name: "Pathfinder 1 & 2"}, true);
+    dice3d.addSystem({id: "PF", name: "Dicefinder"}, true);
   
     dice3d.addDicePreset({
       type: "d20",
@@ -29,18 +29,19 @@ Hooks.on('diceSoNiceReady', (dice3d) => {
     });
   
     dice3d.addTexture("PFred", {
-      name: "Pathfinder Red",
+      name: "Dicefinder",
       composite: "source-over",
-      source: "modules/pathfinder-ui/ui/dice/redTexture.png"
+      source: "modules/pathfinder-ui/ui/dice/texture.png"
     })
     .then(() => {
         dice3d.addColorset({
           name: 'pf',
-          description: "Pathfinder Red/Gold",
-          category: "Pathfinder 1 & 2",
+          description: "Dicefinder",
+          category: "Pathfinder",
           texture: 'PFred',
-          edge: '#d9a463',
+          background: ["#6F0000"],
           foreground: '#d9a463',
+          outline: 'black',
           default: true
         },"default");
     });
