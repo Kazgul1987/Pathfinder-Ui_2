@@ -3,6 +3,8 @@
 ## Compatibility
 - Tested on 0.6.4 version.
 
+## v2.1.1
+- non copyrighted logo by (@mistamichal). thank you ! 
 ## v2.1.0
 - New theme for dice.
 
