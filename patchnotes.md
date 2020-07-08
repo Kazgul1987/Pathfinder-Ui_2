@@ -3,6 +3,9 @@
 ## Compatibility
 - Tested on 0.6.4 version.
 
+## v2.1.2
+- add Português (Brasil) translation, thx Mr @renato.innocenti
+
 ## v2.1.1
 - non copyrighted logo by (@mistamichal). thank you ! 
 ## v2.1.0
