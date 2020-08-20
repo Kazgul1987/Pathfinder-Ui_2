@@ -1,7 +1,10 @@
 # Patch Notes
 
 ## Compatibility
-- Tested on 0.6.4 version.
+- Tested on 0.7.1 version.
+
+## v2.1.3
+- Fix invalid URL
 
 ## v2.1.2
 - add Português (Brasil) translation, thx Mr @renato.innocenti
