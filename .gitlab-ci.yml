@@ -12,6 +12,7 @@ build:
   script:
     - zip pathfinder-ui.zip -r module -x ".*"
   artifacts:
+    expire_in: never
     name: pathfinder-ui
     when: on_success
     paths:
