@@ -1,7 +1,13 @@
 # Patch Notes
 
 ## Compatibility
-- Tested on 0.7.1 version.
+- Tested on 0.7.5 version.
+
+## v2.2.0
+- Major Update
+
+## v2.1.4
+- Update Compatibility 0.7.5
 
 ## v2.1.3
 - Fix invalid URL
