@@ -1,8 +1,10 @@
 # Patch Notes
 
 ## Compatibility
-- Tested on 0.7.5 version.
+- Ready for 0.7.5 version.
 
+## v2.2.1
+- Improve Highlight on tools and scene navigation
 ## v2.2.0
 - Major Update
 
