@@ -1,5 +1,5 @@
 Hooks.on('diceSoNiceReady', (dice3d) => {
-    dice3d.addSystem({id: "PF", name: "Dicefinder"}, true);
+    dice3d.addSystem({id: "PF", name: "Dicefinder"}, "default");
   
     dice3d.addDicePreset({
       type: "d20",
