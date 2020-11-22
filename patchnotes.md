@@ -1,7 +1,10 @@
 # Patch Notes
 
 ## Compatibility
-- Ready for 0.7.5 version.
+- Ready for 0.7.7 version.
+
+## v2.2.3
+- Changed the Dice So Nice! integration to let users pick their preferred dice preset instead of forcing the use of the Pathfinder-Ui dice.
 
 ## v2.2.2
 - Improve Highlight on tools and scene navigation again ...
