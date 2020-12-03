@@ -3,6 +3,9 @@
 ## Compatibility
 - Ready for 0.7.7 version.
 
+## v2.2.4
+- Remove Orange color on gears. fix for Spontaneous Caster issue.
+
 ## v2.2.3
 - Changed the Dice So Nice! integration to let users pick their preferred dice preset instead of forcing the use of the Pathfinder-Ui dice.
 
