@@ -252,21 +252,6 @@
     border-image-width: 4px;
     color: #520000;
 }
-#chat-controls .control-buttons{
-    color: white;
-}
-.fa-dice-d20{
-    color: #e88b49;
-}
-#RTB-button {
-    color: #e88b49;
-}
-.fa-save{
-    color: #e88b49;
-}
-.fa-trash{
-    color: #e88b49;
-}
 
 #sidebar .sidebar-tab #chat-controls div.roll-type-select select {
     font-family: CaslonPro;
@@ -297,22 +282,6 @@
     background-position: center !important;
     background-size: 260px 100%!important;
     background-repeat: no-repeat;
-}
-
-.fa-plus{
-    color: #e88b49;
-}
-.fa-users-cog{
-    color: #e88b49;
-}
-.fa-undo{
-    color: #e88b49;
-}
-.fa-users {
-    color: #e88b49;
-}
-.fa-cog{
-    color: #e88b49;
 }
 
 /*************************************************************/
@@ -352,16 +321,6 @@
     border: 0px solid #b5b3a4;
     color : white;
     text-shadow: 2px 2px black ;
-}
-
-.header-search{
-    padding-bottom: 8px;
-}
-.fa-search{
-    color: darkgoldenrod;
-}
-.fa-sort-amount-up{
-    color:darkgoldenrod;
 }
 
 .sidebar-tab .directory-footer button{
