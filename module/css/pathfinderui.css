@@ -16,7 +16,7 @@ body {
     flex-direction: column;
     flex-wrap: nowrap;
     position: fixed;
-    right: 5px;
+    right: 0px;
     top: 5px;
     width: 305px !important;
     height: 99vh;
@@ -35,12 +35,10 @@ body {
 }
 
 #sidebar.collapsed {
-    width: 57px !important;
-    height: 410px !important;
-    padding-left: 5px;
-    border: 10px solid transparent;
+    width: 39px !important;
+    height: 370px !important;
     border-image-source: url(../ui/frames/Chat-box.webp);
-    border-image-slice: 35 fill;
+    border-image-slice: 30 fill;
     background-position: center !important;
     background-size: 100% 100%!important;
     background-repeat: no-repeat;
@@ -57,8 +55,8 @@ body {
 #sidebar #sidebar-tabs i.fa-comments {
     content: "";
     background-image: url("../ui/sidebar/sidebar_button-chat.webp") !important;
-    width: 85% !important;
-    height: 85% !important;
+    width: 75% !important;
+    height: 75% !important;
     display: inline-block !important;
     background-position:center !important;
     background-size:cover !important;
@@ -85,8 +83,8 @@ body {
 #sidebar #sidebar-tabs i.fa-fist-raised {
     content: "";
     background-image: url("../ui/sidebar/sidebar_button-combat-tracker.webp") !important;
-    width: 85% !important;
-    height: 85% !important;
+    width: 75% !important;
+    height: 75% !important;
     display: inline-block !important;
     background-position:center !important;
     background-size:cover !important;
@@ -99,8 +97,8 @@ body {
 #sidebar #sidebar-tabs i.fa-map {
     content: "";
     background-image: url("../ui/sidebar/sidebar_button-scenes.webp") !important;
-    width: 85% !important;
-    height: 85% !important;
+    width: 75% !important;
+    height: 75% !important;
     display: inline-block !important;
     background-position:center !important;
     background-size:cover !important;
@@ -113,8 +111,8 @@ body {
 #sidebar #sidebar-tabs i.fa-users {
     content: "";
     background-image: url("../ui/sidebar/sidebar_button-actors.webp") !important;
-    width: 85% !important;
-    height: 85% !important;
+    width: 75% !important;
+    height: 75% !important;
     display: inline-block !important;
     background-position:center !important;
     background-size:cover !important;
@@ -127,8 +125,8 @@ body {
 #sidebar #sidebar-tabs i.fa-suitcase {
     content: "";
     background-image: url("../ui/sidebar/sidebar_button-object.webp") !important;
-    width: 85% !important;
-    height: 85% !important;
+    width: 75% !important;
+    height: 75% !important;
     display: inline-block !important;
     background-position:center !important;
     background-size:cover !important;
@@ -141,8 +139,8 @@ body {
 #sidebar #sidebar-tabs i.fa-book-open {
     content: "";
     background-image: url("../ui/sidebar/sidebar_button-journal.webp") !important;
-    width: 85% !important;
-    height: 85% !important;
+    width: 75% !important;
+    height: 75% !important;
     display: inline-block !important;
     background-position:center !important;
     background-size:cover !important;
@@ -155,8 +153,8 @@ body {
 #sidebar #sidebar-tabs i.fa-th-list {
     content: "";
     background-image: url("../ui/sidebar/sidebar_button-rolltable.webp") !important;
-    width: 85% !important;
-    height: 85% !important;
+    width: 75% !important;
+    height: 75% !important;
     display: inline-block !important;
     background-position:center !important;
     background-size:cover !important;
@@ -169,8 +167,8 @@ body {
 #sidebar #sidebar-tabs i.fa-music {
     content: "";
     background-image: url("../ui/sidebar/sidebar_button-playlist.webp") !important;
-    width: 85% !important;
-    height: 85% !important;
+    width: 75% !important;
+    height: 75% !important;
     display: inline-block !important;
     background-position:center !important;
     background-size:cover !important;
@@ -183,8 +181,8 @@ body {
 #sidebar #sidebar-tabs i.fa-atlas {
     content: "";
     background-image: url("../ui/sidebar/sidebar_button-compendium.webp") !important;
-    width: 85% !important;
-    height: 85% !important;
+    width: 75% !important;
+    height: 75% !important;
     display: inline-block !important;
     background-position:center !important;
     background-size:cover !important;
@@ -197,8 +195,8 @@ body {
 #sidebar #sidebar-tabs i.fa-cogs {
     content: "";
     background-image: url("../ui/sidebar/sidebar_button-settings.webp") !important;
-    width: 85% !important;
-    height: 85% !important;
+    width: 75% !important;
+    height: 75% !important;
     display: inline-block !important;
     background-position:center !important;
     background-size:cover !important;

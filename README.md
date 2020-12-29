@@ -25,4 +25,4 @@ To install, follow these instructions:
 
 ## Version & Compatibility
 
-- Tested on 0.6.4 version.
+- Tested on 0.7.9 version.
