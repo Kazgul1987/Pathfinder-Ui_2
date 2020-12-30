@@ -2,7 +2,7 @@
   "name": "pathfinder-ui",
   "title": "Pathfinder Ui",
   "description": "Theme for Pathfinder 1e/2e. <p>*** Join the official Discord server: <a href='https://discord.gg/foundryvtt'> Official Discord</a></p><p>*** Rejoignez la communauté Francophone: <a href='https://discord.gg/pPSDNJk'>Francophone Discord</a></p>",
-  "version": "2.3.2",
+  "version": "2.3.3",
   "minimumCoreVersion": "0.7.9",
   "compatibleCoreVersion": "1.0.0",
   "author": "Sasmira",
@@ -38,5 +38,5 @@
   "packs": [],
   "url": "https://gitlab.com/sasmira/pathfinder-ui",
   "manifest": "https://gitlab.com/sasmira/pathfinder-ui/-/raw/master/module/module.json",
-  "download": "https://gitlab.com/sasmira/pathfinder-ui/-/jobs/artifacts/v2.3.2/raw/pathfinder-ui.zip?job=build"
+  "download": "https://gitlab.com/sasmira/pathfinder-ui/-/jobs/artifacts/v2.3.3/raw/pathfinder-ui.zip?job=build"
 }

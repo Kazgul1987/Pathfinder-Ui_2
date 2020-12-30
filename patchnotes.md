@@ -3,6 +3,9 @@
 ## Compatibility
 - Ready for 0.7.9 version.
 
+## v2.3.3
+- sidebar buttons were clipping
+
 ## v2.3.2
 - Fix Chat-box problem with new effect panel for PF2
 

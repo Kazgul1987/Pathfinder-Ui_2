@@ -22,7 +22,7 @@ body {
     height: 99vh;
     overflow: hidden;
     margin: 0;
-    border: 8px solid transparent;
+    border: 5px solid transparent;
     border-image-source: url(../ui/frames/Chat-box.webp);
     border-image-slice: 30 fill;
     background-position: center !important;
@@ -35,7 +35,7 @@ body {
 }
 
 #sidebar.collapsed {
-    width: 39px !important;
+    width: 36px !important;
     height: 370px !important;
     border-image-source: url(../ui/frames/Chat-box.webp);
     border-image-slice: 30 fill;
@@ -55,25 +55,26 @@ body {
 #sidebar #sidebar-tabs i.fa-comments {
     content: "";
     background-image: url("../ui/sidebar/sidebar_button-chat.webp") !important;
-    width: 75% !important;
-    height: 75% !important;
+    width: 100% !important;
+    height: 100% !important;
     display: inline-block !important;
     background-position:center !important;
-    background-size:cover !important;
+    background-size:100% !important;
+    background-repeat: no-repeat;
 }
 
 #sidebar-tabs {
-    height: 64px;
+    height: 32px;
 }
 #sidebar-tabs > .item {
     line-height: 0px;
     flex: 0 0 25px;
-    height: 32px;
+    height: 25px;
+    border-radius: 100%;
 }
 #sidebar-tabs > .item.active {
     color: #FFF;
     border: 1px solid red;
-    
     box-shadow: 0 0 6px inset #ff6400;
 }
 #sidebar #sidebar-tabs i.fa-comments::before {
@@ -83,11 +84,12 @@ body {
 #sidebar #sidebar-tabs i.fa-fist-raised {
     content: "";
     background-image: url("../ui/sidebar/sidebar_button-combat-tracker.webp") !important;
-    width: 75% !important;
-    height: 75% !important;
+    width: 100% !important;
+    height: 100% !important;
     display: inline-block !important;
     background-position:center !important;
-    background-size:cover !important;
+    background-size:100% !important;
+    background-repeat: no-repeat;
 }
 
 #sidebar #sidebar-tabs i.fa-fist-raised::before {
@@ -97,11 +99,12 @@ body {
 #sidebar #sidebar-tabs i.fa-map {
     content: "";
     background-image: url("../ui/sidebar/sidebar_button-scenes.webp") !important;
-    width: 75% !important;
-    height: 75% !important;
+    width: 100% !important;
+    height: 100% !important;
     display: inline-block !important;
     background-position:center !important;
-    background-size:cover !important;
+    background-size:100% !important;
+    background-repeat: no-repeat;
 }
 
 #sidebar #sidebar-tabs i.fa-map::before {
@@ -111,11 +114,12 @@ body {
 #sidebar #sidebar-tabs i.fa-users {
     content: "";
     background-image: url("../ui/sidebar/sidebar_button-actors.webp") !important;
-    width: 75% !important;
-    height: 75% !important;
+    width: 100% !important;
+    height: 100% !important;
     display: inline-block !important;
     background-position:center !important;
-    background-size:cover !important;
+    background-size:100% !important;
+    background-repeat: no-repeat;
 }
 
 #sidebar #sidebar-tabs i.fa-users::before {
@@ -125,11 +129,12 @@ body {
 #sidebar #sidebar-tabs i.fa-suitcase {
     content: "";
     background-image: url("../ui/sidebar/sidebar_button-object.webp") !important;
-    width: 75% !important;
-    height: 75% !important;
+    width: 100% !important;
+    height: 100% !important;
     display: inline-block !important;
     background-position:center !important;
-    background-size:cover !important;
+    background-size:100% !important;
+    background-repeat: no-repeat;
 }
 
 #sidebar #sidebar-tabs i.fa-suitcase::before {
@@ -139,11 +144,12 @@ body {
 #sidebar #sidebar-tabs i.fa-book-open {
     content: "";
     background-image: url("../ui/sidebar/sidebar_button-journal.webp") !important;
-    width: 75% !important;
-    height: 75% !important;
+    width: 100% !important;
+    height: 100% !important;
     display: inline-block !important;
     background-position:center !important;
-    background-size:cover !important;
+    background-size:100% !important;
+    background-repeat: no-repeat;
 }
 
 #sidebar #sidebar-tabs i.fa-book-open::before {
@@ -153,11 +159,12 @@ body {
 #sidebar #sidebar-tabs i.fa-th-list {
     content: "";
     background-image: url("../ui/sidebar/sidebar_button-rolltable.webp") !important;
-    width: 75% !important;
-    height: 75% !important;
+    width: 100% !important;
+    height: 100% !important;
     display: inline-block !important;
     background-position:center !important;
-    background-size:cover !important;
+    background-size:100% !important;
+    background-repeat: no-repeat;
 }
 
 #sidebar #sidebar-tabs i.fa-th-list::before {
@@ -167,11 +174,12 @@ body {
 #sidebar #sidebar-tabs i.fa-music {
     content: "";
     background-image: url("../ui/sidebar/sidebar_button-playlist.webp") !important;
-    width: 75% !important;
-    height: 75% !important;
+    width: 100% !important;
+    height: 100% !important;
     display: inline-block !important;
     background-position:center !important;
-    background-size:cover !important;
+    background-size:100% !important;
+    background-repeat: no-repeat;
 }
 
 #sidebar #sidebar-tabs i.fa-music::before {
@@ -181,11 +189,12 @@ body {
 #sidebar #sidebar-tabs i.fa-atlas {
     content: "";
     background-image: url("../ui/sidebar/sidebar_button-compendium.webp") !important;
-    width: 75% !important;
-    height: 75% !important;
+    width: 100% !important;
+    height: 100% !important;
     display: inline-block !important;
     background-position:center !important;
-    background-size:cover !important;
+    background-size:100% !important;
+    background-repeat: no-repeat;
 }
 
 #sidebar #sidebar-tabs i.fa-atlas::before {
@@ -195,11 +204,12 @@ body {
 #sidebar #sidebar-tabs i.fa-cogs {
     content: "";
     background-image: url("../ui/sidebar/sidebar_button-settings.webp") !important;
-    width: 75% !important;
-    height: 75% !important;
+    width: 100% !important;
+    height: 100% !important;
     display: inline-block !important;
     background-position:center !important;
-    background-size:cover !important;
+    background-size:100% !important;
+    background-repeat: no-repeat;
 }
 
 #sidebar #sidebar-tabs i.fa-cogs::before {
@@ -400,13 +410,12 @@ body {
 
 #settings button {
     background-image: url(../ui/buttons/button-blue.webp);
-    background-size: cover;
     background-repeat: no-repeat;
+    background-position: center !important;
+    background-size: 100%;
     border: 1px solid black;
-    color: white;
+    color: whitesmoke;
     font-size: 14px;
-    height: 100%;
-    width: 100%;
  }
 
 /* #region Remove speaker name background colors in Chat window */
