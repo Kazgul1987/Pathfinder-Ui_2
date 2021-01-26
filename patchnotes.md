@@ -3,6 +3,9 @@
 ## Compatibility
 - Ready for 0.7.9 version.
 
+## v2.3.4
+- New cursors
+
 ## v2.3.3
 - sidebar buttons were clipping
 
