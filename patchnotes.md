@@ -3,6 +3,9 @@
 ## Compatibility
 - Ready for 0.7.9 version.
 
+## v2.3.5
+- rollback on old cursors
+
 ## v2.3.4
 - New cursors
 
