@@ -1,23 +1,18 @@
 {
   "name": "pathfinder-ui",
   "title": "Pathfinder Ui",
-  "description": "Theme for Pathfinder 1e/2e and swade. <p>*** Join the official Discord server: <a href='https://discord.gg/foundryvtt'> Official Discord</a></p><p>*** Rejoignez la communauté Francophone: <a href='https://discord.gg/pPSDNJk'>Francophone Discord</a></p>",
-  "version": "2.3.6",
-  "minimumCoreVersion": "0.7.9",
-  "compatibleCoreVersion": "1.0.0",
+  "description": "Theme for Pathfinder 2e. <p>*** Join the official Discord server: <a href='https://discord.gg/foundryvtt'> Official Discord</a></p><p>*** Rejoignez la communauté Francophone: <a href='https://discord.gg/pPSDNJk'>Francophone Discord</a></p>",
   "author": "Sasmira",
-  "systems": 
-  [
-    "pf2e",
-    "pf1",
-    "swade"
-  ],
-  "esmodules": [ "scripts/dicefinder.js"],
-  "styles": [ 
-    "css/pathfinderui.css",
-    "css/cursor.css"
-  ],
-  "scripts": [ "scripts/pathfinder-chat-color.js" ],
+  "authors": [],
+  "url": "https://gitlab.com/sasmira/pathfinder-ui",
+  "flags": {},
+  "version": "3.0.0",
+  "minimumCoreVersion": "0.8.9",
+  "compatibleCoreVersion": "1.0.0",
+  "systems": ["pf2e"],
+  "scripts": ["scripts/rpg-ui.js"],
+  "esmodules": ["scripts/dicefinder.js"],
+  "styles": [],
   "languages": [
     {
       "lang": "en",
@@ -26,7 +21,7 @@
     },
     {
       "lang": "fr",
-      "name": "French (French)",
+      "name": "French (Français)",
       "path": "lang/fr.json"
     },
     {
@@ -35,9 +30,12 @@
       "path": "lang/pt-BR.json"
     }
   ],
-
   "packs": [],
-  "url": "https://gitlab.com/sasmira/pathfinder-ui",
+  "dependencies": [],
+  "socket": false,
   "manifest": "https://gitlab.com/sasmira/pathfinder-ui/-/raw/master/module/module.json",
-  "download": "https://gitlab.com/sasmira/pathfinder-ui/-/jobs/artifacts/v2.3.6/raw/pathfinder-ui.zip?job=build"
+  "download": "https://gitlab.com/sasmira/pathfinder-ui/-/jobs/artifacts/v3.0.0/raw/pathfinder-ui.zip?job=build",
+  "protected": false,
+  "coreTranslation": false,
+  "library": false
 }

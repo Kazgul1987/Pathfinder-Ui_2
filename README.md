@@ -1,5 +1,5 @@
 # FoundryVTT - Pathfinder-ui
-A dodgy fork of Fantasy Ui by Iotech with a Pathfinder 2e theme.
+A dodgy fork of RPG Styled Ui by Xbozon for Pathfinder 2e.
 
 ## Installation
 
@@ -9,20 +9,22 @@ To install, follow these instructions:
 2.  Click the Install Module button and enter the following URL: https://gitlab.com/sasmira/pathfinder-ui/-/raw/master/module/module.json
 3.  Click Install and wait for installation to complete.
 
-## Pathfinder Ui, it's :
+## Pathfinder Ui v3, it's :
 
-1.  __**New icons for Pathfinder**__
-2.  __**Chat colors**__
-3.  __**Dicefinder**__, new dice for Pathfinder ! require [Dice-So-Nice](https://gitlab.com/riccisi/foundryvtt-dice-so-nice)
+1.  __**New Theme based on RPG Styled UI Foundry VTT by [Xbozon](https://github.com/Xbozon/rpg-styled-ui)**__
+![Pathfinder-ui](pathfinder-ui.webp)
+2.  __**Dicefinder**__, New dice for Pathfinder ! require [Dice-So-Nice](https://gitlab.com/riccisi/foundryvtt-dice-so-nice)
+![Dicefinder](dice_so_nice.webp)
+3.  __**Combat Carousel Compatibility**__  ! require [Combat Carousel](https://github.com/death-save/combat-carousel)
+![combat-carousel](combat-carousel.webp)
 4.  __**Translation**__, French and English !
 
-![Pathfinder-icons](Pathfinder-icons-v2.png)
 
-![chat-colors](chat-colors.png)
 
-![Dicefinder](Dicefinder-v2.png)
+
+
 
 
 ## Version & Compatibility
 
-- Tested on 0.7.9 version.
+- Tested on 0.8.9 version.

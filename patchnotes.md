@@ -1,7 +1,14 @@
 # Patch Notes
 
 ## Compatibility
-- Ready for 0.7.9 version.
+- Ready for 0.8.9 version.
+
+## v3.0.0
+### New Theme Conversion : 
+- Exit Fantasy Ui by Iotech
+- Welcome RPG Styled Ui by Xbozon for Pathfinder 2e
+- New coin images by @JamzTheMan
+- Chat-colors removed
 
 ## v2.3.5
 - rollback on old cursors
