@@ -411,7 +411,7 @@ body.compact-mode #logo {
 }
 
 .message-sender {
-    color: darkred;
+    color: #98968a;
     font-weight: bold;
     border-bottom-color: darkred;
     text-decoration: underline;
