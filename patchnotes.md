@@ -3,6 +3,12 @@
 ## Compatibility
 - Ready for 0.8.9 version.
 
+## v3.1.0
+- chat colors improved
+- minimalize journal improved
+- New template for Dicefinder
+-  somes minors bugs fixed 
+
 ## v3.0.0
 ### New Theme Conversion : 
 - Exit Fantasy Ui by Iotech
