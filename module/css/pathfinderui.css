@@ -5,6 +5,8 @@
 /*************************************************************/
 /*============ Background/Pause img / Logo ==================*/
 /*************************************************************/
+
+  
 body {
     background: url(../PFRPG-Background.webp) no-repeat center;
     background-size: cover;
@@ -21,7 +23,7 @@ body {
 }
 
 :root {
-    --main-text-light-color: #98968a;
+    --main-text-light-color: #c1a87d;
     --border-color: #372d25;
 }
 
@@ -72,7 +74,7 @@ body.compact-mode #logo {
     flex-wrap: nowrap;
     position: fixed;
     right: 0px;
-    top: 5px;
+    top: 0px;
     overflow: visible;
     width: 305px;
     height: 99vh;
@@ -410,8 +412,42 @@ body.compact-mode #logo {
     box-shadow: none;
 }
 
+[data-visibility=gm]:is(div,em,p,span,strong) {
+    background: transparent url("../ui/buttons/btn.webp");
+    border: transparent;
+    background-size: 100% 100%;
+
+}
+.flavor-text div.degree-of-success .criticalSuccess{
+    color:rgb(0, 255, 0)
+}
+.flavor-text div.degree-of-success .success{
+    color:rgb(0, 191, 255)
+}
+.flavor-text div.degree-of-success .failure{
+    color:#ff4500
+}
+.flavor-text div.degree-of-success .criticalFailure{
+    color:rgb(255, 55, 55)
+}
+
+.dice-roll .dice-total {
+    flex: 0;
+    font-size: 25px;
+    font-weight: bold;
+  }
+  .dice-roll .dice-total.success {
+    color: rgb(0, 255, 0);
+  }
+  .dice-roll .dice-total.failure {
+    color: rgb(255, 55, 55);
+  }
+  .dice-roll .dice-tooltip {
+    display: none;
+  }
+
 .message-sender {
-    color: #98968a;
+    color: #c1a87d;
     font-weight: bold;
     border-bottom-color: darkred;
     text-decoration: underline;
@@ -1234,21 +1270,8 @@ button#roll-hd:hover::before {
     background: none;
 }
 
-.journal-sheet .window-content::before {
-    position: absolute;
-    width: 512px;
-    height: 298px;
-    left: -6px;
-    top: 12px;
-    content: " ";
-    background: url(../ui/other/journal_right_top_corner.webp);
-    background-size: 100% 100%;
-    opacity: 0.09;
-    z-index: -1;
-}
-
 .app.journal-sheet .window-header .window-title {
-    opacity: 0;
+    word-break: break-all;
 }
 
 .app.journal-sheet .window-header {

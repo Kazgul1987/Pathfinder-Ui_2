@@ -29,7 +29,6 @@ Hooks.on('diceSoNiceReady', (dice3d) => {
     });
     dice3d.addDicePreset({
       type: "dc",
-      colorset: "coin_default",
       labels: [
         "modules/pathfinder-ui/ui/dice/tail.webp",
         "modules/pathfinder-ui/ui/dice/heads.webp"
@@ -39,7 +38,6 @@ Hooks.on('diceSoNiceReady', (dice3d) => {
 
     dice3d.addDicePreset({
       type: "d2",
-      colorset: "coin_default",
       labels: [
         "modules/pathfinder-ui/ui/dice/tail_bump.webp",
         "modules/pathfinder-ui/ui/dice/heads_bump.webp"
@@ -59,7 +57,6 @@ Hooks.on('diceSoNiceReady', (dice3d) => {
           category: "Pathfinder",
           texture: 'PFred',
           material: "chrome",
-          background: "#6F0000",
           foreground: "#c98e45",
           outline: 'none',
           edge: "#c98e45",
