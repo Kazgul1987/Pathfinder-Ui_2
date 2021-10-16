@@ -3,6 +3,9 @@
 ## Compatibility
 - Ready for 0.8.9 version.
 
+## v3.1.3
+- minors bugs fixed
+
 ## v3.1.2
 - minors updates
 - add skin for Create folder

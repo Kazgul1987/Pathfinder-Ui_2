@@ -413,22 +413,22 @@ body.compact-mode #logo {
 }
 
 [data-visibility=gm]:is(div,em,p,span,strong) {
-    background: transparent url("../ui/buttons/btn.webp");
+    background: transparent;
     border: transparent;
     background-size: 100% 100%;
 
 }
 .flavor-text div.degree-of-success .criticalSuccess{
-    color:rgb(0, 255, 0)
+    color:rgb(55, 245, 55)
 }
 .flavor-text div.degree-of-success .success{
-    color:rgb(0, 191, 255)
+    color:rgb(100, 216, 255)
 }
 .flavor-text div.degree-of-success .failure{
-    color:#ff4500
+    color:#ff7644
 }
 .flavor-text div.degree-of-success .criticalFailure{
-    color:rgb(255, 55, 55)
+    color:rgb(247, 59, 59)
 }
 
 .dice-roll .dice-total {
@@ -437,10 +437,10 @@ body.compact-mode #logo {
     font-weight: bold;
   }
   .dice-roll .dice-total.success {
-    color: rgb(0, 255, 0);
+    color: rgb(55, 245, 55);
   }
   .dice-roll .dice-total.failure {
-    color: rgb(255, 55, 55);
+    color: rgb(247, 59, 59);
   }
   .dice-roll .dice-tooltip {
     display: none;
@@ -960,7 +960,7 @@ body.compact-mode #controls .scene-control i.fa-bookmark::after {
     font-family: 'Kurale', serif;
     font-weight: 600;
     color: #837360;
-    border: none;
+    border: none!important;
     position: relative;
     box-shadow: none;
 }
