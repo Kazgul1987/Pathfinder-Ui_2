@@ -3,6 +3,10 @@
 ## Compatibility
 - Ready for 0.8.9 version.
 
+## v3.1.2
+- minors updates
+- add skin for Create folder
+
 ## v3.1.1
 - Minors fix
 - Rename Pathfinder Ui to Pathfinder Ui v3
