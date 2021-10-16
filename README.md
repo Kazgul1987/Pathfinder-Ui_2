@@ -1,4 +1,4 @@
-# FoundryVTT - Pathfinder-ui
+# FoundryVTT - Pathfinder-ui v3
 A dodgy fork of RPG Styled Ui by Xbozon for Pathfinder 2e.
 
 ## Installation
@@ -19,11 +19,6 @@ https://gitlab.com/sasmira/pathfinder-ui/-/raw/master/module/module.json
 3.  __**Combat Carousel Compatibility**__  ! require [Combat Carousel](https://github.com/death-save/combat-carousel)
 ![combat-carousel](combat-carousel.png)
 4.  __**Translation**__, French and English !
-
-
-
-
-
 
 
 ## Version & Compatibility

@@ -1270,8 +1270,21 @@ button#roll-hd:hover::before {
     background: none;
 }
 
+.journal-sheet .window-content::before {
+    position: absolute;
+    width: 512px;
+    height: 298px;
+    left: -6px;
+    top: 12px;
+    content: " ";
+    background: url(../ui/other/journal_right_top_corner.webp);
+    background-size: 100% 100%;
+    opacity: 0.09;
+    z-index: -1;
+}
+
 .app.journal-sheet .window-header .window-title {
-    word-break: break-all;
+    opacity: 100%;
 }
 
 .app.journal-sheet .window-header {
