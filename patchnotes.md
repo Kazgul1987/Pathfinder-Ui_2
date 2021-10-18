@@ -3,6 +3,10 @@
 ## Compatibility
 - Ready for 0.8.9 version.
 
+## v3.1.4
+- minors bugs fixed
+- bug fixed with Monk's toolbars 
+
 ## v3.1.3
 - minors bugs fixed
 

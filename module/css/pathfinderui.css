@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Kurale&display=swap');
 @import 'carousel.css';
 @import 'text-editor.css';
+@import "systems/pf2e.css";
 
 /*************************************************************/
 /*============ Background/Pause img / Logo ==================*/
@@ -649,8 +650,8 @@ body.compact-mode #logo {
 /*************************************************************/
 
 #hotbar {
-    max-width: calc(100% - 310px);
-    left: calc(50vw - 290px - 40px);
+    max-width: calc(100% - 350px);
+    left: calc(50vw - 250px - 40px);
     width: 658px;
     height: 52px;
 }
@@ -664,7 +665,7 @@ body.compact-mode #logo {
     left: -106px;
     height: 85px;
     background-image: url(../ui/frames/action_bar.webp);
-    background-size: 870px 85px;
+    background-size: 790px 85px;
     background-repeat: no-repeat;
 }
 
@@ -672,7 +673,7 @@ body.compact-mode #logo {
     /*border: none;*/
     border-radius: 0;
     box-shadow: none;
-    margin: 0px 4px;
+    margin: 0px 0px;
 }
 
 #hotbar #action-bar .macro::before {
@@ -706,7 +707,7 @@ body.compact-mode #logo {
 }
 
 #hotbar #macro-list {
-    flex: 0 0 577px;
+    flex: 0 0 500px;
 }
 
 #hotbar .bar-controls {
