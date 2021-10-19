@@ -3,6 +3,11 @@
 ## Compatibility
 - Ready for 0.8.9 version.
 
+## v3.1.5
+- minors bugs fixed
+- Improved Chat color text (Guys, last change, I'm tired to change that all time)
+- change texture for Players list.  
+
 ## v3.1.4
 - minors bugs fixed
 - bug fixed with Monk's toolbars 

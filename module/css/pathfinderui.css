@@ -6,8 +6,7 @@
 /*************************************************************/
 /*============ Background/Pause img / Logo ==================*/
 /*************************************************************/
-
-  
+    
 body {
     background: url(../PFRPG-Background.webp) no-repeat center;
     background-size: cover;
@@ -24,7 +23,7 @@ body {
 }
 
 :root {
-    --main-text-light-color: #c1a87d;
+    --main-text-light-color: #cfbda7;
     --border-color: #372d25;
 }
 
@@ -448,7 +447,7 @@ body.compact-mode #logo {
   }
 
 .message-sender {
-    color: #c1a87d;
+    color: #cfbda7;
     font-weight: bold;
     border-bottom-color: darkred;
     text-decoration: underline;

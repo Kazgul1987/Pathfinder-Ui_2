@@ -28,8 +28,7 @@
     background-size: 100% 45px;
 }
 
-.system-pf2e .window-app.dialog .window-content,
-.system-pf2e .window-app.folder-edit .window-content {
+.system-pf2e .window-app.dice-checks.dialog .window-content{
     background: url(/ui/parchment.jpg) repeat;
     color: #191813;
 }
