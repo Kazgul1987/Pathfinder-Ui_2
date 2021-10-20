@@ -3,6 +3,11 @@
 ## Compatibility
 - Ready for 0.8.9 version.
 
+## v3.1.6
+- minors bugs fixed
+- New texture for Nat20
+- New Background
+
 ## v3.1.5
 - minors bugs fixed
 - Improved Chat color text (Guys, last change, I'm tired to change that all time)
