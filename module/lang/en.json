@@ -11,21 +11,5 @@
     "RPGUI.SETTINGS.STANDARD_LOGO_HINT": "Returns the standard logo instead of the text logo",
 
     "RPGUI.SETTINGS.DISABLE_STYLES": "Disable RPG styled UI",
-    "RPGUI.SETTINGS.DISABLE_STYLES_HINT": "This is a local setting, with which any player can turn off styles",
-
-    "MinimalUI.HotbarStyleName": "Macro Hotbar",
-    "MinimalUI.HotbarStyleHint": "Customize Hotbar UI. Auto-Hide Ignored when using Custom Hotbar module.",
-    "MinimalUI.HotbarSizeName": "Macro Hotbar Slot Size",
-    "MinimalUI.HotbarSizeHint": "Customize Macro Hotbar slots & size",
-    "MinimalUI.HotbarSlots3": "3 Slots",
-    "MinimalUI.HotbarSlots6": "6 Slots",
-    "MinimalUI.HotbarSlots10": "10 Slots",
-    "MinimalUI.HotbarPositionName": "Macro Hotbar Position",
-    "MinimalUI.HotbarPositionHint": "Horizontal position of the Macro Hotbar",
-    "MinimalUI.HotbarPositionCenterLeft": "Center Left",
-    "MinimalUI.HotbarPositionCenter": "Center",
-    "MinimalUI.HotbarPositionCenterRight": "Center Right",
-    "MinimalUI.HotbarPositionManual": "Manual",
-    "MinimalUI.HotbarPPositionName": "Macro Hotbar Manual Pixel Position",
-    "MinimalUI.HotbarPPositionHint": "Horizontal position in pixels. If Macro Position is 'Manual'"
+    "RPGUI.SETTINGS.DISABLE_STYLES_HINT": "This is a local setting, with which any player can turn off styles"
 }
