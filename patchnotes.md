@@ -3,6 +3,10 @@
 ## Compatibility
 - Ready for 0.8.9 version.
 
+## v3.1.7
+- add Spanish language by @Regik
+- fix error on Background
+
 ## v3.1.6
 - minors bugs fixed
 - New texture for Nat20
