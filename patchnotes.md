@@ -3,6 +3,9 @@
 ## Compatibility
 - Ready for 0.8.9 version.
 
+## v3.1.8
+- Chat texture changes from brown to black/grey.
+
 ## v3.1.7
 - add Spanish language by @Regik
 - fix error on Background
