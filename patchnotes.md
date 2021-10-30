@@ -3,6 +3,9 @@
 ## Compatibility
 - Ready for 0.8.9 version.
 
+## v3.1.9
+- improve colors on somes textures
+
 ## v3.1.8
 - Chat texture changes from brown to black/grey.
 
