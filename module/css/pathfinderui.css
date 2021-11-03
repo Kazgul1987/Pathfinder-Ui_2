@@ -823,7 +823,7 @@ body.compact-mode > ol.app.control-tools {
     box-shadow: none;
     background: none;
     color: #837360;
-    padding: 5px;
+    padding: 4px;
 }
 
 #controls .scene-control, #controls .control-tool {
