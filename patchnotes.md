@@ -3,6 +3,9 @@
 ## Compatibility
 - Ready for 0.8.9 version.
 
+## v3.1.12
+- Improve compatibility with Monk's tokenbar
+
 ## v3.1.11
 - Navigation fix for Monk's scene Navigation
 
