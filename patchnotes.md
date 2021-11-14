@@ -3,6 +3,9 @@
 ## Compatibility
 - Ready for 0.8.9 version.
 
+## v3.2.1
+- Improve Babele support
+
 ## v3.2.0
 - Up Right menu panel
 - Improve Monk's TokenBar support.
