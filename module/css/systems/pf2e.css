@@ -126,3 +126,9 @@
 #chat .monks-tokenbar.chat-card .sheet .items-list {
     padding: 0;
 }
+
+/* Babele */
+/* ttps://gitlab.com/riccisi/foundryvtt-babele */
+#actor-translate-log {
+    color: var(--main-text-very-light-color)
+}

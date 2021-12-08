@@ -3,6 +3,9 @@
 ## Compatibility
 - Ready for 0.8.9 version.
 
+## v3.2.3
+- Improve Babele support thx @Xbozon
+
 ## v3.2.2
 - minor fix
 
