@@ -126,19 +126,3 @@
 #chat .monks-tokenbar.chat-card .sheet .items-list {
     padding: 0;
 }
-
-/*Babele*/
-textarea {
-    width: 100%;
-    min-height: 50px;
-    padding: 5px;
-    color: #cfbda7;
-    background: rgba(0, 0, 0, 0.05);
-    border: 1px solid #000;
-    border-radius: 3px;
-    font-family: monospace;
-    -webkit-user-select: text;
-    -moz-user-select: text;
-    -ms-user-select: text;
-    user-select: text;
-}
