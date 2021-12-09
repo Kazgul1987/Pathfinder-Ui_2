@@ -3,6 +3,10 @@
 ## Compatibility
 - Ready for 0.8.9 version.
 
+## v3.3.0
+- New sidebar icons
+- sidebar is a little more large now
+
 ## v3.2.3
 - Improve Babele support thx @Xbozon
 

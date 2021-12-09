@@ -77,8 +77,8 @@ body.compact-mode #logo {
     right: 0px;
     top: 0px;
     overflow: visible;
-    width: 300px;
-    height: 99vh;
+    width: 350px;
+    height: 100vh;
     padding:0px 15px;
     background: none;
     box-shadow: none;
@@ -86,14 +86,14 @@ body.compact-mode #logo {
 }
 
 #sidebar.app.collapsed {
-    padding: 0!important;
+    padding: 0 !important;
 }
 
 
 #sidebar.app.collapsed::before {
-    width: 40px!important;
-    left: -4px!important;
-    height: 100%!important;
+    width: 40px !important;
+    left: -4px !important;
+    height: 110% !important;
 }
 
 #sidebar::before {
@@ -105,7 +105,7 @@ body.compact-mode #logo {
     left: 0;
     top: -10px;
     background: url(../ui/frames/chat.webp);
-    background-size: 300px 100%;
+    background-size: 350px 100%;
 }
 
 #sidebar::after {
@@ -116,7 +116,7 @@ body.compact-mode #logo {
     height: 76px;
     left: 0;
     background: url(../ui/frames/header.webp);
-    background-size: 300px 76px;
+    background-size: 350px 76px;
 }
 
 #sidebar a.entity-link,
@@ -159,8 +159,8 @@ body.compact-mode #logo {
 
 #sidebar-tabs > .item {
     line-height: 0px;
-    flex: 0 0 22px;
-    height: 24px;
+    flex: 0 0 27px;
+    height: 30px;
     border-radius: 100%;
 }
 
@@ -172,7 +172,7 @@ body.compact-mode #logo {
 
 #sidebar #sidebar-tabs i.fa-comments {
     content: "";
-    background-image: url("../ui/sidebar/sidebar_button-chat.webp") !important;
+    background-image: url("../ui/sidebar/sidebar-button-chat.webp") !important;
     width: 100% !important;
     height: 100% !important;
     display: inline-block !important;
@@ -187,7 +187,7 @@ body.compact-mode #logo {
 
 #sidebar #sidebar-tabs i.fa-fist-raised {
     content: "";
-    background-image: url("../ui/sidebar/sidebar_button-combat-tracker.webp") !important;
+    background-image: url("../ui/sidebar/sidebar-button-combat.webp") !important;
     width: 100% !important;
     height: 100% !important;
     display: inline-block !important;
@@ -202,7 +202,7 @@ body.compact-mode #logo {
 
 #sidebar #sidebar-tabs i.fa-map {
     content: "";
-    background-image: url("../ui/sidebar/sidebar_button-scenes.webp") !important;
+    background-image: url("../ui/sidebar/sidebar-button-scenes.webp") !important;
     width: 100% !important;
     height: 100% !important;
     display: inline-block !important;
@@ -217,7 +217,7 @@ body.compact-mode #logo {
 
 #sidebar #sidebar-tabs i.fa-users {
     content: "";
-    background-image: url("../ui/sidebar/sidebar_button-actors.webp") !important;
+    background-image: url("../ui/sidebar/sidebar-button-actors.webp") !important;
     width: 100% !important;
     height: 100% !important;
     display: inline-block !important;
@@ -232,7 +232,7 @@ body.compact-mode #logo {
 
 #sidebar #sidebar-tabs i.fa-suitcase {
     content: "";
-    background-image: url("../ui/sidebar/sidebar_button-object.webp") !important;
+    background-image: url("../ui/sidebar/sidebar-button-items.webp") !important;
     width: 100% !important;
     height: 100% !important;
     display: inline-block !important;
@@ -247,7 +247,7 @@ body.compact-mode #logo {
 
 #sidebar #sidebar-tabs i.fa-book-open {
     content: "";
-    background-image: url("../ui/sidebar/sidebar_button-journal.webp") !important;
+    background-image: url("../ui/sidebar/sidebar-button-journal.webp") !important;
     width: 100% !important;
     height: 100% !important;
     display: inline-block !important;
@@ -262,7 +262,7 @@ body.compact-mode #logo {
 
 #sidebar #sidebar-tabs i.fa-th-list {
     content: "";
-    background-image: url("../ui/sidebar/sidebar_button-rolltable.webp") !important;
+    background-image: url("../ui/sidebar/sidebar-button-tables.webp") !important;
     width: 100% !important;
     height: 100% !important;
     display: inline-block !important;
@@ -277,7 +277,7 @@ body.compact-mode #logo {
 
 #sidebar #sidebar-tabs i.fa-music {
     content: "";
-    background-image: url("../ui/sidebar/sidebar_button-playlist.webp") !important;
+    background-image: url("../ui/sidebar/sidebar-button-playlists.webp") !important;
     width: 100% !important;
     height: 100% !important;
     display: inline-block !important;
@@ -292,7 +292,7 @@ body.compact-mode #logo {
 
 #sidebar #sidebar-tabs i.fa-atlas {
     content: "";
-    background-image: url("../ui/sidebar/sidebar_button-compendium.webp") !important;
+    background-image: url("../ui/sidebar/sidebar-button-compendium.webp") !important;
     width: 100% !important;
     height: 100% !important;
     display: inline-block !important;
@@ -307,7 +307,7 @@ body.compact-mode #logo {
 
 #sidebar #sidebar-tabs i.fa-cogs {
     content: "";
-    background-image: url("../ui/sidebar/sidebar_button-settings.webp") !important;
+    background-image: url("../ui/sidebar/sidebar-button-settings.webp") !important;
     width: 100% !important;
     height: 100% !important;
     display: inline-block !important;
@@ -317,6 +317,21 @@ body.compact-mode #logo {
 }
 
 #sidebar #sidebar-tabs i.fa-cogs::before {
+    content: "";
+}
+
+#sidebar #sidebar-tabs i.fa-id-badge {
+    content: "";
+    background-image: url("../ui/sidebar/sidebar-button-cards.webp") !important;
+    width: 100% !important;
+    height: 100% !important;
+    display: inline-block !important;
+    background-position:center !important;
+    background-size:100% !important;
+    background-repeat: no-repeat;
+}
+
+#sidebar #sidebar-tabs i.fa-id-badge::before {
     content: "";
 }
 
