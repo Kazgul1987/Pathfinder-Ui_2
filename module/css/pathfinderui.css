@@ -77,8 +77,8 @@ body.compact-mode #logo {
     right: 0px;
     top: 0px;
     overflow: visible;
-    width: 350px;
-    height: 100vh;
+    width: 310px;
+    height: 99vh;
     padding:0px 15px;
     background: none;
     box-shadow: none;
@@ -105,7 +105,7 @@ body.compact-mode #logo {
     left: 0;
     top: -10px;
     background: url(../ui/frames/chat.webp);
-    background-size: 350px 100%;
+    background-size: 310px 100%;
 }
 
 #sidebar::after {
@@ -116,7 +116,7 @@ body.compact-mode #logo {
     height: 76px;
     left: 0;
     background: url(../ui/frames/header.webp);
-    background-size: 350px 76px;
+    background-size: 310px 76px;
 }
 
 #sidebar a.entity-link,
@@ -159,8 +159,8 @@ body.compact-mode #logo {
 
 #sidebar-tabs > .item {
     line-height: 0px;
-    flex: 0 0 27px;
-    height: 30px;
+    flex: 0 0 23px;
+    height: 23px;
     border-radius: 100%;
 }
 

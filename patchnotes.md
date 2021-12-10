@@ -3,18 +3,10 @@
 ## Compatibility
 - Ready for 0.8.9 version.
 
-## v3.3.0
+## v3.3.1
 - New sidebar icons
 - sidebar is a little more large now
-
-## v3.2.3
 - Improve Babele support thx @Xbozon
-
-## v3.2.2
-- minor fix
-
-## v3.2.1
-- Improve Babele support
 
 ## v3.2.0
 - Up Right menu panel
