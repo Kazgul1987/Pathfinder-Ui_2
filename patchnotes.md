@@ -1,7 +1,12 @@
 # Patch Notes
 
 ## Compatibility
-- Ready for 0.8.9 version.
+- Ready for v9.
+
+## v9.238.1
+- First version for v9
+- Thank's you @Xbozon for your work !
+- Thank's you @Prolice for your help !
 
 ## v3.3.1
 - New sidebar icons

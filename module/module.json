@@ -6,9 +6,9 @@
   "authors": [],
   "url": "https://gitlab.com/sasmira/pathfinder-ui",
   "flags": {},
-  "version": "3.3.1",
-  "minimumCoreVersion": "0.8.9",
-  "compatibleCoreVersion": "1.0.0",
+  "version": "9.238.1",
+  "minimumCoreVersion": "9",
+  "compatibleCoreVersion": "9",
   "scripts": [
     "scripts/rpg-ui.js"
   ],
@@ -35,12 +35,12 @@
   ],
   "packs": [],
   "system": [
-    "pf2e"
+    
   ],
   "dependencies": [],
   "socket": false,
   "manifest": "https://gitlab.com/sasmira/pathfinder-ui/-/raw/master/module/module.json",
-  "download": "https://gitlab.com/sasmira/pathfinder-ui/-/jobs/artifacts/v3.3.1/raw/pathfinder-ui.zip?job=build",
+  "download": "https://gitlab.com/sasmira/pathfinder-ui/-/jobs/artifacts/v9.238.1/raw/pathfinder-ui.zip?job=build",
   "protected": false,
   "coreTranslation": false,
   "library": false
