@@ -3,6 +3,9 @@
 ## Compatibility
 - Ready for v9.
 
+## v9.238.2
+- Sidebar Macro Icon support added thank's you @Arcanist
+
 ## v9.238.1
 - First version for v9
 - Thank's you @Xbozon for your work !

@@ -166,8 +166,8 @@ body.compact-mode #logo {
 
 #sidebar-tabs > .item {
     line-height: 0px;
-    flex: 0 0 23px;
-    height: 23px;
+    flex: 0 0 22px;
+    height: 22px;
     border-radius: 100%;
     margin-bottom: 3px;
 }
@@ -341,6 +341,21 @@ body.compact-mode #logo {
 }
 
 #sidebar #sidebar-tabs i.fa-id-badge::before {
+    content: "";
+}
+
+#sidebar #sidebar-tabs i.fa-terminal {
+    content: "";
+    background-image: url("../ui/sidebar/sidebar-button-macros.webp") !important;
+    width: 100% !important;
+    height: 100% !important;
+    display: inline-block !important;
+    background-position:center !important;
+    background-size:100% !important;
+    background-repeat: no-repeat;
+}
+
+#sidebar #sidebar-tabs i.fa-terminal::before {
     content: "";
 }
 
