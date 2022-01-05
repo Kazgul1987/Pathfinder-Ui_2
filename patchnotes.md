@@ -3,6 +3,9 @@
 ## Compatibility
 - Ready for v9.
 
+## v9.238.3
+- Fix PFS meter
+
 ## v9.238.2
 - Sidebar Macro Icon support added thank's you @Arcanist
 
