@@ -3,6 +3,9 @@
 ## Compatibility
 - Ready for v9.
 
+## v9.242.1
+- add texture for condition status overlay
+
 ## v9.238.3
 - Fix PFS meter
 
