@@ -3,7 +3,7 @@
 ## Compatibility
 - Ready for v9.
 
-## v9.242.1
+## v9.242.2
 - missing system in module.json
 
 ## v9.242.1
