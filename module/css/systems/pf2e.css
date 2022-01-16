@@ -145,3 +145,8 @@
 .message-content .dice-roll .statuseffect-rules {
     background: url(../systems/imgs/chat-texture-dark.webp) repeat;
 }
+
+/* Chat button DC Check*/ 
+[data-pf2-check] { 
+    color: black ; 
+}
