@@ -366,8 +366,13 @@ body.compact-mode #logo {
     margin: 0 6px 25px;
 }
 
+textarea {
+    color: #cfbda7;
+    background: #ffffff14;
+}
+
 #chat-form textarea {
-    color: #837360;
+    color: #cfbda7;
     background: #ffffff14;
 }
 
@@ -435,17 +440,6 @@ body.compact-mode #logo {
 
 .chat-message .message-content {
     color: var(--main-text-light-color) !important;/*8e8073*/
-}
-
-::-webkit-scrollbar-thumb {
-    outline: none;
-    border-radius: 0px;
-    border: none;
-    background: #251f1d;
-}
-
-::-webkit-scrollbar-track {
-    background: #181413;
 }
 
 .dice-roll .dice-formula, .dice-roll .dice-total {

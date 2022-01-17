@@ -3,8 +3,10 @@
 ## Compatibility
 - Ready for v9.
 
-## v9.242.4
+## v9.242.5
+- Change Chat Color
 - Effect Area buttons are readable now
+- fix somes errors
 
 ## v9.242.3
 - DC Chat buttons are readable now
