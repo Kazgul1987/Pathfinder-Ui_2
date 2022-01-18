@@ -3,6 +3,9 @@
 ## Compatibility
 - Ready for v9.
 
+## v9.242.7
+- DC Action buttons are readable now
+
 ## v9.242.6
 - Improve Chat dice-roll tooltips visibility
 - Fix color for dialog-content

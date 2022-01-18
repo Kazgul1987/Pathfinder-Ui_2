@@ -146,10 +146,17 @@
     background: url(../systems/imgs/chat-texture-dark.webp) repeat;
 }
 
-/* Chat button DC Check*/ 
+/* Chat button DC Check */ 
 [data-pf2-check] { 
-    color: black ; 
+    color: #0e0e0e ; 
 }
+
+/* Chat button effect area */
 [data-pf2-effect-area] {
-    color: black ; 
+    color: #0e0e0e ; 
+}
+
+/* Chat button DC Action */
+[data-pf2-action]{
+    color: #0e0e0e ; 
 }
