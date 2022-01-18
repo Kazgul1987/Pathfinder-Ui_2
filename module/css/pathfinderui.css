@@ -366,11 +366,6 @@ body.compact-mode #logo {
     margin: 0 6px 25px;
 }
 
-textarea {
-    color: #cfbda7;
-    background: #ffffff14;
-}
-
 #chat-form textarea {
     color: #cfbda7;
     background: #ffffff14;
@@ -446,6 +441,16 @@ textarea {
     border: none;
     box-shadow: none;
 }
+
+/* Lighten damage type text, e.g. Slashing, Fire, etc */
+.dice-roll .dice-result .dice-tooltip h3 {
+	filter: brightness(300%);
+}
+
+.dice-tooltip .part-header .part-flavor {
+    color: var(--main-text-light-color);
+}
+
 
 [data-visibility=gm]:is(div,em,p,span,strong) {
     background: transparent;
@@ -884,6 +889,12 @@ nav.damage-log-nav .item.active:before,
 }
 
 /* DIALOG */
+.dialog-content textarea {
+    color: #cfbda7;
+    background: #ffffff14;
+    font-family: inherit;
+    font-size: inherit;
+}
 
 .app.window-app.dialog,
 .app.window-app.folder-edit {
