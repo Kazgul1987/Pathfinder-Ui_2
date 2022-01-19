@@ -1046,7 +1046,7 @@ button#roll-hd:hover::before {
 /* NAVIGATION */
 
 #navigation {
-    width: calc(100% - 300px);
+    width: calc(100% - 340px);
     left: 142px;
 }
 

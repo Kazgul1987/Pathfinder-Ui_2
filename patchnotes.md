@@ -3,6 +3,9 @@
 ## Compatibility
 - Ready for v9.
 
+## v9.242.9
+- fix Nav bar lengh again
+
 ## v9.242.8
 - fix Nav bar lengh
 - Whisper Chat Messages, like fast healing, are readable now
