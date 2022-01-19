@@ -1046,6 +1046,7 @@ button#roll-hd:hover::before {
 /* NAVIGATION */
 
 #navigation {
+    width: calc(100% - 300px);
     left: 142px;
 }
 
@@ -1065,6 +1066,7 @@ button#roll-hd:hover::before {
 }
 
 #navigation #scene-list .scene.nav-item {
+    float: left;
     border: none;
     background: none;
     min-width: 80px;

@@ -160,3 +160,10 @@
 [data-pf2-action]{
     color: #0e0e0e ; 
 }
+
+[data-visibility=owner]:is(div,em,p,span,strong) {
+    color: greenyellow ; 
+    background: url(../ui/parchment.jpg) repeat;
+    border: none;
+    box-shadow: none;
+}

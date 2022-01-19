@@ -3,6 +3,10 @@
 ## Compatibility
 - Ready for v9.
 
+## v9.242.8
+- fix Nav bar lengh
+- Whisper Chat Messages, like fast healing, are readable now
+
 ## v9.242.7
 - DC Action buttons are readable now
 
