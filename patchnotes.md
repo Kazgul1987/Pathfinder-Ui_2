@@ -3,6 +3,9 @@
 ## Compatibility
 - Ready for v9.
 
+## v9.242.11
+- adjustment of the icons size when we use Sidebar Macro Icon module 
+
 ## v9.242.10
 - Chat log improvements thx @JamzTheMan
 
