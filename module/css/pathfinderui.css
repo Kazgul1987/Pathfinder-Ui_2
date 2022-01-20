@@ -675,7 +675,6 @@ body.compact-mode #logo {
 }
 
 #chat-log .chat-portrait-text-size-name {
-    white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }

@@ -162,8 +162,10 @@
 }
 
 [data-visibility=owner]:is(div,em,p,span,strong) {
-    color: greenyellow ; 
+    color: greenyellow ;
+    /*this image doesn't exist?
     background: url(../ui/parchment.jpg) repeat;
+    */
     border: none;
     box-shadow: none;
 }
