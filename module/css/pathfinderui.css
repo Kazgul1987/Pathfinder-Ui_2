@@ -75,11 +75,11 @@ body.compact-mode #logo {
     flex-direction: column;
     flex-wrap: nowrap;
     position: fixed;
-    right: 0px;
-    top: 0px;
+    right: -8px;
+    top: -10px;
     overflow: visible;
     width: 310px;
-    padding:0px 15px;
+    padding: 0px 4px;
     background: none;
     box-shadow: none;
     border: none;
@@ -110,9 +110,9 @@ body.compact-mode #logo {
     height: calc(100% + 10px);
     width: 100%;
     left: 0;
-    top: -10px;
-    background: url(../ui/frames/chat.webp);
-    background-size: 310px 100%;
+    top: 5px;
+    background: url(../ui/frames/chat-large.webp);
+    background-size: auto;
 }
 
 #sidebar::after {
@@ -166,9 +166,9 @@ body.compact-mode #logo {
 
 #sidebar-tabs > .item {
     line-height: 0px;
-    flex: 0 0 22px;
-    height: 22px;
-    border-radius: 100%;
+    flex: 0 0 24px;
+    height: 24px;
+    border-radius: 30%;
     margin-bottom: 3px;
 }
 
@@ -407,24 +407,27 @@ body.compact-mode #logo {
 #chat-log .message::before {
     content: " ";
     position: absolute;
-    background-repeat: no-repeat;
     background: url(../ui/frames/chat-texture-light.webp) !important;
-    background-size: 95% 110% !important;
-    width: calc(100% + 35px);
-    height: calc(100% + 15%);
-    left: -10px;
-    top: -15%;
+    background-size: 100% 100% !important;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
     z-index: -1;
 
     filter: brightness(1.4);
 }
 
 #chat-log .message.whisper::before {
-    filter: brightness(1.0);
+    background: url(../ui/frames/chat-texture-light-whisper.webp) !important;
+    background-size: 100% 100% !important;
+    filter: brightness(0.3);
 }
 
 #chat-log .message.blind::before {
-    filter: brightness(1.0) hue-rotate(180deg);
+    background: url(../ui/frames/chat-texture-light-blind.webp) !important;
+    background-size: 100% 100% !important;
+    filter: brightness(0.8);
 }
 
 #chat-log .message .message-header {
@@ -668,19 +671,29 @@ body.compact-mode #logo {
  Private uses class whisper, blind uses class blind AND whisper, Self Roll
  uses class whisper (identical to Private Roll for CSS) */
 #chat-log .message.whisper {
-    font-style: italic;
+    /*font-style: italic;*/
 }
 
-#chat-log .message.whisper .message-header .message-metadata::before{
-    color: #585858;
-    content: " (Private Roll) ";
+#chat-log .chat-portrait-text-size-name {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#chat-log .message.whisper .message-header .message-metadata::before {
+    color: var(--main-text-light-color);
+    /*content: " (Private Roll) ";*/
+    font-family: "Font Awesome 5 Free";
+    content: "\f023";
+    font-style: normal !important;
+    padding-right: 5px;
     float: left;
 }
 
 
-#chat-log .message.blind .message-header .message-metadata::before{
-    color: #585858;
-    content: " (Blind Roll) " !important;
+#chat-log .message.blind .message-header .message-metadata::before {
+    color: var(--main-text-light-color);
+    content: "\f070" !important;
+    padding-right: 5px;
     float: left;
 }
 
@@ -1513,4 +1526,4 @@ button#roll-hd:hover::before {
   form button {
       cursor:url(../ui/cursors/pointer.webp), pointer;
   }
-  
+

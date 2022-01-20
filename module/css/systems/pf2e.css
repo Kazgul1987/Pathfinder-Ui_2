@@ -41,7 +41,7 @@
 
 .system-pf2e .effect-panel {
     right: 310px;
-    top: 22px;
+    top: 10px;
 }
 
 .effect-panel div[data-item-id] {
@@ -162,8 +162,20 @@
 }
 
 [data-visibility=owner]:is(div,em,p,span,strong) {
-    color: greenyellow ; 
+    color: greenyellow ;
+    /*this image doesn't exist?
     background: url(../ui/parchment.jpg) repeat;
+    */
     border: none;
     box-shadow: none;
+}
+
+#chat-log .message [data-visibility="gm"]:is(div,em,p,span,strong) {
+    background-color: rgba(130, 130, 130, 0.2); !important;
+    border: 1px dotted !important;
+}
+
+#chat-log .message [data-visibility="owner"]:is(div,em,p,span,strong) {
+    background-color: rgba(130, 130, 130, 0.2); !important;
+    border: 1px dotted !important;
 }
