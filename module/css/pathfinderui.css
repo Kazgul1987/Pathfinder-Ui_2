@@ -111,8 +111,8 @@ body.compact-mode #logo {
     width: 100%;
     left: 0;
     top: 5px;
-    background: url(../ui/frames/chat-large.webp);
-    background-size: auto;
+    background: url(../ui/frames/chat.webp);
+    background-size: 310px 100%;
 }
 
 #sidebar::after {
@@ -168,7 +168,7 @@ body.compact-mode #logo {
     line-height: 0px;
     flex: 0 0 24px;
     height: 24px;
-    border-radius: 30%;
+    border-radius: 100%;
     margin-bottom: 3px;
 }
 
@@ -669,9 +669,9 @@ body.compact-mode #logo {
 /* #region Chat log */
 /* differentiate public roll from private or blind.
  Private uses class whisper, blind uses class blind AND whisper, Self Roll
- uses class whisper (identical to Private Roll for CSS) */
+ uses class whisper (identical to Private Roll for CSS)*/
 #chat-log .message.whisper {
-    /*font-style: italic;*/
+    font-style: italic;
 }
 
 #chat-log .chat-portrait-text-size-name {

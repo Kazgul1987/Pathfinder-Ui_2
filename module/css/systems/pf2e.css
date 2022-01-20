@@ -161,21 +161,17 @@
     color: #0e0e0e ; 
 }
 
-[data-visibility=owner]:is(div,em,p,span,strong) {
-    color: greenyellow ;
-    /*this image doesn't exist?
-    background: url(../ui/parchment.jpg) repeat;
-    */
-    border: none;
-    box-shadow: none;
-}
-
 #chat-log .message [data-visibility="gm"]:is(div,em,p,span,strong) {
-    background-color: rgba(130, 130, 130, 0.2); !important;
-    border: 1px dotted !important;
+    background: none;
 }
 
 #chat-log .message [data-visibility="owner"]:is(div,em,p,span,strong) {
-    background-color: rgba(130, 130, 130, 0.2); !important;
-    border: 1px dotted !important;
+    background: none;
+}
+
+[data-visibility=owner]:is(div,em,p,span,strong) {
+    font-style: italic;
+    color: greenyellow ;
+    border: none;
+    box-shadow: none;
 }
