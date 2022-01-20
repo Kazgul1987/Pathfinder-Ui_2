@@ -3,6 +3,9 @@
 ## Compatibility
 - Ready for v9.
 
+## v9.242.10
+- Chat log improvements thx @JamzTheMan
+
 ## v9.242.9
 - fix Nav bar lengh again
 
