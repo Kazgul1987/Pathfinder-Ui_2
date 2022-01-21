@@ -3,6 +3,9 @@
 ## Compatibility
 - Ready for v9.
 
+## v9.242.13
+- fix somes bugs
+
 ## v9.242.12
 - Chat pop-out are readable now
 - fix Combat Carousel avatar size

@@ -910,16 +910,16 @@ nav.damage-log-nav .item.active:before,
 }
 
 .app.window-app.chat-popout .window-header {
-    background: black;
+    background: rgba(6, 4, 3, 0.92);
 }
 
 .app.window-app.chat-popout .window-content {
-    background-image: url(../ui/frames/corner-box.webp);
+    background: #8C6857;
     background-size: 100% 100%;
 }
 
 .app.window-app.chat-popout .window-content .chat-message {
-    background: #0c0c0c;
+    background: rgba(6, 4, 3, 0.92);
 }
 
 .app.window-app.dialog,
@@ -935,8 +935,8 @@ nav.damage-log-nav .item.active:before,
 
 .window-app.dialog .window-content,
 .window-app.folder-edit .window-content {
-    color: #8f8a80;
-    background: black;
+    color: #cfbda7;
+    background: none;
 }
 
 .window-app.dialog .window-header,
