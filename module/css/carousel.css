@@ -1,3 +1,6 @@
+#combat-carousel .avatar img {
+    max-height: 200%;
+}
 
 .active-combatant-wrapper {
     display: none!important;
@@ -227,13 +230,13 @@
     z-index: 1;
 }
 
-#combat-carousel .combat-controls a.turn {
-    /*top: calc(48% + 10px);*/
+/*#combat-carousel .combat-controls a.turn {
+    top: calc(48% + 10px);
 }
 
 #combat-carousel .combat-controls a.round {
-    /*top: calc(0% + 45px);*/
-}
+    top: calc(0% + 45px);
+}*/
 
 #combat-carousel .encounter-info {
     background: none;

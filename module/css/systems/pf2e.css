@@ -161,6 +161,20 @@
     color: #0e0e0e ; 
 }
 
+a.inline-roll.blindroll {
+    color: #cfbda7;
+    background: #61180e;
+    border-color: #9a2619;
+}
+
+a.entity-link, a.content-link, a.inline-roll {
+    color: #cfbda7;
+    background: #61180e;
+    padding: 0px 3px;
+    border: 2px solid #9a2619;
+    border-radius: 6px;
+}
+
 #chat-log .message [data-visibility="gm"]:is(div,em,p,span,strong) {
     background: none;
 }
@@ -175,3 +189,4 @@
     border: none;
     box-shadow: none;
 }
+

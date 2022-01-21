@@ -3,6 +3,10 @@
 ## Compatibility
 - Ready for v9.
 
+## v9.242.12
+- Chat pop-out are readable now
+- fix Combat Carousel avatar size
+
 ## v9.242.11
 - adjustment of the icons size when we use Sidebar Macro Icon module 
 
