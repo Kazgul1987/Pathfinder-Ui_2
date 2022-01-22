@@ -3,6 +3,9 @@
 ## Compatibility
 - Ready for v9.
 
+## v9.242.14
+- Add GM & Owner text highlight (border) behind Game User Setting
+
 ## v9.242.13
 - fix somes bugs
 
