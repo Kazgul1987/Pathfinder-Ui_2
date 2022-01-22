@@ -12,5 +12,8 @@
     "RPGUI.SETTINGS.STANDARD_LOGO_HINT": "Remet le logo Foundry au lieu du logo texte",
 
     "RPGUI.SETTINGS.DISABLE_STYLES": "Désactiver Pathfinder Ui",
-    "RPGUI.SETTINGS.DISABLE_STYLES_HINT": "Il s'agit d'un paramètre local, avec lequel tout joueur peut désactiver les styles"
+    "RPGUI.SETTINGS.DISABLE_STYLES_HINT": "Il s'agit d'un paramètre local, avec lequel tout joueur peut désactiver les styles",
+
+    "RPGUI.SETTINGS.HIGHLIGHT_GM_OWNER_TEXT": "Ajouter une bordure au texte du GM & du Propriétaire dans le chat",
+    "RPGUI.SETTINGS.HIGHLIGHT_GM_OWNER_TEXT_HINT": "Paramètre local qui ajoute une bordure afin de mettre en évidence le texte visible que par le GM ou le Propriétaire dans le chat."
 }
