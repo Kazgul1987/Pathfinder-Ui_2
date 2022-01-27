@@ -3,6 +3,9 @@
 ## Compatibility
 - Ready for v9.
 
+## v9.245.1
+- Sidebar Macro Icon fixed
+
 ## v9.242.14
 - Add GM & Owner text highlight (border) behind Game User Setting
 

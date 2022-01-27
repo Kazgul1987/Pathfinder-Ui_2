@@ -344,7 +344,7 @@ body.compact-mode #logo {
     content: "";
 }
 
-#sidebar #sidebar-tabs i.fa-terminal {
+#sidebar #sidebar-tabs i.fa-code {
     content: "";
     background-image: url("../ui/sidebar/sidebar-button-macros.webp") !important;
     width: 100% !important;
@@ -355,7 +355,7 @@ body.compact-mode #logo {
     background-repeat: no-repeat;
 }
 
-#sidebar #sidebar-tabs i.fa-terminal::before {
+#sidebar #sidebar-tabs i.fa-code::before {
     content: "";
 }
 
