@@ -112,7 +112,7 @@ body.compact-mode #logo {
     left: 0;
     top: 5px;
     background: url(../ui/frames/chat.webp);
-    background-size: 310px 100%;
+    background-size: 100% 100%;
 }
 
 #sidebar::after {
@@ -642,6 +642,14 @@ body.compact-mode #logo {
 /*************************************************************/
 /*================== COMPENDIUM HEADERS =====================*/
 /*************************************************************/
+/* scene thumb size */
+#scenes .scene h3 {
+    line-height: 43px;
+    text-shadow: 2px 1px 2px #000;
+}
+#scenes .scene {
+    height: 48px;
+}
 /* #endregion */
 
 #settings button {
