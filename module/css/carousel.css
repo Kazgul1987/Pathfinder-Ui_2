@@ -354,15 +354,19 @@
     opacity: 0;
 }
 
-#controls li[data-control="combat-carousel"]::before{
+#controls li[data-control="combat-carousel"]::after {
     position: absolute;
     content: " ";
-    width: 32px;
-    height: 32px;
-    left: 8px;
-    top: 8px;
+    width: 30px;
+    height: 30px;
 
     background-color: #837360;
+    -webkit-mask: url("/modules/combat-carousel/icons/combat-carousel-solid2.svg") no-repeat center;
+    mask: url("/modules/combat-carousel/icons/combat-carousel-solid2.svg") no-repeat center;
+}
+
+#controls li[data-control="combat-carousel"]:hover::after {
+    background-color: var(--color-text-light-0);
     -webkit-mask: url("/modules/combat-carousel/icons/combat-carousel-solid2.svg") no-repeat center;
     mask: url("/modules/combat-carousel/icons/combat-carousel-solid2.svg") no-repeat center;
 }
