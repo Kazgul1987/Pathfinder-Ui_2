@@ -3,6 +3,9 @@
 ## Compatibility
 - Ready for v9.
 
+## v9.245.4
+- Fix Combat Carousel controls icon 
+
 ## v9.245.3
 - scene thumb size
 
