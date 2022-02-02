@@ -13,6 +13,6 @@
     "RPGUI.SETTINGS.DISABLE_STYLES": "Disable RPG styled UI",
     "RPGUI.SETTINGS.DISABLE_STYLES_HINT": "This is a local setting, with which any player can turn off styles",
 
-    "RPGUI.SETTINGS.HIGHLIGHT_GM_OWNER_TEXT": "Highlight GM & Owner text in chat",
-    "RPGUI.SETTINGS.HIGHLIGHT_GM_OWNER_TEXT_HINT": "This is a local setting that will highlight text that is only visible to the GM (or owner) in chat"
+    "RPGUI.SETTINGS.HIGHLIGHT_GM_OWNER_TEXT": "Highlight GM & Owner text",
+    "RPGUI.SETTINGS.HIGHLIGHT_GM_OWNER_TEXT_HINT": "This is a local setting that will highlight text that is only visible to the GM (or owner)"
 }

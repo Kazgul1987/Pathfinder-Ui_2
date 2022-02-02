@@ -1,10 +1,9 @@
-#chat-log .message [data-visibility="gm"]:is(div,em,p,span,strong) {
+[data-visibility="gm"]:is(div,em,p,span,strong) {
   background-color: rgba(130, 130, 130, 0.1) !important;
   border: 1px dotted !important;
 }
 
-#chat-log .message [data-visibility="owner"]:is(div,em,p,span,strong) {
+[data-visibility="owner"]:is(div,em,p,span,strong) {
   background-color: rgba(130, 130, 130, 0.1) !important;
   border: 1px dotted !important;
 }
-
