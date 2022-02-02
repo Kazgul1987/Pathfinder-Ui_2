@@ -3,6 +3,10 @@
 ## Compatibility
 - Ready for v9.
 
+## v9.249.1
+- Text now also highlights GM secret text for all other sheets and dialogs like Journal Entries, NPC sheets, etc.
+- Minimal Ui support
+
 ## v9.245.4
 - Fix Combat Carousel controls icon 
 

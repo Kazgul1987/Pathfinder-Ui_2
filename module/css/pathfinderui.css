@@ -37,7 +37,7 @@ body.compact-mode #logo {
 }
 
 .hide {
-    display: none;
+    visibility: hidden;
 }
 
 .new-logo {

@@ -128,9 +128,33 @@
 }
 
 /* Babele */
-/* ttps://gitlab.com/riccisi/foundryvtt-babele */
+/* https://gitlab.com/riccisi/foundryvtt-babele */
 #actor-translate-log {
     color: var(--main-text-very-light-color)
+}
+
+/* Minimal UI */
+/* https://github.com/saif-ellafi/foundryvtt-minimal-ui/issues */
+.minimal-ui-mode .new-logo {
+    display: none!important;
+}
+.minimal-ui-mode #controls ol li.scene-control[data-control="combat-carousel"] {
+    width: var(--controlsw)!important;
+    height: var(--controlsh)!important;
+}
+.minimal-ui-mode #controls li[data-control="combat-carousel"]::after {
+    width: calc(var(--controlsw) - 10px)!important;
+    height: calc(var(--controlsh) - 10px)!important;
+}
+
+.minimal-ui-mode #ui-bottom > div {
+    justify-content: inherit!important;
+}
+.minimal-ui-mode #navigation #scene-list {
+    margin-left: 16px;
+}
+.minimal-ui-mode #controls ol.main-controls {
+    width: 60px;
 }
 
 #fps {

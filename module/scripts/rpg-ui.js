@@ -33,6 +33,17 @@ Hooks.on('init', () => {
 			location.reload();
 		}
 	});
+	game.settings.register('pathfinder-ui', 'minimalUICompatibility', {
+		name: game.i18n.localize('RPGUI.SETTINGS.MINIMAL_UI'),
+		hint: game.i18n.localize('RPGUI.SETTINGS.MINIMAL_UI_HINT'),
+		scope: "world",
+		type: Boolean,
+		default: false,
+		config: true,
+		onChange: () => {
+			location.reload();
+		}
+	});
 	game.settings.register('pathfinder-ui', 'disableAllStyles', {
 		name: game.i18n.localize('RPGUI.SETTINGS.DISABLE_STYLES'),
 		hint: game.i18n.localize('RPGUI.SETTINGS.DISABLE_STYLES_HINT'),
@@ -69,6 +80,7 @@ Hooks.on('init', () => {
 	}
 
 	if (!game.settings.get('pathfinder-ui', 'disableAllStyles')) { rpgUIAddMainCss() }
+	if (game.settings.get('pathfinder-ui', 'minimalUICompatibility')) { addClassByQuerySelector('minimal-ui-mode', 'body.vtt') }
 });
 
 Hooks.on('getSceneNavigationContext', () => {

@@ -10,6 +10,12 @@
     "RPGUI.SETTINGS.STANDARD_LOGO": "Logotipo estándar",
     "RPGUI.SETTINGS.STANDARD_LOGO_HINT": "Devuelve el logotipo estándar en lugar del logotipo de texto",
 
-    "RPGUI.SETTINGS.DISABLE_STYLES": "Desactivar RPG styled UI",
-    "RPGUI.SETTINGS.DISABLE_STYLES_HINT": "Esta es una configuración local, con la que cualquier jugador puede desactivar el estilo"
+    "RPGUI.SETTINGS.DISABLE_STYLES": "Desactivar Pathfinder Ui",
+    "RPGUI.SETTINGS.DISABLE_STYLES_HINT": "Esta es una configuración local, con la que cualquier jugador puede desactivar el estilo",
+    
+    "RPGUI.SETTINGS.MINIMAL_UI": "Minimal UI support",
+    "RPGUI.SETTINGS.MINIMAL_UI_HINT": "Fixes some (not all) of the problems with minimal UI",
+
+    "RPGUI.SETTINGS.HIGHLIGHT_GM_OWNER_TEXT": "Highlight GM & Owner text",
+    "RPGUI.SETTINGS.HIGHLIGHT_GM_OWNER_TEXT_HINT": "This is a local setting that will highlight text that is only visible to the GM (or owner)"
 }
