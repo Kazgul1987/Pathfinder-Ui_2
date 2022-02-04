@@ -3,6 +3,12 @@
 ## Compatibility
 - Ready for v9.
 
+## v9.249.2
+- New Dicefinder with 3 templates :
+- Dicefinder Basic 
+- Dicefinder Campaign 
+- Dicefinder Dark Mode
+
 ## v9.249.1
 - Text now also highlights GM secret text for all other sheets and dialogs like Journal Entries, NPC sheets, etc.
 - Minimal Ui support
