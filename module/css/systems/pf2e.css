@@ -191,7 +191,10 @@ a.inline-roll.blindroll {
     border-color: #9a2619;
 }
 
-a.entity-link, a.content-link, a.inline-roll {
+#chat-log [data-pf2-check],
+#chat-log a.entity-link,
+#chat-log a.content-link,
+#chat-log a.inline-roll {
     color: #cfbda7;
     background: #61180e;
     padding: 0px 3px;
@@ -212,4 +215,96 @@ a.entity-link, a.content-link, a.inline-roll {
     color: greenyellow ;
     border: none;
     box-shadow: none;
+}
+
+#chat-log .pf2e.chat-card .card-buttons button {
+    margin: 2px 0;
+    background: rgba(110,0,0,1);
+    border:none;
+    color: #cfbda7;
+    text-shadow: black;
+    line-height: 20px;
+}
+
+#chat-log .pf2e.chat-card [data-visibility=owner] button {
+    text-transform: uppercase;
+    border:none;
+    background: #008000;
+    color: #fff;
+}
+
+#chat-log .pf2e.chat-card [data-visibility=owner] button:hover {
+    text-transform: uppercase;
+    border:none;
+    background: rgba(110,0,0,1);
+    color: #fff;
+}
+
+#chat-log .pf2e.chat-card .card-buttons .hidden-to-others {
+    border: none;
+    background: blue;
+}
+
+#chat-log .pf2e.chat-card .card-buttons .hidden-to-others:hover {
+    border: none;
+    background: lightblue;
+}
+
+.dice-total:hover,
+.dice-roll .dice-formula:hover,
+#chat-log button:hover,
+#chat-log button:focus {
+    transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
+    color: #cfbda7;
+    background-color:rgba(110,0,0,1);
+    cursor: pointer;
+} 
+
+#chat-log .message-content .chat-damage-buttons button.shield-block {
+    background-color: darkblue;
+    color: #cfbda7;
+    text-shadow: black;
+    border:none;
+}
+
+#chat-log .message-content .chat-damage-buttons button.shield-block:hover {
+    background-color: #008000;
+    border:none;
+}
+
+#chat-log .message-content .chat-damage-buttons button.shield-block.shield-activated {
+    background-color: rgba(110,0,0,1);
+    border:none;
+}
+
+#chat-log .message-content .chat-damage-buttons button.shield-blockshield-activated,
+#chat-log .message-content .chat-damage-buttons button.shield-block:hover {
+    color: #cfbda7;
+    text-shadow: black;
+    border:none;
+}
+
+#chat-log .message-content .chat-damage-buttons button.shield-block.shield-activated:hover {
+    background-color:blue;
+    color: #cfbda7;
+    border:none;
+}
+
+/*Damage tag base & modifier*/
+.damage-tag {
+    border:none;
+}
+
+.damage-tag-base {
+    background: darkslategrey;
+    text-transform: uppercase;
+    font-style: normal;
+    color: #fff;
+}
+
+.damage-tag-modifier {
+    background: #008000;
+    text-transform: uppercase;
+    font-style: normal;
+    color: #fff;
 }

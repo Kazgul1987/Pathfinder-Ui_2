@@ -3,6 +3,9 @@
 ## Compatibility
 - Ready for v9.
 
+## v9.249.3
+- Chat log improvements
+
 ## v9.249.2
 - New Dicefinder with 3 templates :
 - Dicefinder Basic 
