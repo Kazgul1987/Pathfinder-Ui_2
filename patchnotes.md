@@ -3,6 +3,9 @@
 ## Compatibility
 - Ready for v9.
 
+## v9.249.4
+- Spanish translation improved thx by @javiondox
+
 ## v9.249.3
 - Chat log improvements
 
