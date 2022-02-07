@@ -13,9 +13,9 @@
     "RPGUI.SETTINGS.DISABLE_STYLES": "Desactivar Pathfinder Ui",
     "RPGUI.SETTINGS.DISABLE_STYLES_HINT": "Esta es una configuración local, con la que cualquier jugador puede desactivar el estilo",
     
-    "RPGUI.SETTINGS.MINIMAL_UI": "Minimal UI support",
-    "RPGUI.SETTINGS.MINIMAL_UI_HINT": "Fixes some (not all) of the problems with minimal UI",
+    "RPGUI.SETTINGS.MINIMAL_UI": "Soporte de Minimal UI",
+    "RPGUI.SETTINGS.MINIMAL_UI_HINT": "Arregla algunos (no todos) de los problemas con Minimal UI",
 
-    "RPGUI.SETTINGS.HIGHLIGHT_GM_OWNER_TEXT": "Highlight GM & Owner text",
-    "RPGUI.SETTINGS.HIGHLIGHT_GM_OWNER_TEXT_HINT": "This is a local setting that will highlight text that is only visible to the GM (or owner)"
+    "RPGUI.SETTINGS.HIGHLIGHT_GM_OWNER_TEXT": "Remarcar texto de GM y Propietario",
+    "RPGUI.SETTINGS.HIGHLIGHT_GM_OWNER_TEXT_HINT": "Esto es un ajuste local que remarcará texto que es solamente es visible para el GM (o Propietario)"
 }
