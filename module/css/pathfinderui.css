@@ -130,7 +130,7 @@ body.compact-mode #logo {
 #sidebar a.inline-roll {
     background: #61180e;
     padding: 0px 3px;
-    border: 2px solid #9a2619;
+    border: 2px solid var(--glassy);
     border-radius: 6px;
 }
 
@@ -442,7 +442,7 @@ body.compact-mode #logo {
 
 .dice-roll .dice-formula, .dice-roll .dice-total {
     border: none;
-    box-shadow: none;
+    box-shadow: var(--glassy);
 }
 
 /* Lighten damage type text, e.g. Slashing, Fire, etc */

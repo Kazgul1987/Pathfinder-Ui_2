@@ -1,3 +1,16 @@
+:root{
+    --glassy: 0px 0px 2px rgba(255, 255, 255, 0.4) inset, 0px 0px 6px rgba(255, 255, 255, 0.2) inset, 1px 1px 1px rgba(0, 0, 0, 1), 1px -1px 1px rgba(0, 0, 0, 1), -1px -1px 1px rgba(0, 0, 0, 1), -1px 1px 1px rgba(0, 0, 0, 1), 0px 0px 3px rgba(0, 0, 0, 1), 0px 0px 4px rgba(0, 0, 0, 0.5);
+    --pf2e-shadow-is-dark: 0px 1px var(--pf2e-half-transparent-dark);
+    --pf2e-translucent-middle: var(--pf2e-translucent-middle-for-light);
+    --pf2e-translucent-middle-for-light: hsla(0, 0%, 80%,0.5);
+    --pf2e-translucent-very: var(--pf2e-translucent-very-for-light);
+    --pf2e-transcluent-very-for-light: hsla(0, 0%, 60%,0.2);
+    --header-text-shadow: var(--pf2e-shadow-is-dark);
+    --pf2e-shadow-is-dark: 0px 1px var(--pf2e-half-transparent-dark);
+    --filter-dark: invert(100%) drop-shadow(0px 1px 1px black);
+    --pf2e-half-transparent-dark: hsla(0, 0%, 0%,0.5);
+}
+
 .system-pf2e .sheet.actor:not(.loot-sheet-npc),
 .system-pf2e .sheet.item {
     background: rgba(6, 4, 3, 0.92);
@@ -174,10 +187,13 @@
 [data-pf2-check] { 
     color: #0e0e0e ; 
 }
-
 /* Chat button effect area */
-[data-pf2-effect-area] {
-    color: #0e0e0e ; 
+#chat-log [data-pf2-effect-area] {
+    color: #cfbda7; 
+    background: #61180e;
+    padding: 0px 3px;
+    border: 2px solid var(--glassy);
+    border-radius: 6px;
 }
 
 /* Chat button DC Action */
@@ -185,10 +201,104 @@
     color: #0e0e0e ; 
 }
 
+/* Chat */
+#chat-log .message.emote p {
+    text-align: center;
+}
+
+#chat-log .message .message-header {
+    text-shadow: var(--header-text-shadow);
+}
+
+#chat-log .message .message-header .message-metadata {
+    margin-left: 0px;
+}
+
+#chat-log .tag {
+    border: 1px solid rgba(255,255,255,0.5);
+    text-shadow: none;
+}
+
+.message-content .chat-damage-buttons button>i.fas {
+    left: 0px;
+    top: 0px;
+}
+
+#chat-log .message .message-header .whisper-to {
+    margin-bottom:0px;
+}
+
+#chat-controls {
+    margin-top: 5px;
+}
+
+#chat-log .message {
+    margin: 5px 5px 10px 10px;
+}
+
+#chat-log .message .message-content {
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+}
+
+.message-content .chat-damage-buttons button .label {
+    font-size: 0.5em;
+}
+
+.dice-roll .dice-result .dice-tooltip .damage-type {
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+}
+
+.message-content .chat-damage-buttons button {
+    background: rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 2px #fff inset;
+    border: 1px solid var(--color-border-light-2);
+}
+
+#chat-controls .control-buttons {
+    color:rgba(255, 255, 245, 0.8);
+}
+.message-content .chat-damage-buttons button>img {
+    filter: invert(75%);
+}
+
+div#scrollToBottom {
+    padding: 4px;
+    flex: 0;
+    display: flex;
+    border: none;
+    background-color: blue;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: var(--glassy);
+    top: 0px;
+    margin: 0px 2px;
+    justify-content: center;
+    transition: background-color 0.15s ease-in-out;
+}
+
+div#scrollToBottom:hover {
+    transition: background-color 0.15s ease-in-out;
+    background-color: lightskyblue;
+}
+
+.chat-damage-buttons button {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+}
+
 a.inline-roll.blindroll {
     color: #cfbda7;
     background: #61180e;
-    border-color: #9a2619;
+    border-color: var(--glassy);
+}
+
+#chat-log button {
+    transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
 }
 
 #chat-log [data-pf2-check],
@@ -198,7 +308,7 @@ a.inline-roll.blindroll {
     color: #cfbda7;
     background: #61180e;
     padding: 0px 3px;
-    border: 2px solid #9a2619;
+    border: 2px solid var(--glassy);
     border-radius: 6px;
 }
 
@@ -216,20 +326,19 @@ a.inline-roll.blindroll {
     border: none;
     box-shadow: none;
 }
-
 #chat-log .pf2e.chat-card .card-buttons button {
-    margin: 2px 0;
-    background: rgba(110,0,0,1);
-    border:none;
+    margin: 0px;
+    background-color: hsl(0,0%,15%);
     color: #cfbda7;
-    text-shadow: black;
+    text-shadow: var(--pf2e-shadow-is-dark);
     line-height: 20px;
 }
+
 
 #chat-log .pf2e.chat-card [data-visibility=owner] button {
     text-transform: uppercase;
     border:none;
-    background: #008000;
+    background: hsl(0,0%,15%);
     color: #fff;
 }
 
@@ -256,39 +365,152 @@ a.inline-roll.blindroll {
 #chat-log button:focus {
     transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
     color: #cfbda7;
-    background-color:rgba(110,0,0,1);
+    background-color:hsl(0,0%,15%);
+    box-shadow: var(--glassy);
     cursor: pointer;
 } 
 
-#chat-log .message-content .chat-damage-buttons button.shield-block {
-    background-color: darkblue;
+#chat-log select, 
+#chat-log button, 
+#chat-log form button, 
+.dice-roll .dice-formula, 
+.dice-total:not(.statuseffect-message), 
+.message-content .chat-damage-buttons button {
+    background: var(--glassy);
+    box-shadow: var(--glassy);
+    border: none;
     color: #cfbda7;
-    text-shadow: black;
-    border:none;
+}
+
+.dice-total:hover,
+.dice-roll .dice-formula:hover,
+#chat-log button:hover {
+    transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
+    color: #cfbda7;
+    background-color:rgba(110,0,0,1);
+    box-shadow: var(--glassy);
+    cursor: pointer;
+}
+
+
+.dice-total:hover,
+.dice-roll .dice-formula:hover {
+    transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
+    color: #cfbda7;
+    background-color:hsl(0,0%,15%);
+    cursor: pointer;
+}
+
+#chat-log .pf2e.chat-card .card-buttons button:hover {
+    background-color: rgba(110,0,0,1);
+    box-shadow: var(--glassy);
+    border: none;
+}
+
+button > i {
+    margin-right: 0px;
+}
+
+/*Damages*/
+button.half-damage .fa-heart-broken::after {
+    content: "\f7a9";
+    font-family: "Font Awesome 5 Free";
+    color: hsla(0, 0%, 0%, 0.5);
+    display: block;
+    z-index: 1;
+    position: absolute;
+    top: -1px;
+    left: 0;
+    width: 50%;
+    overflow: hidden;
+}
+.message-content .chat-damage-buttons button>.transparent-half {
+    background: none;
+    display: block;
+    height: 24px;
+    left: 48%;
+    opacity: .6;
+    position: absolute;
+    top: 0;
+    width: 16px;
+}
+.message-content .chat-damage-buttons button {
+    background: rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 2px #fff inset;
+    border: 1px solid var(--color-border-light-2);
+}
+
+#chat-log button:hover img {
+    filter: var(--filter-dark);
+}
+
+.pf2e.chat-card .card-footer span {
+    border-right: 1px groove #fff;
+}
+
+.chat-message .message-content {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+
+/*Shield*/
+#chat-log .message-content .chat-damage-buttons button.shield-block .fa-shield-alt {
+    color: #cfbda7
+}
+
+#chat-log .message-content .chat-damage-buttons button.shield-block.shield-activated .fa-shield-alt,
+#chat-log .message-content .chat-damage-buttons button.shield-block:hover .fa-shield-alt {
+    color: #cfbda7;
 }
 
 #chat-log .message-content .chat-damage-buttons button.shield-block:hover {
-    background-color: #008000;
-    border:none;
+    color: #cfbda7;
+    background-color: blue;
 }
 
 #chat-log .message-content .chat-damage-buttons button.shield-block.shield-activated {
-    background-color: rgba(110,0,0,1);
-    border:none;
-}
-
-#chat-log .message-content .chat-damage-buttons button.shield-blockshield-activated,
-#chat-log .message-content .chat-damage-buttons button.shield-block:hover {
     color: #cfbda7;
-    text-shadow: black;
-    border:none;
+    background-color: rgba(0, 68, 255, 0.5);
 }
 
 #chat-log .message-content .chat-damage-buttons button.shield-block.shield-activated:hover {
-    background-color:blue;
     color: #cfbda7;
-    border:none;
+    background-color: blue;
 }
+
+/*Heal*/
+#chat-log .message-content .chat-damage-buttons button.heal-damage .plus {
+    color: hsl(0,0%,15%);
+    text-shadow: none;
+}
+
+#chat-log .message-content .chat-damage-buttons button.heal-damage:hover {
+    color: #cfbda7;
+    background-color: darkgreen;
+}
+#chat-log .message-content .chat-damage-buttons button.heal-damage:hover .plus{
+    color: darkgreen;
+}
+
+button.half-damage .fa-heart-broken::after {
+    content:"\f7a9";
+    font-family: "Font Awesome 5 Free";
+    color: rgba(38, 38, 38, 0.5);
+    display: block;
+    z-index: 1;
+    position: absolute;
+    top: -1px;
+    left: 0;
+    width: 50%;
+    overflow: hidden;
+}
+
+#chat-log .message-content .chat-damage-buttons button:hover {
+    text-shadow: var(--pf2e-shadow-is-dark);
+}
+
 
 /*Damage tag base & modifier*/
 .damage-tag {
@@ -296,15 +518,17 @@ a.inline-roll.blindroll {
 }
 
 .damage-tag-base {
-    background: darkslategrey;
+    background: var(--pf2e-translucent-middle);
     text-transform: uppercase;
     font-style: normal;
-    color: #fff;
+    color:hsl(0, 0%, 0%);
 }
 
 .damage-tag-modifier {
-    background: #008000;
+    background: var(--pf2e-translucent-very);
     text-transform: uppercase;
     font-style: normal;
-    color: #fff;
+    color:var(--pf2e-body-primary);
 }
+
+/*-------------------------------------------------*/
