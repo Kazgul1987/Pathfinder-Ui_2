@@ -219,6 +219,11 @@
     text-shadow: none;
 }
 
+.tags .tag_alt.tag {
+    color:black;
+    text-transform: uppercase;
+}
+
 .message-content .chat-damage-buttons button>i.fas {
     left: 0px;
     top: 0px;
@@ -488,10 +493,10 @@ button.half-damage .fa-heart-broken::after {
 
 #chat-log .message-content .chat-damage-buttons button.heal-damage:hover {
     color: #cfbda7;
-    background-color: darkgreen;
+    background-color: #91a82a;
 }
 #chat-log .message-content .chat-damage-buttons button.heal-damage:hover .plus{
-    color: darkgreen;
+    color: #91a82a;
 }
 
 button.half-damage .fa-heart-broken::after {
@@ -522,13 +527,17 @@ button.half-damage .fa-heart-broken::after {
     text-transform: uppercase;
     font-style: normal;
     color:hsl(0, 0%, 0%);
+    border: 1px solid rgba(255,255,255,0.5);
+    text-shadow: none;
 }
 
 .damage-tag-modifier {
-    background: var(--pf2e-translucent-very);
+    background: var(--alt);
     text-transform: uppercase;
     font-style: normal;
-    color:var(--pf2e-body-primary);
+    color:hsl(0, 0%, 0%);
+    border: 1px solid rgba(255,255,255,0.5);
+    text-shadow: none;
 }
 
 /*-------------------------------------------------*/

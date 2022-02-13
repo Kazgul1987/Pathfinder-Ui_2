@@ -462,7 +462,7 @@ body.compact-mode #logo {
 
 }
 .flavor-text div.degree-of-success .criticalSuccess{
-    color:rgb(55, 245, 55)
+    color:#91a82a
 }
 .flavor-text div.degree-of-success .success{
     color:rgb(100, 216, 255)
@@ -480,7 +480,7 @@ body.compact-mode #logo {
     font-weight: bold;
   }
   .dice-roll .dice-total.success {
-    color: rgb(55, 245, 55);
+    color: #91a82a;
   }
   .dice-roll .dice-total.failure {
     color: rgb(247, 59, 59);
@@ -488,6 +488,23 @@ body.compact-mode #logo {
   .dice-roll .dice-tooltip {
     display: none;
   }
+
+.flavor-text .adjusted-dc.decreased {
+    text-rendering: optimizeLegibility;
+    background-color: var(--primary);
+    border: 1px solid rgba(255,255,255,0.5);
+    text-shadow: none;
+    border-radius: 50%;
+    box-shadow: inset 0 0 0 1px rgb(0 0 0 / 50%);
+    color: #cfbda7;
+    font-family: var(--sans-serif);
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: .05em;
+    line-height: 1;
+    padding: 3px 4px;
+    text-transform: uppercase;
+}
 
 .message-sender {
     color: #cfbda7;
