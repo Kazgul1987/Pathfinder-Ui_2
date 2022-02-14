@@ -3,6 +3,9 @@
 ## Compatibility
 - Ready for v9.
 
+## v9.249.7
+- Bugfixe, bad color for tag_alt
+
 ## v9.249.6
 - Chat log improvements with focus on the new flanking debuff
 

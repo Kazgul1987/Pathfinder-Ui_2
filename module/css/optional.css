@@ -1,9 +1,18 @@
+:root {
+  --pf2e-translucent-middle: var(--pf2e-translucent-middle-for-light);
+  --pf2e-translucent-middle-for-light: hsla(0, 0%, 80%,0.5);
+} 
+
 [data-visibility="gm"]:is(div,em,p,span,strong) {
-  background-color: rgba(130, 130, 130, 0.1) !important;
-  border: 1px dotted !important;
+  background: rgba(130, 130, 130, 0.1) !important;
+  border: 1px dotted var(--pf2e-translucent-middle) !important;
+  border-radius: 3px;
+  box-sizing: border-box;
 }
 
 [data-visibility="owner"]:is(div,em,p,span,strong) {
-  background-color: rgba(130, 130, 130, 0.1) !important;
-  border: 1px dotted !important;
+  background: rgba(130, 130, 130, 0.1) !important;
+  border: 1px dotted var(--pf2e-translucent-middle) !important;
+  border-radius: 3px;
+  box-sizing: border-box;
 }

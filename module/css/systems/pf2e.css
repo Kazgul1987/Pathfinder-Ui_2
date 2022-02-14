@@ -219,9 +219,8 @@
     text-shadow: none;
 }
 
-.tags .tag_alt.tag {
+#chat-log .tags .tag_alt.tag {
     color:black;
-    text-transform: uppercase;
 }
 
 .message-content .chat-damage-buttons button>i.fas {
