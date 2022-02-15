@@ -65,6 +65,32 @@
     box-shadow: rgb(0, 0, 0) 0px 0px 10px 0px
 }
 
+/* DF Chat Enhancements */
+/* https://github.com/flamewave000/dragonflagon-fvtt/tree/master/df-chat-enhance */
+#dfcp-rt-buttons button {
+    transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
+    background: var(--glassy);
+    border: none;
+    border-radius: 50%;
+    color: #cfbda7;
+    box-shadow: var(--glassy);
+    cursor: pointer;
+}
+
+#dfcp-rt-buttons button:hover {
+    color: #ff6400;
+    border-color: #ff6400;
+    box-shadow: 0 0 6px inset #ff6400;
+}
+
+#dfcp-rt-buttons button[data-id=publicroll].active {
+    background-color: #91a82a;
+}
+
+#dfcp-rt-buttons button[data-id=selfroll].active {
+    background-color: #ff6400;
+}
+
 /* Monk's TokenBar */
 /* https://github.com/ironmonk88/monks-tokenbar */
 
