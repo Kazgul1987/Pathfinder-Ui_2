@@ -725,6 +725,13 @@ body.compact-mode #logo {
 /*************************************************************/
 /*========================= HOTBAR ==========================*/
 /*************************************************************/
+#fps {
+    position: absolute;
+    right: 300px;
+    order: 2;
+    border: 0px solid var(--color-border-light-tertiary);
+    border-radius: 5px;
+}
 
 #ui-bottom > div {
     justify-content: center;
