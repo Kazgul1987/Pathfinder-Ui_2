@@ -3,6 +3,9 @@
 ## Compatibility
 - Ready for v9.
 
+## v9.249.9
+- Chat card content added in optional
+
 ## v9.249.8
 - add DF Chat Enhancements support
 
