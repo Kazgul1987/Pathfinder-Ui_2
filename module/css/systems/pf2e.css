@@ -189,6 +189,9 @@
 .minimal-ui-mode #ui-bottom > div {
     justify-content: inherit!important;
 }
+.minimal-ui-mode #players {
+    position: static !important;
+}
 .minimal-ui-mode #navigation #scene-list {
     margin-left: 16px;
 }
