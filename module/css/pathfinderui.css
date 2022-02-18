@@ -1273,14 +1273,14 @@ button#roll-hd:hover::before {
     background: none;
 }
 
-.app.journal-sheet::before{
+.app.journal-sheet::before {
     position: absolute;
     content: " ";
     width: 106%;
     height: 105%;
     top: -1%;
     left: -3%;
-    background:url(../ui/other/paper_texture.webp);
+    background: url(../ui/other/paper_texture.webp);
     background-size: cover;
     z-index: -1;
 
@@ -1290,14 +1290,14 @@ button#roll-hd:hover::before {
     -webkit-mask-position: center;
 }
 
-.app.journal-sheet::after{
+.app.journal-sheet::after {
     position: absolute;
     content: " ";
     width: 106%;
     height: 105%;
     top: -1%;
     left: -3%;
-    background:url(../ui/other/journal_background.webp);
+    background: url(../ui/other/journal_background.webp);
     background-size: 100% 100%;
     opacity: 0.90;
     z-index: -2;
@@ -1339,14 +1339,14 @@ button#roll-hd:hover::before {
 }
 
 .app.journal-sheet .window-header .window-title {
-    opacity: 100%;
+    opacity: 0;
 }
 
 .app.journal-sheet .window-header {
     border: none;
 }
 
-.journal-sheet form input[name="name"] {
+.app:not(.monks-enhanced-journal).journal-sheet form input[name="name"] {
     position: relative;
     z-index: 10;
     padding: 10px 0px 20px 0px;
@@ -1361,7 +1361,7 @@ button#roll-hd:hover::before {
     border-bottom: 5px groove #eeede0;
 }
 
-.journal-sheet .window-resizable-handle {
+.app:not(.monks-enhanced-journal).journal-sheet .window-resizable-handle {
     bottom: 5%;
     right: 5%;
 }
@@ -1384,7 +1384,7 @@ button#roll-hd:hover::before {
     top: 4px;
     position: absolute;
     content: " ";
-    background:url(../ui/buttons/close_icon.webp);
+    background: url(../ui/buttons/close_icon.webp);
     background-size: 100% 100%;
 }
 
@@ -1393,7 +1393,7 @@ button#roll-hd:hover::before {
 }
 
 .journal-sheet .header-button.close:hover::before {
-    background:url(../ui/buttons/close_icon_hover.webp);
+    background: url(../ui/buttons/close_icon_hover.webp);
     background-size: 100% 100%;
 }
 
@@ -1405,7 +1405,7 @@ button#roll-hd:hover::before {
 }
 
 .journal-sheet ::-webkit-scrollbar-track {
-    background: transparent!important;
+    background: transparent !important;
 }
 
 .journal-sheet .window-resizable-handle {
@@ -1459,6 +1459,36 @@ button#roll-hd:hover::before {
 .journal-sheet.image-popout .window-content {
     margin-top: 30px;
     background: none;
+}
+
+.journal-sheet a.entity-link,
+.journal-sheet a.inline-roll {
+    background: #d3c3a7ab;
+    padding: 0px 3px;
+    border: 2px solid #2f271aab;
+    border-radius: 4px;
+}
+
+.journal-sheet.minimized {
+    padding: 1px 0px;
+}
+
+.journal-sheet.minimized .window-header .window-title {
+    opacity: 100;
+    color: rgb(93, 24, 13);
+    font-size: .505cm;
+    font-weight: bold;
+}
+
+.app.journal-sheet.minimized::before {
+    -webkit-mask-image: none;
+    border-image-source: url(../ui/frames/input_border.webp);
+    border-image-slice: 5 20 20 20 fill;
+    border-image-repeat: repeat repeat;
+    border-image-width: auto;
+    border-image-outset: 1px 2px 2px 2px;
+    border-radius: 0;
+    box-shadow: rgb(0, 0, 0) 0px 0px 20px 0px
 }
 
 /*************************************************************/

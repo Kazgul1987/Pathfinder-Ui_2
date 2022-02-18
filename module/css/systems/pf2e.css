@@ -72,7 +72,7 @@
     background: var(--glassy);
     border: none;
     border-radius: 50%;
-    color: #cfbda7;
+    color: #837360;
     box-shadow: var(--glassy);
     cursor: pointer;
 }
@@ -189,9 +189,51 @@
 .minimal-ui-mode #ui-bottom > div {
     justify-content: inherit!important;
 }
-.minimal-ui-mode #players {
-    position: static !important;
+:root {
+    --hotbarvis: visible;
+    --hotbarypos: -5px;
+    --hotbarxpos: 400px;
+    --hotbarlh1: 24px;
+    --hotbarlh2: 8px;
+    --hotbarhv: -5px;
+    --hotbarmg: 0px;
+    --hotbarhh: 100%;
+    --hotbarshp: 0px;
 }
+
+.minimal-ui-mode #hotbar {
+    left: var(--hotbarxpos);
+    bottom: var(--hotbarypos);
+    visibility: var(--hotbarvis);
+    transition: 0.5s ease-out 0.5s;
+    opacity: var(--opacity);
+    position: absolute;
+}
+
+:root {
+    --playervis: hidden;
+    --playerfsize: 0px;
+    --playerfsizehv: 12px;
+    --playerwidthhv: 150px;
+    --playerslh: 20px;
+    --playerbennies: none;
+    --playerh3w: unset;
+    --playerbot: -8px;
+    --playerleft: -8px;
+    --playerpingdisplay: initial;
+}
+
+.minimal-ui-mode #players {
+    bottom: var(--playerbot);
+    left: var(--playerleft);
+    font-size: var(--playerfsize);
+    visibility: var(--playervis);
+    opacity: var(--opacity);
+    box-shadow:none;
+    position: absolute;
+    border: none;
+}
+
 .minimal-ui-mode #navigation #scene-list {
     margin-left: 16px;
 }

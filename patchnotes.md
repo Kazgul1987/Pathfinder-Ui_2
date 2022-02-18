@@ -3,6 +3,9 @@
 ## Compatibility
 - Ready for v9.
 
+## v9.249.11
+- update support Minimal Ui (see option)
+
 ## v9.249.10
 - update support Minimal Ui (see option)
 
