@@ -3,6 +3,12 @@
 ## Compatibility
 - Ready for v9.
 
+## v9.249.12
+- Combat-Carousel : fix overlay config, the values appeared under the rings
+- Fix table roll text & Image table result in the chat
+- Update support Minimal Ui (see option)
+- Add original texture to increase brightness of interface backgrounds
+
 ## v9.249.11
 - update support Minimal Ui (see option)
 

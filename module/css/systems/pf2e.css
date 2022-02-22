@@ -554,7 +554,7 @@ button.half-damage .fa-heart-broken::after {
 }
 
 #chat-log .message-content .chat-damage-buttons button.heal-damage:hover {
-    color: #cfbda7;
+    color: rgb(0, 0, 0);
     background-color: #91a82a;
 }
 #chat-log .message-content .chat-damage-buttons button.heal-damage:hover .plus{
