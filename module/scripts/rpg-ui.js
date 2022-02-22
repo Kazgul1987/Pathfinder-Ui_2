@@ -137,9 +137,3 @@ Hooks.on('renderSidebarTab', async (object, html) => {
 	  details.append(list.firstChild)
 	}
   })
-
-Hooks.once('ready', () => {
-
-	//FolderTranslate.translateFolders()
-	registerUsageCount("pathfinder-ui")
-});
