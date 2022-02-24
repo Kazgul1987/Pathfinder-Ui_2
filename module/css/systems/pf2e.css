@@ -71,7 +71,7 @@
     transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
     background: var(--glassy);
     border: none;
-    border-radius: 50%;
+    border-radius: 30px;
     color: #837360;
     box-shadow: var(--glassy);
     cursor: pointer;
@@ -110,6 +110,16 @@
 
 #chat .monks-tokenbar.chat-card .card-footer span {
     border-right: 2px groove var(--monks-border-color);
+    font-size: 9px;
+}
+
+.monks-tokenbar .footer-button {
+    width: 18px;
+    height: 18px;
+    float: right;
+    font-size: 11px;
+    line-height: 11px;
+    padding: 0px 2px;
 }
 
 #chat .monks-tokenbar .sheet .items-list {
@@ -336,7 +346,7 @@ div#scrollToBottom {
     flex: 0;
     display: flex;
     border: none;
-    background-color: blue;
+    background-color: #61180e;
     text-align: center;
     border-radius: 5px;
     box-shadow: var(--glassy);
@@ -347,8 +357,9 @@ div#scrollToBottom {
 }
 
 div#scrollToBottom:hover {
+    color:#0e0e0e;
     transition: background-color 0.15s ease-in-out;
-    background-color: lightskyblue;
+    background-color: #91a82a;
 }
 
 .chat-damage-buttons button {

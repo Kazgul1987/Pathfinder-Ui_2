@@ -12,7 +12,7 @@
         }
     ],
   "flags": {},
-  "version": "9.249.12",
+  "version": "9.249.13",
   "minimumCoreVersion": "9",
   "compatibleCoreVersion": "9",
   "scripts": [
@@ -45,7 +45,7 @@
   "socket": false,
   "url": "https://gitlab.com/sasmira/pathfinder-ui",
   "manifest": "https://gitlab.com/sasmira/pathfinder-ui/-/raw/master/module/module.json",
-  "download": "https://gitlab.com/sasmira/pathfinder-ui/-/jobs/artifacts/v9.249.12/raw/pathfinder-ui.zip?job=build",
+  "download": "https://gitlab.com/sasmira/pathfinder-ui/-/jobs/artifacts/v9.249.13/raw/pathfinder-ui.zip?job=build",
   "protected": false,
   "coreTranslation": false,
   "library": false
