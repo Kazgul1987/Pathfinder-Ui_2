@@ -3,6 +3,9 @@
 ## Compatibility
 - Ready for v9.
 
+## v9.255.1
+- fix issue [#46](https://gitlab.com/sasmira/pathfinder-ui/-/issues/46)
+
 ## v9.249.13
 - Update DF Chat Enhancements support
 - Update Monk's TokenBar support

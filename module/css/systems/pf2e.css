@@ -503,7 +503,7 @@ button.half-damage .fa-heart-broken::after {
     overflow: hidden;
 }
 .message-content .chat-damage-buttons button>.transparent-half {
-    background: none;
+    background: none !important;
     display: block;
     height: 24px;
     left: 48%;
