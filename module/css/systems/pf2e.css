@@ -395,15 +395,20 @@ a.inline-roll.blindroll {
 }
 
 #chat-log .message [data-visibility="owner"]:is(div,em,p,span,strong) {
-    background: none;
-}
-
-[data-visibility=owner]:is(div,em,p,span,strong) {
     font-style: italic;
     color: greenyellow ;
     border: none;
     box-shadow: none;
+    background: none;
 }
+
+/*[data-visibility=owner]:is(div,em,p,span,strong) {
+    font-style: italic;
+    color: greenyellow ;
+    border: none;
+    box-shadow: none;
+}*/
+
 #chat-log .pf2e.chat-card .card-buttons button {
     margin: 0px;
     background-color: hsl(0,0%,15%);
@@ -411,7 +416,6 @@ a.inline-roll.blindroll {
     text-shadow: var(--pf2e-shadow-is-dark);
     line-height: 20px;
 }
-
 
 #chat-log .pf2e.chat-card [data-visibility=owner] button {
     text-transform: uppercase;
