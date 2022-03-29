@@ -530,11 +530,11 @@ button.half-damage .fa-heart-broken::after {
     border-right: 1px groove #fff;
 }
 
-.chat-message .message-content {
+/*.chat-message .message-content {
     display: flex;
     flex-direction: row;
     gap: 5px;
-}
+}*/
 
 
 /*Shield*/
