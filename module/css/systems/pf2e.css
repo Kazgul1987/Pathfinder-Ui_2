@@ -532,7 +532,7 @@ button.half-damage .fa-heart-broken::after {
 
 .chat-message .message-content {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 5px;
 }
 

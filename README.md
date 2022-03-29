@@ -23,4 +23,4 @@ https://gitlab.com/sasmira/pathfinder-ui/-/raw/master/module/module.json
 
 ## Version & Compatibility
 
-- Tested on 0.8.9 version.
+- Tested on v9.255 version.
