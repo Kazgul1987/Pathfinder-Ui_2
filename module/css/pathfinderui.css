@@ -380,13 +380,17 @@ body.compact-mode #logo {
     margin: 0 6px 10px
 }
 
+/*#chat-controls .control-buttons {
+    color:rgba(255, 255, 245, 0.8);
+}*/
+
 #chat-controls::before {
     position: relative;
     content: ' ';
     background: url(../ui/frames/brown_line.webp);
-    background-size: 300px 7px;
+    background-size: 350px 7px;
     left: -3px;
-    width: 300px;
+    width: 350px;
     height: 7px;
     bottom: 8px;
 }
@@ -407,12 +411,13 @@ body.compact-mode #logo {
 #chat-log .message::before {
     content: " ";
     position: absolute;
+    background-repeat: no-repeat;
     background: url(../ui/frames/chat-texture-light.webp) !important;
-    background-size: 100% 100% !important;
-    width: 100%;
-    height: 100%;
-    left: 0px;
-    top: 0px;
+    background-size: 95% 110% !important;
+    width: calc(100% + 35px);
+    height: calc(100% + 15%);
+    left: -10px;
+    top: -15%;
     z-index: -1;
 
     filter: brightness(1.4);
@@ -472,16 +477,16 @@ body.compact-mode #logo {
 
 }
 .flavor-text div.degree-of-success .criticalSuccess{
-    color:#91a82a
+    color:#91a82a !important;
 }
 .flavor-text div.degree-of-success .success{
-    color:rgb(100, 216, 255)
+    color:rgb(100, 216, 255) !important;
 }
 .flavor-text div.degree-of-success .failure{
-    color:#ff7644
+    color:#ff7644 !important;
 }
 .flavor-text div.degree-of-success .criticalFailure{
-    color:rgb(247, 59, 59)
+    color:rgb(247, 59, 59) !important;
 }
 
 .dice-roll .dice-total {
@@ -490,10 +495,10 @@ body.compact-mode #logo {
     font-weight: bold;
   }
   .dice-roll .dice-total.success {
-    color: #91a82a;
+    color: #91a82a !important;
   }
   .dice-roll .dice-total.failure {
-    color: rgb(247, 59, 59);
+    color: rgb(247, 59, 59) !important;
   }
   .dice-roll .dice-tooltip {
     display: none;
@@ -524,8 +529,9 @@ body.compact-mode #logo {
 }
 
 .polyglot-lang-select{
-    color: darkgoldenrod !important;
+    color: #cfbda7 !important;
 }
+
 .polyglot-lang-select select {
     font-family: CaslonPro;
     font-weight: 500;

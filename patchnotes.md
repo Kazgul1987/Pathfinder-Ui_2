@@ -3,6 +3,9 @@
 ## Compatibility
 - Ready for v9.
 
+## v9.255.5
+- fix data-visibility color
+
 ## v9.255.4
 - fix issue [#47](https://gitlab.com/sasmira/pathfinder-ui/-/issues/47)
 
