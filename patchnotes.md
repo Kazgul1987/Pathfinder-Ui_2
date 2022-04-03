@@ -3,6 +3,9 @@
 ## Compatibility
 - Ready for v9.
 
+## v9.255.6
+- fix adjusted-dc text color
+
 ## v9.255.5
 - fix data-visibility color
 
