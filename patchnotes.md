@@ -3,6 +3,9 @@
 ## Compatibility
 - Ready for v9.
 
+## v9.269.1
+- add German translation thx @PhilHoffm
+
 ## v9.255.6
 - fix adjusted-dc text color
 
