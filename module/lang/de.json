@@ -1,0 +1,21 @@
+{
+    "I18N.MAINTAINERS": ["Xbozon"],
+
+    "RPGUI.SETTINGS.NAVIGATION": "Schalte die Navigation zurück in den horizontalen Modus",
+    "RPGUI.SETTINGS.NAVIGATION_HINT": "Verwende diesen Schalter, wenn du die Combat Carousel-Integration nicht verwendest",
+
+    "RPGUI.SETTINGS.COMPACT_MODE": "Kompakt mode",
+    "RPGUI.SETTINGS.COMPACT_MODE_HINT": "Verkleinert das linke Menü und entfernt das Logo",
+
+    "RPGUI.SETTINGS.STANDARD_LOGO": "Standard Logo",
+    "RPGUI.SETTINGS.STANDARD_LOGO_HINT": "Zurück zum Standardlogo anstelle des Textlogos",
+
+    "RPGUI.SETTINGS.DISABLE_STYLES": "Deaktiviere Pathfinder UI",
+    "RPGUI.SETTINGS.DISABLE_STYLES_HINT": "Dies ist eine lokale Einstellung, mit der jeder Spieler Stile deaktivieren kann",
+
+    "RPGUI.SETTINGS.MINIMAL_UI": "Minimale UI Unterstützung",
+    "RPGUI.SETTINGS.MINIMAL_UI_HINT": "Behebt einige (nicht alle) Probleme mit dem minimalen UI",
+
+    "RPGUI.SETTINGS.HIGHLIGHT_GM_OWNER_TEXT": "Markiere den Text von SL & Besitzer",
+    "RPGUI.SETTINGS.HIGHLIGHT_GM_OWNER_TEXT_HINT": "Lokale Einstellung, die Text hervorhebt, der nur für den SL (oder Eigentümer) sichtbar ist."
+}
