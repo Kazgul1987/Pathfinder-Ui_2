@@ -9,6 +9,7 @@
     --pf2e-shadow-is-dark: 0px 1px var(--pf2e-half-transparent-dark);
     --filter-dark: invert(100%) drop-shadow(0px 1px 1px black);
     --pf2e-half-transparent-dark: hsla(0, 0%, 0%,0.5);
+    --color-text-hyperlink: #ff6400;
 }
 
 .system-pf2e .sheet.actor:not(.loot-sheet-npc),
@@ -614,4 +615,8 @@ button.half-damage .fa-heart-broken::after {
     text-shadow: none;
 }
 
+/* DIALOG */
+#chat-log a[href] {
+    color: var(--color-text-hyperlink);
+}
 /*-------------------------------------------------*/

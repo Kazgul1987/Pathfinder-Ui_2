@@ -3,6 +3,9 @@
 ## Compatibility
 - Ready for v9.
 
+## v9.269.2
+- fix color-text-hyperlink in the chat.
+
 ## v9.269.1
 - add German translation thx @PhilHoffm
 
