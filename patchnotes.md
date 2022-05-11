@@ -3,6 +3,9 @@
 ## Compatibility
 - Ready for v9.
 
+## v9.269.3
+- tentative to support Journal links in BB module
+
 ## v9.269.2
 - fix color-text-hyperlink in the chat.
 

@@ -1479,7 +1479,8 @@ button#roll-hd:hover::before {
 
 .journal-sheet a.entity-link,
 .journal-sheet a.inline-roll {
-    background: #d3c3a7ab;
+    color: revert !important;
+    background: #d3c3a7ab !important;
     padding: 0px 3px;
     border: 2px solid #2f271aab;
     border-radius: 4px;
