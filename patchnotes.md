@@ -1,7 +1,10 @@
 # Patch Notes
 
 ## Compatibility
-- Ready for v9.
+- Ready for v10 version.
+
+## v10.284.1
+- First release for Foundry VTT v10
 
 ## v9.269.3
 - tentative to support Journal links in BB module

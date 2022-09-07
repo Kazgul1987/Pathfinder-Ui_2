@@ -1,57 +1,57 @@
 {
+  "id": "pathfinder-ui",
   "name": "pathfinder-ui",
   "title": "Pathfinder Ui v3",
   "description": "Theme only for Pathfinder 2e. <p>*** Join the official Discord server: <a href=\"https://discord.gg/foundryvtt\"> Official Discord</a></p><p>*** Rejoignez la communauté Francophone: <a href=\"https://discord.gg/pPSDNJk\">Francophone Discord</a></p>",
-  "author": "Sasmira",
-    "authors": [
-        {
-            "name": "Sasmira",
-            "email": "sasmyra@gmail.com",
-            "url": "https://gitlab.com/sasmira/pathfinder-ui",
-            "Discord": "Sasmira#4566"
-        }
-    ],
-  "flags": {},
-  "version": "9.269.3",
-  "minimumCoreVersion": "9",
-  "compatibleCoreVersion": "9",
+  "authors": [
+    {
+      "name": "Sasmira",
+      "email": "sasmyra@gmail.com",
+      "url": "https://gitlab.com/sasmira/pathfinder-ui",
+      "flags": {}
+    }
+  ],
+  "version": "10.284.1",
+  "compatibility": {
+    "minimum": "10",
+    "verified": "10.284",
+    "maximum": "10"
+},
+"minimumCoreVersion": "10",
+"compatibleCoreVersion": "10",
   "scripts": [
     "scripts/rpg-ui.js"
   ],
   "esmodules": [
     "scripts/dicefinder.js"
   ],
-  "styles": [],
   "languages": [
     {
       "lang": "en",
       "name": "English",
-      "path": "lang/en.json"
+      "path": "lang/en.json",
+      "flags": {}
     },
     {
       "lang": "fr",
       "name": "French (Français)",
-      "path": "lang/fr.json"
+      "path": "lang/fr.json",
+      "flags": {}
     },
     {
       "lang": "es",
       "name": "Spanish (Español)",
-      "path": "lang/es.json"
+      "path": "lang/es.json",
+      "flags": {}
     },
     {
       "lang": "de",
       "name": "German (Deutch)",
-      "path": "lang/de.json"
+      "path": "lang/de.json",
+      "flags": {}
     }
   ],
-  "packs": [],
-  "system": ["pf2e"],
-  "dependencies": [],
-  "socket": false,
   "url": "https://gitlab.com/sasmira/pathfinder-ui",
   "manifest": "https://gitlab.com/sasmira/pathfinder-ui/-/raw/master/module/module.json",
-  "download": "https://gitlab.com/sasmira/pathfinder-ui/-/jobs/artifacts/v9.269.3/raw/pathfinder-ui.zip?job=build",
-  "protected": false,
-  "coreTranslation": false,
-  "library": false
+  "download": "https://gitlab.com/sasmira/pathfinder-ui/-/jobs/artifacts/v10.284.1/raw/pathfinder-ui.zip?job=build"
 }
