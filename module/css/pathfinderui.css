@@ -76,11 +76,11 @@ body.compact-mode #logo {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    position: fixed;
+    position: relative;
     right: -8px;
     top: -10px;
     overflow: visible;
-    width: 310px;
+    width: 23em;
     padding: 0px 4px;
     background: none;
     box-shadow: none;
@@ -772,7 +772,7 @@ body.compact-mode #logo {
 /*************************************************************/
 #fps {
     position: absolute;
-    right: 300px;
+    right: 250px;
     order: 2;
     border: 0px solid var(--color-border-light-tertiary);
     border-radius: 5px;
@@ -784,7 +784,7 @@ body.compact-mode #logo {
 
 #hotbar {
     position: relative;
-    right: 145px;
+    right: 25px;
 }
 
 #hotbar #action-bar {

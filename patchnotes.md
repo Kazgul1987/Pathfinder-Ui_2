@@ -3,6 +3,9 @@
 ## Compatibility
 - Ready for v10 version.
 
+## v10.285.1
+- fix sidebar size with video mode on.
+- fix effect panel position.
 ## v10.284.1
 - First release for Foundry VTT v10
 

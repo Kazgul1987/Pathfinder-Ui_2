@@ -10,6 +10,7 @@
     --filter-dark: invert(100%) drop-shadow(0px 1px 1px black);
     --pf2e-half-transparent-dark: hsla(0, 0%, 0%,0.5);
     --color-text-hyperlink: #ff6400;
+    --gold-and-glow: 0 0 0 1px var(--tertiary), 0 0 0 2px #9f725b, inset 0 0 3px rgba(255, 255, 255, .5);
 }
 
 .system-pf2e .sheet.actor:not(.loot-sheet-npc),
@@ -54,16 +55,20 @@
 }
 
 .system-pf2e .effect-panel {
-    right: 310px;
-    top: 10px;
+    right: 0px;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
 }
 
 .effect-panel div[data-item-id] {
     position: relative;
     border-radius: 50%;
-
     border: 2px solid var(--border-color);
-    box-shadow: rgb(0, 0, 0) 0px 0px 10px 0px
+    box-shadow: rgb(0, 0, 0) 0px 0px 10px 0px;
 }
 
 /* DF Chat Enhancements */
