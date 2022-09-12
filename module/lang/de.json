@@ -1,6 +1,4 @@
 {
-    "I18N.MAINTAINERS": ["Xbozon"],
-
     "RPGUI.SETTINGS.NAVIGATION": "Schalte die Navigation zurück in den horizontalen Modus",
     "RPGUI.SETTINGS.NAVIGATION_HINT": "Verwende diesen Schalter, wenn du die Combat Carousel-Integration nicht verwendest",
 

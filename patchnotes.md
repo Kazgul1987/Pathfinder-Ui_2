@@ -3,6 +3,8 @@
 ## Compatibility
 - Ready for v10 version.
 
+## v10.285.2
+- fix errors with Quick Insert module
 ## v10.285.1
 - fix sidebar size with video mode on.
 - fix effect panel position.
