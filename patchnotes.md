@@ -3,6 +3,9 @@
 ## Compatibility
 - Ready for v10 version.
 
+## v10.286.1
+- fix fps windows position
+- fix hotbar position
 ## v10.285.2
 - fix errors with Quick Insert module
 ## v10.285.1
