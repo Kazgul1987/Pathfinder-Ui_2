@@ -3,6 +3,8 @@
 ## Compatibility
 - Ready for v10 version.
 
+## v10.286.2
+- fix hotbar position
 ## v10.286.1
 - fix fps windows position
 - fix hotbar position

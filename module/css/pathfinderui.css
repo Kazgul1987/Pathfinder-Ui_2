@@ -784,7 +784,7 @@ body.compact-mode #logo {
 
 #hotbar {
     left: 500px;
-    bottom: 250px;
+    bottom: -5px;
     transition: 0.5s ease-out 0.5s;
     position: absolute;
 }
