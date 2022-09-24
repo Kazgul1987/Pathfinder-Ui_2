@@ -1,5 +1,11 @@
 Hooks.on('init', () => {
 	// Register module settings.
+
+	Hooks.on('ready', async () => {
+		// Retrait de la classe de Monk's Little Details
+		$("body").removeClass("change-windows");
+	});
+
 	game.settings.register('pathfinder-ui', 'navigationVerticalToggle', {
 		name: game.i18n.localize('RPGUI.SETTINGS.NAVIGATION'),
 		hint: game.i18n.localize('RPGUI.SETTINGS.NAVIGATION_HINT'),

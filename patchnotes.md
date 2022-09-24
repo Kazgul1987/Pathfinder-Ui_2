@@ -3,16 +3,23 @@
 ## Compatibility
 - Ready for v10 version.
 
+## v10.286.3
+- add compatibility with Monks little details module
+
 ## v10.286.2
 - fix hotbar position
+
 ## v10.286.1
 - fix fps windows position
 - fix hotbar position
+
 ## v10.285.2
 - fix errors with Quick Insert module
+
 ## v10.285.1
 - fix sidebar size with video mode on.
 - fix effect panel position.
+
 ## v10.284.1
 - First release for Foundry VTT v10
 
