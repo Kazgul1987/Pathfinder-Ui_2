@@ -3,6 +3,9 @@
 ## Compatibility
 - Ready for v10 version.
 
+## v10.286.4
+- fix hotbar position (again)
+
 ## v10.286.3
 - add compatibility with Monks little details module
 
