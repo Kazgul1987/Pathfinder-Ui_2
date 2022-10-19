@@ -3,6 +3,9 @@
 ## Compatibility
 - Ready for v10 version.
 
+## v10.288.1
+- restriction to pf2e system added
+
 ## v10.286.4
 - fix hotbar position (again)
 
