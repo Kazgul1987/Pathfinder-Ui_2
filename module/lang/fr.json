@@ -1,19 +1,25 @@
 {
-    "RPGUI.SETTINGS.NAVIGATION": "Navigation Horizontale",
+    "RPGUI.SETTINGS.NAVIGATION": "Navigation Horizontale.",
     "RPGUI.SETTINGS.NAVIGATION_HINT": "Utilisez ce bouton si vous n'utilisez pas Combat Carousel.",
 
-    "RPGUI.SETTINGS.COMPACT_MODE": "Mode Compact",
+    "RPGUI.SETTINGS.COMPACT_MODE": "Mode Compact.",
     "RPGUI.SETTINGS.COMPACT_MODE_HINT": "Réduit la taille du menu de gauche et supprime le logo.",
 
-    "RPGUI.SETTINGS.STANDARD_LOGO": "Logo Standard",
-    "RPGUI.SETTINGS.STANDARD_LOGO_HINT": "Remet le logo Foundry au lieu du logo texte",
+    "RPGUI.SETTINGS.STANDARD_LOGO": "Logo Standard.",
+    "RPGUI.SETTINGS.STANDARD_LOGO_HINT": "Remet le logo Foundry au lieu du logo texte.",
 
-    "RPGUI.SETTINGS.DISABLE_STYLES": "Désactiver Pathfinder Ui",
-    "RPGUI.SETTINGS.DISABLE_STYLES_HINT": "Il s'agit d'un paramètre local, avec lequel tout joueur peut désactiver les styles",
+    "RPGUI.SETTINGS.DISABLE_STYLES": "Désactiver Pathfinder Ui.",
+    "RPGUI.SETTINGS.DISABLE_STYLES_HINT": "Il s'agit d'un paramètre local, avec lequel tout joueur peut désactiver les styles.",
 
-    "RPGUI.SETTINGS.MINIMAL_UI": "Support pour Minimal UI",
+    "RPGUI.SETTINGS.JOURNAL_SHEET": "Désacter la texture parcheminée des journaux.",
+    "RPGUI.SETTINGS.JOURNAL_SHEET_HINT": "Désactiver l'aspect parcheminé dans les pages du journal.",
+
+    "RPGUI.SETTINGS.CUSTOM_CSS": "Désactiver le style PF2e dans les journaux.",
+    "RPGUI.SETTINGS.CUSTOM_CSS_HINT": "Désactive la mise en page et les polices PF2e dans les journaux, pour revenir à celle de Foundry.",
+
+    "RPGUI.SETTINGS.MINIMAL_UI": "Support pour Minimal UI.",
     "RPGUI.SETTINGS.MINIMAL_UI_HINT": "Corrige certains (pas tous) des problèmes liés à Minimal Ui.",
 
-    "RPGUI.SETTINGS.HIGHLIGHT_GM_OWNER_TEXT": "Ajouter une bordure au texte du GM & du Propriétaire dans le chat",
+    "RPGUI.SETTINGS.HIGHLIGHT_GM_OWNER_TEXT": "Ajouter une bordure au texte GM & Propriétaire dans le chat.",
     "RPGUI.SETTINGS.HIGHLIGHT_GM_OWNER_TEXT_HINT": "Paramètre local qui ajoute une bordure afin de mettre en évidence le texte visible que par le GM ou le Propriétaire dans le chat."
 }

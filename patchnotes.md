@@ -3,8 +3,11 @@
 ## Compatibility
 - Ready for v10 version.
 
-## v10.288.1
+## v10.288.2
 - restriction to pf2e system added
+- new option to disable parchment UI on Journal pages
+- new PF2e style on Journal pages
+- new option to disable PF2e style on journal pages
 
 ## v10.286.4
 - fix hotbar position (again)

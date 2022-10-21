@@ -10,6 +10,12 @@
 
     "RPGUI.SETTINGS.DISABLE_STYLES": "Desactivar Pathfinder Ui",
     "RPGUI.SETTINGS.DISABLE_STYLES_HINT": "Esta es una configuración local, con la que cualquier jugador puede desactivar el estilo",
+
+    "RPGUI.SETTINGS.JOURNAL_SHEET": "Disable parchment texture on Journal pages",
+    "RPGUI.SETTINGS.JOURNAL_SHEET_HINT": "Disable the parchment appearance on journal entries.",
+
+    "RPGUI.SETTINGS.CUSTOM_CSS": "Disable PF2e style on Journal pages",
+    "RPGUI.SETTINGS.CUSTOM_CSS_HINT": "Disable all settings and fonts on journal entries to comeback on Foundry style.",
     
     "RPGUI.SETTINGS.MINIMAL_UI": "Soporte de Minimal UI",
     "RPGUI.SETTINGS.MINIMAL_UI_HINT": "Arregla algunos (no todos) de los problemas con Minimal UI",
