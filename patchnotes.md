@@ -3,6 +3,9 @@
 ## Compatibility
 - Ready for v10 version.
 
+## v10.288.3
+- minors correction
+
 ## v10.288.2
 - restriction to pf2e system added
 - new option to disable parchment UI on Journal pages
