@@ -5,10 +5,12 @@
 
 ## v10.291.1
 - update for 4.6.4 // v10.291
-- minors correction
+- fix issue [#57](https://gitlab.com/sasmira/pathfinder-ui/-/issues/57)
+- fix issue [#59](https://gitlab.com/sasmira/pathfinder-ui/-/issues/59)
+- minors corrections
 
 ## v10.288.3
-- minors correction
+- minors corrections
 
 ## v10.288.2
 - restriction to pf2e system added

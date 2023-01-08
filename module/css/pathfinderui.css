@@ -771,8 +771,7 @@ body.compact-mode #logo {
 /*========================= HOTBAR ==========================*/
 /*************************************************************/
 #fps {
-    position: absolute;
-    left: 1275px;
+    margin-left: 200px;
     order: 2;
     border: 0px solid var(--color-border-light-tertiary);
     border-radius: 5px;
