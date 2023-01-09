@@ -764,6 +764,14 @@ button.half-damage .fa-heart-broken::after {
     text-shadow: #fc0 0 0 1px;
 }
 
+.chat-message .message-content .damage-roll .dice-result .instance.cold {
+    color: revert;
+  }
+
+  .chat-message .message-content .damage-roll .dice-result .instance.cold.tooltip-part>header, .chat-message .message-content .damage-roll .dice-result .instance.cold:not(.tooltip-part) {
+    text-shadow: #fc0 0 0 1px;
+}
+
 /* DIALOG */
 #chat-log a[href] {
     color: var(--color-text-hyperlink);

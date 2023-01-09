@@ -4,6 +4,9 @@
 - Ready for v10 version.
 
 ## v10.291.1
+- cold effect missing ... 
+
+## v10.291.1
 - update for 4.6.4 // v10.291
 - fix issue [#57](https://gitlab.com/sasmira/pathfinder-ui/-/issues/57)
 - fix issue [#59](https://gitlab.com/sasmira/pathfinder-ui/-/issues/59)
