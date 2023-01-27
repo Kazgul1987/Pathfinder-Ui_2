@@ -378,6 +378,10 @@ a.inline-roll.blindroll {
     border-color: var(--glassy);
 }
 
+a.content-link, [data-pf2-check], a.entity-link, [data-pf2-action], [data-pf2-effect-area], a.inline-roll:not(.inline-result) {
+    color: #4e0707;
+}
+
 #chat-log button {
     transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
 }

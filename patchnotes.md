@@ -3,6 +3,9 @@
 ## Compatibility
 - Ready for v10 version.
 
+## v10.291.3
+- improve data-visibility color
+
 ## v10.291.2
 - cold effect missing ... 
 
