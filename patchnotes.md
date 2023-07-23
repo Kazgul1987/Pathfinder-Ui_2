@@ -3,6 +3,11 @@
 ## Compatibility
 - Ready for v11 version.
 
+
+## v11.306.1
+- Fix Buff icon position
+- Fix Interface position
+
 ## v11.305.1
 - initial release for v11
 

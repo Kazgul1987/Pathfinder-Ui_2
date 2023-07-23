@@ -10,7 +10,7 @@
       "flags": {}
     }
   ],
-  "version": "11.305.1",
+  "version": "11.306.1",
   "compatibility": {
     "minimum": "11",
     "verified": "11",
@@ -23,7 +23,7 @@
         "type": "system",
         "compatibility": {
           "minimum": "5.0.0",
-          "verified": "5.1.2"
+          "verified": "5.2.0"
         }
       }
     ]
@@ -60,5 +60,5 @@
   ],
   "url": "https://gitlab.com/sasmira/pathfinder-ui",
   "manifest": "https://gitlab.com/sasmira/pathfinder-ui/-/raw/master/module/module.json",
-  "download": "https://gitlab.com/sasmira/pathfinder-ui/-/jobs/artifacts/v11.305.1/raw/pathfinder-ui.zip?job=build"
+  "download": "https://gitlab.com/sasmira/pathfinder-ui/-/jobs/artifacts/v11.306.1/raw/pathfinder-ui.zip?job=build"
 }
