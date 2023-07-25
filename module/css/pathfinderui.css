@@ -72,10 +72,12 @@ body.compact-mode #logo {
 /*======================= SIDEBAR ===========================*/
 /*************************************************************/
 
+/*fix interface v11*/
 #interface {
-    margin-top: 5px;
-    margin-bottom: -10px;
+    margin-top: 3px;
+    margin-bottom: -7px;
 }
+/*End*/
 
 #sidebar {
     display: flex;
