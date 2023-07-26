@@ -6,6 +6,17 @@ Hooks.on('ready', async () => {
 Hooks.on('init', () => {
 	// Register module settings.
 
+	game.settings.register('pathfinder-ui', 'adjustTokenEffectsHudToggle', {
+		name: game.i18n.localize('RPGUI.SETTINGS.TOKEN_EFFECT_HUD'),
+		hint: game.i18n.localize('RPGUI.SETTINGS.TOKEN_EFFECT_HUD_HINT'),
+		scope: "world",
+		type: Boolean,
+		default: true,
+		config: true,
+		onChange: () => {
+			location.reload();
+		}
+	});
 	game.settings.register('pathfinder-ui', 'navigationVerticalToggle', {
 		name: game.i18n.localize('RPGUI.SETTINGS.NAVIGATION'),
 		hint: game.i18n.localize('RPGUI.SETTINGS.NAVIGATION_HINT'),
@@ -108,6 +119,7 @@ Hooks.on('init', () => {
 	}
 
 	if (!game.settings.get('pathfinder-ui', 'disableAllStyles')) { rpgUIAddMainCss() }
+    if (game.settings.get('pathfinder-ui', 'adjustTokenEffectsHudToggle')) { rpgUIAddTokenEffectsHud() }
 	if (!game.settings.get('pathfinder-ui', 'customCss')) { rpgUIAddCustomCss() }
 	if (!game.settings.get('pathfinder-ui', 'journalSheet')) { rpgUIAddJournalSheet() }
 	if (game.settings.get('pathfinder-ui', 'minimalUICompatibility')) { addClassByQuerySelector('minimal-ui-mode', 'body.vtt') }
@@ -148,6 +160,15 @@ function rpgUIAddMainCss() {
 	mainCss.setAttribute("href", "modules/pathfinder-ui/css/pathfinderui.css")
 	mainCss.setAttribute("media", "all")
 	head.insertBefore(mainCss, head.lastChild);
+}
+function rpgUIAddTokenEffectsHud() {
+    const head = document.getElementsByTagName("head")[0];
+    const mainCss = document.createElement("script");
+    mainCss.setAttribute("type", "text/javascript")
+    mainCss.setAttribute("src", "modules/pathfinder-ui/scripts/status-halo.js")
+    head.insertBefore(mainCss, head.lastChild);
+ 
+    setTimeout(() => enableStatusHalo(), 700);
 }
 function rpgUIAddCustomCss() {
 	const head = document.getElementsByTagName("head")[0];

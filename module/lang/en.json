@@ -1,6 +1,9 @@
 {
     "RPGUI.SETTINGS.DARKSHEET":"Dark Character Sheets",
     "RPGUI.SETTINGS.DARKSHEET_HINT":"Only for player sheets.",
+
+    "RPGUI.SETTINGS.TOKEN_EFFECT_HUD": "Adjust token effects HUD?",
+    "RPGUI.SETTINGS.TOKEN_EFFECT_HUD_HINT": "Makes effects circular and arranges them outside the token, or on the token ring for larger tokens",
    
     "RPGUI.SETTINGS.NAVIGATION": "Switches the navigation back to horizontal mode",
     "RPGUI.SETTINGS.NAVIGATION_HINT": "Use this switch if you are not using Combat Carousel integration",

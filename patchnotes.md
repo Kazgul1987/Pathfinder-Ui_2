@@ -3,6 +3,10 @@
 ## Compatibility
 - Ready for v11 version.
 
+## v11.306.4
+- New option with a toggle for conditions in circle.
+- Fix Buff icons appearance, They're circle again 
+
 ## v11.306.3
 - New option : Dark Mode / Standard Mode (for player character sheet atm)
 

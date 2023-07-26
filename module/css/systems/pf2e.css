@@ -59,6 +59,17 @@
     margin-right: -10px;
 }
 
+#effects-panel .effect-item > .icon {
+    position: relative;
+    height: 42px;
+    width: 42px;
+    margin-left: 3px;
+    border-radius: 50%;
+    border: 2px solid var(--border-color);
+    box-shadow: rgb(0, 0, 0) 0px 0px 10px 0px;
+}
+
+
 /* DF Chat Enhancements */
 /* https://github.com/flamewave000/dragonflagon-fvtt/tree/master/df-chat-enhance */
 #dfcp-rt-buttons button {
