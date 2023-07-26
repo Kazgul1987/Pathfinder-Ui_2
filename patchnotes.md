@@ -3,6 +3,9 @@
 ## Compatibility
 - Ready for v11 version.
 
+## v11.306.5
+- fix the problem with Monk's little details and opaque windows.
+
 ## v11.306.4
 - New option with a toggle for conditions in circle.
 - Fix Buff icons appearance, They're circle again 

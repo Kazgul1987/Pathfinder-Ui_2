@@ -1,5 +1,6 @@
 Hooks.on('ready', async () => {
 	// Retrait de la classe de Monk's Little Details
+	game.settings.set("monks-little-details", "window-css-changes", false);
 	$("body").removeClass("change-windows");
 });
 
