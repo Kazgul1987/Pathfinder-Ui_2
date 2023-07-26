@@ -1,4 +1,7 @@
 {
+    "RPGUI.SETTINGS.DARKSHEET":"Feuille PJ Sombre",
+    "RPGUI.SETTINGS.DARKSHEET_HINT":"Uniquement pour la feuille de personnage joueur.",
+   
     "RPGUI.SETTINGS.NAVIGATION": "Navigation Horizontale.",
     "RPGUI.SETTINGS.NAVIGATION_HINT": "Utilisez ce bouton si vous n'utilisez pas Combat Carousel.",
 

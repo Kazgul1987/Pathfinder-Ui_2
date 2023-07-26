@@ -3,6 +3,9 @@
 ## Compatibility
 - Ready for v11 version.
 
+## v11.306.3
+- New option : Dark Mode / Standard Mode (for player character sheet atm)
+
 ## v11.306.2
 - repositioning the interface
 

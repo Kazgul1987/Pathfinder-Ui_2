@@ -10,11 +10,10 @@
       "flags": {}
     }
   ],
-  "version": "11.306.2",
+  "version": "11.306.3",
   "compatibility": {
     "minimum": "11",
-    "verified": "11",
-    "maximum": "11"
+    "verified": "11"
   },
   "relationships": {
     "systems": [
@@ -30,7 +29,11 @@
   },
   "esmodules": [
     "scripts/dicefinder.js",
+    "scripts/dark-sheet.js",
     "scripts/rpg-ui.js"
+  ],
+  "styles": [
+    "css/dark-sheet.css"
   ],
   "languages": [
     {
@@ -60,5 +63,5 @@
   ],
   "url": "https://gitlab.com/sasmira/pathfinder-ui",
   "manifest": "https://gitlab.com/sasmira/pathfinder-ui/-/raw/master/module/module.json",
-  "download": "https://gitlab.com/sasmira/pathfinder-ui/-/jobs/artifacts/v11.306.2/raw/pathfinder-ui.zip?job=build"
+  "download": "https://gitlab.com/sasmira/pathfinder-ui/-/jobs/artifacts/v11.306.3/raw/pathfinder-ui.zip?job=build"
 }

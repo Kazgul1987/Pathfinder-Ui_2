@@ -1,4 +1,7 @@
 {
+    "RPGUI.SETTINGS.DARKSHEET":"Dark Character Sheets",
+    "RPGUI.SETTINGS.DARKSHEET_HINT":"Only for player sheets.",
+   
     "RPGUI.SETTINGS.NAVIGATION": "Switches the navigation back to horizontal mode",
     "RPGUI.SETTINGS.NAVIGATION_HINT": "Use this switch if you are not using Combat Carousel integration",
 
