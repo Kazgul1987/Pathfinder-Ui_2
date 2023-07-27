@@ -5,6 +5,9 @@
     "RPGUI.SETTINGS.TOKEN_EFFECT_HUD": "Afficher les Conditions en cercle ?",
     "RPGUI.SETTINGS.TOKEN_EFFECT_HUD_HINT": "Place les effets en cercle et les arrange à l'extérieur du jeton ou sur le pourtour du jetons pour les jetons plus grands",
 
+    "RPGUI.SETTINGS.TOKEN_HUD": "Désactiver PF2e Interactive Token Tooltip Sombre ?",
+    "RPGUI.SETTINGS.TOKEN_HUD_HINT": "Désactive le thème sombre de PF2e Interactive Token Tooltip en remettant celui par défaut",
+
     "RPGUI.SETTINGS.NAVIGATION": "Navigation Horizontale.",
     "RPGUI.SETTINGS.NAVIGATION_HINT": "Utilisez ce bouton si vous n'utilisez pas Combat Carousel.",
 

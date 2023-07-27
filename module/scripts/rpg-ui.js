@@ -1,5 +1,6 @@
 Hooks.on('ready', async () => {
 	// Retrait de la classe de Monk's Little Details
+	// Créer une erreur lorsque le module n'est pas activé
 	game.settings.set("monks-little-details", "window-css-changes", false);
 	$("body").removeClass("change-windows");
 });
@@ -55,6 +56,18 @@ Hooks.on('init', () => {
 		name: game.i18n.localize('RPGUI.SETTINGS.MINIMAL_UI'),
 		hint: game.i18n.localize('RPGUI.SETTINGS.MINIMAL_UI_HINT'),
 		scope: "world",
+		type: Boolean,
+		default: false,
+		config: true,
+		onChange: () => {
+			location.reload();
+		}
+	});
+
+	game.settings.register('pathfinder-ui', 'tokenHud', {
+		name: game.i18n.localize('RPGUI.SETTINGS.TOKEN_HUD'),
+		hint: game.i18n.localize('RPGUI.SETTINGS.TOKEN_HUD_HINT'),
+		scope: "client",
 		type: Boolean,
 		default: false,
 		config: true,
@@ -121,6 +134,7 @@ Hooks.on('init', () => {
 
 	if (!game.settings.get('pathfinder-ui', 'disableAllStyles')) { rpgUIAddMainCss() }
     if (game.settings.get('pathfinder-ui', 'adjustTokenEffectsHudToggle')) { rpgUIAddTokenEffectsHud() }
+	if (!game.settings.get('pathfinder-ui', 'tokenHud')) { rpgUIAddTokenHud() }
 	if (!game.settings.get('pathfinder-ui', 'customCss')) { rpgUIAddCustomCss() }
 	if (!game.settings.get('pathfinder-ui', 'journalSheet')) { rpgUIAddJournalSheet() }
 	if (game.settings.get('pathfinder-ui', 'minimalUICompatibility')) { addClassByQuerySelector('minimal-ui-mode', 'body.vtt') }
@@ -170,6 +184,15 @@ function rpgUIAddTokenEffectsHud() {
     head.insertBefore(mainCss, head.lastChild);
  
     setTimeout(() => enableStatusHalo(), 700);
+}
+function rpgUIAddTokenHud() {
+	const head = document.getElementsByTagName("head")[0];
+	const mainCss = document.createElement("link");
+	mainCss.setAttribute("rel", "stylesheet")
+	mainCss.setAttribute("type", "text/css")
+	mainCss.setAttribute("href", "modules/pathfinder-ui/css/hud.css")
+	mainCss.setAttribute("media", "all")
+	head.insertBefore(mainCss, head.lastChild);
 }
 function rpgUIAddCustomCss() {
 	const head = document.getElementsByTagName("head")[0];
