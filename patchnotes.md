@@ -3,6 +3,11 @@
 ## Compatibility
 - Ready for v11 version.
 
+
+## v11.306.6
+- New option : Dark Theme Interactive Token Tooltip.
+- Dark Mode player sheet updated improved.
+
 ## v11.306.5
 - fix the problem with Monk's little details and opaque windows.
 

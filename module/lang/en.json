@@ -5,6 +5,9 @@
     "RPGUI.SETTINGS.TOKEN_EFFECT_HUD": "Adjust token effects HUD?",
     "RPGUI.SETTINGS.TOKEN_EFFECT_HUD_HINT": "Makes effects circular and arranges them outside the token, or on the token ring for larger tokens",
    
+    "RPGUI.SETTINGS.TOKEN_HUD": "Disable Dark PF2e Interactive Token Tooltip?",
+    "RPGUI.SETTINGS.TOKEN_HUD_HINT": "Disables the dark theme of PF2e Interactive Token Tooltip by default theme",
+
     "RPGUI.SETTINGS.NAVIGATION": "Switches the navigation back to horizontal mode",
     "RPGUI.SETTINGS.NAVIGATION_HINT": "Use this switch if you are not using Combat Carousel integration",
 

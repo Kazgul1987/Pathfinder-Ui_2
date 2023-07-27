@@ -4,11 +4,17 @@
     --text: #cfbda7;
     --text-2: rgb(93, 24, 13);
     --text-3: #91a82a;
-    --background: rgb(40, 40, 40);
-    --background-2: #ffffff14;
+    /*--background: rgb(40, 40, 40);
+    --background-2: #ffffff14;*/
+    --background: #100d0d;
+    --background-2: #100d0d;
     --highlightcol: #cfbda7;
     --highlight: 0 0 0 1px var(--text), 0 0 0 2px #93d1d3, inset 0 0 4px rgba(255, 255, 255, 0.25);
     --color-shadow-primary: #ff0000;
+    --glass-bg: rgba(20, 20, 20, 0.6);
+    --glass-bg-light: rgba(255, 255, 255, 0.1);
+    --glass-bg-dark: rgba(0, 0, 0, 0.7);
+    --glassy: 0px 0px 3px 0px rgba(255, 255, 255, 0.4) inset, 0px 0px 2px 1px rgba(0, 0, 0, 1), 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
 }
 
 .dark-theme {
@@ -138,15 +144,7 @@
 }
 
 .actor.sheet.character.dark-theme .crb-style nav.sheet-navigation .item:hover, .actor.sheet.character.dark-theme .crb-style nav.sheet-navigation .item.active {
-    background: none;
     fill: var(--text);
-    background: var(--background-2);
-}
-
-.actor.sheet.character.dark-theme .crb-style nav.sheet-navigation .item {
-    fill: var(--text);
-    background: var(--background);
-    box-shadow: var(--highlight);
 }
 
 .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .blue-button {
@@ -172,12 +170,17 @@
     background: none !important;
 }
 
+.actor.sheet.dark-theme .crb-style header.char-header .char-details h1.char-name input[type=text], .actor.sheet.dark-theme .crb-style header.char-header .char-details h1.char-name span.non-editable {
+    background: #100d0d!important;
+}
+
 .actor.sheet.dark-theme .crb-style header.char-header .char-details h1.char-name {
-    background: var(--background) !important;
+    background: none!important;
 }
 
 .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.character .ability-scores .ability .ability-name {
-    color: var(--text) !important;
+    color: var(--secondary) !important;
+    opacity: 0.7;
 }
 
 .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.character .ability-scores .ability.key .ability-id, .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.character .ability-scores .ability.key .ability-mod {
@@ -220,13 +223,20 @@
 }
 
 .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.inventory .inventory-list .item .item-name h4.rarity-unique {
-    border-color: #ff00dd;
-    color: #ff00dd;
+    border-color: #e127e1;
+    color: #e127e1;
 }
 
 .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.inventory .inventory-list .item .item-name h4.rarity-rare {
     border-color: #0062ff;
     color: #0062ff;
+}
+
+.actor.sheet.dark-theme, .tags .tag, .tags .tag option {
+    background-color: #5e0000;
+}
+.actor.sheet.dark-theme, .tags .tag.tag_secondary, .tags .tag option.tag_secondary {
+    background-color: #171f69;
 }
 
 /*Spellcrafting*/
@@ -267,3 +277,5 @@
 .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.pfs > section.reputations .reputation input {
     background: var(--background) !important;
 }
+
+/**/
