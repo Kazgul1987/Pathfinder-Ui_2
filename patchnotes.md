@@ -4,6 +4,9 @@
 - Ready for v11 version.
 
 
+## v11.306.7
+- fix an alignment Issue with Carousel combat tracker.
+
 ## v11.306.6
 - New option : Dark Theme Interactive Token Tooltip.
 - Dark Mode player sheet updated improved.

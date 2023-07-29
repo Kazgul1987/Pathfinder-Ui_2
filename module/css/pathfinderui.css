@@ -1154,9 +1154,12 @@ button#roll-hd:hover::before {
 
 /* NAVIGATION */
 
-#ui-top {
-    width: calc(100% - 300px);
+/*#ui-top {
+    width: calc(100% - 100px);
     left: 142px;
+}*/
+#ui-top {
+    width: calc(103%);
 }
 
 #navigation #nav-toggle {
