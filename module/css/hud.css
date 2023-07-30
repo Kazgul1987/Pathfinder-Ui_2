@@ -1,98 +1,200 @@
 /*PF2e Interactive Token Tooltip*/
 /* https://github.com/reonZ/pf2e-token-hud */
-.pf2e-token-hud, #pf2e-token-hud {
-    --color-rank-0: #e1d8cf!important;
-    --color-rank-1: #0062ff!important;
-    --color-rank-2: #e127e1!important;
-    --color-rank-3: #ff6400!important;
-    --color-rank-4: #ff00009c!important;
-    --color-rarity-common: #e1d8cf!important;
-    --color-rarity-uncommon: #ff6400!important;
-    --color-rarity-rare: #0062ff!important;
-    --color-rarity-unique: #e127e1!important;
-  }
-  
-  #pf2e-token-hud .sidebar .sidebar-content .details .extras .actions a i.greyed {
-    color: #ff00009c!important;
-  }
 
-  #pf2e-token-hud .sidebar, #pf2e-token-hud .inner, #pf2e-token-hud .popup {
-      color: #cfbda7!important;
-      border: none!important;
-      border-radius: 3px!important;
-      background: rgba(0, 0, 0, 0.5)!important;
-      box-shadow: var(--glassy)!important;
-      backdrop-filter: blur(5px)!important;
-  }
-  
-  #pf2e-token-hud .sidebar .sidebar-content .details .name {
-      font-weight: normal!important;
-  }
-  
-  #pf2e-token-hud .sidebar.actions .sidebar-content .section .strike .variants .variant select {
-      background: black!important;
-  }
-  
-  #pf2e-token-hud {
-      color: #91a82a!important;
-  }
-
-  #pf2e-token-hud a.active {
+#pf2e-token-hud a.active {
     color: #91a82a!important;
-  }
+}
 
-  #pf2e-token-hud a.disabled {
+#pf2e-token-hud a.disabled {
       color: #ff00009c!important;
-  }
+}
 
-  #pf2e-token-hud .inner .group .section input[type=number] {
-      color: #91a82a!important;
-  }
-  
-  #pf2e-token-hud input, #pf2e-token-hud select {
-      color: #91a82a!important;
-  }
-  
-  #pf2e-token-hud .distance, #pf2e-token-hud .status {
-      color: #91a82a!important;
-      font-weight: normal;
-  }
-  #pf2e-token-hud .sidebar.skills .sidebar-content .skill .header .modifier, #pf2e-token-hud .sidebar.skills .sidebar-content .lore .modifier {
-      color: #91a82a!important;
-  }
 
-  #pf2e-token-hud .sidebar.items .sidebar-content .category .item .details .extras .actions .held {
+
+/*emojis color*/
+#pf2e-token-hud .inner i.fa-solid.fa-circle-h {
+  color: darkgoldenrod;
+}
+#pf2e-token-hud .inner i.fa-solid.fa-user-graduate {
+  color: mediumspringgreen;
+}
+#pf2e-token-hud .inner i.fa-solid.fa-heart-half-stroke {
+  color: orangered;
+}
+#pf2e-token-hud .inner i.fa-solid.fa-heart {
+  color: darkred;
+}
+#pf2e-token-hud .inner i.fa-regular.fa-helmet-battle {
+  color: mediumseagreen;
+}
+#pf2e-token-hud .inner i.fa-block-brick {
+  color: mediumseagreen;
+}
+#pf2e-token-hud .inner i.fa-regular.fa-shield {
+  color: mediumseagreen;
+}
+#pf2e-token-hud .inner i.fa-chess-rook {
+  color: mediumorchid;
+}
+#pf2e-token-hud .inner i.fa-solid.fa-person-running {
+  color: mediumaquamarine;
+}
+#pf2e-token-hud .inner i.fa-solid.fa-brain {
+  color: hotpink;
+}
+#pf2e-token-hud .inner i.fa-solid.fa-tombstone {
+  color: brown;
+}
+#pf2e-token-hud .inner i.fa-notes-medical {
+  color: brown;
+}
+#pf2e-token-hud .inner i.fa-solid.fa-shoe-prints {
+  color: green;
+}
+#pf2e-token-hud .inner i.fa-face-meh {
+  color: #cfbda7;
+}
+#pf2e-token-hud .inner i.fa-face-angry-horns {
+  color: #ff00009c;
+}
+#pf2e-token-hud .inner i.fa-regular.fa-alien-8bit {
+  color: orange;
+}
+#pf2e-token-hud .inner i.fa-solid.fa-alien-8bit {
+  color: orangered;
+}
+
+
+#pf2e-token-hud .inner i {
+  text-shadow: 0px 0px 35px #cfbda7, 0px 1px 1px black;
+}
+#pf2e-token-hud .inner .group .section {
+  color: #91a82a!important;
+}
+#pf2e-token-hud .inner .group .section .pips:not(.digits) i {
+  color: #cfbda7!important;
+}
+#pf2e-token-hud .inner .group .section input[type=number] {
+    color: #ff6400!important;
+}
+/**/
+
+
+
+/*Distance*/
+#pf2e-token-hud input, #pf2e-token-hud select {
+  color: #91a82a!important;
+  text-shadow: 0px 1px 1px black, 0px 1px 15px #cfbda7;
+}
+#pf2e-token-hud .distance, #pf2e-token-hud .status {
+  color: #91a82a!important;
+  font-weight: normal;
+}
+/**/
+
+
+
+/*sidebar*/
+#pf2e-token-hud .sidebar.items .sidebar-content .category .header {
+  color: #ff6400;
+}
+#pf2e-token-hud .sidebar.actions .sidebar-content .section .header {
+    color: #ff6400;
+}
+#pf2e-token-hud .sidebar.spells .sidebar-content .entry .header {
+  color: #ff6400;
+}
+#pf2e-token-hud .sidebar .sidebar-content .header {
+  background: rgba(96, 88, 86, 0.5);
+}
+#pf2e-token-hud .sidebar .details .extras .actions a i.greyed {
+  text-shadow: 0px 1px 15px #cfbda7;
+}
+#pf2e-token-hud .sidebar .sidebar-content .details .extras .actions a i.greyed {
+  color: #ff00009c!important;
+}
+#pf2e-token-hud .sidebar, #pf2e-token-hud .inner, #pf2e-token-hud .popup {
+    color: #cfbda7!important;
+    border: none!important;
+    border-radius: 3px!important;
+    background: rgba(0, 0, 0, 0.5)!important;
+    box-shadow: var(--glassy)!important;
+    backdrop-filter: blur(5px)!important;
+}
+#pf2e-token-hud .sidebar .sidebar-content .details .name {
+    font-weight: normal!important;
+}
+#pf2e-token-hud .sidebar.skills .sidebar-content .header {
+  font-weight: normal!important;
+}
+#pf2e-token-hud .sidebar.actions .sidebar-content .section .strike .variants .variant select {
+    background: black!important;
+}
+#pf2e-token-hud .sidebar.items .sidebar-content .category .item .details .extras .infos .quantity input {
+  background: #100d0d40;
+}
+#pf2e-token-hud .sidebar.skills .sidebar-content .skill .header, #pf2e-token-hud .sidebar.skills .sidebar-content .lore {
+  color: #ff6400;
+}
+#pf2e-token-hud .sidebar.skills .sidebar-content .skill .header .modifier, #pf2e-token-hud .sidebar.skills .sidebar-content .lore .modifier {
     color: #91a82a!important;
-  }
+}
+#pf2e-token-hud .sidebar.items .sidebar-content .category .item .details .extras .actions .held {
+  color: #91a82a!important;
+  text-shadow: 0px 1px 1px black, 0px 1px 15px #cfbda7;
+}
+#pf2e-token-hud .sidebar.items .sidebar-content .category .item .details .extras .actions .worn {
+  color: #91a82a!important;
+  text-shadow: 0px 1px 1px black, 0px 1px 15px #cfbda7;
+}
+#pf2e-token-hud .sidebar.spells .sidebar-content .entry .spell .details .extras .actions {
+  color: #91a82a!important;
+  text-shadow: 0px 1px 1px black, 0px 1px 15px #cfbda7;
+}
+/**/
+ 
 
-  #pf2e-token-hud .sidebar.items .sidebar-content .category .item .details .extras .actions .worn {
-    color: #91a82a!important;
-  }
-  
-  .pf2e-token-hud .rank.\30, #pf2e-token-hud .rank.\30  {
-    color: var(--color-rank-0);
-  }
-  .pf2e-token-hud .rank.\31, #pf2e-token-hud .rank.\31  {
-    color: var(--color-rank-1);
-  }
-  .pf2e-token-hud .rank.\32, #pf2e-token-hud .rank.\32  {
-    color: var(--color-rank-2);
-  }
-  .pf2e-token-hud .rank.\33, #pf2e-token-hud .rank.\33  {
-    color: var(--color-rank-3);
-  }
-  .pf2e-token-hud .rank.\34, #pf2e-token-hud .rank.\34  {
-    color: var(--color-rank-4);
-  }
-  .pf2e-token-hud .rarity.common, #pf2e-token-hud .rarity.common {
-    color: var(--color-rarity-common);
-  }
-  .pf2e-token-hud .rarity.uncommon, #pf2e-token-hud .rarity.uncommon {
-    color: var(--color-rarity-uncommon);
-  }
-  .pf2e-token-hud .rarity.rare, #pf2e-token-hud .rarity.rare {
-    color: var(--color-rarity-rare);
-  }
-  .pf2e-token-hud .rarity.unique, #pf2e-token-hud .rarity.unique {
-    color: var(--color-rarity-unique);
-  }
+
+/*Rank color*/
+.pf2e-token-hud, #pf2e-token-hud {
+  --color-rank-0: #e1d8cf!important;
+  --color-rank-1: #0062ff!important;
+  --color-rank-2: #e127e1!important;
+  --color-rank-3: #ff6400!important;
+  --color-rank-4: #ff00009c!important;
+  --color-rarity-common: #e1d8cf!important;
+  --color-rarity-uncommon: #ff6400!important;
+  --color-rarity-rare: #0062ff!important;
+  --color-rarity-unique: #e127e1!important;
+}
+.pf2e-token-hud .rank.\30, #pf2e-token-hud .rank.\30  {
+  color: var(--color-rank-0);
+}
+.pf2e-token-hud .rank.\31, #pf2e-token-hud .rank.\31  {
+  color: var(--color-rank-1);
+}
+.pf2e-token-hud .rank.\32, #pf2e-token-hud .rank.\32  {
+  color: var(--color-rank-2);
+}
+.pf2e-token-hud .rank.\33, #pf2e-token-hud .rank.\33  {
+  color: var(--color-rank-3);
+}
+.pf2e-token-hud .rank.\34, #pf2e-token-hud .rank.\34  {
+  color: var(--color-rank-4);
+}
+#pf2e-token-hud .rarity {
+  text-shadow: 0px 1px 1px black, 0px 1px 15px #cfbda7;
+}
+.pf2e-token-hud .rarity.common, #pf2e-token-hud .rarity.common {
+  color: var(--color-rarity-common);
+}
+.pf2e-token-hud .rarity.uncommon, #pf2e-token-hud .rarity.uncommon {
+  color: var(--color-rarity-uncommon);
+}
+.pf2e-token-hud .rarity.rare, #pf2e-token-hud .rarity.rare {
+  color: var(--color-rarity-rare);
+}
+.pf2e-token-hud .rarity.unique, #pf2e-token-hud .rarity.unique {
+  color: var(--color-rarity-unique);
+}
+/**/

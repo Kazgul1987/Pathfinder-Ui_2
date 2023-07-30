@@ -4,6 +4,9 @@
 - Ready for v11 version.
 
 
+## v11.306.9
+- Improve visibility with Dark Theme for Interactive Token Tooltip.
+
 ## v11.306.8
 - Improve visibility of Dark Mode Player Sheet.
 - Improve visibility with Dark Theme for Interactive Token Tooltip.
