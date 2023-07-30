@@ -43,6 +43,14 @@
     background-size: 100% 45px;
 }
 
+.system-pf2e .dice-checks .window-content .add-modifier-panel .add-modifier-name {
+    color: revert;
+}
+
+.system-pf2e .dice-checks .window-content .add-modifier-panel .add-modifier-value {
+    color: revert;
+}
+
 .system-pf2e .window-app.dice-checks.dialog .window-content{
     background: url(/ui/parchment.jpg) repeat;
     color: #191813;
@@ -438,12 +446,12 @@ a.content-link, [data-pf2-check], a.entity-link, [data-pf2-action], [data-pf2-ef
 
 #chat-log .pf2e.chat-card .card-buttons .hidden-to-others {
     border: none;
-    background: blue;
+    background: #171f69;
 }
 
 #chat-log .pf2e.chat-card .card-buttons .hidden-to-others:hover {
     border: none;
-    background: lightblue;
+    background: blue;
 }
 
 .dice-total:hover,

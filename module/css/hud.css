@@ -37,10 +37,14 @@
       color: #91a82a!important;
   }
 
+  #pf2e-token-hud a.active {
+    color: #91a82a!important;
+  }
+
   #pf2e-token-hud a.disabled {
       color: #ff00009c!important;
   }
-  
+
   #pf2e-token-hud .inner .group .section input[type=number] {
       color: #91a82a!important;
   }

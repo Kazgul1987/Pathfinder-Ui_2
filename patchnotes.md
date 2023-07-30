@@ -4,15 +4,20 @@
 - Ready for v11 version.
 
 
+## v11.306.8
+- Improve visibility of Dark Mode Player Sheet.
+- Improve visibility with Dark Theme for Interactive Token Tooltip.
+- Fix the visibility in the Custom modifier window.
+
 ## v11.306.7
-- fix an alignment Issue with Carousel combat tracker.
+- Fix an alignment Issue with Carousel combat tracker.
 
 ## v11.306.6
 - New option : Dark Theme Interactive Token Tooltip.
 - Dark Mode player sheet updated improved.
 
 ## v11.306.5
-- fix the problem with Monk's little details and opaque windows.
+- Fix the problem with Monk's little details and opaque windows.
 
 ## v11.306.4
 - New option with a toggle for conditions in circle.
