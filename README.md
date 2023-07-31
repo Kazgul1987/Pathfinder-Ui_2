@@ -12,15 +12,17 @@ https://gitlab.com/sasmira/pathfinder-ui/-/raw/master/module/module.json
 
 ## Pathfinder Ui v3, it's :
 
-1.  __**New Theme based on RPG Styled UI Foundry VTT by [Xbozon](https://github.com/Xbozon/rpg-styled-ui)**__
+1.  __**Theme based on RPG Styled UI Foundry VTT by [Xbozon](https://github.com/Xbozon/rpg-styled-ui)**__
 ![Pathfinder-ui](pathfinder-ui.png)
-2.  __**Dicefinder**__, New dice for Pathfinder ! require [Dice-So-Nice](https://gitlab.com/riccisi/foundryvtt-dice-so-nice)
+2.  __**Dicefinder**__,  dice for Pathfinder ! require [Dice-So-Nice](https://gitlab.com/riccisi/foundryvtt-dice-so-nice)
 ![Dicefinder](dicefinder.png)
-3.  __**Combat Carousel Compatibility**__  ! require [Combat Carousel](https://github.com/death-save/combat-carousel)
-![combat-carousel](combat-carousel.png)
-4.  __**Translation**__, French and English !
+3.  __**Carousel Combat Tracker Compatibility**__  ! require [Carousel Combat Tracker](https://github.com/theripper93/combat-tracker-dock)
+![Carousel Combat Tracker](combat-carousel.png)
+4.  __**Dark Mode Player Sheet Option**__
+![Dark Mode](dark-sheet.png)
+5.  __**Translation**__, French and English !
 
 
 ## Version & Compatibility
 
-- Tested on v9.255 version.
+- Compatibility Foundry VTT v11.
