@@ -252,6 +252,7 @@ color:#5d180d;
 }
 .directory .directory-header .header-search input {
 background: none;
+color: var(--main-text-light-color);
 }
 .sheet.journal-entry .journal-sidebar .directory-header .collapse-toggle {
 color:#5d180d;
