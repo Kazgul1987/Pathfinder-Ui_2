@@ -3,6 +3,8 @@
 ## Compatibility
 - Ready for v11 version.
 
+## v11.306.10
+- fix [issue #68](https://gitlab.com/sasmira/pathfinder-ui/-/issues/68)
 
 ## v11.306.9
 - Improve visibility with Dark Theme for Interactive Token Tooltip.

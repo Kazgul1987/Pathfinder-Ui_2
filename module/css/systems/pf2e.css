@@ -52,7 +52,7 @@
 }
 
 .system-pf2e .window-app.dice-checks.dialog .window-content{
-    background: url(/ui/parchment.jpg) repeat;
+    background: url(../../ui/frames/parchment.webp) repeat;
     color: #191813;
 }
 
