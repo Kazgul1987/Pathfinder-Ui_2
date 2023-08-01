@@ -14,7 +14,7 @@ https://gitlab.com/sasmira/pathfinder-ui/-/raw/master/module/module.json
 
 1.  __**Theme based on RPG Styled UI Foundry VTT by [Xbozon](https://github.com/Xbozon/rpg-styled-ui)**__
 ![Pathfinder-ui](pathfinder-ui.png)
-2.  __**Dicefinder**__,  dice for Pathfinder ! require [Dice-So-Nice](https://gitlab.com/riccisi/foundryvtt-dice-so-nice)
+2.  __**Dicefinder**__, Dices for Pathfinder ! require [Dice-So-Nice](https://gitlab.com/riccisi/foundryvtt-dice-so-nice)
 ![Dicefinder](dicefinder.png)
 3.  __**Carousel Combat Tracker Compatibility**__  ! require [Carousel Combat Tracker](https://github.com/theripper93/combat-tracker-dock)
 ![Carousel Combat Tracker](combat-carousel.png)

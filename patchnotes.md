@@ -3,7 +3,7 @@
 ## Compatibility
 - Ready for v11 version.
 
-## v11.306.12
+## v11.306.13
 - Improve visibility in research window.
 - Improve visibility of Dark Mode Player Sheet.
 - Fix issue [#68](https://gitlab.com/sasmira/pathfinder-ui/-/issues/68)

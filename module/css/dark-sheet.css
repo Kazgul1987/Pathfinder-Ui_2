@@ -135,6 +135,7 @@
 
 .sheet.actor.character.dark-theme .item-controls {
     color: var(--text) !important;
+    background: transparent !important;
 }
 
 .sheet.actor.character.dark-theme h3 {
@@ -213,7 +214,6 @@
 /************************/
 /*       Actions        */
 /************************/
-
 .actor.sheet.character .crb-style .sheet-body .sheet-content .tab.actions .actions-container .actions-tabs-wrapper .actions-panels ol.actions-list.strikes-list li.strike .button-group button:not(:disabled):hover {
     color: var(--glass-bg-dark) !important;
     background: var(--green)!important;
@@ -282,15 +282,15 @@
 /************************/
 /*      Inventory       */
 /************************/
+.actor.sheet.dark-theme .inventory .list-row .item-controls .item-control.item-carry-type:not(.active) {
+    color: darkred;
+}
 .actor.sheet.dark-theme .inventory .item-summary {
     background: none !important;
 }
+
 .actor.sheet.dark-theme .inventory .inventory-list .list-row:last-child .item-summary, .actor.sheet.dark-theme .inventory .inventory-items .list-row:last-child .item-summary {
     background: none !important;
-}
-
-.sheet.actor.character.dark-theme .item-controls {
-    background: transparent !important;
 }
 
 .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.inventory .inventory-list .item .item-name h4.rarity-common {
@@ -329,12 +329,18 @@
     color: var(--green)!important;
 }
 
+.actor.sheet.dark-theme .tags .tag.tag_alt {
+    background-color: #5e0000!important;
+}
+.actor.sheet.dark-theme .tags .tag.tag_secondary {
+    background-color: #171f69!important;
+    color: var(--text);
+}
 .actor.sheet.dark-theme, .tags .tag, .tags .tag option {
     background-color: #5e0000;
+    color: var(--text);
 }
-.actor.sheet.dark-theme, .tags .tag.tag_secondary, .tags .tag option.tag_secondary {
-    background-color: #171f69;
-}
+
 
 
 
