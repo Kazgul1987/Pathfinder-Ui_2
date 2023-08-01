@@ -3,6 +3,10 @@
 ## Compatibility
 - Ready for v11 version.
 
+## v11.306.14
+- Fix a problem with illegible text on the standard character sheet.
+- Fix issue [#69](https://gitlab.com/sasmira/pathfinder-ui/-/issues/69)
+
 ## v11.306.13
 - Improve visibility in research window.
 - Improve visibility of Dark Mode Player Sheet.

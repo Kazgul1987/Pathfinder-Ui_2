@@ -336,7 +336,7 @@
     background-color: #171f69!important;
     color: var(--text);
 }
-.actor.sheet.dark-theme, .tags .tag, .tags .tag option {
+.actor.sheet.dark-theme .tags .tag, .tags .tag option {
     background-color: #5e0000;
     color: var(--text);
 }
