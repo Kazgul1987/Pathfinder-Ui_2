@@ -26,6 +26,7 @@ body {
     --main-text-light-color: #cfbda7;
     --main-text-very-light-color: #cfbda7;
     --border-color: #372d25;
+    --border-color-2: #837360;
     --serif: Eczar,Georgia,serif;
     --journal-serif: "Vollkorn",var(--serif);
 }
@@ -72,12 +73,11 @@ body.compact-mode #logo {
 /*======================= SIDEBAR ===========================*/
 /*************************************************************/
 
-/*fix interface v11*/
+/*Fix v11*/
 #interface {
-    margin-top: 3px;
-    margin-bottom: -8px;
+    overflow: clip;
 }
-/*End*/
+/*end*/
 
 #sidebar {
     display: flex;
@@ -385,7 +385,7 @@ body.compact-mode #logo {
 }
 
 #chat-controls {
-    color: #837360;
+    color: var(--border-color-2);
     margin: 0 6px 10px
 }
 
@@ -410,7 +410,7 @@ body.compact-mode #logo {
 
 #chat-log .message {
     position: relative;
-    color: #837360;
+    color: var(--border-color-2);
     border: none !important;
     background: none !important;
     padding: 10px 20px 15px 20px;
@@ -795,6 +795,15 @@ body.compact-mode #logo {
 
 #hotbar #action-bar {
     position: relative;
+    background-repeat: no-repeat;
+
+}
+
+#hotbar #action-bar .macro {
+    background: #372d2550;
+    border-radius: 50%;
+    border: 2px solid var(--border-color-2);
+    box-shadow: rgb(0, 0, 0) 0px 0px 10px 0px;
 }
 
 #action-bar:not(.collapsed)::before {
@@ -810,13 +819,7 @@ body.compact-mode #logo {
     background-repeat: no-repeat;
 }
 
-#hotbar #action-bar .macro {
-    border-radius: 0;
-    box-shadow: none;
-    margin: 0 0;
-}
-
-#hotbar #action-bar .macro::before {
+/*#hotbar #action-bar .macro::before {
     background-image: url(../ui/frames/macro.webp);
     background-size: contain;
     background-repeat: no-repeat;
@@ -831,27 +834,33 @@ body.compact-mode #logo {
 
 #hotbar #action-bar .macro:hover::before {
     background-image: url(../ui/frames/macro_hover.webp);
+}*/
+
+#hotbar .macro:hover {
+    box-shadow: 0 0 10px var(--color-shadow-highlight) inset!important;
 }
 
 #hotbar .macro .macro-key {
     top: initial;
     bottom: 2px;
     z-index: 3;
-    color: #837360;
+    color: var(--border-color-2);
     background: none;
 }
 
 #hotbar .macro .macro-icon {
     position: relative;
     z-index: 2;
+    border-radius: 50%;
 }
 
 #hotbar #macro-list {
     grid-gap: 8px;
+    border:none;
 }
 
 #hotbar .bar-controls {
-    color: #837360;
+    color: var(--border-color-2);
     background: none;
     border: none;
     box-shadow: none;
@@ -944,7 +953,7 @@ nav.damage-log-nav .item.active:before,
     background: none;
     box-shadow: none;
     border: none;
-    color: #837360;
+    color: var(--border-color-2);
 }
 
 #controls ol .scene-control.active,
@@ -1045,7 +1054,7 @@ nav.damage-log-nav .item.active:before,
 .folder-edit button {
     font-family: 'Kurale', serif;
     font-weight: 600;
-    color: #837360;
+    color: var(--border-color-2);
     border: none!important;
     position: relative;
     box-shadow: none;
@@ -1289,13 +1298,11 @@ button#roll-hd:hover::before {
 
 #players ol {
     position: relative;
-    background: url(../ui/frames/players_bg_dark.webp);
-    background-size: 100% 105%;
     font-family: 'Kurale', serif;
     font-weight: 400;
 }
 
-/*#players ol::before{
+#players ol::before{
     position: absolute;
     content: " ";
     width: 120%;
@@ -1304,7 +1311,7 @@ button#roll-hd:hover::before {
     background-size: 100% 100%;
     z-index: -1;
     left: -10%;
-}*/
+}
 
 #players ol li.player {
     text-shadow: 2px 0 0 var(--border-color),

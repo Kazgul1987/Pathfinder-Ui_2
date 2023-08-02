@@ -3,7 +3,8 @@
 ## Compatibility
 - Ready for v11 version.
 
-## v11.306.14
+## v11.306.15
+- Fix macro bar that shifted the interface.
 - Fix a problem with illegible text on the standard character sheet.
 - Fix issue [#69](https://gitlab.com/sasmira/pathfinder-ui/-/issues/69)
 
