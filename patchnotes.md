@@ -3,6 +3,10 @@
 ## Compatibility
 - Ready for v11 version.
 
+## v11.306.18
+- Update for PF2e systeme version 5.3.0
+- Update Dark Mode Player Sheet. 
+
 ## v11.306.17
 - Add a compatibility with PF2e Workbench module.
 - - Better visibility with the option : Feat names in rarity colour on actor sheets.

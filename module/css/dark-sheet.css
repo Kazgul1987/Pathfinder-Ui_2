@@ -51,7 +51,8 @@
 }
 
 .actor.sheet.dark-theme .crb-style nav.sheet-navigation {
-    background: var(--text-2) !important;
+    background: radial-gradient(var(--red), transparent)!important;
+    border: none;
 }
 
 .sheet.actor.character.dark-theme .actor-image {
@@ -64,7 +65,7 @@
 }
 
 .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.character .pc h3 {
-    background: var(--background);
+    background: radial-gradient(var(--background-2), transparent);
 }
 
 .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content h3.header button {
@@ -78,19 +79,18 @@
     background: var(--background);
 }
 
-.actor.sheet.character .crb-style .sheet-body .sheet-content .tab.character .ability-scores .ability .ability-score {
-    border: 1px solid var(--text);
-    background: var(--background-2);
+.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.character .attribute-modifiers .attribute h3.attribute-mod {
+    background: radial-gradient(var(--red), transparent)!important;
+    border: none;
 }
 
 .sheet.actor.character.dark-theme .crb-style .sheet-body .sheet-content ol.directory-list .action-header h3 input.item-name-input {
     color: var(--text);
-    background: var(--background);
 }
 
 .sheet.actor.character.dark-theme .item-name {
     color: var(--text);
-    background: transparent;
+    background: radial-gradient(var(--background-2), transparent);
     text-shadow: none;
 }
 
@@ -102,7 +102,7 @@
 
 .sheet.actor.character.dark-theme .crb-style .sheet-body .sheet-content .tab.inventory .inventory-header {
     color: var(--text);
-    background: var(--background);
+    background: radial-gradient(var(--red), transparent)!important;
     box-shadow: none;
 }
 
@@ -133,7 +133,7 @@
 }
 
 .actor.sheet.dark-theme .item-summary .item-buttons button {
-    background-color: var(--red);
+    background: radial-gradient(var(--red),transparent);
 }
 .actor.sheet.dark-theme .item-summary .item-buttons button:hover {
     color: var(--glass-bg-dark) !important;
@@ -155,7 +155,7 @@
 
 .sheet.actor.character.dark-theme .item-controls {
     color: var(--text) !important;
-    background: transparent !important;
+    background: radial-gradient(var(--background-2), transparent);
 }
 
 .sheet.actor.character.dark-theme h3 {
@@ -214,6 +214,10 @@
     color: var(--text) !important;
     background: transparent;
 }
+.actor.sheet.character.dark-theme .crb-style .details-input {
+    border: 1px dotted var(--background-2);
+    background: radial-gradient(var(--background-2), transparent);
+}
 
 .actor.sheet.dark-theme .crb-style header.char-header .char-details h1.char-name input[type=text], .actor.sheet.dark-theme .crb-style header.char-header .char-details h1.char-name span.non-editable {
     background: #100d0d!important;
@@ -223,7 +227,7 @@
     background: none!important;
 }
 
-.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.character .ability-scores .ability .ability-name {
+.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.character .attribute-modifiers .attribute .attribute-name {
     color: var(--secondary) !important;
     opacity: 0.7;
 }
@@ -231,7 +235,9 @@
 .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.character .ability-scores .ability.key .ability-id, .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.character .ability-scores .ability.key .ability-mod {
     color: var(--color-shadow-primary);
 }
-
+.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.character .attribute-modifiers .attribute .attribute-id > i.key-attribute {
+    color: var(--color-shadow-primary);
+}
 
 
 
@@ -314,6 +320,9 @@
 .actor.sheet.dark-theme .crb-style nav.sub-nav a, .actor.sheet.dark-theme .crb-style nav.sub-nav .tab {
     color: var(--primary) !important;
 }
+.actor.sheet.dark-theme .crb-style .sheet-body .sheet-content .tab.actions .actions-container .actions-tabs-wrapper .actions-panels ol.actions-list li.action .item-name {
+    background: radial-gradient(var(--background-2), transparent);
+}
 
 
 
@@ -391,6 +400,10 @@
     background-color: #5e0000;
     color: var(--text);
 }
+.actor.sheet.dark-theme .inventory .item .item-quantity, .actor.sheet.dark-theme .inventory .item .item-weight, .actor.sheet.dark-theme .inventory .item .item-controls, .actor.sheet.dark-theme .inventory .item .item-sell-value {
+    background: radial-gradient(var(--background-2), transparent);
+}
+
 
 
 
@@ -423,7 +436,7 @@
 }
 
 .actor.sheet.dark-theme .crb-style .sheet-body .sheet-content ol.spell-list > li.spell-level-header {
-    background: var(--background-2);
+    background: radial-gradient(var(--background-2), transparent);
     border: 1px dotted rgba(255, 255, 255, 0.2);
 }
 
@@ -448,7 +461,7 @@ color: var(--green)!important;
     border: 4px dotted var(--background-2);
 }
 .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.spellcasting .pf-add-item-row a {
-    background: var(--red)!important;
+    background: radial-gradient(var(--red), transparent)!important;
 }
 .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.spellcasting .pf-add-item-row a:hover {
     color: var(--background)!important;
@@ -476,6 +489,9 @@ color: var(--green)!important;
     color: var(--color-shadow-primary) ;
     text-shadow: 0 0 1px var(--color-shadow-primary);
 }
+.actor.sheet.dark-theme .crb-style .sheet-body .sheet-content ol.directory-list .action-header h3 {
+    background: radial-gradient(var(--background-2), transparent);
+}
 
 
 
@@ -485,7 +501,7 @@ color: var(--green)!important;
 /*    Proficiencies     */
 /************************/
 .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.proficiencies .skills-list .skill, .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.proficiencies .lores-list .skill, .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.proficiencies .combat-list .skill {
-    background: var(--background);
+    background: radial-gradient(var(--background-2), transparent);
     border: 1px dotted var(--background-2);
 }
 
@@ -530,7 +546,7 @@ color: var(--green)!important;
 /*      Biography       */
 /************************/
 .actor.sheet.dark-theme .crb-style .sheet-body .sheet-content .tab.biography .biography-content .editor .editor-content {
-    background: var(--background) !important;
+    background: radial-gradient(var(--background-2), transparent);
 }
 
 
