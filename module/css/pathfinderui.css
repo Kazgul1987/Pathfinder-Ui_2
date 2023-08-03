@@ -636,8 +636,8 @@ body.compact-mode #logo {
 }
 #sidebar hr {
     border: none;
-    border-top: 1px solid #675241;
-    border-bottom: 1px solid #675241;
+    border-top: 1px dotted #675241;
+    /*border-bottom: 1px solid #675241;*/
 }
 
 #settings h2 {
@@ -665,11 +665,9 @@ body.compact-mode #logo {
 #settings button,
 #sidebar .directory .action-buttons button {
     z-index: 18;
-
-    color: var(--color-text-light-highlight);
+    color: var(--color-text-light-heading);
     font-family: 'Kurale', serif;
     line-height: 25px;
-
     position: relative;
     background: url(../ui/buttons/button-bg.webp) no-repeat;
     background-size: cover;

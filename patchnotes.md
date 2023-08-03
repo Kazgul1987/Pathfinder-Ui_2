@@ -3,6 +3,13 @@
 ## Compatibility
 - Ready for v11 version.
 
+## v11.306.17
+- Add a compatibility with PF2e Workbench module.
+- - Better visibility with the option : Feat names in rarity colour on actor sheets.
+- - Better visibility with the option : Spell names in rarity colour on actor sheets. 
+- Improve visibility of Dark Mode Player Sheet. 
+- - Focus on spellcasting tab.
+
 ## v11.306.16
 - Fix macro bar that shifted the interface.
 - Fix a problem with illegible text on the standard character sheet.
