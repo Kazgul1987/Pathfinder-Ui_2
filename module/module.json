@@ -1,7 +1,7 @@
 {
   "id": "pathfinder-ui",
-  "title": "Pathfinder Ui v3",
-  "description": "Theme only for Pathfinder 2e. <p>*** Join the official Discord server: <a href=\"https://discord.gg/foundryvtt\"> Official Discord</a></p><p>*** Rejoignez la communauté Francophone: <a href=\"https://discord.gg/pPSDNJk\">Francophone Discord</a></p>",
+  "title": "PF2e Pathfinder Ui v3",
+  "description": "Overhauls the Foundry UI. Theme for Pathfinder 2e only. <p>*** Join the official Discord server: <a href=\"https://discord.gg/foundryvtt\"> Official Discord</a></p><p>*** Rejoignez la communauté Francophone: <a href=\"https://discord.gg/pPSDNJk\">Francophone Discord</a></p>",
   "authors": [
     {
       "name": "Sasmira",
@@ -10,7 +10,7 @@
       "flags": {}
     }
   ],
-  "version": "11.306.18",
+  "version": "11.307.1",
   "compatibility": {
     "minimum": "11",
     "verified": "11"
@@ -63,5 +63,5 @@
   ],
   "url": "https://gitlab.com/sasmira/pathfinder-ui",
   "manifest": "https://gitlab.com/sasmira/pathfinder-ui/-/raw/master/module/module.json",
-  "download": "https://gitlab.com/sasmira/pathfinder-ui/-/jobs/artifacts/v11.306.18/raw/pathfinder-ui.zip?job=build"
+  "download": "https://gitlab.com/sasmira/pathfinder-ui/-/jobs/artifacts/v11.307.1/raw/pathfinder-ui.zip?job=build"
 }

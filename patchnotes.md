@@ -3,8 +3,12 @@
 ## Compatibility
 - Ready for v11 version.
 
+## v11.307.1
+- New Background image 
+- New Paused image
+
 ## v11.306.18
-- Update for PF2e systeme version 5.3.0
+- Update for PF2e system version 5.3.0
 - Update Dark Mode Player Sheet. 
 
 ## v11.306.17
