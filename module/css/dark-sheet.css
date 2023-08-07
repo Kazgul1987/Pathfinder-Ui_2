@@ -4,16 +4,15 @@
     --text: #cfbda7;
     --text-2: rgb(93, 24, 13);
     --text-3: #91a82a;
-    --green: #91a82a!important;
-    --blue: #171f69!important;
-    --red: #5e0000!important;
-    --red-light:#ff0000!important;
+    --green: #91a82a;
+    --blue: #171f69;
+    --red: #5e0000;
+    --red-light:#ff0000;
     /*--background: rgb(40, 40, 40);*/
     --background: #100d0d;
     --background-2: #ffffff14;
     --highlightcol: #cfbda7;
     --highlight: 0 0 0 1px var(--text), 0 0 0 2px #93d1d3, inset 0 0 4px rgba(255, 255, 255, 0.25);
-    --color-shadow-primary: #ff0000;
     --glass-bg: rgba(20, 20, 20, 0.6);
     --glass-bg-light: rgba(255, 255, 255, 0.1);
     --glass-bg-dark: rgba(0, 0, 0, 0.7);
@@ -233,10 +232,10 @@
 }
 
 .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.character .ability-scores .ability.key .ability-id, .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.character .ability-scores .ability.key .ability-mod {
-    color: var(--color-shadow-primary);
+    color: var(--red-light);
 }
 .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.character .attribute-modifiers .attribute .attribute-id > i.key-attribute {
-    color: var(--color-shadow-primary);
+    color: var(--red-light);
 }
 
 
@@ -310,11 +309,11 @@
 }
 
 .actor.sheet.dark-theme .crb-style nav.sub-nav a.active, .actor.sheet.dark-theme .crb-style nav.sub-nav .tab.active {
-    color: var(--color-shadow-primary) !important;
+    color: var(--red-light) !important;
 }
 
 .actor.sheet.dark-theme .crb-style nav.sub-nav a:hover, .actor.sheet.dark-theme .crb-style nav.sub-nav .tab:hover {
-    text-shadow: 0 0 3px var(--color-shadow-primary) !important;
+    text-shadow: 0 0 3px var(--red-light) !important;
 }
 
 .actor.sheet.dark-theme .crb-style nav.sub-nav a, .actor.sheet.dark-theme .crb-style nav.sub-nav .tab {
@@ -413,7 +412,7 @@
 /*    Spellcrafting     */
 /************************/
 .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .blue-button:hover {
-    text-shadow: 0 0 3px var(--color-shadow-primary) !important;
+    text-shadow: 0 0 3px var(--red-light) !important;
 }
 
 .actor.sheet.dark-theme .crb-style .sheet-body .sheet-content ol.spell-list > li button.cast-spell {
@@ -486,8 +485,8 @@ color: var(--green)!important;
 }
 
 .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.crafting .known-formulas .formula-list .formula-level-header .level-name h4:hover, .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.crafting .known-formulas .formula-list .formula-level-header .item-name h4:hover, .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.crafting .known-formulas .formula-list .formula-item .level-name h4:hover, .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.crafting .known-formulas .formula-list .formula-item .item-name h4:hover, .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.crafting .crafting-entry .formula-list .formula-level-header .level-name h4:hover, .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.crafting .crafting-entry .formula-list .formula-level-header .item-name h4:hover, .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.crafting .crafting-entry .formula-list .formula-item .level-name h4:hover, .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.crafting .crafting-entry .formula-list .formula-item .item-name h4:hover {
-    color: var(--color-shadow-primary) ;
-    text-shadow: 0 0 1px var(--color-shadow-primary);
+    color: var(--red-light) ;
+    text-shadow: 0 0 1px var(--red-light);
 }
 .actor.sheet.dark-theme .crb-style .sheet-body .sheet-content ol.directory-list .action-header h3 {
     background: radial-gradient(var(--background-2), transparent);
@@ -506,7 +505,7 @@ color: var(--green)!important;
 }
 
 .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.proficiencies h1, .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.proficiencies h4, .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.proficiencies h6 {
-    text-shadow: 0 0 3px var(--color-shadow-primary) !important;
+    text-shadow: 0 0 3px var(--red-light) !important;
 }
 
 .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.proficiencies .skills-list .skill .rollable:hover, .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.proficiencies .lores-list .skill .rollable:hover, .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.proficiencies .combat-list .skill .rollable:hover {
@@ -516,7 +515,7 @@ color: var(--green)!important;
 
 .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.proficiencies .skills-list .skill .skill-score, .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.proficiencies .lores-list .skill .skill-score, .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.proficiencies .combat-list .skill .skill-score {
     color: var(--green);
-    text-shadow: 0 0 3px var(--color-shadow-primary);
+    text-shadow: 0 0 3px var(--red-light);
 }
 
 

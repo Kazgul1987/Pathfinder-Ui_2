@@ -3,6 +3,9 @@
 ## Compatibility
 - Ready for v11 version.
 
+## v11.307.2
+- Update data-visibility color
+
 ## v11.307.1
 - New Background image 
 - New Paused image

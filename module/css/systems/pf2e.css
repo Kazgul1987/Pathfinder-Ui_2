@@ -11,6 +11,7 @@
     --pf2e-half-transparent-dark: hsla(0, 0%, 0%,0.5);
     --color-text-hyperlink: #ff6400;
     --gold-and-glow: 0 0 0 1px var(--tertiary), 0 0 0 2px #9f725b, inset 0 0 3px rgba(255, 255, 255, .5);
+    --red-light:#ff0000;
 }
 
 .system-pf2e .sheet.actor:not(.loot-sheet-npc),
@@ -384,15 +385,31 @@ a.inline-roll.blindroll {
     border-color: var(--glassy);
 }
 
+a.content-link.broken {
+    color: var(--color-text-dark-inactive);
+}
+
+a.inline-check, span[data-pf2-check] {
+    color: #cfbda7;
+    background: #61180e;
+    padding: 0px 3px;
+    border: 2px solid var(--glassy);
+    border-radius: 3px;
+}
+
 a.content-link, [data-pf2-check], a.entity-link, [data-pf2-action], [data-pf2-effect-area], a.inline-roll:not(.inline-result) {
-    color: #4e0707;
+    color: #cfbda7;
+    background: #61180e;
+    padding: 0px 3px;
+    border: 2px solid var(--glassy);
+    border-radius: 3px;
 }
 
 #chat-log button {
     transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
 }
 
-#chat-log [data-pf2-check],
+/*#chat-log [data-pf2-check],
 #chat-log a.entity-link,
 #chat-log a.content-link,
 #chat-log a.inline-roll {
@@ -401,7 +418,7 @@ a.content-link, [data-pf2-check], a.entity-link, [data-pf2-action], [data-pf2-ef
     padding: 0px 3px;
     border: 2px solid var(--glassy);
     border-radius: 6px;
-}
+}*/
 
 #chat-log .message [data-visibility="gm"]:is(div,em,p,span,strong) {
     background: none;
