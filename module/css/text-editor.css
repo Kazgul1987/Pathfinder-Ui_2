@@ -1,23 +1,36 @@
 :root {
     --main-text-light-color: #98968a;
+    --background: #100d0d;
+    --background-2: #ffffff14;
 }
 
 .tox .tox-tbtn svg {
     fill: var(--main-text-light-color)!important;
 }
 
+.tox .tox-toolbar-overlord .tox-toolbar:not(.tox-toolbar--scrolling):first-child, .tox .tox-toolbar-overlord .tox-toolbar__primary {
+    background-color: var(--background)!important;
+    box-shadow: none!important;
+}
+
 .tox .tox-tbtn {
     color: var(--main-text-light-color)!important;
 }
+.tox .tox-tbtn--bespoke {
+    background: var(--background)!important;
+}
+.tox:not(.tox-tinymce-inline) .tox-editor-header {
+    background-color: var(--background)!important;
+}
+.tox.tox-tinymce .tox-edit-area__iframe {
+    background: #ffffff8a;
+}
 
 .dnd5e.sheet .editor .tox-toolbar-overlord, .dnd5e.sheet .editor .tox-toolbar__primary {
-    background: #ffffff14;
+    background: var(--background-2);
 }
 
 .mce-content-body {
     color: var(--main-text-light-color)!important;
-}
-
-.tox.tox-tinymce .tox-edit-area__iframe {
-    background: #ffffff8a;
+    background: var(--background-2)!important;
 }

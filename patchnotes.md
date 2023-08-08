@@ -3,6 +3,10 @@
 ## Compatibility
 - Ready for v11 version.
 
+## v11.307.3
+- Fix a problem of visibility with the mce bar.
+- Improve visibility of Dark Mode Player Sheet.
+
 ## v11.307.2
 - Update data-visibility color
 
