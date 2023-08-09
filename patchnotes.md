@@ -7,7 +7,7 @@
 - Update interface code.
 - Update visual for Polyglot
 - Update visual for Dice Tray
-- Update visual for DF Chat 
+- Update visual for DF Chat Enchancements
 - Improve visibility of Dark Mode Player Sheet.
 
 ## v11.307.3

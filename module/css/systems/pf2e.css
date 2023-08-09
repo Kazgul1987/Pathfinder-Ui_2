@@ -108,7 +108,7 @@
     border: none;
     border-radius: 30px;
     color: #837360;
-    box-shadow: 0 0 6px inset #3f342b!important;
+    box-shadow: var(--glassy);
     cursor: pointer;
 }
 
