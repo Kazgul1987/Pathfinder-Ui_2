@@ -1,18 +1,14 @@
 /* A bunch of disgusting CSS overrides that hit the system's CSS like a hammer to remove as much colour as possible */
 
 .dark {
-    --text: #cfbda7;
-    --text-2: rgb(93, 24, 13);
-    --text-3: #91a82a;
+    --main-text-light-color: #cfbda7;
     --green: #91a82a;
     --blue: #171f69;
     --red: #5e0000;
     --red-light:#ff0000;
-    /*--background: rgb(40, 40, 40);*/
     --background: #100d0d;
     --background-2: #ffffff14;
-    --highlightcol: #cfbda7;
-    --highlight: 0 0 0 1px var(--text), 0 0 0 2px #93d1d3, inset 0 0 4px rgba(255, 255, 255, 0.25);
+    --highlight: 0 0 0 1px var(--main-text-light-color), 0 0 0 2px #93d1d3, inset 0 0 4px rgba(255, 255, 255, 0.25);
     --glass-bg: rgba(20, 20, 20, 0.6);
     --glass-bg-light: rgba(255, 255, 255, 0.1);
     --glass-bg-dark: rgba(0, 0, 0, 0.7);
@@ -20,16 +16,16 @@
 }
 
 .dark-theme {
-    --primary: var(--text);
-    --secondary: var(--text-3);
-    --tertiary: var(--text);
-    --tertiary-dark: var(--text);
-    --tertiary-light: var(--text);
-    --body: var(--text);
-    --text-dark: var(--text);
-    --text-light: var(--text);
-    --sidebar-label: var(--text);
-    --sidebar-title: var(--text);
+    --primary: var(--main-text-light-color);
+    --secondary: var(--green);
+    --tertiary: var(--main-text-light-color);
+    --tertiary-dark: var(--main-text-light-color);
+    --tertiary-light: var(--main-text-light-color);
+    --body: var(--main-text-light-color);
+    --text-dark: var(--main-text-light-color);
+    --text-light: var(--main-text-light-color);
+    --sidebar-label: var(--main-text-light-color);
+    --sidebar-title: var(--main-text-light-color);
     
     --alt: var(--background);
     --sub: var(--background);
@@ -42,11 +38,17 @@
 /************************/
 /*      Character       */
 /************************/
-.actor.sheet.dark-theme .crb-style aside .sidebar a.roll-icon svg path {
-    fill: var(--green);
+.actor.sheet.dark-theme .crb-style {
+    background: radial-gradient(var(--background-2), transparent);
 }
 .actor.sheet.dark-theme .crb-style aside {
     background-image: url(../ui/sheet/red_sidebar_top.webp), url(../ui/sheet/red_sidebar_bottom.webp);
+}
+.actor.sheet.dark-theme .crb-style aside .sidebar a.roll-icon svg path {
+    fill: var(--green);
+}
+.actor.sheet.dark-theme .crb-style .stroke-header svg {
+    fill: none;
 }
 .actor.sheet.dark-theme .crb-style .details-label {
     color: darkgray;
@@ -56,7 +58,6 @@
 }
 .actor.sheet.dark-theme .crb-style aside .sidebar_title h2 {
     color: darkgray;
-
 }
 
 .actor.sheet.dark-theme hr {
@@ -85,14 +86,15 @@
 }
 
 .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content h3.header button {
-    background: var(--text);
+    background: var(--main-text-light-color);
     border: 1px solid var(--red)!important;
     color: var(--red)!important;
 }
 
 .sheet.actor.character.dark-theme .crb-style .sheet-body .sheet-content ol.directory-list .action-header {
-    color: var(--text) !important;
+    color: var(--main-text-light-color) !important;
     background: var(--background);
+    box-shadow: 0 0 6px inset #3f342b!important;
 }
 
 .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.character .attribute-modifiers .attribute h3.attribute-mod {
@@ -102,23 +104,23 @@
 }
 
 .sheet.actor.character.dark-theme .crb-style .sheet-body .sheet-content ol.directory-list .action-header h3 input.item-name-input {
-    color: var(--text);
+    color: var(--main-text-light-color);
 }
 
 .sheet.actor.character.dark-theme .item-name {
-    color: var(--text);
+    color: var(--main-text-light-color);
     background: radial-gradient(var(--background-2), transparent);
     text-shadow: none;
 }
 
 .sheet.actor.character.dark-theme .crb-style .sheet-body .sheet-content .tab.inventory .wealth {
-    color: var(--text);
+    color: var(--main-text-light-color);
     background: var(--background);
     box-shadow: none;
 }
 
 .sheet.actor.character.dark-theme .crb-style .sheet-body .sheet-content .tab.inventory .inventory-header {
-    color: var(--text);
+    color: var(--main-text-light-color);
     background: radial-gradient(var(--red), transparent)!important;
     box-shadow: none;
 }
@@ -128,25 +130,25 @@
 }
 
 .sheet.actor.character.dark-theme .currency li {
-    color: var(--text);
+    color: var(--main-text-light-color);
     background: var(--background);
     text-shadow: none;
 }
 
 .sheet.actor.character.dark-theme .inventory .inventory-header {
-    color: var(--text);
+    color: var(--main-text-light-color);
     background: var(--background);
 }
 
 .sheet.actor.character.dark-theme .window-content {
-    color: var(--text);
+    color: var(--main-text-light-color);
     background: none;
 }
 
 .sheet.actor.character.dark-theme button {
-    color: var(--text) !important;
+    color: var(--main-text-light-color) !important;
     background: var(--glass-bg);
-    border-color: var(--highlightcol) !important;
+    border-color: var(--main-text-light-color) !important;
 }
 
 .actor.sheet.dark-theme .item-summary .item-buttons button {
@@ -161,23 +163,23 @@
 
 .actor.sheet.dark-theme .crb-style aside .modifiers_button:hover:not(:disabled) {
     color: black!important;
-    background: var(--text);
+    background: var(--main-text-light-color);
 }
 
 .sheet.actor.character.dark-theme h6 {
-    color: var(--text) !important;
+    color: var(--main-text-light-color) !important;
     background: var(--background) !important;
-    border-color: var(--highlightcol) !important;
+    border-color: var(--main-text-light-color) !important;
 }
 
 .sheet.actor.character.dark-theme .item-controls {
-    color: var(--text) !important;
+    color: var(--main-text-light-color) !important;
     background: radial-gradient(var(--background-2), transparent);
 }
 
 .sheet.actor.character.dark-theme h3 {
-    color: var(--text) !important;
-    border-color: var(--highlightcol) !important;
+    color: var(--main-text-light-color) !important;
+    border-color: var(--main-text-light-color) !important;
 }
 
 .sheet.actor.character.dark-theme .crb-style .sheet-body .sheet-content .tab.character .character-details .alignment {
@@ -189,13 +191,13 @@
 }
 
 .sheet.actor.character.dark-theme .data-value {
-    border-color: var(--highlightcol) !important;
+    border-color: var(--main-text-light-color) !important;
 }
 
 .sheet.actor.character.dark-theme li.tag {
-    color: var(--text) !important;
+    color: var(--main-text-light-color) !important;
     background: var(--background) !important;
-    box-shadow: inset 0 0 0 1px var(--text) !important;
+    box-shadow: inset 0 0 0 1px var(--main-text-light-color) !important;
 }
 
 .sheet.actor.character.dark-theme form.editable {
@@ -203,11 +205,11 @@
 }
 
 .actor.sheet.character.dark-theme .crb-style nav.sheet-navigation .item:hover, .actor.sheet.character.dark-theme .crb-style nav.sheet-navigation .item.active {
-    fill: var(--text);
+    fill: var(--main-text-light-color);
 }
 
 .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .blue-button {
-    color: var(--text) !important;
+    color: var(--main-text-light-color) !important;
     background: var(--background) !important;
 }
 .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .item-image:hover i {
@@ -215,7 +217,7 @@
     color: var(--background);
 }
 .actor.sheet.character.dark-theme nav.sub-nav {
-    color: var(--text) !important;
+    color: var(--main-text-light-color) !important;
     background: var(--background) !important;
 }
 
@@ -224,20 +226,21 @@
 }
 
 .actor.sheet.character.dark-theme select {
-    color: var(--text) !important;
+    color: var(--main-text-light-color) !important;
 }
 
 .actor.sheet.character.dark-theme input {
-    color: var(--text) !important;
+    color: var(--main-text-light-color) !important;
     background: transparent;
 }
 .actor.sheet.character.dark-theme .crb-style .details-input {
     border: 1px dotted var(--background-2);
     background: radial-gradient(var(--background-2), transparent);
+    box-shadow: 0 0 6px inset #3f342b;
 }
 
 .actor.sheet.dark-theme .crb-style header.char-header .char-details h1.char-name input[type=text], .actor.sheet.dark-theme .crb-style header.char-header .char-details h1.char-name span.non-editable {
-    background: #100d0d!important;
+    background: radial-gradient(var(--background-2), transparent);
 }
 
 .actor.sheet.dark-theme .crb-style header.char-header .char-details h1.char-name {
@@ -321,7 +324,7 @@
 }
 
 .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.actions .actions-container .actions-tabs-wrapper .actions-panels ol.actions-list.strikes-list li.strike .auxiliary-actions button:not(:disabled):hover {
-    color: var(--text) !important;
+    color: var(--main-text-light-color) !important;
     background: var(--red)!important;
     box-shadow: none;
 }
@@ -411,11 +414,11 @@
 }
 .actor.sheet.dark-theme .tags .tag.tag_secondary {
     background-color: #171f69!important;
-    color: var(--text);
+    color: var(--main-text-light-color);
 }
 .actor.sheet.dark-theme .tags .tag, .tags .tag option {
     background-color: #5e0000;
-    color: var(--text);
+    color: var(--main-text-light-color);
 }
 .actor.sheet.dark-theme .inventory .item .item-quantity, .actor.sheet.dark-theme .inventory .item .item-weight, .actor.sheet.dark-theme .inventory .item .item-controls, .actor.sheet.dark-theme .inventory .item .item-sell-value {
     background: radial-gradient(var(--background-2), transparent);
@@ -443,7 +446,7 @@
 }
 
 .actor.sheet.dark-theme .crb-style .sheet-body .sheet-content ol.spell-list > li[data-expended-state=true] .cast-spell {
-    color: var(--text)!important;
+    color: var(--main-text-light-color)!important;
     background: var(--red);
 }
 
@@ -458,10 +461,11 @@
 .actor.sheet.dark-theme .crb-style .sheet-body .sheet-content ol.spell-list > li.spell-level-header {
     background: radial-gradient(var(--background-2), transparent);
     border: 1px dotted rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 6px inset #3f342b;
 }
 
 .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.spellcasting .spellcasting-entry .rollable .d20-svg path {
-    fill: var(--text)!important;
+    fill: var(--main-text-light-color)!important;
 }
 .actor.sheet.dark-theme .crb-style .sheet-body .sheet-content ol.directory-list .action-header > a .fas, .actor.sheet.dark-theme .crb-style .sheet-body .sheet-content ol.directory-list .action-header > a > .fa {
     color: var(--green);
@@ -523,6 +527,7 @@ color: var(--green)!important;
 .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.proficiencies .skills-list .skill, .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.proficiencies .lores-list .skill, .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.proficiencies .combat-list .skill {
     background: radial-gradient(var(--background-2), transparent);
     border: 1px dotted var(--background-2);
+    box-shadow: 0 0 6px inset #3f342b;
 }
 
 .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.proficiencies h1, .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.proficiencies h4, .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.proficiencies h6 {
@@ -573,7 +578,7 @@ color: var(--green)!important;
 }
 .actor.sheet.dark-theme .crb-style .sheet-body .sheet-content .tab.biography .biography-content .editor .editor-edit {
     background: var(--background);
-    color: var(--text);
+    color: var(--main-text-light-color);
 }
 .actor.sheet.character .crb-style .sheet-body .sheet-content .tab.biography .biography-personality .bio {
     background: radial-gradient(var(--background-2), transparent);
@@ -590,7 +595,7 @@ color: var(--green)!important;
     top: 2px;
 }
 .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.pfs > section.level-bump .toggle::after {
-    color: var(--text) !important;
+    color: var(--main-text-light-color) !important;
     background: var(--red) !important;
     border-radius: 50px;
     right: 0px;

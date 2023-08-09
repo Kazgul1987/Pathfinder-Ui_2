@@ -29,6 +29,7 @@ body {
     --border-color-2: #837360;
     --serif: Eczar,Georgia,serif;
     --journal-serif: "Vollkorn",var(--serif);
+    --glassy: 0px 0px 3px 0px rgba(255, 255, 255, 0.4) inset, 0px 0px 2px 1px rgba(0, 0, 0, 1), 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
 }
 
 #logo {
@@ -376,8 +377,11 @@ body.compact-mode #logo {
 }
 
 #chat-form textarea {
-    color: #cfbda7;
-    background: #ffffff14;
+    width: 99%;
+    margin-left: 2px;
+    background: radial-gradient(var(--background-2), transparent)!important;
+    box-shadow: var(--glassy);
+    color: var(--main-text-light-color);
 }
 
 #chat-form textarea:focus {
@@ -388,10 +392,6 @@ body.compact-mode #logo {
     color: var(--border-color-2);
     margin: 0 6px 10px
 }
-
-/*#chat-controls .control-buttons {
-    color:rgba(255, 255, 245, 0.8);
-}*/
 
 #chat-controls::before {
     position: relative;
@@ -538,66 +538,47 @@ body.compact-mode #logo {
 }
 
 .polyglot-lang-select{
-    color: #cfbda7 !important;
+    color: var(--border-color-2);
+    font-weight: bold;
 }
 
 .polyglot-lang-select select {
     font-family: CaslonPro;
-    font-weight: 500;
+    font-weight: bold;
     font-size: 14px;
     text-align: left;
     position: relative;
     height: 24px;
     top: 10px;
     padding-top: 0px;
-    background: url(../ui/other/paper_texture.webp) repeat !important;
-    background-position-x: 0%;
-    background-position-y: 0%;
     background-position: initial;
-    box-shadow: inset 0 0 10px #000000;
-    border-image: url(../ui/frames/chat-controls-border.webp) 4 repeat;
-    border-image-width: 4px;
-    color: #520000;
     margin-top: -10px;
+    border: 1px solid #000;
+    background: radial-gradient(var(--background-2), transparent);
+    box-shadow: var(--glassy);
+    color: var(--main-text-light-color);
+    font-weight: bold;
 }
 .roll-type-select{
     font-family: CaslonPro;
-    font-weight: 500;
+    font-weight: bold;
     font-size: 14px;
     text-align: left;
     position: relative;
-    height: 24px;
     top: 1px;
     padding-top: 0px;
-    background: url(../ui/other/paper_texture.webp) repeat !important;
-    background-position-x: 0%;
-    background-position-y: 0%;
     background-position: initial;
-    box-shadow: inset 0 0 10px #000000;
-    border-image: url(../ui/frames/chat-controls-border.webp) 4 repeat;
-    border-image-width: 4px;
-    color: #520000;
+    background: radial-gradient(var(--background-2), transparent)!important;
+    box-shadow: var(--glassy);
+    color: var(--main-text-light-color);
+    border: none;
 }
 
-#sidebar .sidebar-tab #chat-controls div.roll-type-select select {
-    font-family: CaslonPro;
-    font-weight: 500;
-    font-size: 14px;
-    text-align: left;
-    position: relative;
-    height: 24px;
-    top: 7px;
-    padding-top: 3px;
-    background: url(../ui/other/paper_texture.webp) repeat;
-    background-position-x: 0%;
-    background-position-y: 0%;
-    background-position: initial;
-    box-shadow: inset 0 0 10px #000000;
-    border-image: url(../ui/frames/chat-controls-border.webp) 4 repeat;
-    border-image-width: 4px;
-    border-image-outset: 3px 2px 2px 2px;
-    color: #520000;
+#sidebar .sidebar-tab option, optgroup {
+    color: var(--main-text-light-color);
+    background: var(--background)!important;
 }
+
 
 /*************************************************************/
 /*================= SIDEBAR FOLDER & WIDGETS ================*/
@@ -817,23 +798,6 @@ body.compact-mode #logo {
     background-repeat: no-repeat;
 }
 
-/*#hotbar #action-bar .macro::before {
-    background-image: url(../ui/frames/macro.webp);
-    background-size: contain;
-    background-repeat: no-repeat;
-    position: absolute;
-    content: " ";
-    width: 61px;
-    height: 78px;
-    top: -11px;
-    left: -9px;
-    z-index: 1;
-}
-
-#hotbar #action-bar .macro:hover::before {
-    background-image: url(../ui/frames/macro_hover.webp);
-}*/
-
 #hotbar .macro:hover {
     box-shadow: 0 0 10px var(--color-shadow-highlight) inset!important;
 }
@@ -876,9 +840,20 @@ body.compact-mode #logo {
     padding: 0 4px;
 }
 
-.dice-tray button {
-    box-shadow: 0 0 6px inset #3f342b;
+.dice-tray button svg * {
+    fill: #837360;
 }
+
+.dice-tray button {
+    background: radial-gradient(var(--background-2), transparent);
+    box-shadow: var(--glassy);
+    color: #837360;
+}
+.dice-tray input[type="text"] {
+    background: radial-gradient(var(--background-2), transparent);
+    box-shadow: var(--glassy);
+}
+
 
 .dice-calculator > button, .dice-calculator .dice-calculator--button {
     color: var(--main-text-light-color)
@@ -1160,11 +1135,6 @@ button#roll-hd:hover::before {
 }
 
 /* NAVIGATION */
-
-/*#ui-top {
-    width: calc(100% - 100px);
-    left: 142px;
-}*/
 #ui-top {
     width: calc(103%);
 }
