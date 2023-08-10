@@ -3,6 +3,13 @@
 ## Compatibility
 - Ready for v11 version.
 
+
+## v11.307.5
+- Update interface code.
+- Parchment texture on Journal pages is disabled by default now.
+- Update Parchment texture option with the color of PF2e remaster.
+- Update PF2e Style option with the color of PF2e remaster.
+
 ## v11.307.4
 - Update interface code.
 - Update visual for Polyglot

@@ -1,43 +1,112 @@
-/* Custom CSS - PF2 STYLE v2.0 by Dalvyn */
+/* Custom CSS - PF2 STYLE REMASTER by Sasmira */
+
+:root {
+    --custom-red: #4e0707;
+	--custom-green: #002a17;
+	--custom-green-light: #365d4e;
+}
+
+.sheet.journal-entry .journal-entry-content {
+    background: url(../css/assets/paperback.webp) repeat;
+
+}
+
 
 /* POLICES
 ====================================================== */
 @font-face {
-    font-family: "Taroca";
-    src: url("./fonts/Taroca Regular.ttf");
+	font-family: "Taroca";
+	src: url("./fonts/Taroca.ttf") format('truetype');
 }
-
 @font-face {
-    font-family: "Gin-Regular";
-    src: url("./fonts/Gin-Regular.ttf");
+	font-family: "Good OT";
+	src: url("./fonts/GoodOT.otf") format('opentype');
 }
-
 @font-face {
-    font-family: "Gelasio";
-    src: url("./fonts/Gelasio-Regular.ttf");
+	font-family: "Good OT Bold";
+	src: url("./fonts/GoodOT-Bold.otf") format('opentype');
 }
-
 @font-face {
-    font-family: "roboto condensed";
-    src: url("./fonts/RobotoCondensed-Regular.ttf");
+	font-family: "Good OT Cond Bold";
+	src: url("./fonts/GoodOT-CondBold.otf") format('opentype');
 }
-
+@font-face {
+	font-family: "Good OT Italic";
+	src: url("./fonts/GoodOT-Italic.otf") format('opentype');
+}
+@font-face {
+	font-family: "Sabon LT";
+	src: url("./fonts/Sabon-LT-Std-Roman.otf") format('opentype');
+}
+@font-face {
+	font-family: "Sabon LT Italic";
+	src: url("./fonts/Sabon-LT-Std-Italic.ttf") format('truetype');
+}
 @font-face {
     font-family: "tauri";
-    src: url("./fonts/Tauri-Regular.ttf");
+    src: url("./fonts/Tauri-Regular.ttf") format('truetype');
 }
+
+
+
+/* SIDEBAR
+====================================================== */
+
+.sheet.journal-entry {
+    --sidebar-width-expanded: 256px;
+}
+
+.sheet.journal-entry .pages-list .directory-item.active:first-of-type {
+    border-top: none;
+}
+.sheet.journal-entry .pages-list .directory-item.active:last-of-type {
+    border-bottom: 2px solid var(--custom-green-light);
+}
+.sheet.journal-entry .pages-list .page-heading .page-title {
+    text-indent: 0rem;
+    font-family: "Good OT Cond Bold";
+    font-size: 1.1rem;
+}
+.sheet.journal-entry .pages-list .h2 .heading-link {
+    text-indent: 0.5rem;
+    font-family: "Good OT";
+}
+.sheet.journal-entry .pages-list .h3 .heading-link {
+    text-indent: 0.5rem;
+    font-family: "Good OT";
+}
+
+
 
 /* TITRES
 ====================================================== */
+.journal-sheet .journal-header {
+    margin: 0rem;
+}
 
-.journal-header .title {
-	color: #4e0707;
+.sheet.journal-entry .scrollable {
+    top: 20px;
+}
+
+.sheet.journal-entry .journal-header .title {
+    background: url(../css/assets/border-left.webp), url(../css/assets/border-right.webp), url(../css/assets/border-top.webp), url(../css/assets/border-bottom.webp), url(../css/assets/header-back-center.webp);
+    background-repeat: no-repeat, no-repeat, repeat-x, repeat-x, repeat-x;
+    background-position: -10px calc(100% + 3px), calc(100% + 10px) calc(100% + 3px), 100% 1px, 100% 100%, 100% 100%;
+    height: 90px;
+    line-height: 32px;
+    border: none;
+    text-align: center;
 	font-family: "Taroca";
+    font-size: 2.2rem;
+	color: var(--custom-green);
+    letter-spacing: -0.1rem;
+    text-transform: uppercase;
 }
 
 .journal-entry-page h1 {
-	color: #02256E;
 	font-family: "Taroca";
+	color: var(--custom-green);
+	letter-spacing: -0.07rem;
 	line-height: 100%;
 	border-bottom: 0;
 }
@@ -45,9 +114,10 @@
 	background-image: linear-gradient(#02256e00,#02256E00,#02256E44);
 }
 .journal-entry-page h2 {
-	color: #4e0707;
-	font-family: "Gin-Regular";
-	text-transform: uppercase;
+    font-family: "Good OT Cond Bold";
+	color: var(--custom-red);
+	letter-spacing: -0.02rem;
+	text-transform: capitalize;
 	line-height: 100%;
 	border-bottom: 0;
 }
@@ -56,9 +126,9 @@
 }
 
 .journal-entry-page h3 {
-	color: #ad6f59;
-	font-family: "Gin-Regular";
-	text-transform: uppercase;
+	color: var(--custom-green-light);
+    font-family: "Good OT Cond Bold";
+	text-transform: capitalize;
 	line-height: 100%;
 	border-bottom: 0;
 }
@@ -67,12 +137,12 @@
 }
 
 .journal-entry-page h4 {
-	color: #02256e;
-	font-family: "Gin-Regular";
+    font-family: "Good OT";
 	font-variant: small-caps;
 	font-size: 132%;
 	line-height: 100%;
 	border-bottom: 0;
+	font-weight: bold;
 }
 .journal-entry-page h4:hover {
 	background-image: linear-gradient(#02256e00,#02256e00,#02256e00,#02256e44);
@@ -94,7 +164,7 @@
 ====================================================== */
 
 .journal-entry-page {
-	font-family: "Gelasio";
+    font-family: "Sabon LT";
 }
 
 /* SYMBOLES PF2
@@ -111,7 +181,7 @@
 ====================================================== */
 
 .journal-entry-page table {
-	font-family: "roboto condensed";
+	font-family: "Good OT";
 	max-width: calc(100% - 24px);
 	margin-left: auto;
 	margin-right: auto;
@@ -140,21 +210,22 @@
 .journal-entry-page .journal-page-content
 blockquote:not(h6+p+ul+blockquote, h6+p+blockquote,
 h6+ul+blockquote, h6+blockquote) {
+    font-family: "Good OT Italic";
+	text-shadow: 0 0 var(--custom-green);
 	border-left-width: 0;
-	border-top: 2px solid #cfbf80;
-	border-bottom: 2px solid #cfbf80;
-	background-color: #5e0000;
-	border-radius: 8px;
-	color: #cfbf80;
+	border-top: 2px solid #392f22;
+	border-bottom: 2px solid #392f22;
+	background-color: #e9dbb375;
+	border-radius: 5px;
 	padding: 4px 12px;
 	margin-left: 0;
 	margin-right: 0;
 }
-.journal-entry-page .journal-page-content
+/*.journal-entry-page .journal-page-content
 blockquote:not(h6+p+ul+blockquote, h6+p+blockquote,
 h6+ul+blockquote, h6+blockquote):hover {
-	color: #efdfa2;
-}
+	font-weight: bold;
+}*/
 
 /* BLOCS DESCRIPTIFS (via h6)
 ====================================================== */
@@ -193,7 +264,7 @@ h6+p+blockquote, h6+p+ul+blockquote) {
 .journal-entry-page .journal-page-content h6+p+ul {
 	clear: both;
 	display: flex;
-	font-family: "roboto condensed";
+	font-family: "Good OT";
 	font-size: 94%;
 	list-style-type: none;
 	padding: 4px 12px;
@@ -263,7 +334,7 @@ h6+p+blockquote, h6+p+ul+blockquote) {
 
 .journal-entry-page .journal-page-content h6+p+ul+blockquote p,
 .journal-entry-page .journal-page-content h6+p+blockquote p {
-	font-family: "roboto condensed";
+	font-family: "Good OT";
 	font-style: normal;
 	text-indent: -1em; 
 	margin-left: 1em;

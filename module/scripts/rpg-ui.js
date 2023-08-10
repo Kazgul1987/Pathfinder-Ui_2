@@ -91,7 +91,7 @@ Hooks.on('init', () => {
 		hint: game.i18n.localize('RPGUI.SETTINGS.JOURNAL_SHEET_HINT'),
 		scope: "client",
 		type: Boolean,
-		default: false,
+		default: true,
 		config: true,
 		onChange: () => {
 			location.reload();

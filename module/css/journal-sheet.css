@@ -1,7 +1,18 @@
-
 /*************************************************************/
 /* ==================== journal sheet ====================== */
 /*************************************************************/
+
+:root {
+    --journal-sheet-red-light: rgb(93, 24, 13);
+    --journal-sheet-red:#5d180d;
+	--custom-green: #002a17;
+}
+
+@font-face {
+    font-family: "FF Good Pro X Cond-Regular";
+    src: url("./fonts/FFGoodProXCond-Regular.ttf") format('truetype');
+}
+
 .app.journal-sheet {
     font-family: var(--journal-serif);
     font-size: 1.1em;
@@ -57,7 +68,7 @@
     flex: 0 0 40px;
     line-height: 40px;
 
-    color: rgb(93, 24, 13);
+    color: var(--custom-green);
     font-weight: 600;
 }
 
@@ -94,7 +105,7 @@
     border: none;
     background: none;
 
-    color: rgb(93, 24, 13);
+    color: var(--custom-green);
     font-size: .705cm;
     font-weight: bold;
     border-image: url(../ui/frames/brown_line.webp) 25 25 round;
@@ -183,22 +194,13 @@
     background: none;
 }
 
-.journal-sheet a.entity-link,
-.journal-sheet a.inline-roll {
-    color: revert !important;
-    background: #d3c3a7ab !important;
-    padding: 0px 3px;
-    border: 2px solid #2f271aab;
-    border-radius: 4px;
-}
-
 .journal-sheet.minimized {
     padding: 1px 0px;
 }
 
 .journal-sheet.minimized .window-header .window-title {
     opacity: 100;
-    color: rgb(93, 24, 13);
+    color: var(--custom-green);
     font-size: .505cm;
     font-weight: bold;
 }
@@ -217,49 +219,72 @@
 /*add v10*/
 
 .sheet.journal-entry {
-    --sidebar-width-expanded: 270px;
+    --sidebar-width-expanded: 256px;
     --sidebar-width-collapsed: 30px;
 }
+
+.sheet.journal-entry .pages-list .directory-item.active:first-of-type {
+    border-top: none;
+}
+.sheet.journal-entry .pages-list .page-heading .page-title {
+    text-indent: 0rem;
+    font-family: "FF Good Pro X Cond-Regular";
+    font-weight: bold;
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+.sheet.journal-entry .pages-list .h2 .heading-link {
+    text-indent: 0.5rem;
+    font-family: "FF Good Pro X Cond-Regular";
+    font-size: 1.15em;
+}
+.sheet.journal-entry .pages-list .h3 .heading-link {
+    text-indent: 0.5rem;
+    font-family: "FF Good Pro X Cond-Regular";
+    font-size: 1.15em;
+}
+
 .sheet.journal-entry .journal-sidebar .action-buttons {
     flex: 0.1;
 }
 .sheet.journal-entry .pages-list .heading-link {
-    color:#5d180d;
+    color:var(--custom-green);
     font-weight: bold;
 }
 .sheet.journal-entry .pages-list .page-heading .page-title {
-color:#5d180d;
+color:var(--custom-green);
 font-weight: bold;
 }
 .sheet.journal-entry .pages-list .page-heading .page-title:hover {
-color:#5d180d !important;
+color:var(--custom-green) !important;
 font-weight: bold;
 }
 .sheet.journal-entry .pages-list .h2 .heading-link {
-    color:#5d180d;
+    color:var(--custom-green);
     font-weight: bold;
 }
 .sheet.journal-entry .pages-list .h2 .heading-link:hover {
-    color:#5d180d;
+    color:var(--custom-green);
     font-weight: bold;
 }
 .sheet.journal-entry .pages-list .page-heading {
-color:#5d180d;
+color:var(--custom-green);
 font-weight: bold;
 }
 .sheet.journal-entry .journal-sidebar .directory-header .view-mode {
-color:#5d180d;
+color:var(--custom-green);
 }
 .directory .directory-header .header-search input {
 background: none;
 color: var(--main-text-light-color);
 }
 .sheet.journal-entry .journal-sidebar .directory-header .header-search input {
-    color:#5d180d;
+    color:var(--custom-green);
+    font-family: "FF Good Pro X Cond-Regular";
     font-weight: bold;
 }
 .sheet.journal-entry .journal-sidebar .directory-header .collapse-toggle {
-color:#5d180d;
+color:var(--custom-green);
 }
 .sheet.journal-entry .journal-entry-content {
     flex: 1;
@@ -282,7 +307,7 @@ color:#5d180d;
     border: none;
 }
 .prosemirror menu .pm-dropdown > span {
-    color:#5d180d;
+    color:var(--custom-green);
 }
 .sheet.journal-entry-page .journal-header {
     display: flex;

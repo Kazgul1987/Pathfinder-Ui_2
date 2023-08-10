@@ -408,20 +408,24 @@ a.inline-roll.blindroll {
 }
 
 a.content-link.broken {
-    color: var(--color-text-dark-inactive);
+    color: var(--color-text-dark-inactive)!important;
 }
 
 a.inline-check, span[data-pf2-check] {
     color: #cfbda7;
-    background: #61180e;
+    background: #61180e!important;
     padding: 0px 3px;
     border: 2px solid var(--glassy);
     border-radius: 3px;
 }
 
-a.content-link, [data-pf2-check], a.entity-link, [data-pf2-action], [data-pf2-effect-area], a.inline-roll:not(.inline-result) {
-    color: #cfbda7;
+[data-visibility]:not([data-visibility=all])[data-visibility=owner] {
     background: #61180e;
+}
+
+a.content-link, [data-pf2-check], a.entity-link, [data-pf2-action], [data-pf2-effect-area], a.inline-roll:not(.inline-result) {
+    color: #cfbda7!important;
+    background: #61180e!important;
     padding: 0px 3px;
     border: 2px solid var(--glassy);
     border-radius: 3px;
