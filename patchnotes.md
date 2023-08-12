@@ -4,6 +4,12 @@
 - Ready for v11 version.
 
 
+## v11.307.6
+- Update interface code.
+- NEW : Add a compatibility and theme for PF2e Utility Buttons.
+- NEW : The standard sheet is now in the color of the Remaster version. (thx @Vesselchuck for your work)
+- The Dark-theme sheet is in the color of the Remaster version.
+
 ## v11.307.5
 - Update interface code.
 - Parchment texture on Journal pages is disabled by default now.

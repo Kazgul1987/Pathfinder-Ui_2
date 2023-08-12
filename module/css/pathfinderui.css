@@ -373,7 +373,7 @@ body.compact-mode #logo {
 /*======================= CHAT TAB ==========================*/
 /*************************************************************/
 #chat-form {
-    margin: 0 6px 25px;
+    margin: 0 5px 5px;
 }
 
 #chat-form textarea {
@@ -836,7 +836,6 @@ body.compact-mode #logo {
 
 .dice-tray {
     position: relative;
-    top: -25px;
     padding: 0 4px;
 }
 

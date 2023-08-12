@@ -13,6 +13,8 @@
     --glass-bg-light: rgba(255, 255, 255, 0.1);
     --glass-bg-dark: rgba(0, 0, 0, 0.7);
     --glassy: 0px 0px 3px 0px rgba(255, 255, 255, 0.4) inset, 0px 0px 2px 1px rgba(0, 0, 0, 1), 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+	--primary-remaster: hsl(153, 100%, 8%);
+	--primary-light-remaster: hsl(170, 96%, 19%);
 }
 
 .dark-theme {
@@ -31,18 +33,20 @@
     --sub: var(--background);
 }
 
+/* Remaster PC Sheet
+*************************/
+.actor.sheet.dark-theme .crb-style aside {
+	background-image: url("../css/assets/remaster-pc-sheet/dark_green_sidebar_top.webp"), url("../css/assets/remaster-pc-sheet/dark_green_sidebar_bottom.webp") ;
+}
 
 
 
 
-/************************/
-/*      Character       */
-/************************/
+
+/*      Character       
+*************************/
 .actor.sheet.dark-theme .crb-style {
     background: radial-gradient(var(--background-2), transparent);
-}
-.actor.sheet.dark-theme .crb-style aside {
-    background-image: url(../ui/sheet/red_sidebar_top.webp), url(../ui/sheet/red_sidebar_bottom.webp);
 }
 .actor.sheet.dark-theme .crb-style aside .sidebar a.roll-icon svg path {
     fill: var(--green);
@@ -59,7 +63,9 @@
 .actor.sheet.dark-theme .crb-style aside .sidebar_title h2 {
     color: darkgray;
 }
-
+.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.character .attribute-modifiers .attribute .attribute-id {
+    color: var(--primary-light-remaster);
+}
 .actor.sheet.dark-theme hr {
     border-bottom: none;
     border-top: 2px dotted;
@@ -67,7 +73,7 @@
 }
 
 .actor.sheet.dark-theme .crb-style nav.sheet-navigation {
-    background: radial-gradient(var(--red), transparent)!important;
+    background: radial-gradient(var(--primary-light-remaster), transparent)!important;
     border: none;
 }
 
@@ -87,8 +93,8 @@
 
 .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content h3.header button {
     background: var(--main-text-light-color);
-    border: 1px solid var(--red)!important;
-    color: var(--red)!important;
+    border: 1px solid var(--primary-light-remaster)!important;
+    color: var(--primary-remaster)!important;
 }
 
 .sheet.actor.character.dark-theme .crb-style .sheet-body .sheet-content ol.directory-list .action-header {
@@ -98,7 +104,7 @@
 }
 
 .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.character .attribute-modifiers .attribute h3.attribute-mod {
-    background: radial-gradient(var(--red), transparent)!important;
+    background: radial-gradient(var(--primary-remaster), transparent)!important;
     color: darkgray!important;
     border: none;
 }
@@ -121,7 +127,7 @@
 
 .sheet.actor.character.dark-theme .crb-style .sheet-body .sheet-content .tab.inventory .inventory-header {
     color: var(--main-text-light-color);
-    background: radial-gradient(var(--red), transparent)!important;
+    background: radial-gradient(var(--primary-light-remaster), transparent)!important;
     box-shadow: none;
 }
 
@@ -256,15 +262,21 @@
     color: var(--red-light);
 }
 .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.character .attribute-modifiers .attribute .attribute-id > i.key-attribute {
-    color: var(--red-light);
+    color: var(--green);
+}
+.actor.sheet.dark-theme a:hover {
+    text-shadow: 0 0 8px var(--green) !important;
+}
+.actor.sheet.dark-theme button:hover, .dark-theme button:focus {
+    box-shadow: 0 0 5px var(--green);
 }
 
 
 
 
-/************************/
-/*       Actions        */
-/************************/
+
+/* Actions        
+*************************/
 .actor.sheet.dark-theme .crb-style .sheet-body .sheet-content .tab.actions .actions-container .actions-tabs-wrapper .actions-panels ol.actions-list li.action {
     border: none;
 }
@@ -330,7 +342,7 @@
 }
 
 .actor.sheet.dark-theme .crb-style nav.sub-nav a.active, .actor.sheet.dark-theme .crb-style nav.sub-nav .tab.active {
-    color: var(--red-light) !important;
+    color: var(--green) !important;
 }
 
 .actor.sheet.dark-theme .crb-style nav.sub-nav a:hover, .actor.sheet.dark-theme .crb-style nav.sub-nav .tab:hover {
@@ -348,9 +360,9 @@
 
 
 
-/************************/
-/*      Inventory       */
-/************************/
+
+/* Inventory       
+*************************/
 .actor.sheet.dark-theme .inventory {
     --border-color: var(--background-2);
 }
@@ -429,9 +441,9 @@
 
 
 
-/************************/
-/*    Spellcrafting     */
-/************************/
+
+/* Spellcrafting 
+*************************/
 .actor.sheet.dark-theme .crb-style .sheet-body .sheet-content ol.spell-list > li.spell-level-header .item-name h3 {
     color: darkorange!important;
 }
@@ -485,7 +497,7 @@ color: var(--green)!important;
     border: 4px dotted var(--background-2);
 }
 .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.spellcasting .pf-add-item-row a {
-    background: radial-gradient(var(--red), transparent)!important;
+    background: radial-gradient(var(--primary-light-remaster), transparent)!important;
 }
 .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.spellcasting .pf-add-item-row a:hover {
     color: var(--background)!important;
@@ -502,9 +514,9 @@ color: var(--green)!important;
 
 
 
-/************************/
-/*      crafting        */
-/************************/
+
+/* crafting
+*************************/
 .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.crafting .known-formulas .formula-list .formula-level-header .item-summary, .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.crafting .known-formulas .formula-list .formula-item .item-summary, .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.crafting .crafting-entry .formula-list .formula-level-header .item-summary, .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.crafting .crafting-entry .formula-list .formula-item .item-summary {
     background: none!important;
 }
@@ -521,9 +533,9 @@ color: var(--green)!important;
 
 
 
-/************************/
-/*    Proficiencies     */
-/************************/
+
+/* Proficiencies
+*************************/
 .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.proficiencies .skills-list .skill, .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.proficiencies .lores-list .skill, .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.proficiencies .combat-list .skill {
     background: radial-gradient(var(--background-2), transparent);
     border: 1px dotted var(--background-2);
@@ -548,9 +560,9 @@ color: var(--green)!important;
 
 
 
-/************************/
-/*        Feats         */
-/************************/
+
+/* Feats        
+*************************/
 .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.feats .feat-item:nth-child(odd) {
     background-color: var(--background);
 }
@@ -567,11 +579,11 @@ color: var(--green)!important;
 
 
 
-/************************/
-/*      Biography       */
-/************************/
+
+/* Biography     
+*************************/
 .actor.sheet.dark-theme .crb-style .sheet-body .sheet-content .tab.biography h3 {
-    color: darkgray;
+    color: darkgray!important;
 }
 .actor.sheet.dark-theme .crb-style .sheet-body .sheet-content .tab.biography .biography-content .editor .editor-content {
     background: radial-gradient(var(--background-2), transparent);
@@ -588,9 +600,9 @@ color: var(--green)!important;
 
 
 
-/************************/
-/*  Pathfinder Society  */
-/************************/
+
+/* Pathfinder Society 
+*************************/
 .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.pfs > section.level-bump .toggle::after, .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.pfs > section.level-bump .toggle::before {
     top: 2px;
 }
@@ -607,9 +619,9 @@ color: var(--green)!important;
 
 
 
-/************************/
-/*       Support        */
-/************************/
+
+/* Support        
+*************************/
 
 /*Workbench*/
 .actor.sheet.character.dark-theme .xdy-pf2e-workbench-rarity-common {
@@ -631,3 +643,5 @@ color: var(--green)!important;
     border-color: #e127e1;
     color: #e127e1;
 }
+
+/*Workbench*/

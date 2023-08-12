@@ -15,8 +15,80 @@
     --red-light:#ff0000;
     --green: #91a82a;
     --main-text-light-color: #cfbda7;
+    --primary-remaster: hsl(153, 100%, 8%);
+	--primary-light-remaster: hsl(170, 96%, 19%);
 }
 
+/* Remaster PC Sheet
+*************************/
+.actor.sheet .crb-style {
+	background-image: url("../assets/remaster-pc-sheet/header.webp");
+}
+.actor.sheet .crb-style aside {
+	background-image: url("../assets/remaster-pc-sheet/green_sidebar_top.webp"), url("../assets/remaster-pc-sheet/green_sidebar_bottom.webp") ;
+}
+
+.actor.sheet .crb-style aside .sidebar .hitpoints .hp-big .container.current-hp {
+	background-image: linear-gradient(90deg, var(--primary-remaster) 0%, var(--primary-light-remaster) 50%, var(--primary-remaster) 100%);
+	background-color: var(--primary-remaster);
+}
+.actor.sheet .crb-style aside .sidebar .armor-class .shield.hp {
+	background: url("../assets/remaster-pc-sheet/shield-blue.webp") no-repeat top center;
+}
+
+.actor.sheet .crb-style aside .sidebar select {
+	background-color: var(--primary-remaster);
+}
+
+.actor.sheet .crb-style header.char-header .char-level .level {
+	background: url("../assets/remaster-pc-sheet/level-badge.webp") no-repeat;
+}
+
+.actor.sheet .crb-style nav.sheet-navigation .item:hover, .actor.sheet .crb-style nav.sheet-navigation .item.active {
+	background-image: url("../assets/remaster-pc-sheet/nav-item.webp");
+}
+
+.actor.sheet.character .crb-style .sheet-body .sheet-content h3.header {
+    color: var(--primary-remaster);
+}
+.crb-style .details-label {
+    color: var(--primary-light-remaster);
+}
+.actor.sheet.character .crb-style .sheet-body .sheet-content .tab.character .attribute-modifiers .attribute .attribute-id {
+    color: var(--primary-remaster);
+}
+.actor.sheet.character .crb-style .sheet-body .sheet-content h3.header button {
+    color: var(--primary-remaster);
+}
+.actor.sheet .crb-style .sheet-body .sheet-content .tab.biography h3 {
+    color: var(--primary-remaster);
+    border-bottom: 1px solid var(--primary-remaster);
+}
+.actor.sheet .crb-style aside .modifiers_button {
+    color: var(--primary-remaster);
+}
+.actor.sheet .crb-style nav.sub-nav a.active, .actor.sheet .crb-style nav.sub-nav .tab.active {
+    color: var(--primary-light-remaster);
+}
+.actor.sheet a:hover {
+    text-shadow: 0 0 8px var(--primary-light-remaster) !important;
+}
+.actor.sheet button:hover, button:focus {
+    box-shadow: 0 0 5px var(--primary-remaster);
+}
+.actor.sheet .crb-style .sheet-body .sheet-content ol.directory-list .action-header {
+    background: var(--primary-remaster);
+}
+.actor.sheet.character .crb-style .sheet-body .sheet-content .tab.proficiencies .skills-list .skill .skill-score, .actor.sheet.character .crb-style .sheet-body .sheet-content .tab.proficiencies .lores-list .skill .skill-score, .actor.sheet.character .crb-style .sheet-body .sheet-content .tab.proficiencies .combat-list .skill .skill-score {
+    color: var(--primary-remaster);
+}
+.actor.sheet.character .crb-style .sheet-body .sheet-content .tab.proficiencies .skills-list .skill .rollable:hover, .actor.sheet.character .crb-style .sheet-body .sheet-content .tab.proficiencies .lores-list .skill .rollable:hover, .actor.sheet.character .crb-style .sheet-body .sheet-content .tab.proficiencies .combat-list .skill .rollable:hover {
+    color: var(--primary-light-remaster);
+}
+
+
+/* System
+*************************/
 .system-pf2e .jump-to-bottom {
     padding: 10px;
     border: none;
@@ -98,6 +170,24 @@
     border-radius: 50%;
     border: 2px solid var(--border-color);
     box-shadow: rgb(0, 0, 0) 0px 0px 10px 0px;
+}
+
+/*PF2e Utility Buttons*/
+/*https://github.com/oWave/pf2e-flatcheck-helper*/
+#fc-container button {
+    border: none;
+    border-radius: 3px;
+    transition: text-shadow 0.15s ease-in-out, background-color 0.15s ease-in-out, border 0.15s ease-in-out, color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, backdrop-filter 0.15s ease-in-out, border-radius 0.15s;
+    background: radial-gradient(var(--background-2), transparent);
+    box-shadow: var(--glassy);
+    color: #837360;
+}
+#fc-container button:hover {
+    border: none;
+    border-radius: 3px;
+    color: #ff6400;
+    border-color: #ff6400;
+    box-shadow: 0 0 6px inset #ff6400;
 }
 
 /* DF Chat Enhancements */
