@@ -1,5 +1,6 @@
 :root{
     --glassy: 0px 0px 3px 0px rgba(255, 255, 255, 0.4) inset, 0px 0px 2px 1px rgba(0, 0, 0, 1), 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+    --glass-bg: rgba(20, 20, 20, 0.6);
     --pf2e-shadow-is-dark: 0px 1px var(--pf2e-half-transparent-dark);
     --pf2e-translucent-middle: var(--pf2e-translucent-middle-for-light);
     --pf2e-translucent-middle-for-light: hsla(0, 0%, 80%,0.5);
@@ -85,6 +86,7 @@
 .actor.sheet.character .crb-style .sheet-body .sheet-content .tab.proficiencies .skills-list .skill .rollable:hover, .actor.sheet.character .crb-style .sheet-body .sheet-content .tab.proficiencies .lores-list .skill .rollable:hover, .actor.sheet.character .crb-style .sheet-body .sheet-content .tab.proficiencies .combat-list .skill .rollable:hover {
     color: var(--primary-light-remaster);
 }
+
 
 
 /* System
@@ -300,6 +302,120 @@
 #chat .monks-tokenbar.chat-card .sheet .items-list {
     padding: 0;
 }
+
+
+/* Token Hud Remaster
+*************************/
+#token-hud .status-effects {
+    background: none;
+    box-shadow: none;
+    border: none;
+    padding: 0px;
+    gap: 8px;
+    color: var(--main-text-light-color);
+    cursor:url(../../ui/cursors/normal.webp), default;
+}
+
+.placeable-hud .control-icon.active {
+    background: var(--primary-light-remaster);
+    border: 2px solid var(--green);
+    color: var(--main-text-light-color);
+}
+.placeable-hud .control-icon img:hover {
+    opacity: 1;
+    filter: brightness(1.1) saturate(1.5)!important;
+}
+.placeable-hud input[type="text"] {
+    background: none;
+    border-radius: 3px;
+    background-color: radial-gradient(var(--background-2), transparent);
+    box-shadow: var(--glassy);
+    transition: text-shadow 0.15s ease-in-out, background-color 0.15s ease-in-out, border 0.15s ease-in-out, color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, backdrop-filter 0.15s ease-in-out, border-radius 0.15s;
+    color: var(--main-text-light-color);
+    text-shadow: 0px 0px 3px black;
+    backdrop-filter: brightness(0.8);
+}
+
+.placeable-hud .control-icon {
+    border-radius: 50%;
+    background: none;
+    box-shadow: var(--glassy);
+    transition: text-shadow 0.15s ease-in-out, background-color 0.15s ease-in-out, border 0.15s ease-in-out, color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, backdrop-filter 0.15s ease-in-out, border-radius 0.15s;
+    color: var(--main-text-light-color);
+    text-shadow: 0px 0px 3px black;
+    backdrop-filter: blur(5px);
+}
+
+#token-hud .status-effects .effect-control {
+    border-radius: 50%;
+    background: none;
+    opacity: 1;
+    background-color: var(--glass-bg);
+    box-shadow: var(--glassy);
+    text-shadow: 0px 0px 3px black;
+}
+#token-hud .status-effects .effect-control.overlay {
+    border: 2px solid var(--red-light);
+}
+#token-hud .status-effects .effect-control img {
+    border: none;
+    border-radius: 50%;
+    height: 100%;
+    width:100%;
+    opacity: 1;
+    box-shadow: var(--glassy);
+    filter: sepia(1) brightness(0.6);
+    cursor:url(../../ui/cursors/pointer.webp), pointer; 
+}
+#token-hud .status-effects .effect-control.active img {
+    border: 2px solid var(--green);
+    filter: brightness(1.1) saturate(1);
+    opacity: 0.75;
+    cursor:url(../../ui/cursors/pointer.webp), pointer; 
+}
+#token-hud .status-effects .effect-control:not(.active):hover img {
+    border: 2px solid var(--green);
+    opacity: 1;
+    cursor:url(../../ui/cursors/pointer.webp), pointer; 
+}
+
+
+
+
+/* Monk's Little Details */
+/**/
+
+#token-hud.monks-little-details .status-effects .effect-control,
+#token-hud.monks-little-details .status-effects .pf2e-effect-control {
+  border-radius: unset;
+}
+
+#token-hud.placeable-hud.monks-little-details .status-effects {
+  background: none;
+  filter: brightness(1.1) saturate(1);
+}
+#token-hud.placeable-hud.monks-little-details .status-effects .effect-control {
+  border: none;
+  opacity: unset;
+  filter: brightness(1.1) saturate(1);
+}
+#token-hud.placeable-hud.monks-little-details .status-effects .effect-control.active {
+  border: 2px solid var(--green);
+  opacity: 1;
+  background: radial-gradient(var(--primary-light-remaster), var(--background-2));
+  filter: brightness(1.1) saturate(1.5);
+}
+#token-hud.placeable-hud.monks-little-details .status-effects .effect-control.active .effect-name {
+    color: var(--main-text-light-color);
+  opacity: unset;
+}
+#token-hud.placeable-hud.monks-little-details .status-effects .effect-name {
+  opacity: unset;
+  padding-right: 4px;
+  color: var(--main-text-light-color);
+  font-size:  12px;
+}
+
 
 /* Babele */
 /* https://gitlab.com/riccisi/foundryvtt-babele */

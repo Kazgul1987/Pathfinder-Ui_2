@@ -4,6 +4,11 @@
 - Ready for v11 version.
 
 
+
+## v11.307.7
+- Update token hud theme.
+- Compatibility with Monks little details.
+
 ## v11.307.6
 - Update interface code.
 - NEW : Add a compatibility and theme for PF2e Utility Buttons.
