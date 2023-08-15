@@ -5,9 +5,11 @@
 
 
 
-## v11.307.7
+## v11.307.8
+- Update interface code.
+- Fix error when Monks little details wasn't activate.
 - Update token hud theme.
-- Compatibility with Monks little details.
+- Update Compatibility with Monks little details.
 
 ## v11.307.6
 - Update interface code.
