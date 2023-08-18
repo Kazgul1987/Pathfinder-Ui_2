@@ -5,6 +5,12 @@
 
 
 
+## v11.307.9
+- Update of the Player Sheet with three choices :
+    - Original Sheet (the Red by default)
+    - Dark Mode (Red)
+    - Dark Mode (Remaster)
+
 ## v11.307.8
 - Update interface code.
 - Fix error when Monks little details wasn't activate.

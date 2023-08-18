@@ -1,6 +1,6 @@
 /* A bunch of disgusting CSS overrides that hit the system's CSS like a hammer to remove as much colour as possible */
 
-.dark {
+.dark-theme {
     --main-text-light-color: #cfbda7;
     --green: #91a82a;
     --blue: #171f69;
@@ -15,9 +15,7 @@
     --glassy: 0px 0px 3px 0px rgba(255, 255, 255, 0.4) inset, 0px 0px 2px 1px rgba(0, 0, 0, 1), 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
 	--primary-remaster: hsl(153, 100%, 8%);
 	--primary-light-remaster: hsl(170, 96%, 19%);
-}
 
-.dark-theme {
     --primary: var(--main-text-light-color);
     --secondary: var(--green);
     --tertiary: var(--main-text-light-color);
@@ -33,10 +31,25 @@
     --sub: var(--background);
 }
 
+
+
 /* Remaster PC Sheet
 *************************/
 .actor.sheet.dark-theme .crb-style aside {
 	background-image: url("../css/assets/remaster-pc-sheet/dark_green_sidebar_top.webp"), url("../css/assets/remaster-pc-sheet/dark_green_sidebar_bottom.webp") ;
+}
+.actor.sheet.dark-theme .crb-style aside .sidebar .hitpoints .hp-big .container.current-hp {
+	background-image: linear-gradient(90deg, var(--primary-remaster) 0%, var(--primary-light-remaster) 50%, var(--primary-remaster) 100%);
+	background-color: var(--primary-remaster);
+}
+.actor.sheet.dark-theme .crb-style aside .sidebar .armor-class .shield.hp {
+	background: url("../css/assets/remaster-pc-sheet/shield-blue.webp") no-repeat top center;
+}
+.actor.sheet.dark-theme .crb-style aside .sidebar select {
+	background-color: var(--primary-remaster);
+}
+.actor.sheet.dark-theme .crb-style header.char-header .char-level .level {
+	background: url("../css/assets/remaster-pc-sheet/level-badge.webp") no-repeat;
 }
 
 
@@ -158,10 +171,10 @@
 }
 
 .actor.sheet.dark-theme .item-summary .item-buttons button {
-    background: radial-gradient(var(--red),transparent);
+    background: radial-gradient(var(--primary-light-remaster),transparent);
 }
 .actor.sheet.dark-theme .item-summary .item-buttons button:hover {
-    color: var(--glass-bg-dark) !important;
+    color: var(--background) !important;
     background: var(--green)!important;
     box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15), inset 0 0 0 2px rgba(0, 0, 0, 0.4);
     font-weight: bold;
@@ -227,6 +240,10 @@
     background: var(--background) !important;
 }
 
+.actor.sheet.dark-theme .crb-style aside .sidebar_label {
+    color: darkgray;
+}
+
 .actor.sheet.dark-theme .crb-style aside .sidebar select {
     background-color: var(--glass-bg);
 }
@@ -268,7 +285,8 @@
     text-shadow: 0 0 8px var(--green) !important;
 }
 .actor.sheet.dark-theme button:hover, .dark-theme button:focus {
-    box-shadow: 0 0 5px var(--green);
+    color: var(--background)!important;
+    background: var(--green)!important;
 }
 
 
@@ -287,7 +305,7 @@
 }
 
 .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.actions .actions-container .actions-tabs-wrapper .actions-panels ol.actions-list.strikes-list li.strike .button-group button:not(:disabled):hover {
-    color: var(--glass-bg-dark) !important;
+    color: var(--background) !important;
     background: var(--green)!important;
     box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15), inset 0 0 0 2px rgba(0, 0, 0, 0.4);
 }
@@ -330,7 +348,7 @@
 }
 
 .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.actions .actions-container .actions-tabs-wrapper .actions-panels ol.actions-list.strikes-list li.strike .auxiliary-actions button:not(:disabled) {
-    color: var(--glass-bg-dark) !important;
+    color: var(--background) !important;
     background: var(--green)!important;
     box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15), inset 0 0 0 2px rgba(0, 0, 0, 0.4);
 }
@@ -375,7 +393,7 @@
 }
 
 .sheet.actor.character.dark-theme .inventory .currency li > button:hover:not(:disabled) {
-    color: var(--glass-bg-dark) !important;
+    color: var(--background) !important;
     background: var(--green)!important;
     box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15), inset 0 0 0 2px rgba(0, 0, 0, 0.4);
 }
@@ -452,8 +470,8 @@
 }
 
 .actor.sheet.dark-theme .crb-style .sheet-body .sheet-content ol.spell-list > li button.cast-spell {
-    color: var(--background)!important;
-    background: var(--green);
+    color: var(--background);
+    background: var(--primary-light-remaster);
     box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15), inset 0 0 0 2px rgba(0, 0, 0, 0.4);
 }
 
@@ -644,4 +662,70 @@ color: var(--green)!important;
     color: #e127e1;
 }
 
-/*Workbench*/
+/*.red .dark-theme
+*************************/
+.red.actor.sheet.character.dark-theme .crb-style {
+    background-image: url("../css/assets/red-pc-sheet/dark_red-header.webp"), var(--sheet);
+  }
+.red.actor.sheet.character.dark-theme .crb-style aside {
+	background-image: url("../css/assets/red-pc-sheet/dark_red_sidebar_top.webp"), url("../css/assets/red-pc-sheet/dark_red_sidebar_bottom.webp") ;
+  }
+.red.actor.sheet.dark-theme .crb-style nav.sheet-navigation .item:hover, .actor.sheet .crb-style nav.sheet-navigation .item.active {
+	background-image: url("../css/assets/red-pc-sheet/red-nav-item.webp");
+}
+.red.actor.sheet.character.dark-theme .crb-style aside .logo {
+    filter: grayscale(0.6);
+  }
+.red.actor.sheet.character.dark-theme .crb-style aside .sidebar .hitpoints .hp-big .container.current-hp {
+    background-image: linear-gradient(90deg, var(--remaster) 0%, var(--remaster-light) 50%, var(--remaster) 100%);
+    background-color: var(--remaster);
+  }
+.red.actor.sheet.character.dark-theme .crb-style aside .sidebar .armor-class .shield.hp {
+    background: url("../css/assets/red-pc-sheet/red-shield.webp") no-repeat top center;
+  }
+.red.actor.sheet.character.dark-theme .crb-style aside .sidebar .initiative-select select {
+    background-color: var(--remaster);
+  }
+.red.actor.sheet.character.dark-theme .crb-style header.char-header .char-level .level {
+    background: url("../css/assets/red-pc-sheet/red-level-badge.webp") no-repeat;
+  }
+.red.actor.sheet.dark-theme .crb-style nav.sheet-navigation {
+    background: radial-gradient(var(--red), transparent)!important;
+    border: none;
+}
+
+.red.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content h3.header button {
+    background: var(--main-text-light-color);
+    border: 1px solid var(--red)!important;
+    color: var(--red)!important;
+}
+.red.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.character .attribute-modifiers .attribute h3.attribute-mod {
+    background: radial-gradient(var(--red), transparent)!important;
+    color: darkgray!important;
+    border: none;
+}
+.red.sheet.actor.character.dark-theme .crb-style .sheet-body .sheet-content .tab.inventory .inventory-header {
+    color: var(--main-text-light-color);
+    background: radial-gradient(var(--red), transparent)!important;
+    box-shadow: none;
+}
+.red.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.spellcasting .pf-add-item-row a {
+    background: radial-gradient(var(--red), transparent)!important;
+}
+.red.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.spellcasting .pf-add-item-row a:hover {
+    color: var(--background)!important;
+    background: var(--green)!important;
+    text-shadow:none!important;
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15), inset 0 0 0 2px rgba(0, 0, 0, 0.4);
+}
+.red.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.character .attribute-modifiers .attribute .attribute-id {
+    color: darkgray;
+}
+.red.actor.sheet.dark-theme .item-summary .item-buttons button {
+    background: radial-gradient(var(--red),transparent);
+}
+.red.actor.sheet.dark-theme .crb-style .sheet-body .sheet-content ol.spell-list > li button.cast-spell {
+    color: var(--background);
+    background: var(--red);
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15), inset 0 0 0 2px rgba(0, 0, 0, 0.4);
+}

@@ -21,7 +21,7 @@
 }
 
 /* Remaster PC Sheet
-*************************/
+************************
 .actor.sheet .crb-style {
 	background-image: url("../assets/remaster-pc-sheet/header.webp");
 }
@@ -86,7 +86,7 @@
 .actor.sheet.character .crb-style .sheet-body .sheet-content .tab.proficiencies .skills-list .skill .rollable:hover, .actor.sheet.character .crb-style .sheet-body .sheet-content .tab.proficiencies .lores-list .skill .rollable:hover, .actor.sheet.character .crb-style .sheet-body .sheet-content .tab.proficiencies .combat-list .skill .rollable:hover {
     color: var(--primary-light-remaster);
 }
-
+*/
 
 
 /* System

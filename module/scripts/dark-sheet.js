@@ -7,8 +7,9 @@ Hooks.on("init", () => {
         config: true,
         type: String,
         choices: {
-          "standard": "Standard",
-          "dark": "Dark Mode"
+          "standard": "Original Sheet",
+          "red": "Dark Mode (Red)",
+          "dark": "Dark Mode (Remaster)"
         },
         default: "standard",
 		onChange: () => {
