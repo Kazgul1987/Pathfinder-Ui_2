@@ -7,14 +7,16 @@ Hooks.on("init", () => {
         config: true,
         type: String,
         choices: {
-          "standard": "Original Sheet",
+          "standard": "Original (Red)",
+          "remaster": "Original (Remaster)",
           "red": "Dark Mode (Red)",
           "dark": "Dark Mode (Remaster)"
         },
         default: "standard",
-		onChange: () => {
-			location.reload();
-		}
+        onChange: value => {},
+		//onChange: () => {
+		//	location.reload();
+		//}
     });
 })
 

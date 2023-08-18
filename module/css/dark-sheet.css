@@ -55,12 +55,11 @@
 
 
 
-
+/* Common code
+**************************/
 /*      Character       
 *************************/
-.actor.sheet.dark-theme .crb-style {
-    background: radial-gradient(var(--background-2), transparent);
-}
+
 .actor.sheet.dark-theme .crb-style aside .sidebar a.roll-icon svg path {
     fill: var(--green);
 }
@@ -142,6 +141,7 @@
     color: var(--main-text-light-color);
     background: radial-gradient(var(--primary-light-remaster), transparent)!important;
     box-shadow: none;
+    border-radius: 3px;
 }
 
 .sheet.actor.character.dark-theme .currency {
@@ -171,7 +171,8 @@
 }
 
 .actor.sheet.dark-theme .item-summary .item-buttons button {
-    background: radial-gradient(var(--primary-light-remaster),transparent);
+    background: radial-gradient(var(--primary-light-remaster), var(--primary-remaster));
+    border-radius: 15px;
 }
 .actor.sheet.dark-theme .item-summary .item-buttons button:hover {
     color: var(--background) !important;
@@ -201,13 +202,6 @@
     border-color: var(--main-text-light-color) !important;
 }
 
-.sheet.actor.character.dark-theme .crb-style .sheet-body .sheet-content .tab.character .character-details .alignment {
-    background: none;
-}
-
-.sheet.actor.character.dark-theme .crb-style .sheet-body .sheet-content .tab.character .character-details .alignment::after {
-    background: none;
-}
 
 .sheet.actor.character.dark-theme .data-value {
     border-color: var(--main-text-light-color) !important;
@@ -219,10 +213,6 @@
     box-shadow: inset 0 0 0 1px var(--main-text-light-color) !important;
 }
 
-.sheet.actor.character.dark-theme form.editable {
-    background: none;
-}
-
 .actor.sheet.character.dark-theme .crb-style nav.sheet-navigation .item:hover, .actor.sheet.character.dark-theme .crb-style nav.sheet-navigation .item.active {
     fill: var(--main-text-light-color);
 }
@@ -230,6 +220,7 @@
 .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .blue-button {
     color: var(--main-text-light-color) !important;
     background: var(--background) !important;
+    border-radius: 15px;
 }
 .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .item-image:hover i {
     background: var(--green);
@@ -263,16 +254,12 @@
 }
 
 .actor.sheet.dark-theme .crb-style header.char-header .char-details h1.char-name input[type=text], .actor.sheet.dark-theme .crb-style header.char-header .char-details h1.char-name span.non-editable {
+    color: var(--main-text-light-color)!important;
     background: radial-gradient(var(--background-2), transparent);
 }
 
 .actor.sheet.dark-theme .crb-style header.char-header .char-details h1.char-name {
     background: none!important;
-}
-
-.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.character .attribute-modifiers .attribute .attribute-name {
-    color: var(--secondary) !important;
-    opacity: 0.7;
 }
 
 .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.character .ability-scores .ability.key .ability-id, .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.character .ability-scores .ability.key .ability-mod {
@@ -515,7 +502,9 @@ color: var(--green)!important;
     border: 4px dotted var(--background-2);
 }
 .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.spellcasting .pf-add-item-row a {
-    background: radial-gradient(var(--primary-light-remaster), transparent)!important;
+    color: var(--main-text-light-color)!important;
+    background: radial-gradient(var(--primary-remaster), var(--primary-light-remaster))!important;
+    border-radius: 15px;
 }
 .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.spellcasting .pf-add-item-row a:hover {
     color: var(--background)!important;
@@ -662,6 +651,31 @@ color: var(--green)!important;
     color: #e127e1;
 }
 
+
+
+
+
+/* DarK Mode
+*************************/
+.dark.actor.sheet.dark-theme .crb-style {
+    background: radial-gradient(var(--background-2), transparent);
+}
+.dark.sheet.actor.character.dark-theme .crb-style .sheet-body .sheet-content .tab.character .character-details .alignment {
+    background: none;
+}
+.dark.sheet.actor.character.dark-theme .crb-style .sheet-body .sheet-content .tab.character .character-details .alignment::after {
+    background: none;
+}
+.dark.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.character .attribute-modifiers .attribute .attribute-name {
+    color: var(--green) !important;
+    opacity: 0.7;
+}
+
+
+
+
+
+
 /*.red .dark-theme
 *************************/
 .red.actor.sheet.character.dark-theme .crb-style {
@@ -694,6 +708,13 @@ color: var(--green)!important;
     border: none;
 }
 
+.red.sheet.actor.character.dark-theme .crb-style .sheet-body .sheet-content .tab.character .character-details .alignment {
+    background: none;
+}
+.red.sheet.actor.character.dark-theme .crb-style .sheet-body .sheet-content .tab.character .character-details .alignment::after {
+    background: none;
+}
+
 .red.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content h3.header button {
     background: var(--main-text-light-color);
     border: 1px solid var(--red)!important;
@@ -708,9 +729,11 @@ color: var(--green)!important;
     color: var(--main-text-light-color);
     background: radial-gradient(var(--red), transparent)!important;
     box-shadow: none;
+    border-radius: 3px;
 }
 .red.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.spellcasting .pf-add-item-row a {
     background: radial-gradient(var(--red), transparent)!important;
+    border-radius: 15px;
 }
 .red.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.spellcasting .pf-add-item-row a:hover {
     color: var(--background)!important;
@@ -723,9 +746,259 @@ color: var(--green)!important;
 }
 .red.actor.sheet.dark-theme .item-summary .item-buttons button {
     background: radial-gradient(var(--red),transparent);
+    border-radius: 15px;
 }
 .red.actor.sheet.dark-theme .crb-style .sheet-body .sheet-content ol.spell-list > li button.cast-spell {
     color: var(--background);
     background: var(--red);
     box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15), inset 0 0 0 2px rgba(0, 0, 0, 0.4);
+}
+.red.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.character .attribute-modifiers .attribute .attribute-name {
+    color: var(--green) !important;
+    opacity: 0.7;
+}
+
+
+
+
+/* Remaster PC Sheet
+*************************/
+.remaster.actor.sheet.dark-theme .crb-style {
+	background-image: url("../css/assets/remaster-pc-sheet/header.webp"), url("../css/assets/remaster-pc-sheet/background.webp")!important;
+}
+.remaster.actor.sheet.dark-theme .crb-style aside {
+	background-image: url("../css/assets/remaster-pc-sheet/green_sidebar_top.webp"), url("../css/assets/remaster-pc-sheet/green_sidebar_bottom.webp") ;
+}
+
+.remaster.actor.sheet.dark-theme .crb-style aside .sidebar .hitpoints .hp-big .container.current-hp {
+	background-image: linear-gradient(90deg, var(--primary-remaster) 0%, var(--primary-light-remaster) 50%, var(--primary-remaster) 100%);
+	background-color: var(--primary-remaster);
+}
+.remaster.actor.sheet.dark-theme .crb-style aside .sidebar .armor-class .shield.hp {
+	background: url("../css/assets/remaster-pc-sheet/shield-blue.webp") no-repeat top center;
+}
+
+.remaster.actor.sheet.dark-theme .crb-style header.char-header .char-level .level {
+	background: url("../css/assets/remaster-pc-sheet/level-badge.webp") no-repeat;
+}
+
+.remaster.actor.sheet.dark-theme .crb-style nav.sheet-navigation .item:hover, .remaster.actor.sheet.dark-theme .crb-style nav.sheet-navigation .item.active {
+	background-image: url("../css/assets/remaster-pc-sheet/green-nav-item.webp");
+}
+.remaster.sheet.actor.character.dark-theme .crb-style .sheet-body .sheet-content .tab.character .character-details .alignment {
+    background: url("../css/assets/remaster-pc-sheet/banner-bg.webp") repeat-x center;
+}
+.remaster.sheet.actor.character.dark-theme .crb-style .sheet-body .sheet-content .tab.character .character-details .alignment::after {
+    background: url("../css/assets/remaster-pc-sheet/banner-bg2.webp") no-repeat right;
+}
+.remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.character .pc h3 {
+    background-color: rgba(28, 28, 28, 0.1);
+}
+.remaster.actor.sheet.dark-theme .crb-style nav.sheet-navigation {
+    background: var(--primary-remaster)!important;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+.remaster.actor.sheet .crb-style header.char-header .char-level .level input {
+    color: var(--main-text-light-color)!important;
+    background: none;
+}
+.remaster.actor.sheet.dark-theme .crb-style .sheet-body .sheet-content {
+    color: var(--primary-remaster);
+}
+.remaster.sheet.actor.character.dark-theme .window-content {
+    color: var(--main-text-light-color);
+    background: none;
+}
+.remaster.actor.sheet.character .crb-style header.char-header .char-level .exp-data .exp-input input {
+    color: var(--main-text-light-color) !important;
+    background: transparent;
+}
+.remaster.actor.sheet.character.dark-theme input {
+    color: var(--primary-remaster) !important;
+}
+.remaster.actor.sheet.character .crb-style .sheet-body .sheet-content .tab.character .character-details .alignment select {
+    color: var(--primary-remaster) !important;
+}
+.remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content h3.header {
+    color: var(--primary-remaster)!important;
+}
+.remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.character .attribute-modifiers .attribute .attribute-name {
+    color: var(--green) !important;
+    opacity: 0.7;
+}
+.remaster.actor.sheet.dark-theme .crb-style .details-label {
+    color: var(--primary-light-remaster);
+}
+.remaster.actor.sheet.character.dark-theme .crb-style aside input[type=number] {
+    color: var(--main-text-light-color)!important;
+}
+.remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.character .attribute-modifiers .attribute .attribute-id {
+    color: var(--primary-remaster);
+}
+.remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content h3.header button {
+    color: var(--primary-remaster);
+}
+.remaster.actor.sheet .crb-style aside .sidebar .roll-data h3 {
+    color: var(--main-text-light-color) !important;
+    border-color: var(--main-text-light-color) !important;
+}
+.remaster.sheet.actor.character.dark-theme h3 {
+    color: var(--primary-remaster)!important;
+    border-color: var(--main-text-light-color) !important;
+}
+.remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.character .attribute-modifiers .attribute h3.attribute-mod {
+    background: none!important;
+    color: var(--primary-remaster)!important;
+    border-image-repeat: repeat;
+    border-image-slice: 11;
+    border-image-source: url("../css/assets/remaster-pc-sheet/frame-elegant.svg");
+    border-image-width: 14px;
+    border-style: double;
+}
+.remaster.actor.sheet.dark-theme .crb-style .sheet-body .sheet-content .tab.actions .actions-container .actions-tabs-wrapper .actions-panels ol.actions-list li.action .item-summary {
+    color: var(--primary-light-remaster);
+}
+.remaster.actor.sheet.dark-theme .crb-style .sheet-body .sheet-content .tab.biography h3 {
+    color: var(--primary-remaster)!important;
+    border-bottom: 1px solid var(--primary-remaster);
+}
+.remaster.actor.sheet.dark-theme .crb-style aside .modifiers_button {
+    color: var(--primary-remaster);
+}
+.remaster.actor.sheet.dark-theme .crb-style nav.sub-nav a.active, .actor.sheet .crb-style nav.sub-nav .tab.active {
+    color: var(--primary-light-remaster);
+}
+.remaster.actor.sheet.dark-theme a:hover {
+    text-shadow: 0 0 8px var(--primary-light-remaster) !important;
+}
+.remaster.actor.sheet.dark-theme button:hover, button:focus {
+    box-shadow: 0 0 5px var(--primary-remaster);
+}
+.remaster.actor.sheet.dark-theme .crb-style .sheet-body .sheet-content ol.directory-list .action-header {
+    background: var(--primary-remaster);
+}
+.remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.proficiencies .skills-list .skill .skill-score, .remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.proficiencies .lores-list .skill .skill-score, .remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.proficiencies .combat-list .skill .skill-score {
+    color: var(--green);
+    text-shadow: 0 0 1px var(--primary-light-remaster);
+}
+.remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.proficiencies .skills-list .skill .rollable:hover, .remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.proficiencies .lores-list .skill .rollable:hover, .remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.proficiencies .combat-list .skill .rollable:hover {
+    color: var(--primary-light-remaster);
+}
+.remaster.actor.sheet.character.dark-theme nav.sub-nav {
+    background: radial-gradient( var(--primary-remaster), var(--primary-light-remaster))!important;
+}
+.remaster.actor.sheet.dark-theme .crb-style .sheet-body .sheet-content .tab.actions .actions-container .actions-tabs-wrapper .actions-panels ol.actions-list li.action .item-name h4 {
+    color: var(--primary-remaster);
+}
+.remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.actions .action-tracking span {
+    color: var(--primary-remaster);
+}
+.remaster.sheet.actor.character.dark-theme .item-name {
+    color: var(--main-text-light-color)!important;
+    background: radial-gradient(var(--background-2), transparent);
+    text-shadow: none;
+}
+.remaster.sheet.actor.character.dark-theme .item-controls {
+    color: var(--green) !important;
+    background: radial-gradient(var(--background-2), transparent);
+}
+.remaster.actor.sheet.dark-theme .crb-style .sheet-body .sheet-content .tab.actions .actions-container .actions-tabs-wrapper .actions-panels ol.actions-list li.action {
+    border-top: 1px solid #d5cac1;
+    border: solid transparent;
+    border-width: 0 0 1px;
+    border-image: linear-gradient(90deg, #f1edea, #d5cac1) 1 repeat;
+}
+.remaster.sheet.actor.character.dark-theme .crb-style .sheet-body .sheet-content .tab.inventory .inventory-header {
+    color: var(--main-text-light-color);
+    background: radial-gradient(var(--primary-remaster), var(--primary-light-remaster))!important;
+    box-shadow: none;
+    border-radius: 3px;
+}
+.remaster.sheet.actor.character.dark-theme .currency {
+    background: radial-gradient(var(--primary-remaster), var(--primary-light-remaster))!important;
+}
+.remaster.sheet.actor.character.dark-theme .crb-style .sheet-body .sheet-content .tab.inventory .wealth {
+    background: radial-gradient(var(--primary-remaster), var(--primary-light-remaster))!important;
+}
+.remaster.sheet.actor.character.dark-theme .currency li {
+    background-color: transparent;
+}
+.remaster.actor.sheet.dark-theme .inventory .item .item-quantity, .remaster.actor.sheet.dark-theme .inventory .item .item-weight, .remaster.actor.sheet.dark-theme .inventory .item .item-controls, .remaster.actor.sheet.dark-theme .inventory .item .item-sell-value {
+    color: var(--primary-remaster);
+}
+.remaster.sheet.actor.character.dark-theme .crb-style .sheet-body .sheet-content ol.directory-list .action-header h3 input.item-name-input {
+    color: var(--main-text-light-color)!important;
+}
+.remaster.actor.sheet.dark-theme .crb-style .sheet-body .sheet-content ol.directory-list .action-header .item-controls {
+    color: var(--main-text-light-color)!important;
+}
+.remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .blue-button {
+    color: var(--main-text-light-color) !important;
+    background: radial-gradient(var(--primary-remaster), var(--primary-light-remaster))!important;
+    border-radius: 15px;
+}
+.remaster.actor.sheet .crb-style .sheet-body .sheet-content ol.spell-list > li:nth-child(odd) {
+    background-color: rgba(120, 100, 82, 0.1)!important;
+}
+.remaster.actor.sheet.dark-theme .crb-style .sheet-body .sheet-content ol.spell-list > li.spell-level-header {
+    background: radial-gradient(var(--primary-remaster), var(--primary-light-remaster));
+    border: 1px dotted rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 6px inset #3f342b;
+    border-radius: 3px;
+}
+.remaster.actor.sheet.dark-theme .inventory .item-summary {
+    background: none!important;
+    color: var(--primary-light-remaster)!important;
+    border-image-repeat: repeat;
+    border-image-slice: 11;
+    border-image-source: url("../css/assets/remaster-pc-sheet/frame-elegant.svg");
+    border-image-width: 14px;
+    border-style: double;
+}
+.remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .directory-list h4 {
+    color: var(--primary-remaster);
+}
+.remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .directory-list {
+    color: var(--primary-light-remaster);
+}
+.remaster.actor.sheet.dark-theme .crb-style .sheet-body .sheet-content ol.spell-list > li.spell {
+    color: var(--primary-remaster);
+}
+.remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.crafting .crafting-options .crafting-option label * {
+    color: var(--primary-light-remaster);
+}
+.remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.proficiencies .skills-list .skill, .remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.proficiencies .lores-list .skill, .remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.proficiencies .combat-list .skill {
+    background: none;
+    border: none;
+    box-shadow: none;
+    border-image-repeat: repeat;
+    border-image-slice: 11;
+    border-image-source: url("../css/assets/remaster-pc-sheet/frame-elegant.svg");
+    border-image-width: 14px;
+    border-style: double;
+    padding: 2px 15px 2px 4px;
+    display: flex;
+    align-items: center;
+}
+.remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.proficiencies h1, .remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.proficiencies h4, .remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.proficiencies h6 {
+    color: var(--primary-remaster);
+    text-shadow: none!important;
+}
+.remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.proficiencies .lores-list .skill input, .remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.proficiencies .combat-list .skill input {
+    color: var(--primary-remaster) !important;
+}
+.remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.feats .feat-item:nth-child(odd) {
+    background-color: rgba(120, 100, 82, 0.1);
+    border-radius: 6px;
+}
+.remaster.actor.sheet.dark-theme .crb-style .sheet-body .sheet-content .tab.biography .biography-content p, .remaster.actor.sheet.dark-theme .crb-style .sheet-body .sheet-content .tab.biography .biography-content p + p, .remaster.actor.sheet.dark-theme .crb-style .sheet-body .sheet-content .tab.biography .biography-content ul, .remaster.actor.sheet.dark-theme .crb-style .sheet-body .sheet-content .tab.biography .biography-content ol {
+color: var(--primary-remaster);
+}
+.remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.pfs > section.reputations {
+    color: var(--primary-remaster);
+}
+.remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.character .attribute-modifiers .attribute .attribute-name {
+    color: var(--green) !important;
+    opacity: 0.7;
 }

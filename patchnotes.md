@@ -3,7 +3,12 @@
 ## Compatibility
 - Ready for v11 version.
 
-
+## v11.307.10
+- Update of the Player Sheet with four choices :
+    - Original (Red)
+    - Original (Remaster)
+    - Dark Mode (Red)
+    - Dark Mode (Remaster)
 
 ## v11.307.9
 - Update of the Player Sheet with three choices :
