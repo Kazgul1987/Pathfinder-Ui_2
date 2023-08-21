@@ -121,14 +121,18 @@
 #fc-container button:hover {
     border: none;
     border-radius: 3px;
-    color: #ff6400;
-    border-color: #ff6400;
-    box-shadow: 0 0 6px inset #ff6400;
+    color: var(--color-text-hyperlink);
+    border-color: var(--color-text-hyperlink);
+    box-shadow: 0 0 6px inset var(--color-text-hyperlink);
 }
+
+
 
 /* DF Chat Enhancements */
 /* https://github.com/flamewave000/dragonflagon-fvtt/tree/master/df-chat-enhance */
 #dfcp-rt-buttons button {
+    flex: 1;
+    padding-top: 4px;
     transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
     background: radial-gradient(var(--background-2), transparent);
     border: none;
@@ -139,18 +143,31 @@
 }
 
 #dfcp-rt-buttons button:hover {
-    color: #ff6400;
-    border-color: #ff6400;
-    box-shadow: 0 0 6px inset #ff6400;
+    color: var(--color-text-hyperlink);
+    border-color: var(--color-text-hyperlink);
+    box-shadow: 0 0 6px inset var(--color-text-hyperlink);
 }
-
 #dfcp-rt-buttons button[data-id=publicroll].active {
-    background-color: #91a82a;
+    background-color: var(--green);
+    color: var(--background);
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15), inset 0 0 0 2px rgba(0, 0, 0, 0.4);
+}
+#dfcp-rt-buttons button[data-id=gmroll].active {
+    background-color: #f2ca27;
+    color: var(--background);
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15), inset 0 0 0 2px rgba(0, 0, 0, 0.4);
+}
+#dfcp-rt-buttons button[data-id=blindroll].active {
+    background-color: #e87e04;
+    color: var(--background);
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15), inset 0 0 0 2px rgba(0, 0, 0, 0.4);
+}
+#dfcp-rt-buttons button[data-id=selfroll].active {
+    background-color: var(--color-text-hyperlink);
+    color: var(--background);
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15), inset 0 0 0 2px rgba(0, 0, 0, 0.4);
 }
 
-#dfcp-rt-buttons button[data-id=selfroll].active {
-    background-color: #ff6400;
-}
 
 /* Monk's TokenBar */
 /* https://github.com/ironmonk88/monks-tokenbar */

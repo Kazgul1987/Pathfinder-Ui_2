@@ -3,6 +3,11 @@
 ## Compatibility
 - Ready for v11 version.
 
+
+## v11.307.11
+- Update interface code.
+- Minor corrections.
+
 ## v11.307.10
 - Update of the Player Sheet with four choices :
     - Original (Red)
