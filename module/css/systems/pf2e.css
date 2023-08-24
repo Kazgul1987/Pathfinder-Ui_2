@@ -500,18 +500,19 @@
     margin-bottom:0px;
 }
 
-#chat-controls {
-    margin-top: 5px;
-}
-
 #chat-log .message {
     margin: 5px 5px 10px 10px;
 }
 
 #chat-log .message .message-content {
+    font-family: "tauri";
     padding-left: 5px;
     padding-right: 5px;
     padding-bottom: 5px;
+}
+
+.pf2e.chat-card .card-content p {
+    font-family: "Good OT";
 }
 
 .message-content .chat-damage-buttons button .label {

@@ -4,6 +4,13 @@
 - Ready for v11 version.
 
 
+## v11.307.12
+- Update interface code.
+- Update Chat fonts.
+- Update Polyglot Compatibility.
+- Update Player sheet themes.
+- Minor corrections.
+
 ## v11.307.11
 - Update interface code.
 - Minor corrections.

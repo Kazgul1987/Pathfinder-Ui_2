@@ -377,6 +377,7 @@ body.compact-mode #logo {
 }
 
 #chat-form textarea {
+    font-family: "tauri";
     width: 99%;
     margin-left: 2px;
     background: radial-gradient(var(--background-2), transparent)!important;
@@ -390,7 +391,7 @@ body.compact-mode #logo {
 
 #chat-controls {
     color: var(--border-color-2);
-    margin: 0 6px 10px
+    margin: 0 6px 2px;
 }
 
 #chat-controls::before {
@@ -402,10 +403,6 @@ body.compact-mode #logo {
     width: 350px;
     height: 7px;
     bottom: 8px;
-}
-
-#chat-controls .roll-type-select {
-    background: rgb(131 115 96);
 }
 
 #chat-log .message {
@@ -537,16 +534,14 @@ body.compact-mode #logo {
     text-decoration: underline;
 }
 
-.polyglot-lang-select{
-    color: var(--border-color-2);
-    font-weight: bold;
+.polyglot-lang-select label {
+    display: none;
 }
 
 .polyglot-lang-select select {
-    font-family: CaslonPro;
-    font-weight: bold;
+    font-family: Taroca;
     font-size: 14px;
-    text-align: left;
+    text-align: center;
     position: relative;
     height: 24px;
     top: 10px;
@@ -557,11 +552,10 @@ body.compact-mode #logo {
     background: radial-gradient(var(--background-2), transparent);
     box-shadow: var(--glassy);
     color: var(--main-text-light-color);
-    font-weight: bold;
+    border-radius: 3px;
 }
 .roll-type-select{
-    font-family: CaslonPro;
-    font-weight: bold;
+    font-family: Taroca;
     font-size: 14px;
     text-align: left;
     position: relative;
@@ -1401,4 +1395,3 @@ button#roll-hd:hover::before {
   form button {
       cursor:url(../ui/cursors/pointer.webp), pointer;
   }
-
