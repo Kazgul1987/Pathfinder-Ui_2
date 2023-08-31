@@ -15,6 +15,7 @@
     --glassy: 0px 0px 3px 0px rgba(255, 255, 255, 0.4) inset, 0px 0px 2px 1px rgba(0, 0, 0, 1), 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
 	--primary-remaster: hsl(153, 100%, 8%);
 	--primary-light-remaster: hsl(170, 96%, 19%);
+    --ornement : url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='33' height='33' overflow='scroll'%3E%3Cstyle%3E.st1{stroke:wheat;stroke-miterlimit:10}.st1,.st2{fill:none}%3C/style%3E%3Cg opacity='0.75'%3E%3Cpath class='st1' d='M.5 20v-7'/%3E%3Cpath class='st2' d='M13 20v-7'/%3E%3Cpath class='st1' d='M13 .5h7'/%3E%3Cpath class='st2' d='M13 13h7'/%3E%3Cpath class='st1' d='M32.5 13v7'/%3E%3Cpath class='st2' d='M20 13v7'/%3E%3Cpath class='st1' d='M20 32.5h-7'/%3E%3Cpath class='st2' d='M20 20h-7'/%3E%3Cpath class='st1' d='M.5.5h3.1v3.1H.5zm3.1 3.1h3.1v3.1H3.6zm3.2 0h3.1v3.1H6.8zM3.6 6.8h3.1v3.1H3.6zm0 0H.5V13M13 .5H6.8v3.1M29.4.5h3.1v3.1h-3.1zm-3.1 3.1h3.1v3.1h-3.1zm0 3.2h3.1v3.1h-3.1zm-3.2-3.2h3.1v3.1h-3.1zm3.2 0V.5H20M32.5 13V6.8h-3.1M29.4 29.4h3.1v3.1h-3.1z'/%3E%3Cpath class='st1' d='M26.3 26.3h3.1v3.1h-3.1zm-3.2 0h3.1v3.1h-3.1zm3.2-3.2h3.1v3.1h-3.1z'/%3E%3Cpath class='st1' d='M29.4 26.3h3.1V20M20 32.5h6.3v-3.1'/%3E%3Cg%3E%3Cpath class='st1' d='M.5 29.4h3.1v3.1H.5zm3.1-3.1h3.1v3.1H3.6zm0-3.2h3.1v3.1H3.6zm3.2 3.2h3.1v3.1H6.8zM6.8 29.4v3.1H13M.5 20v6.3h3.1'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 
     --primary: var(--main-text-light-color);
     --secondary: var(--green);
@@ -75,7 +76,7 @@
 .actor.sheet.dark-theme .crb-style aside .sidebar_title h2 {
     color: darkgray;
 }
-.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.character .attribute-modifiers .attribute .attribute-id {
+.actor.sheet.character .crb-style .sheet-body .sheet-content .tab.character .attributes .attribute .abbreviation {
     color: var(--primary-light-remaster);
 }
 .actor.sheet.dark-theme hr {
@@ -109,10 +110,10 @@
     box-shadow: 0 0 6px inset #3f342b!important;
 }
 
-.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.character .attribute-modifiers .attribute h3.attribute-mod {
+.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.character .attributes .attribute h3.modifier {
     background: radial-gradient(var(--primary-remaster), transparent)!important;
     color: darkgray!important;
-    border: none;
+    border-image-source: var(--ornement);
 }
 
 .sheet.actor.character.dark-theme .crb-style .sheet-body .sheet-content ol.directory-list .action-header h3 input.item-name-input {
@@ -260,11 +261,11 @@
 .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.character .ability-scores .ability.key .ability-id, .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.character .ability-scores .ability.key .ability-mod {
     color: var(--red-light);
 }
-.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.character .attribute-modifiers .attribute .attribute-id > i.key-attribute {
+.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.character .attributes .attribute .abbreviation i.key, .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.character .attributes .attribute .abbreviation i.apex {
     color: var(--green);
 }
 .actor.sheet.dark-theme a:hover {
-    text-shadow: 0 0 8px var(--green) !important;
+    text-shadow: 0 0 8px var(--green);
 }
 .actor.sheet.dark-theme button:hover, .dark-theme button:focus {
     color: var(--background)!important;
@@ -327,12 +328,16 @@
     border-radius: 3px;
 }
 
-.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.actions .actions-container .actions-tabs-wrapper .actions-panels ol.actions-list.strikes-list li.strike .button-group .versatile-options button {
-    background: var(--background);
+.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.actions ol.actions-list li.strike .button-group .versatile-options button.selected > .icon {
+    color:black;
 }
-
+:root .damage.color.slashing .icon {
+    color:var(--main-text-light-color);
+}
+:root .damage.color.piercing .icon {
+    color:var(--main-text-light-color);
+}
 .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.actions .actions-container .actions-tabs-wrapper .actions-panels ol.actions-list.strikes-list li.strike .button-group .versatile-options button.selected {
-    color:black!important;
     background: var(--green);
 }
 
@@ -364,7 +369,10 @@
 .actor.sheet.dark-theme .crb-style .sheet-body .sheet-content .tab.actions .actions-container .actions-tabs-wrapper .actions-panels ol.actions-list li.action .item-name {
     background: radial-gradient(var(--background-2), transparent);
 }
-
+.actor.sheet.dark-theme .crb-style .sheet-body .sheet-content .tab.actions ol.actions-list li.action .item-name .actions-title .action-name > h4:hover, .actor.sheet .crb-style .sheet-body .sheet-content .tab.actions ol.actions-list li.strike .item-name .actions-title .action-name > h4:hover {
+    color: var(--green);
+    text-shadow: 0 0 8px var(--green);
+}
 
 
 
@@ -384,7 +392,12 @@
 .actor.sheet.dark-theme .inventory .item-summary {
     background: none !important;
 }
-
+.actor.sheet.dark-theme .inventory .container-metadata .container-capacity .container-capacity-label {
+    color: white;
+}
+.actor.sheet.character .crb-style .sheet-body .sheet-content .tab.inventory .encumbrance .encumbrance-label {
+    color: white;
+}
 .sheet.actor.character.dark-theme .inventory .currency li > button:hover:not(:disabled) {
     color: var(--background) !important;
     background: var(--green)!important;
@@ -673,7 +686,7 @@ color: var(--green)!important;
 .dark.sheet.actor.character.dark-theme .crb-style .sheet-body .sheet-content .tab.character .character-details .alignment::after {
     background: none;
 }
-.dark.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.character .attribute-modifiers .attribute .attribute-name {
+.dark.actor.sheet.character .crb-style .sheet-body .sheet-content .tab.character .attributes .attribute .label {
     color: var(--green) !important;
     opacity: 0.7;
 }
@@ -681,10 +694,10 @@ color: var(--green)!important;
     background: radial-gradient( var(--primary-remaster), var(--primary-light-remaster));
 }
 .dark.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content h3.header button {
-    color: var(--main-text-light-color)!important;
     background: radial-gradient( var(--primary-remaster), var(--primary-light-remaster));
     border-radius: 3px;
 }
+
 
 
 
@@ -735,10 +748,9 @@ color: var(--green)!important;
     background: radial-gradient(darkred, var(--red));
     border: 1px solid var(--red)!important;
 }
-.red.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.character .attribute-modifiers .attribute h3.attribute-mod {
+.red.actor.sheet.character .crb-style .sheet-body .sheet-content .tab.character .attributes .attribute h3.modifier {
     background: radial-gradient(var(--red), transparent)!important;
     color: darkgray!important;
-    border: none;
 }
 .red.sheet.actor.character.dark-theme .crb-style .sheet-body .sheet-content .tab.inventory .inventory-header {
     color: var(--main-text-light-color);
@@ -756,7 +768,7 @@ color: var(--green)!important;
     text-shadow:none!important;
     box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15), inset 0 0 0 2px rgba(0, 0, 0, 0.4);
 }
-.red.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.character .attribute-modifiers .attribute .attribute-id {
+.red.actor.sheet.character .crb-style .sheet-body .sheet-content .tab.character .attributes .attribute .abbreviation {
     color: darkgray;
 }
 .red.actor.sheet.dark-theme .item-summary .item-buttons button {
@@ -768,7 +780,7 @@ color: var(--green)!important;
     background: var(--red);
     box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15), inset 0 0 0 2px rgba(0, 0, 0, 0.4);
 }
-.red.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.character .attribute-modifiers .attribute .attribute-name {
+.red.actor.sheet.character .crb-style .sheet-body .sheet-content .tab.character .attributes .attribute .label {
     color: var(--green) !important;
     opacity: 0.7;
 }
@@ -837,8 +849,7 @@ color: var(--green)!important;
 .remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content h3.header {
     color: var(--primary-remaster)!important;
 }
-.remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.character .attribute-modifiers .attribute .attribute-name {
-    color: var(--green) !important;
+.remaster.actor.sheet.character .crb-style .sheet-body .sheet-content .tab.character .attributes .attribute .label {
     opacity: 0.7;
 }
 .remaster.actor.sheet.dark-theme .crb-style .details-label {
@@ -847,11 +858,10 @@ color: var(--green)!important;
 .remaster.actor.sheet.character.dark-theme .crb-style aside input[type=number] {
     color: var(--main-text-light-color)!important;
 }
-.remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.character .attribute-modifiers .attribute .attribute-id {
+.remaster.actor.sheet.character .crb-style .sheet-body .sheet-content .tab.character .attributes .attribute .abbreviation {
     color: var(--primary-remaster);
 }
 .remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content h3.header button {
-    color: var(--main-text-light-color)!important;
     background: radial-gradient( var(--primary-remaster), var(--primary-light-remaster));
     border-radius: 3px;
 }
@@ -863,7 +873,7 @@ color: var(--green)!important;
     color: var(--primary-remaster)!important;
     border-color: var(--main-text-light-color) !important;
 }
-.remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.character .attribute-modifiers .attribute h3.attribute-mod {
+.remaster.actor.sheet.character .crb-style .sheet-body .sheet-content .tab.character .attributes .attribute h3.modifier {
     background: none!important;
     color: var(--primary-remaster)!important;
     border-image-repeat: repeat;
@@ -1013,8 +1023,4 @@ color: var(--primary-remaster);
 }
 .remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.pfs > section.reputations {
     color: var(--primary-remaster);
-}
-.remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.character .attribute-modifiers .attribute .attribute-name {
-    color: var(--green) !important;
-    opacity: 0.7;
 }
