@@ -4,6 +4,10 @@
 - Ready for v11 version.
 
 
+## v11.308.2
+- Update interface code.
+- fix an issue where the modifiers was invisible in the chat.
+
 ## v11.308.1
 - Update Compatibility with PF2e 5.4.1 
 
