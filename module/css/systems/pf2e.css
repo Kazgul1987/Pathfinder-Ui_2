@@ -498,6 +498,10 @@
 #chat-log .chat-message > .message-header .flavor-text .target-dc-result .adjusted.decreased {
     color: orangered;
 }
+#chat-log .chat-message > .message-content .message-buttons button i.cue {
+    --fa-primary-color: var(--main-text-light-color);
+    --fa-secondary-color: var(--green);
+}
 
 .message-content .chat-damage-buttons button>i.fas {
     left: 0px;

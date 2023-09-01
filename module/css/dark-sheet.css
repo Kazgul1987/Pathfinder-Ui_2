@@ -697,8 +697,13 @@ color: var(--green)!important;
     background: radial-gradient( var(--primary-remaster), var(--primary-light-remaster));
     border-radius: 3px;
 }
-
-
+.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content h3.header button .fa-solid.fa-eye {
+    color: var(--main-text-light-color)!important;
+}
+.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content h3.header button .fa-eye-slash:before {
+    color: var(--main-text-light-color)!important;
+    filter: brightness(2);
+}
 
 
 
