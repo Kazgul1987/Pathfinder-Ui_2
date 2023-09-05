@@ -4,6 +4,9 @@
 - Ready for v11 version.
 
 
+## v11.308.4
+- Update Compatibility with PF2e 5.4.4 
+
 ## v11.308.3
 - Update interface code.
 - Update Dark theme.

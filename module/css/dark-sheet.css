@@ -373,6 +373,9 @@
     color: var(--green);
     text-shadow: 0 0 8px var(--green);
 }
+.actor.sheet.dark-theme .crb-style .sheet-body .sheet-content .tab.actions ol.actions-list li.action button.use-action:not(:disabled), .actor.sheet.dark-theme .crb-style .sheet-body .sheet-content .tab.actions ol.actions-list li.strike button.use-action:not(:disabled) {
+    background: var(--red);
+}
 
 
 
