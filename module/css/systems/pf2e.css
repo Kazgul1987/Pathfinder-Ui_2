@@ -28,7 +28,7 @@
 .system-pf2e .jump-to-bottom {
     padding: 10px;
     border: none;
-    border-radius: 3px;
+    border-radius: 20px;
     background: var(--red);
     box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15), inset 0 0 0 2px rgba(0, 0, 0, 0.4);
     transition: text-shadow 0.15s ease-in-out, background-color 0.15s ease-in-out, border 0.15s ease-in-out, color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, backdrop-filter 0.15s ease-in-out, border-radius 0.15s;
@@ -39,9 +39,8 @@
     color: var(--main-text-light-color);
 }
 .system-pf2e .jump-to-bottom:hover {
-    color: var(--glass-bg-dark) !important;
+    color: var(--red)!important;
     background: var(--green)!important;
-    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15), inset 0 0 0 2px rgba(0, 0, 0, 0.4);
 }
 
 .system-pf2e .sheet.actor:not(.loot-sheet-npc),
@@ -206,7 +205,7 @@
     padding: 0;
     overflow-y: auto;
     scrollbar-width: thin;
-    color: #cfbda7;
+    color: var(--main-text-light-color);
 }
 
 #chat .monks-tokenbar.chat-card .card-header h3 {
@@ -217,7 +216,7 @@
     border-radius: 4px;
     white-space: nowrap;
     overflow-x: hidden;
-    color: #cfbda7;
+    color: var(--main-text-light-color);
     background: black;
     border: 2px solid var(--border-color);
     padding: 1px 8px;
@@ -228,7 +227,7 @@
     margin: 0;
     white-space: nowrap;
     overflow-x: hidden;
-    color: #cfbda7;
+    color: var(--main-text-light-color);
     font-weight: bold;
     padding: 1px 4px;
 
@@ -457,7 +456,7 @@
 }
 /* Chat button effect area */
 #chat-log [data-pf2-effect-area] {
-    color: #cfbda7; 
+    color: var(--main-text-light-color); 
     background: #61180e;
     padding: 0px 3px;
     border: 2px solid var(--glassy);
@@ -575,7 +574,7 @@ div#scrollToBottom:hover {
 }
 
 a.inline-roll.blindroll {
-    color: #cfbda7;
+    color: var(--main-text-light-color);
     background: #61180e;
     border-color: var(--glassy);
 }
@@ -585,7 +584,7 @@ a.content-link.broken {
 }
 
 a.inline-check, span[data-pf2-check] {
-    color: #cfbda7;
+    color: var(--main-text-light-color);
     background: #61180e!important;
     padding: 0px 3px;
     border: 2px solid var(--glassy);
@@ -597,7 +596,7 @@ a.inline-check, span[data-pf2-check] {
 }
 
 a.content-link, [data-pf2-check], a.entity-link, [data-pf2-action], [data-pf2-effect-area], a.inline-roll:not(.inline-result) {
-    color: #cfbda7!important;
+    color: var(--main-text-light-color)!important;
     background: #61180e!important;
     padding: 0px 3px;
     border: 2px solid var(--glassy);
@@ -623,7 +622,7 @@ a.content-link, [data-pf2-check], a.entity-link, [data-pf2-action], [data-pf2-ef
 #chat-log .pf2e.chat-card .card-buttons button {
     margin: 0px;
     background-color: hsl(0,0%,15%);
-    color: #cfbda7;
+    color: var(--main-text-light-color);
     text-shadow: var(--pf2e-shadow-is-dark);
     line-height: 20px;
 }
@@ -657,7 +656,7 @@ a.content-link, [data-pf2-check], a.entity-link, [data-pf2-action], [data-pf2-ef
 #chat-log button:hover,
 #chat-log button:focus {
     transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
-    color: #cfbda7;
+    color: var(--main-text-light-color);
     background-color:hsl(0,0%,15%);
     box-shadow: var(--glassy);
     cursor: pointer;
@@ -669,19 +668,20 @@ a.content-link, [data-pf2-check], a.entity-link, [data-pf2-action], [data-pf2-ef
 .dice-roll .dice-formula, 
 .dice-total:not(.statuseffect-message), 
 .message-content .chat-damage-buttons button {
-    background: var(--glassy);
+    background: var(--glass-bg);
     box-shadow: var(--glassy);
     border: none;
-    color: #cfbda7;
+    color: var(--main-text-light-color);
+    border-radius: 3px;
 }
 
 .dice-total:hover,
 .dice-roll .dice-formula:hover,
 #chat-log button:hover {
     transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
-    color: #cfbda7;
-    background-color:rgba(110,0,0,1);
-    box-shadow: var(--glassy);
+    color: var(--background);
+    background: var(--green);
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15), inset 0 0 0 2px rgba(0, 0, 0, 0.4);
     cursor: pointer;
 }
 
@@ -689,7 +689,7 @@ a.content-link, [data-pf2-check], a.entity-link, [data-pf2-action], [data-pf2-ef
 .dice-total:hover,
 .dice-roll .dice-formula:hover {
     transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
-    color: #cfbda7;
+    color: var(--main-text-light-color);
     background-color:hsl(0,0%,15%);
     cursor: pointer;
 }
@@ -714,7 +714,8 @@ button > i {
     box-shadow: none;
     color: white;
     border: 1px solid #7B322F;
-    background-color:  rgba(110,0,0,1);
+    background-color:  var(--red);
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15), inset 0 0 0 2px rgba(0, 0, 0, 0.4);
 }
 
 button.half-damage .fa-heart-broken {
@@ -771,20 +772,22 @@ button.half-damage .fa-heart-broken::after {
 
 #chat-log .message-content .damage-application button.shield-block:hover {
     border: 1px solid #464C83;
-    color: #cfbda7;
+    color: var(--main-text-light-color);
     background-color: rgba(0, 68, 255, 0.5);
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15), inset 0 0 0 2px rgba(0, 0, 0, 0.4);
 }
 
 #chat-log .message-content .damage-application button.shield-block.shield-activated {
     border: 1px solid #464C83;
-    color: #cfbda7;
+    color: var(--main-text-light-color);
     background-color: rgba(0, 68, 255, 0.5);
 }
 
 #chat-log .message-content .damage-application button.shield-block.shield-activated:hover {
     border: 1px solid #464C83;
-    color: #cfbda7;
+    color: var(--main-text-light-color);
     background-color: darkblue;
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15), inset 0 0 0 2px rgba(0, 0, 0, 0.4);
 }
 
 /*Heal*/
@@ -827,37 +830,37 @@ button.half-damage .fa-heart-broken::after {
 }
 
 .chat-message .message-content .damage-roll .dice-result .instance.slashing {
-    color: #cfbda7;
+    color: var(--main-text-light-color);
 }
 .chat-message .message-content .damage-roll .dice-result .instance.slashing .icon {
-    color: #cfbda7;
+    color: var(--main-text-light-color);
 }
 .chat-message .message-content .damage-roll .dice-result .instance.slashing.tooltip-part>header, .chat-message .message-content .damage-roll .dice-result .instance.slashing:not(.tooltip-part) {
     text-shadow: #fc0 0 0 1px;
 }
 
 .chat-message .message-content .damage-roll .dice-result .instance.piercing {
-    color: #cfbda7;
+    color: var(--main-text-light-color);
 }
 .chat-message .message-content .damage-roll .dice-result .instance.piercing .icon {
-    color: #cfbda7;
+    color: var(--main-text-light-color);
 }
 .chat-message .message-content .damage-roll .dice-result .instance.piercing.tooltip-part>header, .chat-message .message-content .damage-roll .dice-result .instance.piercing:not(.tooltip-part) {
     text-shadow: #fc0 0 0 1px;
 }
 
 .chat-message .message-content .damage-roll .dice-result .instance.bludgeoning {
-    color: #cfbda7;
+    color: var(--main-text-light-color);
 }
 .chat-message .message-content .damage-roll .dice-result .instance.bludgeoning .icon {
-    color: #cfbda7;
+    color: var(--main-text-light-color);
 }
 .chat-message .message-content .damage-roll .dice-result .instance.bludgeoning.tooltip-part>header, .chat-message .message-content .damage-roll .dice-result .instance.bludgeoning:not(.tooltip-part) {
     text-shadow: #fc0 0 0 1px;
 }
 
 .chat-message .message-content .damage-roll .dice-result .dice-tooltip .instance .dice .part-formula, .chat-message .message-content .damage-roll .dice-result .dice-tooltip .instance .dice .part-total {
-    color: #cfbda7;
+    color: var(--main-text-light-color);
 }
 
 .chat-message .message-content .damage-roll .dice-result .instance.acid {
