@@ -257,6 +257,7 @@
 .actor.sheet.dark-theme .crb-style header.char-header .char-details h1.char-name input[type=text], .actor.sheet.dark-theme .crb-style header.char-header .char-details h1.char-name span.non-editable {
     color: var(--main-text-light-color)!important;
     background: radial-gradient(var(--background-2), transparent);
+    text-shadow: 0 0 8px var(--color-shadow-primary);
 }
 
 .actor.sheet.dark-theme .crb-style header.char-header .char-details h1.char-name {

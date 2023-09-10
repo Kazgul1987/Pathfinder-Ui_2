@@ -1,10 +1,19 @@
 {
-    "RPGUI.SETTINGS.NAVIGATION": "Schalte die Navigation zurück in den horizontalen Modus",
-    "RPGUI.SETTINGS.NAVIGATION_HINT": "Verwende diesen Schalter, wenn du die Combat Carousel-Integration nicht verwendest",
+    "RPGUI.SETTINGS.DARKSHEET":"Select your Sheet Color",
+    "RPGUI.SETTINGS.DARKSHEET_HINT":"Only for player sheets.",
 
     "RPGUI.SETTINGS.DARKPARTYSHEET":"Gruppenblatt",
     "RPGUI.SETTINGS.DARKPARTYSHEET_HINT":"Ermöglicht die Auswahl zwischen dem Original- und dem Dunkelblatt.",
-    
+   
+    "RPGUI.SETTINGS.TOKEN_EFFECT_HUD": "Adjust token effects HUD?",
+    "RPGUI.SETTINGS.TOKEN_EFFECT_HUD_HINT": "Makes effects circular and arranges them outside the token, or on the token ring for larger tokens",
+   
+    "RPGUI.SETTINGS.TOKEN_HUD": "Disable Dark PF2e Interactive Token Tooltip?",
+    "RPGUI.SETTINGS.TOKEN_HUD_HINT": "Disables the dark theme of PF2e Interactive Token Tooltip by default theme",
+
+    "RPGUI.SETTINGS.NAVIGATION": "Schalte die Navigation zurück in den horizontalen Modus",
+    "RPGUI.SETTINGS.NAVIGATION_HINT": "Verwende diesen Schalter, wenn du die Combat Carousel-Integration nicht verwendest",
+ 
     "RPGUI.SETTINGS.COMPACT_MODE": "Kompakt mode",
     "RPGUI.SETTINGS.COMPACT_MODE_HINT": "Verkleinert das linke Menü und entfernt das Logo",
 
@@ -16,6 +25,9 @@
 
     "RPGUI.SETTINGS.JOURNAL_SHEET": "Disable parchment texture on Journal pages",
     "RPGUI.SETTINGS.JOURNAL_SHEET_HINT": "Disable the parchment appearance on journal entries.",
+    
+    "RPGUI.SETTINGS.JOURNAL_CURSOR": "Disable RPG Cursors.",
+    "RPGUI.SETTINGS.JOURNAL_CURSOR_HINT": "Disable RPG Cursor style in Interface.",
 
     "RPGUI.SETTINGS.CUSTOM_CSS": "Disable PF2e style on Journal pages",
     "RPGUI.SETTINGS.CUSTOM_CSS_HINT": "Disable all settings and fonts on journal entries to comeback on Foundry style.",

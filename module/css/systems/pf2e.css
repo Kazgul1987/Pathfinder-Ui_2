@@ -119,15 +119,25 @@
     padding: 7px 7px 5px 7px;
     margin: 0px 4px 0px 7px;
 }
+.speaking-as--currentSpeaker--text {
+    font-size: var(--font-size-16);
+    bottom: 0.55em;
+    text-shadow: 0 0 8px var(--color-shadow-primary);
+}
+.speaking-as--currentSpeaker--button {
+    font-size: var(--font-size-18);
+}
 .speaking-as--currentSpeaker--buttonInset {
     color: var(--main-text-light-color)!important;
 }
 .speaking-as--currentSpeaker--locked.fa-unlock {
     opacity: 1;
     color: var(--primary-remaster);
+    font-size: var(--font-size-20);
 }
 .speaking-as--currentSpeaker--locked {
     color: var(--red);
+    font-size: var(--font-size-20);
 }
 
 

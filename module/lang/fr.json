@@ -24,7 +24,10 @@
     "RPGUI.SETTINGS.DISABLE_STYLES_HINT": "Il s'agit d'un paramètre local, avec lequel tout joueur peut désactiver les styles.",
 
     "RPGUI.SETTINGS.JOURNAL_SHEET": "Désactiver la texture parcheminée des journaux.",
-    "RPGUI.SETTINGS.JOURNAL_SHEET_HINT": "Désactiver l'aspect parcheminé dans les pages du journal.",
+    "RPGUI.SETTINGS.JOURNAL_SHEET_HINT": "Désactive l'aspect parcheminé dans les pages du journal.",
+
+    "RPGUI.SETTINGS.JOURNAL_CURSOR": "Désactiver les curseurs RPG.",
+    "RPGUI.SETTINGS.JOURNAL_CURSOR_HINT": "Désactive les curseurs de type jeux vidéos RPG dans l'interface.",
 
     "RPGUI.SETTINGS.CUSTOM_CSS": "Désactiver le style PF2e dans les journaux.",
     "RPGUI.SETTINGS.CUSTOM_CSS_HINT": "Désactive la mise en page et les polices PF2e dans les journaux, pour revenir à celle de Foundry.",

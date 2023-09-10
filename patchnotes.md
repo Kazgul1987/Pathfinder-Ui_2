@@ -4,11 +4,16 @@
 - Ready for v11 version.
 
 
+## v11.308.8
+- Update interface code.
+- Add an option to disable RPG Cursors.
+- Improve Speaking As Compatibility.
+
 ## v11.308.7
 - Update interface code.
 - Add Dark Theme for Party Sheet.
 - Add Monk's Hotbar Expansion Compatibility.
-- Add Speak As Compatibility.
+- Add Speaking As Compatibility.
 
 ## v11.308.6
 - Add Target Damage Compatibility. 

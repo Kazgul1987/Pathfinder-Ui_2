@@ -25,6 +25,9 @@
 
     "RPGUI.SETTINGS.JOURNAL_SHEET": "Disable parchment texture on Journal pages",
     "RPGUI.SETTINGS.JOURNAL_SHEET_HINT": "Disable the parchment appearance on journal entries.",
+    
+    "RPGUI.SETTINGS.JOURNAL_CURSOR": "Disable RPG Cursors.",
+    "RPGUI.SETTINGS.JOURNAL_CURSOR_HINT": "Disable RPG Cursor style in Interface.",
 
     "RPGUI.SETTINGS.CUSTOM_CSS": "Disable PF2e style on Journal pages",
     "RPGUI.SETTINGS.CUSTOM_CSS_HINT": "Disable all settings and fonts on journal entries to comeback on Foundry style.",
