@@ -2,6 +2,9 @@
     "RPGUI.SETTINGS.NAVIGATION": "Vuelve a poner la navegación en modo horizontal",
     "RPGUI.SETTINGS.NAVIGATION_HINT": "Marca esta opción si no utiliza el módulo Combat Carousel",
 
+    "RPGUI.SETTINGS.DARKPARTYSHEET":"Ficha de grupo",
+    "RPGUI.SETTINGS.DARKPARTYSHEET_HINT":"Selecciona entre el original o la hoja oscura.",
+
     "RPGUI.SETTINGS.COMPACT_MODE": "Modo compacto",
     "RPGUI.SETTINGS.COMPACT_MODE_HINT": "Reduce el tamaño del menú de la izquierda y elimina el logotipo",
 

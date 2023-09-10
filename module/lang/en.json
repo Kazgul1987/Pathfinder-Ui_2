@@ -2,6 +2,9 @@
     "RPGUI.SETTINGS.DARKSHEET":"Select your Sheet Color",
     "RPGUI.SETTINGS.DARKSHEET_HINT":"Only for player sheets.",
 
+    "RPGUI.SETTINGS.DARKPARTYSHEET":"Party Sheet Color",
+    "RPGUI.SETTINGS.DARKPARTYSHEET_HINT":"Selects between original or dark sheet.",
+
     "RPGUI.SETTINGS.TOKEN_EFFECT_HUD": "Adjust token effects HUD?",
     "RPGUI.SETTINGS.TOKEN_EFFECT_HUD_HINT": "Makes effects circular and arranges them outside the token, or on the token ring for larger tokens",
    

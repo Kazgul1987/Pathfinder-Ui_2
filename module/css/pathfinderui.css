@@ -3,6 +3,7 @@
 @import 'text-editor.css';
 @import "systems/pf2e.css";
 
+
 /*************************************************************/
 /*============ Background/Pause img / Logo ==================*/
 /*************************************************************/
@@ -69,6 +70,7 @@ body.compact-mode #logo {
     z-index: -1;
     left: -10%;
 }
+
 
 /*************************************************************/
 /*======================= SIDEBAR ===========================*/
@@ -777,6 +779,10 @@ body.compact-mode #logo {
     border-radius: 50%;
     border: 2px solid var(--border-color-2);
     box-shadow: rgb(0, 0, 0) 0px 0px 10px 0px;
+}
+
+.hotbar-page {
+    width: calc(var(--hotbar-width) + 72px);
 }
 
 #action-bar:not(.collapsed)::before {

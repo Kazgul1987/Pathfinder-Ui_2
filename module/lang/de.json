@@ -2,6 +2,9 @@
     "RPGUI.SETTINGS.NAVIGATION": "Schalte die Navigation zurück in den horizontalen Modus",
     "RPGUI.SETTINGS.NAVIGATION_HINT": "Verwende diesen Schalter, wenn du die Combat Carousel-Integration nicht verwendest",
 
+    "RPGUI.SETTINGS.DARKPARTYSHEET":"Gruppenblatt",
+    "RPGUI.SETTINGS.DARKPARTYSHEET_HINT":"Ermöglicht die Auswahl zwischen dem Original- und dem Dunkelblatt.",
+    
     "RPGUI.SETTINGS.COMPACT_MODE": "Kompakt mode",
     "RPGUI.SETTINGS.COMPACT_MODE_HINT": "Verkleinert das linke Menü und entfernt das Logo",
 

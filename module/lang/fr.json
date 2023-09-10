@@ -1,7 +1,10 @@
 {
     "RPGUI.SETTINGS.DARKSHEET":"Couleur de la Feuille PJ",
     "RPGUI.SETTINGS.DARKSHEET_HINT":"Uniquement pour la feuille de personnage joueur.",
-   
+
+    "RPGUI.SETTINGS.DARKPARTYSHEET":"Feuille de Groupe",
+    "RPGUI.SETTINGS.DARKPARTYSHEET_HINT":"Permet de choisir entre la feuille originale ou sombre.",
+
     "RPGUI.SETTINGS.TOKEN_EFFECT_HUD": "Afficher les Conditions en cercle ?",
     "RPGUI.SETTINGS.TOKEN_EFFECT_HUD_HINT": "Place les effets en cercle et les arrange à l'extérieur du jeton ou sur le pourtour du jetons pour les jetons plus grands",
 

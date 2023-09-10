@@ -4,6 +4,15 @@
 - Ready for v11 version.
 
 
+## v11.308.7
+- Update interface code.
+- Add Dark Theme for Party Sheet.
+- Add Monk's Hotbar Expansion Compatibility.
+- Add Speak As Compatibility.
+
+## v11.308.6
+- Add Target Damage Compatibility. 
+
 ## v11.308.5
 - Update interface code. 
 

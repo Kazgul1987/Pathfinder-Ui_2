@@ -30,6 +30,11 @@
     
     --alt: var(--background);
     --sub: var(--background);
+
+    --rarity-common: #7e7e7e;
+    --rarity-uncommon: #ff6400;
+    --rarity-rare: #0062ff;
+    --rarity-unique: #e127e1;
 }
 
 
