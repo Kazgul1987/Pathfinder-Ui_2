@@ -1,0 +1,186 @@
+/* A bunch of disgusting CSS overrides that hit the system's CSS like a hammer to remove as much colour as possible */
+
+.dark-loot-theme {
+    --alt:#786452;
+    --main-text-light-color: #cfbda7;
+    --green: #91a82a;
+    --blue: #171f69;
+    --red: #5e0000;
+    --red-light:#ff0000;
+    --background: #100d0d;
+    --background-2: #ffffff14;
+    --highlight: 0 0 0 1px var(--main-text-light-color), 0 0 0 2px #93d1d3, inset 0 0 4px rgba(255, 255, 255, 0.25);
+    --glass-bg: rgba(20, 20, 20, 0.6);
+    --glass-bg-light: rgba(255, 255, 255, 0.1);
+    --glass-bg-dark: rgba(0, 0, 0, 0.7);
+    --glassy: 0px 0px 3px 0px rgba(255, 255, 255, 0.4) inset, 0px 0px 2px 1px rgba(0, 0, 0, 1), 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+	--primary-remaster: hsl(153, 100%, 8%);
+	--primary-light-remaster: hsl(170, 96%, 19%);
+    --ornement : url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='33' height='33' overflow='scroll'%3E%3Cstyle%3E.st1{stroke:wheat;stroke-miterlimit:10}.st1,.st2{fill:none}%3C/style%3E%3Cg opacity='0.75'%3E%3Cpath class='st1' d='M.5 20v-7'/%3E%3Cpath class='st2' d='M13 20v-7'/%3E%3Cpath class='st1' d='M13 .5h7'/%3E%3Cpath class='st2' d='M13 13h7'/%3E%3Cpath class='st1' d='M32.5 13v7'/%3E%3Cpath class='st2' d='M20 13v7'/%3E%3Cpath class='st1' d='M20 32.5h-7'/%3E%3Cpath class='st2' d='M20 20h-7'/%3E%3Cpath class='st1' d='M.5.5h3.1v3.1H.5zm3.1 3.1h3.1v3.1H3.6zm3.2 0h3.1v3.1H6.8zM3.6 6.8h3.1v3.1H3.6zm0 0H.5V13M13 .5H6.8v3.1M29.4.5h3.1v3.1h-3.1zm-3.1 3.1h3.1v3.1h-3.1zm0 3.2h3.1v3.1h-3.1zm-3.2-3.2h3.1v3.1h-3.1zm3.2 0V.5H20M32.5 13V6.8h-3.1M29.4 29.4h3.1v3.1h-3.1z'/%3E%3Cpath class='st1' d='M26.3 26.3h3.1v3.1h-3.1zm-3.2 0h3.1v3.1h-3.1zm3.2-3.2h3.1v3.1h-3.1z'/%3E%3Cpath class='st1' d='M29.4 26.3h3.1V20M20 32.5h6.3v-3.1'/%3E%3Cg%3E%3Cpath class='st1' d='M.5 29.4h3.1v3.1H.5zm3.1-3.1h3.1v3.1H3.6zm0-3.2h3.1v3.1H3.6zm3.2 3.2h3.1v3.1H6.8zM6.8 29.4v3.1H13M.5 20v6.3h3.1'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+
+    --primary: var(--red);
+    --secondary: var(--blue);
+    --tertiary: var(--main-text-light-color);
+    --tertiary-dark: var(--main-text-light-color);
+    --tertiary-light: var(--main-text-light-color);
+    --body: var(--main-text-light-color);
+    --text-dark: var(--main-text-light-color);
+    --text-light: var(--main-text-light-color);
+    --sidebar-label: var(--main-text-light-color);
+    --sidebar-title: var(--main-text-light-color);
+
+    --rarity-common: #7e7e7e;
+    --rarity-uncommon: #ff6400;
+    --rarity-rare: #0062ff;
+    --rarity-unique: #e127e1;
+}
+
+
+/************************/
+/*      Loot-sheet      */
+/************************/
+
+.dark-loot-theme.sheet.actor.loot .window-content {
+    color: var(--main-text-light-color);
+    background: none;
+}
+.dark-loot-theme.sheet.actor.loot .sheet-header h1 > input {
+    color: var(--main-text-light-color);
+    text-transform: uppercase;
+    border: none;
+    background: none;
+    text-shadow: 0 0 8px var(--color-shadow-primary);
+}
+.dark-loot-theme.sheet.actor.loot section.sidebar {
+    border: none;
+
+}
+.dark-loot-theme.sheet.actor.loot .sheet-header .traits-bar > .trait {
+    color: var(--main-text-light-color);
+    text-transform: uppercase;
+    border: none;
+    background-color: var(--glass-bg);
+    box-shadow: var(--glassy);
+    text-shadow: 0 0 1px black;
+    border-radius: 3px;
+}
+.dark-loot-theme.sheet.actor.loot section.sidebar .gm-settings .loot-distribution button {
+    color: var(--main-text-light-color);
+    text-transform: uppercase;
+    border: 2px solid black;
+    background: var(--background);
+    box-shadow: var(--glassy);
+    text-shadow: 0 0 3px black;
+    border-radius: 3px;
+}
+.dark-loot-theme.sheet.actor.loot section.sidebar .gm-settings .loot-distribution button:hover {
+    border: 1px solid black;
+    background: none;
+    background-color: var(--green);
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15), inset 0 0 0 2px rgba(0, 0, 0, 0.4);
+    transition: text-shadow 0.15s ease-in-out, background-color 0.15s ease-in-out, border 0.15s ease-in-out, color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, backdrop-filter 0.15s ease-in-out, border-radius 0.15s;
+    text-shadow: 0 0 1px black!important;
+    color: var(--background)!important;
+    border-radius: 3px;
+}
+
+
+/*      Inventory       
+*************************/
+.dark-loot-theme.sheet.actor.loot .currency {
+    color: var(--main-text-light-color);
+    border: none;
+    background: none;
+    background-color: var(--glass-bg);
+    box-shadow: var(--glassy);
+    text-shadow: 0 0 3px black;
+    border-radius: 3px;
+}
+.dark-loot-theme.sheet.actor.loot .currency .label {
+    color: var(--green);
+}
+.dark-loot-theme.sheet.actor.loot .currency .denomination {
+    color: var(--main-text-light-color);
+}
+.dark-loot-theme.sheet.actor.loot .currency li > button {
+    color: var(--main-text-light-color);
+    border: none;
+    background: none;
+    background-color: var(--glass-bg);
+    box-shadow: var(--glassy);
+    text-shadow: 0 0 3px black;
+    border-radius: 3px;
+}
+.dark-loot-theme.sheet.actor.loot .tags .tag, .dark-loot-theme.sheet.actor.loot .tags .tag option {
+    color: var(--main-text-light-color);
+    text-transform: uppercase;
+    border: 1px solid black;
+    box-shadow: var(--glassy);
+    text-shadow: 0 0 1px black;
+    border-radius: 3px;
+}
+.dark-loot-theme.sheet.actor.loot .wealth {
+    border: none;
+    background: none;
+    background-color: var(--glass-bg);
+    box-shadow: var(--glassy);
+    text-shadow: 0 0 3px black;
+    border-radius: 3px;
+}
+.dark-loot-theme.sheet.actor.loot .wealth h3.item-name {
+    color: var(--main-text-light-color);
+}
+.dark-loot-theme.sheet.actor.loot .inventory .inventory-header {
+    color: var(--main-text-light-color);
+    background: radial-gradient(var(--primary-light-remaster), transparent)!important;
+    box-shadow: none;
+    border-radius: 3px;
+}
+.dark-loot-theme.sheet.actor.loot .currency li > button:hover:not(:disabled) {
+    border: 1px solid black;
+    background: none;
+    background-color: var(--green);
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15), inset 0 0 0 2px rgba(0, 0, 0, 0.4);
+    transition: text-shadow 0.15s ease-in-out, background-color 0.15s ease-in-out, border 0.15s ease-in-out, color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, backdrop-filter 0.15s ease-in-out, border-radius 0.15s;
+    text-shadow: 0 0 1px black!important;
+    color: var(--background)!important;
+    border-radius: 3px;
+}
+.dark-loot-theme.sheet.actor.loot .inventory .item-name h4:not(:hover).rarity-common {
+    border-color: #7e7e7e;
+    color: #7e7e7e;
+}
+.dark-loot-theme.sheet.actor.loot .inventory .item-name h4:not(:hover).rarity-uncommon {
+    border-color: #ff6400;
+    color: #ff6400;
+}
+.dark-loot-theme.sheet.actor.loot .inventory .item-name h4:not(:hover).rarity-rare {
+    border-color: #0062ff;
+    color: #0062ff;
+}
+.dark-loot-theme.sheet.actor.loot .inventory .item-name h4:not(:hover).rarity-unique {
+    border-color: #e127e1;
+    color: #e127e1;
+}
+.dark-loot-theme.sheet.actor.loot .inventory .item-name h3:hover, .dark-loot-theme.sheet.actor.loot .inventory .item-name h4:hover {
+    color: var(--green);
+}
+.dark-loot-theme.sheet.actor.loot .inventory .list-row .item-controls {
+    color: var(--main-text-light-color);
+}
+.dark-loot-theme.sheet.actor.loot .inventory .item .quantity, .dark-loot-theme.sheet.actor.loot .inventory .item .bulk, .dark-loot-theme.sheet.actor.loot .inventory .item .item-controls, .dark-loot-theme.sheet.actor.loot .inventory .item .sell-value {
+    border: none;
+}
+.dark-loot-theme.sheet.actor.loot .inventory .list-row .item-controls .item-control.toggle-invested.active, .dark-loot-theme.sheet.actor.loot .inventory .list-row .item-controls .item-control.item-carry-type.active {
+    color: var(--green);
+}
+.dark-loot-theme.sheet.actor.loot .inventory .list-row .item-controls .item-control.toggle-invested, .dark-loot-theme.sheet.actor.loot .inventory .list-row .item-controls .item-control.item-carry-type {
+    color: var(--green);
+}
+.dark-loot-theme.sheet.actor.loot .inventory .item-summary {
+    border: none;
+    background: none;
+}
+.dark-loot-theme.sheet.actor.loot .inventory .inventory-items {
+    border: none;
+}

@@ -1079,3 +1079,6 @@ button.half-damage .fa-heart-broken::after {
     color: var(--color-text-hyperlink);
 }
 /*-------------------------------------------------*/
+
+/* A bunch of disgusting CSS overrides that hit the system's CSS like a hammer to remove as much colour as possible */
+

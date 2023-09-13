@@ -3,7 +3,16 @@
     "RPGUI.SETTINGS.DARKSHEET_HINT":"Only for player sheets.",
 
     "RPGUI.SETTINGS.DARKPARTYSHEET":"Party Sheet Color",
-    "RPGUI.SETTINGS.DARKPARTYSHEET_HINT":"Selects between original or dark sheet.",
+    "RPGUI.SETTINGS.DARKPARTYSHEET_HINT":"Select original or dark sheet.",
+
+    "RPGUI.SETTINGS.DARKLOOTSHEET":"Loot Sheet Color",
+    "RPGUI.SETTINGS.DARKLOOTSHEET_HINT":"Select original or dark sheet.",
+
+    "RPGUI.SETTINGS.DARKNPCSHEET":"NPC Sheet Color",
+    "RPGUI.SETTINGS.DARKNPCSHEET_HINT":"Select original or dark sheet.",
+
+    "RPGUI.SETTINGS.DARKHAZARDSHEET":"Hazard Sheet Color",
+    "RPGUI.SETTINGS.DARKHAZARDSHEET_HINT":"Select original or dark sheet.",
 
     "RPGUI.SETTINGS.TOKEN_EFFECT_HUD": "Adjust token effects HUD?",
     "RPGUI.SETTINGS.TOKEN_EFFECT_HUD_HINT": "Makes effects circular and arranges them outside the token, or on the token ring for larger tokens",

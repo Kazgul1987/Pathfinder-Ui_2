@@ -5,6 +5,15 @@
     "RPGUI.SETTINGS.DARKPARTYSHEET":"Feuille de Groupe",
     "RPGUI.SETTINGS.DARKPARTYSHEET_HINT":"Permet de choisir entre la feuille originale ou sombre.",
 
+    "RPGUI.SETTINGS.DARKLOOTSHEET":"Feuille de Butin",
+    "RPGUI.SETTINGS.DARKLOOTSHEET_HINT":"Permet de choisir entre la feuille originale ou sombre.",
+
+    "RPGUI.SETTINGS.DARKNPCSHEET":"Personnage non Joueur",
+    "RPGUI.SETTINGS.DARKNPCSHEET_HINT":"Permet de choisir entre la feuille originale ou sombre.",
+
+    "RPGUI.SETTINGS.DARKHAZARDSHEET":"Feuille de Danger",
+    "RPGUI.SETTINGS.DARKHAZARDSHEET_HINT":"Select original or dark sheet.",
+
     "RPGUI.SETTINGS.TOKEN_EFFECT_HUD": "Afficher les Conditions en cercle ?",
     "RPGUI.SETTINGS.TOKEN_EFFECT_HUD_HINT": "Place les effets en cercle et les arrange à l'extérieur du jeton ou sur le pourtour du jetons pour les jetons plus grands",
 

@@ -4,6 +4,12 @@
 - Ready for v11 version.
 
 
+## v11.308.9
+- Update interface code.
+- Add Dark Theme for NPC Sheet.
+- Add Dark Theme for LOOT Sheet.
+- Add Dark Theme for HAZARD Sheet.
+
 ## v11.308.8
 - Update interface code.
 - Add an option to disable RPG Cursors.
