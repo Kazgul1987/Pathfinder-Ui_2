@@ -81,7 +81,7 @@
 .actor.sheet.dark-theme .crb-style aside .sidebar_title h2 {
     color: darkgray;
 }
-.actor.sheet.character .crb-style .sheet-body .sheet-content .tab.character .attributes .attribute .abbreviation {
+.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.character .attributes .attribute .abbreviation {
     color: var(--primary-light-remaster);
 }
 .actor.sheet.dark-theme hr {
@@ -628,7 +628,7 @@ color: var(--green)!important;
     background: var(--background);
     color: var(--main-text-light-color);
 }
-.actor.sheet.character .crb-style .sheet-body .sheet-content .tab.biography .biography-personality .bio {
+.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.biography .biography-personality .bio {
     background: radial-gradient(var(--background-2), transparent);
 }
 
@@ -695,7 +695,7 @@ color: var(--green)!important;
 .dark.sheet.actor.character.dark-theme .crb-style .sheet-body .sheet-content .tab.character .character-details .alignment::after {
     background: none;
 }
-.dark.actor.sheet.character .crb-style .sheet-body .sheet-content .tab.character .attributes .attribute .label {
+.dark.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.character .attributes .attribute .label {
     color: var(--green) !important;
     opacity: 0.7;
 }
@@ -782,7 +782,7 @@ color: var(--green)!important;
     text-shadow:none!important;
     box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15), inset 0 0 0 2px rgba(0, 0, 0, 0.4);
 }
-.red.actor.sheet.character .crb-style .sheet-body .sheet-content .tab.character .attributes .attribute .abbreviation {
+.red.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.character .attributes .attribute .abbreviation {
     color: darkgray;
 }
 .red.actor.sheet.dark-theme .item-summary .item-buttons button {
@@ -839,7 +839,7 @@ color: var(--green)!important;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
-.remaster.actor.sheet .crb-style header.char-header .char-level .level input {
+.remaster.actor.sheet.dark-theme .crb-style header.char-header .char-level .level input {
     color: var(--main-text-light-color)!important;
     background: none;
 }
@@ -850,7 +850,7 @@ color: var(--green)!important;
     color: var(--main-text-light-color);
     background: none;
 }
-.remaster.actor.sheet.character .crb-style header.char-header .char-level .exp-data .exp-input input {
+.remaster.actor.sheet.character.dark-theme .crb-style header.char-header .char-level .exp-data .exp-input input {
     color: var(--main-text-light-color) !important;
     background: transparent;
 }
@@ -863,7 +863,7 @@ color: var(--green)!important;
 .remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content h3.header {
     color: var(--primary-remaster)!important;
 }
-.remaster.actor.sheet.character .crb-style .sheet-body .sheet-content .tab.character .attributes .attribute .label {
+.remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.character .attributes .attribute .label {
     opacity: 0.7;
 }
 .remaster.actor.sheet.dark-theme .crb-style .details-label {
@@ -872,14 +872,14 @@ color: var(--green)!important;
 .remaster.actor.sheet.character.dark-theme .crb-style aside input[type=number] {
     color: var(--main-text-light-color)!important;
 }
-.remaster.actor.sheet.character .crb-style .sheet-body .sheet-content .tab.character .attributes .attribute .abbreviation {
+.remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.character .attributes .attribute .abbreviation {
     color: var(--primary-remaster);
 }
 .remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content h3.header button {
     background: radial-gradient( var(--primary-remaster), var(--primary-light-remaster));
     border-radius: 3px;
 }
-.remaster.actor.sheet .crb-style aside .sidebar .roll-data h3 {
+.remaster.actor.sheet.dark-theme .crb-style aside .sidebar .roll-data h3 {
     color: var(--main-text-light-color) !important;
     border-color: var(--main-text-light-color) !important;
 }
@@ -887,7 +887,7 @@ color: var(--green)!important;
     color: var(--primary-remaster)!important;
     border-color: var(--main-text-light-color) !important;
 }
-.remaster.actor.sheet.character .crb-style .sheet-body .sheet-content .tab.character .attributes .attribute h3.modifier {
+.remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.character .attributes .attribute h3.modifier {
     background: none!important;
     color: var(--primary-remaster)!important;
     border-image-repeat: repeat;
@@ -906,7 +906,7 @@ color: var(--green)!important;
 .remaster.actor.sheet.dark-theme .crb-style aside .modifiers_button {
     background: radial-gradient( var(--primary-remaster), var(--primary-light-remaster));
 }
-.remaster.actor.sheet.dark-theme .crb-style nav.sub-nav a.active, .actor.sheet .crb-style nav.sub-nav .tab.active {
+.remaster.actor.sheet.dark-theme .crb-style nav.sub-nav a.active, .remaster.actor.sheet.dark-theme .crb-style nav.sub-nav .tab.active {
     color: var(--primary-light-remaster);
 }
 .remaster.actor.sheet.dark-theme a:hover {
@@ -978,7 +978,7 @@ color: var(--green)!important;
     background: radial-gradient(var(--primary-remaster), var(--primary-light-remaster))!important;
     border-radius: 15px;
 }
-.remaster.actor.sheet .crb-style .sheet-body .sheet-content ol.spell-list > li:nth-child(odd) {
+.remaster.actor.sheet.dark-theme .crb-style .sheet-body .sheet-content ol.spell-list > li:nth-child(odd) {
     background-color: rgba(120, 100, 82, 0.1)!important;
 }
 .remaster.actor.sheet.dark-theme .crb-style .sheet-body .sheet-content ol.spell-list > li.spell-level-header {
