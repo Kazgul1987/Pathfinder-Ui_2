@@ -204,12 +204,12 @@
 #combat-carousel .initiative input{
     position: relative;
     top: 3px;
-    color: var(--main-text-light-color)!important;
+    color: var(--pfui-main-color)!important;
 }
 
 #combat-carousel .initiative input[type="text"].fa-stack-1x {
     position: absolute;
-    color: var(--main-text-light-color)
+    color: var(--pfui-main-color)
 }
 
 #combat-carousel .initiative .roll-init .initiative-icon{

@@ -24,8 +24,8 @@ body {
 }
 
 :root {
-    --main-text-light-color: #cfbda7;
-    --main-text-very-light-color: #cfbda7;
+    --pfui-main-color: #cfbda7;
+    --pfui-main-grey-color: #98968a;
     --border-color: #372d25;
     --border-color-2: #837360;
     --serif: Eczar,Georgia,serif;
@@ -51,7 +51,7 @@ body.compact-mode #logo {
     left: 22px;
     width: 80px;
     top: 10px;
-    color: var(--main-text-light-color);
+    color: var(--pfui-main-color);
     font-family: 'Kurale', serif;
     font-weight: 800;
     font-size: 17px;
@@ -384,7 +384,7 @@ body.compact-mode #logo {
     margin-left: 2px;
     background: radial-gradient(var(--background-2), transparent)!important;
     box-shadow: var(--glassy);
-    color: var(--main-text-light-color);
+    color: var(--pfui-main-color);
 }
 
 #chat-form textarea:focus {
@@ -444,18 +444,18 @@ body.compact-mode #logo {
 }
 
 #chat-log .message .message-header {
-    color: var(--main-text-light-color) !important; /*92887f*/
+    color: var(--pfui-main-color) !important; /*92887f*/
     font-size: 16px;
     font-weight: 600;
 }
 
 .chat-message .message-content {
-    color: var(--main-text-light-color) !important;/*8e8073*/
+    color: var(--pfui-main-color) !important;/*8e8073*/
 }
 
 .chat-message .table-draw .table-description {
     border-top: 1px solid var(--monks-border-color);
-    color: var(--main-text-light-color)
+    color: var(--pfui-main-color)
 }
 
 .chat-message .table-draw .table-results .table-result img.result-image {
@@ -474,7 +474,7 @@ body.compact-mode #logo {
 }
 
 .dice-tooltip .part-header .part-flavor {
-    color: var(--main-text-light-color);
+    color: var(--pfui-main-color);
 }
 
 
@@ -553,7 +553,7 @@ body.compact-mode #logo {
     border: 1px solid #000;
     background: radial-gradient(var(--background-2), transparent);
     box-shadow: var(--glassy);
-    color: var(--main-text-light-color);
+    color: var(--pfui-main-color);
     border-radius: 3px;
 }
 .roll-type-select{
@@ -566,12 +566,12 @@ body.compact-mode #logo {
     background-position: initial;
     background: radial-gradient(var(--background-2), transparent)!important;
     box-shadow: var(--glassy);
-    color: var(--main-text-light-color);
+    color: var(--pfui-main-color);
     border: none;
 }
 
 #sidebar .sidebar-tab option, optgroup {
-    color: var(--main-text-light-color);
+    color: var(--pfui-main-color);
     background: var(--background)!important;
 }
 
@@ -609,7 +609,7 @@ body.compact-mode #logo {
    box-shadow: none;
 }
 #sidebar .directory .directory-header .header-search input::placeholder {
-    color: var(--main-text-light-color)
+    color: var(--pfui-main-color)
 }
 #sidebar hr {
     border: none;
@@ -618,6 +618,7 @@ body.compact-mode #logo {
 }
 
 #settings h2 {
+    color: var(--pfui-main-color);
     margin: 6px 5px;
     border: none;
     border-bottom: 1px solid #675241;
@@ -635,14 +636,25 @@ body.compact-mode #logo {
     color : white;
     text-shadow: 2px 2px black ;
 }
-
+#sidebar li.folder.collapsed > .folder-header h3:hover {
+    color: var(--pfui-main-color);
+    text-shadow: 0 0 8px var(--color-shadow-primary);
+}
+#sidebar li.folder > .folder-header .create-button:hover {
+    color: var(--pfui-main-color);
+    text-shadow: 0 0 8px var(--color-shadow-primary);
+}
 /*************************************************************/
 /*=============== SIDEBAR FOLDERs AS BUTTONS ================*/
 /*************************************************************/
+.settings-sidebar #game-details {
+    color: var(--pfui-main-grey-color);
+}
+
 #settings button,
 #sidebar .directory .action-buttons button {
     z-index: 18;
-    color: var(--color-text-light-heading);
+    color: var(--pfui-main-grey-color);
     font-family: 'Kurale', serif;
     line-height: 25px;
     position: relative;
@@ -663,9 +675,10 @@ body.compact-mode #logo {
 
 #settings button:hover,
 #sidebar .directory .action-buttons button:hover {
+    color: var(--pfui-main-color);
+    text-shadow: 0 0 8px var(--color-shadow-primary);
     background: url(../ui/frames/header.webp) center center;
     background-size: 100% 45px;
-    /*color: #a11414;*/
 }
 
 #settings button::before,
@@ -702,7 +715,17 @@ body.compact-mode #logo {
     text-shadow: 2px 1px 2px #000;
 }
 #scenes .scene {
-    height: 48px;
+    height: 43px;
+}
+.compendium-sidebar .directory-item.compendium {
+    height: 45px;
+    border-bottom: 2px solid transparent;
+}
+.compendium-sidebar .directory-item.compendium .compendium-name {
+    font-size: var(--font-size-14);
+    text-transform: uppercase;
+    line-height: 0.5rem;
+    margin-bottom: 10px;
 }
 /* #endregion */
 
@@ -732,7 +755,7 @@ body.compact-mode #logo {
 }
 
 #chat-log .message.whisper .message-header .message-metadata::before {
-    color: var(--main-text-light-color);
+    color: var(--pfui-main-color);
     /*content: " (Private Roll) ";*/
     font-family: "Font Awesome 5 Free";
     content: "\f023";
@@ -743,7 +766,7 @@ body.compact-mode #logo {
 
 
 #chat-log .message.blind .message-header .message-metadata::before {
-    color: var(--main-text-light-color);
+    color: var(--pfui-main-color);
     content: "\f070" !important;
     padding-right: 5px;
     float: left;
@@ -855,7 +878,7 @@ body.compact-mode #logo {
 
 
 .dice-calculator > button, .dice-calculator .dice-calculator--button {
-    color: var(--main-text-light-color)
+    color: var(--pfui-main-color)
 }
 
 /* Damage Log */
@@ -1006,7 +1029,7 @@ nav.damage-log-nav .item.active:before,
 .window-app.dialog .window-header,
 .window-app.folder-edit .window-header {
     border: none;
-    color: var(--main-text-light-color);
+    color: var(--pfui-main-color);
 }
 
 .window-app.dialog .window-header::after,
@@ -1034,7 +1057,7 @@ nav.damage-log-nav .item.active:before,
 
 .folder-edit form .form-group label,
 .folder-edit form .form-group label {
-    color: var(--main-text-light-color)
+    color: var(--pfui-main-color)
 }
 
 .dialog button::before,
@@ -1109,7 +1132,7 @@ nav.damage-log-nav .item.active:before,
 /* ACTOR AND ITEM */
 button#roll-hd {
     position: relative;
-    color: var(--main-text-light-color);
+    color: var(--pfui-main-color);
     border: none;
 }
 
@@ -1164,7 +1187,7 @@ button#roll-hd:hover::before {
 #nav-toggle {
     width: 36px;
     height: 36px;
-    color: var(--main-text-light-color);
+    color: var(--pfui-main-color);
 }
 
 #nav-toggle::after {
@@ -1183,7 +1206,7 @@ button#roll-hd:hover::before {
 
 #navigation #scene-list .scene.nav-item {
     position: relative;
-    color: var(--main-text-light-color);
+    color: var(--pfui-main-color);
     font-weight: 600;
 }
 

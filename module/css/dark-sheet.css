@@ -1,14 +1,15 @@
 /* A bunch of disgusting CSS overrides that hit the system's CSS like a hammer to remove as much colour as possible */
 
 .dark-theme {
-    --main-text-light-color: #cfbda7;
+    --pfui-main-color: #cfbda7;
+    --pfui-main-grey-color: #98968a;
     --green: #91a82a;
     --blue: #171f69;
     --red: #5e0000;
     --red-light:#ff0000;
     --background: #100d0d;
     --background-2: #ffffff14;
-    --highlight: 0 0 0 1px var(--main-text-light-color), 0 0 0 2px #93d1d3, inset 0 0 4px rgba(255, 255, 255, 0.25);
+    --highlight: 0 0 0 1px var(--pfui-main-color), 0 0 0 2px #93d1d3, inset 0 0 4px rgba(255, 255, 255, 0.25);
     --glass-bg: rgba(20, 20, 20, 0.6);
     --glass-bg-light: rgba(255, 255, 255, 0.1);
     --glass-bg-dark: rgba(0, 0, 0, 0.7);
@@ -17,16 +18,16 @@
 	--primary-light-remaster: hsl(170, 96%, 19%);
     --ornement : url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='33' height='33' overflow='scroll'%3E%3Cstyle%3E.st1{stroke:wheat;stroke-miterlimit:10}.st1,.st2{fill:none}%3C/style%3E%3Cg opacity='0.75'%3E%3Cpath class='st1' d='M.5 20v-7'/%3E%3Cpath class='st2' d='M13 20v-7'/%3E%3Cpath class='st1' d='M13 .5h7'/%3E%3Cpath class='st2' d='M13 13h7'/%3E%3Cpath class='st1' d='M32.5 13v7'/%3E%3Cpath class='st2' d='M20 13v7'/%3E%3Cpath class='st1' d='M20 32.5h-7'/%3E%3Cpath class='st2' d='M20 20h-7'/%3E%3Cpath class='st1' d='M.5.5h3.1v3.1H.5zm3.1 3.1h3.1v3.1H3.6zm3.2 0h3.1v3.1H6.8zM3.6 6.8h3.1v3.1H3.6zm0 0H.5V13M13 .5H6.8v3.1M29.4.5h3.1v3.1h-3.1zm-3.1 3.1h3.1v3.1h-3.1zm0 3.2h3.1v3.1h-3.1zm-3.2-3.2h3.1v3.1h-3.1zm3.2 0V.5H20M32.5 13V6.8h-3.1M29.4 29.4h3.1v3.1h-3.1z'/%3E%3Cpath class='st1' d='M26.3 26.3h3.1v3.1h-3.1zm-3.2 0h3.1v3.1h-3.1zm3.2-3.2h3.1v3.1h-3.1z'/%3E%3Cpath class='st1' d='M29.4 26.3h3.1V20M20 32.5h6.3v-3.1'/%3E%3Cg%3E%3Cpath class='st1' d='M.5 29.4h3.1v3.1H.5zm3.1-3.1h3.1v3.1H3.6zm0-3.2h3.1v3.1H3.6zm3.2 3.2h3.1v3.1H6.8zM6.8 29.4v3.1H13M.5 20v6.3h3.1'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 
-    --primary: var(--main-text-light-color);
-    --secondary: var(--green);
-    --tertiary: var(--main-text-light-color);
-    --tertiary-dark: var(--main-text-light-color);
-    --tertiary-light: var(--main-text-light-color);
-    --body: var(--main-text-light-color);
-    --text-dark: var(--main-text-light-color);
-    --text-light: var(--main-text-light-color);
-    --sidebar-label: var(--main-text-light-color);
-    --sidebar-title: var(--main-text-light-color);
+    --primary: var(--red);
+    --secondary: var(--blue);
+    --tertiary: var(--pfui-main-color);
+    --tertiary-dark: var(--pfui-main-color);
+    --tertiary-light: var(--pfui-main-color);
+    --body: var(--pfui-main-color);
+    --text-dark: var(--pfui-main-color);
+    --text-light: var(--pfui-main-color);
+    --sidebar-label: var(--pfui-main-color);
+    --sidebar-title: var(--pfui-main-color);
     
     --alt: var(--background);
     --sub: var(--background);
@@ -110,7 +111,7 @@
 }
 
 .sheet.actor.character.dark-theme .crb-style .sheet-body .sheet-content ol.directory-list .action-header {
-    color: var(--main-text-light-color) !important;
+    color: var(--pfui-main-color) !important;
     background: var(--background);
     box-shadow: 0 0 6px inset #3f342b!important;
 }
@@ -122,23 +123,23 @@
 }
 
 .sheet.actor.character.dark-theme .crb-style .sheet-body .sheet-content ol.directory-list .action-header h3 input.item-name-input {
-    color: var(--main-text-light-color);
+    color: var(--pfui-main-color);
 }
 
 .sheet.actor.character.dark-theme .item-name {
-    color: var(--main-text-light-color);
+    color: var(--pfui-main-color);
     background: radial-gradient(var(--background-2), transparent);
     text-shadow: none;
 }
 
 .sheet.actor.character.dark-theme .crb-style .sheet-body .sheet-content .tab.inventory .wealth {
-    color: var(--main-text-light-color);
+    color: var(--pfui-main-color);
     background: var(--background);
     box-shadow: none;
 }
 
 .sheet.actor.character.dark-theme .crb-style .sheet-body .sheet-content .tab.inventory .inventory-header {
-    color: var(--main-text-light-color);
+    color: var(--pfui-main-color);
     background: radial-gradient(var(--primary-light-remaster), transparent)!important;
     box-shadow: none;
     border-radius: 3px;
@@ -149,25 +150,25 @@
 }
 
 .sheet.actor.character.dark-theme .currency li {
-    color: var(--main-text-light-color);
+    color: var(--pfui-main-color);
     background: var(--background);
     text-shadow: none;
 }
 
 .sheet.actor.character.dark-theme .inventory .inventory-header {
-    color: var(--main-text-light-color);
+    color: var(--pfui-main-color);
     background: var(--background);
 }
 
 .sheet.actor.character.dark-theme .window-content {
-    color: var(--main-text-light-color);
+    color: var(--pfui-main-color);
     background: none;
 }
 
 .sheet.actor.character.dark-theme button {
-    color: var(--main-text-light-color) !important;
+    color: var(--pfui-main-color) !important;
     background: var(--glass-bg);
-    border-color: var(--main-text-light-color) !important;
+    border-color: var(--pfui-main-color) !important;
     border-radius: 3px;
 }
 
@@ -184,42 +185,42 @@
 
 .actor.sheet.dark-theme .crb-style aside .modifiers_button:hover:not(:disabled) {
     color: black!important;
-    background: var(--main-text-light-color);
+    background: var(--pfui-main-color);
 }
 
 .sheet.actor.character.dark-theme h6 {
-    color: var(--main-text-light-color) !important;
+    color: var(--pfui-main-color) !important;
     background: var(--background) !important;
-    border-color: var(--main-text-light-color) !important;
+    border-color: var(--pfui-main-color) !important;
 }
 
 .sheet.actor.character.dark-theme .item-controls {
-    color: var(--main-text-light-color) !important;
+    color: var(--pfui-main-color) !important;
     background: radial-gradient(var(--background-2), transparent);
 }
 
 .sheet.actor.character.dark-theme h3 {
-    color: var(--main-text-light-color) !important;
-    border-color: var(--main-text-light-color) !important;
+    color: var(--pfui-main-color) !important;
+    border-color: var(--pfui-main-color) !important;
 }
 
 
 .sheet.actor.character.dark-theme .data-value {
-    border-color: var(--main-text-light-color) !important;
+    border-color: var(--pfui-main-color) !important;
 }
 
 .sheet.actor.character.dark-theme li.tag {
-    color: var(--main-text-light-color) !important;
+    color: var(--pfui-main-color) !important;
     background: var(--background) !important;
-    box-shadow: inset 0 0 0 1px var(--main-text-light-color) !important;
+    box-shadow: inset 0 0 0 1px var(--pfui-main-color) !important;
 }
 
 .actor.sheet.character.dark-theme .crb-style nav.sheet-navigation .item:hover, .actor.sheet.character.dark-theme .crb-style nav.sheet-navigation .item.active {
-    fill: var(--main-text-light-color);
+    fill: var(--pfui-main-color);
 }
 
 .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .blue-button {
-    color: var(--main-text-light-color) !important;
+    color: var(--pfui-main-color) !important;
     background: var(--background) !important;
     border-radius: 15px;
 }
@@ -228,7 +229,7 @@
     color: var(--background);
 }
 .actor.sheet.character.dark-theme nav.sub-nav {
-    color: var(--main-text-light-color) !important;
+    color: var(--pfui-main-color) !important;
     background: var(--background) !important;
 }
 
@@ -241,11 +242,11 @@
 }
 
 .actor.sheet.character.dark-theme select {
-    color: var(--main-text-light-color) !important;
+    color: var(--pfui-main-color) !important;
 }
 
 .actor.sheet.character.dark-theme input {
-    color: var(--main-text-light-color) !important;
+    color: var(--pfui-main-color) !important;
     background: transparent;
 }
 .actor.sheet.character.dark-theme .crb-style .details-input {
@@ -255,7 +256,7 @@
 }
 
 .actor.sheet.dark-theme .crb-style header.char-header .char-details h1.char-name input[type=text], .actor.sheet.dark-theme .crb-style header.char-header .char-details h1.char-name span.non-editable {
-    color: var(--main-text-light-color)!important;
+    color: var(--pfui-main-color)!important;
     background: radial-gradient(var(--background-2), transparent);
     text-shadow: 0 0 8px var(--color-shadow-primary);
 }
@@ -338,10 +339,10 @@
     color:black;
 }
 :root .damage.color.slashing .icon {
-    color:var(--main-text-light-color);
+    color:var(--pfui-main-color);
 }
 :root .damage.color.piercing .icon {
-    color:var(--main-text-light-color);
+    color:var(--pfui-main-color);
 }
 .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.actions .actions-container .actions-tabs-wrapper .actions-panels ol.actions-list.strikes-list li.strike .button-group .versatile-options button.selected {
     background: var(--green);
@@ -355,7 +356,7 @@
 }
 
 .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.actions .actions-container .actions-tabs-wrapper .actions-panels ol.actions-list.strikes-list li.strike .auxiliary-actions button:not(:disabled):hover {
-    color: var(--main-text-light-color) !important;
+    color: var(--pfui-main-color) !important;
     background: var(--red)!important;
     box-shadow: none;
     border-radius: 3px;
@@ -370,7 +371,7 @@
 }
 
 .actor.sheet.dark-theme .crb-style nav.sub-nav a, .actor.sheet.dark-theme .crb-style nav.sub-nav .tab {
-    color: var(--primary) !important;
+    color: var(--pfui-main-color);
 }
 .actor.sheet.dark-theme .crb-style .sheet-body .sheet-content .tab.actions .actions-container .actions-tabs-wrapper .actions-panels ol.actions-list li.action .item-name {
     background: radial-gradient(var(--background-2), transparent);
@@ -459,11 +460,11 @@
 }
 .actor.sheet.dark-theme .tags .tag.tag_secondary {
     background-color: #171f69!important;
-    color: var(--main-text-light-color);
+    color: var(--pfui-main-color);
 }
 .actor.sheet.dark-theme .tags .tag, .tags .tag option {
     background-color: #5e0000;
-    color: var(--main-text-light-color);
+    color: var(--pfui-main-color);
 }
 .actor.sheet.dark-theme .inventory .item .item-quantity, .actor.sheet.dark-theme .inventory .item .item-weight, .actor.sheet.dark-theme .inventory .item .item-controls, .actor.sheet.dark-theme .inventory .item .item-sell-value {
     background: radial-gradient(var(--background-2), transparent);
@@ -492,7 +493,7 @@
 }
 
 .actor.sheet.dark-theme .crb-style .sheet-body .sheet-content ol.spell-list > li[data-expended-state=true] .cast-spell {
-    color: var(--main-text-light-color)!important;
+    color: var(--pfui-main-color)!important;
     background: var(--red);
 }
 
@@ -511,7 +512,7 @@
 }
 
 .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.spellcasting .spellcasting-entry .rollable .d20-svg path {
-    fill: var(--main-text-light-color)!important;
+    fill: var(--pfui-main-color)!important;
 }
 .actor.sheet.dark-theme .crb-style .sheet-body .sheet-content ol.directory-list .action-header > a .fas, .actor.sheet.dark-theme .crb-style .sheet-body .sheet-content ol.directory-list .action-header > a > .fa {
     color: var(--green);
@@ -531,7 +532,7 @@ color: var(--green)!important;
     border: 4px dotted var(--background-2);
 }
 .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.spellcasting .pf-add-item-row a {
-    color: var(--main-text-light-color)!important;
+    color: var(--pfui-main-color)!important;
     background: radial-gradient(var(--primary-remaster), var(--primary-light-remaster))!important;
     border-radius: 15px;
 }
@@ -626,7 +627,7 @@ color: var(--green)!important;
 }
 .actor.sheet.dark-theme .crb-style .sheet-body .sheet-content .tab.biography .biography-content .editor .editor-edit {
     background: var(--background);
-    color: var(--main-text-light-color);
+    color: var(--pfui-main-color);
 }
 .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.biography .biography-personality .bio {
     background: radial-gradient(var(--background-2), transparent);
@@ -643,7 +644,7 @@ color: var(--green)!important;
     top: 2px;
 }
 .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.pfs > section.level-bump .toggle::after {
-    color: var(--main-text-light-color) !important;
+    color: var(--pfui-main-color) !important;
     background: var(--red) !important;
     border-radius: 50px;
     right: 0px;
@@ -707,10 +708,10 @@ color: var(--green)!important;
     border-radius: 3px;
 }
 .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content h3.header button .fa-solid.fa-eye {
-    color: var(--main-text-light-color)!important;
+    color: var(--pfui-main-color)!important;
 }
 .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content h3.header button .fa-eye-slash:before {
-    color: var(--main-text-light-color)!important;
+    color: var(--pfui-main-color)!important;
     filter: brightness(2);
 }
 
@@ -767,7 +768,7 @@ color: var(--green)!important;
     color: darkgray!important;
 }
 .red.sheet.actor.character.dark-theme .crb-style .sheet-body .sheet-content .tab.inventory .inventory-header {
-    color: var(--main-text-light-color);
+    color: var(--pfui-main-color);
     background: radial-gradient(var(--red), transparent)!important;
     box-shadow: none;
     border-radius: 3px;
@@ -840,18 +841,18 @@ color: var(--green)!important;
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 .remaster.actor.sheet.dark-theme .crb-style header.char-header .char-level .level input {
-    color: var(--main-text-light-color)!important;
+    color: var(--pfui-main-color)!important;
     background: none;
 }
 .remaster.actor.sheet.dark-theme .crb-style .sheet-body .sheet-content {
     color: var(--primary-remaster);
 }
 .remaster.sheet.actor.character.dark-theme .window-content {
-    color: var(--main-text-light-color);
+    color: var(--pfui-main-color);
     background: none;
 }
 .remaster.actor.sheet.character.dark-theme .crb-style header.char-header .char-level .exp-data .exp-input input {
-    color: var(--main-text-light-color) !important;
+    color: var(--pfui-main-color) !important;
     background: transparent;
 }
 .remaster.actor.sheet.character.dark-theme input {
@@ -870,7 +871,7 @@ color: var(--green)!important;
     color: var(--primary-light-remaster);
 }
 .remaster.actor.sheet.character.dark-theme .crb-style aside input[type=number] {
-    color: var(--main-text-light-color)!important;
+    color: var(--pfui-main-color)!important;
 }
 .remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.character .attributes .attribute .abbreviation {
     color: var(--primary-remaster);
@@ -880,12 +881,12 @@ color: var(--green)!important;
     border-radius: 3px;
 }
 .remaster.actor.sheet.dark-theme .crb-style aside .sidebar .roll-data h3 {
-    color: var(--main-text-light-color) !important;
-    border-color: var(--main-text-light-color) !important;
+    color: var(--pfui-main-color) !important;
+    border-color: var(--pfui-main-color) !important;
 }
 .remaster.sheet.actor.character.dark-theme h3 {
     color: var(--primary-remaster)!important;
-    border-color: var(--main-text-light-color) !important;
+    border-color: var(--pfui-main-color) !important;
 }
 .remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.character .attributes .attribute h3.modifier {
     background: none!important;
@@ -935,7 +936,7 @@ color: var(--green)!important;
     color: var(--primary-remaster);
 }
 .remaster.sheet.actor.character.dark-theme .item-name {
-    color: var(--main-text-light-color)!important;
+    color: var(--pfui-main-color)!important;
     background: radial-gradient(var(--background-2), transparent);
     text-shadow: none;
 }
@@ -950,7 +951,7 @@ color: var(--green)!important;
     border-image: linear-gradient(90deg, #f1edea, #d5cac1) 1 repeat;
 }
 .remaster.sheet.actor.character.dark-theme .crb-style .sheet-body .sheet-content .tab.inventory .inventory-header {
-    color: var(--main-text-light-color);
+    color: var(--pfui-main-color);
     background: radial-gradient(var(--primary-remaster), var(--primary-light-remaster))!important;
     box-shadow: none;
     border-radius: 3px;
@@ -968,13 +969,13 @@ color: var(--green)!important;
     color: var(--primary-remaster);
 }
 .remaster.sheet.actor.character.dark-theme .crb-style .sheet-body .sheet-content ol.directory-list .action-header h3 input.item-name-input {
-    color: var(--main-text-light-color)!important;
+    color: var(--pfui-main-color)!important;
 }
 .remaster.actor.sheet.dark-theme .crb-style .sheet-body .sheet-content ol.directory-list .action-header .item-controls {
-    color: var(--main-text-light-color)!important;
+    color: var(--pfui-main-color)!important;
 }
 .remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .blue-button {
-    color: var(--main-text-light-color) !important;
+    color: var(--pfui-main-color) !important;
     background: radial-gradient(var(--primary-remaster), var(--primary-light-remaster))!important;
     border-radius: 15px;
 }

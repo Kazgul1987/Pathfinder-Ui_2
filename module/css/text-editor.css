@@ -1,11 +1,11 @@
 :root {
-    --main-text-light-color: #98968a;
+    --pfui-main-grey-color: #98968a;
     --background: #100d0d;
     --background-2: #ffffff14;
 }
 
 .tox .tox-tbtn svg {
-    fill: var(--main-text-light-color)!important;
+    fill: var(--pfui-main-grey-color)!important;
 }
 
 .tox .tox-toolbar-overlord .tox-toolbar:not(.tox-toolbar--scrolling):first-child, .tox .tox-toolbar-overlord .tox-toolbar__primary {
@@ -14,7 +14,7 @@
 }
 
 .tox .tox-tbtn {
-    color: var(--main-text-light-color)!important;
+    color: var(--pfui-main-grey-color)!important;
 }
 .tox .tox-tbtn--bespoke {
     background: var(--background)!important;
@@ -31,6 +31,6 @@
 }
 
 .mce-content-body {
-    color: var(--main-text-light-color)!important;
+    color: var(--pfui-main-grey-color)!important;
     background: var(--background-2)!important;
 }

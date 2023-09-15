@@ -5,6 +5,11 @@
 
 
 
+## v11.308.11
+- Update interface code.
+- fix some minor oversights.
+- Reduce the size of compendium tabs
+
 ## v11.308.10
 - Update interface code.
 - fix some minor oversights. 

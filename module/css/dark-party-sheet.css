@@ -2,14 +2,15 @@
 
 .dark-party-theme {
     --alt:#786452;
-    --main-text-light-color: #cfbda7;
+    --pfui-main-color: #cfbda7;
+    --pfui-main-grey-color: #98968a;
     --green: #91a82a;
     --blue: #171f69;
     --red: #5e0000;
     --red-light:#ff0000;
     --background: #100d0d;
     --background-2: #ffffff14;
-    --highlight: 0 0 0 1px var(--main-text-light-color), 0 0 0 2px #93d1d3, inset 0 0 4px rgba(255, 255, 255, 0.25);
+    --highlight: 0 0 0 1px var(--pfui-main-color), 0 0 0 2px #93d1d3, inset 0 0 4px rgba(255, 255, 255, 0.25);
     --glass-bg: rgba(20, 20, 20, 0.6);
     --glass-bg-light: rgba(255, 255, 255, 0.1);
     --glass-bg-dark: rgba(0, 0, 0, 0.7);
@@ -20,14 +21,14 @@
 
     --primary: var(--red);
     --secondary: var(--blue);
-    --tertiary: var(--main-text-light-color);
-    --tertiary-dark: var(--main-text-light-color);
-    --tertiary-light: var(--main-text-light-color);
-    --body: var(--main-text-light-color);
-    --text-dark: var(--main-text-light-color);
-    --text-light: var(--main-text-light-color);
-    --sidebar-label: var(--main-text-light-color);
-    --sidebar-title: var(--main-text-light-color);
+    --tertiary: var(--pfui-main-color);
+    --tertiary-dark: var(--pfui-main-color);
+    --tertiary-light: var(--pfui-main-color);
+    --body: var(--pfui-main-color);
+    --text-dark: var(--pfui-main-color);
+    --text-light: var(--pfui-main-color);
+    --sidebar-label: var(--pfui-main-color);
+    --sidebar-title: var(--pfui-main-color);
 
     --rarity-common: #7e7e7e;
     --rarity-uncommon: #ff6400;
@@ -50,13 +51,13 @@
     border: none;
 }
 .dark-party-theme.sheet.party form > header {
-    color: var(--main-text-light-color) !important;
+    color: var(--pfui-main-color) !important;
     background: radial-gradient(var(--primary-remaster), transparent);
     box-shadow: 0 0 6px inset #3f342b;
     border-radius: 3px;
 }
 .dark-party-theme.sheet.party form > header .details .name {
-    color: var(--main-text-light-color)!important;
+    color: var(--pfui-main-color)!important;
     background: radial-gradient(var(--background-2), transparent);
     text-shadow: 0 0 8px var(--color-shadow-primary);
     border-radius: 3px;
@@ -75,20 +76,20 @@
     color: var(--green);
 }
 .dark-party-theme.sheet.party nav.sub-nav a, .dark-party-theme.sheet.party nav.sub-nav .tab {
-    color: var(--main-text-light-color);
+    color: var(--pfui-main-color);
 }
 
 /*      Overview       
 *************************/
 .dark-party-theme.sheet.party [data-tab=overview] .summary {
-    color: var(--main-text-light-color);
+    color: var(--pfui-main-color);
     background: radial-gradient(var(--background-2), transparent);
     box-shadow: 0 0 6px inset #3f342b;
     border-radius: 3px;
     border-image-source: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='33' height='33' overflow='scroll'%3E%3Cstyle%3E.st1{stroke:wheat;stroke-miterlimit:10}.st1,.st2{fill:none}%3C/style%3E%3Cg opacity='0.75'%3E%3Cpath class='st1' d='M.5 20v-7'/%3E%3Cpath class='st2' d='M13 20v-7'/%3E%3Cpath class='st1' d='M13 .5h7'/%3E%3Cpath class='st2' d='M13 13h7'/%3E%3Cpath class='st1' d='M32.5 13v7'/%3E%3Cpath class='st2' d='M20 13v7'/%3E%3Cpath class='st1' d='M20 32.5h-7'/%3E%3Cpath class='st2' d='M20 20h-7'/%3E%3Cpath class='st1' d='M.5.5h3.1v3.1H.5zm3.1 3.1h3.1v3.1H3.6zm3.2 0h3.1v3.1H6.8zM3.6 6.8h3.1v3.1H3.6zm0 0H.5V13M13 .5H6.8v3.1M29.4.5h3.1v3.1h-3.1zm-3.1 3.1h3.1v3.1h-3.1zm0 3.2h3.1v3.1h-3.1zm-3.2-3.2h3.1v3.1h-3.1zm3.2 0V.5H20M32.5 13V6.8h-3.1M29.4 29.4h3.1v3.1h-3.1z'/%3E%3Cpath class='st1' d='M26.3 26.3h3.1v3.1h-3.1zm-3.2 0h3.1v3.1h-3.1zm3.2-3.2h3.1v3.1h-3.1z'/%3E%3Cpath class='st1' d='M29.4 26.3h3.1V20M20 32.5h6.3v-3.1'/%3E%3Cg%3E%3Cpath class='st1' d='M.5 29.4h3.1v3.1H.5zm3.1-3.1h3.1v3.1H3.6zm0-3.2h3.1v3.1H3.6zm3.2 3.2h3.1v3.1H6.8zM6.8 29.4v3.1H13M.5 20v6.3h3.1'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 .dark-party-theme.sheet.party [data-tab=overview] .summary nav button {
-    color: var(--main-text-light-color);
+    color: var(--pfui-main-color);
     border: none;
     background: none;
     background-color: var(--glass-bg);
@@ -104,7 +105,7 @@
     border-radius: 3px;
 }
 .dark-party-theme.sheet.party [data-tab=overview] .summary nav button.active {
-    color: var(--main-text-light-color);
+    color: var(--pfui-main-color);
     border: none;
     background: radial-gradient(#0062ff, #171f69);
     box-shadow: var(--glassy);
@@ -113,7 +114,7 @@
     border-radius: 3px;
 }
 .dark-party-theme.sheet.party [data-tab=overview] .member {
-    color: var(--main-text-light-color);
+    color: var(--pfui-main-color);
     border: 1px dotted var(--background-2);
     background: radial-gradient(var(--background-2), transparent);
     box-shadow: 0 0 6px inset #3f342b;
@@ -128,7 +129,7 @@
     color: var(--primary-light-remaster);
 }
 .dark-party-theme.sheet.party .tag-light {
-    color: var(--main-text-light-color);
+    color: var(--pfui-main-color);
     border: none;
     background: var(--tag-color);
     box-shadow: var(--glassy);
@@ -146,7 +147,7 @@
     border-radius: 3px;
 }
 .dark-party-theme.sheet.party [data-tab=overview] .member .main-stats .ac::before {
-    color: var(--main-text-light-color);
+    color: var(--pfui-main-color);
     border: none;
     text-shadow: 0 0 3px var(--background-2);
 }
@@ -157,7 +158,7 @@
     box-shadow: none;
 }
 .dark-party-theme.sheet.party [data-tab=overview] .member .main-stats > section {
-    color: var(--main-text-light-color);
+    color: var(--pfui-main-color);
     border: none;
     background: none;
     background-color: var(--glass-bg);
@@ -166,7 +167,7 @@
     border-radius: 3px;
 }
 .dark-party-theme.sheet.party .tags .tag.tag_alt, .dark-party-theme.sheet.party .tags .tag option.tag_alt {
-    color: var(--main-text-light-color);
+    color: var(--pfui-main-color);
     border: none;
     background: none;
     background-color: var(--alt);
@@ -186,7 +187,7 @@
 .dark-party-theme.sheet.party [data-tab=overview] .member > .portrait .health-bar .bar {
     background-color: var(--red);
     box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.2);
-    color: var(--main-text-light-color);
+    color: var(--pfui-main-color);
     border: none;
     box-shadow: var(--glassy);
     text-shadow: 0 0 3px black;
@@ -204,7 +205,7 @@
     border-radius: 3px;
 }
 .dark-party-theme.sheet.party .tags .tag, .dark-party-theme.sheet.party .tags .tag option {
-    color: var(--main-text-light-color);
+    color: var(--pfui-main-color);
     text-transform: uppercase;
     border: 1px solid black;
     box-shadow: var(--glassy);
@@ -215,16 +216,16 @@
     background: none;
 }
 .dark-party-theme.sheet.party .sidebar .box header {
-    color: var(--main-text-light-color);
+    color: var(--pfui-main-color);
     background: radial-gradient(var(--primary-light-remaster), var(--primary-remaster));
     box-shadow: 0 0 6px inset #3f342b;
     border-radius: 3px;
 }
 .dark-party-theme.sheet.party .sidebar .box-list {
-    color: var(--main-text-light-color);
+    color: var(--pfui-main-color);
 }
 .dark-party-theme.sheet.party [data-tab=exploration] .activities .member-activity {
-    color: var(--main-text-light-color);
+    color: var(--pfui-main-color);
     border: 1px dotted var(--background-2);
     background: radial-gradient(var(--background-2), transparent);
     border-radius: 3px;
@@ -233,15 +234,15 @@
     color: var(--green);
 }
 .dark-party-theme.sheet.party [data-tab=exploration] .activities .member-activity .empty .hint {
-    color: var(--main-text-light-color);
+    color: var(--pfui-main-color);
 }
 .dark-party-theme.sheet.party header.content-header {
-    color: var(--main-text-light-color);
+    color: var(--pfui-main-color);
     background: radial-gradient(var(--primary-remaster), transparent);
     border-radius: 3px;
 }
 .dark-party-theme.sheet.party header.content-header button {
-    color: var(--main-text-light-color);
+    color: var(--pfui-main-color);
     border: none;
     background: none;
     background-color: var(--glass-bg);
@@ -265,7 +266,7 @@
 *************************/
 .dark-party-theme.sheet.party .sidebar .box footer {
 
-    color: var(--main-text-light-color);
+    color: var(--pfui-main-color);
     border: none;
     background-color: var(--sub);
     box-shadow: var(--glassy);
@@ -274,7 +275,7 @@
     border-radius: 3px;
 }
 .dark-party-theme.sheet.party .inventory .inventory-header {
-    color: var(--main-text-light-color);
+    color: var(--pfui-main-color);
     background: radial-gradient(var(--primary-light-remaster), transparent)!important;
     box-shadow: none;
     border-radius: 3px;
@@ -283,7 +284,7 @@
     border: none;
 }
 .dark-party-theme.sheet.party .currency {
-    color: var(--main-text-light-color);
+    color: var(--pfui-main-color);
     border: none;
     background: none;
     background-color: var(--glass-bg);
@@ -308,7 +309,7 @@
     color: #e127e1;
 }
 .dark-party-theme.sheet.party .currency li > button {
-    color: var(--main-text-light-color);
+    color: var(--pfui-main-color);
     border: none;
     background: none;
     background-color: var(--glass-bg);
@@ -331,19 +332,19 @@
     border-radius: 3px;
 }
 .dark-party-theme.sheet.party .wealth h3.item-name {
-    color: var(--main-text-light-color);
+    color: var(--pfui-main-color);
 }
 .dark-party-theme.sheet.party.actor.sheet .inventory .item-name h3:hover, .dark-party-theme.sheet.party.actor.sheet .inventory .item-name h4:hover {
     color: var(--green);
 }
 .dark-party-theme.sheet.party .currency .denomination {
-    color: var(--main-text-light-color);
+    color: var(--pfui-main-color);
 }
 .dark-party-theme.sheet.party .currency .label {
     color: var(--green);
 }
 .dark-party-theme.sheet.party.actor.sheet .inventory ol:not(.currency) {
-    color: var(--main-text-light-color);
+    color: var(--pfui-main-color);
 }
 .dark-party-theme.sheet.party.actor.sheet .inventory .list-row .item-controls {
     color: var(--green);
