@@ -4,15 +4,10 @@
 - Ready for v11 version.
 
 
-## v11.308.13
+## v11.308.14
 - Update interface code.
 - Update Compatibility with PF2e 5.5.2
 - Update Contrast Enhancement.
-
-## v11.308.12
-- Update interface code.
-- Update Compatibility with PF2e 5.5.2
-- Add new option Contrast Enhancement.
 
 ## v11.308.11
 - Update interface code.

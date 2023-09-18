@@ -193,7 +193,9 @@
     background: var(--background) !important;
     border-color: var(--pfui-main-color) !important;
 }
-
+.sheet.actor.character.dark-theme .inventory .list-row .item-controls .item-control.toggle-invested, .sheet.actor.character.dark-theme .inventory .list-row .item-controls .item-control.item-carry-type {
+    color: var(--pfui-main-color);
+}
 .sheet.actor.character.dark-theme .item-controls {
     color: var(--pfui-main-color) !important;
     background: radial-gradient(var(--background-2), transparent);
