@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Kurale&display=swap');
 @import 'carousel.css';
 @import 'text-editor.css';
-@import "systems/pf2e.css";
+@import "systems/pfui-pf2e.css";
 
 
 /*************************************************************/
@@ -26,6 +26,10 @@ body {
 :root {
     --pfui-main-color: #cfbda7;
     --pfui-main-grey-color: #98968a;
+    --green: #91a82a;
+    --blue: #171f69;
+    --red: #5e0000;
+    --red-light:#ff0000;
     --border-color: #372d25;
     --border-color-2: #837360;
     --serif: Eczar,Georgia,serif;
@@ -146,19 +150,6 @@ body.compact-mode #logo {
     border-radius: 6px;
 }
 
-#sidebar-tabs {
-    box-shadow: none;
-    border-bottom: none;
-    padding: 0 10px;
-    margin-top: 25px;
-}
-
-#sidebar-tabs > .item.active {
-    color: #FFF;
-    border: none;
-    box-shadow: none;
-}
-
 #sidebar-tabs > .item:before {
     position: absolute;
     content: ' ';
@@ -172,8 +163,12 @@ body.compact-mode #logo {
     transition-duration: 0.3s;
 }
 
-#sidebar-tabs{
+#sidebar-tabs {
     text-align: center;
+    box-shadow: none;
+    border-bottom: none;
+    padding: 0 10px;
+    margin-top: 25px;
 }
 
 #sidebar-tabs > .item {
@@ -185,10 +180,7 @@ body.compact-mode #logo {
 }
 
 #sidebar-tabs > .item.active {
-    color: #FFF;
-    border: 1px solid red;
-    box-shadow: 0 0 6px inset #ff6400;
-    margin-bottom: 3px;
+    border: 1px solid var(--red-light);
 }
 
 #sidebar #sidebar-tabs i.fa-comments {
@@ -411,7 +403,7 @@ body.compact-mode #logo {
     position: relative;
     color: var(--border-color-2);
     border: none !important;
-    background: none !important;
+    background: transparent;
     padding: 10px 10px 15px 10px;
     margin: 0px 0px;
 }
@@ -754,23 +746,7 @@ body.compact-mode #logo {
     text-overflow: ellipsis;
 }
 
-#chat-log .message.whisper .message-header .message-metadata::before {
-    color: var(--pfui-main-color);
-    /*content: " (Private Roll) ";*/
-    font-family: "Font Awesome 5 Free";
-    content: "\f023";
-    font-style: normal !important;
-    padding-right: 5px;
-    float: left;
-}
 
-
-#chat-log .message.blind .message-header .message-metadata::before {
-    color: var(--pfui-main-color);
-    content: "\f070" !important;
-    padding-right: 5px;
-    float: left;
-}
 
 /*************************************************************/
 /*========================= HOTBAR ==========================*/

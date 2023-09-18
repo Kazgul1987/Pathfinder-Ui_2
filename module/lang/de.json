@@ -20,6 +20,9 @@
     "RPGUI.SETTINGS.TOKEN_HUD": "Disable Dark PF2e Interactive Token Tooltip?",
     "RPGUI.SETTINGS.TOKEN_HUD_HINT": "Disables the dark theme of PF2e Interactive Token Tooltip by default theme",
 
+    "RPGUI.SETTINGS.HIGHLIGHT_GM_OWNER_TEXT": "Constrast enhancement",
+    "RPGUI.SETTINGS.HIGHLIGHT_GM_OWNER_TEXT_HINT": "This is a local setting that will highlight text.",
+
     "RPGUI.SETTINGS.NAVIGATION": "Schalte die Navigation zurück in den horizontalen Modus",
     "RPGUI.SETTINGS.NAVIGATION_HINT": "Verwende diesen Schalter, wenn du die Combat Carousel-Integration nicht verwendest",
  
@@ -28,9 +31,6 @@
 
     "RPGUI.SETTINGS.STANDARD_LOGO": "Standard Logo",
     "RPGUI.SETTINGS.STANDARD_LOGO_HINT": "Zurück zum Standardlogo anstelle des Textlogos",
-
-    "RPGUI.SETTINGS.DISABLE_STYLES": "Deaktiviere Pathfinder UI",
-    "RPGUI.SETTINGS.DISABLE_STYLES_HINT": "Dies ist eine lokale Einstellung, mit der jeder Spieler Stile deaktivieren kann",
 
     "RPGUI.SETTINGS.JOURNAL_SHEET": "Disable parchment texture on Journal pages",
     "RPGUI.SETTINGS.JOURNAL_SHEET_HINT": "Disable the parchment appearance on journal entries.",
@@ -44,6 +44,6 @@
     "RPGUI.SETTINGS.MINIMAL_UI": "Minimale UI Unterstützung",
     "RPGUI.SETTINGS.MINIMAL_UI_HINT": "Behebt einige (nicht alle) Probleme mit dem minimalen UI",
 
-    "RPGUI.SETTINGS.HIGHLIGHT_GM_OWNER_TEXT": "Markiere den Text von SL & Besitzer",
-    "RPGUI.SETTINGS.HIGHLIGHT_GM_OWNER_TEXT_HINT": "Lokale Einstellung, die Text hervorhebt, der nur für den SL (oder Eigentümer) sichtbar ist."
+    "RPGUI.SETTINGS.DISABLE_STYLES": "Deaktiviere Pathfinder UI",
+    "RPGUI.SETTINGS.DISABLE_STYLES_HINT": "Dies ist eine lokale Einstellung, mit der jeder Spieler Stile deaktivieren kann"
 }

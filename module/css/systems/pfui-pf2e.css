@@ -1078,6 +1078,16 @@ button.half-damage .fa-heart-broken::after {
 #chat-log a[href] {
     color: var(--color-text-hyperlink);
 }
+
+
+/*COMBAT TRACKER*/
+#combat .threat-award > *, #combat-popout .threat-award > * {
+    color: var(--pfui-main-color);
+}
+#combat .threat-award .threat .value.extreme,
+#combat-popout .threat-award .threat .value.extreme {
+  color: orangered;
+}
 /*-------------------------------------------------*/
 
 /* A bunch of disgusting CSS overrides that hit the system's CSS like a hammer to remove as much colour as possible */

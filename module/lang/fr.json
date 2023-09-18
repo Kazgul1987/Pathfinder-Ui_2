@@ -20,6 +20,9 @@
     "RPGUI.SETTINGS.TOKEN_HUD": "Désactiver PF2e Interactive Token Tooltip Sombre ?",
     "RPGUI.SETTINGS.TOKEN_HUD_HINT": "Désactive le thème sombre de PF2e Interactive Token Tooltip en remettant celui par défaut",
 
+    "RPGUI.SETTINGS.HIGHLIGHT_GM_OWNER_TEXT": "Amélioration du constraste dans le chat.",
+    "RPGUI.SETTINGS.HIGHLIGHT_GM_OWNER_TEXT_HINT": "Paramètre local qui augmente la visibilité du texte  dans le chat.",
+
     "RPGUI.SETTINGS.NAVIGATION": "Navigation Horizontale.",
     "RPGUI.SETTINGS.NAVIGATION_HINT": "Utilisez ce bouton si vous n'utilisez pas Combat Carousel.",
 
@@ -28,9 +31,6 @@
 
     "RPGUI.SETTINGS.STANDARD_LOGO": "Logo Foundry.",
     "RPGUI.SETTINGS.STANDARD_LOGO_HINT": "Remet le logo Foundry au lieu du logo texte.",
-
-    "RPGUI.SETTINGS.DISABLE_STYLES": "Désactiver Pathfinder Ui.",
-    "RPGUI.SETTINGS.DISABLE_STYLES_HINT": "Il s'agit d'un paramètre local, avec lequel tout joueur peut désactiver les styles.",
 
     "RPGUI.SETTINGS.JOURNAL_SHEET": "Désactiver la texture parcheminée des journaux.",
     "RPGUI.SETTINGS.JOURNAL_SHEET_HINT": "Désactive l'aspect parcheminé dans les pages du journal.",
@@ -44,6 +44,6 @@
     "RPGUI.SETTINGS.MINIMAL_UI": "Support pour Minimal UI.",
     "RPGUI.SETTINGS.MINIMAL_UI_HINT": "Corrige certains (pas tous) des problèmes liés à Minimal Ui.",
 
-    "RPGUI.SETTINGS.HIGHLIGHT_GM_OWNER_TEXT": "Ajouter une bordure au texte GM & Propriétaire dans le chat.",
-    "RPGUI.SETTINGS.HIGHLIGHT_GM_OWNER_TEXT_HINT": "Paramètre local qui ajoute une bordure afin de mettre en évidence le texte visible que par le GM ou le Propriétaire dans le chat."
+    "RPGUI.SETTINGS.DISABLE_STYLES": "Désactiver Pathfinder Ui.",
+    "RPGUI.SETTINGS.DISABLE_STYLES_HINT": "Il s'agit d'un paramètre local, avec lequel tout joueur peut désactiver les styles."
 }

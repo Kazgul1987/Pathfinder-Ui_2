@@ -1,6 +1,7 @@
 :root {
   --pf2e-translucent-middle: var(--pf2e-translucent-middle-for-light);
   --pf2e-translucent-middle-for-light: hsla(0, 0%, 80%,0.5);
+  --background-2: #ffffff14;
 } 
 
 .pf2e.chat-card .card-content {
@@ -31,4 +32,8 @@
   border: 1px dotted var(--pf2e-translucent-middle) !important;
   border-radius: 3px;
   box-sizing: border-box;
+}
+
+#chat-log .message {
+  background: var(--background-2)!important;
 }

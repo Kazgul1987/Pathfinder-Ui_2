@@ -4,6 +4,10 @@
 - Ready for v11 version.
 
 
+## v11.308.12
+- Update interface code.
+- Update Compatibility with PF2e 5.5.2
+- Add new option Constrast Enhancement.
 
 ## v11.308.11
 - Update interface code.
