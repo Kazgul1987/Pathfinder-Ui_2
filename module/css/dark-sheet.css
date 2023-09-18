@@ -253,6 +253,7 @@
     border: 1px dotted var(--background-2);
     background: radial-gradient(var(--background-2), transparent);
     box-shadow: 0 0 6px inset #3f342b;
+    border-radius: 3px;
 }
 
 .actor.sheet.dark-theme .crb-style header.char-header .char-details h1.char-name input[type=text], .actor.sheet.dark-theme .crb-style header.char-header .char-details h1.char-name span.non-editable {
@@ -396,8 +397,14 @@
 .actor.sheet.dark-theme .inventory .item-name .size {
     color: revert;
 }
+.actor.sheet.dark-theme .inventory .item-name .item-charges {
+    color: var(--green);
+}
+.actor.sheet.dark-theme  .inventory .list-row .item-controls .item-control.toggle-invested.active, .actor.sheet.dark-theme .inventory .list-row .item-controls .item-control.item-carry-type.active {
+    color: darkorange;
+}
 .actor.sheet.dark-theme .inventory .list-row .item-controls .item-control.item-carry-type:not(.active) {
-    color: darkred;
+    color: darkorange;
 }
 .actor.sheet.dark-theme .inventory .item-summary {
     background: none !important;
@@ -512,7 +519,7 @@
 }
 
 .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.spellcasting .spellcasting-entry .rollable .d20-svg path {
-    fill: var(--pfui-main-color)!important;
+    fill: var(--green);
 }
 .actor.sheet.dark-theme .crb-style .sheet-body .sheet-content ol.directory-list .action-header > a .fas, .actor.sheet.dark-theme .crb-style .sheet-body .sheet-content ol.directory-list .action-header > a > .fa {
     color: var(--green);
@@ -546,7 +553,12 @@ color: var(--green)!important;
     background: var(--green);
     color: var(--background);
 }
-
+.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.spellcasting .spellcasting-entry .spell-ability-data .skill-score {
+    color: var(--green);
+}
+.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content ol.spell-list > li .item-name h4:hover {
+    color: var(--green);
+}
 
 
 

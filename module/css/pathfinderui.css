@@ -28,6 +28,9 @@ body {
     --pfui-main-grey-color: #98968a;
     --green: #91a82a;
     --blue: #171f69;
+    --success:rgb(100, 216, 255);
+    --failure: #ff7644;
+    --criticalFailure:rgb(247, 59, 59);
     --red: #5e0000;
     --red-light:#ff0000;
     --border-color: #372d25;
@@ -477,16 +480,16 @@ body.compact-mode #logo {
 
 }
 .flavor-text div.degree-of-success .criticalSuccess{
-    color:#91a82a !important;
+    color: var(--green)!important;
 }
 .flavor-text div.degree-of-success .success{
-    color:rgb(100, 216, 255) !important;
+    color: var(--success)!important;
 }
 .flavor-text div.degree-of-success .failure{
-    color:#ff7644 !important;
+    color:var(--failure)!important;
 }
 .flavor-text div.degree-of-success .criticalFailure{
-    color:rgb(247, 59, 59) !important;
+    color: var(--criticalFailure)!important;
 }
 
 .dice-roll .dice-total {

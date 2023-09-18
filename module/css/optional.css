@@ -1,7 +1,10 @@
 :root {
+  --pfui-main-color: #cfbda7;
+  --glassy: 0px 0px 3px 0px rgba(255, 255, 255, 0.4) inset, 0px 0px 2px 1px rgba(0, 0, 0, 1), 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+  --glass-bg: rgba(20, 20, 20, 0.6);
+  --background-2: #ffffff14;
   --pf2e-translucent-middle: var(--pf2e-translucent-middle-for-light);
   --pf2e-translucent-middle-for-light: hsla(0, 0%, 80%,0.5);
-  --background-2: #ffffff14;
 } 
 
 .pf2e.chat-card .card-content {
@@ -21,17 +24,17 @@
 }
 
 [data-visibility="gm"]:is(div,em,p,span,strong) {
-  background: rgba(130, 130, 130, 0.1) !important;
-  border: 1px dotted var(--pf2e-translucent-middle) !important;
-  border-radius: 3px;
-  box-sizing: border-box;
+  background: var(--glass-bg)!important;
+  box-shadow: var(--glassy)!important;
+  color: var(--pfui-main-color)!important;
+  border-radius: 3px!important;
 }
 
 [data-visibility="owner"]:is(div,em,p,span,strong) {
-  background: rgba(130, 130, 130, 0.1) !important;
-  border: 1px dotted var(--pf2e-translucent-middle) !important;
-  border-radius: 3px;
-  box-sizing: border-box;
+  background: var(--glass-bg)!important;
+  box-shadow: var(--glassy)!important;
+  color: var(--pfui-main-color)!important;
+  border-radius: 3px!important;
 }
 
 #chat-log .message {

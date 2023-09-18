@@ -855,9 +855,12 @@ button.half-damage .fa-heart-broken::after {
 }
 
 [data-visibility]:is(div,em,h4,p,section,span,strong):not([data-visibility=all])[data-visibility=gm] {
-    background: none !important;
+    background: none;
 }
-
+[data-visibility]:not([data-visibility=all]) {
+    outline: none;
+    padding: 2px;
+}
 
 /*Shield*/
 
