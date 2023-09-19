@@ -12,41 +12,41 @@
 }
 
 
+
 /* POLICES
 ====================================================== */
 @font-face {
 	font-family: "Taroca";
-	src: url("./fonts/Taroca.ttf") format('truetype');
+	src: url("./systems/fonts/Taroca.ttf") format('truetype');
 }
 @font-face {
 	font-family: "Good OT";
-	src: url("./fonts/GoodOT.otf") format('opentype');
+	src: url("./systems/fonts/GoodOT.otf") format('opentype');
 }
 @font-face {
 	font-family: "Good OT Bold";
-	src: url("./fonts/GoodOT-Bold.otf") format('opentype');
+	src: url("./systems/fonts/GoodOT-Bold.otf") format('opentype');
 }
 @font-face {
 	font-family: "Good OT Cond Bold";
-	src: url("./fonts/GoodOT-CondBold.otf") format('opentype');
+	src: url("./systems/fonts/GoodOT-CondBold.otf") format('opentype');
 }
 @font-face {
 	font-family: "Good OT Italic";
-	src: url("./fonts/GoodOT-Italic.otf") format('opentype');
+	src: url("./systems/fonts/GoodOT-Italic.otf") format('opentype');
 }
 @font-face {
-	font-family: "Sabon LT";
-	src: url("./fonts/Sabon-LT-Std-Roman.otf") format('opentype');
+	font-family: "Sabon LT Std";
+	src: url("./systems/fonts/Sabon-LT-Std-Roman.otf") format('opentype');
 }
 @font-face {
 	font-family: "Sabon LT Italic";
-	src: url("./fonts/Sabon-LT-Std-Italic.ttf") format('truetype');
+	src: url("./systems/fonts/Sabon-LT-Std-Italic.ttf") format('truetype');
 }
 @font-face {
     font-family: "tauri";
-    src: url("./fonts/Tauri-Regular.ttf") format('truetype');
+    src: url("./systems/fonts/Tauri-Regular.ttf") format('truetype');
 }
-
 
 
 /* SIDEBAR
@@ -164,7 +164,7 @@
 ====================================================== */
 
 .journal-entry-page {
-    font-family: "Sabon LT";
+    font-family: "Sabon LT Std";
 }
 
 /* SYMBOLES PF2

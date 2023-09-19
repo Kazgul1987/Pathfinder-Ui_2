@@ -26,6 +26,40 @@
 }
 
 
+/* POLICES
+====================================================== */
+@font-face {
+	font-family: "Taroca";
+	src: url("./fonts/Taroca.ttf") format('truetype');
+}
+@font-face {
+	font-family: "Good OT";
+	src: url("./fonts/GoodOT.otf") format('opentype');
+}
+@font-face {
+	font-family: "Good OT Bold";
+	src: url("./fonts/GoodOT-Bold.otf") format('opentype');
+}
+@font-face {
+	font-family: "Good OT Cond Bold";
+	src: url("./fonts/GoodOT-CondBold.otf") format('opentype');
+}
+@font-face {
+	font-family: "Good OT Italic";
+	src: url("./fonts/GoodOT-Italic.otf") format('opentype');
+}
+@font-face {
+	font-family: "Sabon LT Std";
+	src: url("./fonts/Sabon-LT-Std-Roman.otf") format('opentype');
+}
+@font-face {
+	font-family: "Sabon LT Italic";
+	src: url("./fonts/Sabon-LT-Std-Italic.ttf") format('truetype');
+}
+@font-face {
+    font-family: "tauri";
+    src: url("./fonts/Tauri-Regular.ttf") format('truetype');
+}
 
 
 /* System
@@ -94,7 +128,8 @@
 .pf2e.chat-card .card-header,
 .pf2e.chat-card .card-footer,
 .pf2e.chat-card .card-footer span {
-    border-color: var(--border-color);
+    border-top: 2px dotted var(--border-color);
+    border-bottom: 2px dotted var(--border-color);
 }
 
 .system-pf2e #effects-panel {
@@ -441,6 +476,7 @@ wrapper.pf2e-td {
     align-items: stretch;
 }
 wrapper.pf2e-td.name-left .pf2e-td.name {
+    margin: 6px 0 0 0;
     font-size: var(--font-size-9);
     background: var(--glass-bg);
     box-shadow: var(--glassy);
@@ -577,6 +613,10 @@ wrapper.pf2e-td.name-left .pf2e-td.damage-application {
     border-radius: 3px;
 }
 
+#chat-log .tags.paizo-style .tag {
+    border: none;
+}
+
 #chat-log .tags .tag.tag_transparent, #chat-log .tags .tag option.tag_transparent {
     background-color: var(--green);
 }
@@ -606,6 +646,10 @@ wrapper.pf2e-td.name-left .pf2e-td.damage-application {
     margin: 5px 5px 10px 10px;
 }
 
+#chat-log .chat-message .message-content .damage-application {
+    margin-top: 5px;
+}
+
 #chat-log .message .message-content {
     font-family: "tauri";
     padding-left: 5px;
@@ -615,6 +659,7 @@ wrapper.pf2e-td.name-left .pf2e-td.damage-application {
 
 .pf2e.chat-card .card-content p {
     font-family: "Good OT";
+    font-size: var(--font-size-16);
 }
 
 .message-content .chat-damage-buttons button .label {
@@ -634,6 +679,19 @@ wrapper.pf2e-td.name-left .pf2e-td.damage-application {
 
 .message-content .chat-damage-buttons button>img {
     filter: invert(75%);
+}
+.message-content .pf2e.chat-card .card-footer {
+    border:none;
+}
+.message-content .pf2e.chat-card .card-content {
+    border-image-repeat: repeat;
+    border-image-slice: 11;
+    border-image-source: var(--ornement);
+    border-image-width: 14px;
+    border-style: double;
+    padding: 3px 10px;
+    font-weight: 500;
+    margin: 0px;
 }
 
 div#scrollToBottom {
@@ -711,7 +769,7 @@ a.content-link, [data-pf2-check], a.entity-link, [data-pf2-action], [data-pf2-ef
 }
 
 #chat-log .pf2e.chat-card .card-buttons button {
-    margin: 0px;
+    margin: 2px 2px 2px 2px;
     color: var(--pfui-main-color);
     text-shadow: var(--pf2e-shadow-is-dark);
     line-height: 20px;
@@ -762,7 +820,7 @@ a.content-link, [data-pf2-check], a.entity-link, [data-pf2-action], [data-pf2-ef
     box-shadow: var(--glassy);
     border: none;
     color: var(--pfui-main-color);
-    border-radius: 3px;
+    border-radius: 10px;
 }
 
 .dice-total:hover,
@@ -793,6 +851,12 @@ a.content-link, [data-pf2-check], a.entity-link, [data-pf2-action], [data-pf2-ef
 
 button > i {
     margin-right: 0px;
+}
+
+#chat-log .action-glyph {
+font-size: larger;
+color: var(--green);
+margin: 5px;
 }
 
 /*Damages*/

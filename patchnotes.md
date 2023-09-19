@@ -4,6 +4,12 @@
 - Ready for v11 version.
 
 
+## v11.309.1
+- Update interface code.
+- Update Compatibility with PF2e 5.5.3
+- Update sidebar windows rendering 
+- Fix the problem of the font not being applied correctly
+
 ## v11.308.14
 - Update interface code.
 - Update Compatibility with PF2e 5.5.2
