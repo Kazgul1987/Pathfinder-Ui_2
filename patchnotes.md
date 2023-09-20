@@ -4,6 +4,9 @@
 - Ready for v11 version.
 
 
+## v11.309.2
+- fix an issue with Firefox and the Webcam dock.
+
 ## v11.309.1
 - Update interface code.
 - Update Compatibility with PF2e 5.5.3
