@@ -38,27 +38,30 @@
 
 
 /************************/
-/*     Hazrd-sheet      */
+/*     Hazard-sheet     */
 /************************/
 
 .dark-hazard-theme.sheet.hazard .window-content {
     color: var(--pfui-main-color);
     background: none;
+    box-shadow: none;
+    margin: unset;
+    backdrop-filter: blur(5px);
 }
 .dark-hazard-theme.sheet.hazard form > header {
-    background: none;
+    background: radial-gradient(var(--primary-remaster), var(--glass-bg-dark));
 }
 .dark-hazard-theme.sheet.hazard .sidebar .armor-class input {
-    color: orangered;
+    color: darkgoldenrod;
 }
 .dark-hazard-theme.sheet.hazard .sidebar .health input {
-    color: orangered;
+    color: darkgoldenrod;
 }
 .dark-hazard-theme.sheet.hazard .sidebar .sidebar-saves input {
-    color: orangered;
+    color: darkgoldenrod;
 }
 .dark-hazard-theme.sheet.hazard input[type=text], .dark-hazard-theme.sheet.hazard input[type=number] {
-    color: orangered;
+    color: darkgoldenrod;
 }
 .dark-hazard-theme.sheet.hazard .sidebar .initiative .roll-init {
     color: var(--green);
@@ -87,10 +90,12 @@
 }
 .dark-hazard-theme.sheet.hazard .section-container .section-header {
     color: var(--pfui-main-color);
+    background: radial-gradient(var(--primary-remaster), var(--glass-bg-dark));
     border: none;
-    background: radial-gradient(var(--primary-remaster), transparent);
-    box-shadow: 0 0 6px inset #3f342b;
+    box-shadow: var(--glassy);
+    text-shadow: 0 0 1px black;
     border-radius: 3px;
+    backdrop-filter: blur(5px);
 }
 .dark-hazard-theme.sheet.hazard form > header .title .name {
     color: var(--pfui-main-color);
@@ -145,4 +150,75 @@
 }
 .dark-hazard-theme.sheet.hazard .sidebar {
     border:none;
+}
+
+/*        Glassy       
+*************************/
+.glassy.dark-hazard-theme.sheet.hazard .window-content {
+    backdrop-filter: none;
+}
+.glassy.dark-hazard-theme.sheet.hazard .container {
+    padding: 0px 0px 0px 5px;
+}
+.glassy.dark-hazard-theme.sheet.hazard .section-container {
+    padding: 5px 0px 5px;
+}
+.glassy.dark-hazard-theme.sheet.hazard .section-container .section-header {
+    backdrop-filter: blur(5px);
+}
+.system-pf2e .glassy.dark-hazard-theme.sheet.hazard:not(.loot-sheet-npc), .system-pf2e .sheet.item {
+    background: none;
+    box-shadow: none;
+    border: none;
+}
+.glassy.dark-hazard-theme.sheet.hazard .window-header {
+    box-shadow: var(--glassy);
+    background-color: var(--glass-bg-dark);
+    border-radius: 3px;
+    margin: 0px 10px;
+    backdrop-filter: blur(5px);
+    text-shadow: 0 0 8px var(--color-shadow-primary);
+}
+.glassy.dark-hazard-theme.sheet.hazard form > header {
+    box-shadow: var(--glassy);
+    background: radial-gradient(var(--primary-remaster), var(--glass-bg-dark));
+    border-radius: 3px;
+    width: 97%;
+    margin: 10px 10px;
+    backdrop-filter: blur(5px);
+    text-shadow: 0 0 8px var(--color-shadow-primary);
+}
+.glassy.dark-hazard-theme.sheet.hazard .npc-sheet-header {
+    --color-text-dark-input: var(--color-text-light-heading);
+    box-shadow: var(--glassy);
+    background: var(--glass-bg);
+    border-radius: 3px;
+    margin: 5px;
+    padding: 2px 5px;
+    backdrop-filter: blur(5px);
+}
+.glassy.dark-hazard-theme.sheet.hazard .sidebar {
+    box-shadow: var(--glassy);
+    background-color: var(--glass-bg-dark);
+    border-radius: 3px;
+    margin: 5px 5px;
+    backdrop-filter: blur(5px);
+}
+.glassy.dark-hazard-theme.sheet.hazard .section-container .section-body {
+    color: var(--pfui-main-color);
+    border: none;
+    background: none;
+    background-color: var(--glass-bg-dark);
+    box-shadow: var(--glassy);
+    text-shadow: 0 0 1px black;
+    border-radius: 3px;
+    backdrop-filter: blur(5px);
+}
+.glassy.dark-hazard-theme.sheet.hazard .window-resizable-handle i.fas {
+    color: var(--green);
+    background-color: var(--glass-bg-dark);
+}
+.glassy.dark-hazard-theme.sheet.hazard .window-resizable-handle {
+    background: none;
+    border: none;
 }

@@ -4,6 +4,12 @@
 - Ready for v11 version.
 
 
+## v11.309.4
+- Update interface code.
+- Update Player Sheet.
+- Update Compatibility with PF2e 5.5.3
+- New choice : glassy mode for NPC / Hazard / Loot Sheet.
+
 ## v11.309.3
 - Update interface code.
 - Update Player Sheet.

@@ -44,6 +44,12 @@
 .dark-loot-theme.sheet.actor.loot .window-content {
     color: var(--pfui-main-color);
     background: none;
+    box-shadow: none;
+    margin: unset;
+    backdrop-filter: blur(5px);
+}
+.dark-loot-theme.sheet.actor.loot .sheet-header {
+    background: radial-gradient(var(--primary-remaster), var(--glass-bg-dark));
 }
 .dark-loot-theme.sheet.actor.loot .sheet-header h1 > input {
     color: var(--pfui-main-color);
@@ -133,9 +139,12 @@
 }
 .dark-loot-theme.sheet.actor.loot .inventory .inventory-header {
     color: var(--pfui-main-color);
-    background: radial-gradient(var(--primary-light-remaster), transparent)!important;
-    box-shadow: none;
+    background: radial-gradient(var(--primary-remaster), var(--glass-bg-dark));
+    border: none;
+    box-shadow: var(--glassy);
+    text-shadow: 0 0 1px black;
     border-radius: 3px;
+    backdrop-filter: blur(5px);
 }
 .dark-loot-theme.sheet.actor.loot .currency li > button:hover:not(:disabled) {
     border: 1px solid black;
@@ -183,5 +192,81 @@
     background: none;
 }
 .dark-loot-theme.sheet.actor.loot .inventory .inventory-items {
+    border: none;
+}
+
+/*        Glassy       
+*************************/
+.glassy.dark-loot-theme.sheet.actor.loot .window-content {
+    margin: 10px 10px 0px 5px;
+    backdrop-filter: none;
+}
+.glassy.dark-loot-theme.sheet.actor.loot .sheet-header {
+    border-radius: 5px;
+}
+.glassy.dark-loot-theme.sheet.actor.loot .section-container .section-header {
+    backdrop-filter: blur(5px);
+}
+.system-pf2e .glassy.dark-loot-theme.sheet.actor.loot:not(.loot-sheet-npc), .system-pf2e .sheet.item {
+    background: none;
+    box-shadow: none;
+    border: none;
+}
+.glassy.dark-loot-theme.sheet.actor.loot .window-header {
+    box-shadow: var(--glassy);
+    background-color: var(--glass-bg-dark);
+    border-radius: 3px;
+    margin: 0px 10px;
+    backdrop-filter: blur(5px);
+    text-shadow: 0 0 8px var(--color-shadow-primary);
+}
+
+.glassy.dark-loot-theme.sheet.actor.loot .sidebar .image-container img.actor-image {
+    box-shadow: var(--glassy);
+    border: none;
+    border-radius: 8px;
+    margin: 5px 0px 5px 7px;
+    backdrop-filter: blur(5px);
+    width: 93%;
+}
+.glassy.dark-loot-theme.sheet.actor.loot .side-bar-section {
+    box-shadow: var(--glassy);
+    background-color: var(--glass-bg-dark);
+    border-radius: 3px;
+    margin: 5px 5px;
+    backdrop-filter: blur(5px);
+}
+.glassy.dark-loot-theme.sheet.actor.loot section.sidebar {
+    box-shadow: var(--glassy);
+    background-color: var(--glass-bg-dark);
+    border-radius: 10px;
+    margin: 1px 5px 5px 5px;
+    backdrop-filter: blur(5px);
+}
+.glassy.dark-loot-theme.sheet.actor.loot .inventory {
+    width: 102%;
+}
+.glassy.dark-loot-theme.sheet.actor.loot .inventory .inventory-list {
+    width: 101%;
+}
+.glassy.dark-loot-theme.sheet.actor.loot .list-row {
+    width: 99%;
+}
+.glassy.dark-loot-theme.sheet.actor.loot .inventory .inventory-header {
+    margin: 10px 0px 0px 1px;
+}
+.glassy.dark-loot-theme.sheet.actor.loot .inventory .item {
+    box-shadow: var(--glassy);
+    background-color: var(--glass-bg-dark);
+    border-radius: 3px;
+    margin: 5px 5px;
+    backdrop-filter: blur(5px);
+}
+.glassy.dark-loot-theme.sheet.actor.loot .window-resizable-handle i.fas {
+    color: var(--green);
+    background-color: var(--glass-bg-dark);
+}
+.glassy.dark-loot-theme.sheet.actor.loot .window-resizable-handle {
+    background: none;
     border: none;
 }

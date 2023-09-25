@@ -166,6 +166,7 @@
 .sheet.actor.character.dark-theme .window-content {
     color: var(--pfui-main-color);
     background: none;
+    backdrop-filter: blur(5px);
 }
 
 .sheet.actor.character.dark-theme button {

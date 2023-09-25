@@ -8,7 +8,8 @@ Hooks.on("init", () => {
         type: String,
         choices: {
           "standard": "Original",
-          "dark": "Dark Mode (Remaster)"
+          "dark": "Dark Mode (Remaster)",
+          "glassy": "Dark Mode Glassy (Remaster)"
         },
         default: "standard",
         onChange: value => {},
@@ -20,7 +21,7 @@ Hooks.on("init", () => {
 
 Hooks.on("renderNPCSheetPF2e", () => {
     if ( game.settings.get('pathfinder-ui', 'darkNpcSheetToggle') !== "standard" ) {
-        for (const element of document.querySelectorAll(".actor.npc, .sheet.actor.loot")) {
+        for (const element of document.querySelectorAll(".actor.npc")) {
             let mode = game.settings.get('pathfinder-ui', 'darkNpcSheetToggle');
             element.classList.add("dark-npc-theme");
             element.classList.add(mode);

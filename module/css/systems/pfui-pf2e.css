@@ -29,16 +29,8 @@
 
 /* scrollbar
 ====================================================== */
-#sidebar *::-webkit-scrollbar-thumb {
-    background: var(--primary-light-remaster);
-    border: 1px dotted var(--primary-light-remaster);
-}
-.sheet.actor *::-webkit-scrollbar-thumb {
-    background: var(--primary-light-remaster);
-    border: 1px dotted var(--primary-light-remaster);
-}
-.sheet.journal-entry *::-webkit-scrollbar-thumb {
-    background: var(--primary-light-remaster);
+::-webkit-scrollbar-thumb {
+    background: radial-gradient(var(--primary-remaster), var(--glass-bg-dark));
     border: 1px dotted var(--primary-light-remaster);
 }
 

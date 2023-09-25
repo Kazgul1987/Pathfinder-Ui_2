@@ -43,7 +43,7 @@
 /************************/
 .dark-npc-theme.actor.npc .window-content {
     color: var(--pfui-main-color);
-    background: none;
+    background: radial-gradient(var(--primary-remaster), var(--glass-bg-dark));
     box-shadow: none;
     margin: unset;
 }
@@ -58,17 +58,16 @@
     backdrop-filter: blur(5px);
 }
 .dark-npc-theme.actor.npc .disabled {
-    color: var(--red);
+    color: darkgoldenrod;
     border-color: var(--color-disabled);
 }
 .dark-npc-theme.actor.npc .section-container .section-header {
     color: var(--green);
-    background: radial-gradient(var(--primary-remaster), var(--primary-light-remaster));
+    background: radial-gradient(var(--primary-remaster), var(--glass-bg-dark));
     border: none;
     box-shadow: var(--glassy);
     text-shadow: 0 0 1px black;
     border-radius: 3px;
-    backdrop-filter: blur(5px);
 }
 .dark-npc-theme.actor.npc .npc-sheet-header .name .name-value {
     color: var(--pfui-main-color);
@@ -292,7 +291,7 @@
 *************************/
 .dark-npc-theme.actor.npc .entries-list .spellcasting-entry .header {
     color: var(--green);
-    background: radial-gradient(var(--primary-remaster), var(--primary-light-remaster));
+    background: radial-gradient(var(--primary-remaster), var(--glass-bg-dark));
     border: none;
     box-shadow: var(--glassy);
     text-shadow: 0 0 1px black;
@@ -364,7 +363,7 @@
 }
 .dark-npc-theme.actor.npc .footer button.spellcasting-create {
     color: var(--green);
-    background: radial-gradient(var(--primary-remaster), var(--primary-light-remaster));
+    background: radial-gradient(var(--primary-remaster), var(--glass-bg-dark));
     border: none;
     box-shadow: var(--glassy);
     text-shadow: 0 0 1px black;
@@ -422,13 +421,18 @@
 
 /*        Glassy       
 *************************/
-
-.system-pf2e .dark-npc-theme.actor.npc:not(.loot-sheet-npc), .system-pf2e .sheet.item {
+.glassy.dark-npc-theme.actor.npc .window-content {
+    background: none;
+}
+.glassy.dark-npc-theme.actor.npc .section-container .section-header {
+    backdrop-filter: blur(5px);
+}
+.system-pf2e .glassy.dark-npc-theme.actor.npc:not(.loot-sheet-npc), .system-pf2e .sheet.item {
     background: none;
     box-shadow: none;
     border: none;
 }
-.dark-npc-theme.actor.npc .window-header {
+.glassy.dark-npc-theme.actor.npc .window-header {
     box-shadow: var(--glassy);
     background-color: var(--glass-bg-dark);
     border-radius: 3px;
@@ -436,16 +440,16 @@
     backdrop-filter: blur(5px);
     text-shadow: 0 0 8px var(--color-shadow-primary);
 }
-.dark-npc-theme.actor.npc .npc-sheet-header {
+.glassy.dark-npc-theme.actor.npc .npc-sheet-header {
     --color-text-dark-input: var(--color-text-light-heading);
     box-shadow: var(--glassy);
-    background: var(--glass-bg);
+    background: radial-gradient(var(--primary-remaster), var(--glass-bg-dark));
     border-radius: 3px;
     margin: 5px;
     padding: 2px 5px;
     backdrop-filter: blur(5px);
 }
-.dark-npc-theme.actor.npc .sidebar .image-container img.actor-image {
+.glassy.dark-npc-theme.actor.npc .sidebar .image-container img.actor-image {
     box-shadow: var(--glassy);
     background-color: var(--glass-bg-dark);
     border-radius: 8px;
@@ -453,14 +457,14 @@
     backdrop-filter: blur(5px);
     width: 93%;
 }
-.dark-npc-theme.actor.npc .side-bar-section {
+.glassy.dark-npc-theme.actor.npc .side-bar-section {
     box-shadow: var(--glassy);
     background-color: var(--glass-bg-dark);
     border-radius: 3px;
     margin: 5px 5px;
     backdrop-filter: blur(5px);
 }
-.dark-npc-theme.actor.npc .sidebar .saves {
+.glassy.dark-npc-theme.actor.npc .sidebar .saves {
     width: 94%;
     box-shadow: var(--glassy);
     background-color: var(--glass-bg-dark);
@@ -468,12 +472,12 @@
     margin: 5px 5px;
     backdrop-filter: blur(5px);
 }
-.dark-npc-theme.actor.npc form .sheet-tabs {
-    background-color: var(--glass-bg-dark);
+.glassy.dark-npc-theme.actor.npc form .sheet-tabs {
+    background: radial-gradient(var(--primary-remaster), var(--glass-bg-dark));
     margin: 5px;
     backdrop-filter: blur(5px);
 }
-.dark-npc-theme.actor.npc .actions-list li.action .button-group .damage-button, .dark-npc-theme.actor.npc .actions-list li.action .button-group .critical-button, .dark-npc-theme.actor.npc .actions-list li.attack .button-group .damage-button, .dark-npc-theme.actor.npc .actions-list li.attack .button-group .critical-button, .dark-npc-theme.actor.npc .attacks-list li.action .button-group .damage-button, .dark-npc-theme.actor.npc .attacks-list li.action .button-group .critical-button, .dark-npc-theme.actor.npc .attacks-list li.attack .button-group .damage-button, .dark-npc-theme.actor.npc .attacks-list li.attack .button-group .critical-button {
+.glassy.dark-npc-theme.actor.npc .actions-list li.action .button-group .damage-button, .glassy.dark-npc-theme.actor.npc .actions-list li.action .button-group .critical-button, .glassy.dark-npc-theme.actor.npc .actions-list li.attack .button-group .damage-button, .glassy.dark-npc-theme.actor.npc .actions-list li.attack .button-group .critical-button, .glassy.dark-npc-theme.actor.npc .attacks-list li.action .button-group .damage-button, .glassy.dark-npc-theme.actor.npc .attacks-list li.action .button-group .critical-button, .glassy.dark-npc-theme.actor.npc .attacks-list li.attack .button-group .damage-button, .glassy.dark-npc-theme.actor.npc .attacks-list li.attack .button-group .critical-button {
     color: var(--pfui-main-color);
     text-transform: uppercase;
     border: 1px solid black;
@@ -481,7 +485,7 @@
     text-shadow: 0 0 1px black;
     border-radius: 3px;
 }
-.dark-npc-theme.actor.npc .actions-list li.action .button-group .attack-button, .dark-npc-theme.actor.npc .actions-list li.attack .button-group .attack-button, .dark-npc-theme.actor.npc .attacks-list li.action .button-group .attack-button, .dark-npc-theme.actor.npc .attacks-list li.attack .button-group .attack-button {
+.glassy.dark-npc-theme.actor.npc .actions-list li.action .button-group .attack-button, .glassy.dark-npc-theme.actor.npc .actions-list li.attack .button-group .attack-button, .glassy.dark-npc-theme.actor.npc .attacks-list li.action .button-group .attack-button, .glassy.dark-npc-theme.actor.npc .attacks-list li.attack .button-group .attack-button {
     color: var(--pfui-main-color);
     text-transform: uppercase;
     border: 1px solid black;
@@ -489,20 +493,23 @@
     text-shadow: 0 0 1px black;
     border-radius: 3px;
 }
-.dark-npc-theme.actor.npc .inventory-section {
+.glassy.dark-npc-theme.actor.npc .inventory-section {
     box-shadow: var(--glassy);
     background-color: var(--glass-bg-dark);
     border-radius: 3px;
     margin: 5px 5px;
     backdrop-filter: blur(5px);
 }
-.dark-npc-theme.actor.npc ol.spell-list > li.spell {
+.glassy.dark-npc-theme.actor.npc .entries-list .spellcasting-entry .header {
+    backdrop-filter: blur(5px);
+}
+.glassy.dark-npc-theme.actor.npc ol.spell-list > li.spell {
     box-shadow: var(--glassy);
     background-color: var(--glass-bg-dark);
     border-radius: 3px;
     backdrop-filter: blur(5px);
 }
-.dark-npc-theme.actor.npc ol.spell-list > li.spell-level-header input, .dark-npc-theme.actor.npc ol.spell-list > li .uses input {
+.glassy.dark-npc-theme.actor.npc ol.spell-list > li.spell-level-header input, .glassy.dark-npc-theme.actor.npc ol.spell-list > li .uses input {
     color: var(--pfui-main-color);
     border: none;
     background: none;
@@ -510,10 +517,10 @@
     text-shadow: 0 0 1px black;
     border-radius: 3px;
 }
-.dark-npc-theme.actor.npc .section-container {
-    margin: 2px 0px;
+.glassy.dark-npc-theme.actor.npc .section-container {
+    padding: 5px 5px 5px;
 }
-.dark-npc-theme.actor.npc .notes.active {
+.glassy.dark-npc-theme.actor.npc .notes.active {
     box-shadow: var(--glassy);
     background-color: var(--glass-bg-dark);
     border-radius: 3px;
@@ -521,11 +528,11 @@
     backdrop-filter: blur(5px);
     padding: 0px;
 }
-.dark-npc-theme.actor.npc .window-resizable-handle i.fas {
+.glassy.dark-npc-theme.actor.npc .window-resizable-handle i.fas {
     color: var(--green);
     background-color: var(--glass-bg-dark);
 }
-.dark-npc-theme.actor.npc .window-resizable-handle {
+.glassy.dark-npc-theme.actor.npc .window-resizable-handle {
     background: none;
     border: none;
 }

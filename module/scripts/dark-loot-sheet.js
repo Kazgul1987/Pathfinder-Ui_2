@@ -8,7 +8,8 @@ Hooks.on("init", () => {
         type: String,
         choices: {
           "standard": "Original",
-          "dark": "Dark Mode (Remaster)"
+          "dark": "Dark Mode (Remaster)",
+          "glassy": "Dark Mode Glassy (Remaster)"
         },
         default: "standard",
         onChange: value => {},
