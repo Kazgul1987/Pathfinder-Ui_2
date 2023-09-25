@@ -4,6 +4,14 @@
 - Ready for v11 version.
 
 
+## v11.309.3
+- Update interface code.
+- Update Player Sheet.
+- Update Polyglot compatibility.
+- Replace the Dark NPC Sheet with a Dark Glassy NPC Sheet.
+- Fix the problem with a white texture in the GM Chat.
+- Fix the problem with the jump button.
+
 ## v11.309.2
 - fix an issue with Firefox and the Webcam dock.
 

@@ -42,7 +42,6 @@
 /*************************************************************/
 /*============ Background/Pause img / Logo ==================*/
 /*************************************************************/
-    
 body {
     background-image: url(../pfrpg-background.webp);
     background-size: cover;
@@ -569,23 +568,29 @@ end*/
 .polyglot-lang-select label {
     display: none;
 }
-
+.polyglot-lang-select input {
+    margin: 3px 5px;
+}
+.polyglot-lang-select input:checked {
+    accent-color: var(--glass-bg);
+}
 .polyglot-lang-select select {
     font-family: Taroca;
     font-size: 14px;
     text-align: center;
     position: relative;
     height: 24px;
-    top: 10px;
+    top: 5px;
     padding-top: 0px;
     background-position: initial;
-    margin-top: -10px;
+    margin-top: -12px;
     border: 1px solid #000;
     background: radial-gradient(var(--background-2), transparent);
     box-shadow: var(--glassy);
     color: var(--pfui-main-color);
     border-radius: 3px;
 }
+
 .roll-type-select{
     font-family: Taroca;
     font-size: 14px;
