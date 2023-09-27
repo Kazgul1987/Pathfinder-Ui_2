@@ -583,7 +583,7 @@ end*/
     position: relative;
     height: 24px;
     bottom: 2px;
-    margin: 0px;
+    margin: 0 3px 0 0;
     border: 1px solid #000;
     background: radial-gradient(var(--background-2), transparent);
     box-shadow: var(--glassy);
@@ -602,10 +602,10 @@ end*/
     flex-wrap: wrap;
     justify-content: center;
 }
-.roll-type-select{
+.roll-type-select {
     font-family: Taroca;
     font-size: 14px;
-    text-align: left;
+    text-align: center;
     position: relative;
     top: 1px;
     background-position: initial;
@@ -614,6 +614,7 @@ end*/
     box-shadow: var(--glassy);
     color: var(--pfui-main-color);
     border-radius: 3px;
+    margin: 0px 3px 0px 3px!important;
 }
 
 #sidebar .sidebar-tab option, optgroup {

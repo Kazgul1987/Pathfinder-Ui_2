@@ -267,9 +267,7 @@
 }
 .actor.sheet.character.dark-theme .crb-style .details-input {
     border: 1px dotted var(--background-2);
-    background: radial-gradient(var(--background-2), transparent);
-    box-shadow: 0 0 6px inset #3f342b;
-    border-radius: 3px;
+    background: radial-gradient(var(--background-2), transparent)!important;
 }
 
 .actor.sheet.dark-theme .crb-style header.char-header .char-details h1.char-name input[type=text], .actor.sheet.dark-theme .crb-style header.char-header .char-details h1.char-name span.non-editable {
@@ -401,6 +399,13 @@
     background: var(--red);
 }
 
+.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content h3.header button .fa-solid.fa-eye {
+    color: var(--pfui-main-color)!important;
+}
+.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content h3.header button .fa-eye-slash:before {
+    color: var(--pfui-main-color)!important;
+    filter: brightness(2);
+}
 
 
 
@@ -655,17 +660,16 @@ color: var(--green)!important;
 .actor.sheet.dark-theme .crb-style .sheet-body .sheet-content .tab.biography h3 {
     color: darkgray!important;
 }
-.actor.sheet.dark-theme .crb-style .sheet-body .sheet-content .tab.biography .biography-content .editor .editor-content {
-    background: radial-gradient(var(--background-2), transparent);
-}
 .actor.sheet.dark-theme .crb-style .sheet-body .sheet-content .tab.biography .biography-content .editor .editor-edit {
     background: var(--background);
     color: var(--pfui-main-color);
 }
-.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.biography .biography-personality .bio {
+.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.biography section.editable .editor-content, .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.biography section.editable input {
     background: radial-gradient(var(--background-2), transparent);
+    border: 1px dotted var(--background-2);
+    box-shadow: var(--glassy);
+    border-radius: 3px;
 }
-
 
 
 
@@ -740,13 +744,12 @@ color: var(--green)!important;
     background: radial-gradient( var(--primary-remaster), var(--primary-light-remaster));
     border-radius: 3px;
 }
-.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content h3.header button .fa-solid.fa-eye {
-    color: var(--pfui-main-color)!important;
+
+.dark.actor.sheet.character.dark-theme .crb-style .details-input {
+    box-shadow: var(--glassy);
+    border-radius: 3px;
 }
-.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content h3.header button .fa-eye-slash:before {
-    color: var(--pfui-main-color)!important;
-    filter: brightness(2);
-}
+
 
 
 
@@ -1074,6 +1077,11 @@ color: var(--green)!important;
 }
 .remaster.actor.sheet.dark-theme .crb-style .sheet-body .sheet-content .tab.biography .biography-content p, .remaster.actor.sheet.dark-theme .crb-style .sheet-body .sheet-content .tab.biography .biography-content p + p, .remaster.actor.sheet.dark-theme .crb-style .sheet-body .sheet-content .tab.biography .biography-content ul, .remaster.actor.sheet.dark-theme .crb-style .sheet-body .sheet-content .tab.biography .biography-content ol {
 color: var(--primary-remaster);
+}
+.remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.biography section.editable .editor-content, .remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.biography section.editable input {
+    background: none;
+    border: none;
+    box-shadow: none;
 }
 .remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.pfs > section.reputations {
     color: var(--primary-remaster);

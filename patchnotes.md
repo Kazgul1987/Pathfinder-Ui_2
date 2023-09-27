@@ -4,6 +4,9 @@
 - Ready for v11 version.
 
 
+## v11.309.6
+- Update Compatibility PF2e v5.6.0
+
 ## v11.309.5
 - Update core code.
 - Update Player Sheet.
@@ -12,7 +15,7 @@
 ## v11.309.4
 - Update core code.
 - Update Player Sheet.
-- Update Compatibility with PF2e 5.5.3
+- Update Compatibility PF2e v5.5.3
 - New choice : glassy mode for NPC / Hazard / Loot Sheet.
 
 ## v11.309.3
@@ -28,13 +31,13 @@
 
 ## v11.309.1
 - Update core code.
-- Update Compatibility with PF2e 5.5.3
+- Update Compatibility PF2e v5.5.3
 - Update sidebar windows rendering 
 - Fix the problem of the font not being applied correctly
 
 ## v11.308.14
 - Update core code.
-- Update Compatibility with PF2e 5.5.2
+- Update Compatibility PF2e v5.5.2
 - Update Contrast Enhancement.
 
 ## v11.308.11
@@ -70,16 +73,16 @@
 - Update core code. 
 
 ## v11.308.4
-- Update Compatibility with PF2e 5.4.4 
+- Update Compatibility PF2e v5.4.4 
 
 ## v11.308.3
 - Update core code.
 - Update Dark theme.
 - fix an issue where the modifiers was invisible in the chat.
-- Update Compatibility with PF2e 5.4.2 
+- Update Compatibility PF2e v5.4.2 
 
 ## v11.308.1
-- Update Compatibility with PF2e 5.4.1 
+- Update Compatibility PF2e v5.4.1 
 
 ## v11.307.12
 - Update core code.
