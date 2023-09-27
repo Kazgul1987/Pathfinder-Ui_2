@@ -117,11 +117,11 @@ body.compact-mode #logo {
 /*======================= SIDEBAR ===========================*/
 /*************************************************************/
 
-/*Fix v11
+/*Fix v11*/
 #interface {
     overflow: clip;
 }
-end*/
+/*end*/
 
 #sidebar {
     display: flex;
