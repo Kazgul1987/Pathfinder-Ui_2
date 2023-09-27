@@ -4,14 +4,19 @@
 - Ready for v11 version.
 
 
+## v11.309.5
+- Update core code.
+- Update Player Sheet.
+- Update Compatibility with Polyglot.
+
 ## v11.309.4
-- Update interface code.
+- Update core code.
 - Update Player Sheet.
 - Update Compatibility with PF2e 5.5.3
 - New choice : glassy mode for NPC / Hazard / Loot Sheet.
 
 ## v11.309.3
-- Update interface code.
+- Update core code.
 - Update Player Sheet.
 - Update Polyglot compatibility.
 - Replace the Dark NPC Sheet with a Dark Glassy NPC Sheet.
@@ -22,38 +27,38 @@
 - fix an issue with Firefox and the Webcam dock.
 
 ## v11.309.1
-- Update interface code.
+- Update core code.
 - Update Compatibility with PF2e 5.5.3
 - Update sidebar windows rendering 
 - Fix the problem of the font not being applied correctly
 
 ## v11.308.14
-- Update interface code.
+- Update core code.
 - Update Compatibility with PF2e 5.5.2
 - Update Contrast Enhancement.
 
 ## v11.308.11
-- Update interface code.
+- Update core code.
 - fix some minor oversights.
 - Reduce the size of compendium tabs
 
 ## v11.308.10
-- Update interface code.
+- Update core code.
 - fix some minor oversights. 
 
 ## v11.308.9
-- Update interface code.
+- Update core code.
 - Add Dark Theme for NPC Sheet.
 - Add Dark Theme for LOOT Sheet.
 - Add Dark Theme for HAZARD Sheet.
 
 ## v11.308.8
-- Update interface code.
+- Update core code.
 - Add an option to disable RPG Cursors.
 - Improve Speaking As Compatibility.
 
 ## v11.308.7
-- Update interface code.
+- Update core code.
 - Add Dark Theme for Party Sheet.
 - Add Monk's Hotbar Expansion Compatibility.
 - Add Speaking As Compatibility.
@@ -62,13 +67,13 @@
 - Add Target Damage Compatibility. 
 
 ## v11.308.5
-- Update interface code. 
+- Update core code. 
 
 ## v11.308.4
 - Update Compatibility with PF2e 5.4.4 
 
 ## v11.308.3
-- Update interface code.
+- Update core code.
 - Update Dark theme.
 - fix an issue where the modifiers was invisible in the chat.
 - Update Compatibility with PF2e 5.4.2 
@@ -77,14 +82,14 @@
 - Update Compatibility with PF2e 5.4.1 
 
 ## v11.307.12
-- Update interface code.
+- Update core code.
 - Update Chat fonts.
 - Update Polyglot Compatibility.
 - Update Player sheet themes.
 - Minor corrections.
 
 ## v11.307.11
-- Update interface code.
+- Update core code.
 - Minor corrections.
 
 ## v11.307.10
@@ -101,25 +106,25 @@
     - Dark Mode (Remaster)
 
 ## v11.307.8
-- Update interface code.
+- Update core code.
 - Fix error when Monks little details wasn't activate.
 - Update token hud theme.
 - Update Compatibility with Monks little details.
 
 ## v11.307.6
-- Update interface code.
+- Update core code.
 - NEW : Add a compatibility and theme for PF2e Utility Buttons.
 - NEW : The standard sheet is now in the color of the Remaster version. (thx @Vesselchuck for your work)
 - The Dark-theme sheet is in the color of the Remaster version.
 
 ## v11.307.5
-- Update interface code.
+- Update core code.
 - Parchment texture on Journal pages is disabled by default now.
 - Update Parchment texture option with the color of PF2e remaster.
 - Update PF2e Style option with the color of PF2e remaster.
 
 ## v11.307.4
-- Update interface code.
+- Update core code.
 - Update visual for Polyglot
 - Update visual for Dice Tray
 - Update visual for DF Chat Enchancements

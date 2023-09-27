@@ -410,10 +410,12 @@ end*/
 #chat-form textarea {
     font-family: "tauri";
     width: 99%;
-    margin-left: 2px;
+    margin: 3px 0px 0px 2px;
     background: radial-gradient(var(--background-2), transparent)!important;
     box-shadow: var(--glassy);
     color: var(--pfui-main-color);
+    border: 1px solid #000;
+    border-radius: 3px;
 }
 
 #chat-form textarea:focus {
@@ -580,29 +582,38 @@ end*/
     text-align: center;
     position: relative;
     height: 24px;
-    top: 5px;
-    padding-top: 0px;
-    background-position: initial;
-    margin-top: -12px;
+    bottom: 2px;
+    margin: 0px;
     border: 1px solid #000;
     background: radial-gradient(var(--background-2), transparent);
     box-shadow: var(--glassy);
     color: var(--pfui-main-color);
     border-radius: 3px;
 }
-
+.polyglot-lang-select input[type="checkbox"] {
+    flex: 0 0 16px;
+    width: 16px;
+    height: 16px;
+}
+.polyglot-user-list {
+    display: inline-flex;
+    max-width: max-content;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 .roll-type-select{
     font-family: Taroca;
     font-size: 14px;
     text-align: left;
     position: relative;
     top: 1px;
-    padding-top: 0px;
     background-position: initial;
+    border: 1px solid #000;
     background: radial-gradient(var(--background-2), transparent)!important;
     box-shadow: var(--glassy);
     color: var(--pfui-main-color);
-    border: none;
+    border-radius: 3px;
 }
 
 #sidebar .sidebar-tab option, optgroup {
