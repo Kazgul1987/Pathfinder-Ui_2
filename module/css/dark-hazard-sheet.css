@@ -133,7 +133,6 @@
     border-radius: 3px;
 }
 .dark-hazard-theme.sheet.hazard form > header .frame-container .edit-mode-button {
-    background-color: var(--green);
     color: var(--red);
 }
 .dark-hazard-theme.sheet.hazard .sidebar .emits-sound select {
@@ -151,6 +150,37 @@
 .dark-hazard-theme.sheet.hazard .sidebar {
     border:none;
 }
+.dark-hazard-theme.sheet.hazard a.inline-check[data-pf2-traits*=secret], span[data-pf2-check][data-pf2-traits*=secret] {
+    color: var(--pfui-main-color);
+    background: #61180e;
+    padding: 0px 3px;
+    border: 2px solid var(--glassy);
+    border-radius: 3px;
+}	
+.dark-hazard-theme.sheet.hazard a.inline-check, span[data-pf2-check] {
+    color: var(--pfui-main-color);
+    background: #61180e!important;
+    padding: 0px 3px;
+    border: 2px solid var(--glassy);
+    border-radius: 3px;
+}
+.dark-hazard-theme.sheet.hazard a.inline-check, span[data-pf2-action] {
+    color: var(--pfui-main-color);
+    background: #61180e;
+    padding: 0px 3px;
+    border: 2px solid var(--glassy);
+    border-radius: 3px;
+}
+.dark-hazard-theme.sheet.hazard a.content-link, a.inline-roll {
+    color: var(--pfui-main-color);
+    background: #61180e;
+    padding: 0px 3px;
+    border: 2px solid var(--glassy);
+    border-radius: 3px;
+}
+
+
+
 
 /*        Glassy       
 *************************/

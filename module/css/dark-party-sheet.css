@@ -79,6 +79,36 @@
 .dark-party-theme.sheet.party nav.sub-nav a, .dark-party-theme.sheet.party nav.sub-nav .tab {
     color: var(--pfui-main-color);
 }
+.dark-party-theme.sheet.party a.inline-check[data-pf2-traits*=secret], span[data-pf2-check][data-pf2-traits*=secret] {
+    color: var(--pfui-main-color);
+    background: #61180e;
+    padding: 0px 3px;
+    border: 2px solid var(--glassy);
+    border-radius: 3px;
+}	
+.dark-party-theme.sheet.party a.inline-check, span[data-pf2-check] {
+    color: var(--pfui-main-color);
+    background: #61180e!important;
+    padding: 0px 3px;
+    border: 2px solid var(--glassy);
+    border-radius: 3px;
+}
+.dark-party-theme.sheet.party a.inline-check, span[data-pf2-action] {
+    color: var(--pfui-main-color);
+    background: #61180e;
+    padding: 0px 3px;
+    border: 2px solid var(--glassy);
+    border-radius: 3px;
+}
+.dark-party-theme.sheet.party a.content-link, a.inline-roll {
+    color: var(--pfui-main-color);
+    background: #61180e;
+    padding: 0px 3px;
+    border: 2px solid var(--glassy);
+    border-radius: 3px;
+}
+
+
 
 /*      Overview       
 *************************/

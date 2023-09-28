@@ -62,12 +62,11 @@
     border-color: var(--color-disabled);
 }
 .dark-npc-theme.actor.npc .section-container .section-header {
-    color: var(--green);
-    background: radial-gradient(var(--primary-remaster), var(--glass-bg-dark));
-    border: none;
+    color: var(--green)!important;
+    background: radial-gradient(var(--primary-remaster), var(--glass-bg-dark))!important;
+    border: none!important;
     box-shadow: var(--glassy);
     text-shadow: 0 0 1px black;
-    border-radius: 3px;
 }
 .dark-npc-theme.actor.npc .npc-sheet-header .name .name-value {
     color: var(--pfui-main-color);
@@ -75,12 +74,11 @@
 }
 .dark-npc-theme.actor.npc .section-container .section-body {
     color: var(--pfui-main-color);
-    border: none;
+    border: none!important;
     background: none;
     background-color: var(--glass-bg-dark);
     box-shadow: var(--glassy);
     text-shadow: 0 0 1px black;
-    border-radius: 3px;
     backdrop-filter: blur(5px);
 }
 .dark-npc-theme.actor.npc .side-bar-section.initiative select {
@@ -128,7 +126,7 @@
 .dark-npc-theme.actor.npc .adjustments .adjustment:not(.active) {
     border: 1px solid black;
     background: none;
-    background-color: var(--green);
+    background-color: var(--green)!important;
     box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15), inset 0 0 0 2px rgba(0, 0, 0, 0.4);
     transition: text-shadow 0.15s ease-in-out, background-color 0.15s ease-in-out, border 0.15s ease-in-out, color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, backdrop-filter 0.15s ease-in-out, border-radius 0.15s;
     text-shadow: 0 0 1px black!important;
@@ -136,7 +134,7 @@
     border-radius: 3px;
 }
 .dark-npc-theme.actor.npc .trait {
-    border: none;
+    border: none!important;
     box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15), inset 0 0 0 2px rgba(0, 0, 0, 0.4);
     border-radius: 3px;
 }
@@ -177,7 +175,39 @@
     box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15), inset 0 0 0 2px rgba(0, 0, 0, 0.4);
     transition: text-shadow 0.15s ease-in-out, background-color 0.15s ease-in-out, border 0.15s ease-in-out, color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, backdrop-filter 0.15s ease-in-out, border-radius 0.15s;
     text-shadow: 0 0 1px black!important;
-    color: var(--background);
+    color: var(--background)!important;
+    border-radius: 3px;
+}
+.dark-npc-theme.actor.npc form input.adjustable:not(:focus).adjusted-lower, .dark-npc-theme.actor.npc form span.adjustable.adjusted-lower, .dark-npc-theme.actor.npc form div.adjustable.adjusted-lower {
+    color: darkgoldenrod;
+}
+
+.dark-npc-theme.actor.npc a.inline-check[data-pf2-traits*=secret], span[data-pf2-check][data-pf2-traits*=secret] {
+    color: var(--pfui-main-color);
+    background: #61180e;
+    padding: 0px 3px;
+    border: 2px solid var(--glassy);
+    border-radius: 3px;
+}	
+.dark-npc-theme.actor.npc a.inline-check, span[data-pf2-check] {
+    color: var(--pfui-main-color);
+    background: #61180e!important;
+    padding: 0px 3px;
+    border: 2px solid var(--glassy);
+    border-radius: 3px;
+}
+.dark-npc-theme.actor.npc a.inline-check, span[data-pf2-action] {
+    color: var(--pfui-main-color);
+    background: #61180e;
+    padding: 0px 3px;
+    border: 2px solid var(--glassy);
+    border-radius: 3px;
+}
+.dark-npc-theme.actor.npc a.content-link, a.inline-roll {
+    color: var(--pfui-main-color);
+    background: #61180e;
+    padding: 0px 3px;
+    border: 2px solid var(--glassy);
     border-radius: 3px;
 }
 
@@ -224,10 +254,9 @@
     padding-right: 0.3rem;
 }
 .dark-npc-theme.actor.npc .inventory .inventory-header {
-    color: var(--pfui-main-color);
+    color: var(--pfui-main-color)!important;
     background: radial-gradient(var(--primary-light-remaster), transparent)!important;
     box-shadow: var(--glassy);
-    border-radius: 3px;
     margin: 5px 2px;
     backdrop-filter: blur(5px);
     padding: 0px;
@@ -290,7 +319,7 @@
 /*        Spells       
 *************************/
 .dark-npc-theme.actor.npc .entries-list .spellcasting-entry .header {
-    color: var(--green);
+    color: var(--green)!important;
     background: radial-gradient(var(--primary-remaster), var(--glass-bg-dark));
     border: none;
     box-shadow: var(--glassy);
@@ -302,22 +331,21 @@
     color: var(--pfui-main-color);
     border: none;
     background: none;
-    background-color: var(--glass-bg);
+    background-color: var(--glass-bg)!important;
     box-shadow: var(--glassy);
     text-shadow: 0 0 3px black;
     border-radius: 3px;
 }
 .dark-npc-theme.actor.npc ol.spell-list > li.spell-level-header {
-    color: var(--pfui-main-color);
-    border: none;
-    background: radial-gradient(var(--primary-remaster), transparent);
-    background-color: var(--glass-bg);
+    color: var(--pfui-main-color)!important;
+    border: none!important;
+    background: radial-gradient(var(--primary-remaster), transparent)!important;
+    background-color: var(--glass-bg)!important;
     text-shadow: 0 0 3px black;
     box-shadow: var(--glassy);
-    border-radius: 3px;
-    margin: 5px 2px;
+    border-radius: 3px!important;
+    margin: 5px 2px!important;
     backdrop-filter: blur(5px);
-    padding: 0px;
 }
 .dark-npc-theme.actor.npc .entries-list .spellcasting-entry .spell-level-header input {
     color: var(--pfui-main-color);
@@ -329,7 +357,7 @@
     border-radius: 3px;
 }
 .dark-npc-theme.actor.npc ol.spell-list > li .item-name h4:hover {
-    color: var(--green);
+    color: var(--green)!important;
 }
 .dark-npc-theme.actor.npc .entries-list .spellcasting-entry .header .ability-score select {
     color: var(--pfui-main-color);
@@ -341,7 +369,7 @@
     border-radius: 3px;
 }
 .dark-npc-theme.actor.npc ol.spell-list > li .item-summary {
-    background: none;
+    background-color: transparent!important;
 }
 .dark-npc-theme.actor.npc .item-summary .item-buttons button {
     color: var(--green);
@@ -362,23 +390,22 @@
     border-radius: 3px;
 }
 .dark-npc-theme.actor.npc .footer button.spellcasting-create {
-    color: var(--green);
-    background: radial-gradient(var(--primary-remaster), var(--glass-bg-dark));
+    color: var(--green)!important;
+    background: radial-gradient(var(--primary-remaster), var(--glass-bg-dark))!important;
     border: none;
-    box-shadow: var(--glassy);
+    box-shadow: var(--glassy)!important;
     text-shadow: 0 0 1px black;
     border-radius: 3px;
     backdrop-filter: blur(5px);
 }
 .dark-npc-theme.actor.npc .footer button.spellcasting-create:hover {
-    border: 1px solid black;
-    background: none;
-    background-color: var(--green);
-    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15), inset 0 0 0 2px rgba(0, 0, 0, 0.4);
+    border: 1px solid black!important;
+    background: none!important;
+    background-color: var(--green)!important;
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15), inset 0 0 0 2px rgba(0, 0, 0, 0.4)!important;
     transition: text-shadow 0.15s ease-in-out, background-color 0.15s ease-in-out, border 0.15s ease-in-out, color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, backdrop-filter 0.15s ease-in-out, border-radius 0.15s;
     text-shadow: 0 0 1px black!important;
     color: var(--background)!important;
-    border-radius: 3px;
 }
 .dark-npc-theme.actor.npc ol.spell-list > li button.cast-spell {
     color: var(--pfui-main-color);
@@ -400,7 +427,7 @@
     border-radius: 3px;
 }
 .dark-npc-theme.actor.npc .entries-list .spellcasting-entry {
-    border: none;
+    border: none!important;
 }
 
 
@@ -408,10 +435,10 @@
 /*        Notes       
 *************************/
 .dark-npc-theme.actor.npc .notes .details-label {
-    color: var(--green);
+    color: var(--green)!important;
 }
 .dark-npc-theme.actor.npc .notes .notes-text {
-    color: var(--pfui-main-color);
+    color: var(--pfui-main-color)!important;
 }
 .dark-npc-theme.actor.npc form input[type=text], .dark-npc-theme.actor.npc form input[type=number] {
     color: var(--rarity-common);
@@ -497,7 +524,7 @@
     box-shadow: var(--glassy);
     background-color: var(--glass-bg-dark);
     border-radius: 3px;
-    margin: 5px 5px;
+    margin: 5px 5px!important;
     backdrop-filter: blur(5px);
 }
 .glassy.dark-npc-theme.actor.npc .entries-list .spellcasting-entry .header {

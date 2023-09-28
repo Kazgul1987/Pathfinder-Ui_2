@@ -314,3 +314,32 @@ color:var(--custom-green);
     flex-direction: row;
     flex-wrap: nowrap;
 }
+
+.journal-entry-page .journal-page-content a.inline-check[data-pf2-traits*=secret], span[data-pf2-check][data-pf2-traits*=secret] {
+    color: var(--pfui-main-color);
+    background: #61180e;
+    padding: 0px 3px;
+    border: 2px solid var(--glassy);
+    border-radius: 3px;
+}	
+.journal-entry-page .journal-page-content a.inline-check, span[data-pf2-check] {
+    color: var(--pfui-main-color);
+    background: #61180e!important;
+    padding: 0px 3px;
+    border: 2px solid var(--glassy);
+    border-radius: 3px;
+}
+.journal-entry-page .journal-page-content a.inline-check, span[data-pf2-action] {
+    color: var(--pfui-main-color);
+    background: #61180e;
+    padding: 0px 3px;
+    border: 2px solid var(--glassy);
+    border-radius: 3px;
+}
+.journal-entry-page .journal-page-content a.content-link, a.inline-roll {
+    color: var(--pfui-main-color);
+    background: #61180e;
+    padding: 0px 3px;
+    border: 2px solid var(--glassy);
+    border-radius: 3px;
+}	

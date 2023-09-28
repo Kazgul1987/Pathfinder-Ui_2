@@ -4,8 +4,9 @@
 - Ready for v11 version.
 
 
-## v11.309.7
-- Update Compatibility PF2e v5.6.0
+## v11.309.8
+- Update Compatibility PF2e v5.6.1
+- Update Compatibility Kingmaker Module.
 
 ## v11.309.5
 - Update core code.

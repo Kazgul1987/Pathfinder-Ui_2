@@ -73,6 +73,9 @@
 
 /* System
 *************************/
+.system-pf2e .directory .directory-list {
+    padding: 0 0 0 5px;
+}
 .system-pf2e .jump-to-bottom {
     padding: 10px;
     border: none;
@@ -95,7 +98,7 @@
 }
 .system-pf2e .jump-to-bottom:hover a {
     text-shadow: none;
-  }
+}
 
 .system-pf2e .sheet.actor:not(.loot-sheet-npc),
 .system-pf2e .sheet.item {
@@ -747,30 +750,34 @@ a.content-link.broken {
     color: var(--color-text-dark-inactive)!important;
 }
 
-a.inline-check, span[data-pf2-check] {
-    color: var(--pfui-main-color);
-    background: #61180e!important;
-    padding: 0px 3px;
-    border: 2px solid var(--glassy);
-    border-radius: 3px;
-}
-
 [data-visibility]:not([data-visibility=all])[data-visibility=owner] {
     background: #61180e;
-}
-
-a.content-link, [data-pf2-check], a.entity-link, [data-pf2-action], [data-pf2-effect-area], a.inline-roll:not(.inline-result) {
-    color: var(--pfui-main-color)!important;
-    background: #61180e!important;
-    padding: 0px 3px;
-    border: 2px solid var(--glassy);
-    border-radius: 3px;
 }
 
 #chat-log button {
     transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
 }
-
+#chat-log a.inline-check, span[data-pf2-check] {
+    color: var(--pfui-main-color);
+    background: #61180e;
+    padding: 0px 3px;
+    border: 2px solid var(--glassy);
+    border-radius: 3px;
+}
+#chat-log .pf2e.chat-card a.inline-check, span[data-pf2-action] {
+    color: var(--pfui-main-color);
+    background: #61180e;
+    padding: 0px 3px;
+    border: 2px solid var(--glassy);
+    border-radius: 3px;
+}
+#chat-log .pf2e.chat-card a.content-link, a.inline-roll {
+    color: var(--pfui-main-color);
+    background: #61180e;
+    padding: 0px 3px;
+    border: 2px solid var(--glassy);
+    border-radius: 3px;
+}
 #chat-log .message [data-visibility="gm"]:is(div,em,p,span,strong) {
     background: none;
 }
