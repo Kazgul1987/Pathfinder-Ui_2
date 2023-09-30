@@ -185,10 +185,12 @@ body.compact-mode #logo {
 
 #sidebar a.entity-link,
 #sidebar a.inline-roll {
+    color: var(--pfui-main-color);
     background: #61180e;
     padding: 0px 3px;
     border: 2px solid var(--glassy);
-    border-radius: 6px;
+    box-shadow: var(--glassy);
+    border-radius: 3px;
 }
 
 #sidebar-tabs > .item:before {

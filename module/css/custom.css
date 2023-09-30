@@ -361,13 +361,15 @@ h6+p+blockquote, h6+p+ul+blockquote) {
     background: #61180e;
     padding: 0px 3px;
     border: 2px solid var(--glassy);
+    box-shadow: var(--glassy);
     border-radius: 3px;
 }	
 .journal-entry-page .journal-page-content a.inline-check, span[data-pf2-check] {
     color: var(--pfui-main-color);
-    background: #61180e!important;
+    background: #61180e;
     padding: 0px 3px;
     border: 2px solid var(--glassy);
+    box-shadow: var(--glassy);
     border-radius: 3px;
 }
 .journal-entry-page .journal-page-content a.inline-check, span[data-pf2-action] {
@@ -375,6 +377,7 @@ h6+p+blockquote, h6+p+ul+blockquote) {
     background: #61180e;
     padding: 0px 3px;
     border: 2px solid var(--glassy);
+    box-shadow: var(--glassy);
     border-radius: 3px;
 }
 .journal-entry-page .journal-page-content a.content-link, a.inline-roll {
@@ -382,6 +385,7 @@ h6+p+blockquote, h6+p+ul+blockquote) {
     background: #61180e;
     padding: 0px 3px;
     border: 2px solid var(--glassy);
+    box-shadow: var(--glassy);
     border-radius: 3px;
 }	
 	

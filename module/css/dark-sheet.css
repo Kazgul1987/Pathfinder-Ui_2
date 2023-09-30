@@ -67,13 +67,15 @@
     background: #61180e;
     padding: 0px 3px;
     border: 2px solid var(--glassy);
+    box-shadow: var(--glassy);
     border-radius: 3px;
 }	
 .actor.sheet.dark-theme a.inline-check, span[data-pf2-check] {
     color: var(--pfui-main-color);
-    background: #61180e!important;
+    background: #61180e;
     padding: 0px 3px;
     border: 2px solid var(--glassy);
+    box-shadow: var(--glassy);
     border-radius: 3px;
 }
 .actor.sheet.dark-theme a.inline-check, span[data-pf2-action] {
@@ -81,6 +83,7 @@
     background: #61180e;
     padding: 0px 3px;
     border: 2px solid var(--glassy);
+    box-shadow: var(--glassy);
     border-radius: 3px;
 }
 .actor.sheet.dark-theme a.content-link, a.inline-roll {
@@ -88,6 +91,7 @@
     background: #61180e;
     padding: 0px 3px;
     border: 2px solid var(--glassy);
+    box-shadow: var(--glassy);
     border-radius: 3px;
 }
 

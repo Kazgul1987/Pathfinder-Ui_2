@@ -774,7 +774,10 @@ div#scrollToBottom:hover {
 a.inline-roll.blindroll {
     color: var(--pfui-main-color);
     background: #61180e;
-    border-color: var(--glassy);
+    padding: 0px 3px;
+    border: 2px solid var(--glassy);
+    box-shadow: var(--glassy);
+    border-radius: 3px;
 }
 
 a.content-link.broken {
@@ -793,6 +796,7 @@ a.content-link.broken {
     background: #61180e;
     padding: 0px 3px;
     border: 2px solid var(--glassy);
+    box-shadow: var(--glassy);
     border-radius: 3px;
 }
 #chat-log .pf2e.chat-card a.inline-check, span[data-pf2-action] {
@@ -800,6 +804,7 @@ a.content-link.broken {
     background: #61180e;
     padding: 0px 3px;
     border: 2px solid var(--glassy);
+    box-shadow: var(--glassy);
     border-radius: 3px;
 }
 #chat-log a.content-link, a.inline-roll {
@@ -807,6 +812,7 @@ a.content-link.broken {
     background: #61180e;
     padding: 0px 3px;
     border: 2px solid var(--glassy);
+    box-shadow: var(--glassy);
     border-radius: 3px;
 }
 #chat-log .message [data-visibility="gm"]:is(div,em,p,span,strong) {
