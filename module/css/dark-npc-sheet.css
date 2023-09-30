@@ -1,7 +1,6 @@
 /* A bunch of disgusting CSS overrides that hit the system's CSS like a hammer to remove as much colour as possible */
 
 .dark-npc-theme {
-    --alt:#786452;
     --pfui-main-color: #cfbda7;
     --pfui-main-grey-color: #98968a;
     --green: #91a82a;
@@ -13,6 +12,7 @@
     --highlight: 0 0 0 1px var(--pfui-main-color), 0 0 0 2px #93d1d3, inset 0 0 4px rgba(255, 255, 255, 0.25);
     --glass-bg: rgba(20, 20, 20, 0.6);
     --glass-bg-light: rgba(255, 255, 255, 0.1);
+    --glass-bg-light-2: #3f342b;
     --glass-bg-dark: rgba(0, 0, 0, 0.7);
     --glassy: 0px 0px 3px 0px rgba(255, 255, 255, 0.4) inset, 0px 0px 2px 1px rgba(0, 0, 0, 1), 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
 	--primary-remaster: hsl(153, 100%, 8%);
@@ -29,6 +29,9 @@
     --text-light: var(--pfui-main-color);
     --sidebar-label: var(--pfui-main-color);
     --sidebar-title: var(--pfui-main-color);
+    
+    --alt: var(--background);
+    --sub: var(--background);
 
     --rarity-common: #7e7e7e;
     --rarity-uncommon: #ff6400;
@@ -209,6 +212,11 @@
     padding: 0px 3px;
     border: 2px solid var(--glassy);
     border-radius: 3px;
+}
+.dark-npc-theme.actor.npc .item-image:hover i {
+    background: var(--green);
+    color: var(--background);
+    box-shadow: 0 0 6px inset var(--glass-bg);
 }
 
 

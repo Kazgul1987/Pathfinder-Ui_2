@@ -4,6 +4,12 @@
 - Ready for v11 version.
 
 
+
+## v11.311.1
+- Update Compatibility PF2e v5.6.2.
+- Add Dark Theme for Kingdom Sheet.
+- Add PF2e Party Sheet Helper Compatibility.
+
 ## v11.309.8
 - Update Compatibility PF2e v5.6.1
 - Update Compatibility Kingmaker Module.

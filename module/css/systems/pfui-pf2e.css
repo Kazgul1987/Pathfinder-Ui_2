@@ -150,6 +150,16 @@
     border-bottom: 2px dotted var(--border-color);
 }
 
+.pf2e.chat-card.kingdom .confirmation {
+    background: none;
+    border: none;
+    background-color: var(--green);
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15), inset 0 0 0 2px rgba(0, 0, 0, 0.4);
+    text-shadow: 0 0 1px black;
+    color: var(--background);
+    border-radius: 15px;
+}
+
 .system-pf2e #effects-panel {
     margin-top: 5px;
     margin-right: -10px;
@@ -1183,3 +1193,7 @@ button.half-damage .fa-heart-broken::after {
 /*-------------------------------------------------*/
 
 /* A bunch of disgusting CSS overrides that hit the system's CSS like a hammer to remove as much colour as possible */
+
+#pf2e-party-sheet-helper .sheet.party [data-tab=overview] .summary nav label {
+    color: darkgoldenrod;
+}

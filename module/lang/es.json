@@ -14,6 +14,9 @@
     "RPGUI.SETTINGS.DARKHAZARDSHEET":"Hazard Sheet Color",
     "RPGUI.SETTINGS.DARKHAZARDSHEET_HINT":"Select original or dark sheet.",
 
+    "RPGUI.SETTINGS.DARKKINGDOMSHEET":"Kingdom Sheet Color",
+    "RPGUI.SETTINGS.DARKKINGDOMSHEET_HINT":"Select original or dark sheet.",
+
     "RPGUI.SETTINGS.TOKEN_EFFECT_HUD": "Adjust token effects HUD?",
     "RPGUI.SETTINGS.TOKEN_EFFECT_HUD_HINT": "Makes effects circular and arranges them outside the token, or on the token ring for larger tokens",
    

@@ -1,7 +1,6 @@
 /* A bunch of disgusting CSS overrides that hit the system's CSS like a hammer to remove as much colour as possible */
 
 .dark-party-theme {
-    --alt:#786452;
     --pfui-main-color: #cfbda7;
     --pfui-main-grey-color: #98968a;
     --green: #91a82a;
@@ -13,6 +12,7 @@
     --highlight: 0 0 0 1px var(--pfui-main-color), 0 0 0 2px #93d1d3, inset 0 0 4px rgba(255, 255, 255, 0.25);
     --glass-bg: rgba(20, 20, 20, 0.6);
     --glass-bg-light: rgba(255, 255, 255, 0.1);
+    --glass-bg-light-2: #3f342b;
     --glass-bg-dark: rgba(0, 0, 0, 0.7);
     --glassy: 0px 0px 3px 0px rgba(255, 255, 255, 0.4) inset, 0px 0px 2px 1px rgba(0, 0, 0, 1), 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
 	--primary-remaster: hsl(153, 100%, 8%);
@@ -29,6 +29,9 @@
     --text-light: var(--pfui-main-color);
     --sidebar-label: var(--pfui-main-color);
     --sidebar-title: var(--pfui-main-color);
+    
+    --alt: var(--background);
+    --sub: var(--background);
 
     --rarity-common: #7e7e7e;
     --rarity-uncommon: #ff6400;
@@ -54,7 +57,7 @@
 .dark-party-theme.sheet.party form > header {
     color: var(--pfui-main-color) !important;
     background: radial-gradient(var(--primary-remaster), transparent);
-    box-shadow: 0 0 6px inset #3f342b;
+    box-shadow: 0 0 6px inset var(--glass-bg-light-2);
     border-radius: 3px;
 }
 .dark-party-theme.sheet.party form > header .details .name {
@@ -75,9 +78,14 @@
 }
 .dark-party-theme.sheet.party nav.sub-nav a.active, .dark-party-theme.sheet.party nav.sub-nav .tab.active {
     color: var(--green);
+    text-shadow: 0 0 5px var(--color-shadow-primary);
 }
 .dark-party-theme.sheet.party nav.sub-nav a, .dark-party-theme.sheet.party nav.sub-nav .tab {
     color: var(--pfui-main-color);
+}
+.dark-party-theme.sheet.party nav.sub-nav a:hover, .dark-party-theme.sheet.partynav.sub-nav .tab:hover {
+    color: var(--green);
+    text-shadow: 0 0 5px var(--color-shadow-primary);
 }
 .dark-party-theme.sheet.party a.inline-check[data-pf2-traits*=secret], span[data-pf2-check][data-pf2-traits*=secret] {
     color: var(--pfui-main-color);
@@ -107,6 +115,12 @@
     border: 2px solid var(--glassy);
     border-radius: 3px;
 }
+.dark-party-theme.sheet.party .item-image:hover i {
+    background: var(--green);
+    color: var(--background);
+    box-shadow: 0 0 6px inset var(--glass-bg);
+}
+
 
 
 
@@ -115,7 +129,7 @@
 .dark-party-theme.sheet.party [data-tab=overview] .summary {
     color: var(--pfui-main-color);
     background: radial-gradient(var(--background-2), transparent);
-    box-shadow: 0 0 6px inset #3f342b;
+    box-shadow: 0 0 6px inset var(--glass-bg-light-2);
     border-radius: 3px;
     border-image-source: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='33' height='33' overflow='scroll'%3E%3Cstyle%3E.st1{stroke:wheat;stroke-miterlimit:10}.st1,.st2{fill:none}%3C/style%3E%3Cg opacity='0.75'%3E%3Cpath class='st1' d='M.5 20v-7'/%3E%3Cpath class='st2' d='M13 20v-7'/%3E%3Cpath class='st1' d='M13 .5h7'/%3E%3Cpath class='st2' d='M13 13h7'/%3E%3Cpath class='st1' d='M32.5 13v7'/%3E%3Cpath class='st2' d='M20 13v7'/%3E%3Cpath class='st1' d='M20 32.5h-7'/%3E%3Cpath class='st2' d='M20 20h-7'/%3E%3Cpath class='st1' d='M.5.5h3.1v3.1H.5zm3.1 3.1h3.1v3.1H3.6zm3.2 0h3.1v3.1H6.8zM3.6 6.8h3.1v3.1H3.6zm0 0H.5V13M13 .5H6.8v3.1M29.4.5h3.1v3.1h-3.1zm-3.1 3.1h3.1v3.1h-3.1zm0 3.2h3.1v3.1h-3.1zm-3.2-3.2h3.1v3.1h-3.1zm3.2 0V.5H20M32.5 13V6.8h-3.1M29.4 29.4h3.1v3.1h-3.1z'/%3E%3Cpath class='st1' d='M26.3 26.3h3.1v3.1h-3.1zm-3.2 0h3.1v3.1h-3.1zm3.2-3.2h3.1v3.1h-3.1z'/%3E%3Cpath class='st1' d='M29.4 26.3h3.1V20M20 32.5h6.3v-3.1'/%3E%3Cg%3E%3Cpath class='st1' d='M.5 29.4h3.1v3.1H.5zm3.1-3.1h3.1v3.1H3.6zm0-3.2h3.1v3.1H3.6zm3.2 3.2h3.1v3.1H6.8zM6.8 29.4v3.1H13M.5 20v6.3h3.1'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
@@ -148,7 +162,7 @@
     color: var(--pfui-main-color);
     border: 1px dotted var(--background-2);
     background: radial-gradient(var(--background-2), transparent);
-    box-shadow: 0 0 6px inset #3f342b;
+    box-shadow: 0 0 6px inset var(--glass-bg-light-2);
     border-radius: 3px;
 }
 .dark-party-theme.sheet.party [data-tab=overview] .member > .data header .blurb {
@@ -250,7 +264,7 @@
 .dark-party-theme.sheet.party .sidebar .box header {
     color: var(--pfui-main-color);
     background: radial-gradient(var(--primary-light-remaster), var(--primary-remaster));
-    box-shadow: 0 0 6px inset #3f342b;
+    box-shadow: 0 0 6px inset var(--glass-bg-light-2);
     border-radius: 3px;
 }
 .dark-party-theme.sheet.party .sidebar .box-list {
@@ -390,4 +404,26 @@
 }
 .dark-party-theme.sheet.party.actor.sheet .inventory .item-summary {
     background: none;
+}
+
+.dark-party-theme.sheet.party [data-tab=overview] .summary nav label {
+    color: darkgoldenrod;
+}
+
+
+
+/* PF2e Party Sheet Helper
+*******************************/
+.dark-party-theme.sheet.party .dark input, .dark select {
+    color: var(--pfui-main-color);
+    border: none;
+    background: none;
+    background-color: var(--glass-bg);
+    box-shadow: var(--glassy);
+    text-shadow: 0 0 3px black;
+    border-radius: 3px;
+}
+.dark-party-theme.sheet.party option, optgroup {
+    color: var(--pfui-main-color);
+    background-color: var(--glass-bg-dark);
 }

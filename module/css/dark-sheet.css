@@ -12,6 +12,7 @@
     --highlight: 0 0 0 1px var(--pfui-main-color), 0 0 0 2px #93d1d3, inset 0 0 4px rgba(255, 255, 255, 0.25);
     --glass-bg: rgba(20, 20, 20, 0.6);
     --glass-bg-light: rgba(255, 255, 255, 0.1);
+    --glass-bg-light-2: #3f342b;
     --glass-bg-dark: rgba(0, 0, 0, 0.7);
     --glassy: 0px 0px 3px 0px rgba(255, 255, 255, 0.4) inset, 0px 0px 2px 1px rgba(0, 0, 0, 1), 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
 	--primary-remaster: hsl(153, 100%, 8%);
@@ -147,7 +148,7 @@
 .sheet.actor.character.dark-theme .crb-style .sheet-body .sheet-content ol.directory-list .action-header {
     color: var(--pfui-main-color) !important;
     background: var(--background);
-    box-shadow: 0 0 6px inset #3f342b!important;
+    box-shadow: 0 0 6px inset var(--glass-bg-light-2)!important;
 }
 
 .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.character .attributes .attribute h3.modifier {
@@ -409,9 +410,11 @@
 
 .actor.sheet.dark-theme .crb-style nav.sub-nav a.active, .actor.sheet.dark-theme .crb-style nav.sub-nav .tab.active {
     color: var(--green) !important;
+    text-shadow: 0 0 5px var(--color-shadow-primary);
 }
 
 .actor.sheet.dark-theme .crb-style nav.sub-nav a:hover, .actor.sheet.dark-theme .crb-style nav.sub-nav .tab:hover {
+    color: var(--green)!important;
     text-shadow: 0 0 3px var(--red-light) !important;
 }
 
@@ -571,7 +574,7 @@
 .actor.sheet.dark-theme .crb-style .sheet-body .sheet-content ol.spell-list > li.spell-level-header {
     background: radial-gradient(var(--background-2), transparent);
     border: 1px dotted rgba(255, 255, 255, 0.2);
-    box-shadow: 0 0 6px inset #3f342b;
+    box-shadow: 0 0 6px inset var(--glass-bg-light-2);
 }
 
 .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.spellcasting .spellcasting-entry .rollable .d20-svg path {
@@ -644,7 +647,7 @@ color: var(--green)!important;
 .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.proficiencies .skills-list .skill, .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.proficiencies .lores-list .skill, .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.proficiencies .combat-list .skill {
     background: radial-gradient(var(--background-2), transparent);
     border: 1px dotted var(--background-2);
-    box-shadow: 0 0 6px inset #3f342b;
+    box-shadow: 0 0 6px inset var(--glass-bg-light-2);
 }
 
 .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.proficiencies h1, .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.proficiencies h4, .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.proficiencies h6 {
@@ -996,9 +999,6 @@ color: var(--green)!important;
 .remaster.actor.sheet.dark-theme a:hover {
     text-shadow: 0 0 8px var(--primary-light-remaster) !important;
 }
-.remaster.actor.sheet.dark-theme button:hover, button:focus {
-    box-shadow: 0 0 5px var(--primary-remaster);
-}
 .remaster.actor.sheet.dark-theme .crb-style .sheet-body .sheet-content ol.directory-list .action-header {
     background: var(--primary-remaster);
 }
@@ -1071,7 +1071,7 @@ color: var(--green)!important;
 .remaster.actor.sheet.dark-theme .crb-style .sheet-body .sheet-content ol.spell-list > li.spell-level-header {
     background: radial-gradient(var(--primary-remaster), var(--primary-light-remaster));
     border: 1px dotted rgba(255, 255, 255, 0.2);
-    box-shadow: 0 0 6px inset #3f342b;
+    box-shadow: 0 0 6px inset var(--glass-bg-light-2);
     border-radius: 3px;
 }
 .remaster.actor.sheet.dark-theme .inventory .item-summary {
