@@ -5,6 +5,11 @@
 
 
 
+## v11.311.2
+- Update core code.
+- Add Token Health Compatibility.
+- Fix Scene list variant (GM/Player).
+
 ## v11.311.1
 - Update Compatibility PF2e v5.6.2.
 - Add Dark Theme for Kingdom Sheet.
