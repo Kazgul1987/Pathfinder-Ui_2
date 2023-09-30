@@ -30,7 +30,7 @@
     --sidebar-label: var(--pfui-main-color);
     --sidebar-title: var(--pfui-main-color);
     
-    --alt: var(--background);
+    --alt: #786452;
     --sub: var(--background);
 
     --rarity-common: #7e7e7e;
@@ -38,7 +38,6 @@
     --rarity-rare: #0062ff;
     --rarity-unique: #e127e1;
 }
-
 
 
 /************************/
