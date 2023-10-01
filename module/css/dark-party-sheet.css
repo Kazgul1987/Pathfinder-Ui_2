@@ -111,7 +111,7 @@
     box-shadow: var(--glassy);
     border-radius: 3px;
 }
-.dark-party-theme.sheet.party a.content-link, a.inline-roll {
+.dark-party-theme.sheet.party a.content-link, .dark-party-theme.sheet.party a.inline-roll {
     color: var(--pfui-main-color);
     background: #61180e;
     padding: 0px 3px;

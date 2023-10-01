@@ -59,7 +59,7 @@
     border-radius: 3px;
     backdrop-filter: blur(5px);
 }
-.dark-npc-theme.actor.npc .disabled {
+.dark-npc-theme.actor.npc form .disabled {
     color: darkgoldenrod;
     border-color: var(--color-disabled);
 }
@@ -208,7 +208,7 @@
     box-shadow: var(--glassy);
     border-radius: 3px;
 }
-.dark-npc-theme.actor.npc a.content-link, a.inline-roll {
+.dark-npc-theme.actor.npc a.content-link, .dark-npc-theme.actor.npc a.inline-roll {
     color: var(--pfui-main-color);
     background: #61180e;
     padding: 0px 3px;

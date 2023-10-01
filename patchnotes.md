@@ -5,8 +5,9 @@
 
 
 
-## v11.311.4
+## v11.311.5
 - Update core code.
+- Update all Dark Sheets.
 - Add Token Health Compatibility.
 - Fix Scene list variant (GM/Player).
 

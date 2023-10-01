@@ -86,7 +86,7 @@
     box-shadow: var(--glassy);
     border-radius: 3px;
 }
-.actor.sheet.dark-theme a.content-link, a.inline-roll {
+.actor.sheet.dark-theme a.content-link, .actor.sheet.dark-theme a.inline-roll {
     color: var(--pfui-main-color);
     background: #61180e;
     padding: 0px 3px;
@@ -388,10 +388,10 @@
 .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.actions ol.actions-list li.strike .button-group .versatile-options button.selected > .icon {
     color:black;
 }
-:root .damage.color.slashing .icon {
+:root .actor.sheet.dark-theme .damage.color.slashing .icon {
     color:var(--pfui-main-color);
 }
-:root .damage.color.piercing .icon {
+:root .actor.sheet.dark-theme .damage.color.piercing .icon {
     color:var(--pfui-main-color);
 }
 .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.actions .actions-container .actions-tabs-wrapper .actions-panels ol.actions-list.strikes-list li.strike .button-group .versatile-options button.selected {
@@ -598,6 +598,7 @@ color: var(--green)!important;
 }
 .actor.sheet.dark-theme .crb-style .sheet-body .sheet-content ol.spell-list > li.spell-level-header input, .actor.sheet.dark-theme .crb-style .sheet-body .sheet-content ol.spell-list > li .uses input {
     color: var(--green)!important;
+    background: none;
     border-radius: 50%;
     border: 4px dotted var(--background-2);
 }
@@ -847,7 +848,7 @@ color: var(--green)!important;
 }
 .red.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content h3.header button {
     background: radial-gradient(darkred, var(--red));
-    border: 1px solid var(--red)!important;
+    border: 1px solid var(--red);
 }
 .red.actor.sheet.character .crb-style .sheet-body .sheet-content .tab.character .attributes .attribute h3.modifier {
     background: radial-gradient(var(--red), transparent)!important;

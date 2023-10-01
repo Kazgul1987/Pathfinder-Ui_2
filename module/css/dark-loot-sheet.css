@@ -118,7 +118,7 @@
     box-shadow: var(--glassy);
     border-radius: 3px;
 }
-.dark-loot-theme.sheet.actor.loot a.content-link, a.inline-roll {
+.dark-loot-theme.sheet.actor.loot a.content-link, .dark-loot-theme.sheet.actor.loot a.inline-roll {
     color: var(--pfui-main-color);
     background: #61180e;
     padding: 0px 3px;

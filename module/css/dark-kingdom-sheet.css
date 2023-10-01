@@ -119,7 +119,7 @@ filter: grayscale(0.75);
 }
 
 /*Government*/
-.sheet.kingdom-builder a.content-link, a.inline-roll {
+.sheet.kingdom-builder a.content-link, .sheet.kingdom-builder a.inline-roll {
     color: var(--pfui-main-color);
     background: #61180e;
     padding: 0px 3px;
@@ -281,7 +281,7 @@ filter: grayscale(0.75);
     box-shadow: var(--glassy);
     border-radius: 3px;
 }
-.dark-kingdom-theme.sheet.kingdom a.content-link, a.inline-roll {
+.dark-kingdom-theme.sheet.kingdom a.content-link, .dark-kingdom-theme.sheet.kingdom a.inline-roll {
     color: var(--pfui-main-color);
     background: #61180e;
     padding: 0px 3px;

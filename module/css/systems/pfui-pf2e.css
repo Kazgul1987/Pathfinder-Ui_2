@@ -807,7 +807,7 @@ a.content-link.broken {
     box-shadow: var(--glassy);
     border-radius: 3px;
 }
-#chat-log a.content-link, a.inline-roll {
+#chat-log .chat-message a.content-link, .chat-message a.inline-roll {
     color: var(--pfui-main-color);
     background: #61180e;
     padding: 0px 3px;
