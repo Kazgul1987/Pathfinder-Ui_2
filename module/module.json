@@ -45,6 +45,12 @@
     "css/dark-hazard-sheet.css",
     "css/dark-kingdom-sheet.css"
   ],
+  "media": [
+    {
+        "type": "setup",
+        "caption": "PF2e Pathfinder Ui v3",
+        "thumbnail": "/modules/pathfinder-ui/ui/artwork/pfrpg-thumb.webp"
+    }],
   "languages": [
     {
       "lang": "en",

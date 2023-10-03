@@ -4,6 +4,12 @@
 - Ready for v11 version.
 
 
+## v11.311.6
+- Update core code.
+- Update Dice Tray Compatibility.
+- Update Polyglot Compatibility.
+- Update Monk Hotbar Compatibility.
+- Update Utility buttons Compatibility.
 
 ## v11.311.5
 - Update core code.
@@ -23,7 +29,7 @@
 ## v11.309.5
 - Update core code.
 - Update Player Sheet.
-- Update Compatibility with Polyglot.
+- Update Polyglot Compatibility.
 
 ## v11.309.4
 - Update core code.

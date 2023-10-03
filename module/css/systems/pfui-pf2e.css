@@ -18,6 +18,7 @@
     --red-light:#ff0000;
     --green: #91a82a;
     --pfui-main-color: #cfbda7;
+    --pfui-main-grey-color: #98968a;
     --primary-remaster: hsl(153, 100%, 8%);
 	--primary-light-remaster: hsl(170, 96%, 19%);
     --ornement : url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='33' height='33' overflow='scroll'%3E%3Cstyle%3E.st1{stroke:wheat;stroke-miterlimit:10}.st1,.st2{fill:none}%3C/style%3E%3Cg opacity='0.75'%3E%3Cpath class='st1' d='M.5 20v-7'/%3E%3Cpath class='st2' d='M13 20v-7'/%3E%3Cpath class='st1' d='M13 .5h7'/%3E%3Cpath class='st2' d='M13 13h7'/%3E%3Cpath class='st1' d='M32.5 13v7'/%3E%3Cpath class='st2' d='M20 13v7'/%3E%3Cpath class='st1' d='M20 32.5h-7'/%3E%3Cpath class='st2' d='M20 20h-7'/%3E%3Cpath class='st1' d='M.5.5h3.1v3.1H.5zm3.1 3.1h3.1v3.1H3.6zm3.2 0h3.1v3.1H6.8zM3.6 6.8h3.1v3.1H3.6zm0 0H.5V13M13 .5H6.8v3.1M29.4.5h3.1v3.1h-3.1zm-3.1 3.1h3.1v3.1h-3.1zm0 3.2h3.1v3.1h-3.1zm-3.2-3.2h3.1v3.1h-3.1zm3.2 0V.5H20M32.5 13V6.8h-3.1M29.4 29.4h3.1v3.1h-3.1z'/%3E%3Cpath class='st1' d='M26.3 26.3h3.1v3.1h-3.1zm-3.2 0h3.1v3.1h-3.1zm3.2-3.2h3.1v3.1h-3.1z'/%3E%3Cpath class='st1' d='M29.4 26.3h3.1V20M20 32.5h6.3v-3.1'/%3E%3Cg%3E%3Cpath class='st1' d='M.5 29.4h3.1v3.1H.5zm3.1-3.1h3.1v3.1H3.6zm0-3.2h3.1v3.1H3.6zm3.2 3.2h3.1v3.1H6.8zM6.8 29.4v3.1H13M.5 20v6.3h3.1'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
@@ -226,6 +227,7 @@
     background-color: var(--glass-bg);
     box-shadow: var(--glassy);
     border: 1px solid var(--color-border-dark);
+    backdrop-filter: blur(3px);
 }
 #hotbar .hotbar-page .action-bar {
     margin: 0px 5px 0px 3px;
@@ -237,7 +239,9 @@
     box-shadow: var(--glassy);
     border: 1px solid var(--color-border-dark);
 }
-
+#hotbar .macro-list {
+    backdrop-filter: blur(3px);
+}
 #hotbar .hotbar-page .macro-list {
     gap: 7.5px;
     border: none;
@@ -252,7 +256,8 @@
     transition: text-shadow 0.15s ease-in-out, background-color 0.15s ease-in-out, border 0.15s ease-in-out, color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, backdrop-filter 0.15s ease-in-out, border-radius 0.15s;
     background: radial-gradient(var(--background-2), transparent);
     box-shadow: var(--glassy);
-    color: #837360;
+    color: var(--pfui-main-grey-color);
+    backdrop-filter: blur(5px);
 }
 #fc-container button:hover {
     border: none;
@@ -273,7 +278,7 @@
     background: radial-gradient(var(--background-2), transparent);
     border: none;
     border-radius: 30px;
-    color: #837360;
+    color: var(--pfui-main-grey-color);
     box-shadow: var(--glassy);
     cursor: pointer;
 }

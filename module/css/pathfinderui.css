@@ -43,7 +43,7 @@
 /*============ Background/Pause img / Logo ==================*/
 /*************************************************************/
 body {
-    background-image: url(../pfrpg-background.webp);
+    background-image: url(../ui/artwork/pfrpg-background.webp);
     background-size: cover;
 }
 
@@ -75,6 +75,9 @@ body {
 
     --background: #100d0d;
     --background-2: #ffffff14;
+
+    --primary-remaster: hsl(153, 100%, 8%);
+	--primary-light-remaster: hsl(170, 96%, 19%);
 
 }
 
@@ -586,32 +589,60 @@ body.compact-mode #logo {
 .polyglot-lang-select input:checked {
     accent-color: var(--glass-bg);
 }
-.polyglot-lang-select select {
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: var(--pfui-main-color);
+}
+.polyglot-lang-select span.select2-selection {
     font-family: Taroca;
     font-size: 14px;
     text-align: center;
     position: relative;
-    height: 24px;
-    bottom: 2px;
-    margin: 0 3px 0 0;
+    bottom: 1px;
     border: 1px solid #000;
     background: radial-gradient(var(--background-2), transparent);
     box-shadow: var(--glassy);
-    color: var(--pfui-main-color);
+    border-radius: 3px;
+    backdrop-filter: blur(5px);
+}
+.select2-search--dropdown {
+    background: var(--background);
+    box-shadow: var(--glassy);
     border-radius: 3px;
 }
-.polyglot-lang-select input[type="checkbox"] {
-    flex: 0 0 16px;
-    width: 16px;
-    height: 16px;
+.select2-container--default .select2-search--dropdown .select2-search__field {
+    color: var(--pfui-main-color);
+    background: radial-gradient(var(--primary-remaster), var(--glass-bg-dark));
+    border: none;
+    box-shadow: var(--glassy);
+    text-shadow: 0 0 1px black;
+    border-radius: 3px;
+    backdrop-filter: blur(5px);
 }
-.polyglot-user-list {
-    display: inline-flex;
-    max-width: max-content;
-    margin: auto;
-    flex-wrap: wrap;
-    justify-content: center;
+.select2-container--default .select2-results>.select2-results__options {
+    color: var(--pfui-main-color);
+    background: var(--background);
+    box-shadow: var(--glassy);
 }
+.select2-container--default .select2-results__option--selected {
+    color: var(--pfui-main-color);
+    border: none;
+    background: none;
+    background-color: var(--glass-bg);
+    box-shadow: var(--glassy);
+    text-shadow: 0 0 3px black;
+    border-radius: 3px;
+}
+.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
+    color: var(--pfui-main-color);
+    border: none;
+    background: none;
+    background-color: var(--glass-bg);
+    box-shadow: var(--glassy);
+    text-shadow: 0 0 3px black;
+    border-radius: 3px;
+}
+/*polyglot end*/
+
 .roll-type-select {
     font-family: Taroca;
     font-size: 14px;
@@ -625,6 +656,7 @@ body.compact-mode #logo {
     color: var(--pfui-main-color);
     border-radius: 3px;
     margin: 0px 3px 0px 3px!important;
+    backdrop-filter: blur(5px);
 }
 
 #sidebar .sidebar-tab option, optgroup {
@@ -842,6 +874,7 @@ body.compact-mode #logo {
     border-radius: 50%;
     border: 2px solid var(--border-color-2);
     box-shadow: rgb(0, 0, 0) 0px 0px 10px 0px;
+    backdrop-filter: blur(3px);
 }
 
 .hotbar-page {
@@ -903,13 +936,14 @@ body.compact-mode #logo {
 }
 
 .dice-tray button svg * {
-    fill: #837360;
+    fill: var(--pfui-main-grey-color);
 }
 
 .dice-tray button {
     background: radial-gradient(var(--background-2), transparent);
     box-shadow: var(--glassy);
-    color: #837360;
+    color: var(--pfui-main-grey-color);
+    backdrop-filter: blur(5px);
 }
 .dice-tray input[type="text"] {
     background: radial-gradient(var(--background-2), transparent);
@@ -982,7 +1016,9 @@ nav.damage-log-nav .item.active:before,
 }
 
 /* CONTROLS */
-
+#controls {
+    padding: 10px 15px;
+}
 #controls ol .scene-control,
 #controls ol .control-tool {
     background: none;
@@ -995,8 +1031,10 @@ nav.damage-log-nav .item.active:before,
 #controls ol .control-tool.active,
 #controls ol .scene-control:hover,
 #controls ol .control-tool:hover {
-    border: none;
-    box-shadow: none;
+    color: var(--pfui-main-color)!important;
+    background: url(../ui/buttons/controls_btn_accent.webp);
+    border: none!important;
+    box-shadow: none!important;
 }
 
 #controls ol .scene-control.active:before,
