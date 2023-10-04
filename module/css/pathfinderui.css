@@ -589,8 +589,16 @@ body.compact-mode #logo {
 .polyglot-lang-select input:checked {
     accent-color: var(--glass-bg);
 }
+.polyglot-user-list div {
+    border-radius: unset;
+    border: 1px solid var(--background);
+    margin: unset;
+}
 .select2-container--default .select2-selection--single .select2-selection__rendered {
-    color: var(--pfui-main-color);
+    color: var(--pfui-main-color)!important;
+}
+.polyglot-lang-select .select2-container--default .select2-selection--single .select2-selection__arrow b {
+    border-color: var(--pfui-main-color) transparent transparent transparent;
 }
 .polyglot-lang-select span.select2-selection {
     font-family: Taroca;
@@ -641,6 +649,7 @@ body.compact-mode #logo {
     text-shadow: 0 0 3px black;
     border-radius: 3px;
 }
+
 /*polyglot end*/
 
 .roll-type-select {
