@@ -77,28 +77,23 @@
 .system-pf2e .directory .directory-list {
     padding: 0 0 0 5px;
 }
-.system-pf2e .jump-to-bottom {
-    padding: 10px;
-    border: none;
+.system-pf2e section.chat-sidebar .jump-to-bottom > a {
+    color: var(--pfui-main-color);
     border-radius: 20px;
     background: var(--red);
-    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15), inset 0 0 0 2px rgba(0, 0, 0, 0.4);
+    border: none;
+    box-shadow: var(--glassy);
     transition: text-shadow 0.15s ease-in-out, background-color 0.15s ease-in-out, border 0.15s ease-in-out, color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, backdrop-filter 0.15s ease-in-out, border-radius 0.15s;
     z-index: 1;
-    z-index: 1;
-    flex: 0 0 30px;
-    margin-left: 50px;
-    width: calc(100% - 100px);
-    text-shadow: none;
-    color: var(--pfui-main-color);
-    position: unset;
+    backdrop-filter: blur(5px);
+    text-shadow: 0px 0px 3px black;
+    font-size: large;
 }
-.system-pf2e .jump-to-bottom:hover {
-    color: var(--red)!important;
-    background: var(--green)!important;
-}
-.system-pf2e .jump-to-bottom:hover a {
-    text-shadow: none;
+
+.system-pf2e section.chat-sidebar .jump-to-bottom:hover a {
+    color: var(--background);
+    background: var(--green);
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15), inset 0 0 0 2px rgba(0, 0, 0, 0.4);
 }
 
 .system-pf2e .sheet.actor:not(.loot-sheet-npc),

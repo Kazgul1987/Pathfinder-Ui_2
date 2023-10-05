@@ -4,9 +4,10 @@
 - Ready for v11 version.
 
 
-## v11.313.1.1
+## v11.313.2
 - Update core code.
-- fix some minor oversights. 
+- Fix some minor oversights.
+- Fix the problem with the jump button.
 
 ## v11.313.1
 - Update core code.
