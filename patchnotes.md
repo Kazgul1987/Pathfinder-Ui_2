@@ -4,6 +4,10 @@
 - Ready for v11 version.
 
 
+## v11.313.1.1
+- Update core code.
+- fix some minor oversights. 
+
 ## v11.313.1
 - Update core code.
 - Update Dice Tray Compatibility.

@@ -709,11 +709,13 @@ body.compact-mode #logo {
 #sidebar .directory .directory-header .header-search input::placeholder {
     color: var(--pfui-main-color)
 }
-#sidebar hr {
+
+hr {
     border: none;
     border-top: 1px dotted #675241;
-    /*border-bottom: 1px solid #675241;*/
+    border-bottom:unset;
 }
+
 
 #settings h2 {
     color: var(--pfui-main-color);
@@ -1137,6 +1139,7 @@ nav.damage-log-nav .item.active:before,
     font-family: 'Kurale', serif;
     font-weight: 600;
     color: var(--border-color-2);
+    background: transparent;
     border: none!important;
     position: relative;
     box-shadow: none;
