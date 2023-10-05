@@ -427,7 +427,7 @@
     text-shadow: 0 0 3px black;
     border-radius: 3px;
 }
-.dark-party-theme.sheet.party option, optgroup {
+.dark-party-theme.sheet.party option, .dark-party-theme.sheet.party optgroup {
     color: var(--pfui-main-color);
     background-color: var(--glass-bg-dark);
 }

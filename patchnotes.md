@@ -4,7 +4,7 @@
 - Ready for v11 version.
 
 
-## v11.311.7
+## v11.311.8
 - Update core code.
 - Update Dice Tray Compatibility.
 - Update Polyglot Compatibility.
