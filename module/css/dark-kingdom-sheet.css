@@ -196,9 +196,6 @@ filter: grayscale(0.75);
 
 /*Kingdom-sheet     
 /************************/
-.system-pf2e .dark-kingdom-theme.sheet.kingdom:not(.loot-sheet-npc), .system-pf2e .sheet.item {
-    height: 632px!important;
-}
 .dark-kingdom-theme.sheet.kingdom .window-content {
     color: var(--pfui-main-color);
     background: none;
