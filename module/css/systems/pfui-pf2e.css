@@ -672,6 +672,7 @@ wrapper.pf2e-td.name-left .pf2e-td.damage-application {
 }
 
 #chat-log .tags .tag.tag_transparent, #chat-log .tags .tag option.tag_transparent {
+    color: var(--background);
     background-color: var(--green);
 }
 

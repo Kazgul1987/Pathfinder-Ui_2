@@ -668,7 +668,7 @@ body.compact-mode #logo {
     backdrop-filter: blur(5px);
 }
 
-#sidebar .sidebar-tab option, optgroup {
+#sidebar .sidebar-tab option, .sidebar-tab optgroup {
     color: var(--pfui-main-color);
     background: var(--background)!important;
 }

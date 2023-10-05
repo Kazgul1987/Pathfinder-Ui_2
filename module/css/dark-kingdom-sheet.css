@@ -158,7 +158,7 @@ filter: grayscale(0.75);
     text-shadow: 0 0 3px black;
     border-radius: 3px;
 }
-.sheet.kingdom-builder .ability-builder .summary-row .hint-container .aspiration select option, optgroup {
+.sheet.kingdom-builder .ability-builder .summary-row .hint-container .aspiration select option, .sheet.kingdom-builder .ability-builder .summary-row .hint-container .aspiration select optgroup {
     background: var(--glass-bg-dark) ;
 }
 .sheet.kingdom-builder .ability-builder .summary-row .row-column .value {
@@ -454,7 +454,7 @@ filter: grayscale(0.75);
     text-shadow: 0 0 3px black;
     border-radius: 3px;
 }
-.dark-kingdom-theme.sheet.kingdom .tab.active[data-tab=world] .settlement .item-name select option, optgroup {
+.dark-kingdom-theme.sheet.kingdom .tab.active[data-tab=world] .settlement .item-name select option, .dark-kingdom-theme.sheet.kingdom .tab.active[data-tab=world] .settlement .item-name select optgroup {
     background: var(--glass-bg-dark);
 }
 .dark-kingdom-theme.sheet.kingdom .tab.active[data-tab=world] .settlement .item-name .level input[type=number] {
