@@ -109,6 +109,9 @@
     text-shadow: 0 0 1px black;
     border-radius: 3px;
 }
+.dark-npc-theme.actor.npc form select option {
+    background-color: var(--glass-bg-dark);
+}
 .dark-npc-theme.actor.npc .tags .tag.tag_transparent, .dark-npc-theme.actor.npc .tags .tag option.tag_transparent {
     background-color: var(--red);
 
@@ -358,7 +361,7 @@
     margin: 5px 2px!important;
     backdrop-filter: blur(5px);
 }
-.dark-npc-theme.actor.npc .entries-list .spellcasting-entry .spell-level-header input {
+.dark-npc-theme.actor.npc form .sheet-body .entries-list .spellcasting-entry .spell-level-header input {
     color: var(--pfui-main-color);
     border: none;
     background: none;
