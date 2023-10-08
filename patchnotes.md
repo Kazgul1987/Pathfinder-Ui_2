@@ -4,6 +4,10 @@
 - Ready for v11 version.
 
 
+## v11.313.3
+- Update core code.
+- Fix the problem with Firefox and the Webcam.
+
 ## v11.313.2.1
 - Update core code.
 - Fix some minor oversights.
