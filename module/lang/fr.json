@@ -23,6 +23,9 @@
     "RPGUI.SETTINGS.TOKEN_HUD": "Désactiver PF2e Interactive Token Tooltip Sombre ?",
     "RPGUI.SETTINGS.TOKEN_HUD_HINT": "Désactive le thème sombre de PF2e Interactive Token Tooltip en remettant celui par défaut",
 
+    "RPGUI.SETTINGS.SIMPLY_PORTRAITS": "Taille du Portrait (px)",
+    "RPGUI.SETTINGS.SIMPLY_PORTRAITS_HINT": "Largeur et hauteur des portraits affichés dans le Chat en Pixels. (Mettre 0 pour cacher les portraits)",
+
     "RPGUI.SETTINGS.HIGHLIGHT_GM_OWNER_TEXT": "Amélioration du constraste dans le chat.",
     "RPGUI.SETTINGS.HIGHLIGHT_GM_OWNER_TEXT_HINT": "Paramètre local qui augmente la visibilité du texte  dans le chat.",
 

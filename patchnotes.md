@@ -4,8 +4,9 @@
 - Ready for v11 version.
 
 
-## v11.313.3
+## v11.313.4
 - Update core code.
+- New Option : Simply Portraits. Set 0 to hide portraits.
 - Fix the problem with Firefox and the Webcam.
 
 ## v11.313.2.1

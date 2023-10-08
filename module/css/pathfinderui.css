@@ -874,13 +874,12 @@ hr {
 }
 
 #hotbar #action-bar .macro {
-    background: #372d2550;
+    background: var(--glass-bg);
     border-radius: 50%;
     border: 2px solid var(--border-color-2);
-    box-shadow: rgb(0, 0, 0) 0px 0px 10px 0px;
-    backdrop-filter: blur(3px);
+    box-shadow: var(--glassy) 0px 0px 10px 0px;
+    backdrop-filter: blur(5px);
 }
-
 .hotbar-page {
     width: calc(var(--hotbar-width) + 72px);
 }

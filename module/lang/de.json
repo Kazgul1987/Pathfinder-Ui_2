@@ -23,6 +23,9 @@
     "RPGUI.SETTINGS.TOKEN_HUD": "Disable Dark PF2e Interactive Token Tooltip?",
     "RPGUI.SETTINGS.TOKEN_HUD_HINT": "Disables the dark theme of PF2e Interactive Token Tooltip by default theme",
 
+    "RPGUI.SETTINGS.SIMPLY_PORTRAITS": "Portrait Size (px)",
+    "RPGUI.SETTINGS.SIMPLY_PORTRAITS_HINT": "The width and height of chat portraits in the chat log, given in pixels. (Set 0 to hide portraits)",
+
     "RPGUI.SETTINGS.HIGHLIGHT_GM_OWNER_TEXT": "Constrast enhancement",
     "RPGUI.SETTINGS.HIGHLIGHT_GM_OWNER_TEXT_HINT": "This is a local setting that will highlight text.",
 

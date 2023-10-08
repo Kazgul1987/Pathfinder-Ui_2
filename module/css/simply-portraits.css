@@ -1,0 +1,7 @@
+.simply-portraits {
+  flex: none;
+  border-width: 1px;
+  border-radius: 50%;
+  margin-right: 5px;
+  box-shadow: var(--glassy);
+}
