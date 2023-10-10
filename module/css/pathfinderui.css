@@ -67,11 +67,14 @@ body {
     --criticalFailure:rgb(247, 59, 59);
     --red: #5e0000;
     --red-light:#ff0000;
+    --border-radius: 3px;
     --border-color: #372d25;
     --border-color-2: #837360;
     --serif: Eczar,Georgia,serif;
     --journal-serif: "Vollkorn",var(--serif);
     --glassy: 0px 0px 3px 0px rgba(255, 255, 255, 0.4) inset, 0px 0px 2px 1px rgba(0, 0, 0, 1), 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+    --glassy-sharp: 0px 0px 0px 1px rgba(255, 255, 255, 0.4) inset, 0px 0px 5px 1px rgba(0, 0, 0, 0.8);
+    --glassy-sharp-highlight: 0px 0px 0px 1px rgba(245, 222, 179, 0.7) inset, 0px 0px 5px 1px rgba(0, 0, 0, 0.8);
 
     --background: #100d0d;
     --background-2: #ffffff14;
@@ -186,7 +189,7 @@ body.compact-mode #logo {
     padding: 0px 3px;
     border: 2px solid var(--glassy);
     box-shadow: var(--glassy);
-    border-radius: 3px;
+    border-radius: var(--border-radius);
 }
 
 #sidebar-tabs > .item:before {
@@ -417,7 +420,7 @@ body.compact-mode #logo {
     box-shadow: var(--glassy);
     color: var(--pfui-main-color);
     border: 1px solid #000;
-    border-radius: 3px;
+    border-radius: var(--border-radius);
     backdrop-filter: blur(5px);
 }
 
@@ -602,13 +605,13 @@ body.compact-mode #logo {
     border: 1px solid #000;
     background: radial-gradient(var(--background-2), transparent);
     box-shadow: var(--glassy);
-    border-radius: 3px;
+    border-radius: var(--border-radius);
     backdrop-filter: blur(5px);
 }
 .select2-search--dropdown {
     background: var(--background);
     box-shadow: var(--glassy);
-    border-radius: 3px;
+    border-radius: var(--border-radius);
 }
 .select2-container--default .select2-search--dropdown .select2-search__field {
     color: var(--pfui-main-color);
@@ -616,7 +619,7 @@ body.compact-mode #logo {
     border: none;
     box-shadow: var(--glassy);
     text-shadow: 0 0 1px black;
-    border-radius: 3px;
+    border-radius: var(--border-radius);
     backdrop-filter: blur(5px);
 }
 .select2-container--default .select2-results>.select2-results__options {
@@ -631,7 +634,7 @@ body.compact-mode #logo {
     background-color: var(--glass-bg);
     box-shadow: var(--glassy);
     text-shadow: 0 0 3px black;
-    border-radius: 3px;
+    border-radius: var(--border-radius);
 }
 .select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
     color: var(--pfui-main-color);
@@ -640,7 +643,7 @@ body.compact-mode #logo {
     background-color: var(--glass-bg);
     box-shadow: var(--glassy);
     text-shadow: 0 0 3px black;
-    border-radius: 3px;
+    border-radius: var(--border-radius);
 }
 
 /*polyglot end*/
@@ -656,7 +659,7 @@ body.compact-mode #logo {
     background: radial-gradient(var(--background-2), transparent)!important;
     box-shadow: var(--glassy);
     color: var(--pfui-main-color);
-    border-radius: 3px;
+    border-radius: var(--border-radius);
     margin: 0px 3px 0px 3px!important;
     backdrop-filter: blur(5px);
 }

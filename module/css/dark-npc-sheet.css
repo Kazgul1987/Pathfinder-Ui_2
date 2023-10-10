@@ -7,6 +7,7 @@
     --blue: #171f69;
     --red: #5e0000;
     --red-light:#ff0000;
+    --border-radius: 3px;
     --background: #100d0d;
     --background-2: #ffffff14;
     --highlight: 0 0 0 1px var(--pfui-main-color), 0 0 0 2px #93d1d3, inset 0 0 4px rgba(255, 255, 255, 0.25);
@@ -15,10 +16,12 @@
     --glass-bg-light-2: #3f342b;
     --glass-bg-dark: rgba(0, 0, 0, 0.7);
     --glassy: 0px 0px 3px 0px rgba(255, 255, 255, 0.4) inset, 0px 0px 2px 1px rgba(0, 0, 0, 1), 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+    --glassy-sharp: 0px 0px 0px 1px rgba(255, 255, 255, 0.4) inset, 0px 0px 5px 1px rgba(0, 0, 0, 0.8);
+    --glassy-sharp-highlight: 0px 0px 0px 1px rgba(245, 222, 179, 0.7) inset, 0px 0px 5px 1px rgba(0, 0, 0, 0.8);
 	--primary-remaster: hsl(153, 100%, 8%);
 	--primary-light-remaster: hsl(170, 96%, 19%);
     --ornement : url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='33' height='33' overflow='scroll'%3E%3Cstyle%3E.st1{stroke:wheat;stroke-miterlimit:10}.st1,.st2{fill:none}%3C/style%3E%3Cg opacity='0.75'%3E%3Cpath class='st1' d='M.5 20v-7'/%3E%3Cpath class='st2' d='M13 20v-7'/%3E%3Cpath class='st1' d='M13 .5h7'/%3E%3Cpath class='st2' d='M13 13h7'/%3E%3Cpath class='st1' d='M32.5 13v7'/%3E%3Cpath class='st2' d='M20 13v7'/%3E%3Cpath class='st1' d='M20 32.5h-7'/%3E%3Cpath class='st2' d='M20 20h-7'/%3E%3Cpath class='st1' d='M.5.5h3.1v3.1H.5zm3.1 3.1h3.1v3.1H3.6zm3.2 0h3.1v3.1H6.8zM3.6 6.8h3.1v3.1H3.6zm0 0H.5V13M13 .5H6.8v3.1M29.4.5h3.1v3.1h-3.1zm-3.1 3.1h3.1v3.1h-3.1zm0 3.2h3.1v3.1h-3.1zm-3.2-3.2h3.1v3.1h-3.1zm3.2 0V.5H20M32.5 13V6.8h-3.1M29.4 29.4h3.1v3.1h-3.1z'/%3E%3Cpath class='st1' d='M26.3 26.3h3.1v3.1h-3.1zm-3.2 0h3.1v3.1h-3.1zm3.2-3.2h3.1v3.1h-3.1z'/%3E%3Cpath class='st1' d='M29.4 26.3h3.1V20M20 32.5h6.3v-3.1'/%3E%3Cg%3E%3Cpath class='st1' d='M.5 29.4h3.1v3.1H.5zm3.1-3.1h3.1v3.1H3.6zm0-3.2h3.1v3.1H3.6zm3.2 3.2h3.1v3.1H6.8zM6.8 29.4v3.1H13M.5 20v6.3h3.1'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-
+    
     --primary: var(--red);
     --secondary: var(--blue);
     --tertiary: var(--pfui-main-color);
@@ -56,7 +59,7 @@
 .dark-npc-theme.actor.npc .npc-sheet-header .name {
     color: var(--pfui-main-color);
     background: var(--glass-bg);
-    border-radius: 3px;
+    border-radius: var(--border-radius);
     backdrop-filter: blur(5px);
 }
 .dark-npc-theme.actor.npc form .disabled {
@@ -90,7 +93,7 @@
     background-color: var(--glass-bg);
     box-shadow: var(--glassy);
     text-shadow: 0 0 1px black;
-    border-radius: 3px;
+    border-radius: var(--border-radius);
 }
 .dark-npc-theme.actor.npc form input[type=text]:hover:not(:disabled), .dark-npc-theme.actor.npc form input[type=text]:focus, .dark-npc-theme.actor.npc form input[type=number]:hover:not(:disabled), .dark-npc-theme.actor.npc form input[type=number]:focus {
     color: var(--pfui-main-color);
@@ -99,7 +102,7 @@
     background-color: var(--glass-bg);
     box-shadow: var(--glassy);
     text-shadow: 0 0 1px black;
-    border-radius: 3px;
+    border-radius: var(--border-radius);
 }
 .dark-npc-theme.actor.npc .tags .tag, .dark-npc-theme.actor.npc .tags .tag option {
     color: var(--pfui-main-color);
@@ -107,7 +110,7 @@
     border: 1px solid black;
     box-shadow: var(--glassy);
     text-shadow: 0 0 1px black;
-    border-radius: 3px;
+    border-radius: var(--border-radius);
 }
 .dark-npc-theme.actor.npc form select option {
     background-color: var(--glass-bg-dark);
@@ -126,7 +129,7 @@
     border: 1px solid black;
     box-shadow: var(--glassy);
     text-shadow: 0 0 1px black;
-    border-radius: 3px;
+    border-radius: var(--border-radius);
 }
 .dark-npc-theme.actor.npc .adjustments .adjustment:not(.active) {
     border: 1px solid black;
@@ -136,12 +139,12 @@
     transition: text-shadow 0.15s ease-in-out, background-color 0.15s ease-in-out, border 0.15s ease-in-out, color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, backdrop-filter 0.15s ease-in-out, border-radius 0.15s;
     text-shadow: 0 0 1px black!important;
     color: var(--background)!important;
-    border-radius: 3px;
+    border-radius: var(--border-radius);
 }
 .dark-npc-theme.actor.npc .trait {
     border: none!important;
     box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15), inset 0 0 0 2px rgba(0, 0, 0, 0.4);
-    border-radius: 3px;
+    border-radius: var(--border-radius);
 }
 .dark-npc-theme.actor.npc form .tag-legacy {
     color: var(--pfui-main-color);
@@ -150,7 +153,7 @@
     background-color: var(--glass-bg);
     box-shadow: var(--glassy);
     text-shadow: 0 0 1px black;
-    border-radius: 3px;
+    border-radius: var(--border-radius);
 }
 .dark-npc-theme.actor.npc form .tag-legacy:hover {
     color: var(--background);
@@ -161,7 +164,7 @@
     transition: text-shadow 0.15s ease-in-out, background-color 0.15s ease-in-out, border 0.15s ease-in-out, color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, backdrop-filter 0.15s ease-in-out, border-radius 0.15s;
     text-shadow: 0 0 1px black!important;
     color: var(--background);
-    border-radius: 3px;
+    border-radius: var(--border-radius);
 }
 .dark-npc-theme.actor.npc .section-container.recall-knowledge .section-header .breakdown:hover {
     border: none;
@@ -171,7 +174,7 @@
     transition: text-shadow 0.15s ease-in-out, background-color 0.15s ease-in-out, border 0.15s ease-in-out, color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, backdrop-filter 0.15s ease-in-out, border-radius 0.15s;
     text-shadow: 0 0 1px black!important;
     color: var(--background);
-    border-radius: 3px;
+    border-radius: var(--border-radius);
 }
 .dark-npc-theme.actor.npc .actions-list li.action .button-group button:hover, .dark-npc-theme.actor.npc .actions-list li.attack .button-group button:hover, .dark-npc-theme.actor.npc .attacks-list li.action .button-group button:hover, .dark-npc-theme.actor.npc .attacks-list li.attack .button-group button:hover {
     border: none;
@@ -181,7 +184,7 @@
     transition: text-shadow 0.15s ease-in-out, background-color 0.15s ease-in-out, border 0.15s ease-in-out, color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, backdrop-filter 0.15s ease-in-out, border-radius 0.15s;
     text-shadow: 0 0 1px black!important;
     color: var(--background)!important;
-    border-radius: 3px;
+    border-radius: var(--border-radius);
 }
 .dark-npc-theme.actor.npc form input.adjustable:not(:focus).adjusted-lower, .dark-npc-theme.actor.npc form span.adjustable.adjusted-lower, .dark-npc-theme.actor.npc form div.adjustable.adjusted-lower {
     color: darkgoldenrod;
@@ -193,7 +196,7 @@
     padding: 0px 3px;
     border: 2px solid var(--glassy);
     box-shadow: var(--glassy);
-    border-radius: 3px;
+    border-radius: var(--border-radius);
 }	
 .dark-npc-theme.actor.npc a.inline-check, span[data-pf2-check] {
     color: var(--pfui-main-color);
@@ -201,7 +204,7 @@
     padding: 0px 3px;
     border: 2px solid var(--glassy);
     box-shadow: var(--glassy);
-    border-radius: 3px;
+    border-radius: var(--border-radius);
 }
 .dark-npc-theme.actor.npc a.inline-check, span[data-pf2-action] {
     color: var(--pfui-main-color);
@@ -209,7 +212,7 @@
     padding: 0px 3px;
     border: 2px solid var(--glassy);
     box-shadow: var(--glassy);
-    border-radius: 3px;
+    border-radius: var(--border-radius);
 }
 .dark-npc-theme.actor.npc a.content-link, .dark-npc-theme.actor.npc a.inline-roll {
     color: var(--pfui-main-color);
@@ -217,7 +220,7 @@
     padding: 0px 3px;
     border: 2px solid var(--glassy);
     box-shadow: var(--glassy);
-    border-radius: 3px;
+    border-radius: var(--border-radius);
 }
 .dark-npc-theme.actor.npc .item-image:hover i {
     background: var(--green);
@@ -236,7 +239,7 @@
     background-color: var(--glass-bg);
     box-shadow: var(--glassy);
     text-shadow: 0 0 3px black;
-    border-radius: 3px;
+    border-radius: var(--border-radius);
 }
 .dark-npc-theme.actor.npc .currency .label {
     color: var(--green);
@@ -251,7 +254,7 @@
     background-color: var(--glass-bg);
     box-shadow: var(--glassy);
     text-shadow: 0 0 3px black;
-    border-radius: 3px;
+    border-radius: var(--border-radius);
 }
 .dark-npc-theme.actor.npc .wealth {
     border: none;
@@ -259,7 +262,7 @@
     background-color: var(--glass-bg);
     box-shadow: var(--glassy);
     text-shadow: 0 0 3px black;
-    border-radius: 3px;
+    border-radius: var(--border-radius);
 }
 .dark-npc-theme.actor.npc .wealth h3.item-name {
     color: var(--pfui-main-color);
@@ -283,7 +286,7 @@
     transition: text-shadow 0.15s ease-in-out, background-color 0.15s ease-in-out, border 0.15s ease-in-out, color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, backdrop-filter 0.15s ease-in-out, border-radius 0.15s;
     text-shadow: 0 0 1px black!important;
     color: var(--background)!important;
-    border-radius: 3px;
+    border-radius: var(--border-radius);
 }
 .dark-npc-theme.actor.npc .inventory .item-name h4:not(:hover).rarity-common {
     border-color: #7e7e7e;
@@ -323,7 +326,7 @@
 .dark-npc-theme.actor.npc .inventory .inventory-items {
     border: none;
     box-shadow: var(--glassy);
-    border-radius: 3px;
+    border-radius: var(--border-radius);
     backdrop-filter: blur(5px);
 
 }
@@ -338,7 +341,7 @@
     border: none;
     box-shadow: var(--glassy);
     text-shadow: 0 0 1px black;
-    border-radius: 3px;
+    border-radius: var(--border-radius);
     backdrop-filter: blur(5px);
 }
 .dark-npc-theme.actor.npc .entries-list .spellcasting-entry .header .inline-field .attack-input, .dark-npc-theme.actor.npc .entries-list .spellcasting-entry .header .inline-field .dc-input {
@@ -348,7 +351,7 @@
     background-color: var(--glass-bg)!important;
     box-shadow: var(--glassy);
     text-shadow: 0 0 3px black;
-    border-radius: 3px;
+    border-radius: var(--border-radius);
 }
 .dark-npc-theme.actor.npc ol.spell-list > li.spell-level-header {
     color: var(--pfui-main-color)!important;
@@ -368,7 +371,7 @@
     background-color: var(--glass-bg);
     box-shadow: var(--glassy);
     text-shadow: 0 0 3px black;
-    border-radius: 3px;
+    border-radius: var(--border-radius);
 }
 .dark-npc-theme.actor.npc ol.spell-list > li .item-name h4:hover {
     color: var(--green)!important;
@@ -380,7 +383,7 @@
     background-color: var(--glass-bg);
     box-shadow: var(--glassy);
     text-shadow: 0 0 1px black;
-    border-radius: 3px;
+    border-radius: var(--border-radius);
 }
 .dark-npc-theme.actor.npc ol.spell-list > li .item-summary {
     background-color: transparent!important;
@@ -391,7 +394,7 @@
     border: none;
     box-shadow: var(--glassy);
     text-shadow: 0 0 1px black;
-    border-radius: 3px;
+    border-radius: var(--border-radius);
 }
 .dark-npc-theme.actor.npc .item-summary .item-buttons button:hover {
     border: 1px solid black;
@@ -401,7 +404,7 @@
     transition: text-shadow 0.15s ease-in-out, background-color 0.15s ease-in-out, border 0.15s ease-in-out, color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, backdrop-filter 0.15s ease-in-out, border-radius 0.15s;
     text-shadow: 0 0 1px black!important;
     color: var(--background)!important;
-    border-radius: 3px;
+    border-radius: var(--border-radius);
 }
 .dark-npc-theme.actor.npc .footer button.spellcasting-create {
     color: var(--green)!important;
@@ -409,7 +412,7 @@
     border: none;
     box-shadow: var(--glassy)!important;
     text-shadow: 0 0 1px black;
-    border-radius: 3px;
+    border-radius: var(--border-radius);
     backdrop-filter: blur(5px);
 }
 .dark-npc-theme.actor.npc .footer button.spellcasting-create:hover {
@@ -428,7 +431,7 @@
     border: 1px solid black;
     box-shadow: var(--glassy);
     text-shadow: 0 0 1px black;
-    border-radius: 3px;
+    border-radius: var(--border-radius);
 }
 .dark-npc-theme.actor.npc ol.spell-list > li button.cast-spell:hover {
     border: 1px solid black;
@@ -438,10 +441,18 @@
     transition: text-shadow 0.15s ease-in-out, background-color 0.15s ease-in-out, border 0.15s ease-in-out, color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, backdrop-filter 0.15s ease-in-out, border-radius 0.15s;
     text-shadow: 0 0 1px black!important;
     color: var(--background)!important;
-    border-radius: 3px;
+    border-radius: var(--border-radius);
 }
 .dark-npc-theme.actor.npc .entries-list .spellcasting-entry {
     border: none!important;
+}
+.dark-npc-theme.actor.npc.sheet form ol.spell-list > li.spell-level-header input, .dark-npc-theme.actor.npc.sheet form ol.spell-list > li .uses input {
+    color: var(--pfui-main-color);
+    border: none;
+    background: none;
+    box-shadow: var(--glassy);
+    text-shadow: 0 0 1px black;
+    border-radius: var(--border-radius);
 }
 
 
@@ -476,7 +487,7 @@
 .glassy.dark-npc-theme.actor.npc .window-header {
     box-shadow: var(--glassy);
     background-color: var(--glass-bg-dark);
-    border-radius: 3px;
+    border-radius: var(--border-radius);
     margin: 0px 10px;
     backdrop-filter: blur(5px);
     text-shadow: 0 0 8px var(--color-shadow-primary);
@@ -485,7 +496,7 @@
     --color-text-dark-input: var(--color-text-light-heading);
     box-shadow: var(--glassy);
     background: radial-gradient(var(--primary-remaster), var(--glass-bg-dark));
-    border-radius: 3px;
+    border-radius: var(--border-radius);
     margin: 5px;
     padding: 2px 5px;
     backdrop-filter: blur(5px);
@@ -501,7 +512,7 @@
 .glassy.dark-npc-theme.actor.npc .side-bar-section {
     box-shadow: var(--glassy);
     background-color: var(--glass-bg-dark);
-    border-radius: 3px;
+    border-radius: var(--border-radius);
     margin: 5px 5px;
     backdrop-filter: blur(5px);
 }
@@ -509,7 +520,7 @@
     width: 94%;
     box-shadow: var(--glassy);
     background-color: var(--glass-bg-dark);
-    border-radius: 3px;
+    border-radius: var(--border-radius);
     margin: 5px 5px;
     backdrop-filter: blur(5px);
 }
@@ -524,7 +535,7 @@
     border: 1px solid black;
     box-shadow: var(--glassy);
     text-shadow: 0 0 1px black;
-    border-radius: 3px;
+    border-radius: var(--border-radius);
 }
 .glassy.dark-npc-theme.actor.npc .actions-list li.action .button-group .attack-button, .glassy.dark-npc-theme.actor.npc .actions-list li.attack .button-group .attack-button, .glassy.dark-npc-theme.actor.npc .attacks-list li.action .button-group .attack-button, .glassy.dark-npc-theme.actor.npc .attacks-list li.attack .button-group .attack-button {
     color: var(--pfui-main-color);
@@ -532,12 +543,12 @@
     border: 1px solid black;
     box-shadow: var(--glassy);
     text-shadow: 0 0 1px black;
-    border-radius: 3px;
+    border-radius: var(--border-radius);
 }
 .glassy.dark-npc-theme.actor.npc .inventory-section {
     box-shadow: var(--glassy);
     background-color: var(--glass-bg-dark);
-    border-radius: 3px;
+    border-radius: var(--border-radius);
     margin: 5px 5px!important;
     backdrop-filter: blur(5px);
 }
@@ -547,16 +558,8 @@
 .glassy.dark-npc-theme.actor.npc ol.spell-list > li.spell {
     box-shadow: var(--glassy);
     background-color: var(--glass-bg-dark);
-    border-radius: 3px;
+    border-radius: var(--border-radius);
     backdrop-filter: blur(5px);
-}
-.glassy.dark-npc-theme.actor.npc ol.spell-list > li.spell-level-header input, .glassy.dark-npc-theme.actor.npc ol.spell-list > li .uses input {
-    color: var(--pfui-main-color);
-    border: none;
-    background: none;
-    box-shadow: var(--glassy);
-    text-shadow: 0 0 1px black;
-    border-radius: 3px;
 }
 .glassy.dark-npc-theme.actor.npc .section-container {
     padding: 5px 5px 5px;
@@ -564,7 +567,7 @@
 .glassy.dark-npc-theme.actor.npc .notes.active {
     box-shadow: var(--glassy);
     background-color: var(--glass-bg-dark);
-    border-radius: 3px;
+    border-radius: var(--border-radius);
     margin: 5px 5px;
     backdrop-filter: blur(5px);
     padding: 0px;

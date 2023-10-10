@@ -1,4 +1,5 @@
 :root{
+    --border-radius: 3px;
     --glassy: 0px 0px 3px 0px rgba(255, 255, 255, 0.4) inset, 0px 0px 2px 1px rgba(0, 0, 0, 1), 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
     --glass-bg: rgba(20, 20, 20, 0.6);
     --glass-bg-light: rgba(255, 255, 255, 0.1);
@@ -217,7 +218,7 @@
     bottom: 70px;
 }
 #hotbar .action-bar.no-arrows + .bar-controls span.page-number, #hotbar .hotbar-page .bar-controls span.page-number, #hotbar .hotbar-page .bar-controls i {
-    border-radius: 3px;
+    border-radius: var(--border-radius);
     background: none;
     background-color: var(--glass-bg);
     box-shadow: var(--glassy);
@@ -228,7 +229,7 @@
     margin: 0px 5px 0px 3px;
 }
 #hotbar .bar-controls {
-    border-radius: 3px;
+    border-radius: var(--border-radius);
     background: none;
     background-color: var(--glass-bg);
     box-shadow: var(--glassy);
@@ -247,7 +248,7 @@
 /*https://github.com/oWave/pf2e-flatcheck-helper*/
 #fc-container button {
     border: none;
-    border-radius: 3px;
+    border-radius: var(--border-radius);
     transition: text-shadow 0.15s ease-in-out, background-color 0.15s ease-in-out, border 0.15s ease-in-out, color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, backdrop-filter 0.15s ease-in-out, border-radius 0.15s;
     background: radial-gradient(var(--background-2), transparent);
     box-shadow: var(--glassy);
@@ -256,7 +257,7 @@
 }
 #fc-container button:hover {
     border: none;
-    border-radius: 3px;
+    border-radius: var(--border-radius);
     color: var(--color-text-hyperlink);
     border-color: var(--color-text-hyperlink);
     box-shadow: 0 0 6px inset var(--color-text-hyperlink);
@@ -370,7 +371,7 @@
 
     background: rgba(0, 0, 0, 0.43);
     border: 1px solid transparent;
-    border-radius: 3px;
+    border-radius: var(--border-radius);
 }
 
 #chat .monks-tokenbar .sheet .items-list .items-header {
@@ -383,7 +384,7 @@
 
     background: rgba(0, 0, 0, 0.43);
     border: 1px solid transparent;
-    border-radius: 3px;
+    border-radius: var(--border-radius);
 }
 
 #chat .monks-tokenbar.chat-card .sheet .items-list {
@@ -413,7 +414,7 @@
     background-color: var(--glass-bg);
     box-shadow: var(--glassy);
     text-shadow: 0 0 3px black;
-    border-radius: 3px;
+    border-radius: var(--border-radius);
     backdrop-filter: blur(5px);
 }
 .placeable-hud .control-icon.active {
@@ -426,7 +427,7 @@
 }
 .placeable-hud input[type="text"] {
     background: none;
-    border-radius: 3px;
+    border-radius: var(--border-radius);
     background-color: radial-gradient(var(--background-2), transparent);
     box-shadow: var(--glassy);
     transition: text-shadow 0.15s ease-in-out, background-color 0.15s ease-in-out, border 0.15s ease-in-out, color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, backdrop-filter 0.15s ease-in-out, border-radius 0.15s;
@@ -499,7 +500,7 @@
 #token-hud.placeable-hud.monks-little-details .status-effects .effect-control {
   border: none;
   opacity: unset;
-  border-radius: 3px;
+  border-radius: var(--border-radius);
 }
 #token-hud.placeable-hud.monks-little-details .status-effects .effect-control.active {
   border: 2px solid var(--green);
@@ -531,7 +532,7 @@ wrapper.pf2e-td.name-left .pf2e-td.name {
     box-shadow: var(--glassy);
     border: none!important;
     color: var(--pfui-main-color);
-    border-radius: 3px;
+    border-radius: var(--border-radius);
 }
 wrapper.pf2e-td.name-left .pf2e-td.name:hover {
     font-size: var(--font-size-9);
@@ -540,7 +541,7 @@ wrapper.pf2e-td.name-left .pf2e-td.name:hover {
     border: 1px solid #7B322F;
     background-color: var(--red);
     box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15), inset 0 0 0 2px rgba(0, 0, 0, 0.4);
-    border-radius: 3px;
+    border-radius: var(--border-radius);
 }
 wrapper.pf2e-td.name-left .pf2e-td.damage-application {
     flex: 230px 0 0;
@@ -659,7 +660,7 @@ wrapper.pf2e-td.name-left .pf2e-td.damage-application {
 
 #chat-log .tag {
     box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15), inset 0 0 0 2px rgba(0, 0, 0, 0.4);
-    border-radius: 3px;
+    border-radius: var(--border-radius);
 }
 
 #chat-log .tags.paizo-style .tag {
@@ -718,7 +719,7 @@ wrapper.pf2e-td.name-left .pf2e-td.damage-application {
 
 .dice-roll .dice-result .dice-tooltip .damage-type {
     background: rgba(0, 0, 0, 0.1);
-    border-radius: 3px;
+    border-radius: var(--border-radius);
 }
 
 .message-content .chat-damage-buttons button {
@@ -778,7 +779,7 @@ a.inline-roll.blindroll {
     padding: 0px 3px;
     border: 2px solid var(--glassy);
     box-shadow: var(--glassy);
-    border-radius: 3px;
+    border-radius: var(--border-radius);
 }
 
 a.content-link.broken {
@@ -798,7 +799,7 @@ a.content-link.broken {
     padding: 0px 3px;
     border: 2px solid var(--glassy);
     box-shadow: var(--glassy);
-    border-radius: 3px;
+    border-radius: var(--border-radius);
 }
 #chat-log .pf2e.chat-card a.inline-check, span[data-pf2-action] {
     color: var(--pfui-main-color);
@@ -806,7 +807,7 @@ a.content-link.broken {
     padding: 0px 3px;
     border: 2px solid var(--glassy);
     box-shadow: var(--glassy);
-    border-radius: 3px;
+    border-radius: var(--border-radius);
 }
 #chat-log .chat-message a.content-link, .chat-message a.inline-roll {
     color: var(--pfui-main-color);
@@ -814,7 +815,7 @@ a.content-link.broken {
     padding: 0px 3px;
     border: 2px solid var(--glassy);
     box-shadow: var(--glassy);
-    border-radius: 3px;
+    border-radius: var(--border-radius);
 }
 #chat-log .message [data-visibility="gm"]:is(div,em,p,span,strong) {
     background: none;

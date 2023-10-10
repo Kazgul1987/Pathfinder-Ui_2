@@ -119,7 +119,7 @@
     border-radius: 3px!important;
     background: rgba(0, 0, 0, 0.5)!important;
     box-shadow: var(--glassy)!important;
-    backdrop-filter: blur(5px)!important;
+    backdrop-filter: blur(10px)!important;
 }
 #pf2e-token-hud .sidebar .sidebar-content .details .name {
     font-weight: normal!important;
