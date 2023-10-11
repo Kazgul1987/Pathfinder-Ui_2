@@ -1,4 +1,6 @@
 {
+    "RPGUI.SETTINGS.DORAKOUI":"Hello Hello, you've just activated Pathfinder Ui v3 & Dorako Ui at the same time. Both modules are graphical interfaces and cannot be activated together, as they share common code that interferes with each other. Please deactivate one of the two interfaces. Thank you for your understanding.",
+    
     "RPGUI.SETTINGS.DARKSHEET":"Select your Sheet Color",
     "RPGUI.SETTINGS.DARKSHEET_HINT":"Only for player sheets.",
 

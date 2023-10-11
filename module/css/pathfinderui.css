@@ -585,10 +585,17 @@ body.compact-mode #logo {
 .polyglot-lang-select input:checked {
     accent-color: var(--glass-bg);
 }
+.polyglot-user-list {
+    max-width: unset;
+}
 .polyglot-user-list div {
+    display: flex;
+    flex: 1 0;
+    max-width: 15px;
     border-radius: unset;
     border: 1px solid var(--background);
     margin: unset;
+    box-shadow: 1px 1px 2px -1px var(--pfui-main-color);
 }
 .select2-container--default .select2-selection--single .select2-selection__rendered {
     color: var(--pfui-main-color)!important;

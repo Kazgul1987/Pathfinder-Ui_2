@@ -5,6 +5,9 @@ Hooks.on('ready', async () => {
                 game.settings.set("monks-little-details", "window-css-changes", false);
                 $("body").removeClass("change-windows");
         }
+		if (game.modules.has('pf2e-dorako-ui') && game.modules.get('pf2e-dorako-ui').active) {
+			ui.notifications.error(game.i18n.localize('RPGUI.SETTINGS.DORAKOUI'));
+		}
 });
 
 Hooks.on('init', () => {

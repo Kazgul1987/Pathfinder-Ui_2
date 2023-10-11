@@ -268,14 +268,14 @@
 /* DF Chat Enhancements */
 /* https://github.com/flamewave000/dragonflagon-fvtt/tree/master/df-chat-enhance */
 #dfcp-rt-buttons button {
-    flex: 1;
-    padding-top: 4px;
+    padding-top: 3px;
     transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
     background: radial-gradient(var(--background-2), transparent);
     border: none;
     border-radius: 30px;
     color: var(--pfui-main-grey-color);
     box-shadow: var(--glassy);
+    border: 1px solid var(--glass-bg);
     cursor: pointer;
 }
 
