@@ -92,34 +92,38 @@
     text-shadow: 0 0 5px var(--color-shadow-primary);
 }
 .dark-party-theme.sheet.party a.inline-check[data-pf2-traits*=secret], span[data-pf2-check][data-pf2-traits*=secret] {
+    font-family: "Good OT";
     color: var(--pfui-main-color);
     background: var(--custom-trait);
     padding: 0px 3px;
-    border: 2px solid var(--glassy);
+    border: 1px solid var(--glassy);
     box-shadow: var(--glassy);
     border-radius: var(--border-radius);
 }	
 .dark-party-theme.sheet.party a.inline-check, span[data-pf2-check] {
+    font-family: "Good OT";
     color: var(--pfui-main-color);
     background: var(--custom-trait);
     padding: 0px 3px;
-    border: 2px solid var(--glassy);
+    border: 1px solid var(--glassy);
     box-shadow: var(--glassy);
     border-radius: var(--border-radius);
 }
 .dark-party-theme.sheet.party a.inline-check, span[data-pf2-action] {
+    font-family: "Good OT";
     color: var(--pfui-main-color);
     background: var(--custom-trait);
     padding: 0px 3px;
-    border: 2px solid var(--glassy);
+    border: 1px solid var(--glassy);
     box-shadow: var(--glassy);
     border-radius: var(--border-radius);
 }
 .dark-party-theme.sheet.party a.content-link, .dark-party-theme.sheet.party a.inline-roll {
+    font-family: "Good OT";
     color: var(--pfui-main-color);
     background: var(--custom-trait);
     padding: 0px 3px;
-    border: 2px solid var(--glassy);
+    border: 1px solid var(--glassy);
     box-shadow: var(--glassy);
     border-radius: var(--border-radius);
 }

@@ -125,10 +125,11 @@ filter: grayscale(0.75);
 
 /*Government*/
 .sheet.kingdom-builder a.content-link, .sheet.kingdom-builder a.inline-roll {
+    font-family: "Good OT";
     color: var(--pfui-main-color);
     background: var(--custom-trait);
     padding: 0px 3px;
-    border: 2px solid var(--glassy);
+    border: 1px solid var(--glassy);
     box-shadow: var(--glassy);
     border-radius: var(--border-radius);
 }
@@ -261,33 +262,37 @@ filter: grayscale(0.75);
     color: var(--pfui-main-color);
 }
 .dark-kingdom-theme.sheet.kingdom a.inline-check[data-pf2-traits*=secret], span[data-pf2-check][data-pf2-traits*=secret] {
+    font-family: "Good OT";
     color: var(--pfui-main-color);
     background: var(--custom-trait);
     padding: 0px 3px;
-    border: 2px solid var(--glassy);
+    border: 1px solid var(--glassy);
     border-radius: var(--border-radius);
 }	
 .dark-kingdom-theme.sheet.kingdom a.inline-check, span[data-pf2-check] {
+    font-family: "Good OT";
     color: var(--pfui-main-color);
     background: var(--custom-trait);
     padding: 0px 3px;
-    border: 2px solid var(--glassy);
+    border: 1px solid var(--glassy);
     box-shadow: var(--glassy);
     border-radius: var(--border-radius);
 }
 .dark-kingdom-theme.sheet.kingdom a.inline-check, span[data-pf2-action] {
+    font-family: "Good OT";
     color: var(--pfui-main-color);
     background: var(--custom-trait);
     padding: 0px 3px;
-    border: 2px solid var(--glassy);
+    border: 1px solid var(--glassy);
     box-shadow: var(--glassy);
     border-radius: var(--border-radius);
 }
 .dark-kingdom-theme.sheet.kingdom a.content-link, .dark-kingdom-theme.sheet.kingdom a.inline-roll {
+    font-family: "Good OT";
     color: var(--pfui-main-color);
     background: var(--custom-trait);
     padding: 0px 3px;
-    border: 2px solid var(--glassy);
+    border: 1px solid var(--glassy);
     box-shadow: var(--glassy);
     border-radius: var(--border-radius);
 }
@@ -427,10 +432,11 @@ filter: grayscale(0.75);
     color: var(--green);
 }
 .dark-kingdom-theme.sheet.kingdom .tags .tag, .dark-kingdom-theme.sheet.kingdom .tags .tag option {
+    font-family: "Good OT";
     color: var(--pfui-main-color);
     background: var(--custom-trait);
     padding: 0px 3px;
-    border: 2px solid var(--glassy);
+    border: 1px solid var(--glassy);
     border-radius: var(--border-radius);
 }
 .dark-kingdom-theme.sheet.kingdom .item-image:hover i {
