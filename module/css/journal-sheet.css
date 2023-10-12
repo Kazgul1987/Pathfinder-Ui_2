@@ -5,6 +5,7 @@
 :root {
     --journal-sheet-red-light: rgb(93, 24, 13);
     --journal-sheet-red:#5d180d;
+    --custom-trait:#61180e;
 	--custom-green: #002a17;
 }
 
@@ -317,7 +318,7 @@ color:var(--custom-green);
 
 .journal-entry-page .journal-page-content a.inline-check[data-pf2-traits*=secret], span[data-pf2-check][data-pf2-traits*=secret] {
     color: var(--pfui-main-color);
-    background: #61180e;
+    background: var(--custom-trait);
     padding: 0px 3px;
     border: 2px solid var(--glassy);
     box-shadow: var(--glassy);
@@ -325,7 +326,7 @@ color:var(--custom-green);
 }	
 .journal-entry-page .journal-page-content a.inline-check, span[data-pf2-check] {
     color: var(--pfui-main-color);
-    background: #61180e;
+    background: var(--custom-trait);
     padding: 0px 3px;
     border: 2px solid var(--glassy);
     box-shadow: var(--glassy);
@@ -333,7 +334,7 @@ color:var(--custom-green);
 }
 .journal-entry-page .journal-page-content a.inline-check, span[data-pf2-action] {
     color: var(--pfui-main-color);
-    background: #61180e;
+    background: var(--custom-trait);
     padding: 0px 3px;
     border: 2px solid var(--glassy);
     box-shadow: var(--glassy);
@@ -341,7 +342,7 @@ color:var(--custom-green);
 }
 .journal-entry-page .journal-page-content a.content-link, a.inline-roll {
     color: var(--pfui-main-color);
-    background: #61180e;
+    background: var(--custom-trait);
     padding: 0px 3px;
     border: 2px solid var(--glassy);
     box-shadow: var(--glassy);

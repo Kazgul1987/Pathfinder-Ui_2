@@ -4,10 +4,10 @@
 - Ready for v11 version.
 
 
-## v11.313.5
+## v11.313.5.1
 - Update core code.
 - Update Polyglot Compatibility (again)
-- Add Warning message with you activate Pathfinder Ui v3 and Dorako Ui at the same time.
+- Add Warning message when you activate Pathfinder Ui v3 and Dorako Ui at the same time.
 
 ## v11.313.4.1
 - Update core code.

@@ -67,6 +67,7 @@ body {
     --criticalFailure:rgb(247, 59, 59);
     --red: #5e0000;
     --red-light:#ff0000;
+    --custom-trait:#61180e;
     --border-radius: 3px;
     --border-color: #372d25;
     --border-color-2: #837360;
@@ -185,7 +186,7 @@ body.compact-mode #logo {
 #sidebar a.entity-link,
 #sidebar a.inline-roll {
     color: var(--pfui-main-color);
-    background: #61180e;
+    background: var(--custom-trait);
     padding: 0px 3px;
     border: 2px solid var(--glassy);
     box-shadow: var(--glassy);

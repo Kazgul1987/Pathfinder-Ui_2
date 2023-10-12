@@ -2,6 +2,7 @@
 
 :root {
     --custom-red: #4e0707;
+	--custom-trait:#61180e;
 	--custom-green: #002a17;
 	--custom-green-light: #365d4e;
 	--border-radius: 3px;
@@ -359,7 +360,7 @@ h6+p+blockquote, h6+p+ul+blockquote) {
 }
 .journal-entry-page .journal-page-content a.inline-check[data-pf2-traits*=secret], span[data-pf2-check][data-pf2-traits*=secret] {
     color: var(--pfui-main-color);
-    background: #61180e;
+    background: var(--custom-trait);
     padding: 0px 3px;
     border: 2px solid var(--glassy);
     box-shadow: var(--glassy);
@@ -367,26 +368,45 @@ h6+p+blockquote, h6+p+ul+blockquote) {
 }	
 .journal-entry-page .journal-page-content a.inline-check, span[data-pf2-check] {
     color: var(--pfui-main-color);
-    background: #61180e;
+    background: var(--custom-trait);
     padding: 0px 3px;
     border: 2px solid var(--glassy);
     box-shadow: var(--glassy);
     border-radius: var(--border-radius);
 }
 .journal-entry-page .journal-page-content a.inline-check, span[data-pf2-action] {
-    color: var(--pfui-main-color);
-    background: #61180e;
+    color: var(--pfui-main-color)!important;
+    background: var(--custom-trait);
     padding: 0px 3px;
     border: 2px solid var(--glassy);
     box-shadow: var(--glassy);
     border-radius: var(--border-radius);
 }
 .journal-entry-page .journal-page-content a.content-link, a.inline-roll {
-    color: var(--pfui-main-color);
-    background: #61180e;
+    color: var(--pfui-main-color)!important;
+    background: var(--custom-trait);
     padding: 0px 3px;
     border: 2px solid var(--glassy);
     box-shadow: var(--glassy);
     border-radius: var(--border-radius);
-}	
-	
+}
+
+/* Critical Hit/Fumble Deck */
+.journal-entry-page .journal-page-content .fumble-deck h1 {
+	font-family: "Taroca";
+}
+.journal-entry-page .journal-page-content .fumble-deck blockquote {
+	font-family: "Good OT";
+}
+.journal-entry-page .journal-page-content .fumble-deck code {
+	font-family: "Good OT Bold";
+}
+.journal-entry-page .journal-page-content .critical-deck h1 {
+	font-family: "Taroca";
+}
+.journal-entry-page .journal-page-content .critical-deck blockquote {
+	font-family: "Good OT";
+}
+.journal-entry-page .journal-page-content .critical-deck code {
+	font-family: "Good OT Bold";
+}

@@ -17,6 +17,7 @@
     --gold-and-glow: 0 0 0 1px var(--tertiary), 0 0 0 2px #9f725b, inset 0 0 3px rgba(255, 255, 255, .5);
     --red: #5e0000;
     --red-light:#ff0000;
+    --custom-trait:#61180e;
     --green: #91a82a;
     --pfui-main-color: #cfbda7;
     --pfui-main-grey-color: #98968a;
@@ -634,7 +635,7 @@ wrapper.pf2e-td.name-left .pf2e-td.damage-application {
 /* Chat button effect area */
 #chat-log [data-pf2-effect-area] {
     color: var(--pfui-main-color); 
-    background: #61180e;
+    background: var(--custom-trait);
     padding: 0px 3px;
     border: 2px solid var(--glassy);
     border-radius: 6px;
@@ -775,7 +776,7 @@ div#scrollToBottom:hover {
 
 a.inline-roll.blindroll {
     color: var(--pfui-main-color);
-    background: #61180e;
+    background: var(--custom-trait);
     padding: 0px 3px;
     border: 2px solid var(--glassy);
     box-shadow: var(--glassy);
@@ -787,7 +788,7 @@ a.content-link.broken {
 }
 
 [data-visibility]:not([data-visibility=all])[data-visibility=owner] {
-    background: #61180e;
+    background: var(--custom-trait);
 }
 
 #chat-log button {
@@ -795,7 +796,7 @@ a.content-link.broken {
 }
 #chat-log a.inline-check, span[data-pf2-check] {
     color: var(--pfui-main-color);
-    background: #61180e;
+    background: var(--custom-trait);
     padding: 0px 3px;
     border: 2px solid var(--glassy);
     box-shadow: var(--glassy);
@@ -803,7 +804,7 @@ a.content-link.broken {
 }
 #chat-log .pf2e.chat-card a.inline-check, span[data-pf2-action] {
     color: var(--pfui-main-color);
-    background: #61180e;
+    background: var(--custom-trait);
     padding: 0px 3px;
     border: 2px solid var(--glassy);
     box-shadow: var(--glassy);
@@ -811,7 +812,7 @@ a.content-link.broken {
 }
 #chat-log .chat-message a.content-link, .chat-message a.inline-roll {
     color: var(--pfui-main-color);
-    background: #61180e;
+    background: var(--custom-trait);
     padding: 0px 3px;
     border: 2px solid var(--glassy);
     box-shadow: var(--glassy);

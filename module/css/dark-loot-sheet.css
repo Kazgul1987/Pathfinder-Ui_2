@@ -7,6 +7,7 @@
     --blue: #171f69;
     --red: #5e0000;
     --red-light:#ff0000;
+    --custom-trait:#61180e;
     --border-radius: 3px;
     --background: #100d0d;
     --background-2: #ffffff14;
@@ -100,14 +101,14 @@
 }
 .dark-loot-theme.sheet.actor.loot a.inline-check[data-pf2-traits*=secret], span[data-pf2-check][data-pf2-traits*=secret] {
     color: var(--pfui-main-color);
-    background: #61180e;
+    background: var(--custom-trait);
     padding: 0px 3px;
     border: 2px solid var(--glassy);
     border-radius: var(--border-radius);
 }	
 .dark-loot-theme.sheet.actor.loot a.inline-check, span[data-pf2-check] {
     color: var(--pfui-main-color);
-    background: #61180e;
+    background: var(--custom-trait);
     padding: 0px 3px;
     border: 2px solid var(--glassy);
     box-shadow: var(--glassy);
@@ -115,7 +116,7 @@
 }
 .dark-loot-theme.sheet.actor.loot a.inline-check, span[data-pf2-action] {
     color: var(--pfui-main-color);
-    background: #61180e;
+    background: var(--custom-trait);
     padding: 0px 3px;
     border: 2px solid var(--glassy);
     box-shadow: var(--glassy);
@@ -123,7 +124,7 @@
 }
 .dark-loot-theme.sheet.actor.loot a.content-link, .dark-loot-theme.sheet.actor.loot a.inline-roll {
     color: var(--pfui-main-color);
-    background: #61180e;
+    background: var(--custom-trait);
     padding: 0px 3px;
     border: 2px solid var(--glassy);
     box-shadow: var(--glassy);

@@ -7,6 +7,7 @@
     --blue: #171f69;
     --red: #5e0000;
     --red-light:#ff0000;
+    --custom-trait:#61180e;
     --border-radius: 3px;
     --background: #100d0d;
     --background-2: #ffffff14;
@@ -125,7 +126,7 @@ filter: grayscale(0.75);
 /*Government*/
 .sheet.kingdom-builder a.content-link, .sheet.kingdom-builder a.inline-roll {
     color: var(--pfui-main-color);
-    background: #61180e;
+    background: var(--custom-trait);
     padding: 0px 3px;
     border: 2px solid var(--glassy);
     box-shadow: var(--glassy);
@@ -261,14 +262,14 @@ filter: grayscale(0.75);
 }
 .dark-kingdom-theme.sheet.kingdom a.inline-check[data-pf2-traits*=secret], span[data-pf2-check][data-pf2-traits*=secret] {
     color: var(--pfui-main-color);
-    background: #61180e;
+    background: var(--custom-trait);
     padding: 0px 3px;
     border: 2px solid var(--glassy);
     border-radius: var(--border-radius);
 }	
 .dark-kingdom-theme.sheet.kingdom a.inline-check, span[data-pf2-check] {
     color: var(--pfui-main-color);
-    background: #61180e;
+    background: var(--custom-trait);
     padding: 0px 3px;
     border: 2px solid var(--glassy);
     box-shadow: var(--glassy);
@@ -276,7 +277,7 @@ filter: grayscale(0.75);
 }
 .dark-kingdom-theme.sheet.kingdom a.inline-check, span[data-pf2-action] {
     color: var(--pfui-main-color);
-    background: #61180e;
+    background: var(--custom-trait);
     padding: 0px 3px;
     border: 2px solid var(--glassy);
     box-shadow: var(--glassy);
@@ -284,7 +285,7 @@ filter: grayscale(0.75);
 }
 .dark-kingdom-theme.sheet.kingdom a.content-link, .dark-kingdom-theme.sheet.kingdom a.inline-roll {
     color: var(--pfui-main-color);
-    background: #61180e;
+    background: var(--custom-trait);
     padding: 0px 3px;
     border: 2px solid var(--glassy);
     box-shadow: var(--glassy);
@@ -427,7 +428,7 @@ filter: grayscale(0.75);
 }
 .dark-kingdom-theme.sheet.kingdom .tags .tag, .dark-kingdom-theme.sheet.kingdom .tags .tag option {
     color: var(--pfui-main-color);
-    background: #61180e;
+    background: var(--custom-trait);
     padding: 0px 3px;
     border: 2px solid var(--glassy);
     border-radius: var(--border-radius);
