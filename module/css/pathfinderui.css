@@ -79,6 +79,8 @@ body {
 
     --background: #100d0d;
     --background-2: #ffffff14;
+    --border-radius: 3px;
+    --border-radius-5: 5px;
 
     --primary-remaster: hsl(153, 100%, 8%);
 	--primary-light-remaster: hsl(170, 96%, 19%);
@@ -597,7 +599,7 @@ body.compact-mode #logo {
     border-radius: unset;
     border: 1px solid var(--background);
     margin: unset;
-    box-shadow: 1px 1px 2px -1px var(--pfui-main-color);
+    box-shadow: 1px 1px 2px -1px var(--color-warm-1);
 }
 .select2-container--default .select2-selection--single .select2-selection__rendered {
     color: var(--pfui-main-color)!important;
@@ -624,11 +626,13 @@ body.compact-mode #logo {
 }
 .select2-container--default .select2-search--dropdown .select2-search__field {
     color: var(--pfui-main-color);
-    background: radial-gradient(var(--primary-remaster), var(--glass-bg-dark));
-    border: none;
+    background: radial-gradient(var(--color-cool-4), var(--glass-bg-dark));
+    border:none;
+    border-top: 1px solid var(--color-warm-1);
+    border-bottom: 1px solid var(--color-warm-1);
     box-shadow: var(--glassy);
     text-shadow: 0 0 1px black;
-    border-radius: var(--border-radius);
+    border-radius: var(--border-radius-5);
     backdrop-filter: blur(5px);
 }
 .select2-container--default .select2-results>.select2-results__options {
@@ -638,21 +642,23 @@ body.compact-mode #logo {
 }
 .select2-container--default .select2-results__option--selected {
     color: var(--pfui-main-color);
-    border: none;
+    border:none;
+    border-top: 1px solid var(--color-warm-1);
+    border-bottom: 1px solid var(--color-warm-1);
     background: none;
-    background-color: var(--color-cool-5-50);
+    background: radial-gradient(var(--color-cool-3), var(--glass-bg-dark));
     box-shadow: var(--glassy);
     text-shadow: 0 0 3px black;
-    border-radius: var(--border-radius);
+    border-radius: var(--border-radius-5);
 }
 .select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
     color: var(--pfui-main-color);
     border: none;
     background: none;
-    background-color: var(--color-cool-5-50);
+    background: radial-gradient(var(--color-cool-4), var(--glass-bg-dark));
     box-shadow: var(--glassy);
     text-shadow: 0 0 3px black;
-    border-radius: var(--border-radius);
+    border-radius: var(--border-radius-5);
 }
 
 /*polyglot end*/
