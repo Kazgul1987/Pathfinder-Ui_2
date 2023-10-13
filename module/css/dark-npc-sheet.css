@@ -41,6 +41,39 @@
     --rarity-uncommon: #ff6400;
     --rarity-rare: #0062ff;
     --rarity-unique: #e127e1;
+    
+/* Foundry2
+====================================================== */
+    --color-warm-1: #ee9b3a;
+    --color-warm-2: #c9593f;
+    --color-warm-3: #5d142b;
+    --color-cool-3: #584a75;
+    --color-cool-4: #302831;
+    --color-cool-5: #0b0a13;
+    --color-cool-5-25: rgba(11, 10, 19, 0.25);
+    --color-cool-5-50: rgba(11, 10, 19, 0.5);
+    --color-cool-5-75: rgba(11, 10, 19, 0.75);
+    --color-cool-5-90: rgba(11, 10, 19, 0.9);
+    --color-light-1: #f7f3e8;
+    --color-light-2: #efe6d8;
+    --color-light-3: #e7d1b1;
+    --color-light-4: #d0b8a3;
+    --color-light-5: #9f8475;
+    --color-light-6: #816b66;
+    --color-level-error: #ce0707;
+    --color-level-error-bg: rgba(105, 0, 8, 0.8);
+    --color-level-error-border: #750003;
+    --color-level-info: #59a1f6;
+    --color-level-info-bg: rgba(47, 80, 132, 0.8);
+    --color-level-info-border: #5c87b9;
+    --color-level-success: #26b231;
+    --color-level-success-bg: rgba(26, 107, 34, 0.8);
+    --color-level-success-border: #1b8f23;
+    --color-level-warning: #ee9b3a;
+    --color-level-warning-bg: rgba(214, 150, 0, 0.8);
+    --color-level-warning-border: #b18404;
+    --color-scrollbar: #5d142b;
+    --color-scrollbar-border: #8d151b;
 }
 
 
@@ -53,10 +86,7 @@
     box-shadow: none;
     margin: unset;
 }
-.dark-npc-theme.actor.npc .disabled:hover {
-    color: var(--green);
-    text-shadow: 0 0 8px var(--green);
-}
+
 .dark-npc-theme.actor.npc .npc-sheet-header .name {
     color: var(--pfui-main-color);
     background: var(--glass-bg);
@@ -66,6 +96,14 @@
 .dark-npc-theme.actor.npc form .disabled {
     color: darkgoldenrod;
     border-color: var(--color-disabled);
+}
+.dark-npc-theme.actor.npc .disabled:hover {
+    color: var(--green);
+    text-shadow: 0 0 8px var(--green);
+}
+.dark-npc-theme.actor.npc form .disabled:hover, .dark-npc-theme.actor.npc form .disabled.active {
+    color: darkgoldenrod;
+    border-color: #7a7971;
 }
 .dark-npc-theme.actor.npc .section-container .section-header {
     color: var(--green)!important;
@@ -82,7 +120,7 @@
     color: var(--pfui-main-color);
     border: none!important;
     background: none;
-    background-color: var(--glass-bg-dark);
+    background-color: var(--color-cool-5-90);
     box-shadow: var(--glassy);
     text-shadow: 0 0 1px black;
     backdrop-filter: blur(5px);
@@ -114,7 +152,7 @@
     border-radius: var(--border-radius);
 }
 .dark-npc-theme.actor.npc form select option {
-    background-color: var(--glass-bg-dark);
+    background-color: var(--color-cool-5-90);
 }
 .dark-npc-theme.actor.npc .tags .tag.tag_transparent, .dark-npc-theme.actor.npc .tags .tag option.tag_transparent {
     background-color: var(--red);
@@ -491,7 +529,7 @@
 }
 .glassy.dark-npc-theme.actor.npc .window-header {
     box-shadow: var(--glassy);
-    background-color: var(--glass-bg-dark);
+    background-color: var(--color-cool-5-90);
     border-radius: var(--border-radius);
     margin: 0px 10px;
     backdrop-filter: blur(5px);
@@ -508,7 +546,7 @@
 }
 .glassy.dark-npc-theme.actor.npc .sidebar .image-container img.actor-image {
     box-shadow: var(--glassy);
-    background-color: var(--glass-bg-dark);
+    background-color: var(--color-cool-5-90);
     border-radius: 8px;
     margin: 5px 0px 0px 5px!important;
     backdrop-filter: blur(5px);
@@ -516,7 +554,7 @@
 }
 .glassy.dark-npc-theme.actor.npc .side-bar-section {
     box-shadow: var(--glassy);
-    background-color: var(--glass-bg-dark);
+    background-color: var(--color-cool-5-90);
     border-radius: var(--border-radius);
     margin: 5px 5px;
     backdrop-filter: blur(5px);
@@ -524,7 +562,7 @@
 .glassy.dark-npc-theme.actor.npc .sidebar .saves {
     width: 94%;
     box-shadow: var(--glassy);
-    background-color: var(--glass-bg-dark);
+    background-color: var(--color-cool-5-90);
     border-radius: var(--border-radius);
     margin: 5px 5px;
     backdrop-filter: blur(5px);
@@ -552,7 +590,7 @@
 }
 .glassy.dark-npc-theme.actor.npc .inventory-section {
     box-shadow: var(--glassy);
-    background-color: var(--glass-bg-dark);
+    background-color: var(--color-cool-5-90);
     border-radius: var(--border-radius);
     margin: 5px 5px!important;
     backdrop-filter: blur(5px);
@@ -562,7 +600,7 @@
 }
 .glassy.dark-npc-theme.actor.npc ol.spell-list > li.spell {
     box-shadow: var(--glassy);
-    background-color: var(--glass-bg-dark);
+    background-color: var(--color-cool-5-90);
     border-radius: var(--border-radius);
     backdrop-filter: blur(5px);
 }
@@ -571,7 +609,7 @@
 }
 .glassy.dark-npc-theme.actor.npc .notes.active {
     box-shadow: var(--glassy);
-    background-color: var(--glass-bg-dark);
+    background-color: var(--color-cool-5-90);
     border-radius: var(--border-radius);
     margin: 5px 5px;
     backdrop-filter: blur(5px);
@@ -579,7 +617,7 @@
 }
 .glassy.dark-npc-theme.actor.npc .window-resizable-handle i.fas {
     color: var(--green);
-    background-color: var(--glass-bg-dark);
+    background-color: var(--color-cool-5-90);
 }
 .glassy.dark-npc-theme.actor.npc .window-resizable-handle {
     background: none;

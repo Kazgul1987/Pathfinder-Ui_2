@@ -28,6 +28,40 @@
     --rarity-uncommon: #ff6400;
     --rarity-rare: #0062ff;
     --rarity-unique: #e127e1;
+
+
+/* Foundry2
+====================================================== */
+    --color-warm-1: #ee9b3a;
+    --color-warm-2: #c9593f;
+    --color-warm-3: #5d142b;
+    --color-cool-3: #584a75;
+    --color-cool-4: #302831;
+    --color-cool-5: #0b0a13;
+    --color-cool-5-25: rgba(11, 10, 19, 0.25);
+    --color-cool-5-50: rgba(11, 10, 19, 0.5);
+    --color-cool-5-75: rgba(11, 10, 19, 0.75);
+    --color-cool-5-90: rgba(11, 10, 19, 0.9);
+    --color-light-1: #f7f3e8;
+    --color-light-2: #efe6d8;
+    --color-light-3: #e7d1b1;
+    --color-light-4: #d0b8a3;
+    --color-light-5: #9f8475;
+    --color-light-6: #816b66;
+    --color-level-error: #ce0707;
+    --color-level-error-bg: rgba(105, 0, 8, 0.8);
+    --color-level-error-border: #750003;
+    --color-level-info: #59a1f6;
+    --color-level-info-bg: rgba(47, 80, 132, 0.8);
+    --color-level-info-border: #5c87b9;
+    --color-level-success: #26b231;
+    --color-level-success-bg: rgba(26, 107, 34, 0.8);
+    --color-level-success-border: #1b8f23;
+    --color-level-warning: #ee9b3a;
+    --color-level-warning-bg: rgba(214, 150, 0, 0.8);
+    --color-level-warning-border: #b18404;
+    --color-scrollbar: #5d142b;
+    --color-scrollbar-border: #8d151b;
 }
 
 /* scrollbar
@@ -76,8 +110,12 @@
 
 /* System
 *************************/
+
 .system-pf2e .directory .directory-list {
     padding: 0 0 0 5px;
+}
+.system-pf2e .directory .directory-item .document-name:hover {
+    color: var(--green);
 }
 .system-pf2e section.chat-sidebar .jump-to-bottom > a {
     color: var(--pfui-main-color);
@@ -221,7 +259,7 @@
 #hotbar .action-bar.no-arrows + .bar-controls span.page-number, #hotbar .hotbar-page .bar-controls span.page-number, #hotbar .hotbar-page .bar-controls i {
     border-radius: var(--border-radius);
     background: none;
-    background-color: var(--glass-bg);
+    background-color: var(--color-cool-5-50);
     box-shadow: var(--glassy);
     border: 1px solid var(--color-border-dark);
     backdrop-filter: blur(3px);
@@ -232,7 +270,7 @@
 #hotbar .bar-controls {
     border-radius: var(--border-radius);
     background: none;
-    background-color: var(--glass-bg);
+    background-color: var(--color-cool-5-50);
     box-shadow: var(--glassy);
     border: 1px solid var(--color-border-dark);
 }
@@ -251,7 +289,7 @@
     border: none;
     border-radius: var(--border-radius);
     transition: text-shadow 0.15s ease-in-out, background-color 0.15s ease-in-out, border 0.15s ease-in-out, color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, backdrop-filter 0.15s ease-in-out, border-radius 0.15s;
-    background: radial-gradient(var(--background-2), transparent);
+    background: radial-gradient(var(--color-cool-5-50), transparent);
     box-shadow: var(--glassy);
     color: var(--pfui-main-grey-color);
     backdrop-filter: blur(5px);
@@ -271,12 +309,12 @@
 #dfcp-rt-buttons button {
     padding-top: 3px;
     transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
-    background: radial-gradient(var(--background-2), transparent);
+    background: radial-gradient(var(--color-cool-5-50), transparent);
     border: none;
     border-radius: 30px;
     color: var(--pfui-main-grey-color);
     box-shadow: var(--glassy);
-    border: 1px solid var(--glass-bg);
+    border: 1px solid var(--color-cool-5-50);
     cursor: pointer;
 }
 
@@ -306,6 +344,12 @@
     box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15), inset 0 0 0 2px rgba(0, 0, 0, 0.4);
 }
 
+
+/* Monk's TokenBar */
+/* https://github.com/ironmonk88/monks-sound-enhancements */
+#mseCharacterSound, #mseItemSound {
+    color: var(--pfui-main-color);
+}
 
 /* Monk's TokenBar */
 /* https://github.com/ironmonk88/monks-tokenbar */
@@ -412,7 +456,7 @@
     top: -40px;
     border: none;
     background: none;
-    background-color: var(--glass-bg);
+    background-color: var(--color-cool-5-50);
     box-shadow: var(--glassy);
     text-shadow: 0 0 3px black;
     border-radius: var(--border-radius);
@@ -429,7 +473,7 @@
 .placeable-hud input[type="text"] {
     background: none;
     border-radius: var(--border-radius);
-    background-color: radial-gradient(var(--background-2), transparent);
+    background-color: radial-gradient(var(--color-cool-5-50), transparent);
     box-shadow: var(--glassy);
     transition: text-shadow 0.15s ease-in-out, background-color 0.15s ease-in-out, border 0.15s ease-in-out, color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, backdrop-filter 0.15s ease-in-out, border-radius 0.15s;
     color: var(--pfui-main-color);
@@ -451,7 +495,7 @@
     border-radius: 50%;
     background: none;
     opacity: 1;
-    background-color: var(--glass-bg);
+    background-color: var(--color-cool-5-50);
     box-shadow: var(--glassy);
     filter: sepia(1) brightness(0.6);
     text-shadow: 0px 0px 3px black;
@@ -506,7 +550,7 @@
 #token-hud.placeable-hud.monks-little-details .status-effects .effect-control.active {
   border: 2px solid var(--green);
   opacity: 1;
-  background: radial-gradient(var(--primary-light-remaster), var(--background-2));
+  background: radial-gradient(var(--primary-light-remaster), var(--color-cool-5-50));
   filter: brightness(1.1) saturate(1.5);
 }
 #token-hud.placeable-hud.monks-little-details .status-effects .effect-control.active .effect-name {
@@ -529,7 +573,7 @@ wrapper.pf2e-td {
 wrapper.pf2e-td.name-left .pf2e-td.name {
     margin: 6px 0 0 0;
     font-size: var(--font-size-9);
-    background: var(--glass-bg);
+    background: var(--color-cool-5-50);
     box-shadow: var(--glassy);
     border: none!important;
     color: var(--pfui-main-color);
@@ -883,7 +927,7 @@ a.content-link.broken {
 .dice-roll .dice-formula, 
 .dice-total:not(.statuseffect-message), 
 .message-content .chat-damage-buttons button {
-    background: var(--glass-bg);
+    background: var(--color-cool-5-50);
     box-shadow: var(--glassy);
     border: none;
     color: var(--pfui-main-color);

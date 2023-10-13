@@ -4,6 +4,10 @@
 - Ready for v11 version.
 
 
+## v11.313.6
+- Update core code.
+- Change background Dark Theme color.
+
 ## v11.313.5.2
 - Update core code.
 - Update Polyglot Compatibility (again)

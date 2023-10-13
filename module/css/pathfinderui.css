@@ -418,7 +418,7 @@ body.compact-mode #logo {
     font-family: "tauri";
     width: 99%;
     margin: 3px 0px 0px 2px;
-    background: radial-gradient(var(--background-2), transparent)!important;
+    background: radial-gradient(var(--color-cool-5-50), transparent)!important;
     box-shadow: var(--glassy);
     color: var(--pfui-main-color);
     border: 1px solid #000;
@@ -585,7 +585,7 @@ body.compact-mode #logo {
     margin: 3px 5px;
 }
 .polyglot-lang-select input:checked {
-    accent-color: var(--glass-bg);
+    accent-color: var(--color-cool-5-50);
 }
 .polyglot-user-list {
     max-width: unset;
@@ -612,7 +612,7 @@ body.compact-mode #logo {
     position: relative;
     bottom: 1px;
     border: 1px solid #000;
-    background: radial-gradient(var(--background-2), transparent);
+    background: radial-gradient(var(--color-cool-5-50), transparent);
     box-shadow: var(--glassy);
     border-radius: var(--border-radius);
     backdrop-filter: blur(5px);
@@ -640,7 +640,7 @@ body.compact-mode #logo {
     color: var(--pfui-main-color);
     border: none;
     background: none;
-    background-color: var(--glass-bg);
+    background-color: var(--color-cool-5-50);
     box-shadow: var(--glassy);
     text-shadow: 0 0 3px black;
     border-radius: var(--border-radius);
@@ -649,7 +649,7 @@ body.compact-mode #logo {
     color: var(--pfui-main-color);
     border: none;
     background: none;
-    background-color: var(--glass-bg);
+    background-color: var(--color-cool-5-50);
     box-shadow: var(--glassy);
     text-shadow: 0 0 3px black;
     border-radius: var(--border-radius);
@@ -665,7 +665,7 @@ body.compact-mode #logo {
     top: 1px;
     background-position: initial;
     border: 1px solid #000;
-    background: radial-gradient(var(--background-2), transparent)!important;
+    background: radial-gradient(var(--color-cool-5-50), transparent)!important;
     box-shadow: var(--glassy);
     color: var(--pfui-main-color);
     border-radius: var(--border-radius);
@@ -886,7 +886,7 @@ hr {
 }
 
 #hotbar #action-bar .macro {
-    background: var(--glass-bg);
+    background: var(--color-cool-5-50);
     border-radius: 50%;
     border: 2px solid var(--border-color-2);
     box-shadow: var(--glassy) 0px 0px 10px 0px;
@@ -955,13 +955,13 @@ hr {
 }
 
 .dice-tray button {
-    background: radial-gradient(var(--background-2), transparent);
+    background: radial-gradient(var(--color-cool-5-50), transparent);
     box-shadow: var(--glassy);
     color: var(--pfui-main-grey-color);
     backdrop-filter: blur(5px);
 }
 .dice-tray input[type="text"] {
-    background: radial-gradient(var(--background-2), transparent);
+    background: radial-gradient(var(--color-cool-5-50), transparent);
     box-shadow: var(--glassy);
 }
 .dice-calculator > button, .dice-calculator .dice-calculator--button {
