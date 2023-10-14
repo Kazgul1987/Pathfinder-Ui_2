@@ -297,15 +297,7 @@ filter: grayscale(0.75);
 .dark-kingdom-theme.sheet.kingdom nav.sub-nav a, .dark-kingdom-theme.sheet.kingdom nav.sub-nav .tab {
     color: var(--pfui-main-color);
 }
-.dark-kingdom-theme.sheet.kingdom a.inline-check[data-pf2-traits*=secret], span[data-pf2-check][data-pf2-traits*=secret] {
-    font-family: "Good OT";
-    color: var(--pfui-main-color);
-    background: var(--custom-trait);
-    padding: 0px 3px;
-    border: 1px solid var(--glassy);
-    border-radius: var(--border-radius);
-}	
-.dark-kingdom-theme.sheet.kingdom a.inline-check, span[data-pf2-check] {
+.dark-kingdom-theme.sheet.kingdom [data-pf2-effect-area] {
     font-family: "Good OT";
     color: var(--pfui-main-color);
     background: var(--custom-trait);
@@ -314,7 +306,24 @@ filter: grayscale(0.75);
     box-shadow: var(--glassy);
     border-radius: var(--border-radius);
 }
-.dark-kingdom-theme.sheet.kingdom a.inline-check, span[data-pf2-action] {
+.dark-kingdom-theme.sheet.kingdom a.inline-check[data-pf2-traits*=secret], .dark-kingdom-theme.sheet.kingdom span[data-pf2-check][data-pf2-traits*=secret] {
+    font-family: "Good OT";
+    color: var(--pfui-main-color);
+    background: var(--custom-trait);
+    padding: 0px 3px;
+    border: 1px solid var(--glassy);
+    border-radius: var(--border-radius);
+}	
+.dark-kingdom-theme.sheet.kingdom a.inline-check, .dark-kingdom-theme.sheet.kingdom span[data-pf2-check] {
+    font-family: "Good OT";
+    color: var(--pfui-main-color);
+    background: var(--custom-trait);
+    padding: 0px 3px;
+    border: 1px solid var(--glassy);
+    box-shadow: var(--glassy);
+    border-radius: var(--border-radius);
+}
+.dark-kingdom-theme.sheet.kingdom a.inline-check, .dark-kingdom-theme.sheet.kingdom span[data-pf2-action] {
     font-family: "Good OT";
     color: var(--pfui-main-color);
     background: var(--custom-trait);

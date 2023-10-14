@@ -229,16 +229,7 @@
     color: darkgoldenrod;
 }
 
-.dark-npc-theme.actor.npc a.inline-check[data-pf2-traits*=secret], span[data-pf2-check][data-pf2-traits*=secret] {
-    font-family: "Good OT";
-    color: var(--pfui-main-color);
-    background: var(--custom-trait);
-    padding: 0px 3px;
-    border: 1px solid var(--glassy);
-    box-shadow: var(--glassy);
-    border-radius: var(--border-radius);
-}	
-.dark-npc-theme.actor.npc a.inline-check, span[data-pf2-check] {
+.dark-npc-theme.actor.npc [data-pf2-effect-area] {
     font-family: "Good OT";
     color: var(--pfui-main-color);
     background: var(--custom-trait);
@@ -247,7 +238,25 @@
     box-shadow: var(--glassy);
     border-radius: var(--border-radius);
 }
-.dark-npc-theme.actor.npc a.inline-check, span[data-pf2-action] {
+.dark-npc-theme.actor.npc a.inline-check[data-pf2-traits*=secret], .dark-npc-theme.actor.npc span[data-pf2-check][data-pf2-traits*=secret] {
+    font-family: "Good OT";
+    color: var(--pfui-main-color);
+    background: var(--custom-trait);
+    padding: 0px 3px;
+    border: 1px solid var(--glassy);
+    box-shadow: var(--glassy);
+    border-radius: var(--border-radius);
+}	
+.dark-npc-theme.actor.npc a.inline-check, .dark-npc-theme.actor.npc span[data-pf2-check] {
+    font-family: "Good OT";
+    color: var(--pfui-main-color);
+    background: var(--custom-trait);
+    padding: 0px 3px;
+    border: 1px solid var(--glassy);
+    box-shadow: var(--glassy);
+    border-radius: var(--border-radius);
+}
+.dark-npc-theme.actor.npc a.inline-check, .dark-npc-theme.actor.npc span[data-pf2-action] {
     font-family: "Good OT";
     color: var(--pfui-main-color);
     background: var(--custom-trait);

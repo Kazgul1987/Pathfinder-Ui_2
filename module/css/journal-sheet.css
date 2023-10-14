@@ -316,7 +316,16 @@ color:var(--custom-green);
     flex-wrap: nowrap;
 }
 
-.journal-entry-page .journal-page-content a.inline-check[data-pf2-traits*=secret], span[data-pf2-check][data-pf2-traits*=secret] {
+.journal-entry-page .journal-page-content [data-pf2-effect-area] {
+    font-family: "Good OT";
+    color: var(--pfui-main-color);
+    background: var(--custom-trait);
+    padding: 0px 3px;
+    border: 1px solid var(--glassy);
+    box-shadow: var(--glassy);
+    border-radius: var(--border-radius);
+}
+.journal-entry-page .journal-page-content a.inline-check[data-pf2-traits*=secret], .journal-page-content span[data-pf2-check][data-pf2-traits*=secret] {
     font-family: "Good OT";
     color: var(--pfui-main-color);
     background: var(--custom-trait);
@@ -325,7 +334,7 @@ color:var(--custom-green);
     box-shadow: var(--glassy);
     border-radius: 3px;
 }	
-.journal-entry-page .journal-page-content a.inline-check, span[data-pf2-check] {
+.journal-entry-page .journal-page-content a.inline-check, .journal-page-content span[data-pf2-check] {
     font-family: "Good OT";
     color: var(--pfui-main-color);
     background: var(--custom-trait);
@@ -334,7 +343,7 @@ color:var(--custom-green);
     box-shadow: var(--glassy);
     border-radius: 3px;
 }
-.journal-entry-page .journal-page-content a.inline-check, span[data-pf2-action] {
+.journal-entry-page .journal-page-content a.inline-check, .journal-page-content span[data-pf2-action] {
     font-family: "Good OT";
     color: var(--pfui-main-color);
     background: var(--custom-trait);
@@ -343,7 +352,7 @@ color:var(--custom-green);
     box-shadow: var(--glassy);
     border-radius: 3px;
 }
-.journal-entry-page .journal-page-content a.content-link, a.inline-roll {
+.journal-entry-page .journal-page-content a.content-link, .journal-entry-page .journal-page-content a.inline-roll {
     font-family: "Good OT";
     color: var(--pfui-main-color);
     background: var(--custom-trait);

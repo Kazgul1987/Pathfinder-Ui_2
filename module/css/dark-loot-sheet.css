@@ -132,15 +132,7 @@
     color: var(--background)!important;
     border-radius: var(--border-radius);
 }
-.dark-loot-theme.sheet.actor.loot a.inline-check[data-pf2-traits*=secret], span[data-pf2-check][data-pf2-traits*=secret] {
-    font-family: "Good OT";
-    color: var(--pfui-main-color);
-    background: var(--custom-trait);
-    padding: 0px 3px;
-    border: 1px solid var(--glassy);
-    border-radius: var(--border-radius);
-}	
-.dark-loot-theme.sheet.actor.loot a.inline-check, span[data-pf2-check] {
+.dark-loot-theme.sheet.actor.loot [data-pf2-effect-area] {
     font-family: "Good OT";
     color: var(--pfui-main-color);
     background: var(--custom-trait);
@@ -149,7 +141,24 @@
     box-shadow: var(--glassy);
     border-radius: var(--border-radius);
 }
-.dark-loot-theme.sheet.actor.loot a.inline-check, span[data-pf2-action] {
+.dark-loot-theme.sheet.actor.loot a.inline-check[data-pf2-traits*=secret], .dark-loot-theme.sheet.actor.loot span[data-pf2-check][data-pf2-traits*=secret] {
+    font-family: "Good OT";
+    color: var(--pfui-main-color);
+    background: var(--custom-trait);
+    padding: 0px 3px;
+    border: 1px solid var(--glassy);
+    border-radius: var(--border-radius);
+}	
+.dark-loot-theme.sheet.actor.loot a.inline-check, .dark-loot-theme.sheet.actor.loot span[data-pf2-check] {
+    font-family: "Good OT";
+    color: var(--pfui-main-color);
+    background: var(--custom-trait);
+    padding: 0px 3px;
+    border: 1px solid var(--glassy);
+    box-shadow: var(--glassy);
+    border-radius: var(--border-radius);
+}
+.dark-loot-theme.sheet.actor.loot a.inline-check, .dark-loot-theme.sheet.actor.loot span[data-pf2-action] {
     font-family: "Good OT";
     color: var(--pfui-main-color);
     background: var(--custom-trait);

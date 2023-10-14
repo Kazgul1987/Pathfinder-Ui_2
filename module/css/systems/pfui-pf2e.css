@@ -237,7 +237,7 @@
     box-shadow: 0px 0px 6px var(--color-warm-2), 0px 2px 8px 1px var(--color-warm-3);
 }
 #effects-panel .effect-item a.content-link, .effect-item a.inline-roll {
-    color: var(--pfui-main-grey-color)!important;
+    color: var(--pfui-main-color)!important;
     border: none;
     background-color: var(--color-cool-4);
     box-shadow: var(--glassy);
@@ -745,16 +745,6 @@ wrapper.pf2e-td.name-left .pf2e-td.damage-application {
 [data-pf2-check] { 
     color: #0e0e0e ; 
 }
-/* Chat button effect area */
-#chat-log [data-pf2-effect-area] {
-    font-family: 'Good OT';
-    color: var(--pfui-main-color);
-    background: var(--custom-trait);
-    padding: 0px 3px;
-    border: 1px solid var(--glassy);
-    box-shadow: var(--glassy);
-    border-radius: var(--border-radius);
-}
 
 /* Chat button DC Action */
 [data-pf2-action]{
@@ -915,6 +905,16 @@ a.content-link.broken {
 #chat-log button {
     transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
 }
+
+#chat-log [data-pf2-effect-area] {
+    font-family: 'Good OT';
+    color: var(--pfui-main-color);
+    background: var(--custom-trait);
+    padding: 0px 3px;
+    border: 1px solid var(--glassy);
+    box-shadow: var(--glassy);
+    border-radius: var(--border-radius);
+}
 #chat-log a.inline-check, span[data-pf2-check] {
     font-family: 'Good OT';
     color: var(--pfui-main-color);
@@ -924,7 +924,7 @@ a.content-link.broken {
     box-shadow: var(--glassy);
     border-radius: var(--border-radius);
 }
-#chat-log .pf2e.chat-card a.inline-check, span[data-pf2-action] {
+#chat-log .pf2e.chat-card a.inline-check, .pf2e.chat-card span[data-pf2-action] {
     font-family: 'Good OT';
     color: var(--pfui-main-color);
     background: var(--custom-trait);
