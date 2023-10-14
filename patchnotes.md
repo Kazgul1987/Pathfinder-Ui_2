@@ -4,7 +4,7 @@
 - Ready for v11 version.
 
 
-## v11.313.6.1
+## v11.313.6.2
 - Update core code.
 - Change background Dark Theme color.
 

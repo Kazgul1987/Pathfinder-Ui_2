@@ -21,6 +21,7 @@
     --green: #91a82a;
     --pfui-main-color: #cfbda7;
     --pfui-main-grey-color: #98968a;
+    --rpg-styled-ui-color: #837360;
     --primary-remaster: hsl(153, 100%, 8%);
 	--primary-light-remaster: hsl(170, 96%, 19%);
     --ornement : url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='33' height='33' overflow='scroll'%3E%3Cstyle%3E.st1{stroke:wheat;stroke-miterlimit:10}.st1,.st2{fill:none}%3C/style%3E%3Cg opacity='0.75'%3E%3Cpath class='st1' d='M.5 20v-7'/%3E%3Cpath class='st2' d='M13 20v-7'/%3E%3Cpath class='st1' d='M13 .5h7'/%3E%3Cpath class='st2' d='M13 13h7'/%3E%3Cpath class='st1' d='M32.5 13v7'/%3E%3Cpath class='st2' d='M20 13v7'/%3E%3Cpath class='st1' d='M20 32.5h-7'/%3E%3Cpath class='st2' d='M20 20h-7'/%3E%3Cpath class='st1' d='M.5.5h3.1v3.1H.5zm3.1 3.1h3.1v3.1H3.6zm3.2 0h3.1v3.1H6.8zM3.6 6.8h3.1v3.1H3.6zm0 0H.5V13M13 .5H6.8v3.1M29.4.5h3.1v3.1h-3.1zm-3.1 3.1h3.1v3.1h-3.1zm0 3.2h3.1v3.1h-3.1zm-3.2-3.2h3.1v3.1h-3.1zm3.2 0V.5H20M32.5 13V6.8h-3.1M29.4 29.4h3.1v3.1h-3.1z'/%3E%3Cpath class='st1' d='M26.3 26.3h3.1v3.1h-3.1zm-3.2 0h3.1v3.1h-3.1zm3.2-3.2h3.1v3.1h-3.1z'/%3E%3Cpath class='st1' d='M29.4 26.3h3.1V20M20 32.5h6.3v-3.1'/%3E%3Cg%3E%3Cpath class='st1' d='M.5 29.4h3.1v3.1H.5zm3.1-3.1h3.1v3.1H3.6zm0-3.2h3.1v3.1H3.6zm3.2 3.2h3.1v3.1H6.8zM6.8 29.4v3.1H13M.5 20v6.3h3.1'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
@@ -145,6 +146,7 @@
     border-image-width: auto;
     border-image-outset: 1px 2px 2px 2px;
     border-radius: 0;
+    filter: drop-shadow(2px 4px 6px var(--color-cool-4));
 }
 
 .system-pf2e .sheet.actor .window-header,
@@ -202,13 +204,65 @@
 }
 
 #effects-panel .effect-item > .icon {
-    position: relative;
     height: 42px;
     width: 42px;
     margin-left: 3px;
     border-radius: 50%;
-    border: 2px solid var(--border-color);
-    box-shadow: rgb(0, 0, 0) 0px 0px 10px 0px;
+    border: 1px solid var(--color-cool-3);
+    box-shadow: 0px 0px 5px 2px var(--color-cool-5);
+}
+#effects-panel .effect-item > .icon.aura {
+    border-radius: 5px;
+    border: 1px solid var(--color-warm-1);
+    box-shadow: 0px 0px 6px 1px var(--color-warm-2);
+}
+#effects-panel .effect-item > .icon .value-wrapper {
+    color: var(--pfui-main-color);
+    background-color: var(--red);
+    border: 1px solid var(--color-cool-3);
+    border-radius: var(--border-radius);
+}
+#effects-panel .effect-item > .icon .linked {
+    color: var(--pfui-main-color);
+    background-color: var(--red);
+    border: 1px solid var(--color-cool-3);
+    border-radius: var(--border-radius);
+}
+#effects-panel .effect-item .effect-info {
+    background-color: var(--color-cool-5);
+    color: var(--pfui-main-color);
+    border-radius: var(--border-radius-5);
+    border: 2px solid var(--color-warm-2);
+    backdrop-filter: blur(3px);
+    box-shadow: 0px 0px 6px 1px var(--color-warm-3);
+}
+#effects-panel .effect-item .effect-info h1 {
+    color: var(--pfui-main-color);
+    border-bottom: 1px dotted var(--color-cool-3);
+}
+#effects-panel .effect-item .effect-info .instructions {
+    color: var(--color-cool-3);
+}
+#effects-panel .effect-item .effect-info .description {
+    color: var(--pfui-main-color);
+    border: none;
+    background: none;
+    background-color: var(--color-cool-5);
+    box-shadow: var(--glassy);
+    text-shadow: 0 0 1px black;
+    border-radius: var(--border-radius);
+}
+#effects-panel .tags .tag.tag_secondary, .tags .tag option.tag_secondary {
+    color: var(--pfui-main-color);
+    border: none;
+    background: none;
+    background-color: var(--color-cool-4);
+    box-shadow: var(--glassy);
+    text-shadow: 0 0 1px black;
+    border-radius: var(--border-radius);
+}
+#effects-panel hr {
+    border-top: 1px dotted var(--color-cool-3);
 }
 
 /*Token Health*/
@@ -463,8 +517,8 @@
     backdrop-filter: blur(5px);
 }
 .placeable-hud .control-icon.active {
-    background: var(--primary-remaster);
-    border: 2px solid var(--green);
+    background: var(--color-cool-4);
+    border: 1px solid var(--color-warm-1);
 }
 .placeable-hud .control-icon picture:hover {
     opacity: 1;
@@ -516,10 +570,10 @@
     filter: brightness(1.1) saturate(1);
 }
 #token-hud .status-effects .effect-control.active img {
-    border: 2px solid var(--green);
+    border: 2px solid var(--color-warm-1);
     filter: brightness(1.1) saturate(1);
     opacity: 0.75;
-    cursor:url(../../ui/cursors/pointer.webp), pointer; 
+    cursor: url(../../ui/cursors/pointer.webp), pointer;
 }
 #token-hud .status-effects .effect-control:not(.active):hover img {
     border: 2px solid var(--green);
@@ -706,11 +760,13 @@ wrapper.pf2e-td.name-left .pf2e-td.damage-application {
 }
 
 #chat-log .tag {
+    color: var(--pfui-main-color);
     box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15), inset 0 0 0 2px rgba(0, 0, 0, 0.4);
     border-radius: var(--border-radius);
 }
 
 #chat-log .tags.paizo-style .tag {
+    color: var(--pfui-main-color);
     border: none;
 }
 
@@ -758,6 +814,10 @@ wrapper.pf2e-td.name-left .pf2e-td.damage-application {
 .pf2e.chat-card .card-content p {
     font-family: "Good OT";
     font-size: var(--font-size-16);
+}
+.pf2e.chat-card .card-header img {
+
+    border-radius: 50%;
 }
 
 .message-content .chat-damage-buttons button .label {

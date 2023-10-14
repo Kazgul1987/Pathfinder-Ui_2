@@ -567,14 +567,14 @@
 }
 
 .actor.sheet.dark-theme .tags .tag.tag_alt {
-    background-color: #5e0000!important;
+    background-color: var(--color-cool-4);
 }
 .actor.sheet.dark-theme .tags .tag.tag_secondary {
-    background-color: #171f69!important;
+    background-color: var(--secondary)!important;
     color: var(--pfui-main-color);
 }
 .actor.sheet.dark-theme .tags .tag, .tags .tag option {
-    background-color: #5e0000;
+    background-color: var(--primary);
     color: var(--pfui-main-color);
 }
 .actor.sheet.dark-theme .inventory .item .item-quantity, .actor.sheet.dark-theme .inventory .item .item-weight, .actor.sheet.dark-theme .inventory .item .item-controls, .actor.sheet.dark-theme .inventory .item .item-sell-value {

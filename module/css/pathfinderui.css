@@ -60,6 +60,9 @@ body {
 :root {
     --pfui-main-color: #cfbda7;
     --pfui-main-grey-color: #98968a;
+    --rpg-styled-ui-color: #837360;
+    --rpg-styled-ui-grey-color: #7a7971;
+    --rpg-styled-ui-background: #ffffff14;
     --green: #91a82a;
     --blue: #171f69;
     --success:rgb(100, 216, 255);
@@ -70,7 +73,6 @@ body {
     --custom-trait:#61180e;
     --border-radius: 3px;
     --border-color: #372d25;
-    --border-color-2: #837360;
     --serif: Eczar,Georgia,serif;
     --journal-serif: "Vollkorn",var(--serif);
     --glassy: 0px 0px 3px 0px rgba(255, 255, 255, 0.4) inset, 0px 0px 2px 1px rgba(0, 0, 0, 1), 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
@@ -78,7 +80,6 @@ body {
     --glassy-sharp-highlight: 0px 0px 0px 1px rgba(245, 222, 179, 0.7) inset, 0px 0px 5px 1px rgba(0, 0, 0, 0.8);
 
     --background: #100d0d;
-    --background-2: #ffffff14;
     --border-radius: 3px;
     --border-radius-5: 5px;
 
@@ -433,7 +434,7 @@ body.compact-mode #logo {
 }
 
 #chat-controls {
-    color: var(--border-color-2);
+    color: var(--rpg-styled-ui-color);
     margin: 0 6px 2px;
 }
 
@@ -450,7 +451,7 @@ body.compact-mode #logo {
 
 #chat-log .message {
     position: relative;
-    color: var(--border-color-2);
+    color: var(--rpg-styled-ui-color);
     border: none !important;
     background: transparent;
     padding: 10px 10px 15px 10px;
@@ -894,7 +895,7 @@ hr {
 #hotbar #action-bar .macro {
     background: var(--color-cool-5-50);
     border-radius: 50%;
-    border: 2px solid var(--border-color-2);
+    border: 2px solid var(--rpg-styled-ui-color);
     box-shadow: var(--glassy) 0px 0px 10px 0px;
     backdrop-filter: blur(5px);
 }
@@ -923,7 +924,7 @@ hr {
     top: initial;
     bottom: 2px;
     z-index: 3;
-    color: var(--border-color-2);
+    color: var(--rpg-styled-ui-color);
     background: none;
 }
 
@@ -939,7 +940,7 @@ hr {
 }
 
 #hotbar .bar-controls {
-    color: var(--border-color-2);
+    color: var(--rpg-styled-ui-color);
     background: none;
     border: none;
     box-shadow: none;
@@ -1043,7 +1044,7 @@ nav.damage-log-nav .item.active:before,
     background: none;
     box-shadow: none;
     border: none;
-    color: var(--border-color-2);
+    color: var(--rpg-styled-ui-color);
 }
 
 #controls ol .scene-control.active,
@@ -1107,7 +1108,7 @@ nav.damage-log-nav .item.active:before,
 }
 
 .app.window-app.dialog,
-.app.window-app.folder-edit {
+.app.window-app {
     background: rgba(6, 4, 3, 0.92);
     border-image-source: url(../ui/frames/input_border.webp);
     border-image-slice: 5 20 20 20 fill;
@@ -1118,19 +1119,19 @@ nav.damage-log-nav .item.active:before,
 }
 
 .window-app.dialog .window-content,
-.window-app.folder-edit .window-content {
+.window-app .folder-edit .window-content {
     color: #cfbda7;
     background: none;
 }
 
 .window-app.dialog .window-header,
-.window-app.folder-edit .window-header {
+.window-app .window-header {
     border: none;
     color: var(--pfui-main-color);
 }
 
 .window-app.dialog .window-header::after,
-.window-app.folder-edit .window-header::after {
+.window-app .window-header::after {
     position: absolute;
     z-index: -1;
     content: " ";
@@ -1146,7 +1147,7 @@ nav.damage-log-nav .item.active:before,
 .folder-edit button {
     font-family: 'Kurale', serif;
     font-weight: 600;
-    color: var(--border-color-2);
+    color: var(--rpg-styled-ui-color);
     background: transparent;
     border: none!important;
     position: relative;
@@ -1218,7 +1219,7 @@ nav.damage-log-nav .item.active:before,
 .dialog select,
 .folder-edit select {
     border: 0;
-    background: var(--border-color-2);
+    background: var(--rpg-styled-ui-color);
 }
 
 .folder-edit input[type="color"][data-edit][data-edit] {

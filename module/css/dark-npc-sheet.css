@@ -189,7 +189,7 @@
     color: var(--pfui-main-color);
     border: none;
     background: none;
-    background-color: var(--glass-bg);
+    background-color: var(--color-cool-4);
     box-shadow: var(--glassy);
     text-shadow: 0 0 1px black;
     border-radius: var(--border-radius);
