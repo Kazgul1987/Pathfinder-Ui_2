@@ -163,8 +163,14 @@
     text-shadow: 0 0 10px var(--green);
 }
 .dark-npc-theme.actor.npc .tags.paizo-style tag, .dark-npc-theme.actor.npc .tags.paizo-style .tag, .dark-npc-theme.actor.npc .tags.paizo-style select.tag {
-    color: var(--pfui-main-color);
+    color: antiquewhite;
     text-transform: uppercase;
+    border: 1px solid black;
+    box-shadow: var(--glassy);
+    text-shadow: 0 0 1px black;
+    border-radius: var(--border-radius);
+}
+.dark-npc-theme.actor.npc .tagify__tag > div::before {
     border: 1px solid black;
     box-shadow: var(--glassy);
     text-shadow: 0 0 1px black;
@@ -520,6 +526,18 @@
 .dark-npc-theme.actor.npc form input[type=text], .dark-npc-theme.actor.npc form input[type=number] {
     color: var(--rarity-common);
 }
+.dark-npc-theme.actor.npc form .notes .notes-section > h4 {
+    color: darkgoldenrod;
+}
+.dark-npc-theme.actor.npc form .notes .notes-section.publication .notes-text .license select {
+    color: var(--pfui-main-color);
+    text-transform: uppercase;
+    border: 1px solid black;
+    background-color: var(--glass-bg);
+    box-shadow: var(--glassy);
+    text-shadow: 0 0 1px black;
+    border-radius: var(--border-radius);
+}
 
 
 
@@ -553,7 +571,7 @@
     padding: 2px 5px;
     backdrop-filter: blur(5px);
 }
-.glassy.dark-npc-theme.actor.npc .sidebar .image-container img.actor-image {
+.glassy.dark-npc-theme.actor.npc .sidebar .image-container {
     box-shadow: var(--glassy);
     background-color: var(--color-cool-5-90);
     border-radius: 8px;

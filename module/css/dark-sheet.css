@@ -99,6 +99,18 @@
 .actor.sheet.dark-theme .crb-style aside .logo {
     filter: drop-shadow(1px 2px 5px var(--green)) grayscale(0.75);
 }
+.actor.character.dark-theme .crb-style aside .sidebar .tags .tag.edit-btn {
+    color: var(--pfui-main-color);
+    background: var(--background);
+    box-shadow: inset 0 0 0 1px var(--pfui-main-color);
+}
+.actor.character.dark-theme .crb-style select option {
+    background: var(--color-cool-5);
+    box-shadow: var(--glassy);
+    border: none;
+    color: var(--pfui-main-color);
+    border-radius: var(--border-radius);
+}
 .actor.sheet.dark-theme [data-pf2-effect-area] {
     font-family: "Good OT";
     color: var(--pfui-main-color);
@@ -298,17 +310,6 @@
     color: var(--pfui-main-color) !important;
 }
 
-
-.sheet.actor.character.dark-theme .data-value {
-    border-color: var(--pfui-main-color) !important;
-}
-
-.sheet.actor.character.dark-theme li.tag {
-    color: var(--pfui-main-color) !important;
-    background: var(--background) !important;
-    box-shadow: inset 0 0 0 1px var(--pfui-main-color) !important;
-}
-
 .actor.sheet.character.dark-theme .crb-style nav.sheet-navigation .item:hover, .actor.sheet.character.dark-theme .crb-style nav.sheet-navigation .item.active {
     fill: var(--pfui-main-color);
 }
@@ -339,8 +340,10 @@
     background-color: var(--glass-bg);
 }
 
-.actor.sheet.character.dark-theme select {
+.actor.sheet.character.dark-theme .crb-style select {
     color: var(--pfui-main-color) !important;
+    background-color: var(--color-cool-4);
+    border-radius: var(--border-radius);
 }
 
 .actor.sheet.character.dark-theme input {
@@ -348,8 +351,8 @@
     background: transparent;
 }
 .actor.sheet.character.dark-theme .crb-style .details-input {
-    border: 1px dotted var(--color-cool-5-50);
-    background: radial-gradient(var(--background-2), transparent)!important;
+background: radial-gradient(var(--background-2), transparent);
+    border-radius: var(--border-radius);
 }
 
 .actor.sheet.dark-theme .crb-style header.char-header .char-details h1.char-name input[type=text], .actor.sheet.dark-theme .crb-style header.char-header .char-details h1.char-name span.non-editable {
@@ -577,12 +580,13 @@
 
 .actor.sheet.dark-theme .tags .tag.tag_alt {
     background-color: var(--color-cool-4);
+    border-radius: var(--border-radius);
 }
 .actor.sheet.dark-theme .tags .tag.tag_secondary {
     background-color: var(--secondary)!important;
     color: var(--pfui-main-color);
 }
-.actor.sheet.dark-theme .tags .tag, .tags .tag option {
+.actor.sheet.dark-theme .tags .tag, .actor.sheet.dark-theme .tags .tag option {
     background-color: var(--primary);
     color: var(--pfui-main-color);
 }
@@ -700,9 +704,11 @@ color: var(--green)!important;
 /* Proficiencies
 *************************/
 .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.proficiencies .skills-list .skill, .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.proficiencies .lores-list .skill, .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.proficiencies .combat-list .skill {
-    background: radial-gradient(var(--background-2), transparent);
-    border: 1px dotted var(--color-cool-5-50);
-    box-shadow: 0 0 6px inset var(--glass-bg-light-2);
+    background: var(--color-cool-5);
+    box-shadow: var(--glassy);
+    border: none;
+    color: var(--pfui-main-grey-color);
+    border-radius: var(--border-radius);
 }
 
 .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.proficiencies h1, .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.proficiencies h4, .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.proficiencies h6 {
@@ -745,7 +751,7 @@ color: var(--green)!important;
 
 
 
-/* Feats        
+/* Effects        
 *************************/
 .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.effects .effects-list .item {
     border: none;
@@ -790,6 +796,18 @@ color: var(--green)!important;
     border-radius: 50px;
     right: 0px;
     top: 2px;
+}
+.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.pfs > section.organized-play input {
+    background: radial-gradient(var(--background-2), transparent);
+    border: 1px dotted var(--color-cool-5-50);
+    box-shadow: var(--glassy);
+    border-radius: var(--border-radius);
+}
+.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.pfs > section.reputations .reputation input {
+    background: radial-gradient(var(--background-2), transparent);
+    border: 1px dotted var(--color-cool-5-50);
+    box-shadow: var(--glassy);
+    border-radius: var(--border-radius);
 }
 
 
@@ -875,9 +893,6 @@ color: var(--green)!important;
 .red.actor.sheet.character.dark-theme .crb-style aside .sidebar .armor-class .shield.hp {
     background: url("../css/assets/red-pc-sheet/red-shield.webp") no-repeat top center;
 }
-.red.actor.sheet.character.dark-theme .crb-style aside .sidebar .initiative-select select {
-    background-color: var(--remaster);
-}
 .red.actor.sheet.character.dark-theme .crb-style header.char-header .char-level .level {
     background: url("../css/assets/red-pc-sheet/red-level-badge.webp") no-repeat;
 }
@@ -916,6 +931,7 @@ color: var(--green)!important;
 }
 .red.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.spellcasting .pf-add-item-row a {
     background: radial-gradient(var(--red), transparent)!important;
+    box-shadow: var(--glassy);
     border-radius: 15px;
 }
 .red.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.spellcasting .pf-add-item-row a:hover {
@@ -991,6 +1007,10 @@ color: var(--green)!important;
 .remaster.sheet.actor.character.dark-theme .window-content {
     color: var(--pfui-main-color);
     background: none;
+}
+.remaster.actor.sheet.dark-theme .tags .tag.tag_alt {
+    background-color: var(--primary);
+    color: var(--pfui-main-color);
 }
 .remaster.actor.sheet.character.dark-theme .crb-style header.char-header .char-level .exp-data .exp-input input {
     color: var(--pfui-main-color) !important;
@@ -1184,4 +1204,16 @@ color: var(--primary-remaster);
 }
 .remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.pfs > section.reputations {
     color: var(--primary-remaster);
+}
+.remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.pfs > section.organized-play input {
+    background-color: rgba(28, 28, 28, 0.1);
+    border: unset;
+    box-shadow: unset;
+    border-radius: unset;
+}
+.remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.pfs > section.reputations .reputation input {
+    background-color: rgba(28, 28, 28, 0.1);
+    border: unset;
+    box-shadow: unset;
+    border-radius: unset;
 }

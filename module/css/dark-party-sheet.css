@@ -270,7 +270,7 @@
     color: var(--pfui-main-color);
     border: none;
     background: none;
-    background-color: var(--alt);
+    background-color: var(--color-cool-4);
     box-shadow: var(--glassy);
     text-shadow: 0 0 3px black;
     border-radius: var(--border-radius);

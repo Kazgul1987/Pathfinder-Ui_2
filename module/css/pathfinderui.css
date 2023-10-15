@@ -127,6 +127,14 @@ body.compact-mode #logo {
     left: -10%;
 }
 
+#context-menu {
+    background: var(--color-cool-5);
+    box-shadow: var(--glassy);
+    border: none;
+    color: var(--pfui-main-color);
+    border-radius: var(--border-radius);
+}
+
 
 /*************************************************************/
 /*======================= SIDEBAR ===========================*/

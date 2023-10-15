@@ -111,6 +111,23 @@
 
 /* System
 *************************/
+#tooltip, .locked-tooltip {
+    background-color: var(--color-cool-5-90);
+    color: var(--pfui-main-color);
+    border-radius: var(--border-radius-5);
+    border: 1px solid var(--color-warm-1);
+    backdrop-filter: blur(3px);
+    box-shadow: 0px 0px 6px var(--color-warm-2), 0px 2px 8px 1px var(--color-warm-3);
+}
+#tooltip a.inline-check, span[data-pf2-check] {
+    font-family: 'Good OT';
+    color: var(--pfui-main-grey-color);
+    background: var(--color-cool-4);
+    padding: 0px 3px;
+    border: 1px solid var(--glassy);
+    box-shadow: var(--glassy);
+    border-radius: var(--border-radius);
+}
 
 .system-pf2e .directory .directory-list {
     padding: 0 0 0 5px;
@@ -236,7 +253,7 @@
     backdrop-filter: blur(3px);
     box-shadow: 0px 0px 6px var(--color-warm-2), 0px 2px 8px 1px var(--color-warm-3);
 }
-#effects-panel .effect-item a.content-link, .effect-item a.inline-roll {
+#effects-panel .effect-item .effect-info .description a, #effects-panel .effect-item .effect-info .description span[data-pf2-effect-area] {
     color: var(--pfui-main-color)!important;
     border: none;
     background-color: var(--color-cool-4);
@@ -244,7 +261,7 @@
     text-shadow: 0 0 1px black;
     border-radius: var(--border-radius);
 }
-#effects-panel .effect-item a:hover {
+#effects-panel .effect-item .effect-info .description a:hover {
     color: var(--color-cool-5)!important;
     border: none;
     background-color: var(--color-warm-1);
@@ -287,15 +304,6 @@
     background: url(../systems/imgs/chat-texture-dark.webp) repeat;
 }
 
-/* Chat button DC Check */ 
-[data-pf2-check] { 
-    color: #0e0e0e ; 
-}
-
-/* Chat button DC Action */
-[data-pf2-action]{
-    color: #0e0e0e ; 
-}
 
 /* Chat */
 #chat-log .message.emote p {
@@ -559,26 +567,19 @@ a.content-link.broken {
     --fa-primary-color: var(--color-warm-1);
     --fa-secondary-color: var(--red-light);
 }
-#chat-log .chat-message .message-content .dice-roll .dice-result .statuseffect-message img {
-    border: none;
-    margin: 2px;
-    box-shadow: 0 0 0 1px var(--tertiary), 0 0 0 2px var(--color-warm-1);
-    border-radius: 50%;
-    margin-right: 6px;
-}
-#chat-log .chat-message > .message-content .dice-roll .statuseffect-rules {
-    background: var(--color-cool-5);
-    box-shadow: var(--glassy);
-    border: none;
-    color: var(--pfui-main-color);
-    border-radius: 3px;
-}
-#chat-log .message-content .dice-roll .statuseffect-message {
+#chat-log .chat-message > .message-content ul.participant-conditions {
     background: unset;
     box-shadow: unset;
     border: unset;
     color: var(--pfui-main-color);
 }
+#chat-log .chat-message > .message-content ul.participant-conditions li img {
+    box-shadow: 0 0 0 1px var(--tertiary), 0 0 0 2px var(--color-warm-1);
+    border-radius: 50%;
+    margin-right: 6px;
+}
+
+
 .dice-total:hover,
 .dice-roll .dice-formula:hover,
 #chat-log button:hover {
