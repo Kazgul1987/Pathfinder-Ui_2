@@ -1,0 +1,820 @@
+:root{
+    --border-radius: 3px;
+    --glassy: 0px 0px 3px 0px rgba(255, 255, 255, 0.4) inset, 0px 0px 2px 1px rgba(0, 0, 0, 1), 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+    --glass-bg: rgba(20, 20, 20, 0.6);
+    --glass-bg-light: rgba(255, 255, 255, 0.1);
+    --glass-bg-dark: rgba(0, 0, 0, 0.7);
+    --pf2e-shadow-is-dark: 0px 1px var(--pf2e-half-transparent-dark);
+    --pf2e-translucent-middle: var(--pf2e-translucent-middle-for-light);
+    --pf2e-translucent-middle-for-light: hsla(0, 0%, 80%,0.5);
+    --pf2e-translucent-very: var(--pf2e-translucent-very-for-light);
+    --pf2e-transcluent-very-for-light: hsla(0, 0%, 60%,0.2);
+    --header-text-shadow: var(--pf2e-shadow-is-dark);
+    --pf2e-shadow-is-dark: 0px 1px var(--pf2e-half-transparent-dark);
+    --filter-dark: invert(100%) drop-shadow(0px 1px 1px black);
+    --pf2e-half-transparent-dark: hsla(0, 0%, 0%,0.5);
+    --color-text-hyperlink: #ff6400;
+    --gold-and-glow: 0 0 0 1px var(--tertiary), 0 0 0 2px #9f725b, inset 0 0 3px rgba(255, 255, 255, .5);
+    --red: #5e0000;
+    --red-light:#ff0000;
+    --custom-trait:#61180e;
+    --green: #91a82a;
+    --pfui-main-color: #cfbda7;
+    --pfui-main-grey-color: #98968a;
+    --rpg-styled-ui-color: #837360;
+    --primary-remaster: hsl(153, 100%, 8%);
+	--primary-light-remaster: hsl(170, 96%, 19%);
+    --ornement : url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='33' height='33' overflow='scroll'%3E%3Cstyle%3E.st1{stroke:wheat;stroke-miterlimit:10}.st1,.st2{fill:none}%3C/style%3E%3Cg opacity='0.75'%3E%3Cpath class='st1' d='M.5 20v-7'/%3E%3Cpath class='st2' d='M13 20v-7'/%3E%3Cpath class='st1' d='M13 .5h7'/%3E%3Cpath class='st2' d='M13 13h7'/%3E%3Cpath class='st1' d='M32.5 13v7'/%3E%3Cpath class='st2' d='M20 13v7'/%3E%3Cpath class='st1' d='M20 32.5h-7'/%3E%3Cpath class='st2' d='M20 20h-7'/%3E%3Cpath class='st1' d='M.5.5h3.1v3.1H.5zm3.1 3.1h3.1v3.1H3.6zm3.2 0h3.1v3.1H6.8zM3.6 6.8h3.1v3.1H3.6zm0 0H.5V13M13 .5H6.8v3.1M29.4.5h3.1v3.1h-3.1zm-3.1 3.1h3.1v3.1h-3.1zm0 3.2h3.1v3.1h-3.1zm-3.2-3.2h3.1v3.1h-3.1zm3.2 0V.5H20M32.5 13V6.8h-3.1M29.4 29.4h3.1v3.1h-3.1z'/%3E%3Cpath class='st1' d='M26.3 26.3h3.1v3.1h-3.1zm-3.2 0h3.1v3.1h-3.1zm3.2-3.2h3.1v3.1h-3.1z'/%3E%3Cpath class='st1' d='M29.4 26.3h3.1V20M20 32.5h6.3v-3.1'/%3E%3Cg%3E%3Cpath class='st1' d='M.5 29.4h3.1v3.1H.5zm3.1-3.1h3.1v3.1H3.6zm0-3.2h3.1v3.1H3.6zm3.2 3.2h3.1v3.1H6.8zM6.8 29.4v3.1H13M.5 20v6.3h3.1'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    --rarity-common: #7e7e7e;
+    --rarity-uncommon: #ff6400;
+    --rarity-rare: #0062ff;
+    --rarity-unique: #e127e1;
+
+
+/* Foundry2
+====================================================== */
+    --color-warm-1: #ee9b3a;
+    --color-warm-2: #c9593f;
+    --color-warm-3: #5d142b;
+    --color-cool-3: #584a75;
+    --color-cool-4: #302831;
+    --color-cool-5: #0b0a13;
+    --color-cool-5-25: rgba(11, 10, 19, 0.25);
+    --color-cool-5-50: rgba(11, 10, 19, 0.5);
+    --color-cool-5-75: rgba(11, 10, 19, 0.75);
+    --color-cool-5-90: rgba(11, 10, 19, 0.9);
+    --color-light-1: #f7f3e8;
+    --color-light-2: #efe6d8;
+    --color-light-3: #e7d1b1;
+    --color-light-4: #d0b8a3;
+    --color-light-5: #9f8475;
+    --color-light-6: #816b66;
+    --color-level-error: #ce0707;
+    --color-level-error-bg: rgba(105, 0, 8, 0.8);
+    --color-level-error-border: #750003;
+    --color-level-info: #59a1f6;
+    --color-level-info-bg: rgba(47, 80, 132, 0.8);
+    --color-level-info-border: #5c87b9;
+    --color-level-success: #26b231;
+    --color-level-success-bg: rgba(26, 107, 34, 0.8);
+    --color-level-success-border: #1b8f23;
+    --color-level-warning: #ee9b3a;
+    --color-level-warning-bg: rgba(214, 150, 0, 0.8);
+    --color-level-warning-border: #b18404;
+    --color-scrollbar: #5d142b;
+    --color-scrollbar-border: #8d151b;
+}
+
+/* POLICES
+====================================================== */
+@font-face {
+	font-family: "Taroca";
+	src: url("./fonts/Taroca.ttf") format('truetype');
+}
+@font-face {
+	font-family: "Good OT";
+	src: url("./fonts/GoodOT.otf") format('opentype');
+}
+@font-face {
+	font-family: "Good OT Bold";
+	src: url("./fonts/GoodOT-Bold.otf") format('opentype');
+}
+@font-face {
+	font-family: "Good OT Cond Bold";
+	src: url("./fonts/GoodOT-CondBold.otf") format('opentype');
+}
+@font-face {
+	font-family: "Good OT Italic";
+	src: url("./fonts/GoodOT-Italic.otf") format('opentype');
+}
+@font-face {
+	font-family: "Sabon LT Std";
+	src: url("./fonts/Sabon-LT-Std-Roman.otf") format('opentype');
+}
+@font-face {
+	font-family: "Sabon LT Italic";
+	src: url("./fonts/Sabon-LT-Std-Italic.ttf") format('truetype');
+}
+@font-face {
+    font-family: "tauri";
+    src: url("./fonts/Tauri-Regular.ttf") format('truetype');
+}
+
+
+
+/*Token Health*/
+/*https://github.com/schlosrat/token-health*/
+.dialog .dialog-buttons.token-health button[data-button='heal'] {
+    background-color: transparent;
+}
+.dialog .dialog-buttons.token-health button[data-button='heal']:hover {
+    background-color: transparent;
+}
+
+
+
+/*Speaking As*/
+/*https://foundryvtt.com/packages/speaking-as*/
+.speaking-as--currentSpeaker--icon {
+    border-radius: 50%;
+    box-shadow: var(--glassy);
+}
+.speaking-as--currentSpeaker {
+    color: var(--pfui-main-grey-color);
+    background: var(--color-cool-5-50);
+    padding: 7px 7px 5px 7px;
+    margin: 0px 4px 0px 7px;
+}
+.speaking-as--currentSpeaker--text {
+    font-size: var(--font-size-16);
+    bottom: 0.55em;
+    text-shadow: 0 0 5px var(--color-cool-3);
+}
+.speaking-as--currentSpeaker--button {
+    font-size: var(--font-size-18);
+}
+.speaking-as--currentSpeaker--buttonInset {
+    color: var(--color-warm-1)!important;
+}
+.speaking-as--currentSpeaker--locked.fa-unlock {
+    opacity: 1;
+    color: var(--primary-remaster);
+    font-size: var(--font-size-20);
+}
+.speaking-as--currentSpeaker--locked {
+    color: var(--red);
+    font-size: var(--font-size-20);
+}
+.speaking-as--currentSpeaker #context-menu {
+    color: var(--pfui-main-color);
+    background: var(--background);
+    box-shadow: var(--glassy);
+}
+
+
+
+/* Monk's hotbar expansion */
+/* https://foundryvtt.com/packages/monks-hotbar-expansion */
+#hotbar .hotbar-page {
+    overflow: visible;
+    gap: 4px;
+    bottom: 70px;
+}
+#hotbar .action-bar.no-arrows + .bar-controls span.page-number, #hotbar .hotbar-page .bar-controls span.page-number, #hotbar .hotbar-page .bar-controls i {
+    border-radius: var(--border-radius);
+    background: none;
+    background-color: var(--color-cool-5-50);
+    box-shadow: var(--glassy);
+    border: 1px solid var(--color-border-dark);
+    backdrop-filter: blur(3px);
+}
+#hotbar .hotbar-page .action-bar {
+    margin: 0px 5px 0px 3px;
+}
+#hotbar .bar-controls {
+    border-radius: var(--border-radius);
+    background: none;
+    background-color: var(--color-cool-5-50);
+    box-shadow: var(--glassy);
+    border: 1px solid var(--color-border-dark);
+}
+#hotbar .macro-list {
+    backdrop-filter: blur(3px);
+}
+#hotbar .hotbar-page .macro-list {
+    gap: 7.5px;
+    border: none;
+}
+
+
+
+/*PF2e Utility Buttons*/
+/*https://github.com/oWave/pf2e-flatcheck-helper*/
+#fc-container button {
+    border: none;
+    border-radius: var(--border-radius);
+    transition: text-shadow 0.15s ease-in-out, background-color 0.15s ease-in-out, border 0.15s ease-in-out, color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, backdrop-filter 0.15s ease-in-out, border-radius 0.15s;
+    background: radial-gradient(var(--color-cool-5-50), transparent);
+    box-shadow: var(--glassy);
+    color: var(--pfui-main-grey-color);
+    backdrop-filter: blur(5px);
+}
+#fc-container button:hover {
+    border: none;
+    border-radius: var(--border-radius);
+    color: var(--color-text-hyperlink);
+    border-color: var(--color-text-hyperlink);
+    box-shadow: 0 0 6px inset var(--color-text-hyperlink);
+}
+
+
+
+/* DF Chat Enhancements */
+/* https://github.com/flamewave000/dragonflagon-fvtt/tree/master/df-chat-enhance */
+#dfcp-rt-buttons button {
+    padding-top: 3px;
+    transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
+    background: radial-gradient(var(--color-cool-5-50), transparent);
+    border: none;
+    border-radius: 30px;
+    color: var(--pfui-main-grey-color);
+    box-shadow: var(--glassy);
+    border: 1px solid var(--color-cool-5-50);
+    cursor: pointer;
+}
+#dfcp-rt-buttons button:hover {
+    color: var(--color-text-hyperlink);
+    border-color: var(--color-text-hyperlink);
+    box-shadow: 0 0 6px inset var(--color-text-hyperlink);
+}
+#dfcp-rt-buttons button[data-id=publicroll].active {
+    background-color: var(--green);
+    color: var(--background);
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15), inset 0 0 0 2px rgba(0, 0, 0, 0.4);
+}
+#dfcp-rt-buttons button[data-id=gmroll].active {
+    background-color: #f2ca27;
+    color: var(--background);
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15), inset 0 0 0 2px rgba(0, 0, 0, 0.4);
+}
+#dfcp-rt-buttons button[data-id=blindroll].active {
+    background-color: #e87e04;
+    color: var(--background);
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15), inset 0 0 0 2px rgba(0, 0, 0, 0.4);
+}
+#dfcp-rt-buttons button[data-id=selfroll].active {
+    background-color: var(--color-text-hyperlink);
+    color: var(--background);
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15), inset 0 0 0 2px rgba(0, 0, 0, 0.4);
+}
+
+
+
+/* Monk's TokenBar */
+/* https://github.com/ironmonk88/monks-sound-enhancements */
+#mseCharacterSound, #mseItemSound {
+    color: var(--pfui-main-color);
+}
+
+
+
+/* Monk's TokenBar */
+/* https://github.com/ironmonk88/monks-tokenbar */
+:root{
+    --monks-border-color: #6b6155;
+}
+
+#chat .monks-tokenbar.chat-card .card-header {
+    padding: 3px 0;
+    border-top: 2px groove var(--monks-border-color);
+    border-bottom: 2px groove var(--monks-border-color);
+}
+
+#chat .monks-tokenbar.chat-card .card-footer {
+    border-top: 2px groove var(--monks-border-color);
+}
+
+#chat .monks-tokenbar.chat-card .card-footer span {
+    border-right: 2px groove var(--monks-border-color);
+    font-size: 9px;
+}
+
+.monks-tokenbar .footer-button {
+    width: 18px;
+    height: 18px;
+    float: right;
+    font-size: 11px;
+    line-height: 11px;
+    padding: 0px 2px;
+}
+
+#chat .monks-tokenbar .sheet .items-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    color: var(--pfui-main-color);
+}
+
+#chat .monks-tokenbar.chat-card .card-header h3 {
+    color: var(--pfui-main-color)
+}
+
+#chat #requestsavingthrow .request-header {
+    border-radius: 4px;
+    white-space: nowrap;
+    overflow-x: hidden;
+    color: var(--pfui-main-color);
+    background: black;
+    border: 2px solid var(--border-color);
+    padding: 1px 8px;
+}
+
+#chat .monks-tokenbar .sheet .items-list .item-name h3,
+#chat .monks-tokenbar .sheet .items-list .item-name h4 {
+    margin: 0;
+    white-space: nowrap;
+    overflow-x: hidden;
+    color: var(--pfui-main-color);
+    font-weight: bold;
+    padding: 1px 4px;
+
+    background: rgba(0, 0, 0, 0.43);
+    border: 1px solid transparent;
+    border-radius: var(--border-radius);
+}
+
+#chat .monks-tokenbar .sheet .items-list .items-header {
+    height: 28px;
+    margin: 2px 0;
+    padding: 0;
+    align-items: center;
+    font-weight: bold;
+    flex-wrap: nowrap;
+
+    background: rgba(0, 0, 0, 0.43);
+    border: 1px solid transparent;
+    border-radius: var(--border-radius);
+}
+
+#chat .monks-tokenbar.chat-card .sheet .items-list {
+    padding: 0;
+}
+
+
+
+/* Token Hud Remaster
+*************************/
+#token-hud .status-effects {
+    background: none;
+    box-shadow: none;
+    border: none;
+    padding: 0px;
+    top: -65px;
+    gap: 8px;
+    color: var(--pfui-main-color);
+    cursor:url(../../ui/cursors/normal.webp), default;
+}
+#token-hud .status-effects .title-bar {
+    color: var(--pfui-main-color);
+    font-size: var(--font-size-20);
+    text-transform: uppercase;
+    top: -40px;
+    border: none;
+    background: none;
+    background-color: var(--color-cool-5-50);
+    box-shadow: var(--glassy);
+    text-shadow: 0 0 3px black;
+    border-radius: var(--border-radius);
+    backdrop-filter: blur(5px);
+}
+.placeable-hud .control-icon.active {
+    background: var(--color-cool-4);
+    border: 1px solid var(--color-warm-1);
+}
+.placeable-hud .control-icon picture:hover {
+    opacity: 1;
+    filter: brightness(1.1) saturate(1.5)!important;
+}
+.placeable-hud input[type="text"] {
+    background: none;
+    border-radius: var(--border-radius);
+    background-color: radial-gradient(var(--color-cool-5-50), transparent);
+    box-shadow: var(--glassy);
+    transition: text-shadow 0.15s ease-in-out, background-color 0.15s ease-in-out, border 0.15s ease-in-out, color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, backdrop-filter 0.15s ease-in-out, border-radius 0.15s;
+    color: var(--pfui-main-color);
+    text-shadow: 0px 0px 3px black;
+    backdrop-filter: brightness(0.8) blur(5px);
+}
+
+.placeable-hud .control-icon {
+    border-radius: 50%;
+    background: none;
+    box-shadow: var(--glassy);
+    transition: text-shadow 0.15s ease-in-out, background-color 0.15s ease-in-out, border 0.15s ease-in-out, color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, backdrop-filter 0.15s ease-in-out, border-radius 0.15s;
+    color: var(--pfui-main-color);
+    text-shadow: 0px 0px 5px black;
+    backdrop-filter: blur(5px);
+}
+
+#token-hud .status-effects .effect-control {
+    border-radius: 50%;
+    background: none;
+    opacity: 1;
+    background-color: var(--color-cool-5-50);
+    box-shadow: var(--glassy);
+    filter: sepia(1) brightness(0.6);
+    text-shadow: 0px 0px 3px black;
+}
+#token-hud .status-effects .effect-control.overlay {
+    border: 2px solid var(--red-light);
+}
+#token-hud .status-effects .effect-control img {
+    border: none;
+    border-radius: 50%;
+    height: 100%;
+    width:100%;
+    opacity: 1;
+    box-shadow: var(--glassy);
+    cursor:url(../../ui/cursors/pointer.webp), pointer; 
+}
+#token-hud .status-effects .effect-control.active {
+    filter: brightness(1.1) saturate(1);
+}
+#token-hud .status-effects .effect-control.active img {
+    border: 2px solid var(--color-warm-1);
+    filter: brightness(1.1) saturate(1);
+    opacity: 0.75;
+    cursor: url(../../ui/cursors/pointer.webp), pointer;
+}
+#token-hud .status-effects .effect-control:not(.active):hover img {
+    border: 2px solid var(--green);
+    opacity: 1;
+    cursor:url(../../ui/cursors/pointer.webp), pointer; 
+}
+
+
+
+/* Monk's Little Details */
+/*https://github.com/ironmonk88/monks-little-details*/
+
+#token-hud.monks-little-details .status-effects .effect-control,
+#token-hud.monks-little-details .status-effects .pf2e-effect-control {
+  border-radius: unset;
+}
+
+#token-hud.placeable-hud.monks-little-details .status-effects {
+  background: none;
+  filter: brightness(1.1) saturate(1);
+}
+#token-hud.placeable-hud.monks-little-details .status-effects .effect-control {
+  border: none;
+  opacity: unset;
+  border-radius: var(--border-radius);
+}
+#token-hud.placeable-hud.monks-little-details .status-effects .effect-control.active {
+  border: 2px solid var(--green);
+  opacity: 1;
+  background: radial-gradient(var(--primary-light-remaster), var(--color-cool-5-50));
+  filter: brightness(1.1) saturate(1.5);
+}
+#token-hud.placeable-hud.monks-little-details .status-effects .effect-control.active .effect-name {
+    color: var(--pfui-main-color);
+  opacity: unset;
+}
+#token-hud.placeable-hud.monks-little-details .status-effects .effect-name {
+  opacity: unset;
+  padding-right: 4px;
+  color: var(--pfui-main-color);
+  font-size:  12px;
+}
+
+
+
+/* Target-damage */
+/* https://github.com/MrVauxs/PF2e-Target-Damage */
+wrapper.pf2e-td {
+    align-items: stretch;
+}
+wrapper.pf2e-td.name-left .pf2e-td.name {
+    margin: 6px 0 0 0;
+    font-size: var(--font-size-9);
+    background: var(--color-cool-5-50);
+    box-shadow: var(--glassy);
+    border: none!important;
+    color: var(--pfui-main-color);
+    border-radius: var(--border-radius);
+}
+wrapper.pf2e-td.name-left .pf2e-td.name:hover {
+    font-size: var(--font-size-9);
+    box-shadow: none;
+    color: white;
+    border: 1px solid #7B322F;
+    background-color: var(--red);
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15), inset 0 0 0 2px rgba(0, 0, 0, 0.4);
+    border-radius: var(--border-radius);
+}
+wrapper.pf2e-td.name-left .pf2e-td.damage-application {
+    flex: 230px 0 0;
+}
+
+
+
+/* Babele */
+/* https://gitlab.com/riccisi/foundryvtt-babele */
+#actor-translate-log {
+    color: var(--main-text-very-light-color)
+}
+
+
+
+/* Minimal UI */
+/* https://github.com/saif-ellafi/foundryvtt-minimal-ui/issues */
+.minimal-ui-mode .new-logo {
+    display: none!important;
+}
+.minimal-ui-mode #controls ol li.scene-control[data-control="combat-carousel"] {
+    width: var(--controlsw)!important;
+    height: var(--controlsh)!important;
+}
+.minimal-ui-mode #controls li[data-control="combat-carousel"]::after {
+    width: calc(var(--controlsw) - 10px)!important;
+    height: calc(var(--controlsh) - 10px)!important;
+}
+
+.minimal-ui-mode #ui-bottom > div {
+    justify-content: inherit!important;
+}
+:root {
+    --hotbarvis: visible;
+    --hotbarypos: -5px;
+    --hotbarxpos: 500px;
+    --hotbarlh1: 24px;
+    --hotbarlh2: 8px;
+    --hotbarhv: -5px;
+    --hotbarmg: 0px;
+    --hotbarhh: 100%;
+    --hotbarshp: 0px;
+}
+
+.minimal-ui-mode #hotbar {
+    left: var(--hotbarxpos);
+    bottom: var(--hotbarypos);
+    visibility: var(--hotbarvis);
+    transition: 0.5s ease-out 0.5s;
+    opacity: var(--opacity);
+    position: absolute;
+}
+
+:root {
+    --playervis: hidden;
+    --playerfsize: 0px;
+    --playerfsizehv: 12px;
+    --playerwidthhv: 150px;
+    --playerslh: 20px;
+    --playerbennies: none;
+    --playerh3w: unset;
+    --playerbot: -8px;
+    --playerleft: -8px;
+    --playerpingdisplay: initial;
+}
+
+.minimal-ui-mode #players {
+    bottom: var(--playerbot);
+    left: var(--playerleft);
+    font-size: var(--playerfsize);
+    visibility: var(--playervis);
+    opacity: var(--opacity);
+    box-shadow:none;
+    position: absolute;
+    border: none;
+}
+
+.minimal-ui-mode #navigation #scene-list {
+    margin-left: 16px;
+}
+.minimal-ui-mode #controls ol.main-controls {
+    width: 60px;
+}
+
+
+
+/* Polyglot */
+/* https://github.com/mclemente/fvtt-module-polyglot */
+
+.polyglot-lang-select label {
+    display: none;
+}
+.polyglot-lang-select input {
+    margin: 3px 5px;
+}
+.polyglot-lang-select input:checked {
+    accent-color: var(--color-cool-5-50);
+}
+.polyglot-user-list {
+    max-width: unset;
+}
+.polyglot-user-list div {
+    display: flex;
+    flex: 1 0;
+    max-width: 15px;
+    border-radius: unset;
+    border: 1px solid var(--background);
+    margin: unset;
+    box-shadow: 1px 1px 2px -1px var(--color-warm-1);
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: var(--pfui-main-grey-color)!important;
+}
+.polyglot-lang-select .select2-container--default .select2-selection--single .select2-selection__arrow b {
+    border-color: var(--pfui-main-color) transparent transparent transparent;
+}
+.polyglot-lang-select span.select2-selection {
+    font-family: Taroca;
+    font-size: 14px;
+    text-align: center;
+    position: relative;
+    bottom: 1px;
+    border: 1px solid #000;
+    background: radial-gradient(var(--color-cool-5-50), transparent);
+    box-shadow: var(--glassy);
+    border-radius: var(--border-radius);
+    backdrop-filter: blur(5px);
+    transition: text-shadow 0.15s ease-in-out, background-color 0.15s ease-in-out, border 0.15s ease-in-out, color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, backdrop-filter 0.15s ease-in-out, border-radius 0.15s;
+    cursor: pointer;
+}
+.select2-search--dropdown {
+    background: var(--background);
+    box-shadow: var(--glassy);
+    border-radius: var(--border-radius);
+}
+.select2-container--default .select2-search--dropdown .select2-search__field {
+    color: var(--pfui-main-color);
+    background: radial-gradient(var(--color-cool-4), var(--glass-bg-dark));
+    border:none;
+    border-top: 1px solid var(--color-warm-1);
+    border-bottom: 1px solid var(--color-warm-1);
+    box-shadow: var(--glassy);
+    text-shadow: 0 0 1px black;
+    border-radius: var(--border-radius-5);
+    backdrop-filter: blur(5px);
+}
+.select2-container--default .select2-results>.select2-results__options {
+    color: var(--pfui-main-color);
+    background: var(--background);
+    box-shadow: var(--glassy);
+}
+.select2-container--default .select2-results__option--selected {
+    color: var(--pfui-main-color);
+    border:none;
+    border-top: 1px solid var(--color-warm-1);
+    border-bottom: 1px solid var(--color-warm-1);
+    background: none;
+    background: radial-gradient(var(--color-cool-3), var(--glass-bg-dark));
+    box-shadow: var(--glassy);
+    text-shadow: 0 0 3px black;
+    border-radius: var(--border-radius-5);
+}
+.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
+    color: var(--pfui-main-color);
+    border: none;
+    background: none;
+    background: radial-gradient(var(--color-cool-4), var(--glass-bg-dark));
+    box-shadow: var(--glassy);
+    text-shadow: 0 0 3px black;
+    border-radius: var(--border-radius-5);
+}
+
+
+
+/* Dice Tray */
+/* https://gitlab.com/asacolips-projects/foundry-mods/foundry-vtt-dice-calculator */
+
+.dice-tray {
+    position: relative;
+    padding: 0 4px;
+}
+
+.dice-tray button svg * {
+    fill: var(--pfui-main-grey-color);
+}
+
+.dice-tray button {
+    background: radial-gradient(var(--color-cool-5-50), transparent);
+    box-shadow: var(--glassy);
+    color: var(--pfui-main-grey-color);
+    backdrop-filter: blur(5px);
+}
+.dice-tray input[type="text"] {
+    background: radial-gradient(var(--color-cool-5-50), transparent);
+    box-shadow: var(--glassy);
+}
+.dice-calculator > button, .dice-calculator .dice-calculator--button {
+    color: var(--pfui-main-color)
+}
+
+
+
+/* Damage Log */
+/* https://github.com/cs96and/FoundryVTT-damage-log */
+/* Tabbed Chatlog */
+/* https://github.com/cswendrowski/FoundryVTT-Tabbed-Chatlog */
+
+nav.damage-log-nav.tabs,
+.tabbedchatlog.tabs {
+    position: relative;
+    box-shadow: none;
+    border: none;
+}
+
+.tabbedchatlog.tabs {
+    padding: 0 10px;
+}
+
+nav.damage-log-nav.tabs::before,
+.tabbedchatlog.tabs::before {
+    content: " ";
+    position: absolute;
+    width: 317px;
+    z-index: 10;
+    left: -2px;
+    height: 7px;
+    bottom: -7px;
+    background: url(../ui/frames/brown_line.webp);
+    background-size: 317px 7px;
+}
+
+nav.damage-log-nav .item,
+.tabbedchatlog .item {
+    position: relative;
+}
+
+nav.damage-log-nav .item.active,
+.tabbedchatlog .item.active {
+    border: none;
+    box-shadow: none;
+}
+
+nav.damage-log-nav .item:before,
+.tabbedchatlog .item:before {
+    position: absolute;
+    content: ' ';
+    background: url(../ui/frames/red_line.webp);
+    width: 70%;
+    height: 3px;
+    bottom: -3px;
+    z-index: 10;
+    left: 15%;
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0.3s;
+}
+
+nav.damage-log-nav .item.active:before,
+.tabbedchatlog .item.active:before {
+    opacity: 1;
+}
+
+
+/* Smalltime */
+/* https://github.com/unsoluble/smalltime */
+#smalltime-app .window-content {
+    box-shadow: var(--glassy);
+    filter: drop-shadow(2px 4px 6px var(--color-cool-4));
+}
+#smalltime-app.show-date #dateDisplay {
+    background: var(--color-cool-5);
+    box-shadow: var(--glassy);
+    border: none;
+    color: var(--color-warm-1);
+    border-radius: var(--border-radius);
+}
+#smalltime-app #timeDisplay {
+    background: var(--color-cool-5);
+    border: none;    
+    color: var(--green);
+}
+#smalltime-app #timeDisplay:hover {
+    color: var(--color-warm-1);
+}
+#smalltime-app #dragHandle {
+    background: var(--color-cool-5);
+    box-shadow: var(--glassy);
+    border: none;
+    color: var(--pfui-main-color);
+    border-radius: var(--border-radius);
+}
+#smalltime-app #displayContainer {
+    background: var(--color-cool-5);
+    box-shadow: var(--glassy);
+    border: none;
+    color: var(--pfui-main-color);
+    border-radius: var(--border-radius);
+}
+#smalltime-app .arrow-right {
+    background: var(--color-cool-5);
+    box-shadow: var(--glassy);
+    border: none;
+    color: var(--pfui-main-color);
+    border-radius: var(--border-radius);
+    padding-top: 2px;
+}
+#smalltime-app .arrow-right:hover {
+    color: var(--color-cool-5);
+    background: var(--green);
+    padding-top: 2px;
+}
+#smalltime-app .arrow-left {
+    background: var(--color-cool-5);
+    box-shadow: var(--glassy);
+    border: none;
+    color: var(--pfui-main-color);
+    border-radius: var(--border-radius);
+    padding-top: 2px;
+}
+#smalltime-app .arrow-left:hover {
+    color: var(--color-cool-5);
+    background: var(--green);
+    padding-top: 2px;
+}

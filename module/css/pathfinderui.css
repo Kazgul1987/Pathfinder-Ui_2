@@ -2,6 +2,7 @@
 @import 'carousel.css';
 @import 'text-editor.css';
 @import "systems/pfui-pf2e.css";
+@import 'compatibility.css';
 
 
 /* POLICES
@@ -423,7 +424,7 @@ body.compact-mode #logo {
     margin: 3px 0px 0px 2px;
     background: radial-gradient(var(--color-cool-5-50), transparent)!important;
     box-shadow: var(--glassy);
-    color: var(--pfui-main-color);
+    color: var(--pfui-main-grey-color);
     border: 1px solid #000;
     border-radius: var(--border-radius);
     backdrop-filter: blur(5px);
@@ -435,7 +436,6 @@ body.compact-mode #logo {
 
 #chat-controls {
     color: var(--rpg-styled-ui-color);
-    margin: 0 6px 2px;
 }
 
 #chat-controls::before {
@@ -492,7 +492,7 @@ body.compact-mode #logo {
 }
 
 .chat-message .message-content {
-    color: var(--pfui-main-color) !important;/*8e8073*/
+    color: var(--pfui-main-grey-color) !important;/*8e8073*/
 }
 
 .chat-message .table-draw .table-description {
@@ -578,92 +578,6 @@ body.compact-mode #logo {
     text-decoration: underline;
 }
 
-/* Polyglot */
-/* https://github.com/mclemente/fvtt-module-polyglot */
-
-.polyglot-lang-select label {
-    display: none;
-}
-.polyglot-lang-select input {
-    margin: 3px 5px;
-}
-.polyglot-lang-select input:checked {
-    accent-color: var(--color-cool-5-50);
-}
-.polyglot-user-list {
-    max-width: unset;
-}
-.polyglot-user-list div {
-    display: flex;
-    flex: 1 0;
-    max-width: 15px;
-    border-radius: unset;
-    border: 1px solid var(--background);
-    margin: unset;
-    box-shadow: 1px 1px 2px -1px var(--color-warm-1);
-}
-.select2-container--default .select2-selection--single .select2-selection__rendered {
-    color: var(--pfui-main-color)!important;
-}
-.polyglot-lang-select .select2-container--default .select2-selection--single .select2-selection__arrow b {
-    border-color: var(--pfui-main-color) transparent transparent transparent;
-}
-.polyglot-lang-select span.select2-selection {
-    font-family: Taroca;
-    font-size: 14px;
-    text-align: center;
-    position: relative;
-    bottom: 1px;
-    border: 1px solid #000;
-    background: radial-gradient(var(--color-cool-5-50), transparent);
-    box-shadow: var(--glassy);
-    border-radius: var(--border-radius);
-    backdrop-filter: blur(5px);
-}
-.select2-search--dropdown {
-    background: var(--background);
-    box-shadow: var(--glassy);
-    border-radius: var(--border-radius);
-}
-.select2-container--default .select2-search--dropdown .select2-search__field {
-    color: var(--pfui-main-color);
-    background: radial-gradient(var(--color-cool-4), var(--glass-bg-dark));
-    border:none;
-    border-top: 1px solid var(--color-warm-1);
-    border-bottom: 1px solid var(--color-warm-1);
-    box-shadow: var(--glassy);
-    text-shadow: 0 0 1px black;
-    border-radius: var(--border-radius-5);
-    backdrop-filter: blur(5px);
-}
-.select2-container--default .select2-results>.select2-results__options {
-    color: var(--pfui-main-color);
-    background: var(--background);
-    box-shadow: var(--glassy);
-}
-.select2-container--default .select2-results__option--selected {
-    color: var(--pfui-main-color);
-    border:none;
-    border-top: 1px solid var(--color-warm-1);
-    border-bottom: 1px solid var(--color-warm-1);
-    background: none;
-    background: radial-gradient(var(--color-cool-3), var(--glass-bg-dark));
-    box-shadow: var(--glassy);
-    text-shadow: 0 0 3px black;
-    border-radius: var(--border-radius-5);
-}
-.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
-    color: var(--pfui-main-color);
-    border: none;
-    background: none;
-    background: radial-gradient(var(--color-cool-4), var(--glass-bg-dark));
-    box-shadow: var(--glassy);
-    text-shadow: 0 0 3px black;
-    border-radius: var(--border-radius-5);
-}
-
-/*polyglot end*/
-
 #chat-controls .roll-type-select {
     font-family: Taroca;
     font-size: 14px;
@@ -674,7 +588,7 @@ body.compact-mode #logo {
     border: 1px solid #000;
     background: radial-gradient(var(--color-cool-5-50), transparent)!important;
     box-shadow: var(--glassy);
-    color: var(--pfui-main-color);
+    color: var(--pfui-main-grey-color);
     border-radius: var(--border-radius);
     margin: 0px 3px 0px 3px!important;
     backdrop-filter: blur(5px);
@@ -756,6 +670,9 @@ hr {
     color: var(--green);
     text-shadow: 0 0 3px var(--color-shadow-primary);
 }
+
+
+
 /*************************************************************/
 /*=============== SIDEBAR FOLDERs AS BUTTONS ================*/
 /*************************************************************/
@@ -946,95 +863,6 @@ hr {
     box-shadow: none;
 }
 
-/*************************************************************/
-/*===================== compatibility =======================*/
-/*************************************************************/
-/* Dice Tray */
-/* https://gitlab.com/asacolips-projects/foundry-mods/foundry-vtt-dice-calculator */
-
-.dice-tray {
-    position: relative;
-    padding: 0 4px;
-}
-
-.dice-tray button svg * {
-    fill: var(--pfui-main-grey-color);
-}
-
-.dice-tray button {
-    background: radial-gradient(var(--color-cool-5-50), transparent);
-    box-shadow: var(--glassy);
-    color: var(--pfui-main-grey-color);
-    backdrop-filter: blur(5px);
-}
-.dice-tray input[type="text"] {
-    background: radial-gradient(var(--color-cool-5-50), transparent);
-    box-shadow: var(--glassy);
-}
-.dice-calculator > button, .dice-calculator .dice-calculator--button {
-    color: var(--pfui-main-color)
-}
-
-/* Damage Log */
-/* https://github.com/cs96and/FoundryVTT-damage-log */
-/* Tabbed Chatlog */
-/* https://github.com/cswendrowski/FoundryVTT-Tabbed-Chatlog */
-
-nav.damage-log-nav.tabs,
-.tabbedchatlog.tabs {
-    position: relative;
-    box-shadow: none;
-    border: none;
-}
-
-.tabbedchatlog.tabs {
-    padding: 0 10px;
-}
-
-nav.damage-log-nav.tabs::before,
-.tabbedchatlog.tabs::before {
-    content: " ";
-    position: absolute;
-    width: 317px;
-    z-index: 10;
-    left: -2px;
-    height: 7px;
-    bottom: -7px;
-    background: url(../ui/frames/brown_line.webp);
-    background-size: 317px 7px;
-}
-
-nav.damage-log-nav .item,
-.tabbedchatlog .item {
-    position: relative;
-}
-
-nav.damage-log-nav .item.active,
-.tabbedchatlog .item.active {
-    border: none;
-    box-shadow: none;
-}
-
-nav.damage-log-nav .item:before,
-.tabbedchatlog .item:before {
-    position: absolute;
-    content: ' ';
-    background: url(../ui/frames/red_line.webp);
-    width: 70%;
-    height: 3px;
-    bottom: -3px;
-    z-index: 10;
-    left: 15%;
-    opacity: 0;
-    transition-property: opacity;
-    transition-duration: 0.3s;
-}
-
-nav.damage-log-nav .item.active:before,
-.tabbedchatlog .item.active:before {
-    opacity: 1;
-}
-
 /* CONTROLS */
 #controls {
     padding: 10px 15px;
@@ -1120,8 +948,9 @@ nav.damage-log-nav .item.active:before,
 
 .window-app.dialog .window-content,
 .window-app .folder-edit .window-content {
-    color: #cfbda7;
+    color: var(--pfui-main-grey-color);
     background: none;
+    backdrop-filter: blur(5px);
 }
 
 .window-app.dialog .window-header,

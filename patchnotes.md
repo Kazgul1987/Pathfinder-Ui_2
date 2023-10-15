@@ -4,6 +4,13 @@
 - Ready for v11 version.
 
 
+## v11.313.7
+- Update core code. 
+- Add a new compatibility file.
+- Add New skin for Smalltime.
+- Update compatibility with Speaking As.
+- Update sidebars color harmonization. 
+
 ## v11.313.6.4
 - Update core code.
 - Change background Dark Theme color.
