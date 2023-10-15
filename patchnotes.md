@@ -8,6 +8,7 @@
 - Update core code. 
 - Add a new compatibility file.
 - Add New skin for Smalltime.
+- Update Effects Panel.
 - Update compatibility with Speaking As.
 - Update sidebars color harmonization. 
 
