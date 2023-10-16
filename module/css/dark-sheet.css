@@ -91,7 +91,7 @@
 	background: url("../css/assets/remaster-pc-sheet/shield-blue.webp") no-repeat top center;
 }
 .actor.sheet.dark-theme .crb-style aside .sidebar select {
-	background-color: var(--primary-remaster);
+    background-color: var(--glass-bg);
 }
 .actor.sheet.dark-theme .crb-style header.char-header .char-level .level {
 	background: url("../css/assets/remaster-pc-sheet/level-badge.webp") no-repeat;
@@ -103,6 +103,11 @@
     color: var(--pfui-main-color);
     background: var(--background);
     box-shadow: inset 0 0 0 1px var(--pfui-main-color);
+}
+.actor.character.dark-theme .image-container [data-action=show-image] {
+    color: var(--color-warm-1);
+    box-shadow: 0 0 0 1px var(--color-warm-2), 0 0 0 2px var(--color-warm-3);
+    background-color: var(--color-cool-5-90);
 }
 .actor.character.dark-theme .crb-style select option {
     background: var(--color-cool-5);
@@ -336,14 +341,8 @@
     color: darkgray;
 }
 
-.actor.sheet.dark-theme .crb-style aside .sidebar select {
-    background-color: var(--glass-bg);
-}
-
 .actor.sheet.character.dark-theme .crb-style select {
-    color: var(--pfui-main-color) !important;
     background-color: var(--color-cool-4);
-    border-radius: var(--border-radius);
 }
 
 .actor.sheet.character.dark-theme input {
@@ -409,7 +408,7 @@ background: radial-gradient(var(--background-2), transparent);
 }
 
 .actor.sheet.dark-theme .crb-style .sheet-body .sheet-content .tab.actions .actions-container .actions-tabs-wrapper .actions-panels ol.actions-list .fa-solid.fa-eye-slash {
-    color: darkgoldenrod!important;  
+    color: var(--color-warm-1)!important;  
 }
 
 .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.actions .actions-container .actions-tabs-wrapper .actions-panels ol.actions-list.strikes-list li.strike .button-group button:not(:disabled) {
@@ -780,7 +779,7 @@ color: var(--green)!important;
     color: var(--green);
 }
 .actor.sheet.character .crb-style .sheet-body .sheet-content .tab.biography h3.header a i.fa-eye-slash {
-    color: darkgoldenrod;
+    color: var(--color-warm-1);
 }
 
 

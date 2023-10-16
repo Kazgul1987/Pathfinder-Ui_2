@@ -172,7 +172,7 @@ filter: grayscale(0.75);
 
 /*Ability Scores*/
 .sheet.kingdom-builder .ability-builder .title {
-    color: darkgoldenrod;
+    color: var(--color-warm-1);
 }
 .sheet.kingdom-builder .ability-builder .summary-row .hint-container {
     color: var(--pfui-main-color);
@@ -184,7 +184,7 @@ filter: grayscale(0.75);
     border-radius: var(--border-radius);
 }
 .sheet.kingdom-builder .ability-builder .summary-row .hint-container h3 {
-    color: darkgoldenrod;
+    color: var(--color-warm-1);
 }
 .sheet.kingdom-builder hr {
     border: none;
@@ -251,7 +251,7 @@ filter: grayscale(0.75);
     color: var(--green);
 }
 .dark-kingdom-theme.sheet.kingdom form > header .details .fame .pips i.fa-solid.fa-circle {
-    color: var(--green) ;
+    color: var(--color-warm-1);
 }
 .dark-kingdom-theme.sheet.kingdom .window-resizable-handle {
     border: none;
@@ -347,13 +347,13 @@ filter: grayscale(0.75);
 /*        Main     
 *************************/
 .dark-kingdom-theme.sheet.kingdom h3.header {
-    color: darkgoldenrod;
+    color: var(--color-warm-1);
     border-bottom: 1px dotted var(--color-underline-header);
 }
 .dark-kingdom-theme.sheet.kingdom h3.header button {
     background: radial-gradient( var(--primary-light-remaster), var(--primary-remaster));
     border: 1px dotted var(--color-underline-header);
-    color: darkgoldenrod;
+    color: var(--color-warm-1);
 }
 .dark-kingdom-theme.sheet.kingdom .tab.active[data-tab=main] .resources .resource-data {
     border: none;
@@ -406,7 +406,7 @@ filter: grayscale(0.75);
 .dark-kingdom-theme.sheet.kingdom .tab.active[data-tab=main] .ability-scores .ability .score {
     background: radial-gradient( var(--primary-light-remaster), var(--primary-remaster));
     border: 1px dotted var(--glass-bg-light-2);
-    color: darkgoldenrod;
+    color: var(--color-warm-1);
     box-shadow: 0 0 6px inset var(--glass-bg-light-2);
 }
 .dark-kingdom-theme.sheet.kingdom .tab.active[data-tab=main] input[type=text], .dark-kingdom-theme.sheet.kingdom .tab.active[data-tab=main] input[type=number] {
@@ -423,7 +423,7 @@ filter: grayscale(0.75);
     box-shadow: 0 0 6px inset var(--glass-bg-light-2);
 }
 .dark-kingdom-theme.sheet.kingdom .tab.active[data-tab=main] .ability-scores .ability .corruption-section .progress::after {
-    background-color: darkgoldenrod;
+    background-color: var(--color-warm-1);
 }
 
 
@@ -462,7 +462,7 @@ filter: grayscale(0.75);
     border-radius: var(--border-radius);
 }
 .dark-kingdom-theme.sheet.kingdom .tab.active[data-tab=activities] .actions .phase-summary header {
-    color: darkgoldenrod;
+    color: var(--color-warm-1);
 }
 .dark-kingdom-theme.sheet.kingdom .tab.active[data-tab=activities] .actions .action {
     color: var(--pfui-main-grey-color);
@@ -577,7 +577,7 @@ filter: grayscale(0.75);
     text-shadow: 0 0 3px var(--color-shadow-primary);
 }
 .dark-kingdom-theme.sheet.kingdom .tab.active[data-tab=ongoing] .events .event-dc, .dark-kingdom-theme.sheet.kingdom .tab.active[data-tab=ongoing] .events .event-dc input {
-    color: darkgoldenrod;
+    color: var(--color-warm-1);
     border: none;
     background: none;
     background-color: var(--color-cool-5-90);

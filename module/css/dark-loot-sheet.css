@@ -132,6 +132,19 @@
     color: var(--background)!important;
     border-radius: var(--border-radius);
 }
+.dark-loot-theme.sheet.actor.loot section.sidebar input[type="checkbox"]:checked, input[type="radio"]:checked {
+    accent-color: var(--green);
+}
+.dark-loot-theme.sheet.actor.loot section.sidebar .image-container [data-action=show-image] {
+    color: var(--color-warm-1);
+    box-shadow: 0 0 0 1px var(--color-warm-2), 0 0 0 2px var(--color-warm-3);
+    background-color: var(--color-cool-5-90);
+}
+.dark-loot-theme.sheet.actor.loot section.sidebar .editor-edit {
+    color: var(--color-warm-1);
+    box-shadow: 0 0 0 1px var(--color-warm-2), 0 0 0 2px var(--color-warm-3);
+    background-color: var(--color-cool-5-90);
+}
 .dark-loot-theme.sheet.actor.loot [data-pf2-effect-area] {
     font-family: "Good OT";
     color: var(--pfui-main-color);
@@ -292,6 +305,8 @@
     border: none;
 }
 
+
+
 /*        Glassy       
 *************************/
 .glassy.dark-loot-theme.sheet.actor.loot .window-content {
@@ -367,3 +382,4 @@
     background: none;
     border: none;
 }
+

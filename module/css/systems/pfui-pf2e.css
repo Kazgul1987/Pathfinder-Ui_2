@@ -68,8 +68,8 @@
 /* scrollbar
 ====================================================== */
 ::-webkit-scrollbar-thumb {
-    background: radial-gradient(var(--primary-remaster), var(--glass-bg-dark));
-    border: 1px dotted var(--primary-light-remaster);
+    background: radial-gradient(var(--color-cool-4), var(--color-cool-5));
+    border: 1px dotted var(--color-cool-3);
 }
 
 
@@ -574,7 +574,7 @@ a.content-link.broken {
     color: var(--pfui-main-color);
 }
 #chat-log .chat-message > .message-content ul.participant-conditions li img {
-    box-shadow: 0 0 0 1px var(--tertiary), 0 0 0 2px var(--color-warm-1);
+    box-shadow: 0 0 0 1px var(--rpg-styled-ui-color), 0 0 0 2px var(--color-warm-1);
     border-radius: 50%;
     margin-right: 6px;
 }
@@ -919,5 +919,5 @@ button.half-damage .fa-heart-broken::after {
 /* A bunch of disgusting CSS overrides that hit the system's CSS like a hammer to remove as much colour as possible */
 
 #pf2e-party-sheet-helper .sheet.party [data-tab=overview] .summary nav label {
-    color: darkgoldenrod;
+    color: var(--color-warm-1);
 }
