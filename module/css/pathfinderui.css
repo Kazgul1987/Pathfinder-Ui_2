@@ -944,7 +944,7 @@ hr {
 }
 
 .app.window-app.dialog,
-.app.window-app {
+.app.window-app.folder-edit {
     background: rgba(6, 4, 3, 0.92);
     border-image-source: url(../ui/frames/input_border.webp);
     border-image-slice: 5 20 20 20 fill;
@@ -955,7 +955,7 @@ hr {
 }
 
 .window-app.dialog .window-content,
-.window-app .folder-edit .window-content {
+.window-app.folder-edit .window-content {
     color: var(--pfui-main-grey-color);
     background: none;
     backdrop-filter: blur(5px);
@@ -968,7 +968,7 @@ hr {
 }
 
 .window-app.dialog .window-header::after,
-.window-app .window-header::after {
+.window-app.folder-edit .window-header::after {
     position: absolute;
     z-index: -1;
     content: " ";
