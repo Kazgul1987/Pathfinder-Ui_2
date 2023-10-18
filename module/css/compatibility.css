@@ -818,3 +818,40 @@ nav.damage-log-nav .item.active:before,
     background: var(--green);
     padding-top: 2px;
 }
+
+
+/* Roll Tracker */
+/* https://github.com/drexl93/roll-tracker */
+.roll-tracker-comparison-card-heading {
+    text-transform: uppercase;
+    text-align: center;
+    color: antiquewhite;
+    border-bottom: 2px dotted var(--color-cool-3);
+}
+.roll-tracker-comparison-card-stat-heading {
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: unset;
+    color: var(--color-warm-1);
+    border-bottom: 2px dotted var(--color-cool-3);
+}
+.roll-tracker-comparison-card-goodstat {
+    text-transform: uppercase;
+    color: var(--green);
+}
+.roll-tracker-comparison-card-badstat {
+    text-transform: uppercase;
+    color: var(--color-warm-2);
+}
+.roll-tracker-comparison-card-strong {
+    color: var(--green);
+}
+.roll-tracker-comparison-card-italics {
+    color: antiquewhite;
+}
+.roll-tracker-comparison-card-li {
+    color: antiquewhite;
+}
+.roll-tracker-comparison-card-subli {
+    color: var(--pfui-main-color);
+}

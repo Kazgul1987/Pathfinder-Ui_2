@@ -481,6 +481,15 @@ a.content-link.broken {
     box-shadow: var(--glassy);
     border-radius: var(--border-radius);
 }
+#chat-log a.inline-check, span[data-pf2-action] {
+    font-family: 'Good OT';
+    color: var(--pfui-main-color);
+       background: var(--custom-trait);
+    padding: 0px 3px;
+    border: 1px solid var(--glassy);
+    box-shadow: var(--glassy);
+    border-radius: var(--border-radius);
+}
 #chat-log a.inline-check, span[data-pf2-check] {
     font-family: 'Good OT';
     color: var(--pfui-main-color);
