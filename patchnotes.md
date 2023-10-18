@@ -4,7 +4,7 @@
 - Ready for v11 version.
 
 
-## v11.313.8.3
+## v11.313.8.4
 - Update core code.
 - Update Compatibility PF2e v5.7.2
 - Update mystification compatibility
