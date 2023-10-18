@@ -340,7 +340,10 @@
 }
 
 #chat-log .chat-message > .message-header .flavor-text .target-dc-result .adjusted.decreased {
-    color: orangered;
+    color: var(--color-warm-1);
+}
+#chat-log .chat-message > .message-header .flavor-text .target-dc-result .adjusted.increased {
+    color: var(--green);
 }
 #chat-log .chat-message > .message-content .message-buttons button i.cue {
     --fa-primary-color: var(--pfui-main-color);
@@ -373,7 +376,7 @@
 
 .pf2e.chat-card .card-content p {
     font-family: "Good OT";
-    font-size: var(--font-size-16);
+    font-size: var(--font-size-14);
 }
 .pf2e.chat-card .card-header img {
 
@@ -402,6 +405,8 @@
     border:none;
 }
 .message-content .pf2e.chat-card .card-content {
+    background: radial-gradient(var(--color-cool-4), var(--color-cool-5));
+    box-shadow: var(--glassy);
     border-image-repeat: repeat;
     border-image-slice: 11;
     border-image-source: var(--ornement);
@@ -442,7 +447,7 @@ div#scrollToBottom:hover {
 
 a.inline-roll.blindroll {
     color: var(--pfui-main-color);
-    background: var(--custom-trait);
+       background: var(--custom-trait);
     padding: 0px 3px;
     border: 2px solid var(--glassy);
     box-shadow: var(--glassy);
@@ -454,7 +459,13 @@ a.content-link.broken {
 }
 
 [data-visibility]:not([data-visibility=all])[data-visibility=owner] {
-    background: var(--custom-trait);
+    background: radial-gradient(var(--color-cool-4), var(--color-cool-5));
+}
+
+#chat-log img {
+    border: 1px solid var(--glassy);
+    border-radius: 50%;
+    box-shadow: var(--glassy);
 }
 
 #chat-log button {
@@ -464,7 +475,7 @@ a.content-link.broken {
 #chat-log [data-pf2-effect-area] {
     font-family: 'Good OT';
     color: var(--pfui-main-color);
-    background: var(--custom-trait);
+       background: var(--custom-trait);
     padding: 0px 3px;
     border: 1px solid var(--glassy);
     box-shadow: var(--glassy);
@@ -473,7 +484,16 @@ a.content-link.broken {
 #chat-log a.inline-check, span[data-pf2-check] {
     font-family: 'Good OT';
     color: var(--pfui-main-color);
-    background: var(--custom-trait);
+       background: var(--custom-trait);
+    padding: 0px 3px;
+    border: 1px solid var(--glassy);
+    box-shadow: var(--glassy);
+    border-radius: var(--border-radius);
+}
+#chat-log a.inline-check[data-pf2-traits*=secret], span[data-pf2-check][data-pf2-traits*=secret] {
+    font-family: 'Good OT';
+    color: var(--pfui-main-color);
+       background: var(--custom-trait);
     padding: 0px 3px;
     border: 1px solid var(--glassy);
     box-shadow: var(--glassy);
@@ -482,7 +502,7 @@ a.content-link.broken {
 #chat-log .pf2e.chat-card a.inline-check, .pf2e.chat-card span[data-pf2-action] {
     font-family: 'Good OT';
     color: var(--pfui-main-color);
-    background: var(--custom-trait);
+       background: var(--custom-trait);
     padding: 0px 3px;
     border: 1px solid var(--glassy);
     box-shadow: var(--glassy);
@@ -491,22 +511,54 @@ a.content-link.broken {
 #chat-log .chat-message a.content-link, .chat-message a.inline-roll {
     font-family: 'Good OT';
     color: var(--pfui-main-color);
-    background: var(--custom-trait);
+       background: var(--custom-trait);
     padding: 0px 3px;
     border: 1px solid var(--glassy);
     box-shadow: var(--glassy);
     border-radius: var(--border-radius);
 }
-#chat-log .message [data-visibility="gm"]:is(div,em,p,span,strong) {
-    background: none;
+#chat-log .chat-message .message-header .flavor-text ul.notes li {
+    font-family: "Good OT";
+    font-size: var(--font-size-13);
+    color: var(--pfui-main-grey-color);
+    box-shadow: var(--glassy);
+    background: radial-gradient(var(--color-cool-4), var(--color-cool-5));
+    border-image-repeat: repeat;
+    border-image-slice: 11;
+    border-image-source: var(--ornement);
+    border-image-width: 14px;
+    border-style: double;
+    padding: 3px 10px;
+    font-weight: 500;
+    margin: 0px;
 }
-
+#chat-log .message [data-visibility="gm"]:is(div,em,p,span,strong) {
+    font-style: italic;
+    color: var(--pfui-main-color);
+    background: radial-gradient(var(--color-cool-4), var(--color-cool-5));
+    border-radius: var(--border-radius);
+    box-shadow: var(--glassy);
+    border: none;
+}
 #chat-log .message [data-visibility="owner"]:is(div,em,p,span,strong) {
     font-style: italic;
-    color: greenyellow ;
+    color: var(--pfui-main-color);
+    background: radial-gradient(var(--color-cool-4), var(--color-cool-5));
+    border-radius: var(--border-radius);
+    box-shadow: var(--glassy);
     border: none;
-    box-shadow: none;
-    background: none;
+}
+[data-visibility]:not([data-visibility=all])[data-visibility=gm] {
+    font-style: italic;
+    color: var(--pfui-main-color);
+    background: var(--color-warm-3);
+    border-radius: var(--border-radius);
+    box-shadow: var(--glassy);
+    border: none;
+}
+[data-visibility]:not([data-visibility=all]) {
+    outline: none;
+    padding: 2px;
 }
 
 #chat-log .pf2e.chat-card .card-buttons button {
@@ -669,21 +721,13 @@ button.half-damage .fa-heart-broken::after {
 #chat-log button:hover img {
     filter: var(--filter-dark);
 }
-
+.pf2e.chat-card .tags {
+    margin: 3px 0 5px;
+}
 .pf2e.chat-card .card-footer span {
     border-right: 1px groove #fff;
 }
 
-[data-visibility]:is(div,em,h4,p,section,span,strong):not([data-visibility=all])[data-visibility=gm] {
-    background: none;
-}
-[data-visibility]:not([data-visibility=all])[data-visibility=gm] {
-    background: none;
-}
-[data-visibility]:not([data-visibility=all]) {
-    outline: none;
-    padding: 2px;
-}
 
 /*Shield*/
 
@@ -905,7 +949,6 @@ button.half-damage .fa-heart-broken::after {
     color: var(--color-text-hyperlink);
 }
 
-
 /*COMBAT TRACKER*/
 #combat .threat-award > *, #combat-popout .threat-award > * {
     color: var(--pfui-main-color);
@@ -914,10 +957,9 @@ button.half-damage .fa-heart-broken::after {
 #combat-popout .threat-award .threat .value.extreme {
   color: orangered;
 }
-/*-------------------------------------------------*/
 
-/* A bunch of disgusting CSS overrides that hit the system's CSS like a hammer to remove as much colour as possible */
-
-#pf2e-party-sheet-helper .sheet.party [data-tab=overview] .summary nav label {
-    color: var(--color-warm-1);
+/*Mystification Icon*/
+.fa-circle-question:before, .fa-question-circle:before {
+    color: var(--color-warm-2);
 }
+/*-------------------------------------------------*/

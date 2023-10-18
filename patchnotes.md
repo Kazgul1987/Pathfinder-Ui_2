@@ -4,9 +4,11 @@
 - Ready for v11 version.
 
 
-## v11.313.8.1
-- Update core code. 
-- Update Compatibility PF2e v5.7.0
+## v11.313.8.3
+- Update core code.
+- Update Compatibility PF2e v5.7.2
+- Update mystification compatibility
+- Update Chat Card Visual 
 
 ## v11.313.7
 - Update core code. 

@@ -393,7 +393,16 @@
     box-shadow: var(--glassy);
     border-radius: var(--border-radius);
     backdrop-filter: blur(5px);
-
+}
+.dark-npc-theme.actor.npc form .sheet-body .inventory .inventory-section .inventory-list .item .item-image {
+    border: 2px solid var(--color-warm-2);
+}
+/*Fix Size icon*/
+.actor.npc.sheet form .sheet-body .inventory .inventory-section .inventory-list .item .item-image {
+height: unset;
+width: unset;
+max-height: 24px;
+max-width: 24px;
 }
 
 
