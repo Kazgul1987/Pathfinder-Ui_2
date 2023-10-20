@@ -4,11 +4,12 @@
 - Ready for v11 version.
 
 
-## v11.313.8.5
+## v11.313.8.6
 - Update core code.
 - Update Compatibility PF2e v5.7.2
 - Update mystification compatibility
 - Update Chat Card Visual 
+- Fix Firefox Sheet color.
 
 ## v11.313.7
 - Update core code. 
