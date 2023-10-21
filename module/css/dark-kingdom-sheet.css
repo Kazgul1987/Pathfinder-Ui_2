@@ -297,6 +297,18 @@ filter: grayscale(0.75);
 .dark-kingdom-theme.sheet.kingdom nav.sub-nav a, .dark-kingdom-theme.sheet.kingdom nav.sub-nav .tab {
     color: var(--pfui-main-color);
 }
+.dark-kingdom-theme.sheet.kingdom [data-visibility]:not([data-visibility=all])[data-visibility=gm] {
+    font-style: italic;
+    color: var(--pfui-main-color);
+    background: var(--color-warm-3);
+    border-radius: var(--border-radius);
+    box-shadow: var(--glassy);
+    border: none;
+}
+.dark-kingdom-theme.sheet.kingdom [data-visibility]:not([data-visibility=all]) {
+    outline: none;
+    padding: 2px;
+}
 .dark-kingdom-theme.sheet.kingdom [data-pf2-effect-area] {
     font-family: "Good OT";
     color: var(--pfui-main-color);

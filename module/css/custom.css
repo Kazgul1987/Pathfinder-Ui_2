@@ -358,6 +358,18 @@ h6+p+blockquote, h6+p+ul+blockquote) {
 	border-bottom: 1px solid black;
 	margin: 0;
 }
+.journal-entry-page .journal-page-content [data-visibility]:not([data-visibility=all])[data-visibility=gm] {
+    font-style: italic;
+    color: var(--pfui-main-color);
+    background: var(--color-warm-3);
+    border-radius: var(--border-radius);
+    box-shadow: var(--glassy);
+    border: none;
+}
+.journal-entry-page .journal-page-content [data-visibility]:not([data-visibility=all]) {
+    outline: none;
+    padding: 2px;
+}
 .journal-entry-page .journal-page-content [data-pf2-effect-area] {
     font-family: "Good OT";
     color: var(--pfui-main-color);

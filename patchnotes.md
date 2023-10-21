@@ -4,6 +4,11 @@
 - Ready for v11 version.
 
 
+## v11.313.9
+- Update core code.
+- Update Condition visual
+- Update Monk little detail compatibility
+
 ## v11.313.8.6
 - Update core code.
 - Update Compatibility PF2e v5.7.2

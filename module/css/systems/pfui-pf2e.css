@@ -225,7 +225,7 @@
     width: 42px;
     margin-left: 3px;
     border-radius: 50%;
-    border: 1px solid var(--color-cool-3);
+    border: 1px solid var(--color-cool-5);
     box-shadow: 0px 1px 3px 1px black;
 }
 #effects-panel .effect-item > .icon.aura {
@@ -234,10 +234,14 @@
     box-shadow: 0px 0px 6px var(--color-warm-2), 0px 2px 8px 1px var(--color-warm-3);
 }
 #effects-panel .effect-item > .icon .value-wrapper {
+    bottom: -2px;
+    left: -2px;
     color: var(--pfui-main-color);
     background-color: var(--red);
     border: 1px solid var(--color-cool-3);
     border-radius: var(--border-radius);
+    text-shadow: 0px 1px 2px black;
+    box-shadow: var(--glassy);
 }
 #effects-panel .effect-item > .icon .linked {
     color: var(--pfui-main-color);
@@ -249,9 +253,9 @@
     background-color: var(--color-cool-5-90);
     color: var(--pfui-main-color);
     border-radius: var(--border-radius-5);
-    border: 1px solid var(--color-warm-1);
+    border: 1px solid var(--color-cool-3);
     backdrop-filter: blur(3px);
-    box-shadow: 0px 0px 6px var(--color-warm-2), 0px 2px 8px 1px var(--color-warm-3);
+    box-shadow: 0px 5px 20px 3px black, 0px 0px 50px 30px color-mix(in srgb, var(--color-cool-5) 10%, transparent);
 }
 #effects-panel .effect-item .effect-info .description a, #effects-panel .effect-item .effect-info .description span[data-pf2-effect-area] {
     color: var(--pfui-main-color)!important;
@@ -272,16 +276,18 @@
 #effects-panel .effect-item .effect-info h1 {
     color: var(--pfui-main-color);
     border-bottom: 1px dotted var(--color-cool-3);
+    text-shadow: 0px 1px 2px black;
 }
 #effects-panel .effect-item .effect-info .instructions {
     color: var(--color-cool-3);
+    text-shadow: 0px 1px 2px black;
 }
 #effects-panel .effect-item .effect-info .description {
     color: var(--pfui-main-color);
     border: none;
     background-color: var(--color-cool-5);
     box-shadow: var(--glassy);
-    text-shadow: 0 0 1px black;
+    text-shadow: 0px 1px 2px black;
     border-radius: var(--border-radius);
 }
 #effects-panel .effect-item .effect-info .tags .tag {
@@ -471,7 +477,54 @@ a.content-link.broken {
 #chat-log button {
     transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
 }
+#chat-log .message [data-visibility="gm"]:is(div,em,p,span,strong) {
+    font-style: italic;
+    color: var(--pfui-main-color);
+    background: radial-gradient(var(--color-cool-4), var(--color-cool-5));
+    border-radius: var(--border-radius);
+    box-shadow: var(--glassy);
+    border: none;
+}
+#chat-log .message [data-visibility="owner"]:is(div,em,p,span,strong) {
+    font-style: italic;
+    color: var(--pfui-main-color);
+    background: radial-gradient(var(--color-cool-4), var(--color-cool-5));
+    border-radius: var(--border-radius);
+    box-shadow: var(--glassy);
+    border: none;
+}
 
+#chat-log .pf2e.chat-card .card-buttons button {
+    margin: 2px 2px 2px 2px;
+    color: var(--pfui-main-color);
+    text-shadow: var(--pf2e-shadow-is-dark);
+    line-height: 20px;
+}
+
+#chat-log .pf2e.chat-card [data-visibility=owner] button {
+    text-transform: uppercase;
+    border:none;
+    background: hsl(0,0%,15%);
+    color: #fff;
+}
+#chat-log .pf2e.chat-card [data-visibility=owner] button:hover {
+    text-transform: uppercase;
+    border:none;
+    background: rgba(110,0,0,1);
+    color: #fff;
+}
+#chat-log [data-visibility]:not([data-visibility=all])[data-visibility=gm] {
+    font-style: italic;
+    color: var(--pfui-main-color);
+    background: var(--color-warm-3);
+    border-radius: var(--border-radius);
+    box-shadow: var(--glassy);
+    border: none;
+}
+#chat-log [data-visibility]:not([data-visibility=all]) {
+    outline: none;
+    padding: 2px;
+}
 #chat-log [data-pf2-effect-area] {
     font-family: 'Good OT';
     color: var(--pfui-main-color);
@@ -540,55 +593,6 @@ a.content-link.broken {
     padding: 3px 10px;
     font-weight: 500;
     margin: 0px;
-}
-#chat-log .message [data-visibility="gm"]:is(div,em,p,span,strong) {
-    font-style: italic;
-    color: var(--pfui-main-color);
-    background: radial-gradient(var(--color-cool-4), var(--color-cool-5));
-    border-radius: var(--border-radius);
-    box-shadow: var(--glassy);
-    border: none;
-}
-#chat-log .message [data-visibility="owner"]:is(div,em,p,span,strong) {
-    font-style: italic;
-    color: var(--pfui-main-color);
-    background: radial-gradient(var(--color-cool-4), var(--color-cool-5));
-    border-radius: var(--border-radius);
-    box-shadow: var(--glassy);
-    border: none;
-}
-[data-visibility]:not([data-visibility=all])[data-visibility=gm] {
-    font-style: italic;
-    color: var(--pfui-main-color);
-    background: var(--color-warm-3);
-    border-radius: var(--border-radius);
-    box-shadow: var(--glassy);
-    border: none;
-}
-[data-visibility]:not([data-visibility=all]) {
-    outline: none;
-    padding: 2px;
-}
-
-#chat-log .pf2e.chat-card .card-buttons button {
-    margin: 2px 2px 2px 2px;
-    color: var(--pfui-main-color);
-    text-shadow: var(--pf2e-shadow-is-dark);
-    line-height: 20px;
-}
-
-#chat-log .pf2e.chat-card [data-visibility=owner] button {
-    text-transform: uppercase;
-    border:none;
-    background: hsl(0,0%,15%);
-    color: #fff;
-}
-
-#chat-log .pf2e.chat-card [data-visibility=owner] button:hover {
-    text-transform: uppercase;
-    border:none;
-    background: rgba(110,0,0,1);
-    color: #fff;
 }
 
 #chat-log .pf2e.chat-card .card-buttons .hidden-to-others {
