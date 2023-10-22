@@ -56,5 +56,10 @@
     "RPGUI.SETTINGS.DISABLE_STYLES_HINT": "This is a local setting, with which any player can turn off styles",
 
     "RPGUI.SETTINGS.AUTO_COLLAPSE_SCENE_NAVIGATION_TEXT": "Auto collapse the scene navigation bar",
-    "RPGUI.SETTINGS.AUTO_COLLAPSE_SCENE_NAVIGATION_TEXT_HINT": "(Local) The scene navigation bar will be collapsed by default"
+    "RPGUI.SETTINGS.AUTO_COLLAPSE_SCENE_NAVIGATION_TEXT_HINT": "(Local) The scene navigation bar will be collapsed by default",
+
+    "RPGUI.SETTINGS.EnableTitle": "Roll Buttons: Replace roll type selector with buttons",
+    "RPGUI.SETTINGS.EnableHint": "Replace the drop-down menu selector for roll types with a set of four buttons.",
+    "RPGUI.SETTINGS.ReplaceButtonsTitle": "Roll Buttons: Use button style on all chat buttons",
+    "RPGUI.SETTINGS.ReplaceButtonsHint": "Restyle the other chat buttons to look the same as the new Roll Type buttons."
 }
