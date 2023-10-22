@@ -135,6 +135,17 @@ Hooks.on('init', () => {
 			location.reload();
 		}
 	});
+	game.settings.register('pathfinder-ui', 'autoCollapseSceneNavigation', {
+		name: game.i18n.localize('RPGUI.SETTINGS.AUTO_COLLAPSE_SCENE_NAVIGATION_TEXT'),
+		hint: game.i18n.localize('RPGUI.SETTINGS.AUTO_COLLAPSE_SCENE_NAVIGATION_TEXT_HINT'),
+		scope: "client",
+		type: Boolean,
+		default: false,
+		config: true,
+		onChange: () => {
+			location.reload();
+		}
+	});
 
 	if (!game.settings.get('pathfinder-ui', 'compactModeToggle')) {
 		if (!game.settings.get('pathfinder-ui', 'standardLogoToggle')) {
@@ -169,6 +180,12 @@ Hooks.on('getSceneNavigationContext', () => {
 	}
 });
 
+Hooks.on('renderSceneNavigation', (sceneNavigation) => {
+	if (game.settings.get('pathfinder-ui', 'autoCollapseSceneNavigation')) {
+		sceneNavigation.collapse();
+	}
+});
+
 Hooks.on('renderCombatCarousel', () => {
 	let carouselSize = game.settings.get('combat-carousel', 'carouselSize')
 	if (carouselSize !== "") {
@@ -199,7 +216,7 @@ function rpgUIAddTokenEffectsHud() {
     mainCss.setAttribute("type", "text/javascript")
     mainCss.setAttribute("src", "modules/pathfinder-ui/scripts/status-halo.js")
     head.insertBefore(mainCss, head.lastChild);
- 
+
     setTimeout(() => enableStatusHalo(), 700);
 }
 function rpgUIAddTokenHud() {
