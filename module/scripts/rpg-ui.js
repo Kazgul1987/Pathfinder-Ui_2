@@ -148,6 +148,17 @@ Hooks.on('init', () => {
 			location.reload();
 		}
 	});
+	game.settings.register('pathfinder-ui', 'openSheetOnChatClick', {
+		name: game.i18n.localize('RPGUI.SETTINGS.OPEN_SHEET_ON_CHAT_CLICK_TEXT'),
+		hint: game.i18n.localize('RPGUI.SETTINGS.OPEN_SHEET_ON_CHAT_CLICK_TEXT_HINT'),
+		scope: "client",
+		type: Boolean,
+		default: false,
+		config: true,
+		onChange: () => {
+			location.reload();
+		}
+	});
 
 	if (!game.settings.get('pathfinder-ui', 'compactModeToggle')) {
 		if (!game.settings.get('pathfinder-ui', 'standardLogoToggle')) {
@@ -284,3 +295,31 @@ Hooks.on('renderSidebarTab', async (object, html) => {
 	  details.append(list.firstChild)
 	}
   })
+
+Hooks.on('renderChatLogPF2e', (chat, html) => {
+  if (!game.settings.get('pathfinder-ui', 'openSheetOnChatClick')) {
+    return;
+  }
+
+  html[0].addEventListener('click', async (event) => {
+    const target = event.target;
+    if (!target || (
+      !target.classList.contains('message-sender') // Actor name
+      && !target.nextElementSibling?.classList.contains('message-sender') // Actor image
+    )) {
+      return;
+    }
+
+    const messageId = target.closest('[data-message-id]');
+    if (!messageId) {
+      return;
+    }
+
+    const message = game.messages.get(messageId.dataset.messageId);
+    if (!message || !message.actor || !message.actor.isOwner) {
+      return;
+    }
+
+    message.actor.sheet.render(true);
+  });
+});
