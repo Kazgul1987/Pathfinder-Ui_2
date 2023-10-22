@@ -1,0 +1,43 @@
+#rpg-ui-buttons {
+  display: flex;
+  flex-flow: row nowrap;
+  margin: 0 0.5em;
+}
+
+#rpg-ui-buttons button {
+  flex: 0 1 auto;
+  min-height: 36px;
+  max-height: 36px;
+  padding-top: 2px;
+}
+
+#rpg-ui-buttons button i {
+  width: 20px;
+  height: 20px;
+  margin: auto;
+}
+
+#rpg-ui-buttons button.active i {
+  color: #000;
+}
+
+#rpg-ui-buttons button[data-id="publicroll"].active {
+  background-color: #26C281;
+}
+
+#rpg-ui-buttons button[data-id="gmroll"].active {
+  background-color: #F2CA27;
+}
+
+#rpg-ui-buttons button[data-id="blindroll"].active {
+  background-color: #E87E04;
+}
+
+#rpg-ui-buttons button[data-id="selfroll"].active {
+  background-color: #E74C3C;
+}
+
+#chat-controls {
+  padding: 0.5em 0;
+  align-items: center;
+}

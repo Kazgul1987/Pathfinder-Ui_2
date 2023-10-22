@@ -3,6 +3,7 @@
 @import 'text-editor.css';
 @import "systems/pfui-pf2e.css";
 @import 'compatibility.css';
+@import 'privacy-button.css';
 
 
 /* POLICES
@@ -53,9 +54,9 @@ body {
 	width: 128px;
 	height: 128px;
 	padding-left: 128px;
-	
+
 	background-image: url("../ui/other/paused-pfrpg.webp");
-	animation: rotation 20s infinite linear;	
+	animation: rotation 20s infinite linear;
 }
 
 :root {
