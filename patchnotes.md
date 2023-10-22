@@ -4,6 +4,12 @@
 - Ready for v11 version.
 
 
+## v11.313.10
+- Update core code.
+- Update Cursor compatibility.
+- Update new Drag cursor.
+- Fix errors with Windows Foundry App.
+
 ## v11.313.9
 - Update core code.
 - Update Condition visual

@@ -72,7 +72,6 @@ body {
     --red: #5e0000;
     --red-light:#ff0000;
     --custom-trait:#61180e;
-    --border-radius: 3px;
     --border-color: #372d25;
     --serif: Eczar,Georgia,serif;
     --journal-serif: "Vollkorn",var(--serif);
@@ -712,9 +711,10 @@ hr {
 #settings button:hover,
 #sidebar .directory .action-buttons button:hover {
     color: var(--pfui-main-color);
-    text-shadow: 0 0 8px var(--color-shadow-primary);
+    text-shadow: 0 0 15px var(--red-light);
     background: url(../ui/frames/header.webp) center center;
     background-size: 100% 45px;
+    backdrop-filter: brightness(0.5);
 }
 
 #settings button::before,

@@ -1,109 +1,201 @@
 /*************************************************************/
 /* ======================= Cursor ========================== */
 /*************************************************************/
+#hud {
+    cursor: url(../ui/cursors/normal.webp), default;
+}
+#hud > * {
+    cursor: url(../ui/cursors/pointer.webp), pointer;
+}
+canvas#board {
+    cursor: url(../ui/cursors/normal.webp), default!important;
+}
 .chat-card-button {
     cursor:url(../ui/cursors/pointer.webp), pointer;
-  }
-  
-  body {
+}
+
+body {
     cursor:url(../ui/cursors/normal.webp), default; 
-  }
-  
-  a{
+}
+
+body:not(.background) {
+    cursor:url(../ui/cursors/normal.webp), default; 
+}
+
+body.game {
+    cursor:url(../ui/cursors/normal.webp), default; 
+}
+
+a{
     cursor:url(../ui/cursors/pointer.webp), pointer; 
-  }
-  
-  .draggable{
+}
+
+.draggable{
     cursor:url(../ui/cursors/drag.webp), move; 
-  }
-  
-  #hotbar .macro{
+}
+
+#hotbar .macro{
     cursor:url(../ui/cursors/pointer.webp), pointer; 
-  }
-  
-  #playlists-popout .global-volume::-webkit-slider-thumb,
-      #sidebar #playlists .global-volume::-webkit-slider-thumb {
-      cursor:url(../ui/cursors/pointer.webp), pointer;
-  }
-  #playlists-popout li.playlist:not(:first-of-type) li.sound .sound-volume::-webkit-slider-thumb,
-        #sidebar #playlists li.playlist:not(:first-of-type) li.sound .sound-volume::-webkit-slider-thumb {
-          cursor:url(../ui/cursors/pointer.webp), pointer; 
-      }
-  
-  #sidebar #settings button {
-      cursor:url(../ui/cursors/pointer.webp), pointer;
-  }
-  
-  .app.window-app.sheet.wfrp4e.actor.character-sheet .tab.main.active .main-row .movement.row-section .move-value .auto-calc-toggle {
-      cursor:url(../ui/cursors/pointer.webp), pointer;
-  }
-  
-  .app.window-app.sheet.wfrp4e.actor.npc-sheet  .main-row .movement.row-section .move-value .auto-calc-toggle {
-      cursor:url(../ui/cursors/pointer.webp), pointer;
-  }
-  
-  .app.window-app.sheet.wfrp4e.actor.creature-sheet  .main-row .movement.row-section .move-value .auto-calc-toggle {
-      cursor:url(../ui/cursors/pointer.webp), pointer;
-  }
-  
-  #navigation #scene-list .scene.view, #navigation #scene-list .scene.context {
-      cursor:url(../ui/cursors/normal.webp), default; 
-  }
-  
-  #navigation #nav-toggle {
-      cursor:url(../ui/cursors/normal.webp), default; 
-  }
-  
-  #navigation #scene-list .scene.nav-item {
-      cursor:url(../ui/cursors/normal.webp), default; 
-  }
-  
-  #controls .scene-control.active, #controls .control-tool.active, #controls .scene-control:hover, #controls .control-tool:hover {
-      cursor:url(../ui/cursors/normal.webp), default; 
-  }
-  
-  #controls .scene-control, #controls .control-tool {
-      cursor:url(../ui/cursors/pointer.webp), pointer !important; 
-      cursor:url(../ui/cursors/normal.webp), default !important; 
-  }
-  
-  .app.window-app .form-group input[type="range"]::-webkit-slider-thumb {
-      cursor:url(../ui/cursors/pointer.webp), pointer;
-  }
-  
-  .token-sheet .tab[data-tab="image"] input[type="range"]::-webkit-slider-thumb {
-      cursor:url(../ui/cursors/pointer.webp), pointer;
-  }
-  
-  #drawing-config .tab[data-tab="image"] input[type="range"]::-webkit-slider-thumb {
-      cursor:url(../ui/cursors/pointer.webp), pointer;
-  }
-  
-  .metacurrency-value {
-      cursor:url(../ui/cursors/pointer.webp), pointer;
-  }
-  
-  .overcast-button,
-  .chargen-button {
-      cursor:url(../ui/cursors/pointer.webp), pointer;
-  }
-  
-  #effects-config .flex2::-webkit-slider-thumb {
-      cursor:url(../ui/cursors/pointer.webp), pointer;
-  }
-  
-  #client-settings .window-content form .form-group > label,
-  #client-settings .window-content form .form-group select,
-  #client-settings .form-group input,
-  .app.window-app .form-group label,
-  #sidebar .sidebar-tab #chat-controls div.roll-type-select select,
-  #sidebar .sidebar-tab #chat-controls div.roll-type-select i.fas {
-      cursor:url(../ui/cursors/normal.webp), default; 
-  }
-  
-  #client-settings section.content .submenu > button,
-  #client-settings .window-content button label,
-  form .form-group .form-fields button,
-  form button {
-      cursor:url(../ui/cursors/pointer.webp), pointer;
-  }
+}
+
+#players {
+    cursor:url(../ui/cursors/pointer.webp), pointer;
+}
+#token {
+    cursor:url(../ui/cursors/pointer.webp), pointer;
+}
+
+#playlists-popout .global-volume::-webkit-slider-thumb,
+#sidebar #playlists .global-volume::-webkit-slider-thumb {
+    cursor:url(../ui/cursors/pointer.webp), pointer;
+}
+#playlists-popout li.playlist:not(:first-of-type) li.sound .sound-volume::-webkit-slider-thumb,
+#sidebar #playlists li.playlist:not(:first-of-type) li.sound .sound-volume::-webkit-slider-thumb {
+    cursor:url(../ui/cursors/pointer.webp), pointer; 
+}
+
+#sidebar #settings button {
+    cursor:url(../ui/cursors/pointer.webp), pointer;
+}
+#sidebar .sidebar-tab option, .sidebar-tab optgroup {
+    cursor:url(../ui/cursors/pointer.webp), pointer;
+}
+.app.window-app.sheet.wfrp4e.actor.character-sheet .tab.main.active .main-row .movement.row-section .move-value .auto-calc-toggle {
+    cursor:url(../ui/cursors/pointer.webp), pointer;
+}
+
+.app.window-app.sheet.wfrp4e.actor.npc-sheet.main-row .movement.row-section .move-value .auto-calc-toggle {
+    cursor:url(../ui/cursors/pointer.webp), pointer;
+}
+
+.app.window-app.sheet.wfrp4e.actor.creature-sheet.main-row .movement.row-section .move-value .auto-calc-toggle {
+    cursor:url(../ui/cursors/pointer.webp), pointer;
+}
+
+#navigation #scene-list .scene.view, #navigation #scene-list .scene.context {
+    cursor:url(../ui/cursors/normal.webp), default; 
+}
+
+#navigation #nav-toggle {
+    cursor:url(../ui/cursors/pointer.webp), pointer;
+}
+
+#navigation #scene-list .scene.nav-item {
+    cursor:url(../ui/cursors/normal.webp), default; 
+}
+
+#controls .scene-control.active, #controls .control-tool.active, #controls .scene-control:hover, #controls .control-tool:hover {
+    cursor:url(../ui/cursors/pointer.webp), pointer;  
+}
+
+#controls .scene-control, #controls .control-tool {
+    cursor:url(../ui/cursors/pointer.webp), pointer !important; 
+    /*cursor:url(../ui/cursors/normal.webp), default !important;*/
+}
+
+.app.window-app .form-group input[type="range"]::-webkit-slider-thumb {
+    cursor:url(../ui/cursors/pointer.webp), pointer;
+}
+
+.token-sheet .tab[data-tab="image"] input[type="range"]::-webkit-slider-thumb {
+    cursor:url(../ui/cursors/pointer.webp), pointer;
+}
+
+#drawing-config .tab[data-tab="image"] input[type="range"]::-webkit-slider-thumb {
+    cursor:url(../ui/cursors/pointer.webp), pointer;
+}
+
+.metacurrency-value {
+    cursor:url(../ui/cursors/pointer.webp), pointer;
+}
+
+.overcast-button,
+.chargen-button {
+    cursor:url(../ui/cursors/pointer.webp), pointer;
+}
+
+#effects-config .flex2::-webkit-slider-thumb {
+    cursor:url(../ui/cursors/pointer.webp), pointer;
+}
+
+#client-settings .window-content form .form-group > label,
+#client-settings .window-content form .form-group select,
+#client-settings .form-group input,
+.app.window-app .form-group label,
+#sidebar .sidebar-tab #chat-controls div.roll-type-select select,
+#sidebar .sidebar-tab #chat-controls div.roll-type-select i.fas {
+    cursor:url(../ui/cursors/normal.webp), default; 
+}
+
+#client-settings section.content .submenu > button,
+#client-settings .window-content button label,
+form .form-group .form-fields button,
+form button {
+    cursor:url(../ui/cursors/pointer.webp), pointer;
+}
+#chat-controls .roll-type-select {
+    cursor:url(../ui/cursors/pointer.webp), pointer;
+}
+
+
+/*PF2e System*/
+.dice-total:hover,
+.dice-roll .dice-formula:hover,
+#chat-log button:hover,
+#chat-log button:focus {
+    cursor:url(../ui/cursors/pointer.webp), pointer; 
+}
+.dice-total:hover,
+.dice-roll .dice-formula:hover,
+#chat-log button:hover {
+    cursor:url(../ui/cursors/pointer.webp), pointer; 
+}
+.dice-total:hover,
+.dice-roll .dice-formula:hover {
+    cursor:url(../ui/cursors/pointer.webp), pointer; 
+}
+#effects-panel .effect-item > .icon {
+    cursor: url(../ui/cursors/pointer.webp), pointer;
+}
+.placeable-hud .control-icon {
+    cursor: url(../ui/cursors/pointer.webp), pointer;
+}
+
+/* DF Chat Enhancements */
+/* https://github.com/flamewave000/dragonflagon-fvtt/tree/master/df-chat-enhance */
+#dfcp-rt-buttons button {
+    cursor:url(../ui/cursors/pointer.webp), pointer; 
+}
+
+/* Token Hud Remaster
+*************************/
+#token-hud .status-effects {
+    cursor:url(../ui/cursors/normal.webp), default;
+}
+#token-hud .status-effects .effect-control img {
+    cursor:url(../ui/cursors/pointer.webp), pointer; 
+}
+#token-hud .status-effects .effect-control.active img {
+    cursor:url(../ui/cursors/pointer.webp), pointer; 
+}
+#token-hud .status-effects .effect-control:not(.active):hover img {
+    cursor:url(../ui/cursors/pointer.webp), pointer; 
+}
+#token-hud.placeable-hud.monks-little-details .status-effects .effect-control {
+    cursor: url(../ui/cursors/pointer.webp), pointer;
+}
+
+/* Polyglot */
+/* https://github.com/mclemente/fvtt-module-polyglot */
+.polyglot-lang-select span.select2-selection {
+    cursor:url(../ui/cursors/pointer.webp), pointer; 
+}
+.select2-container--default .select2-results__option--selected {
+    cursor:url(../ui/cursors/pointer.webp), pointer;
+}
+.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
+    cursor:url(../ui/cursors/pointer.webp), pointer;
+}
+.polyglot-lang-select input:checked {
+    cursor:url(../ui/cursors/pointer.webp), pointer;
+}
