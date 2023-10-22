@@ -4,11 +4,15 @@
 - Ready for v11 version.
 
 
-## v11.313.10
+## v11.313.11
 - Update core code.
 - Update Cursor compatibility.
 - Update new Drag cursor.
-- Fix errors with Windows Foundry App.
+- Fix error with Windows Foundry App.
+- added 3 new functions (thanks at @DjLeChuck for the great work.): 
+    - Roll Buttons like DFCE modules.
+    - Auto collapse scene navigator (when you activate option, not default by default).
+    - Open a pc/npc sheet from chat.
 
 ## v11.313.9
 - Update core code.

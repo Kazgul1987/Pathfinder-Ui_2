@@ -153,7 +153,7 @@ Hooks.on('init', () => {
 		hint: game.i18n.localize('RPGUI.SETTINGS.OPEN_SHEET_ON_CHAT_CLICK_TEXT_HINT'),
 		scope: "client",
 		type: Boolean,
-		default: false,
+		default: true,
 		config: true,
 		onChange: () => {
 			location.reload();

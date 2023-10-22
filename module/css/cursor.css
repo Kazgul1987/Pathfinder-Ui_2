@@ -166,6 +166,10 @@ form button {
 #dfcp-rt-buttons button {
     cursor:url(../ui/cursors/pointer.webp), pointer; 
 }
+#rpg-ui-buttons button {
+    cursor:url(../ui/cursors/pointer.webp), pointer; 
+}
+
 
 /* Token Hud Remaster
 *************************/
