@@ -7,8 +7,8 @@
 #hud > * {
     cursor: url(../ui/cursors/pointer.webp), pointer;
 }
-canvas#board {
-    cursor: url(../ui/cursors/normal.webp), default!important;
+canvas#board.rpg-ui-hover-token {
+    cursor: url(../ui/cursors/pointer.webp), pointer!important;
 }
 .chat-card-button {
     cursor:url(../ui/cursors/pointer.webp), pointer;

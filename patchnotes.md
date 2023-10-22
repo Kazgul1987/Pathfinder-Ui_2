@@ -4,7 +4,7 @@
 - Ready for v11 version.
 
 
-## v11.313.11
+## v11.313.11.1
 - Update core code.
 - Update Cursor compatibility.
 - Update new Drag cursor.

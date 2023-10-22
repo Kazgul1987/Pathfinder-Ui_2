@@ -323,3 +323,13 @@ Hooks.on('renderChatLogPF2e', (chat, html) => {
     message.actor.sheet.render(true);
   });
 });
+
+Hooks.on('hoverToken', (token, isHovered) => {
+    const board = document.getElementById('board');
+
+    if (isHovered) {
+        board.classList.add('rpg-ui-hover-token');
+    } else {
+        board.classList.remove('rpg-ui-hover-token');
+    }
+});
