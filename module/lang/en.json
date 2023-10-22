@@ -61,5 +61,8 @@
     "RPGUI.SETTINGS.EnableTitle": "Roll Buttons: Replace roll type selector with buttons",
     "RPGUI.SETTINGS.EnableHint": "Replace the drop-down menu selector for roll types with a set of four buttons.",
     "RPGUI.SETTINGS.ReplaceButtonsTitle": "Roll Buttons: Use button style on all chat buttons",
-    "RPGUI.SETTINGS.ReplaceButtonsHint": "Restyle the other chat buttons to look the same as the new Roll Type buttons."
+    "RPGUI.SETTINGS.ReplaceButtonsHint": "Restyle the other chat buttons to look the same as the new Roll Type buttons.",
+
+    "RPGUI.SETTINGS.OPEN_SHEET_ON_CHAT_CLICK_TEXT": "Open the sheet when the name is clicked in the chat",
+    "RPGUI.SETTINGS.OPEN_SHEET_ON_CHAT_CLICK_TEXT_HINT": "(Local) Open the actor's sheet when clicking on their name in the chat"
 }

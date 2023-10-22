@@ -61,5 +61,8 @@
     "RPGUI.SETTINGS.EnableTitle": "Boutons de jet : Remplacer le sélecteur de type de jet par des boutons",
     "RPGUI.SETTINGS.EnableHint": "Remplacer le menu déroulant de sélection de type de jet par un ensemble de quatre boutons.",
     "RPGUI.SETTINGS.ReplaceButtonsTitle": "Boutons de jet : Utiliser le style de bouton sur tous les boutons de chat",
-    "RPGUI.SETTINGS.ReplaceButtonsHint": "Restylez les autres boutons de chat pour qu'ils aient la même apparence que les nouveaux boutons de jet."
+    "RPGUI.SETTINGS.ReplaceButtonsHint": "Restylez les autres boutons de chat pour qu'ils aient la même apparence que les nouveaux boutons de jet.",
+
+    "RPGUI.SETTINGS.OPEN_SHEET_ON_CHAT_CLICK_TEXT": "Ouvrir la feuille au clic du nom dans le chat",
+    "RPGUI.SETTINGS.OPEN_SHEET_ON_CHAT_CLICK_TEXT_HINT": "(Local) Ouvre la feuille de l’acteur au clic de son nom dans le chat"
 }
