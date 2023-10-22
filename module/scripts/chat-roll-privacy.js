@@ -91,7 +91,7 @@ export default class ChatRollPrivacy {
       }
       buttons.push({
         rt: rt,
-        name: data.rollModes[rt],
+        name: game.i18n.localize(data.rollModes[rt]),
         active: data.rollMode === rt,
         icon: ICONS_FOR_KNOWN_ROLL_TYPES[rt],
         colour: ChatRollPrivacy.calcColour(iconKeys.findIndex(x => x == rt), iconKeys.length),
@@ -118,10 +118,11 @@ export default class ChatRollPrivacy {
     html.find('#chat-controls div.control-buttons a').each(function () {
       const html = $(this).html();
       const classes = $(this).attr('class');
-      const title = $(this).attr('title');
+      const ariaLabel = $(this).attr('aria-label');
+      const tooltip = $(this).attr('data-tooltip');
       const style = $(this).attr('style');
       const click = $._data(this, 'events')['click'][0].handler;
-      const button = $(`<button class="${classes}" title="${title}" style="${style}">${html}</button>`);
+      const button = $(`<button class="${classes}" aria-label="${ariaLabel}" data-tooltip="${tooltip}" style="${style}">${html}</button>`);
       button.on('click', click);
       // Add a small margin between the first button and the RollTypes
       if (first) {
