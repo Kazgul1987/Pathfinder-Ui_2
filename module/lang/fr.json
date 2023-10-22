@@ -53,5 +53,8 @@
     "RPGUI.SETTINGS.MINIMAL_UI_HINT": "Corrige certains (pas tous) des problèmes liés à Minimal Ui.",
 
     "RPGUI.SETTINGS.DISABLE_STYLES": "Désactiver Pathfinder Ui.",
-    "RPGUI.SETTINGS.DISABLE_STYLES_HINT": "Il s'agit d'un paramètre local, avec lequel tout joueur peut désactiver les styles."
+    "RPGUI.SETTINGS.DISABLE_STYLES_HINT": "Il s'agit d'un paramètre local, avec lequel tout joueur peut désactiver les styles.",
+
+    "RPGUI.SETTINGS.AUTO_COLLAPSE_SCENE_NAVIGATION_TEXT": "Replier automatique la barre de navigation des scènes",
+    "RPGUI.SETTINGS.AUTO_COLLAPSE_SCENE_NAVIGATION_TEXT_HINT": "(Local) La barre de navigation des scènes sera repliée par défaut"
 }

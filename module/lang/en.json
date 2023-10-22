@@ -1,6 +1,6 @@
 {
     "RPGUI.SETTINGS.DORAKOUI":"Hello Hello, you've just activated Pathfinder Ui v3 & Dorako Ui at the same time. Both modules are graphical interfaces and cannot be activated together, as they share common code that interferes with each other. Please deactivate one of the two interfaces. Thank you for your understanding.",
-    
+
     "RPGUI.SETTINGS.DARKSHEET":"Select your Sheet Color",
     "RPGUI.SETTINGS.DARKSHEET_HINT":"Only for player sheets.",
 
@@ -21,7 +21,7 @@
 
     "RPGUI.SETTINGS.TOKEN_EFFECT_HUD": "Adjust token effects HUD?",
     "RPGUI.SETTINGS.TOKEN_EFFECT_HUD_HINT": "Makes effects circular and arranges them outside the token, or on the token ring for larger tokens",
-   
+
     "RPGUI.SETTINGS.TOKEN_HUD": "Disable Dark PF2e Interactive Token Tooltip?",
     "RPGUI.SETTINGS.TOKEN_HUD_HINT": "Disables the dark theme of PF2e Interactive Token Tooltip by default theme",
 
@@ -42,7 +42,7 @@
 
     "RPGUI.SETTINGS.JOURNAL_SHEET": "Disable parchment texture on Journal pages",
     "RPGUI.SETTINGS.JOURNAL_SHEET_HINT": "Disable the parchment appearance on journal entries.",
-    
+
     "RPGUI.SETTINGS.JOURNAL_CURSOR": "Disable RPG Cursors.",
     "RPGUI.SETTINGS.JOURNAL_CURSOR_HINT": "Disable RPG Cursor style in Interface.",
 
@@ -53,5 +53,8 @@
     "RPGUI.SETTINGS.MINIMAL_UI_HINT": "Fixes some (not all) of the problems with minimal UI",
 
     "RPGUI.SETTINGS.DISABLE_STYLES": "Disable Pathfinder UI",
-    "RPGUI.SETTINGS.DISABLE_STYLES_HINT": "This is a local setting, with which any player can turn off styles"
+    "RPGUI.SETTINGS.DISABLE_STYLES_HINT": "This is a local setting, with which any player can turn off styles",
+
+    "RPGUI.SETTINGS.AUTO_COLLAPSE_SCENE_NAVIGATION_TEXT": "Auto collapse the scene navigation bar",
+    "RPGUI.SETTINGS.AUTO_COLLAPSE_SCENE_NAVIGATION_TEXT_HINT": "(Local) The scene navigation bar will be collapsed by default"
 }
