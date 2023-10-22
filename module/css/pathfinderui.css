@@ -83,6 +83,7 @@ body {
     --background: #100d0d;
     --border-radius: 3px;
     --border-radius-5: 5px;
+    --box-shadow: 0px 1px 3px 1px black;
 
     --primary-remaster: hsl(153, 100%, 8%);
 	--primary-light-remaster: hsl(170, 96%, 19%);
