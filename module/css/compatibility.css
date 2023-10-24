@@ -28,6 +28,7 @@
     --border-radius: 3px;
     --border-radius-5: 5px;
     --box-shadow: 0px 1px 3px 1px black;
+    --box-shadow-light: inset 0 0 0 1px rgba(255, 255, 255, 0.15), inset 0 0 0 2px rgba(0, 0, 0, 0.4), inset 0px 0px 3px 1px var(--color-cool-3);
 
     --rarity-common: #7e7e7e;
     --rarity-uncommon: #ff6400;
@@ -199,7 +200,7 @@
     border-radius: var(--border-radius);
     transition: text-shadow 0.15s ease-in-out, background-color 0.15s ease-in-out, border 0.15s ease-in-out, color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, backdrop-filter 0.15s ease-in-out, border-radius 0.15s;
     background: radial-gradient(var(--color-cool-5-50), transparent);
-    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15), inset 0 0 0 2px rgba(0, 0, 0, 0.4);
+    box-shadow: var(--box-shadow-light);
     color: var(--pfui-main-grey-color);
     backdrop-filter: blur(5px);
 }
@@ -233,22 +234,22 @@
 #dfcp-rt-buttons button[data-id=publicroll].active {
     background-color: var(--green);
     color: var(--background);
-    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15), inset 0 0 0 2px rgba(0, 0, 0, 0.4);
+    box-shadow: var(--box-shadow-light);
 }
 #dfcp-rt-buttons button[data-id=gmroll].active {
     background-color: #f2ca27;
     color: var(--background);
-    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15), inset 0 0 0 2px rgba(0, 0, 0, 0.4);
+    box-shadow: var(--box-shadow-light);
 }
 #dfcp-rt-buttons button[data-id=blindroll].active {
     background-color: #e87e04;
     color: var(--background);
-    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15), inset 0 0 0 2px rgba(0, 0, 0, 0.4);
+    box-shadow: var(--box-shadow-light);
 }
 #dfcp-rt-buttons button[data-id=selfroll].active {
     background-color: var(--color-text-hyperlink);
     color: var(--background);
-    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15), inset 0 0 0 2px rgba(0, 0, 0, 0.4);
+    box-shadow: var(--box-shadow-light);
 }
 
 
@@ -502,7 +503,7 @@ wrapper.pf2e-td.name-left .pf2e-td.name:hover {
     color: white;
     border: 1px solid #7B322F;
     background-color: var(--red);
-    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15), inset 0 0 0 2px rgba(0, 0, 0, 0.4);
+    box-shadow: var(--box-shadow-light);
     border-radius: var(--border-radius);
 }
 wrapper.pf2e-td.name-left .pf2e-td.damage-application {
@@ -628,14 +629,14 @@ wrapper.pf2e-td.name-left .pf2e-td.damage-application {
     bottom: 1px;
     border: 1px solid #000;
     background: radial-gradient(var(--color-cool-5-50), transparent);
-box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15), inset 0 0 0 2px rgba(0, 0, 0, 0.4);
+box-shadow: var(--box-shadow-light);
     border-radius: var(--border-radius);
     backdrop-filter: blur(5px);
     transition: text-shadow 0.15s ease-in-out, background-color 0.15s ease-in-out, border 0.15s ease-in-out, color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, backdrop-filter 0.15s ease-in-out, border-radius 0.15s;
 }
 .select2-search--dropdown {
     background: var(--background);
-box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15), inset 0 0 0 2px rgba(0, 0, 0, 0.4);
+box-shadow: var(--box-shadow-light);
     border-radius: var(--border-radius);
 }
 .select2-container--default .select2-search--dropdown .select2-search__field {
@@ -644,7 +645,7 @@ box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15), inset 0 0 0 2px rgba(0, 0
     border:none;
     border-top: 1px solid var(--color-warm-1);
     border-bottom: 1px solid var(--color-warm-1);
-box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15), inset 0 0 0 2px rgba(0, 0, 0, 0.4);
+box-shadow: var(--box-shadow-light);
     text-shadow: 0 0 1px black;
     border-radius: var(--border-radius-5);
     backdrop-filter: blur(5px);
@@ -652,7 +653,7 @@ box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15), inset 0 0 0 2px rgba(0, 0
 .select2-container--default .select2-results>.select2-results__options {
     color: var(--pfui-main-color);
     background: var(--background);
-box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15), inset 0 0 0 2px rgba(0, 0, 0, 0.4);
+box-shadow: var(--box-shadow-light);
 }
 .select2-container--default .select2-results__option--selected {
     color: var(--pfui-main-color);
@@ -661,7 +662,7 @@ box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15), inset 0 0 0 2px rgba(0, 0
     border-bottom: 1px solid var(--color-warm-1);
     background: none;
     background: radial-gradient(var(--color-cool-3), var(--glass-bg-dark));
-box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15), inset 0 0 0 2px rgba(0, 0, 0, 0.4);
+box-shadow: var(--box-shadow-light);
     text-shadow: 0 0 3px black;
     border-radius: var(--border-radius-5);
 }
@@ -670,7 +671,7 @@ box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15), inset 0 0 0 2px rgba(0, 0
     border: none;
     background: none;
     background: radial-gradient(var(--color-cool-4), var(--glass-bg-dark));
-box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15), inset 0 0 0 2px rgba(0, 0, 0, 0.4);
+box-shadow: var(--box-shadow-light);
     text-shadow: 0 0 3px black;
     border-radius: var(--border-radius-5);
 }
@@ -691,14 +692,14 @@ box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15), inset 0 0 0 2px rgba(0, 0
 
 .dice-tray button {
     background: radial-gradient(var(--color-cool-5-50), transparent);
-    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15), inset 0 0 0 2px rgba(0, 0, 0, 0.4);
+    box-shadow: var(--box-shadow-light);
     color: var(--pfui-main-grey-color);
     backdrop-filter: blur(5px);
     border-radius: var(--border-radius);
 }
 .dice-tray input[type="text"] {
     background: radial-gradient(var(--color-cool-5-50), transparent);
-box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15), inset 0 0 0 2px rgba(0, 0, 0, 0.4);
+box-shadow: var(--box-shadow-light);
 }
 .dice-calculator > button, .dice-calculator .dice-calculator--button {
     color: var(--pfui-main-color)
@@ -770,12 +771,12 @@ nav.damage-log-nav .item.active:before,
 /* Smalltime */
 /* https://github.com/unsoluble/smalltime */
 #smalltime-app .window-content {
-    box-shadow: var(--box-shadow);
+    box-shadow: var(--box-shadow-light);
     filter: drop-shadow(2px 4px 6px var(--color-cool-4));
 }
 #smalltime-app.show-date #dateDisplay {
     background: var(--color-cool-5);
-    box-shadow: var(--box-shadow);
+    box-shadow: var(--box-shadow-light);
     border: none;
     color: var(--color-warm-1);
     border-radius: var(--border-radius);
@@ -790,21 +791,21 @@ nav.damage-log-nav .item.active:before,
 }
 #smalltime-app #dragHandle {
     background: var(--color-cool-5);
-    box-shadow: var(--box-shadow);
+    box-shadow: var(--box-shadow-light);
     border: none;
     color: var(--pfui-main-color);
     border-radius: var(--border-radius);
 }
 #smalltime-app #displayContainer {
     background: var(--color-cool-5);
-    box-shadow: var(--box-shadow);
+    box-shadow: var(--box-shadow-light);
     border: none;
     color: var(--pfui-main-color);
     border-radius: var(--border-radius);
 }
 #smalltime-app .arrow-right {
     background: var(--color-cool-5);
-    box-shadow: var(--box-shadow);
+    box-shadow: var(--box-shadow-light);
     border: none;
     color: var(--pfui-main-color);
     border-radius: var(--border-radius);
@@ -817,7 +818,7 @@ nav.damage-log-nav .item.active:before,
 }
 #smalltime-app .arrow-left {
     background: var(--color-cool-5);
-    box-shadow: var(--box-shadow);
+    box-shadow: var(--box-shadow-light);
     border: none;
     color: var(--pfui-main-color);
     border-radius: var(--border-radius);

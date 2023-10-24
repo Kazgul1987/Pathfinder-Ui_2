@@ -84,6 +84,7 @@ body {
     --border-radius: 3px;
     --border-radius-5: 5px;
     --box-shadow: 0px 1px 3px 1px black;
+    --box-shadow-light: inset 0 0 0 1px rgba(255, 255, 255, 0.15), inset 0 0 0 2px rgba(0, 0, 0, 0.4), inset 0px 0px 3px 1px var(--color-cool-3);
 
     --primary-remaster: hsl(153, 100%, 8%);
 	--primary-light-remaster: hsl(170, 96%, 19%);
@@ -131,7 +132,7 @@ body.compact-mode #logo {
 #context-menu {
     border: none;
     color: var(--pfui-main-color);
-    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15), inset 0 0 0 2px rgba(0, 0, 0, 0.4);
+    box-shadow: var(--box-shadow-light);
     background: var(--color-cool-5);
     border-radius: var(--border-radius-5);
 }
@@ -432,7 +433,7 @@ body.compact-mode #logo {
     width: 99%;
     margin: 3px 0px 0px 2px;
     background: radial-gradient(var(--color-cool-5-50), transparent)!important;
-    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15), inset 0 0 0 2px rgba(0, 0, 0, 0.4);
+    box-shadow: var(--box-shadow-light);
     color: var(--pfui-main-grey-color);
     border: 1px solid #000;
     border-radius: var(--border-radius);
@@ -516,7 +517,7 @@ body.compact-mode #logo {
 
 .dice-roll .dice-formula, .dice-roll .dice-total {
     border: none;
-    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15), inset 0 0 0 2px rgba(0, 0, 0, 0.4);
+    box-shadow: var(--box-shadow-light);
 }
 
 /* Lighten damage type text, e.g. Slashing, Fire, etc */
