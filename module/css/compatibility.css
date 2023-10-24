@@ -199,7 +199,7 @@
     border-radius: var(--border-radius);
     transition: text-shadow 0.15s ease-in-out, background-color 0.15s ease-in-out, border 0.15s ease-in-out, color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, backdrop-filter 0.15s ease-in-out, border-radius 0.15s;
     background: radial-gradient(var(--color-cool-5-50), transparent);
-    box-shadow: var(--box-shadow);
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15), inset 0 0 0 2px rgba(0, 0, 0, 0.4);
     color: var(--pfui-main-grey-color);
     backdrop-filter: blur(5px);
 }
