@@ -4,6 +4,10 @@
 - Ready for v11 version.
 
 
+## v11.313.12
+- Update core code.
+- Update Dark Theme.
+
 ## v11.313.11.2
 - Update core code.
 - Update Cursor compatibility.

@@ -8,7 +8,6 @@
     --red: #5e0000;
     --red-light:#ff0000;
     --custom-trait:#61180e;
-    --border-radius: 3px;
     --background: #100d0d;
     --background-2: #ffffff14;
     --highlight: 0 0 0 1px var(--pfui-main-color), 0 0 0 2px #93d1d3, inset 0 0 4px rgba(255, 255, 255, 0.25);
@@ -34,6 +33,10 @@
     --sidebar-label: var(--pfui-main-color);
     --sidebar-title: var(--pfui-main-color);
     
+    --border-radius: 3px;
+    --border-radius-5: 5px;
+    --box-shadow: 0px 1px 3px 1px black;
+
     --alt: #786452;
     --sub: var(--background);
 
@@ -111,7 +114,7 @@
 }
 .actor.character.dark-theme .crb-style select option {
     background: var(--color-cool-5);
-    box-shadow: var(--glassy);
+    box-shadow: var(--box-shadow);
     border: none;
     color: var(--pfui-main-color);
     border-radius: var(--border-radius);
@@ -121,7 +124,7 @@
     color: var(--pfui-main-color);
     background: var(--color-warm-3);
     border-radius: var(--border-radius);
-    box-shadow: var(--glassy);
+    box-shadow: var(--box-shadow);
     border: none;
 }
 .actor.sheet.dark-theme [data-visibility]:not([data-visibility=all]) {
@@ -134,7 +137,7 @@
     background: var(--custom-trait);
     padding: 0px 3px;
     border: 1px solid var(--glassy);
-    box-shadow: var(--glassy);
+    box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
 }
 .actor.sheet.dark-theme a.inline-check[data-pf2-traits*=secret], .actor.sheet.dark-theme span[data-pf2-check][data-pf2-traits*=secret] {
@@ -143,7 +146,7 @@
     background: var(--custom-trait);
     padding: 0px 3px;
     border: 1px solid var(--glassy);
-    box-shadow: var(--glassy);
+    box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
 }	
 .actor.sheet.dark-theme a.inline-check, .actor.sheet.dark-theme span[data-pf2-check] {
@@ -152,7 +155,7 @@
     background: var(--custom-trait);
     padding: 0px 3px;
     border: 1px solid var(--glassy);
-    box-shadow: var(--glassy);
+    box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
 }
 .actor.sheet.dark-theme a.inline-check, .actor.sheet.dark-theme span[data-pf2-action] {
@@ -161,7 +164,7 @@
     background: var(--custom-trait);
     padding: 0px 3px;
     border: 1px solid var(--glassy);
-    box-shadow: var(--glassy);
+    box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
 }
 .actor.sheet.dark-theme a.content-link, .actor.sheet.dark-theme a.inline-roll {
@@ -170,7 +173,7 @@
     background: var(--custom-trait);
     padding: 0px 3px;
     border: 1px solid var(--glassy);
-    box-shadow: var(--glassy);
+    box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
 }
 
@@ -208,7 +211,7 @@
 .actor.sheet.dark-theme .crb-style nav.sheet-navigation {
     background: radial-gradient(var(--primary-light-remaster), transparent)!important;
     border: none;
-    box-shadow: var(--glassy);
+    box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
     backdrop-filter: blur(5px);
     margin: 0px;
@@ -259,7 +262,7 @@
 .sheet.actor.character.dark-theme .crb-style .sheet-body .sheet-content .tab.inventory .inventory-header {
     color: var(--pfui-main-color);
     background: radial-gradient(var(--primary-light-remaster), transparent)!important;
-    box-shadow: var(--glassy);
+    box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
     margin: 5px 2px;
     backdrop-filter: blur(5px);
@@ -343,7 +346,7 @@
 .actor.sheet.character.dark-theme nav.sub-nav {
     color: var(--pfui-main-color) !important;
     background: var(--background) !important;
-    box-shadow: var(--glassy);
+    box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
     margin: 7px -2px;
     backdrop-filter: blur(5px);
@@ -516,7 +519,7 @@ background: radial-gradient(var(--background-2), transparent);
 .actor.sheet.dark-theme .inventory {
     --border-color: var(--color-cool-5-50);
 }.actor.sheet.dark-theme .coinage {
-    box-shadow: var(--glassy);
+    box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
     margin: 5px 2px;
     backdrop-filter: blur(5px);
@@ -598,10 +601,14 @@ background: radial-gradient(var(--background-2), transparent);
 .actor.sheet.dark-theme .tags .tag.tag_secondary {
     background-color: var(--secondary)!important;
     color: var(--pfui-main-color);
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
 }
 .actor.sheet.dark-theme .tags .tag, .actor.sheet.dark-theme .tags .tag option {
     background-color: var(--primary);
     color: var(--pfui-main-color);
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
 }
 .actor.sheet.dark-theme .inventory .item .item-quantity, .actor.sheet.dark-theme .inventory .item .item-weight, .actor.sheet.dark-theme .inventory .item .item-controls, .actor.sheet.dark-theme .inventory .item .item-sell-value {
     background: radial-gradient(var(--background-2), transparent);
@@ -630,7 +637,7 @@ background: radial-gradient(var(--background-2), transparent);
 }
 
 .actor.sheet.dark-theme .crb-style .sheet-body .sheet-content ol.spell-list > li[data-expended-state=true] .cast-spell {
-    color: var(--pfui-main-color)!important;
+    color: var(--pfui-main-color);
     background: var(--red);
 }
 
@@ -690,6 +697,19 @@ color: var(--green)!important;
 .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content ol.spell-list > li .item-name h4:hover {
     color: var(--green);
 }
+.actor.sheet.character.dark-theme form ol.spell-list > li[data-expended-state=true] h4 {
+    color: #ff6400!important;
+}
+.actor.sheet.character.dark-theme form ol.spell-list > li[data-expended-state=true] .cast-spell {
+    background: var(--color-cool-5)!important;
+    color: var(--red-light)!important;
+    box-shadow: inset 0 0 0 1px rgba(255, 0, 0, 0.5)!important;
+}
+.actor.sheet.character.dark-theme form ol.spell-list > li[data-expended-state=true] .cast-spell:hover {
+    background: var(--red-light)!important;
+    color:  var(--color-cool-5)!important;
+    box-shadow: inset 0 0 0 1px  var(--color-cool-5)!important;
+}
 
 
 
@@ -718,7 +738,7 @@ color: var(--green)!important;
 *************************/
 .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.proficiencies .skills-list .skill, .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.proficiencies .lores-list .skill, .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.proficiencies .combat-list .skill {
     background: var(--color-cool-5);
-    box-shadow: var(--glassy);
+    box-shadow: var(--box-shadow);
     border: none;
     color: var(--pfui-main-grey-color);
     border-radius: var(--border-radius);
@@ -783,10 +803,14 @@ color: var(--green)!important;
     background: var(--background);
     color: var(--pfui-main-color);
 }
+.actor.sheet.dark-theme .crb-style .sheet-body .sheet-content .tab.biography section .bio .biography-content .editor .tox .tox-tbtn:hover {
+    background: var(--color-cool-4)!important;
+    color: var(--pfui-main-color)!important;
+}
 .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.biography section.editable .editor-content, .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.biography section.editable input {
     background: radial-gradient(var(--background-2), transparent);
     border: 1px dotted var(--color-cool-5-50);
-    box-shadow: var(--glassy);
+    box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
 }
 .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.biography h3.header a i.fa-solid.fa-fw.fa-eye {
@@ -813,13 +837,13 @@ color: var(--green)!important;
 .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.pfs > section.organized-play input {
     background: radial-gradient(var(--background-2), transparent);
     border: 1px dotted var(--color-cool-5-50);
-    box-shadow: var(--glassy);
+    box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
 }
 .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.pfs > section.reputations .reputation input {
     background: radial-gradient(var(--background-2), transparent);
     border: 1px dotted var(--color-cool-5-50);
-    box-shadow: var(--glassy);
+    box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
 }
 
@@ -936,7 +960,7 @@ color: var(--green)!important;
 .red.sheet.actor.character.dark-theme .crb-style .sheet-body .sheet-content .tab.inventory .inventory-header {
     color: var(--pfui-main-color);
     background: radial-gradient(var(--red), transparent)!important;
-    box-shadow: var(--glassy);
+    box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
     margin: 5px 2px;
     backdrop-filter: blur(5px);
@@ -944,7 +968,7 @@ color: var(--green)!important;
 }
 .red.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.spellcasting .pf-add-item-row a {
     background: radial-gradient(var(--red), transparent)!important;
-    box-shadow: var(--glassy);
+    box-shadow: var(--box-shadow);
     border-radius: 15px;
 }
 .red.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.spellcasting .pf-add-item-row a:hover {
@@ -1124,7 +1148,7 @@ color: var(--green)!important;
 .remaster.sheet.actor.character.dark-theme .crb-style .sheet-body .sheet-content .tab.inventory .inventory-header {
     color: var(--pfui-main-color);
     background: radial-gradient(var(--primary-remaster), var(--primary-light-remaster))!important;
-    box-shadow: var(--glassy);
+    box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
     margin: 5px 2px;
     backdrop-filter: blur(5px);

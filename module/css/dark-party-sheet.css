@@ -8,7 +8,6 @@
     --red: #5e0000;
     --red-light:#ff0000;
     --custom-trait:#61180e;
-    --border-radius: 3px;
     --background: #100d0d;
     --background-2: #ffffff14;
     --highlight: 0 0 0 1px var(--pfui-main-color), 0 0 0 2px #93d1d3, inset 0 0 4px rgba(255, 255, 255, 0.25);
@@ -33,7 +32,11 @@
     --text-light: var(--pfui-main-color);
     --sidebar-label: var(--pfui-main-color);
     --sidebar-title: var(--pfui-main-color);
-    
+   
+    --border-radius: 3px;
+    --border-radius-5: 5px;
+    --box-shadow: 0px 1px 3px 1px black;
+
     --alt: #786452;
     --sub: var(--background);
 
@@ -129,7 +132,7 @@
     color: var(--pfui-main-color);
     background: var(--color-warm-3);
     border-radius: var(--border-radius);
-    box-shadow: var(--glassy);
+    box-shadow: var(--box-shadow);
     border: none;
 }
 .dark-party-theme.sheet.party [data-visibility]:not([data-visibility=all]) {
@@ -142,7 +145,7 @@
     background: var(--custom-trait);
     padding: 0px 3px;
     border: 1px solid var(--glassy);
-    box-shadow: var(--glassy);
+    box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
 }
 .dark-party-theme.sheet.party a.inline-check[data-pf2-traits*=secret], .dark-party-theme.sheet.party span[data-pf2-check][data-pf2-traits*=secret] {
@@ -151,7 +154,7 @@
     background: var(--custom-trait);
     padding: 0px 3px;
     border: 1px solid var(--glassy);
-    box-shadow: var(--glassy);
+    box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
 }	
 .dark-party-theme.sheet.party a.inline-check, .dark-party-theme.sheet.party span[data-pf2-check] {
@@ -160,7 +163,7 @@
     background: var(--custom-trait);
     padding: 0px 3px;
     border: 1px solid var(--glassy);
-    box-shadow: var(--glassy);
+    box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
 }
 .dark-party-theme.sheet.party a.inline-check, .dark-party-theme.sheet.party span[data-pf2-action] {
@@ -169,7 +172,7 @@
     background: var(--custom-trait);
     padding: 0px 3px;
     border: 1px solid var(--glassy);
-    box-shadow: var(--glassy);
+    box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
 }
 .dark-party-theme.sheet.party a.content-link, .dark-party-theme.sheet.party a.inline-roll {
@@ -178,7 +181,7 @@
     background: var(--custom-trait);
     padding: 0px 3px;
     border: 1px solid var(--glassy);
-    box-shadow: var(--glassy);
+    box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
 }
 .dark-party-theme.sheet.party .item-image:hover i {
@@ -204,9 +207,9 @@
     border: none;
     background: none;
     background-color: var(--glass-bg);
-    box-shadow: var(--glassy);
     transition: text-shadow 0.15s ease-in-out, background-color 0.15s ease-in-out, border 0.15s ease-in-out, color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, backdrop-filter 0.15s ease-in-out, border-radius 0.15s;
     text-shadow: 0 0 3px black;
+    box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
 }
 .dark-party-theme.sheet.party [data-tab=overview] .summary nav button:hover {
@@ -219,9 +222,9 @@
     color: var(--pfui-main-color);
     border: none;
     background: radial-gradient(#0062ff, #171f69);
-    box-shadow: var(--glassy);
     transition: text-shadow 0.15s ease-in-out, background-color 0.15s ease-in-out, border 0.15s ease-in-out, color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, backdrop-filter 0.15s ease-in-out, border-radius 0.15s;
     text-shadow: 0 0 3px black;
+    box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
 }
 .dark-party-theme.sheet.party [data-tab=overview] .member {
@@ -244,8 +247,8 @@
     color: var(--pfui-main-color);
     border: none;
     background: var(--tag-color);
-    box-shadow: var(--glassy);
     text-shadow: 0 0 3px black;
+    box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
 }
 .dark-party-theme.sheet.party.window-app button:not(.tox-tbtn):hover {
@@ -274,7 +277,7 @@
     border: none;
     background: none;
     background-color: var(--glass-bg);
-    box-shadow: var(--glassy);
+    box-shadow: var(--box-shadow);
     text-shadow: 0 0 3px black;
     border-radius: var(--border-radius);
 }
@@ -283,8 +286,8 @@
     border: none;
     background: none;
     background-color: var(--color-cool-4);
-    box-shadow: var(--glassy);
     text-shadow: 0 0 3px black;
+    box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
 }
 .dark-party-theme.sheet.party [data-tab=overview] .member .name {
@@ -292,8 +295,8 @@
     border: none;
     background: none;
     background-color: var(--glass-bg);
-    box-shadow: var(--glassy);
     text-shadow: 0 0 3px black;
+    box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
 }
 .dark-party-theme.sheet.party [data-tab=overview] .member > .portrait .health-bar .bar {
@@ -301,8 +304,8 @@
     box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.2);
     color: var(--pfui-main-color);
     border: none;
-    box-shadow: var(--glassy);
     text-shadow: 0 0 3px black;
+    box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
 }
 
@@ -312,16 +315,16 @@
     border: none;
     background: none;
     background-color: var(--glass-bg);
-    box-shadow: var(--glassy);
     text-shadow: 0 0 3px black;
+    box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
 }
 .dark-party-theme.sheet.party .tags .tag, .dark-party-theme.sheet.party .tags .tag option {
     color: var(--pfui-main-color);
     text-transform: uppercase;
     border: 1px solid black;
-    box-shadow: var(--glassy);
-    text-shadow: 0 0 1px black;
+    text-shadow: 0 0 3px black;
+    box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
 }
 .dark-party-theme.sheet.party [data-tab=exploration] .exploration-members .member footer.health-bar .bar {
@@ -352,8 +355,8 @@
     color: var(--pfui-main-color);
     background: radial-gradient(var(--primary-remaster), var(--glass-bg-dark));
     border: none;
-    box-shadow: var(--glassy);
     text-shadow: 0 0 1px black;
+    box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
     backdrop-filter: blur(5px);
 }
@@ -362,9 +365,9 @@
     border: none;
     background: none;
     background-color: var(--glass-bg);
-    box-shadow: var(--glassy);
     transition: text-shadow 0.15s ease-in-out, background-color 0.15s ease-in-out, border 0.15s ease-in-out, color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, backdrop-filter 0.15s ease-in-out, border-radius 0.15s;
     text-shadow: 0 0 3px black;
+    box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
 }
 .dark-party-theme.sheet.party header.content-header button:hover {
@@ -385,17 +388,17 @@
     color: var(--pfui-main-color);
     border: none;
     background-color: var(--sub);
-    box-shadow: var(--glassy);
     transition: text-shadow 0.15s ease-in-out, background-color 0.15s ease-in-out, border 0.15s ease-in-out, color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, backdrop-filter 0.15s ease-in-out, border-radius 0.15s;
     text-shadow: 0 0 3px black;
+    box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
 }
 .dark-party-theme.sheet.party .inventory .inventory-header {
     color: var(--pfui-main-color);
     background: radial-gradient(var(--primary-remaster), var(--glass-bg-dark));
     border: none;
-    box-shadow: var(--glassy);
-    text-shadow: 0 0 1px black;
+    text-shadow: 0 0 3px black;
+    box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
     backdrop-filter: blur(5px);
 }
@@ -407,8 +410,8 @@
     border: none;
     background: none;
     background-color: var(--glass-bg);
-    box-shadow: var(--glassy);
     text-shadow: 0 0 3px black;
+    box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
 }
 .dark-party-theme.sheet.party.actor.sheet .inventory .item-name h4:not(:hover).rarity-common {
@@ -432,9 +435,9 @@
     border: none;
     background: none;
     background-color: var(--glass-bg);
-    box-shadow: var(--glassy);
     transition: text-shadow 0.15s ease-in-out, background-color 0.15s ease-in-out, border 0.15s ease-in-out, color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, backdrop-filter 0.15s ease-in-out, border-radius 0.15s;
     text-shadow: 0 0 3px black;
+    box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
 }
 .dark-party-theme.sheet.party .currency li > button:hover:not(:disabled) {
@@ -446,8 +449,8 @@
     border: none;
     background: none;
     background-color: var(--glass-bg);
-    box-shadow: var(--glassy);
     text-shadow: 0 0 3px black;
+    box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
 }
 .dark-party-theme.sheet.party .wealth h3.item-name {
@@ -485,8 +488,8 @@
     border: none;
     background: none;
     background-color: var(--glass-bg);
-    box-shadow: var(--glassy);
     text-shadow: 0 0 3px black;
+    box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
 }
 .dark-party-theme.sheet.party option, .dark-party-theme.sheet.party optgroup {

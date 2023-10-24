@@ -1,12 +1,85 @@
+:root{
+  --glassy: 0px 0px 3px 0px rgba(255, 255, 255, 0.4) inset, 0px 0px 2px 1px rgba(0, 0, 0, 1), 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+  --glass-bg: rgba(20, 20, 20, 0.6);
+  --glass-bg-light: rgba(255, 255, 255, 0.1);
+  --glass-bg-dark: rgba(0, 0, 0, 0.7);
+  --pf2e-shadow-is-dark: 0px 1px var(--pf2e-half-transparent-dark);
+  --pf2e-translucent-middle: var(--pf2e-translucent-middle-for-light);
+  --pf2e-translucent-middle-for-light: hsla(0, 0%, 80%,0.5);
+  --pf2e-translucent-very: var(--pf2e-translucent-very-for-light);
+  --pf2e-transcluent-very-for-light: hsla(0, 0%, 60%,0.2);
+  --header-text-shadow: var(--pf2e-shadow-is-dark);
+  --pf2e-shadow-is-dark: 0px 1px var(--pf2e-half-transparent-dark);
+  --filter-dark: invert(100%) drop-shadow(0px 1px 1px black);
+  --pf2e-half-transparent-dark: hsla(0, 0%, 0%,0.5);
+  --color-text-hyperlink: #ff6400;
+  --gold-and-glow: 0 0 0 1px var(--tertiary), 0 0 0 2px #9f725b, inset 0 0 3px rgba(255, 255, 255, .5);
+  --red: #5e0000;
+  --red-light:#ff0000;
+  --custom-trait:#61180e;
+  --green: #91a82a;
+  --pfui-main-color: #cfbda7;
+  --pfui-main-grey-color: #98968a;
+  --rpg-styled-ui-color: #837360;
+  --primary-remaster: hsl(153, 100%, 8%);
+--primary-light-remaster: hsl(170, 96%, 19%);
+  --ornement : url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='33' height='33' overflow='scroll'%3E%3Cstyle%3E.st1{stroke:wheat;stroke-miterlimit:10}.st1,.st2{fill:none}%3C/style%3E%3Cg opacity='0.75'%3E%3Cpath class='st1' d='M.5 20v-7'/%3E%3Cpath class='st2' d='M13 20v-7'/%3E%3Cpath class='st1' d='M13 .5h7'/%3E%3Cpath class='st2' d='M13 13h7'/%3E%3Cpath class='st1' d='M32.5 13v7'/%3E%3Cpath class='st2' d='M20 13v7'/%3E%3Cpath class='st1' d='M20 32.5h-7'/%3E%3Cpath class='st2' d='M20 20h-7'/%3E%3Cpath class='st1' d='M.5.5h3.1v3.1H.5zm3.1 3.1h3.1v3.1H3.6zm3.2 0h3.1v3.1H6.8zM3.6 6.8h3.1v3.1H3.6zm0 0H.5V13M13 .5H6.8v3.1M29.4.5h3.1v3.1h-3.1zm-3.1 3.1h3.1v3.1h-3.1zm0 3.2h3.1v3.1h-3.1zm-3.2-3.2h3.1v3.1h-3.1zm3.2 0V.5H20M32.5 13V6.8h-3.1M29.4 29.4h3.1v3.1h-3.1z'/%3E%3Cpath class='st1' d='M26.3 26.3h3.1v3.1h-3.1zm-3.2 0h3.1v3.1h-3.1zm3.2-3.2h3.1v3.1h-3.1z'/%3E%3Cpath class='st1' d='M29.4 26.3h3.1V20M20 32.5h6.3v-3.1'/%3E%3Cg%3E%3Cpath class='st1' d='M.5 29.4h3.1v3.1H.5zm3.1-3.1h3.1v3.1H3.6zm0-3.2h3.1v3.1H3.6zm3.2 3.2h3.1v3.1H6.8zM6.8 29.4v3.1H13M.5 20v6.3h3.1'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+
+  --border-radius: 3px;
+  --border-radius-5: 5px;
+  --box-shadow: 0px 1px 3px 1px var(--color-cool-5);
+
+  --rarity-common: #7e7e7e;
+  --rarity-uncommon: #ff6400;
+  --rarity-rare: #0062ff;
+  --rarity-unique: #e127e1;
+
+
+/* Foundry2
+====================================================== */
+  --color-warm-1: #ee9b3a;
+  --color-warm-2: #c9593f;
+  --color-warm-3: #5d142b;
+  --color-cool-3: #584a75;
+  --color-cool-4: #302831;
+  --color-cool-5: #0b0a13;
+  --color-cool-5-25: rgba(11, 10, 19, 0.25);
+  --color-cool-5-50: rgba(11, 10, 19, 0.5);
+  --color-cool-5-75: rgba(11, 10, 19, 0.75);
+  --color-cool-5-90: rgba(11, 10, 19, 0.9);
+  --color-light-1: #f7f3e8;
+  --color-light-2: #efe6d8;
+  --color-light-3: #e7d1b1;
+  --color-light-4: #d0b8a3;
+  --color-light-5: #9f8475;
+  --color-light-6: #816b66;
+  --color-level-error: #ce0707;
+  --color-level-error-bg: rgba(105, 0, 8, 0.8);
+  --color-level-error-border: #750003;
+  --color-level-info: #59a1f6;
+  --color-level-info-bg: rgba(47, 80, 132, 0.8);
+  --color-level-info-border: #5c87b9;
+  --color-level-success: #26b231;
+  --color-level-success-bg: rgba(26, 107, 34, 0.8);
+  --color-level-success-border: #1b8f23;
+  --color-level-warning: #ee9b3a;
+  --color-level-warning-bg: rgba(214, 150, 0, 0.8);
+  --color-level-warning-border: #b18404;
+  --color-scrollbar: #5d142b;
+  --color-scrollbar-border: #8d151b;
+}
+
 /*PF2e Interactive Token Tooltip*/
 /* https://github.com/reonZ/pf2e-token-hud */
-
+#pf2e-token-hud hr {
+  border-top: 1px dotted var(--color-cool-3);
+}
 #pf2e-token-hud a.active {
-    color: #91a82a!important;
+  color: var(--green)!important;
 }
 
 #pf2e-token-hud a.disabled {
-      color: #ff00009c!important;
+  color: var(--color-warm-2);
 }
 
 
@@ -52,7 +125,7 @@
   color: green;
 }
 #pf2e-token-hud .inner i.fa-face-meh {
-  color: #cfbda7;
+  color: var(--pfui-main-color);
 }
 #pf2e-token-hud .inner i.fa-face-angry-horns {
   color: #ff00009c;
@@ -66,16 +139,20 @@
 
 
 #pf2e-token-hud .inner i {
-  text-shadow: 0px 0px 35px #cfbda7, 0px 1px 1px black;
+  text-shadow: 0px 0px 35px var(--pfui-main-color), 0px 1px 1px black;
 }
 #pf2e-token-hud .inner .group .section {
-  color: #91a82a!important;
+  color: var(--green)!important;
+}
+#pf2e-token-hud input, #pf2e-token-hud select:focus {
+  box-shadow: 0 0 5px var(--color-cool-3);
 }
 #pf2e-token-hud .inner .group .section .pips:not(.digits) i {
-  color: #cfbda7!important;
+  color: var(--pfui-main-color)!important;
 }
 #pf2e-token-hud .inner .group .section input[type=number] {
-    color: #ff6400!important;
+  color: #ff6400!important;
+  box-shadow: unset;
 }
 /**/
 
@@ -83,11 +160,16 @@
 
 /*Distance*/
 #pf2e-token-hud input, #pf2e-token-hud select {
-  color: #91a82a!important;
-  text-shadow: 0px 1px 1px black, 0px 1px 15px #cfbda7;
+  color: var(--green)!important;
+  text-shadow: var(--box-shadow);
+}
+#pf2e-token-hud option, #pf2e-token-hud optgroup {
+  background: var(--color-cool-5-90);
+  box-shadow: var(--box-shadow);
+
 }
 #pf2e-token-hud .distance, #pf2e-token-hud .status {
-  color: #91a82a!important;
+  color: var(--green)!important;
   font-weight: normal;
 }
 /**/
@@ -96,33 +178,35 @@
 
 /*sidebar*/
 #pf2e-token-hud .sidebar.items .sidebar-content .category .header {
-  color: #ff6400;
+  color: var(--color-warm-1);
 }
 #pf2e-token-hud .sidebar.actions .sidebar-content .section .header {
-    color: #ff6400;
+  color: var(--color-warm-1);
 }
 #pf2e-token-hud .sidebar.spells .sidebar-content .entry .header {
-  color: #ff6400;
+  color: var(--color-warm-1);
 }
 #pf2e-token-hud .sidebar .sidebar-content .header {
-  background: rgba(96, 88, 86, 0.5);
+  background: linear-gradient(135deg, var(--color-cool-4), var(--color-cool-5));
 }
 #pf2e-token-hud .sidebar .details .extras .actions a i.greyed {
-  text-shadow: 0px 1px 15px #cfbda7;
+  text-shadow: 0px 1px 15px var(--pfui-main-color);
 }
 #pf2e-token-hud .sidebar .sidebar-content .details .extras .actions a i.greyed {
-  color: #ff00009c!important;
+  color: var(--color-warm-1);
 }
 #pf2e-token-hud .sidebar, #pf2e-token-hud .inner, #pf2e-token-hud .popup {
-    color: #cfbda7!important;
-    border: none!important;
-    border-radius: 3px!important;
-    background: rgba(0, 0, 0, 0.5)!important;
-    box-shadow: var(--glassy)!important;
-    backdrop-filter: blur(10px)!important;
+  color: var(--pfui-main-grey-color);
+  border: unset;
+  border-radius: var(--border-radius);
+  background: linear-gradient(45deg, var(--color-cool-4), var(--color-cool-5-75));
+  --box-shadow-5: 0px 1px 5px 1px var(--color-cool-5);
+  box-shadow: var(--box-shadow-5);
+  backdrop-filter: blur(3px);
 }
 #pf2e-token-hud .sidebar .sidebar-content .details .name {
-    font-weight: normal!important;
+  font-weight: normal;
+  color: var(--pfui-main-color);
 }
 #pf2e-token-hud .sidebar.skills .sidebar-content .header {
   font-weight: normal!important;
@@ -137,19 +221,27 @@
   color: #ff6400;
 }
 #pf2e-token-hud .sidebar.skills .sidebar-content .skill .header .modifier, #pf2e-token-hud .sidebar.skills .sidebar-content .lore .modifier {
-    color: #91a82a!important;
+  color: var(--green)!important;
+  border: none;
+  background: var(--color-cool-5);
+  text-shadow: 0 0 1px black;
+  border-radius: var(--border-radius);
 }
 #pf2e-token-hud .sidebar.items .sidebar-content .category .item .details .extras .actions .held {
-  color: #91a82a!important;
-  text-shadow: 0px 1px 1px black, 0px 1px 15px #cfbda7;
+  color: var(--green)!important;
+  text-shadow: var(--box-shadow);
 }
 #pf2e-token-hud .sidebar.items .sidebar-content .category .item .details .extras .actions .worn {
-  color: #91a82a!important;
-  text-shadow: 0px 1px 1px black, 0px 1px 15px #cfbda7;
+  color: var(--green)!important;
+  text-shadow: var(--box-shadow);
 }
 #pf2e-token-hud .sidebar.spells .sidebar-content .entry .spell .details .extras .actions {
-  color: #91a82a!important;
-  text-shadow: 0px 1px 1px black, 0px 1px 15px #cfbda7;
+  color: var(--green)!important;
+  text-shadow: var(--box-shadow);
+}
+#pf2e-token-hud .sidebar .sidebar-content .action-icon img {
+  filter: invert(0.7);
+  mix-blend-mode: plus-lighter;
 }
 /**/
  
@@ -183,7 +275,7 @@
   color: var(--color-rank-4);
 }
 #pf2e-token-hud .rarity {
-  text-shadow: 0px 1px 1px black, 0px 1px 15px #cfbda7;
+  text-shadow: var(--box-shadow);
 }
 .pf2e-token-hud .rarity.common, #pf2e-token-hud .rarity.common {
   color: var(--color-rarity-common);
@@ -198,3 +290,112 @@
   color: var(--color-rarity-unique);
 }
 /**/
+
+
+
+/*Actions*/
+#pf2e-token-hud .sidebar.actions .sidebar-content .section .strike .traits .trait {
+  color: var(--pfui-main-color);
+  background-color: var(--color-cool-3);
+  box-shadow: var(--box-shadow);
+}
+#pf2e-token-hud .sidebar.actions.attack-damage-system-colors .sidebar-content .section .strike .variants .variant[data-action=strike-attack]:not(.disabled), #pf2e-token-hud .sidebar.actions.attack-damage-system-colors .sidebar-content .section .strike .variants .variant[data-action=roll-attack]:not(.disabled) {
+  color: var(--pfui-main-color);
+  box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius);
+}
+#pf2e-token-hud .sidebar.actions.attack-damage-system-colors .sidebar-content .section .strike .variants .variant[data-action=strike-damage]:not(.disabled), #pf2e-token-hud .sidebar.actions.attack-damage-system-colors .sidebar-content .section .strike .variants .variant[data-action=strike-critical]:not(.disabled), #pf2e-token-hud .sidebar.actions.attack-damage-system-colors .sidebar-content .section .strike .variants .variant[data-action=roll-damage]:not(.disabled) {
+  color: var(--pfui-main-color);
+  box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius);
+}
+#pf2e-token-hud .sidebar .sidebar-content .variants .variant {
+  background: var(--green);
+  color: var(--color-cool-5);
+  box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius);
+}
+#pf2e-token-hud .sidebar .sidebar-content .variants .variant:not(.disabled):hover {
+  text-shadow: unset;
+  background: var(--color-warm-2);
+  color: var(--pfui-main-color);
+  box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius);
+}
+#pf2e-token-hud .sidebar.actions.attack-damage-system-colors .sidebar-content .section .strike .variants .variant[data-action=strike-attack]:not(.disabled):hover, #pf2e-token-hud .sidebar.actions.attack-damage-system-colors .sidebar-content .section .strike .variants .variant[data-action=roll-attack]:not(.disabled):hover, #pf2e-token-hud .sidebar.actions.attack-damage-system-colors .sidebar-content .section .strike .variants .variant[data-action=strike-damage]:not(.disabled):hover, #pf2e-token-hud .sidebar.actions.attack-damage-system-colors .sidebar-content .section .strike .variants .variant[data-action=strike-critical]:not(.disabled):hover {
+  text-shadow: unset;
+  background: var(--color-warm-1);
+  color: var(--color-cool-5);
+  box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius);
+}
+#pf2e-token-hud .sidebar .sidebar-content a:hover {
+  text-shadow: unset;
+  color: var(--color-warm-1)!important;
+}
+#pf2e-token-hud .sidebar.spells .sidebar-content .entry .spell .details .extras .actions .uses input[type=number] {
+  color: var(--color-warm-1)!important;
+  border: none;
+  background: var(--color-cool-5);
+  box-shadow: var(--glassy);
+  text-shadow: 0 0 1px black;
+  border-radius: var(--border-radius);
+}
+#pf2e-token-hud .sidebar.spells .sidebar-content .entry .spell.expended .details .name {
+  color: #ff6400;
+}
+/**/
+
+
+
+/*Pop-up*/
+#pf2e-token-hud .popup .header {
+  color: var(--color-warm-1);
+}
+#pf2e-token-hud .popup .header:before {
+  color:var(--pfui-main-grey-color);
+  background: linear-gradient(135deg, var(--color-cool-3), var(--color-cool-4));
+  border: none;
+  border-top: 1px solid var(--color-border-light-2);
+  border-bottom:1px solid var(--color-border-light-2);
+}
+#pf2e-token-hud .popup .tags .tag, .popup .tags .tag option {
+  color: var(--pfui-main-color);
+  background-color: var(--color-level-error-border);
+  box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius);
+}
+#pf2e-token-hud .popup.tags .tag.tag_alt, .popup .tags .tag option.tag_alt {
+  color: var(--pfui-main-color);
+  background-color: var(--color-cool-3);
+  box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius);
+}
+#pf2e-token-hud .popup .tags .tag.tag_secondary, .popup .tags .tag option.tag_secondary {
+  background-color: var(--secondary);
+}
+#pf2e-token-hud .popup a:hover {
+  text-shadow: unset;
+  color: var(--color-warm-1)!important;
+}
+#pf2e-token-hud .popup a.content-link, #pf2e-token-hud .popup a.inline-roll {
+  font-family: 'Good OT';
+  color: var(--pfui-main-color);
+     background: var(--custom-trait);
+  padding: 0px 3px;
+  border: 1px solid var(--glassy);
+  box-shadow: var(--glassy);
+  border-radius: var(--border-radius);
+}
+#pf2e-token-hud  i[data-pf2-repost]:hover {
+  color: var(--color-cool-5);
+  background: var(--green);
+  text-shadow: 0px 0px 2px var(--green);
+  border-radius: var(--border-radius);
+}
+.chat-message.message .pf2e-token-hud .rk .header {
+  color: var(--color-warm-1);
+}
+.chat-message.message .pf2e-token-hud .rk {
+  background: repeating-linear-gradient(var(--red) 0 var(--row-height), transparent var(--row-height) calc(var(--row-height) * 2));
+}

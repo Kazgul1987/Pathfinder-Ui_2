@@ -117,7 +117,7 @@
     border: none;
     background: none;
     background-color: var(--glass-bg);
-    box-shadow: var(--glassy);
+    box-shadow: var(--box-shadow);
     text-shadow: 0 0 3px black;
     border-radius: var(--border-radius);
 }
@@ -133,7 +133,7 @@
     color: var(--pfui-main-color);
     background: radial-gradient(var(--primary-remaster), var(--glass-bg-dark));
     border: none;
-    box-shadow: var(--glassy);
+    box-shadow: var(--box-shadow);
     text-shadow: 0 0 1px black;
     border-radius: var(--border-radius);
     backdrop-filter: blur(5px);
@@ -153,7 +153,7 @@
     color: var(--pfui-main-color);
     text-transform: uppercase;
     border: 1px solid black;
-    box-shadow: var(--glassy);
+    box-shadow: var(--box-shadow);
     text-shadow: 0 0 1px black;
     border-radius: var(--border-radius);
 }
@@ -161,7 +161,7 @@
     color: var(--pfui-main-color);
     text-transform: uppercase;
     border: 1px solid black;
-    box-shadow: var(--glassy);
+    box-shadow: var(--box-shadow);
     text-shadow: 0 0 1px black;
     border-radius: var(--border-radius);
 }
@@ -169,7 +169,7 @@
     color: var(--pfui-main-color);
     text-transform: uppercase;
     border: 1px solid black;
-    box-shadow: var(--glassy);
+    box-shadow: var(--box-shadow);
     text-shadow: 0 0 1px black;
     border-radius: var(--border-radius);
 }
@@ -187,7 +187,7 @@
     color: var(--pfui-main-color);
     text-transform: uppercase;
     border: 1px solid black;
-    box-shadow: var(--glassy);
+    box-shadow: var(--box-shadow);
     text-shadow: 0 0 1px black;
     background-color: var(--color-cool-4);
     border-radius: var(--border-radius);
@@ -203,7 +203,7 @@
     color: var(--pfui-main-color);
     background: var(--color-warm-3);
     border-radius: var(--border-radius);
-    box-shadow: var(--glassy);
+    box-shadow: var(--box-shadow);
     border: none;
 }
 .dark-hazard-theme.sheet.hazard [data-visibility]:not([data-visibility=all]) {
@@ -216,7 +216,7 @@
     background: var(--custom-trait);
     padding: 0px 3px;
     border: 1px solid var(--glassy);
-    box-shadow: var(--glassy);
+    box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
 }
 .dark-hazard-theme.sheet.hazard a.inline-check[data-pf2-traits*=secret], .dark-hazard-theme.sheet.hazard span[data-pf2-check][data-pf2-traits*=secret] {
@@ -233,7 +233,7 @@
     background: var(--custom-trait);
     padding: 0px 3px;
     border: 1px solid var(--glassy);
-    box-shadow: var(--glassy);
+    box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
 }
 .dark-hazard-theme.sheet.hazard a.inline-check, .dark-hazard-theme.sheet.hazard span[data-pf2-action] {
@@ -242,7 +242,7 @@
     background: var(--custom-trait);
     padding: 0px 3px;
     border: 1px solid var(--glassy);
-    box-shadow: var(--glassy);
+    box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
 }
 .dark-hazard-theme.sheet.hazard a.content-link, .dark-hazard-theme.sheet.hazard a.inline-roll {
@@ -251,7 +251,7 @@
     background: var(--custom-trait);
     padding: 0px 3px;
     border: 1px solid var(--glassy);
-    box-shadow: var(--glassy);
+    box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
 }
 .dark-hazard-theme.sheet.hazard .section-container.publication .section-body .license select {
@@ -259,7 +259,7 @@
     text-transform: uppercase;
     border: 1px solid black;
     background-color: var(--glass-bg);
-    box-shadow: var(--glassy);
+    box-shadow: var(--box-shadow);
     text-shadow: 0 0 1px black;
     border-radius: var(--border-radius);
 }
@@ -288,7 +288,7 @@
     border: none;
 }
 .glassy.dark-hazard-theme.sheet.hazard .window-header {
-    box-shadow: var(--glassy);
+    box-shadow: var(--box-shadow);
        background-color: var(--color-cool-5-90);
     border-radius: var(--border-radius);
     margin: 0px 10px;
@@ -296,7 +296,7 @@
     text-shadow: 0 0 8px var(--color-shadow-primary);
 }
 .glassy.dark-hazard-theme.sheet.hazard form > header {
-    box-shadow: var(--glassy);
+    box-shadow: var(--box-shadow);
     background: radial-gradient(var(--primary-remaster), var(--glass-bg-dark));
     border-radius: var(--border-radius);
     width: 97%;
@@ -306,7 +306,7 @@
 }
 .glassy.dark-hazard-theme.sheet.hazard .npc-sheet-header {
     --color-text-dark-input: var(--color-text-light-heading);
-    box-shadow: var(--glassy);
+    box-shadow: var(--box-shadow);
     background: var(--glass-bg);
     border-radius: var(--border-radius);
     margin: 5px;
@@ -314,7 +314,7 @@
     backdrop-filter: blur(5px);
 }
 .glassy.dark-hazard-theme.sheet.hazard .sidebar {
-    box-shadow: var(--glassy);
+    box-shadow: var(--box-shadow);
        background-color: var(--color-cool-5-90);
     border-radius: var(--border-radius);
     margin: 5px 5px;
@@ -325,7 +325,7 @@
     border: none;
     background: none;
        background-color: var(--color-cool-5-90);
-    box-shadow: var(--glassy);
+    box-shadow: var(--box-shadow);
     text-shadow: 0 0 1px black;
     border-radius: var(--border-radius);
     backdrop-filter: blur(5px);

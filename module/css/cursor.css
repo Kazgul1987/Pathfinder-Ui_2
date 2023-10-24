@@ -169,6 +169,9 @@ form button {
 #rpg-ui-buttons button {
     cursor:url(../ui/cursors/pointer.webp), pointer; 
 }
+#chat-log a.inline-check, span[data-pf2-action] {
+    cursor:url(../ui/cursors/pointer.webp), pointer;
+}
 
 
 /* Token Hud Remaster
@@ -201,5 +204,17 @@ form button {
     cursor:url(../ui/cursors/pointer.webp), pointer;
 }
 .polyglot-lang-select input:checked {
+    cursor:url(../ui/cursors/pointer.webp), pointer;
+}
+
+/*PF2e Interactive Token Tooltip*/
+/* https://github.com/reonZ/pf2e-token-hud */
+#pf2e-token-hud .sidebar .sidebar-content .variants .variant {
+    cursor:url(../ui/cursors/pointer.webp), pointer;
+}
+#pf2e-token-hud a.disabled {
+    cursor:url(../ui/cursors/pointer.webp), pointer;
+}
+#pf2e-token-hud .sidebar .sidebar-content .item-img img {
     cursor:url(../ui/cursors/pointer.webp), pointer;
 }

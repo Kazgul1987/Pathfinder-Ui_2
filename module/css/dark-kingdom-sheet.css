@@ -84,7 +84,7 @@
     color: var(--pfui-main-color);
 }
 .sheet.kingdom-builder .window-header {
-    box-shadow: var(--glassy);
+    box-shadow: var(--box-shadow);
     background-color: var(--glass-bg-dark);
     border-radius: var(--border-radius);
     backdrop-filter: blur(5px);
@@ -123,7 +123,7 @@
     border: none;
     background: none;
     background-color: var(--glass-bg-dark);
-    box-shadow: var(--glassy);
+    box-shadow: var(--box-shadow);
     text-shadow: 0 0 3px black;
     border-radius: var(--border-radius);
 }
@@ -154,7 +154,7 @@ filter: grayscale(0.75);
     border: none;
     background: none;
     background-color: var(--color-cool-5-90);
-    box-shadow: var(--glassy);
+    box-shadow: var(--box-shadow);
     text-shadow: 0 0 3px black;
     border-radius: var(--border-radius);
 }
@@ -166,7 +166,7 @@ filter: grayscale(0.75);
     background: var(--custom-trait);
     padding: 0px 3px;
     border: 1px solid var(--glassy);
-    box-shadow: var(--glassy);
+    box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
 }
 
@@ -179,7 +179,7 @@ filter: grayscale(0.75);
     border: none;
     background: none;
     background-color: var(--glass-bg-dark);
-    box-shadow: var(--glassy);
+    box-shadow: var(--box-shadow);
     text-shadow: 0 0 3px black;
     border-radius: var(--border-radius);
 }
@@ -196,7 +196,7 @@ filter: grayscale(0.75);
     border: none;
     background: none;
     background-color: var(--color-cool-5-90);
-    box-shadow: var(--glassy);
+    box-shadow: var(--box-shadow);
     text-shadow: 0 0 3px black;
     border-radius: var(--border-radius);
 }
@@ -215,7 +215,7 @@ filter: grayscale(0.75);
     border: none;
     background: none;
     background-color: var(--color-cool-5-90);
-    box-shadow: var(--glassy);
+    box-shadow: var(--box-shadow);
     text-shadow: 0 0 8px var(--color-shadow-primary);
     border-radius: var(--border-radius);
     filter: drop-shadow(0px 0px 0px var(--red));
@@ -223,7 +223,7 @@ filter: grayscale(0.75);
 .sheet.kingdom-builder .ability-builder .row-column button.selected {
     color: var(--pfui-main-color);
     background: var(--button-color);
-    box-shadow: var(--glassy);
+    box-shadow: var(--box-shadow);
 }
 .sheet.kingdom-builder .ability-builder .row-column button:hover {
     color: var(--background);
@@ -302,7 +302,7 @@ filter: grayscale(0.75);
     color: var(--pfui-main-color);
     background: var(--color-warm-3);
     border-radius: var(--border-radius);
-    box-shadow: var(--glassy);
+    box-shadow: var(--box-shadow);
     border: none;
 }
 .dark-kingdom-theme.sheet.kingdom [data-visibility]:not([data-visibility=all]) {
@@ -315,7 +315,7 @@ filter: grayscale(0.75);
     background: var(--custom-trait);
     padding: 0px 3px;
     border: 1px solid var(--glassy);
-    box-shadow: var(--glassy);
+    box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
 }
 .dark-kingdom-theme.sheet.kingdom a.inline-check[data-pf2-traits*=secret], .dark-kingdom-theme.sheet.kingdom span[data-pf2-check][data-pf2-traits*=secret] {
@@ -332,7 +332,7 @@ filter: grayscale(0.75);
     background: var(--custom-trait);
     padding: 0px 3px;
     border: 1px solid var(--glassy);
-    box-shadow: var(--glassy);
+    box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
 }
 .dark-kingdom-theme.sheet.kingdom a.inline-check, .dark-kingdom-theme.sheet.kingdom span[data-pf2-action] {
@@ -341,7 +341,7 @@ filter: grayscale(0.75);
     background: var(--custom-trait);
     padding: 0px 3px;
     border: 1px solid var(--glassy);
-    box-shadow: var(--glassy);
+    box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
 }
 .dark-kingdom-theme.sheet.kingdom a.content-link, .dark-kingdom-theme.sheet.kingdom a.inline-roll {
@@ -350,7 +350,7 @@ filter: grayscale(0.75);
     background: var(--custom-trait);
     padding: 0px 3px;
     border: 1px solid var(--glassy);
-    box-shadow: var(--glassy);
+    box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
 }
 
@@ -371,7 +371,7 @@ filter: grayscale(0.75);
     border: none;
     background: none;
     background-color: var(--color-cool-5-90);
-    box-shadow: var(--glassy);
+    box-shadow: var(--box-shadow);
     text-shadow: 0 0 3px black;
     border-radius: var(--border-radius);
 }
@@ -380,7 +380,7 @@ filter: grayscale(0.75);
     border: none;
     background: none;
     background-color: var(--color-cool-5-90);
-    box-shadow: var(--glassy);
+    box-shadow: var(--box-shadow);
     box-shadow: 0 0 6px inset var(--glass-bg-light-2);
     border-radius: var(--border-radius);
 }
@@ -389,7 +389,7 @@ filter: grayscale(0.75);
     border: none;
     background: none;
     background-color: var(--color-cool-5-90);
-    box-shadow: var(--glassy);
+    box-shadow: var(--box-shadow);
     text-shadow: 0 0 3px black;
     border-radius: var(--border-radius);
 }
@@ -397,7 +397,7 @@ filter: grayscale(0.75);
     border: none;
     background: none;
     background-color: var(--color-cool-5-90);
-    box-shadow: var(--glassy);
+    box-shadow: var(--box-shadow);
     box-shadow: 0 0 6px inset var(--glass-bg-light-2);
     border-radius: var(--border-radius);
 }
@@ -411,7 +411,7 @@ filter: grayscale(0.75);
     border: none;
     background: none;
     background-color: var(--color-cool-5-90);
-    box-shadow: var(--glassy);
+    box-shadow: var(--box-shadow);
     text-shadow: 0 0 3px black;
     border-radius: var(--border-radius);
 }
@@ -425,7 +425,7 @@ filter: grayscale(0.75);
     color: var(--pfui-main-grey-color);
     background: none;
     background-color: var(--color-cool-5-90);
-    box-shadow: var(--glassy);
+    box-shadow: var(--box-shadow);
     text-shadow: 0 0 3px black;
     border-radius: var(--border-radius);
 }
@@ -446,7 +446,7 @@ filter: grayscale(0.75);
     color: var(--pfui-main-grey-color);
     background: none;
     background-color: var(--color-cool-5-90);
-    box-shadow: var(--glassy);
+    box-shadow: var(--box-shadow);
     text-shadow: 0 0 3px black;
     border-radius: var(--border-radius);
 }
@@ -527,7 +527,7 @@ filter: grayscale(0.75);
     border: none;
     background: none;
     background-color: var(--color-cool-5-90);
-    box-shadow: var(--glassy);
+    box-shadow: var(--box-shadow);
     text-shadow: 0 0 3px black;
     border-radius: var(--border-radius);
 }
@@ -536,7 +536,7 @@ filter: grayscale(0.75);
     border: none;
     background: none;
     background-color: var(--color-cool-5-90);
-    box-shadow: var(--glassy);
+    box-shadow: var(--box-shadow);
     text-shadow: 0 0 3px black;
     border-radius: var(--border-radius);
 }
@@ -545,7 +545,7 @@ filter: grayscale(0.75);
     border: none;
     background: none;
     background-color: var(--color-cool-5-90);
-    box-shadow: var(--glassy);
+    box-shadow: var(--box-shadow);
     text-shadow: 0 0 3px black;
     border-radius: var(--border-radius);
 }
@@ -554,7 +554,7 @@ filter: grayscale(0.75);
     border: none;
     background: none;
     background-color: var(--color-cool-5-90);
-    box-shadow: var(--glassy);
+    box-shadow: var(--box-shadow);
     text-shadow: 0 0 3px black;
     border-radius: var(--border-radius);
 }
@@ -563,7 +563,7 @@ filter: grayscale(0.75);
     border: none;
     background: none;
     background-color: var(--color-cool-5-90);
-    box-shadow: var(--glassy);
+    box-shadow: var(--box-shadow);
     text-shadow: 0 0 3px black;
     border-radius: var(--border-radius);
 }
@@ -593,7 +593,7 @@ filter: grayscale(0.75);
     border: none;
     background: none;
     background-color: var(--color-cool-5-90);
-    box-shadow: var(--glassy);
+    box-shadow: var(--box-shadow);
     text-shadow: 0 0 3px black;
     border-radius: var(--border-radius);
 }
@@ -606,7 +606,7 @@ filter: grayscale(0.75);
     border: none;
     background: none;
     background-color: var(--color-cool-5-90);
-    box-shadow: var(--glassy);
+    box-shadow: var(--box-shadow);
     text-shadow: 0 0 3px black;
     border-radius: var(--border-radius);
 }

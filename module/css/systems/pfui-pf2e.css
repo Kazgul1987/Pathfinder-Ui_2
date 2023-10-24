@@ -131,22 +131,24 @@
     background: var(--color-cool-4);
     padding: 0px 3px;
     border: 1px solid var(--glassy);
-    box-shadow: var(--glassy);
+    box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
+}
+
+#sidebar .directory .directory-item .document-name:hover {
+    color: var(--green);
 }
 
 .system-pf2e .directory .directory-list {
     padding: 0 0 0 5px;
 }
-.system-pf2e .directory .directory-item .document-name:hover {
-    color: var(--green);
-}
+
 .system-pf2e section.chat-sidebar .jump-to-bottom > a {
     color: var(--pfui-main-color);
     border-radius: 20px;
     background: var(--red);
     border: none;
-    box-shadow: var(--glassy);
+    box-shadow: var(--box-shadow);
     transition: text-shadow 0.15s ease-in-out, background-color 0.15s ease-in-out, border 0.15s ease-in-out, color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, backdrop-filter 0.15s ease-in-out, border-radius 0.15s;
     z-index: 1;
     backdrop-filter: blur(5px);
@@ -246,7 +248,7 @@
     border: 1px solid var(--color-cool-3);
     border-radius: var(--border-radius);
     text-shadow: 0px 1px 2px black;
-    box-shadow: var(--glassy);
+    box-shadow: var(--box-shadow);
 }
 #effects-panel .effect-item > .icon .linked {
     color: var(--pfui-main-color);
@@ -266,7 +268,7 @@
     color: var(--pfui-main-color)!important;
     border: none;
     background-color: var(--color-cool-4);
-    box-shadow: var(--glassy);
+    box-shadow: var(--box-shadow);
     text-shadow: 0 0 1px black;
     border-radius: var(--border-radius);
 }
@@ -274,7 +276,7 @@
     color: var(--color-cool-5)!important;
     border: none;
     background-color: var(--color-warm-1);
-    box-shadow: var(--glassy);
+    box-shadow: var(--box-shadow);
     text-shadow: 0 0 1px black;
     border-radius: var(--border-radius);
 }
@@ -291,7 +293,7 @@
     color: var(--pfui-main-color);
     border: none;
     background-color: var(--color-cool-5);
-    box-shadow: var(--glassy);
+    box-shadow: var(--box-shadow);
     text-shadow: 0px 1px 2px black;
     border-radius: var(--border-radius);
 }
@@ -299,7 +301,7 @@
     color: var(--pfui-main-color);
     border: 1px solid var(--color-cool-3);
     background-color: var(--color-cool-3);
-    box-shadow: var(--glassy);
+    box-shadow: var(--box-shadow);
     text-shadow: 0 0 1px black;
     border-radius: unset;
     padding: 10px 10px;
@@ -440,7 +442,7 @@ div#scrollToBottom {
     background-color: #61180e;
     text-align: center;
     border-radius: 5px;
-    box-shadow: var(--glassy);
+    box-shadow: var(--box-shadow);
     top: 0px;
     margin: 0px 2px;
     justify-content: center;
@@ -465,7 +467,7 @@ a.inline-roll.blindroll {
        background: var(--custom-trait);
     padding: 0px 3px;
     border: 2px solid var(--glassy);
-    box-shadow: var(--glassy);
+    box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
 }
 
@@ -480,7 +482,7 @@ a.content-link.broken {
 #chat-log img {
     border: 1px solid var(--glassy);
     border-radius: 50%;
-    box-shadow: var(--glassy);
+    box-shadow: var(--box-shadow);
 }
 
 #chat-log button {
@@ -491,7 +493,7 @@ a.content-link.broken {
     color: var(--pfui-main-color);
     background: radial-gradient(var(--color-cool-4), var(--color-cool-5));
     border-radius: var(--border-radius);
-    box-shadow: var(--glassy);
+    box-shadow: var(--box-shadow);
     border: none;
 }
 #chat-log .message [data-visibility="owner"]:is(div,em,p,span,strong) {
@@ -499,7 +501,7 @@ a.content-link.broken {
     color: var(--pfui-main-color);
     background: radial-gradient(var(--color-cool-4), var(--color-cool-5));
     border-radius: var(--border-radius);
-    box-shadow: var(--glassy);
+    box-shadow: var(--box-shadow);
     border: none;
 }
 
@@ -522,12 +524,18 @@ a.content-link.broken {
     background: rgba(110,0,0,1);
     color: #fff;
 }
+#chat-log i[data-pf2-repost]:hover {
+    color: var(--color-cool-5);
+    background: var(--green);
+    text-shadow: 0px 0px 2px var(--green);
+    border-radius: var(--border-radius);
+}
 #chat-log [data-visibility]:not([data-visibility=all])[data-visibility=gm] {
     font-style: italic;
     color: var(--pfui-main-color);
     background: var(--color-warm-3);
     border-radius: var(--border-radius);
-    box-shadow: var(--glassy);
+    box-shadow: var(--box-shadow);
     border: none;
 }
 #chat-log [data-visibility]:not([data-visibility=all]) {
@@ -540,7 +548,7 @@ a.content-link.broken {
        background: var(--custom-trait);
     padding: 0px 3px;
     border: 1px solid var(--glassy);
-    box-shadow: var(--glassy);
+    box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
 }
 #chat-log a.inline-check, span[data-pf2-action] {
@@ -549,7 +557,7 @@ a.content-link.broken {
        background: var(--custom-trait);
     padding: 0px 3px;
     border: 1px solid var(--glassy);
-    box-shadow: var(--glassy);
+    box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
 }
 #chat-log a.inline-check, span[data-pf2-check] {
@@ -558,7 +566,7 @@ a.content-link.broken {
        background: var(--custom-trait);
     padding: 0px 3px;
     border: 1px solid var(--glassy);
-    box-shadow: var(--glassy);
+    box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
 }
 #chat-log a.inline-check[data-pf2-traits*=secret], span[data-pf2-check][data-pf2-traits*=secret] {
@@ -567,7 +575,7 @@ a.content-link.broken {
        background: var(--custom-trait);
     padding: 0px 3px;
     border: 1px solid var(--glassy);
-    box-shadow: var(--glassy);
+    box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
 }
 #chat-log .pf2e.chat-card a.inline-check, .pf2e.chat-card span[data-pf2-action] {
@@ -576,7 +584,7 @@ a.content-link.broken {
        background: var(--custom-trait);
     padding: 0px 3px;
     border: 1px solid var(--glassy);
-    box-shadow: var(--glassy);
+    box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
 }
 #chat-log .chat-message a.content-link, .chat-message a.inline-roll {
@@ -585,14 +593,14 @@ a.content-link.broken {
        background: var(--custom-trait);
     padding: 0px 3px;
     border: 1px solid var(--glassy);
-    box-shadow: var(--glassy);
+    box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
 }
 #chat-log .chat-message .message-header .flavor-text ul.notes li {
     font-family: "Good OT";
     font-size: var(--font-size-13);
     color: var(--pfui-main-grey-color);
-    box-shadow: var(--glassy);
+    box-shadow: var(--box-shadow);
     background: radial-gradient(var(--color-cool-4), var(--color-cool-5));
     border-image-repeat: repeat;
     border-image-slice: 11;
@@ -621,7 +629,7 @@ a.content-link.broken {
     transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
     color: var(--pfui-main-color);
     background-color:hsl(0,0%,15%);
-    box-shadow: var(--glassy);
+    box-shadow: var(--box-shadow);
 } 
 
 #chat-log select, 
@@ -631,7 +639,7 @@ a.content-link.broken {
 .dice-total:not(.statuseffect-message), 
 .message-content .chat-damage-buttons button {
     background: var(--color-cool-5-50);
-    box-shadow: var(--glassy);
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15), inset 0 0 0 2px rgba(0, 0, 0, 0.4);
     border: none;
     color: var(--pfui-main-color);
     border-radius: 10px;
@@ -971,7 +979,7 @@ button.half-damage .fa-heart-broken::after {
     font-family: "Good OT";
     font-size: var(--font-size-14);
     background: radial-gradient(var(--color-cool-4), var(--color-cool-5));
-    box-shadow: var(--glassy);
+    box-shadow: var(--box-shadow);
     border-image-repeat: repeat;
     border-image-slice: 11;
     border-image-source: var(--ornement);

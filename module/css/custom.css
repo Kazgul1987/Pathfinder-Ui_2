@@ -363,7 +363,7 @@ h6+p+blockquote, h6+p+ul+blockquote) {
     color: var(--pfui-main-color);
     background: var(--color-warm-3);
     border-radius: var(--border-radius);
-    box-shadow: var(--glassy);
+    box-shadow: var(--box-shadow);
     border: none;
 }
 .journal-entry-page .journal-page-content [data-visibility]:not([data-visibility=all]) {
@@ -376,7 +376,7 @@ h6+p+blockquote, h6+p+ul+blockquote) {
     background: var(--custom-trait);
     padding: 0px 3px;
     border: 1px solid var(--glassy);
-    box-shadow: var(--glassy);
+    box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
 }
 .journal-entry-page .journal-page-content a.inline-check[data-pf2-traits*=secret], .journal-page-content span[data-pf2-check][data-pf2-traits*=secret] {
@@ -385,7 +385,7 @@ h6+p+blockquote, h6+p+ul+blockquote) {
     background: var(--custom-trait);
     padding: 0px 3px;
     border: 1px solid var(--glassy);
-    box-shadow: var(--glassy);
+    box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
 }	
 .journal-entry-page .journal-page-content a.inline-check, .journal-page-content span[data-pf2-check] {
@@ -394,7 +394,7 @@ h6+p+blockquote, h6+p+ul+blockquote) {
     background: var(--custom-trait);
     padding: 0px 3px;
     border: 1px solid var(--glassy);
-    box-shadow: var(--glassy);
+    box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
 }
 .journal-entry-page .journal-page-content a.inline-check, .journal-page-content span[data-pf2-action] {
@@ -403,7 +403,7 @@ h6+p+blockquote, h6+p+ul+blockquote) {
     background: var(--custom-trait);
     padding: 0px 3px;
     border: 1px solid var(--glassy);
-    box-shadow: var(--glassy);
+    box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
 }
 .journal-entry-page .journal-page-content a.content-link, .journal-entry-page .journal-page-content a.inline-roll {
@@ -412,7 +412,7 @@ h6+p+blockquote, h6+p+ul+blockquote) {
     background: var(--custom-trait);
     padding: 0px 3px;
     border: 1px solid var(--glassy);
-    box-shadow: var(--glassy);
+    box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
 }
 
