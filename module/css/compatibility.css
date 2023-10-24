@@ -509,7 +509,28 @@ wrapper.pf2e-td.name-left .pf2e-td.name:hover {
 wrapper.pf2e-td.name-left .pf2e-td.damage-application {
     flex: 230px 0 0;
 }
-
+.pf2e-td.criticalSuccess {
+    color: var(--color-cool-5)!important;
+	background-color: var(--green)!important;
+}
+.pf2e-td.success {
+    color: var(--color-cool-5)!important;
+	background-color: var(--rarity-rare)!important;
+}
+.pf2e-td.failure {
+    color: var(--color-cool-5)!important;
+	background-color: var(--rarity-uncommon)!important;
+}
+.pf2e-td.criticalFailure {
+    color: var(--color-cool-5)!important;
+	background-color: var(--red-light)!important;
+}
+.pf2e-td.select span {
+    color: var(--color-cool-5);
+    background: var(--red-light);
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius-5);
+}
 
 
 /* Babele */

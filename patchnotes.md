@@ -4,6 +4,14 @@
 - Ready for v11 version.
 
 
+
+## v11.313.13
+- Update core code.
+- Update Ui color harmonization.
+- Improve Dark Theme.
+- Improve compatibility with Interactive Token Tooltip.
+- Improve compatibility with PF2e Target Damage.
+
 ## v11.313.12.1
 - Update core code.
 - Update Dark Theme.
