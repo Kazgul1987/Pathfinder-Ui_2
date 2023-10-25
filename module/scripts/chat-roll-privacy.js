@@ -69,8 +69,12 @@ export default class ChatRollPrivacy {
       },
     });
 
-    if (game.settings.get('pathfinder-ui', 'enabled') === false)
+    if (
+      !game.settings.get('pathfinder-ui', 'enabled')
+      || game.settings.get('pathfinder-ui', 'disableAllStyles')
+    ) {
       return;
+    }
 
     Hooks.on('renderChatLog', this._handleChatLogRendering);
   }
