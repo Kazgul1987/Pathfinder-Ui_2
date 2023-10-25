@@ -793,7 +793,12 @@ nav.damage-log-nav .item.active:before,
 /* https://github.com/unsoluble/smalltime */
 #smalltime-app .window-content {
     box-shadow: var(--box-shadow-light);
-    filter: drop-shadow(2px 4px 6px var(--color-cool-4));
+    filter: drop-shadow(2px 4px 6px var(--color-cool-5));
+    border-radius: var(--border-radius);
+}
+#smalltime-app #slideContainer {
+    box-shadow: var(--box-shadow-light);
+    border-radius: var(--border-radius-5);
 }
 #smalltime-app.show-date #dateDisplay {
     background: var(--color-cool-5);
