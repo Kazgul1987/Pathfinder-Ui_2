@@ -166,11 +166,10 @@
     bottom: 70px;
 }
 #hotbar .action-bar.no-arrows + .bar-controls span.page-number, #hotbar .hotbar-page .bar-controls span.page-number, #hotbar .hotbar-page .bar-controls i {
-    border-radius: var(--border-radius);
-    background: none;
-    background-color: var(--color-cool-5-50);
-    box-shadow: var(--box-shadow);
-    border: 1px solid var(--color-border-dark);
+
+    box-shadow: var(--box-shadow-light);
+    background: var(--color-cool-5-75);
+    border: 1px solid var(--color-warm-1);
     backdrop-filter: blur(3px);
 }
 #hotbar .hotbar-page .action-bar {
@@ -183,8 +182,17 @@
     box-shadow: var(--box-shadow);
     border: 1px solid var(--color-border-dark);
 }
-#hotbar .macro-list {
-    backdrop-filter: blur(3px);
+#hotbar .macro.inactive {
+    box-shadow: var(--box-shadow-light);
+    background: var(--color-cool-5-75);
+    border-radius: 50%;
+    border: 2px solid var(--rpg-styled-ui-color);
+}
+#hotbar .macro.active {
+    box-shadow: var(--box-shadow-light);
+    background: var(--color-cool-5-75);
+    border-radius: 50%;
+    border: 2px solid var(--rpg-styled-ui-color);
 }
 #hotbar .hotbar-page .macro-list {
     gap: 7.5px;
