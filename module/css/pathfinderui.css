@@ -130,11 +130,11 @@ body.compact-mode #logo {
 }
 
 #context-menu {
-    border: none;
     color: var(--pfui-main-color);
-    box-shadow: var(--box-shadow-light);
     background: var(--color-cool-5);
     border-radius: var(--border-radius-5);
+    border: 1px solid var(--color-cool-5);
+    box-shadow: var(--glassy);
 }
 
 
@@ -433,9 +433,9 @@ body.compact-mode #logo {
     width: 99%;
     margin: 3px 0px 0px 2px;
     background: radial-gradient(var(--color-cool-5-50), transparent)!important;
-    box-shadow: var(--box-shadow-light);
     color: var(--pfui-main-grey-color);
-    border: 1px solid #000;
+    border: 1px solid var(--color-cool-5);
+    box-shadow: var(--glassy);
     border-radius: var(--border-radius);
     backdrop-filter: blur(5px);
 }

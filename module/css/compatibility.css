@@ -208,7 +208,8 @@
     border-radius: var(--border-radius);
     transition: text-shadow 0.15s ease-in-out, background-color 0.15s ease-in-out, border 0.15s ease-in-out, color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, backdrop-filter 0.15s ease-in-out, border-radius 0.15s;
     background: radial-gradient(var(--color-cool-5-50), transparent);
-    box-shadow: var(--box-shadow-light);
+    border: 1px solid var(--color-cool-5);
+    box-shadow: var(--glassy);
     color: var(--pfui-main-grey-color);
     backdrop-filter: blur(5px);
 }
@@ -658,14 +659,16 @@ wrapper.pf2e-td.name-left .pf2e-td.damage-application {
     bottom: 1px;
     border: 1px solid #000;
     background: radial-gradient(var(--color-cool-5-50), transparent);
-box-shadow: var(--box-shadow-light);
+    border: 1px solid var(--color-cool-5);
+    box-shadow: var(--glassy);
     border-radius: var(--border-radius);
     backdrop-filter: blur(5px);
     transition: text-shadow 0.15s ease-in-out, background-color 0.15s ease-in-out, border 0.15s ease-in-out, color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, backdrop-filter 0.15s ease-in-out, border-radius 0.15s;
 }
 .select2-search--dropdown {
     background: var(--background);
-box-shadow: var(--box-shadow-light);
+    border: 1px solid var(--color-cool-5);
+    box-shadow: var(--glassy);
     border-radius: var(--border-radius);
 }
 .select2-container--default .select2-search--dropdown .select2-search__field {
@@ -674,7 +677,7 @@ box-shadow: var(--box-shadow-light);
     border:none;
     border-top: 1px solid var(--color-warm-1);
     border-bottom: 1px solid var(--color-warm-1);
-box-shadow: var(--box-shadow-light);
+    box-shadow: var(--glassy);
     text-shadow: 0 0 1px black;
     border-radius: var(--border-radius-5);
     backdrop-filter: blur(5px);
@@ -721,7 +724,8 @@ box-shadow: var(--box-shadow-light);
 
 .dice-tray button {
     background: radial-gradient(var(--color-cool-5-50), transparent);
-    box-shadow: var(--box-shadow-light);
+    border: 1px solid var(--color-cool-5);
+    box-shadow: var(--glassy);
     color: var(--pfui-main-grey-color);
     backdrop-filter: blur(5px);
     border-radius: var(--border-radius);
