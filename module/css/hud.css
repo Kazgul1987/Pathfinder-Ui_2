@@ -197,11 +197,10 @@
 }
 #pf2e-token-hud .sidebar, #pf2e-token-hud .inner, #pf2e-token-hud .popup {
   color: var(--pfui-main-grey-color);
-  border: unset;
+  border: 1px solid var(--color-cool-5);
   border-radius: var(--border-radius);
   background: linear-gradient(45deg, var(--color-cool-4), var(--color-cool-5-75));
-  --box-shadow-5: 0px 1px 5px 1px var(--color-cool-5);
-  box-shadow: var(--box-shadow-5);
+  box-shadow: var(--glassy);
   backdrop-filter: blur(3px);
 }
 #pf2e-token-hud .sidebar .sidebar-content .details .name {

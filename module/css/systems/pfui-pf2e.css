@@ -640,8 +640,8 @@ a.content-link.broken {
 .dice-total:not(.statuseffect-message), 
 .message-content .chat-damage-buttons button {
     background: var(--color-cool-5-50);
-    box-shadow: var(--box-shadow-light);
-    border: none;
+    border: 1px solid var(--color-cool-5);
+    box-shadow: var(--glassy);
     color: var(--pfui-main-color);
     border-radius: 10px;
 }
