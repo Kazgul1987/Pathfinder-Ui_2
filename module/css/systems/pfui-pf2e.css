@@ -488,6 +488,14 @@ a.content-link.broken {
 
 #chat-log button {
     transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
+    margin: 2px 2px 2px 2px;
+    color: var(--pfui-main-color);
+    text-shadow: var(--pf2e-shadow-is-dark);
+    line-height: 20px;
+    background: var(--color-cool-5-50);
+    border: 1px solid var(--color-cool-5);
+    box-shadow: var(--glassy);
+    border-radius: 10px;
 }
 #chat-log .message [data-visibility="gm"]:is(div,em,p,span,strong) {
     font-style: italic;
@@ -504,13 +512,6 @@ a.content-link.broken {
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
     border: none;
-}
-
-#chat-log .pf2e.chat-card .card-buttons button {
-    margin: 2px 2px 2px 2px;
-    color: var(--pfui-main-color);
-    text-shadow: var(--pf2e-shadow-is-dark);
-    line-height: 20px;
 }
 
 #chat-log .pf2e.chat-card [data-visibility=owner] button {
@@ -633,18 +634,6 @@ a.content-link.broken {
     box-shadow: var(--box-shadow);
 } 
 
-#chat-log select, 
-#chat-log button, 
-#chat-log form button, 
-.dice-roll .dice-formula, 
-.dice-total:not(.statuseffect-message), 
-.message-content .chat-damage-buttons button {
-    background: var(--color-cool-5-50);
-    border: 1px solid var(--color-cool-5);
-    box-shadow: var(--glassy);
-    color: var(--pfui-main-color);
-    border-radius: 10px;
-}
 #chat-log .chat-message > .message-content .message-buttons button .cue i {
     --fa-primary-color: var(--color-warm-1);
     --fa-secondary-color: var(--red-light);
@@ -681,6 +670,7 @@ a.content-link.broken {
     transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
     color: var(--pfui-main-color);
     background-color:hsl(0,0%,15%);
+    box-shadow: var(--glassy);
 }
 
 #chat-log .pf2e.chat-card .card-buttons button:hover {
@@ -743,6 +733,12 @@ button.half-damage .fa-heart-broken::after {
     justify-content: space-around;
     line-height: unset;
     padding: 0;
+    color: var(--pfui-main-color);
+    text-shadow: var(--pf2e-shadow-is-dark);
+    background: var(--color-cool-5-50);
+    border: 1px solid var(--color-cool-5);
+    box-shadow: var(--glassy);
+    border-radius: 10px;
 }
 
 .message-content .chat-damage-buttons button {

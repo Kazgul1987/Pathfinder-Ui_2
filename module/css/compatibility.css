@@ -105,56 +105,161 @@
     src: url("./fonts/Tauri-Regular.ttf") format('truetype');
 }
 
+/*-------------------------------------------------------------------------------- */
 
-
-/*Token Health*/
-/*https://github.com/schlosrat/token-health*/
-.dialog .dialog-buttons.token-health button[data-button='heal'] {
-    background-color: transparent;
-}
-.dialog .dialog-buttons.token-health button[data-button='heal']:hover {
-    background-color: transparent;
+/* Babele */
+/* https://gitlab.com/riccisi/foundryvtt-babele */
+#actor-translate-log {
+    color: var(--main-text-very-light-color)
 }
 
 
 
-/*Speaking As*/
-/*https://foundryvtt.com/packages/speaking-as*/
-.speaking-as--currentSpeaker--icon {
-    border-radius: 50%;
-    box-shadow: var(--box-shadow);
-}
-.speaking-as--currentSpeaker {
+
+/* DF Chat Enhancements */
+/* https://github.com/flamewave000/dragonflagon-fvtt/tree/master/df-chat-enhance */
+#dfcp-rt-buttons button {
+    padding-top: 3px;
+    transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
+    background: radial-gradient(var(--color-cool-5-50), transparent);
+    border: none;
+    border-radius: 30px;
     color: var(--pfui-main-grey-color);
-    background: var(--color-cool-5-50);
-    padding: 7px 7px 5px 7px;
-    margin: 0px 4px 0px 7px;
-}
-.speaking-as--currentSpeaker--text {
-    font-size: var(--font-size-16);
-    bottom: 0.55em;
-    text-shadow: 0 0 5px var(--color-cool-3);
-}
-.speaking-as--currentSpeaker--button {
-    font-size: var(--font-size-18);
-}
-.speaking-as--currentSpeaker--buttonInset {
-    color: var(--color-warm-1)!important;
-}
-.speaking-as--currentSpeaker--locked.fa-unlock {
-    opacity: 1;
-    color: var(--primary-remaster);
-    font-size: var(--font-size-20);
-}
-.speaking-as--currentSpeaker--locked {
-    color: var(--red);
-    font-size: var(--font-size-20);
-}
-.speaking-as--currentSpeaker #context-menu {
-    color: var(--pfui-main-color);
-    background: var(--background);
     box-shadow: var(--box-shadow);
+    border: 1px solid var(--color-cool-5-50);
 }
+#dfcp-rt-buttons button:hover {
+    color: var(--color-text-hyperlink);
+    border-color: var(--color-text-hyperlink);
+    box-shadow: 0 0 6px inset var(--color-text-hyperlink);
+}
+#dfcp-rt-buttons button[data-id=publicroll].active {
+    background-color: var(--green);
+    color: var(--background);
+    box-shadow: var(--box-shadow-light);
+}
+#dfcp-rt-buttons button[data-id=gmroll].active {
+    background-color: #f2ca27;
+    color: var(--background);
+    box-shadow: var(--box-shadow-light);
+}
+#dfcp-rt-buttons button[data-id=blindroll].active {
+    background-color: #e87e04;
+    color: var(--background);
+    box-shadow: var(--box-shadow-light);
+}
+#dfcp-rt-buttons button[data-id=selfroll].active {
+    background-color: var(--color-text-hyperlink);
+    color: var(--background);
+    box-shadow: var(--box-shadow-light);
+}
+
+
+
+
+/* Dice Tray */
+/* https://gitlab.com/asacolips-projects/foundry-mods/foundry-vtt-dice-calculator */
+
+.dice-tray {
+    position: relative;
+    padding: 0 4px;
+}
+.dice-tray button div.dice {
+    background-color: var(--pfui-main-grey-color);
+}
+.dice-tray button div.dice:hover {
+    background-color: #ff6400;    
+}
+
+.dice-tray button {
+    background: radial-gradient(var(--color-cool-5-50), transparent);
+    border: 1px solid var(--color-cool-5);
+    box-shadow: var(--glassy);
+    color: var(--pfui-main-grey-color);
+    backdrop-filter: blur(5px);
+    border-radius: var(--border-radius);
+}
+.dice-tray input[type="text"] {
+    color: var(--pfui-main-grey-color);
+    background: radial-gradient(var(--color-cool-5-50), transparent);
+    box-shadow: var(--box-shadow-light);
+}
+.dice-calculator > button, .dice-calculator .dice-calculator--button {
+    color: var(--pfui-main-color)
+}
+
+
+
+
+/* Minimal UI */
+/* https://github.com/saif-ellafi/foundryvtt-minimal-ui/issues */
+.minimal-ui-mode .new-logo {
+    display: none!important;
+}
+.minimal-ui-mode #controls ol li.scene-control[data-control="combat-carousel"] {
+    width: var(--controlsw)!important;
+    height: var(--controlsh)!important;
+}
+.minimal-ui-mode #controls li[data-control="combat-carousel"]::after {
+    width: calc(var(--controlsw) - 10px)!important;
+    height: calc(var(--controlsh) - 10px)!important;
+}
+
+.minimal-ui-mode #ui-bottom > div {
+    justify-content: inherit!important;
+}
+:root {
+    --hotbarvis: visible;
+    --hotbarypos: -5px;
+    --hotbarxpos: 500px;
+    --hotbarlh1: 24px;
+    --hotbarlh2: 8px;
+    --hotbarhv: -5px;
+    --hotbarmg: 0px;
+    --hotbarhh: 100%;
+    --hotbarshp: 0px;
+}
+
+.minimal-ui-mode #hotbar {
+    left: var(--hotbarxpos);
+    bottom: var(--hotbarypos);
+    visibility: var(--hotbarvis);
+    transition: 0.5s ease-out 0.5s;
+    opacity: var(--opacity);
+    position: absolute;
+}
+
+:root {
+    --playervis: hidden;
+    --playerfsize: 0px;
+    --playerfsizehv: 12px;
+    --playerwidthhv: 150px;
+    --playerslh: 20px;
+    --playerbennies: none;
+    --playerh3w: unset;
+    --playerbot: -8px;
+    --playerleft: -8px;
+    --playerpingdisplay: initial;
+}
+
+.minimal-ui-mode #players {
+    bottom: var(--playerbot);
+    left: var(--playerleft);
+    font-size: var(--playerfsize);
+    visibility: var(--playervis);
+    opacity: var(--opacity);
+    box-shadow:none;
+    position: absolute;
+    border: none;
+}
+
+.minimal-ui-mode #navigation #scene-list {
+    margin-left: 16px;
+}
+.minimal-ui-mode #controls ol.main-controls {
+    width: 60px;
+}
+
 
 
 
@@ -201,73 +306,53 @@
 
 
 
-/*PF2e Utility Buttons*/
-/*https://github.com/oWave/pf2e-flatcheck-helper*/
-#fc-container button {
-    border: none;
-    border-radius: var(--border-radius);
-    transition: text-shadow 0.15s ease-in-out, background-color 0.15s ease-in-out, border 0.15s ease-in-out, color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, backdrop-filter 0.15s ease-in-out, border-radius 0.15s;
-    background: radial-gradient(var(--color-cool-5-50), transparent);
+
+/* Monk's Little Details */
+/*https://github.com/ironmonk88/monks-little-details*/
+
+#token-hud.monks-little-details .status-effects .effect-control,
+#token-hud.monks-little-details .status-effects .pf2e-effect-control {
+  border-radius: unset;
+}
+
+#token-hud.placeable-hud.monks-little-details .status-effects {
+  background: none;
+  filter: brightness(1.1) saturate(1);
+}
+#token-hud.placeable-hud.monks-little-details .status-effects .effect-control {
+  border: none;
+  opacity: unset;
+  border-radius: var(--border-radius);
+}
+#token-hud.placeable-hud.monks-little-details .status-effects .effect-control.active {
     border: 1px solid var(--color-cool-5);
-    box-shadow: var(--glassy);
-    color: var(--pfui-main-grey-color);
-    backdrop-filter: blur(5px);
+    opacity: 1;
+    background: linear-gradient(45deg, var(--color-cool-3), var(--color-cool-5));
+    box-shadow: 0px 5px 20px 3px black, 0px 0px 50px 30px color-mix(in srgb, var(--color-cool-5) 10%, transparent);
+    filter: brightness(1.1) saturate(1.5);
+    border-radius: var(--border-radius-5);
+    text-shadow: 0px 1px 2px black;
 }
-#fc-container button:hover {
-    border: none;
-    border-radius: var(--border-radius);
-    color: var(--color-text-hyperlink);
-    border-color: var(--color-text-hyperlink);
-    box-shadow: 0 0 6px inset var(--color-text-hyperlink);
+#token-hud.placeable-hud.monks-little-details .status-effects .effect-control.active .effect-name {
+    color: var(--pfui-main-color);
+  opacity: unset;
 }
-
-
-
-/* DF Chat Enhancements */
-/* https://github.com/flamewave000/dragonflagon-fvtt/tree/master/df-chat-enhance */
-#dfcp-rt-buttons button {
-    padding-top: 3px;
-    transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
-    background: radial-gradient(var(--color-cool-5-50), transparent);
-    border: none;
-    border-radius: 30px;
-    color: var(--pfui-main-grey-color);
-    box-shadow: var(--box-shadow);
-    border: 1px solid var(--color-cool-5-50);
-}
-#dfcp-rt-buttons button:hover {
-    color: var(--color-text-hyperlink);
-    border-color: var(--color-text-hyperlink);
-    box-shadow: 0 0 6px inset var(--color-text-hyperlink);
-}
-#dfcp-rt-buttons button[data-id=publicroll].active {
-    background-color: var(--green);
-    color: var(--background);
-    box-shadow: var(--box-shadow-light);
-}
-#dfcp-rt-buttons button[data-id=gmroll].active {
-    background-color: #f2ca27;
-    color: var(--background);
-    box-shadow: var(--box-shadow-light);
-}
-#dfcp-rt-buttons button[data-id=blindroll].active {
-    background-color: #e87e04;
-    color: var(--background);
-    box-shadow: var(--box-shadow-light);
-}
-#dfcp-rt-buttons button[data-id=selfroll].active {
-    background-color: var(--color-text-hyperlink);
-    color: var(--background);
-    box-shadow: var(--box-shadow-light);
+#token-hud.placeable-hud.monks-little-details .status-effects .effect-name {
+  opacity: unset;
+  padding-right: 4px;
+  color: var(--pfui-main-color);
+  font-size:  12px;
 }
 
 
 
-/* Monk's TokenBar */
+
+/* Monk's Sound Enhancements */
 /* https://github.com/ironmonk88/monks-sound-enhancements */
 #mseCharacterSound, #mseItemSound {
     color: var(--pfui-main-color);
 }
+
 
 
 
@@ -354,6 +439,435 @@
 #chat .monks-tokenbar.chat-card .sheet .items-list {
     padding: 0;
 }
+
+
+
+
+/* PF2e Target-damage */
+/* https://github.com/MrVauxs/PF2e-Target-Damage */
+.pf2e-td.small-button {
+    background: var(--color-cool-4)!important;
+    box-shadow: var(--glassy)!important;
+}
+.pf2e-td.small-button:hover {
+    background: var(--green)!important;
+}
+wrapper.pf2e-td {
+    align-items: stretch;
+}
+wrapper.pf2e-td.name-left .pf2e-td.name {
+    margin: 6px 0 0 0;
+    font-size: var(--font-size-9);
+    background: var(--color-cool-5-50);
+    box-shadow: var(--box-shadow);
+    border: none!important;
+    color: var(--pfui-main-color);
+    border-radius: var(--border-radius);
+}
+wrapper.pf2e-td.name-left .pf2e-td.name:hover {
+    font-size: var(--font-size-9);
+    box-shadow: none;
+    color: white;
+    border: 1px solid #7B322F;
+    background-color: var(--red);
+    box-shadow: var(--box-shadow-light);
+    border-radius: var(--border-radius);
+}
+wrapper.pf2e-td.name-left .pf2e-td.damage-application {
+    flex: 230px 0 0;
+}
+.pf2e-td.criticalSuccess {
+    color: var(--color-cool-5)!important;
+	background-color: var(--green)!important;
+}
+.pf2e-td.success {
+    color: var(--color-cool-5)!important;
+	background-color: var(--rarity-rare)!important;
+}
+.pf2e-td.failure {
+    color: var(--color-cool-5)!important;
+	background-color: var(--rarity-uncommon)!important;
+}
+.pf2e-td.criticalFailure {
+    color: var(--color-cool-5)!important;
+	background-color: var(--red-light)!important;
+}
+.pf2e-td.select span {
+    color: var(--color-cool-5);
+    background: var(--red-light);
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius-5);
+}
+.spell-button .pf2e-td.target-button {
+    height: calc(100% - 1px);
+    top: -2px;
+    left: unset;
+    width: 27px;
+    border-radius: 50%!important;
+}
+
+
+
+
+/* PF2e Toolbelt */
+/* https://github.com/reonZ/pf2e-toolbelt */
+.chat-message .message-content .dice-result .dice-total .pf2e-toolbelt-merge button {
+    position: relative;
+    bottom: 1px;
+    background: var(--color-cool-4)!important;
+    box-shadow: var(--glassy)!important;
+}
+.chat-message .message-content .dice-result .dice-total .pf2e-toolbelt-merge button:hover {
+    background: var(--green)!important;
+}
+
+
+
+
+/*PF2e Utility Buttons*/
+/*https://github.com/oWave/pf2e-flatcheck-helper*/
+#fc-container button {
+    border: none;
+    border-radius: var(--border-radius);
+    transition: text-shadow 0.15s ease-in-out, background-color 0.15s ease-in-out, border 0.15s ease-in-out, color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, backdrop-filter 0.15s ease-in-out, border-radius 0.15s;
+    background: radial-gradient(var(--color-cool-5-50), transparent);
+    border: 1px solid var(--color-cool-5);
+    box-shadow: var(--glassy);
+    color: var(--pfui-main-grey-color);
+    backdrop-filter: blur(5px);
+}
+#fc-container button:hover {
+    border: none;
+    border-radius: var(--border-radius);
+    color: var(--color-text-hyperlink);
+    border-color: var(--color-text-hyperlink);
+    box-shadow: 0 0 6px inset var(--color-text-hyperlink);
+}
+
+
+
+
+/* Polyglot */
+/* https://github.com/mclemente/fvtt-module-polyglot */
+
+.polyglot-lang-select label {
+    display: none;
+}
+.polyglot-lang-select input {
+    margin: 3px 5px;
+}
+.polyglot-lang-select input:checked {
+    accent-color: var(--color-cool-5-50);
+}
+.polyglot-user-list {
+    max-width: unset;
+}
+.polyglot-user-list div {
+    display: flex;
+    flex: 1 0;
+    max-width: 15px;
+    border-radius: unset;
+    border: 1px solid var(--background);
+    margin: unset;
+    box-shadow: 1px 1px 2px -1px var(--color-warm-1);
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: var(--pfui-main-grey-color)!important;
+}
+.polyglot-lang-select .select2-container--default .select2-selection--single .select2-selection__arrow b {
+    border-color: var(--pfui-main-color) transparent transparent transparent;
+}
+.polyglot-lang-select span.select2-selection {
+    font-family: Taroca;
+    font-size: 14px;
+    text-align: center;
+    position: relative;
+    bottom: 1px;
+    border: 1px solid #000;
+    background: radial-gradient(var(--color-cool-5-50), transparent);
+    border: 1px solid var(--color-cool-5);
+    box-shadow: var(--glassy);
+    border-radius: var(--border-radius);
+    backdrop-filter: blur(5px);
+    transition: text-shadow 0.15s ease-in-out, background-color 0.15s ease-in-out, border 0.15s ease-in-out, color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, backdrop-filter 0.15s ease-in-out, border-radius 0.15s;
+}
+.polyglot-lang-select span.select2-selection:hover {
+    border: none;
+    outline: 2px solid var(--color-cool-4);
+    box-shadow: var(--box-shadow);
+}
+.polyglot-lang-select span.select2-selection:focus {
+    border: none;
+    outline: 2px solid var(--color-cool-4);
+    box-shadow: var(--box-shadow);
+}
+.select2-search--dropdown {
+    background: var(--background);
+    border: 1px solid var(--color-cool-5);
+    box-shadow: var(--glassy);
+    border-radius: var(--border-radius);
+}
+.select2-container--default .select2-search--dropdown .select2-search__field {
+    color: var(--pfui-main-color);
+    background: radial-gradient(var(--color-cool-4), var(--glass-bg-dark));
+    border:none;
+    border-top: 1px solid var(--color-warm-1);
+    border-bottom: 1px solid var(--color-warm-1);
+    box-shadow: var(--glassy);
+    text-shadow: 0 0 1px black;
+    border-radius: var(--border-radius-5);
+    backdrop-filter: blur(5px);
+}
+.select2-container--default .select2-results>.select2-results__options {
+    color: var(--pfui-main-color);
+    background: var(--background);
+box-shadow: var(--box-shadow-light);
+}
+.select2-container--default .select2-results__option--selected {
+    color: var(--pfui-main-color);
+    border:none;
+    border-top: 1px solid var(--color-warm-1);
+    border-bottom: 1px solid var(--color-warm-1);
+    background: none;
+    background: radial-gradient(var(--color-cool-3), var(--glass-bg-dark));
+box-shadow: var(--box-shadow-light);
+    text-shadow: 0 0 3px black;
+    border-radius: var(--border-radius-5);
+}
+.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
+    color: var(--pfui-main-color);
+    border: none;
+    background: none;
+    background: radial-gradient(var(--color-cool-4), var(--glass-bg-dark));
+box-shadow: var(--box-shadow-light);
+    text-shadow: 0 0 3px black;
+    border-radius: var(--border-radius-5);
+}
+
+
+
+
+
+/* Roll Tracker */
+/* https://github.com/drexl93/roll-tracker */
+.roll-tracker-comparison-card-heading {
+    text-transform: uppercase;
+    text-align: center;
+    color: antiquewhite;
+    border-bottom: 2px dotted var(--color-cool-3);
+}
+.roll-tracker-comparison-card-stat-heading {
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: unset;
+    color: var(--color-warm-1);
+    border-bottom: 2px dotted var(--color-cool-3);
+}
+.roll-tracker-comparison-card-goodstat {
+    text-transform: uppercase;
+    color: var(--green);
+}
+.roll-tracker-comparison-card-badstat {
+    text-transform: uppercase;
+    color: var(--color-warm-2);
+}
+.roll-tracker-comparison-card-strong {
+    color: var(--green);
+}
+.roll-tracker-comparison-card-italics {
+    color: antiquewhite;
+}
+.roll-tracker-comparison-card-li {
+    color: antiquewhite;
+}
+.roll-tracker-comparison-card-subli {
+    color: var(--pfui-main-color);
+}
+
+
+
+
+/*Speaking As*/
+/*https://foundryvtt.com/packages/speaking-as*/
+.speaking-as--currentSpeaker--icon {
+    border-radius: 50%;
+    box-shadow: var(--box-shadow);
+}
+.speaking-as--currentSpeaker {
+    color: var(--pfui-main-grey-color);
+    background: var(--color-cool-5-50);
+    padding: 7px 7px 5px 7px;
+    margin: 0px 4px 0px 7px;
+}
+.speaking-as--currentSpeaker--text {
+    font-size: var(--font-size-16);
+    bottom: 0.55em;
+    text-shadow: 0 0 5px var(--color-cool-3);
+}
+.speaking-as--currentSpeaker--button {
+    font-size: var(--font-size-18);
+}
+.speaking-as--currentSpeaker--buttonInset {
+    color: var(--color-warm-1)!important;
+}
+.speaking-as--currentSpeaker--locked.fa-unlock {
+    opacity: 1;
+    color: var(--primary-remaster);
+    font-size: var(--font-size-20);
+}
+.speaking-as--currentSpeaker--locked {
+    color: var(--red);
+    font-size: var(--font-size-20);
+}
+.speaking-as--currentSpeaker #context-menu {
+    color: var(--pfui-main-color);
+    background: var(--background);
+    box-shadow: var(--box-shadow);
+}
+
+
+
+
+/* Smalltime */
+/* https://github.com/unsoluble/smalltime */
+#smalltime-app .window-content {
+    box-shadow: var(--box-shadow-light);
+    filter: drop-shadow(2px 4px 6px var(--color-cool-5));
+    border-radius: var(--border-radius);
+}
+#smalltime-app #slideContainer {
+    box-shadow: var(--box-shadow-light);
+    border-radius: var(--border-radius-5);
+}
+#smalltime-app.show-date #dateDisplay {
+    background: var(--color-cool-5);
+    box-shadow: var(--box-shadow-light);
+    border: none;
+    color: var(--color-warm-1);
+    border-radius: var(--border-radius);
+}
+#smalltime-app #timeDisplay {
+    background: var(--color-cool-5);
+    border: none;    
+    color: var(--green);
+}
+#smalltime-app #timeDisplay:hover {
+    color: var(--color-warm-1);
+}
+#smalltime-app #dragHandle {
+    background: var(--color-cool-5);
+    box-shadow: var(--box-shadow-light);
+    border: none;
+    color: var(--pfui-main-color);
+    border-radius: var(--border-radius);
+}
+#smalltime-app #displayContainer {
+    background: var(--color-cool-5);
+    box-shadow: var(--box-shadow-light);
+    border: none;
+    color: var(--pfui-main-color);
+    border-radius: var(--border-radius);
+}
+#smalltime-app .arrow-right {
+    background: var(--color-cool-5);
+    box-shadow: var(--box-shadow-light);
+    border: none;
+    color: var(--pfui-main-color);
+    border-radius: var(--border-radius);
+    padding-top: 2px;
+}
+#smalltime-app .arrow-right:hover {
+    color: var(--color-cool-5);
+    background: var(--green);
+    padding-top: 2px;
+}
+#smalltime-app .arrow-left {
+    background: var(--color-cool-5);
+    box-shadow: var(--box-shadow-light);
+    border: none;
+    color: var(--pfui-main-color);
+    border-radius: var(--border-radius);
+    padding-top: 2px;
+}
+#smalltime-app .arrow-left:hover {
+    color: var(--color-cool-5);
+    background: var(--green);
+    padding-top: 2px;
+}
+
+
+
+
+/* Tabbed Chatlog */
+/* https://github.com/cswendrowski/FoundryVTT-Tabbed-Chatlog */
+
+nav.damage-log-nav.tabs,
+.tabbedchatlog.tabs {
+    position: relative;
+    box-shadow: none;
+    border: none;
+}
+
+.tabbedchatlog.tabs {
+    padding: 0 10px;
+}
+
+nav.damage-log-nav.tabs::before,
+.tabbedchatlog.tabs::before {
+    content: " ";
+    position: absolute;
+    width: 317px;
+    z-index: 10;
+    left: -2px;
+    height: 7px;
+    bottom: -7px;
+    background: url(../ui/frames/brown_line.webp);
+    background-size: 317px 7px;
+}
+
+nav.damage-log-nav .item,
+.tabbedchatlog .item {
+    position: relative;
+}
+
+nav.damage-log-nav .item.active,
+.tabbedchatlog .item.active {
+    border: none;
+    box-shadow: none;
+}
+
+nav.damage-log-nav .item:before,
+.tabbedchatlog .item:before {
+    position: absolute;
+    content: ' ';
+    background: url(../ui/frames/red_line.webp);
+    width: 70%;
+    height: 3px;
+    bottom: -3px;
+    z-index: 10;
+    left: 15%;
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0.3s;
+}
+
+nav.damage-log-nav .item.active:before,
+.tabbedchatlog .item.active:before {
+    opacity: 1;
+}
+
+
+
+
+/*Token Health*/
+/*https://github.com/schlosrat/token-health*/
+.dialog .dialog-buttons.token-health button[data-button='heal'] {
+    background-color: transparent;
+}
+.dialog .dialog-buttons.token-health button[data-button='heal']:hover {
+    background-color: transparent;
+}
+
 
 
 
@@ -449,458 +963,4 @@
     border-radius: 0PX 25% 0PX 0PX;
     box-shadow: var(--box-shadow);
     text-shadow: 0px 1px 2px black;
-}
-
-
-
-/* Monk's Little Details */
-/*https://github.com/ironmonk88/monks-little-details*/
-
-#token-hud.monks-little-details .status-effects .effect-control,
-#token-hud.monks-little-details .status-effects .pf2e-effect-control {
-  border-radius: unset;
-}
-
-#token-hud.placeable-hud.monks-little-details .status-effects {
-  background: none;
-  filter: brightness(1.1) saturate(1);
-}
-#token-hud.placeable-hud.monks-little-details .status-effects .effect-control {
-  border: none;
-  opacity: unset;
-  border-radius: var(--border-radius);
-}
-#token-hud.placeable-hud.monks-little-details .status-effects .effect-control.active {
-    border: 1px solid var(--color-cool-5);
-    opacity: 1;
-    background: linear-gradient(45deg, var(--color-cool-3), var(--color-cool-5));
-    box-shadow: 0px 5px 20px 3px black, 0px 0px 50px 30px color-mix(in srgb, var(--color-cool-5) 10%, transparent);
-    filter: brightness(1.1) saturate(1.5);
-    border-radius: var(--border-radius-5);
-    text-shadow: 0px 1px 2px black;
-}
-#token-hud.placeable-hud.monks-little-details .status-effects .effect-control.active .effect-name {
-    color: var(--pfui-main-color);
-  opacity: unset;
-}
-#token-hud.placeable-hud.monks-little-details .status-effects .effect-name {
-  opacity: unset;
-  padding-right: 4px;
-  color: var(--pfui-main-color);
-  font-size:  12px;
-}
-
-
-
-/* Target-damage */
-/* https://github.com/MrVauxs/PF2e-Target-Damage */
-wrapper.pf2e-td {
-    align-items: stretch;
-}
-wrapper.pf2e-td.name-left .pf2e-td.name {
-    margin: 6px 0 0 0;
-    font-size: var(--font-size-9);
-    background: var(--color-cool-5-50);
-    box-shadow: var(--box-shadow);
-    border: none!important;
-    color: var(--pfui-main-color);
-    border-radius: var(--border-radius);
-}
-wrapper.pf2e-td.name-left .pf2e-td.name:hover {
-    font-size: var(--font-size-9);
-    box-shadow: none;
-    color: white;
-    border: 1px solid #7B322F;
-    background-color: var(--red);
-    box-shadow: var(--box-shadow-light);
-    border-radius: var(--border-radius);
-}
-wrapper.pf2e-td.name-left .pf2e-td.damage-application {
-    flex: 230px 0 0;
-}
-.pf2e-td.criticalSuccess {
-    color: var(--color-cool-5)!important;
-	background-color: var(--green)!important;
-}
-.pf2e-td.success {
-    color: var(--color-cool-5)!important;
-	background-color: var(--rarity-rare)!important;
-}
-.pf2e-td.failure {
-    color: var(--color-cool-5)!important;
-	background-color: var(--rarity-uncommon)!important;
-}
-.pf2e-td.criticalFailure {
-    color: var(--color-cool-5)!important;
-	background-color: var(--red-light)!important;
-}
-.pf2e-td.select span {
-    color: var(--color-cool-5);
-    background: var(--red-light);
-    box-shadow: var(--box-shadow);
-    border-radius: var(--border-radius-5);
-}
-
-
-/* Babele */
-/* https://gitlab.com/riccisi/foundryvtt-babele */
-#actor-translate-log {
-    color: var(--main-text-very-light-color)
-}
-
-
-
-/* Minimal UI */
-/* https://github.com/saif-ellafi/foundryvtt-minimal-ui/issues */
-.minimal-ui-mode .new-logo {
-    display: none!important;
-}
-.minimal-ui-mode #controls ol li.scene-control[data-control="combat-carousel"] {
-    width: var(--controlsw)!important;
-    height: var(--controlsh)!important;
-}
-.minimal-ui-mode #controls li[data-control="combat-carousel"]::after {
-    width: calc(var(--controlsw) - 10px)!important;
-    height: calc(var(--controlsh) - 10px)!important;
-}
-
-.minimal-ui-mode #ui-bottom > div {
-    justify-content: inherit!important;
-}
-:root {
-    --hotbarvis: visible;
-    --hotbarypos: -5px;
-    --hotbarxpos: 500px;
-    --hotbarlh1: 24px;
-    --hotbarlh2: 8px;
-    --hotbarhv: -5px;
-    --hotbarmg: 0px;
-    --hotbarhh: 100%;
-    --hotbarshp: 0px;
-}
-
-.minimal-ui-mode #hotbar {
-    left: var(--hotbarxpos);
-    bottom: var(--hotbarypos);
-    visibility: var(--hotbarvis);
-    transition: 0.5s ease-out 0.5s;
-    opacity: var(--opacity);
-    position: absolute;
-}
-
-:root {
-    --playervis: hidden;
-    --playerfsize: 0px;
-    --playerfsizehv: 12px;
-    --playerwidthhv: 150px;
-    --playerslh: 20px;
-    --playerbennies: none;
-    --playerh3w: unset;
-    --playerbot: -8px;
-    --playerleft: -8px;
-    --playerpingdisplay: initial;
-}
-
-.minimal-ui-mode #players {
-    bottom: var(--playerbot);
-    left: var(--playerleft);
-    font-size: var(--playerfsize);
-    visibility: var(--playervis);
-    opacity: var(--opacity);
-    box-shadow:none;
-    position: absolute;
-    border: none;
-}
-
-.minimal-ui-mode #navigation #scene-list {
-    margin-left: 16px;
-}
-.minimal-ui-mode #controls ol.main-controls {
-    width: 60px;
-}
-
-
-
-/* Polyglot */
-/* https://github.com/mclemente/fvtt-module-polyglot */
-
-.polyglot-lang-select label {
-    display: none;
-}
-.polyglot-lang-select input {
-    margin: 3px 5px;
-}
-.polyglot-lang-select input:checked {
-    accent-color: var(--color-cool-5-50);
-}
-.polyglot-user-list {
-    max-width: unset;
-}
-.polyglot-user-list div {
-    display: flex;
-    flex: 1 0;
-    max-width: 15px;
-    border-radius: unset;
-    border: 1px solid var(--background);
-    margin: unset;
-    box-shadow: 1px 1px 2px -1px var(--color-warm-1);
-}
-.select2-container--default .select2-selection--single .select2-selection__rendered {
-    color: var(--pfui-main-grey-color)!important;
-}
-.polyglot-lang-select .select2-container--default .select2-selection--single .select2-selection__arrow b {
-    border-color: var(--pfui-main-color) transparent transparent transparent;
-}
-.polyglot-lang-select span.select2-selection {
-    font-family: Taroca;
-    font-size: 14px;
-    text-align: center;
-    position: relative;
-    bottom: 1px;
-    border: 1px solid #000;
-    background: radial-gradient(var(--color-cool-5-50), transparent);
-    border: 1px solid var(--color-cool-5);
-    box-shadow: var(--glassy);
-    border-radius: var(--border-radius);
-    backdrop-filter: blur(5px);
-    transition: text-shadow 0.15s ease-in-out, background-color 0.15s ease-in-out, border 0.15s ease-in-out, color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, backdrop-filter 0.15s ease-in-out, border-radius 0.15s;
-}
-.select2-search--dropdown {
-    background: var(--background);
-    border: 1px solid var(--color-cool-5);
-    box-shadow: var(--glassy);
-    border-radius: var(--border-radius);
-}
-.select2-container--default .select2-search--dropdown .select2-search__field {
-    color: var(--pfui-main-color);
-    background: radial-gradient(var(--color-cool-4), var(--glass-bg-dark));
-    border:none;
-    border-top: 1px solid var(--color-warm-1);
-    border-bottom: 1px solid var(--color-warm-1);
-    box-shadow: var(--glassy);
-    text-shadow: 0 0 1px black;
-    border-radius: var(--border-radius-5);
-    backdrop-filter: blur(5px);
-}
-.select2-container--default .select2-results>.select2-results__options {
-    color: var(--pfui-main-color);
-    background: var(--background);
-box-shadow: var(--box-shadow-light);
-}
-.select2-container--default .select2-results__option--selected {
-    color: var(--pfui-main-color);
-    border:none;
-    border-top: 1px solid var(--color-warm-1);
-    border-bottom: 1px solid var(--color-warm-1);
-    background: none;
-    background: radial-gradient(var(--color-cool-3), var(--glass-bg-dark));
-box-shadow: var(--box-shadow-light);
-    text-shadow: 0 0 3px black;
-    border-radius: var(--border-radius-5);
-}
-.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
-    color: var(--pfui-main-color);
-    border: none;
-    background: none;
-    background: radial-gradient(var(--color-cool-4), var(--glass-bg-dark));
-box-shadow: var(--box-shadow-light);
-    text-shadow: 0 0 3px black;
-    border-radius: var(--border-radius-5);
-}
-
-
-
-/* Dice Tray */
-/* https://gitlab.com/asacolips-projects/foundry-mods/foundry-vtt-dice-calculator */
-
-.dice-tray {
-    position: relative;
-    padding: 0 4px;
-}
-
-.dice-tray button svg * {
-    fill: var(--pfui-main-grey-color);
-}
-
-.dice-tray button {
-    background: radial-gradient(var(--color-cool-5-50), transparent);
-    border: 1px solid var(--color-cool-5);
-    box-shadow: var(--glassy);
-    color: var(--pfui-main-grey-color);
-    backdrop-filter: blur(5px);
-    border-radius: var(--border-radius);
-}
-.dice-tray input[type="text"] {
-    background: radial-gradient(var(--color-cool-5-50), transparent);
-box-shadow: var(--box-shadow-light);
-}
-.dice-calculator > button, .dice-calculator .dice-calculator--button {
-    color: var(--pfui-main-color)
-}
-
-
-
-/* Damage Log */
-/* https://github.com/cs96and/FoundryVTT-damage-log */
-/* Tabbed Chatlog */
-/* https://github.com/cswendrowski/FoundryVTT-Tabbed-Chatlog */
-
-nav.damage-log-nav.tabs,
-.tabbedchatlog.tabs {
-    position: relative;
-    box-shadow: none;
-    border: none;
-}
-
-.tabbedchatlog.tabs {
-    padding: 0 10px;
-}
-
-nav.damage-log-nav.tabs::before,
-.tabbedchatlog.tabs::before {
-    content: " ";
-    position: absolute;
-    width: 317px;
-    z-index: 10;
-    left: -2px;
-    height: 7px;
-    bottom: -7px;
-    background: url(../ui/frames/brown_line.webp);
-    background-size: 317px 7px;
-}
-
-nav.damage-log-nav .item,
-.tabbedchatlog .item {
-    position: relative;
-}
-
-nav.damage-log-nav .item.active,
-.tabbedchatlog .item.active {
-    border: none;
-    box-shadow: none;
-}
-
-nav.damage-log-nav .item:before,
-.tabbedchatlog .item:before {
-    position: absolute;
-    content: ' ';
-    background: url(../ui/frames/red_line.webp);
-    width: 70%;
-    height: 3px;
-    bottom: -3px;
-    z-index: 10;
-    left: 15%;
-    opacity: 0;
-    transition-property: opacity;
-    transition-duration: 0.3s;
-}
-
-nav.damage-log-nav .item.active:before,
-.tabbedchatlog .item.active:before {
-    opacity: 1;
-}
-
-
-/* Smalltime */
-/* https://github.com/unsoluble/smalltime */
-#smalltime-app .window-content {
-    box-shadow: var(--box-shadow-light);
-    filter: drop-shadow(2px 4px 6px var(--color-cool-5));
-    border-radius: var(--border-radius);
-}
-#smalltime-app #slideContainer {
-    box-shadow: var(--box-shadow-light);
-    border-radius: var(--border-radius-5);
-}
-#smalltime-app.show-date #dateDisplay {
-    background: var(--color-cool-5);
-    box-shadow: var(--box-shadow-light);
-    border: none;
-    color: var(--color-warm-1);
-    border-radius: var(--border-radius);
-}
-#smalltime-app #timeDisplay {
-    background: var(--color-cool-5);
-    border: none;    
-    color: var(--green);
-}
-#smalltime-app #timeDisplay:hover {
-    color: var(--color-warm-1);
-}
-#smalltime-app #dragHandle {
-    background: var(--color-cool-5);
-    box-shadow: var(--box-shadow-light);
-    border: none;
-    color: var(--pfui-main-color);
-    border-radius: var(--border-radius);
-}
-#smalltime-app #displayContainer {
-    background: var(--color-cool-5);
-    box-shadow: var(--box-shadow-light);
-    border: none;
-    color: var(--pfui-main-color);
-    border-radius: var(--border-radius);
-}
-#smalltime-app .arrow-right {
-    background: var(--color-cool-5);
-    box-shadow: var(--box-shadow-light);
-    border: none;
-    color: var(--pfui-main-color);
-    border-radius: var(--border-radius);
-    padding-top: 2px;
-}
-#smalltime-app .arrow-right:hover {
-    color: var(--color-cool-5);
-    background: var(--green);
-    padding-top: 2px;
-}
-#smalltime-app .arrow-left {
-    background: var(--color-cool-5);
-    box-shadow: var(--box-shadow-light);
-    border: none;
-    color: var(--pfui-main-color);
-    border-radius: var(--border-radius);
-    padding-top: 2px;
-}
-#smalltime-app .arrow-left:hover {
-    color: var(--color-cool-5);
-    background: var(--green);
-    padding-top: 2px;
-}
-
-
-/* Roll Tracker */
-/* https://github.com/drexl93/roll-tracker */
-.roll-tracker-comparison-card-heading {
-    text-transform: uppercase;
-    text-align: center;
-    color: antiquewhite;
-    border-bottom: 2px dotted var(--color-cool-3);
-}
-.roll-tracker-comparison-card-stat-heading {
-    text-transform: uppercase;
-    text-align: center;
-    text-decoration: unset;
-    color: var(--color-warm-1);
-    border-bottom: 2px dotted var(--color-cool-3);
-}
-.roll-tracker-comparison-card-goodstat {
-    text-transform: uppercase;
-    color: var(--green);
-}
-.roll-tracker-comparison-card-badstat {
-    text-transform: uppercase;
-    color: var(--color-warm-2);
-}
-.roll-tracker-comparison-card-strong {
-    color: var(--green);
-}
-.roll-tracker-comparison-card-italics {
-    color: antiquewhite;
-}
-.roll-tracker-comparison-card-li {
-    color: antiquewhite;
-}
-.roll-tracker-comparison-card-subli {
-    color: var(--pfui-main-color);
 }

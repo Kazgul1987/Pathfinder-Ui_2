@@ -5,13 +5,14 @@
 
 
 
-## v11.313.13.4
+## v11.313.13.5
 - Update core code.
 - Update Ui color harmonization.
 - Improve Dark Theme.
 - Improve compatibility with Interactive Token Tooltip.
 - Improve compatibility with PF2e Target Damage.
 - Improve compatibility with Monk Hotbar Expansion.
+- Improve compatibility with PF2e Toolbelt.
 
 ## v11.313.12.1
 - Update core code.

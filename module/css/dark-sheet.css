@@ -358,6 +358,7 @@
 
 .actor.sheet.character.dark-theme .crb-style select {
     background-color: var(--color-cool-4);
+    box-shadow: var(--box-shadow-light);
 }
 
 .actor.sheet.character.dark-theme input {
@@ -737,7 +738,7 @@ color: var(--green)!important;
 /* Proficiencies
 *************************/
 .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.proficiencies .skills-list .skill, .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.proficiencies .lores-list .skill, .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.proficiencies .combat-list .skill {
-    background: var(--color-cool-5);
+    background: linear-gradient(45deg, var(--color-cool-4), var(--color-cool-5-75));
     box-shadow: var(--box-shadow);
     border: none;
     color: var(--pfui-main-grey-color);

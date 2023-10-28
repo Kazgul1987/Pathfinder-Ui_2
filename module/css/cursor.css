@@ -1,33 +1,29 @@
 /*************************************************************/
 /* ======================= Cursor ========================== */
 /*************************************************************/
-#hud {
-    cursor: url(../ui/cursors/normal.webp), default;
-}
-#hud > * {
-    cursor: url(../ui/cursors/pointer.webp), pointer;
-}
-canvas#board.rpg-ui-hover-token {
-    cursor: url(../ui/cursors/pointer.webp), pointer!important;
-}
-.chat-card-button {
-    cursor:url(../ui/cursors/pointer.webp), pointer;
+
+a{
+    cursor:url(../ui/cursors/pointer.webp), pointer; 
 }
 
 body {
     cursor:url(../ui/cursors/normal.webp), default; 
 }
-
 body:not(.background) {
     cursor:url(../ui/cursors/normal.webp), default; 
 }
-
 body.game {
     cursor:url(../ui/cursors/normal.webp), default; 
 }
+button {
+    cursor:url(../ui/cursors/pointer.webp), pointer;
+}
 
-a{
-    cursor:url(../ui/cursors/pointer.webp), pointer; 
+canvas#board.rpg-ui-hover-token {
+    cursor: url(../ui/cursors/pointer.webp), pointer!important;
+}
+.chat-card-button {
+    cursor:url(../ui/cursors/pointer.webp), pointer;
 }
 
 .draggable{
@@ -37,10 +33,36 @@ a{
 #hotbar .macro{
     cursor:url(../ui/cursors/pointer.webp), pointer; 
 }
+.hover {
+    cursor:url(../ui/cursors/pointer.webp), pointer; 
+}
+#hud {
+    cursor: url(../ui/cursors/normal.webp), default;
+}
+#hud > * {
+    cursor: url(../ui/cursors/pointer.webp), pointer;
+}
+img {
+    cursor: url(../ui/cursors/pointer.webp), pointer;
+}
+input[type="checkbox"] {
+    cursor: url(../ui/cursors/pointer.webp), pointer;
+}
 
 #players {
     cursor:url(../ui/cursors/pointer.webp), pointer;
 }
+
+select {
+    cursor: url(../ui/cursors/pointer.webp), pointer;
+}
+.sheet img[data-edit] {
+    cursor: url(../ui/cursors/pointer.webp), pointer;
+}
+option, optgroup {
+    cursor:url(../ui/cursors/pointer.webp), pointer;
+}
+
 #token {
     cursor:url(../ui/cursors/pointer.webp), pointer;
 }
@@ -96,6 +118,9 @@ a{
 .app.window-app .form-group input[type="range"]::-webkit-slider-thumb {
     cursor:url(../ui/cursors/pointer.webp), pointer;
 }
+.window-app .window-header .window-title .document-id-link {
+    cursor:url(../ui/cursors/pointer.webp), pointer;
+}
 
 .token-sheet .tab[data-tab="image"] input[type="range"]::-webkit-slider-thumb {
     cursor:url(../ui/cursors/pointer.webp), pointer;
@@ -136,6 +161,9 @@ form button {
 #chat-controls .roll-type-select {
     cursor:url(../ui/cursors/pointer.webp), pointer;
 }
+.sheet.journal-entry article img:not(.nopopout) {
+    cursor:url(../ui/cursors/pointer.webp), pointer;
+}
 
 
 /*PF2e System*/
@@ -160,6 +188,80 @@ form button {
 .placeable-hud .control-icon {
     cursor: url(../ui/cursors/pointer.webp), pointer;
 }
+.actor.sheet.character .crb-style .sheet-body .sheet-content h3.header button.has-unallocated {
+    cursor: url(../ui/cursors/pointer.webp), pointer;
+}
+.actor.sheet .crb-style aside .sidebar_title .modifiers_button, .actor.sheet .crb-style aside .sidebar_title h2 {
+    cursor: url(../ui/cursors/pointer.webp), pointer;
+}
+.actor.sheet .crb-style aside .sidebar a.dots > * {
+    cursor: url(../ui/cursors/pointer.webp), pointer;
+}
+.crb-style .dots span {
+    cursor: url(../ui/cursors/pointer.webp), pointer;
+}
+.crb-style select:not(:disabled) {
+    cursor: url(../ui/cursors/pointer.webp), pointer;
+}
+.actor.sheet .crb-style aside .sidebar a.roll-icon.disabled {
+    cursor:url(../ui/cursors/normal.webp), default;
+}
+.actor.sheet.character .crb-style .pf-rank {
+    cursor: url(../ui/cursors/pointer.webp), pointer;
+}
+.actor.sheet .crb-style .sheet-body .sheet-content .tab.actions ol.actions-list li.action .item-name .actions-title .action-name > h4, .actor.sheet .crb-style .sheet-body .sheet-content .tab.actions ol.actions-list li.strike .item-name .actions-title .action-name > h4 {
+    cursor: url(../ui/cursors/pointer.webp), pointer;
+}
+.actor.sheet .crb-style .sheet-body .sheet-content .tab.actions ol.actions-list li.action .item-name h4, .actor.sheet .crb-style .sheet-body .sheet-content .tab.actions ol.actions-list li.strike .item-name h4 {
+    cursor: url(../ui/cursors/pointer.webp), pointer;
+}
+.currency li > button {
+    cursor: url(../ui/cursors/pointer.webp), pointer;
+}
+.actor.sheet .inventory .item-name h3, .actor.sheet .inventory .item-name h4 {
+    cursor: url(../ui/cursors/pointer.webp), pointer;
+}
+.actor.sheet .item-image {
+    cursor: url(../ui/cursors/pointer.webp), pointer;
+}
+.attribute-builder .window-content .row-column button.selected {
+    cursor: url(../ui/cursors/pointer.webp), pointer;
+}
+.attribute-builder .window-content .row-column button.boost, .attribute-builder .window-content .row-column button.apex {
+    cursor: url(../ui/cursors/pointer.webp), pointer;
+}
+.actor.sheet.character .crb-style .sheet-body .sheet-content h3.header button {
+    cursor: url(../ui/cursors/pointer.webp), pointer;
+}
+.actor.sheet.character .crb-style .sheet-body .sheet-content .tab.feats .feat-item .item-name h4 {
+    cursor: url(../ui/cursors/pointer.webp), pointer;
+}
+.actor.sheet .crb-style .sheet-body .sheet-content ol.spell-list > li .item-name h4 {
+    cursor: url(../ui/cursors/pointer.webp), pointer;
+}
+.actor.sheet.character .crb-style .sheet-body .sheet-content .tab.proficiencies h6 {
+    cursor: url(../ui/cursors/pointer.webp), pointer;
+}
+.actor.sheet .crb-style .sheet-body .sheet-content ol.spell-list > li button.cast-spell {
+    cursor: url(../ui/cursors/pointer.webp), pointer;
+}
+.actor.sheet.character .crb-style .sheet-body .sheet-content .tab.proficiencies .skills-list .skill .skill-score, .actor.sheet.character .crb-style .sheet-body .sheet-content .tab.proficiencies .lores-list .skill .skill-score, .actor.sheet.character .crb-style .sheet-body .sheet-content .tab.proficiencies .combat-list .skill .skill-score {
+    cursor: url(../ui/cursors/pointer.webp), pointer;
+}
+.actor.sheet.character .crb-style .sheet-body .sheet-content .tab.proficiencies .skills-list .skill, .actor.sheet.character .crb-style .sheet-body .sheet-content .tab.proficiencies .lores-list .skill, .actor.sheet.character .crb-style .sheet-body .sheet-content .tab.proficiencies .combat-list .skill {
+    cursor: url(../ui/cursors/pointer.webp), pointer;
+}
+.actor.sheet.character .crb-style .sheet-body .sheet-content .tab.proficiencies h1, .actor.sheet.character .crb-style .sheet-body .sheet-content .tab.proficiencies h4, .actor.sheet.character .crb-style .sheet-body .sheet-content .tab.proficiencies h6 {
+    cursor: url(../ui/cursors/pointer.webp), pointer;
+}
+.actor.sheet .crb-style .sheet-body .sheet-content .tab.actions ol.actions-list li.action .item-name .item-image, .actor.sheet .crb-style .sheet-body .sheet-content .tab.actions ol.actions-list li.strike .item-name .item-image {
+    cursor: url(../ui/cursors/pointer.webp), pointer;
+}
+
+
+
+
+
 
 /* DF Chat Enhancements */
 /* https://github.com/flamewave000/dragonflagon-fvtt/tree/master/df-chat-enhance */
@@ -192,6 +294,60 @@ form button {
     cursor: url(../ui/cursors/pointer.webp), pointer;
 }
 
+
+
+/*PF2e Interactive Token Tooltip*/
+/* https://github.com/reonZ/pf2e-token-hud */
+#pf2e-token-hud .sidebar .sidebar-content .variants .variant {
+    cursor:url(../ui/cursors/pointer.webp), pointer;
+}
+#pf2e-token-hud a.disabled {
+    cursor:url(../ui/cursors/pointer.webp), pointer;
+}
+#pf2e-token-hud .sidebar .sidebar-content .item-img img {
+    cursor:url(../ui/cursors/pointer.webp), pointer;
+}
+
+
+
+/* Monk's hotbar expansion */
+/* https://foundryvtt.com/packages/monks-hotbar-expansion */
+#hotbar .action-bar.no-arrows + .bar-controls span.page-number, #hotbar .hotbar-page .bar-controls span.page-number, #hotbar .hotbar-page .bar-controls i {
+    cursor: url(../ui/cursors/pointer.webp), pointer;
+}
+
+
+
+
+/* Monk's TokenBar */
+/* https://github.com/ironmonk88/monks-tokenbar */
+#tokenbar .bar-controls div#tokenbar-move-handle {
+    cursor:url(../ui/cursors/drag.webp), move;
+}
+#tokenbar:not(.hidectrl) .bar-controls .tokenbar-buttons div i {
+    cursor:url(../ui/cursors/pointer.webp), pointer;
+}
+#requestsavingthrow .request-grid > div {
+    cursor:url(../ui/cursors/pointer.webp), pointer;
+}
+#requestsavingthrow .request-grid > div.selected {
+    cursor:url(../ui/cursors/pointer.webp), pointer;
+}
+#tokenbar .bar-controls > div > .toggle-collapse {
+    cursor:url(../ui/cursors/pointer.webp), pointer;
+}
+
+
+
+/* Monk's Little Details */
+/*https://github.com/ironmonk88/monks-little-details*/
+.window-app .window-header .window-title .document-image-link {
+    cursor:url(../ui/cursors/pointer.webp), pointer;
+}
+
+
+
+
 /* Polyglot */
 /* https://github.com/mclemente/fvtt-module-polyglot */
 .polyglot-lang-select span.select2-selection {
@@ -207,14 +363,15 @@ form button {
     cursor:url(../ui/cursors/pointer.webp), pointer;
 }
 
-/*PF2e Interactive Token Tooltip*/
-/* https://github.com/reonZ/pf2e-token-hud */
-#pf2e-token-hud .sidebar .sidebar-content .variants .variant {
+
+/* Smalltime */
+/* https://github.com/unsoluble/smalltime */
+#smalltime-app .arrow-right {
     cursor:url(../ui/cursors/pointer.webp), pointer;
 }
-#pf2e-token-hud a.disabled {
+#smalltime-app #timeDisplay {
     cursor:url(../ui/cursors/pointer.webp), pointer;
 }
-#pf2e-token-hud .sidebar .sidebar-content .item-img img {
+#smalltime-app .arrow-left {
     cursor:url(../ui/cursors/pointer.webp), pointer;
 }
