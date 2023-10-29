@@ -53,5 +53,8 @@
     "RPGUI.SETTINGS.MINIMAL_UI_HINT": "Behebt einige (nicht alle) Probleme mit dem minimalen UI",
 
     "RPGUI.SETTINGS.DISABLE_STYLES": "Deaktiviere Pathfinder UI",
-    "RPGUI.SETTINGS.DISABLE_STYLES_HINT": "Dies ist eine lokale Einstellung, mit der jeder Spieler Stile deaktivieren kann"
+    "RPGUI.SETTINGS.DISABLE_STYLES_HINT": "Dies ist eine lokale Einstellung, mit der jeder Spieler Stile deaktivieren kann",
+
+    "RPGUI.SETTINGS.EnableAllianceViewerTitle": "Show the actor's alliance in the SideBar",
+    "RPGUI.SETTINGS.EnableAllianceViewerHint": "Displays a colored dot allowing you to easily see the alliance to which an actor belongs"
 }

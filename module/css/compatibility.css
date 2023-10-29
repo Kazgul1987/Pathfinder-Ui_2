@@ -262,6 +262,14 @@
 
 
 
+/* Module Management + */
+/* https://github.com/mouse0270/module-credits */
+.dialog-content textarea#module-credits-copy-export {
+    background-color: var(--background)!important;
+}
+
+
+
 
 /* Monk's hotbar expansion */
 /* https://foundryvtt.com/packages/monks-hotbar-expansion */

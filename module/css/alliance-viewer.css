@@ -1,3 +1,10 @@
+:root {
+  --color-warm-1: #ee9b3a;
+  --green: #91a82a;
+  --red-light:#ff0000;
+}
+
+
 div.pfui-alliance-viewer {
   max-width: max-content;
   line-height: initial;
@@ -8,7 +15,7 @@ div.pfui-alliance-viewer {
 }
 
 .pfui-alliance-viewer.alliance-default {
-  background-color: yellow;
+  background-color: var(--color-warm-1);
 }
 
 .pfui-alliance-viewer.alliance-neutral {
@@ -16,9 +23,9 @@ div.pfui-alliance-viewer {
 }
 
 .pfui-alliance-viewer.alliance-party {
-  background-color: green;
+  background-color: var(--green);
 }
 
 .pfui-alliance-viewer.alliance-opposition {
-  background-color: red;
+  background-color: var(--red-light);
 }

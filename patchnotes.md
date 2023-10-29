@@ -5,6 +5,11 @@
 
 
 
+## v11.313.14
+- Update core code.
+- Add new function : Show the actor's alliance in the SideBar.
+- Thanks at @DjLeChuck for the great work.
+
 ## v11.313.13.5
 - Update core code.
 - Update Ui color harmonization.
