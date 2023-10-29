@@ -1,0 +1,24 @@
+div.pfui-alliance-viewer {
+  max-width: max-content;
+  line-height: initial;
+  min-width: 10px;
+  min-height: 10px;
+  margin: auto 2px auto 2px;
+  border-radius: 50%;
+}
+
+.pfui-alliance-viewer.alliance-default {
+  background-color: yellow;
+}
+
+.pfui-alliance-viewer.alliance-neutral {
+  background-color: cyan;
+}
+
+.pfui-alliance-viewer.alliance-party {
+  background-color: green;
+}
+
+.pfui-alliance-viewer.alliance-opposition {
+  background-color: red;
+}

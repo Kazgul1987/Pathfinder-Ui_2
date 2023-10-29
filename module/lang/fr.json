@@ -64,5 +64,8 @@
     "RPGUI.SETTINGS.ReplaceButtonsHint": "Restylez les autres boutons de chat pour qu'ils aient la même apparence que les nouveaux boutons de jet.",
 
     "RPGUI.SETTINGS.OPEN_SHEET_ON_CHAT_CLICK_TEXT": "Ouvrir la feuille au clic du nom dans le chat",
-    "RPGUI.SETTINGS.OPEN_SHEET_ON_CHAT_CLICK_TEXT_HINT": "(Local) Ouvre la feuille de l’acteur au clic de son nom dans le chat"
+    "RPGUI.SETTINGS.OPEN_SHEET_ON_CHAT_CLICK_TEXT_HINT": "(Local) Ouvre la feuille de l’acteur au clic de son nom dans le chat",
+
+    "RPGUI.SETTINGS.EnableAllianceViewerTitle": "Afficher l’alliance de l’acteur dans la SideBar",
+    "RPGUI.SETTINGS.EnableAllianceViewerHint": "Affiche une pastille de couleur permettant de facilement voir l’alliance à laquelle appartient un acteur"
 }

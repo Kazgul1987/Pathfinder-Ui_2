@@ -1,4 +1,5 @@
 import ChatRollPrivacy from './chat-roll-privacy.js';
+import AllianceViewer from './alliance-viewer.js';
 
 Hooks.on('ready', async () => {
     // Retrait de la classe de Monk's Little Details
@@ -181,6 +182,7 @@ Hooks.on('init', () => {
 	if (game.settings.get('pathfinder-ui', 'minimalUICompatibility')) { addClassByQuerySelector('minimal-ui-mode', 'body.vtt') }
 
 	ChatRollPrivacy.init();
+	AllianceViewer.init();
 });
 
 Hooks.once('setup', function () {
