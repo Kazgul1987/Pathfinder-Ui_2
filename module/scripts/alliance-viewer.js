@@ -36,7 +36,7 @@ export default class AllianceViewer {
       const document = collection.get(li.attr('data-document-id'));
 
       if (!['character', 'npc'].includes(document.type)) {
-        return;
+        continue;
       }
 
       const alliance = AllianceViewer.#getDocumentAlliance(document);
