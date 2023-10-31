@@ -19,6 +19,9 @@
     "RPGUI.SETTINGS.DARKKINGDOMSHEET":"Feuille de Royaume",
     "RPGUI.SETTINGS.DARKKINGDOMSHEET_HINT":"Permet de choisir entre la feuille originale ou sombre.",
 
+    "RPGUI.SETTINGS.DARKJOURNAL":"Choisissez votre Journal",
+    "RPGUI.SETTINGS.DARKJOURNAL_HINT":"Permet de choisir entre le journal Original, custom ou custom sombre.",
+
     "RPGUI.SETTINGS.TOKEN_EFFECT_HUD": "Afficher les Conditions en cercle ?",
     "RPGUI.SETTINGS.TOKEN_EFFECT_HUD_HINT": "Place les effets en cercle et les arrange à l'extérieur du jeton ou sur le pourtour du jetons pour les jetons plus grands",
 
@@ -41,13 +44,10 @@
     "RPGUI.SETTINGS.STANDARD_LOGO_HINT": "Remet le logo Foundry au lieu du logo texte.",
 
     "RPGUI.SETTINGS.JOURNAL_SHEET": "Désactiver la texture parcheminée des journaux.",
-    "RPGUI.SETTINGS.JOURNAL_SHEET_HINT": "Désactive l'aspect parcheminé dans les pages du journal.",
+    "RPGUI.SETTINGS.JOURNAL_SHEET_HINT": "Désactive l'aspect parcheminé des pages du journal. (L'aspect parcheminé ne fonctionne qu'avec la version Originale du journal)",
 
     "RPGUI.SETTINGS.JOURNAL_CURSOR": "Désactiver les curseurs RPG.",
     "RPGUI.SETTINGS.JOURNAL_CURSOR_HINT": "Désactive les curseurs de type jeux vidéos RPG dans l'interface.",
-
-    "RPGUI.SETTINGS.CUSTOM_CSS": "Désactiver le style PF2e dans les journaux.",
-    "RPGUI.SETTINGS.CUSTOM_CSS_HINT": "Désactive la mise en page et les polices PF2e dans les journaux, pour revenir à celle de Foundry.",
 
     "RPGUI.SETTINGS.MINIMAL_UI": "Support pour Minimal UI.",
     "RPGUI.SETTINGS.MINIMAL_UI_HINT": "Corrige certains (pas tous) des problèmes liés à Minimal Ui.",

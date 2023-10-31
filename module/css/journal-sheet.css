@@ -7,6 +7,39 @@
     --journal-sheet-red:#5d180d;
     --custom-trait:#61180e;
 	--custom-green: #002a17;
+
+/* Foundry2
+====================================================== */
+    --color-warm-1: #ee9b3a;
+    --color-warm-2: #c9593f;
+    --color-warm-3: #5d142b;
+    --color-cool-3: #584a75;
+    --color-cool-4: #302831;
+    --color-cool-5: #0b0a13;
+    --color-cool-5-25: rgba(11, 10, 19, 0.25);
+    --color-cool-5-50: rgba(11, 10, 19, 0.5);
+    --color-cool-5-75: rgba(11, 10, 19, 0.75);
+    --color-cool-5-90: rgba(11, 10, 19, 0.9);
+    --color-light-1: #f7f3e8;
+    --color-light-2: #efe6d8;
+    --color-light-3: #e7d1b1;
+    --color-light-4: #d0b8a3;
+    --color-light-5: #9f8475;
+    --color-light-6: #816b66;
+    --color-level-error: #ce0707;
+    --color-level-error-bg: rgba(105, 0, 8, 0.8);
+    --color-level-error-border: #750003;
+    --color-level-info: #59a1f6;
+    --color-level-info-bg: rgba(47, 80, 132, 0.8);
+    --color-level-info-border: #5c87b9;
+    --color-level-success: #26b231;
+    --color-level-success-bg: rgba(26, 107, 34, 0.8);
+    --color-level-success-border: #1b8f23;
+    --color-level-warning: #ee9b3a;
+    --color-level-warning-bg: rgba(214, 150, 0, 0.8);
+    --color-level-warning-border: #b18404;
+    --color-scrollbar: #5d142b;
+    --color-scrollbar-border: #8d151b;
 }
 
 @font-face {
@@ -231,18 +264,14 @@
     text-indent: 0rem;
     font-family: "FF Good Pro X Cond-Regular";
     font-weight: bold;
-    font-size: 1.2em;
-    text-transform: uppercase;
 }
 .sheet.journal-entry .pages-list .h2 .heading-link {
     text-indent: 0.5rem;
     font-family: "FF Good Pro X Cond-Regular";
-    font-size: 1.15em;
 }
 .sheet.journal-entry .pages-list .h3 .heading-link {
     text-indent: 0.5rem;
     font-family: "FF Good Pro X Cond-Regular";
-    font-size: 1.15em;
 }
 
 .sheet.journal-entry .journal-sidebar .action-buttons {
@@ -253,12 +282,12 @@
     font-weight: bold;
 }
 .sheet.journal-entry .pages-list .page-heading .page-title {
-color:var(--custom-green);
-font-weight: bold;
+    color: var(--color-warm-3);
+    font-weight: bold;
 }
 .sheet.journal-entry .pages-list .page-heading .page-title:hover {
-color:var(--custom-green) !important;
-font-weight: bold;
+    color:var(--custom-green) !important;
+    font-weight: bold;
 }
 .sheet.journal-entry .pages-list .h2 .heading-link {
     color:var(--custom-green);
@@ -269,15 +298,15 @@ font-weight: bold;
     font-weight: bold;
 }
 .sheet.journal-entry .pages-list .page-heading {
-color:var(--custom-green);
-font-weight: bold;
+    color:var(--custom-green);
+    font-weight: bold;
 }
 .sheet.journal-entry .journal-sidebar .directory-header .view-mode {
-color:var(--custom-green);
+    color:var(--custom-green);
 }
 .directory .directory-header .header-search input {
-background: none;
-color: var(--main-text-light-color);
+    background: none;
+    color: var(--main-text-light-color);
 }
 .sheet.journal-entry .journal-sidebar .directory-header .header-search input {
     color:var(--custom-green);
@@ -285,7 +314,7 @@ color: var(--main-text-light-color);
     font-weight: bold;
 }
 .sheet.journal-entry .journal-sidebar .directory-header .collapse-toggle {
-color:var(--custom-green);
+    color:var(--custom-green);
 }
 .sheet.journal-entry .journal-entry-content {
     flex: 1;

@@ -83,17 +83,7 @@ Hooks.on('init', () => {
 			location.reload();
 		}
 	});
-	game.settings.register('pathfinder-ui', 'customCss', {
-		name: game.i18n.localize('RPGUI.SETTINGS.CUSTOM_CSS'),
-		hint: game.i18n.localize('RPGUI.SETTINGS.CUSTOM_CSS_HINT'),
-		scope: "client",
-		type: Boolean,
-		default: false,
-		config: true,
-		onChange: () => {
-			location.reload();
-		}
-	});
+
 	game.settings.register('pathfinder-ui', 'journalSheet', {
 		name: game.i18n.localize('RPGUI.SETTINGS.JOURNAL_SHEET'),
 		hint: game.i18n.localize('RPGUI.SETTINGS.JOURNAL_SHEET_HINT'),
@@ -176,7 +166,6 @@ Hooks.on('init', () => {
 	if (!game.settings.get('pathfinder-ui', 'disableAllStyles')) { rpgUIAddMainCss() }
     if (game.settings.get('pathfinder-ui', 'adjustTokenEffectsHudToggle')) { rpgUIAddTokenEffectsHud() }
 	if (!game.settings.get('pathfinder-ui', 'tokenHud')) { rpgUIAddTokenHud() }
-	if (!game.settings.get('pathfinder-ui', 'customCss')) { rpgUIAddCustomCss() }
 	if (!game.settings.get('pathfinder-ui', 'journalSheet')) { rpgUIAddJournalSheet() }
 	if (!game.settings.get('pathfinder-ui', 'cursor')) { rpgUIAddCursor() }
 	if (game.settings.get('pathfinder-ui', 'minimalUICompatibility')) { addClassByQuerySelector('minimal-ui-mode', 'body.vtt') }
@@ -246,15 +235,6 @@ function rpgUIAddTokenHud() {
 	mainCss.setAttribute("rel", "stylesheet")
 	mainCss.setAttribute("type", "text/css")
 	mainCss.setAttribute("href", "modules/pathfinder-ui/css/hud.css")
-	mainCss.setAttribute("media", "all")
-	head.insertBefore(mainCss, head.lastChild);
-}
-function rpgUIAddCustomCss() {
-	const head = document.getElementsByTagName("head")[0];
-	const mainCss = document.createElement("link");
-	mainCss.setAttribute("rel", "stylesheet")
-	mainCss.setAttribute("type", "text/css")
-	mainCss.setAttribute("href", "modules/pathfinder-ui/css/custom.css")
 	mainCss.setAttribute("media", "all")
 	head.insertBefore(mainCss, head.lastChild);
 }

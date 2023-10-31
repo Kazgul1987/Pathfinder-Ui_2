@@ -5,6 +5,11 @@
 
 
 
+## v11.313.15
+- Update core code.
+- Add new function : Select your Journal Sheet.
+    - Now, you can choose between Original, Custom or Dark Custom.
+
 ## v11.313.14
 - Update core code.
 - Add new function : Show the actor's alliance in the SideBar.

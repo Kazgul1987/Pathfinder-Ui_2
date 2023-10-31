@@ -19,6 +19,9 @@
     "RPGUI.SETTINGS.DARKKINGDOMSHEET":"Kingdom Sheet Color",
     "RPGUI.SETTINGS.DARKKINGDOMSHEET_HINT":"Select original or dark sheet.",
 
+    "RPGUI.SETTINGS.DARKJOURNAL":"Select your journal sheet",
+    "RPGUI.SETTINGS.DARKJOURNAL_HINT":"Select original, custom or dark custom sheet.",
+
     "RPGUI.SETTINGS.TOKEN_EFFECT_HUD": "Adjust token effects HUD?",
     "RPGUI.SETTINGS.TOKEN_EFFECT_HUD_HINT": "Makes effects circular and arranges them outside the token, or on the token ring for larger tokens",
    
@@ -45,9 +48,6 @@
     
     "RPGUI.SETTINGS.JOURNAL_CURSOR": "Disable RPG Cursors.",
     "RPGUI.SETTINGS.JOURNAL_CURSOR_HINT": "Disable RPG Cursor style in Interface.",
-
-    "RPGUI.SETTINGS.CUSTOM_CSS": "Disable PF2e style on Journal pages",
-    "RPGUI.SETTINGS.CUSTOM_CSS_HINT": "Disable all settings and fonts on journal entries to comeback on Foundry style.",
 
     "RPGUI.SETTINGS.MINIMAL_UI": "Minimale UI Unterstützung",
     "RPGUI.SETTINGS.MINIMAL_UI_HINT": "Behebt einige (nicht alle) Probleme mit dem minimalen UI",

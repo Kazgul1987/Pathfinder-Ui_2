@@ -1,0 +1,816 @@
+/* Custom CSS - PF2 STYLE REMASTER by Sasmira */
+
+.dark-custom {
+    --custom-red: #4e0707;
+	--custom-trait:#61180e;
+	--custom-green: #002a17;
+	--custom-green-light: #365d4e;
+	--border-radius: 3px;
+
+/* Foundry2
+====================================================== */
+    --color-warm-1: #ee9b3a;
+    --color-warm-2: #c9593f;
+    --color-warm-3: #5d142b;
+    --color-cool-3: #584a75;
+    --color-cool-4: #302831;
+    --color-cool-5: #0b0a13;
+    --color-cool-5-25: rgba(11, 10, 19, 0.25);
+    --color-cool-5-50: rgba(11, 10, 19, 0.5);
+    --color-cool-5-75: rgba(11, 10, 19, 0.75);
+    --color-cool-5-90: rgba(11, 10, 19, 0.9);
+    --color-light-1: #f7f3e8;
+    --color-light-2: #efe6d8;
+    --color-light-3: #e7d1b1;
+    --color-light-4: #d0b8a3;
+    --color-light-5: #9f8475;
+    --color-light-6: #816b66;
+    --color-level-error: #ce0707;
+    --color-level-error-bg: rgba(105, 0, 8, 0.8);
+    --color-level-error-border: #750003;
+    --color-level-info: #59a1f6;
+    --color-level-info-bg: rgba(47, 80, 132, 0.8);
+    --color-level-info-border: #5c87b9;
+    --color-level-success: #26b231;
+    --color-level-success-bg: rgba(26, 107, 34, 0.8);
+    --color-level-success-border: #1b8f23;
+    --color-level-warning: #ee9b3a;
+    --color-level-warning-bg: rgba(214, 150, 0, 0.8);
+    --color-level-warning-border: #b18404;
+    --color-scrollbar: #5d142b;
+    --color-scrollbar-border: #8d151b;
+}
+
+
+
+/* POLICES
+====================================================== */
+@font-face {
+	font-family: "Taroca";
+	src: url("./systems/fonts/Taroca.ttf") format('truetype');
+}
+@font-face {
+	font-family: "Good OT";
+	src: url("./systems/fonts/GoodOT.otf") format('opentype');
+}
+@font-face {
+	font-family: "Good OT Bold";
+	src: url("./systems/fonts/GoodOT-Bold.otf") format('opentype');
+}
+@font-face {
+	font-family: "Good OT Cond Bold";
+	src: url("./systems/fonts/GoodOT-CondBold.otf") format('opentype');
+}
+@font-face {
+	font-family: "Good OT Italic";
+	src: url("./systems/fonts/GoodOT-Italic.otf") format('opentype');
+}
+@font-face {
+	font-family: "Sabon LT Std";
+	src: url("./systems/fonts/Sabon-LT-Std-Roman.otf") format('opentype');
+}
+@font-face {
+	font-family: "Sabon LT Italic";
+	src: url("./systems/fonts/Sabon-LT-Std-Italic.ttf") format('truetype');
+}
+@font-face {
+    font-family: "tauri";
+    src: url("./systems/fonts/Tauri-Regular.ttf") format('truetype');
+}
+
+
+
+/* ====================================================== */
+/* Parties communes
+========================================================= */
+
+/* SIDEBAR
+====================================================== */
+
+.dark-custom.sheet.journal-entry {
+    --sidebar-width-expanded: 256px;
+}
+.dark-custom.sheet.journal-entry .pages-list .directory-item.active:first-of-type {
+    border-top: none;
+}
+.dark-custom.sheet.journal-entry .pages-list .directory-item.active:last-of-type {
+    border-bottom: 2px solid var(--custom-green-light);
+}
+
+/* TEXTE
+====================================================== */
+
+.dark-custom .journal-entry-page {
+    font-family: "Sabon LT Std";
+}
+
+/* SYMBOLES PF2
+====================================================== */
+
+.dark-custom .journal-entry-page code {
+	font-family: "pathfinder2eactions";
+	font-style: normal;
+	font-size: 150%;
+	line-height: 66%;
+}
+
+/* BLOCS DESCRIPTIFS (via h6)
+====================================================== */
+
+.dark-custom .journal-entry-page .journal-page-content :is(h6, h6+p, h6+p+ul,
+h6+p+blockquote, h6+p+ul+blockquote) {
+	margin-left: 12px;
+	margin-right: 12px;
+	margin-top: 0;
+	margin-bottom: 0;
+	background-color: #f5efe0aa;
+}
+
+.dark-custom .journal-entry-page .journal-page-content :is(h6, h6+p) {
+	font-family: "tauri";
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 1.15em;
+}
+
+.dark-custom .journal-entry-page .journal-page-content h6 {
+	border-bottom: 1px solid black;
+	padding: 4px 12px;
+}
+
+.dark-custom .journal-entry-page .journal-page-content h6+p {
+	text-align: right;
+	position: relative;
+	bottom: 24px;
+	right: 12px;
+	height: 0;
+	margin: 0;
+	overflow: visible;
+}
+
+.dark-custom .journal-entry-page .journal-page-content h6+p+ul {
+	clear: both;
+	display: flex;
+	font-family: "Good OT";
+	font-size: 94%;
+	list-style-type: none;
+	padding: 4px 12px;
+}
+
+.dark-custom .journal-entry-page .journal-page-content h6+p+ul li {
+	color: white;
+	background-color: #58180d;
+	padding: 2px 3px;
+	border: 3px solid #dac68a;
+	border-left-width: 4px;
+	border-right-width: 4px;
+	text-transform: uppercase;
+	margin: 0;
+}
+
+/* Alignment (bold) */
+.dark-custom .journal-entry-page .journal-page-content h6+p+ul li:has(strong) {
+	background-color: #576293;
+}
+.dark-custom .journal-entry-page .journal-page-content h6+p+ul li strong {
+	font-weight: normal;
+}
+
+/* Size (italics) */
+.dark-custom .journal-entry-page .journal-page-content h6+p+ul li:has(em) {
+	background-color: #3b7b59;
+}
+.dark-custom .journal-entry-page .journal-page-content h6+p+ul li em {
+	font-style: normal;
+}
+
+/* Rarity (sub = uncommon, sup = rare, strikethrough = unique) */
+.dark-custom .journal-entry-page .journal-page-content h6+p+ul li:has(sub) {
+	background-color: #98513d;
+}
+.dark-custom .journal-entry-page .journal-page-content h6+p+ul li sub {
+	vertical-align: baseline;
+	font-size: 100%;
+}
+.dark-custom .journal-entry-page .journal-page-content h6+p+ul li:has(sup) {
+	background-color: #002664;
+}
+.dark-custom .journal-entry-page .journal-page-content h6+p+ul li sup {
+	vertical-align: baseline;
+	font-size: 100%;
+}
+.dark-custom .journal-entry-page .journal-page-content h6+p+ul li:has(s) {
+	background-color: #54166e;
+}
+.dark-custom .journal-entry-page .journal-page-content h6+p+ul li s {
+	text-decoration: none;
+}
+
+.dark-custom .journal-entry-page .journal-page-content h6+p+ul li p {
+	margin: 0;
+}
+
+.dark-custom .journal-entry-page .journal-page-content h6+p+ul+blockquote {
+	border: 0;
+	padding: 0 12px 4px 12px;
+}
+.dark-custom .journal-entry-page .journal-page-content h6+p+blockquote {
+	border: 0;
+	padding: 4px 12px 4px 12px;
+}
+
+.dark-custom .journal-entry-page .journal-page-content h6+p+ul+blockquote p,
+.dark-custom .journal-entry-page .journal-page-content h6+p+blockquote p {
+	font-family: "Good OT";
+	font-style: normal;
+	text-indent: -1em; 
+	margin-left: 1em;
+}
+
+.dark-custom .journal-entry-page .journal-page-content h6+p+ul+blockquote p *,
+.dark-custom .journal-entry-page .journal-page-content h6+p+blockquote p * {
+	text-indent: 0; 
+}
+
+.dark-custom .journal-entry-page .journal-page-content h6+p+ul+blockquote p:first-child,
+.dark-custom .journal-entry-page .journal-page-content h6+p+blockquote p:first-child {
+	margin-top: 0;
+}
+
+.dark-custom .journal-entry-page .journal-page-content h6+p+blockquote hr,
+.dark-custom .journal-entry-page .journal-page-content h6+p+ul+blockquote hr {
+	border-top: 0;
+	border-bottom: 1px solid black;
+	margin: 0;
+}
+.dark-custom .journal-entry-page .journal-page-content [data-visibility]:not([data-visibility=all])[data-visibility=gm] {
+    font-style: italic;
+    color: var(--pfui-main-color);
+    background: var(--custom-trait);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    border: none;
+}
+.dark-custom .journal-entry-page .journal-page-content [data-visibility]:not([data-visibility=all]) {
+    outline: none;
+    padding: 2px;
+}
+.dark-custom .journal-entry-page .journal-page-content [data-pf2-effect-area] {
+    font-family: "Good OT";
+    color: var(--pfui-main-color);
+    background: var(--custom-trait);
+    padding: 0px 3px;
+    border: 1px solid var(--glassy);
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+}
+.dark-custom .journal-entry-page .journal-page-content a.inline-check[data-pf2-traits*=secret], .dark-custom .journal-page-content span[data-pf2-check][data-pf2-traits*=secret] {
+	font-family: "Good OT";
+	color: var(--pfui-main-color);
+    background: var(--custom-trait);
+    padding: 0px 3px;
+    border: 1px solid var(--glassy);
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+}	
+.dark-custom .journal-entry-page .journal-page-content a.inline-check, .dark-custom .journal-page-content span[data-pf2-check] {
+	font-family: "Good OT";
+	color: var(--pfui-main-color);
+    background: var(--custom-trait);
+    padding: 0px 3px;
+    border: 1px solid var(--glassy);
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+}
+.dark-custom .journal-entry-page .journal-page-content a.inline-check, .dark-custom .journal-page-content span[data-pf2-action] {
+	font-family: "Good OT";
+	color: var(--pfui-main-color)!important;
+    background: var(--custom-trait);
+    padding: 0px 3px;
+    border: 1px solid var(--glassy);
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+}
+.journal-entry-page .journal-page-content a.content-link, .dark-custom .journal-entry-page .journal-page-content a.inline-roll {
+	font-family: 'Good OT';
+    color: var(--pfui-main-color)!important;
+    background: var(--custom-trait);
+    padding: 0px 3px;
+    border: 1px solid var(--glassy);
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+}
+
+
+/* Critical Hit/Fumble Deck */
+.dark-custom .journal-entry-page .journal-page-content .fumble-deck h1 {
+	font-family: "Taroca";
+}
+.dark-custom .journal-entry-page .journal-page-content .fumble-deck blockquote {
+	font-family: "Good OT";
+}
+.dark-custom .journal-entry-page .journal-page-content .fumble-deck code {
+	font-family: "Good OT Bold";
+}
+.dark-custom .journal-entry-page .journal-page-content .critical-deck h1 {
+	font-family: "Taroca";
+}
+.dark-custom .journal-entry-page .journal-page-content .critical-deck blockquote {
+	font-family: "Good OT";
+}
+.dark-custom .journal-entry-page .journal-page-content .critical-deck code {
+	font-family: "Good OT Bold";
+}
+
+
+
+/* ====================================================== */
+/* Custom Theme
+========================================================= */
+.light.dark-custom.sheet.journal-entry .journal-entry-content {
+    background: url(../css/assets/paperback.webp) repeat;
+}
+
+/* SIDEBAR
+====================================================== */
+.light.dark-custom.sheet.journal-entry .journal-entry-pages {
+    color: var(--color-text-dark-primary);
+}
+.light.dark-custom.sheet.journal-entry .pages-list .page-heading .page-title {
+    text-indent: 0rem;
+    font-family: "Good OT Cond Bold";
+    font-size: 1.1rem;
+}
+.light.dark-custom.sheet.journal-entry .pages-list .h2 .heading-link {
+    text-indent: 0.5rem;
+    font-family: "Good OT";
+}
+.light.dark-custom.sheet.journal-entry .pages-list .h3 .heading-link {
+    text-indent: 0.5rem;
+    font-family: "Good OT";
+}
+.light.dark-custom.sheet.journal-entry .journal-sidebar .directory-header .header-search input {
+    background: rgba(255, 255, 240, 0.8);
+    color: var(--color-text-dark-primary);
+    border: unset;
+    box-shadow: var(--glassy) , var(--box-shadow);
+}
+.light.dark-custom.sheet.journal-entry .journal-sidebar .action-buttons button.next {
+    background: rgba(255, 255, 240, 0.8);
+    color: var(--color-text-dark-primary);
+    border: 1px solid var(--color-border-light-primary);
+    box-shadow: var(--glassy) , var(--box-shadow);
+}
+.light.dark-custom.sheet.journal-entry .journal-sidebar .action-buttons button.previous {
+    background: rgba(255, 255, 240, 0.8);
+    color: var(--color-text-dark-primary);
+    border: 1px solid var(--color-border-light-primary);
+    box-shadow: var(--glassy) , var(--box-shadow);
+}
+.light.dark-custom.sheet.journal-entry .journal-sidebar .action-buttons button.create {
+    background: rgba(255, 255, 240, 0.8);
+    color: var(--color-text-dark-primary);
+    border: 1px solid var(--color-border-light-primary);
+    box-shadow: var(--glassy) , var(--box-shadow);
+}
+
+
+
+/* TITRES
+====================================================== */
+.light.dark-custom .journal-sheet .journal-header {
+    margin: 0rem;
+}
+
+.light.dark-custom.sheet.journal-entry .scrollable {
+    top: 20px;
+}
+
+.light.dark-custom.sheet.journal-entry .journal-header .title {
+    background: url(../css/assets/border-left.webp), url(../css/assets/border-right.webp), url(../css/assets/border-top.webp), url(../css/assets/border-bottom.webp), url(../css/assets/header-back-center.webp);
+    background-repeat: no-repeat, no-repeat, repeat-x, repeat-x, repeat-x;
+    background-position: -10px calc(100% + 3px), calc(100% + 10px) calc(100% + 3px), 100% 1px, 100% 100%, 100% 100%;
+    height: 90px;
+    line-height: 32px;
+    border: none;
+    text-align: center;
+	font-family: "Taroca";
+    font-size: 2.2rem;
+	color: var(--custom-green);
+    letter-spacing: -0.1rem;
+    text-transform: uppercase;
+}
+
+.light.dark-custom .journal-entry-page h1 {
+	font-family: "Taroca";
+	color: var(--custom-green);
+	letter-spacing: -0.07rem;
+	line-height: 100%;
+	border-bottom: 0;
+}
+.light.dark-custom .journal-entry-page h1:hover {
+	background-image: linear-gradient(#02256e00,#02256E00,#02256E44);
+}
+.light.dark-custom .journal-entry-page h2 {
+    font-family: "Good OT Cond Bold";
+	color: var(--custom-red);
+	letter-spacing: -0.02rem;
+	text-transform: capitalize;
+	line-height: 100%;
+	border-bottom: 0;
+}
+.light.dark-custom .journal-entry-page h2:hover {
+	background-image: linear-gradient(#4e070700,#4e070700,#4e070744);
+}
+
+.light.dark-custom .journal-entry-page h3 {
+	color: var(--custom-green-light);
+    font-family: "Good OT Cond Bold";
+	text-transform: capitalize;
+	line-height: 100%;
+	border-bottom: 0;
+}
+.light.dark-custom .journal-entry-page h3:hover {
+	background-image: linear-gradient(#ad6f5900,#ad6f5900,#ad6f5900,#ad6f5944);
+}
+
+.light.dark-custom .journal-entry-page h4 {
+    font-family: "Good OT";
+	font-variant: small-caps;
+	font-size: 132%;
+	line-height: 100%;
+	border-bottom: 0;
+	font-weight: bold;
+}
+.light.dark-custom .journal-entry-page h4:hover {
+	background-image: linear-gradient(#02256e00,#02256e00,#02256e00,#02256e44);
+}
+
+.light.dark-custom .journal-entry-page h5 {
+	line-height: 100%;
+	font-variant: small-caps;
+	font-size: var(--font-size-14);
+	border-bottom: 0;
+	margin-bottom: 0;
+}
+.light.dark-custom .journal-entry-page h5:hover {
+	background-image: linear-gradient(#02256e00,#02256e00,#02256e00,#02256e44);
+}
+
+/* TEXTE
+====================================================== */
+
+.light.dark-custom .journal-entry-page section.secret {
+    background: rgba(53, 0, 121, 0.05);
+    border-top: 1px solid var(--color-border-dark-5);
+    border-bottom: 1px solid var(--color-border-dark-5);
+	border-radius: unset;
+    box-shadow: unset;
+}
+.light.dark-custom .journal-entry-page section.secret.revealed {
+    background: rgba(0, 53, 0, 0.05)!important;
+}
+.light.dark-custom .journal-entry-page section.secret button.reveal {
+    color: var(--color-text-dark-primary);
+    background: rgba(255, 255, 240, 0.8);
+    border: 1px solid var(--color-border-light-primary);
+    box-shadow: var(--glassy) , var(--box-shadow);
+}
+
+
+/* TABLES
+====================================================== */
+
+.light.dark-custom .journal-entry-page table {
+	font-family: "Good OT";
+	max-width: calc(100% - 24px);
+	margin-left: auto;
+	margin-right: auto;
+    border-top: 1px solid var(--color-border-light-tertiary);
+    border-bottom: 1px solid var(--color-border-light-tertiary);
+    box-shadow: unset;
+}
+.light.dark-custom .journal-entry-page table th {
+	color: white;
+	background-color: #5e0000;
+}
+.light.dark-custom .journal-entry-page tr:nth-child(2n) {
+	background-color: #f5efe0;
+    color: var(--color-text-dark-primary);
+}
+.light.dark-custom .journal-entry-page tr:nth-child(2n+1) {
+	background-color: #efe3c8;
+    color: var(--color-text-dark-primary);
+}
+.light.dark-custom .journal-entry-page tr:hover {
+	background-color: #e9d7b0;
+}
+.light.dark-custom .journal-entry-page table td,
+.light.dark-custom .journal-entry-page table th {
+	padding: 4px 6px;
+}
+
+/* TEXTES À LIRE
+====================================================== */
+
+.light.dark-custom .journal-entry-page .journal-page-content
+blockquote:not(h6+p+ul+blockquote, h6+p+blockquote,
+h6+ul+blockquote, h6+blockquote) {
+    font-family: "Good OT Italic";
+    color: unset;
+	text-shadow: 0 0 var(--custom-green);
+	border-left-width: 0;
+	border-top: 2px solid #392f22;
+	border-bottom: 2px solid #392f22;
+	background-color: #e9dbb375;
+	border-radius: 5px;
+	padding: 4px 12px;
+	margin-left: 0;
+	margin-right: 0;
+    box-shadow: unset;
+}
+
+.light.dark-custom .journal-entry-page .journal-page-content .info {
+    background-color: var(--secondary);
+    box-shadow: unset;
+}
+
+
+
+/* ====================================================== */
+/* Dark Custom Theme
+========================================================= */
+.dark-custom.sheet.journal-entry .journal-entry-content {
+    background: linear-gradient(315deg, var(--color-cool-4), var(--color-cool-5-90));
+    border: unset;
+}
+
+/* SIDEBAR
+====================================================== */
+.dark-custom.sheet.journal-entry .journal-entry-pages {
+    color: var(--pfui-main-grey-color);
+}
+.dark-custom.sheet.journal-entry .pages-list .page-heading .page-title {
+    color: var(--pfui-main-grey-color);
+    text-indent: 0rem;
+    font-family: "Good OT Cond Bold";
+    font-size: 1.1rem;
+}
+.dark-custom.sheet.journal-entry .pages-list .page-heading .page-title:hover {
+    color: var(--color-warm-1);
+}
+.dark-custom.sheet.journal-entry .pages-list .page-heading {
+    color: var(--green);
+}
+.dark-custom.sheet.journal-entry .pages-list .directory-item.active + :not(.active) {
+    border-top: 1px solid var(--color-warm-3);
+}
+.sheet.journal-entry .pages-list .directory-item:not(.active) + .active {
+    border-top: 1px solid var(--color-warm-3);
+}
+.sheet.journal-entry .pages-list .directory-item {
+    border-top: unset;
+    border-bottom: unset;
+}
+.dark-custom.sheet.journal-entry .pages-list .h2 .heading-link {
+	color: gray;
+    text-indent: 0.5rem;
+    font-family: "Good OT";
+}
+.dark-custom.sheet.journal-entry .pages-list .h2 .heading-link:hover {
+    color: var(--color-warm-1);
+}
+.dark-custom.sheet.journal-entry .pages-list .h3 .heading-link {
+	color: grey;
+    text-indent: 0.5rem;
+    font-family: "Good OT";
+}
+.dark-custom.sheet.journal-entry .pages-list .h3 .heading-link:hover {
+    color: var(--color-warm-1);
+}
+.dark-custom.sheet.journal-entry .window-header .window-title {
+	color: var(--color-warm-1);
+}
+.dark-custom.sheet.journal-entry  .window-header a {
+	color: var(--color-warm-1);
+}
+.dark-custom.sheet.journal-entry .window-header {
+    background: linear-gradient(315deg, var(--color-cool-4), var(--color-cool-5-90));
+    color: var(--pfui-main-color);
+}
+.dark-custom.sheet.journal-entry .journal-sidebar {
+    background: linear-gradient(45deg, var(--color-cool-4), var(--color-cool-5-90));
+    color: var(--pfui-main-color);
+}
+.dark-custom.sheet.journal-entry .journal-sidebar .directory-header .header-search input {
+    background: linear-gradient(45deg, var(--color-cool-4), var(--color-cool-5-90));
+    color: var(--pfui-main-color);
+	border: unset;
+    box-shadow: var(--glassy) , var(--box-shadow);
+}
+.dark-custom.sheet.journal-entry .journal-sidebar .action-buttons button.next {
+    background: linear-gradient(45deg, var(--color-cool-4), var(--color-cool-5-90));
+    color: var(--pfui-main-color);
+	border: unset;
+    box-shadow: var(--glassy) , var(--box-shadow);
+}
+.dark-custom.sheet.journal-entry .journal-sidebar .action-buttons button.next:hover {
+    color: var(--color-cool-5);
+    background: var(--green);
+    box-shadow: var(--glassy) , var(--box-shadow);
+}
+.dark-custom.sheet.journal-entry .journal-sidebar .action-buttons button.previous {
+    background: linear-gradient(45deg, var(--color-cool-4), var(--color-cool-5-90));
+    color: var(--pfui-main-color);
+	border: unset;
+    box-shadow: var(--glassy) , var(--box-shadow);
+}
+.dark-custom.sheet.journal-entry .journal-sidebar .action-buttons button.previous:hover {
+    color: var(--color-cool-5);
+    background: var(--green);
+    box-shadow: var(--glassy) , var(--box-shadow);
+}
+.dark-custom.sheet.journal-entry .journal-sidebar .action-buttons button.create {
+    background: linear-gradient(45deg, var(--color-cool-4), var(--color-cool-5-90));
+    color: var(--pfui-main-color);
+	border: unset;
+    box-shadow: var(--glassy) , var(--box-shadow);
+}
+.dark-custom.sheet.journal-entry .journal-sidebar .action-buttons button.create:hover {
+    color: var(--color-cool-5);
+    background: var(--green);
+    box-shadow: var(--glassy) , var(--box-shadow);
+}
+.dark-custom.sheet.journal-entry .window-resizable-handle {
+    background: var(--color-warm-3);
+    border: 1px solid var(--color-cool-5);
+    box-shadow: var(--glassy) , var(--box-shadow);
+}
+.dark-custom.sheet.journal-entry .window-resizable-handle i.fas {
+    color: var(--color-warm-1);
+}
+.dark-custom.sheet.journal-entry .journal-entry-page:hover .editor-edit {
+    background-color: var(--green);
+    color: var(--color-cool-5);
+    box-shadow: var(--glassy) , var(--box-shadow);
+}
+
+
+/* TITRES
+====================================================== */
+.dark-custom .journal-sheet .journal-header {
+    margin: 0rem;
+}
+
+.dark-custom.sheet.journal-entry .scrollable {
+    top: 20px;
+}
+
+.dark-custom.sheet.journal-entry .journal-header .title {
+    background: linear-gradient(45deg, var(--color-cool-4), var(--color-cool-5-90));
+    height: 90px;
+    line-height: 32px;
+    border: none;
+    text-align: center;
+    font-family: "Taroca";
+    font-size: 2.2rem;
+    color: var(--color-warm-1);
+    letter-spacing: -0.1rem;
+    text-transform: uppercase;
+}
+
+.dark-custom .journal-entry-page h1 {
+	font-family: "Taroca";
+	color: var(--color-cool-3);
+	letter-spacing: -0.07rem;
+	line-height: 100%;
+	border-bottom: 0;
+}
+.dark-custom .journal-entry-page h1:hover {
+	background-image: linear-gradient(#02256e00,#02256E00,#ff000044);
+}
+.dark-custom .journal-entry-page h2 {
+    font-family: "Good OT Cond Bold";
+	color: var(--color-warm-2);
+	letter-spacing: -0.02rem;
+	text-transform: capitalize;
+	line-height: 100%;
+	border-bottom: 0;
+}
+.dark-custom .journal-entry-page h2:hover {
+    background-image: linear-gradient(#4e070700,#4e070700,#77ff0044);
+}
+
+.dark-custom .journal-entry-page h3 {
+	color: var(--color-level-success);
+    font-family: "Good OT Cond Bold";
+	text-transform: capitalize;
+	line-height: 100%;
+	border-bottom: 0;
+}
+.dark-custom .journal-entry-page h3:hover {
+	background-image: linear-gradient(#ad6f5900,#ad6f5900,#ad6f5900,#ffe10044);
+}
+
+.dark-custom .journal-entry-page h4 {
+    font-family: "Good OT";
+	font-variant: small-caps;
+	font-size: 132%;
+	line-height: 100%;
+	border-bottom: 0;
+	font-weight: bold;
+}
+.dark-custom .journal-entry-page h4:hover {
+	background-image: linear-gradient(#02256e00,#02256e00,#02256e00,#02256e44);
+}
+
+.dark-custom .journal-entry-page h5 {
+	line-height: 100%;
+	font-variant: small-caps;
+	font-size: var(--font-size-14);
+	border-bottom: 0;
+	margin-bottom: 0;
+}
+.dark-custom .journal-entry-page h5:hover {
+	background-image: linear-gradient(#02256e00,#02256e00,#02256e00,#02256e44);
+}
+
+
+/* TEXTE
+====================================================== */
+
+.dark-custom .journal-entry-page section.secret {
+    background: #584a754d;
+	border-radius: var(--border-radius-5);
+    box-shadow: var(--glassy) , var(--box-shadow);
+}
+.dark-custom .journal-entry-page section.secret.revealed {
+    background: none!important;
+}
+.dark-custom .journal-entry-page section.secret button.reveal {
+	background: linear-gradient(45deg, var(--color-cool-4), var(--color-cool-5-90));
+    color: var(--pfui-main-color);
+    border: unset;
+    box-shadow: var(--glassy) , var(--box-shadow);
+}
+.dark-custom .journal-entry-page section.secret button.reveal:hover {
+	color: var(--color-cool-5);
+    background: var(--green);
+    box-shadow: var(--glassy) , var(--box-shadow);
+}
+
+
+/* TABLES
+====================================================== */
+
+.dark-custom .journal-entry-page table {
+	font-family: "Good OT";
+	max-width: calc(100% - 24px);
+	margin-left: auto;
+	margin-right: auto;
+	border: unset;
+	box-shadow: var(--glassy) , var(--box-shadow);
+}
+.dark-custom .journal-entry-page table th {
+    color: var(--color-warm-1);
+    background-color: var(--color-cool-5);
+}
+.dark-custom .journal-entry-page tr:nth-child(2n) {
+	background-color: var(--color-cool-5);
+    color: var(--pfui-main-color);
+}
+.dark-custom .journal-entry-page tr:nth-child(2n+1) {
+	background-color: var(--color-cool-4);
+    color: var(--pfui-main-color);
+}
+.dark-custom .journal-entry-page tr:hover {
+	background-color: var(--green);
+    color: var(--color-cool-5);
+}
+.dark-custom .journal-entry-page table td,
+.dark-custom .journal-entry-page table th {
+	padding: 4px 6px;
+}
+
+/* TEXTES À LIRE
+====================================================== */
+
+.dark-custom .journal-entry-page .journal-page-content
+blockquote:not(h6+p+ul+blockquote, h6+p+blockquote,
+h6+ul+blockquote, h6+blockquote) {
+    font-family: "Good OT Italic";
+    color: var(--pfui-main-color);
+    border-left-width: 0;
+    border-top: 2px solid var(--color-cool-5);
+    border-bottom: 2px solid var(--color-cool-5);
+    background-color: var(--color-warm-3);
+	border-radius: 5px;
+	padding: 4px 12px;
+	margin-left: 0;
+	margin-right: 0;
+    box-shadow: var(--glassy) , var(--box-shadow);
+}
+.dark-custom .journal-entry-page .journal-page-content .info {
+    background-color: var(--color-level-info-bg);
+    box-shadow: var(--glassy) , var(--box-shadow);
+}
