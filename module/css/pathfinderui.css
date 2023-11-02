@@ -78,6 +78,7 @@ body {
     --serif: Eczar,Georgia,serif;
     --journal-serif: "Vollkorn",var(--serif);
     --glassy: 0px 0px 3px 0px rgba(255, 255, 255, 0.4) inset, 0px 0px 2px 1px rgba(0, 0, 0, 1), 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+    --glassy-shadow: var(--glassy) , var(--box-shadow);
     --glassy-sharp: 0px 0px 0px 1px rgba(255, 255, 255, 0.4) inset, 0px 0px 5px 1px rgba(0, 0, 0, 0.8);
     --glassy-sharp-highlight: 0px 0px 0px 1px rgba(245, 222, 179, 0.7) inset, 0px 0px 5px 1px rgba(0, 0, 0, 0.8);
 
@@ -135,7 +136,7 @@ body.compact-mode #logo {
     background: var(--color-cool-5);
     border-radius: var(--border-radius-5);
     border: 1px solid var(--color-cool-5);
-    box-shadow: var(--glassy);
+    box-shadow: var(--glassy-shadow);
 }
 
 

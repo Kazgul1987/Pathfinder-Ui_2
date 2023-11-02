@@ -1,5 +1,6 @@
 :root{
     --glassy: 0px 0px 3px 0px rgba(255, 255, 255, 0.4) inset, 0px 0px 2px 1px rgba(0, 0, 0, 1), 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+    --glassy-shadow: var(--glassy) , var(--box-shadow);
     --glass-bg: rgba(20, 20, 20, 0.6);
     --glass-bg-light: rgba(255, 255, 255, 0.1);
     --glass-bg-dark: rgba(0, 0, 0, 0.7);
@@ -505,6 +506,7 @@ wrapper.pf2e-td.name-left .pf2e-td.damage-application {
     background: var(--red-light);
     box-shadow: var(--box-shadow);
     border-radius: var(--border-radius-5);
+    padding: 1px 2px;
 }
 .spell-button .pf2e-td.target-button {
     height: calc(100% - 1px);

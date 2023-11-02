@@ -6,6 +6,7 @@
 	--custom-green: #002a17;
 	--custom-green-light: #365d4e;
 	--border-radius: 3px;
+    --glassy-shadow: var(--glassy) , var(--box-shadow);
 
 /* Foundry2
 ====================================================== */
@@ -353,25 +354,25 @@ h6+p+blockquote, h6+p+ul+blockquote) {
     background: rgba(255, 255, 240, 0.8);
     color: var(--color-text-dark-primary);
     border: unset;
-    box-shadow: var(--glassy) , var(--box-shadow);
+    box-shadow: var(--glassy-shadow);
 }
 .light.dark-custom.sheet.journal-entry .journal-sidebar .action-buttons button.next {
     background: rgba(255, 255, 240, 0.8);
     color: var(--color-text-dark-primary);
     border: 1px solid var(--color-border-light-primary);
-    box-shadow: var(--glassy) , var(--box-shadow);
+    box-shadow: var(--glassy-shadow);
 }
 .light.dark-custom.sheet.journal-entry .journal-sidebar .action-buttons button.previous {
     background: rgba(255, 255, 240, 0.8);
     color: var(--color-text-dark-primary);
     border: 1px solid var(--color-border-light-primary);
-    box-shadow: var(--glassy) , var(--box-shadow);
+    box-shadow: var(--glassy-shadow);
 }
 .light.dark-custom.sheet.journal-entry .journal-sidebar .action-buttons button.create {
     background: rgba(255, 255, 240, 0.8);
     color: var(--color-text-dark-primary);
     border: 1px solid var(--color-border-light-primary);
-    box-shadow: var(--glassy) , var(--box-shadow);
+    box-shadow: var(--glassy-shadow);
 }
 
 
@@ -474,7 +475,7 @@ h6+p+blockquote, h6+p+ul+blockquote) {
     color: var(--color-text-dark-primary);
     background: rgba(255, 255, 240, 0.8);
     border: 1px solid var(--color-border-light-primary);
-    box-shadow: var(--glassy) , var(--box-shadow);
+    box-shadow: var(--glassy-shadow);
 }
 
 
@@ -606,45 +607,45 @@ h6+ul+blockquote, h6+blockquote) {
     background: linear-gradient(45deg, var(--color-cool-4), var(--color-cool-5-90));
     color: var(--pfui-main-color);
 	border: unset;
-    box-shadow: var(--glassy) , var(--box-shadow);
+    box-shadow: var(--glassy-shadow);
 }
 .dark-custom.sheet.journal-entry .journal-sidebar .action-buttons button.next {
     background: linear-gradient(45deg, var(--color-cool-4), var(--color-cool-5-90));
     color: var(--pfui-main-color);
 	border: unset;
-    box-shadow: var(--glassy) , var(--box-shadow);
+    box-shadow: var(--glassy-shadow);
 }
 .dark-custom.sheet.journal-entry .journal-sidebar .action-buttons button.next:hover {
     color: var(--color-cool-5);
     background: var(--green);
-    box-shadow: var(--glassy) , var(--box-shadow);
+    box-shadow: var(--glassy-shadow);
 }
 .dark-custom.sheet.journal-entry .journal-sidebar .action-buttons button.previous {
     background: linear-gradient(45deg, var(--color-cool-4), var(--color-cool-5-90));
     color: var(--pfui-main-color);
 	border: unset;
-    box-shadow: var(--glassy) , var(--box-shadow);
+    box-shadow: var(--glassy-shadow);
 }
 .dark-custom.sheet.journal-entry .journal-sidebar .action-buttons button.previous:hover {
     color: var(--color-cool-5);
     background: var(--green);
-    box-shadow: var(--glassy) , var(--box-shadow);
+    box-shadow: var(--glassy-shadow);
 }
 .dark-custom.sheet.journal-entry .journal-sidebar .action-buttons button.create {
     background: linear-gradient(45deg, var(--color-cool-4), var(--color-cool-5-90));
     color: var(--pfui-main-color);
 	border: unset;
-    box-shadow: var(--glassy) , var(--box-shadow);
+    box-shadow: var(--glassy-shadow);
 }
 .dark-custom.sheet.journal-entry .journal-sidebar .action-buttons button.create:hover {
     color: var(--color-cool-5);
     background: var(--green);
-    box-shadow: var(--glassy) , var(--box-shadow);
+    box-shadow: var(--glassy-shadow);
 }
 .dark-custom.sheet.journal-entry .window-resizable-handle {
     background: var(--color-warm-3);
     border: 1px solid var(--color-cool-5);
-    box-shadow: var(--glassy) , var(--box-shadow);
+    box-shadow: var(--glassy-shadow);
 }
 .dark-custom.sheet.journal-entry .window-resizable-handle i.fas {
     color: var(--color-warm-1);
@@ -652,7 +653,7 @@ h6+ul+blockquote, h6+blockquote) {
 .dark-custom.sheet.journal-entry .journal-entry-page:hover .editor-edit {
     background-color: var(--green);
     color: var(--color-cool-5);
-    box-shadow: var(--glassy) , var(--box-shadow);
+    box-shadow: var(--glassy-shadow);
 }
 
 
@@ -742,7 +743,7 @@ h6+ul+blockquote, h6+blockquote) {
 .dark-custom .journal-entry-page section.secret {
     background: #584a754d;
 	border-radius: var(--border-radius-5);
-    box-shadow: var(--glassy) , var(--box-shadow);
+    box-shadow: var(--glassy-shadow);
 }
 .dark-custom .journal-entry-page section.secret.revealed {
     background: none!important;
@@ -751,12 +752,12 @@ h6+ul+blockquote, h6+blockquote) {
 	background: linear-gradient(45deg, var(--color-cool-4), var(--color-cool-5-90));
     color: var(--pfui-main-color);
     border: unset;
-    box-shadow: var(--glassy) , var(--box-shadow);
+    box-shadow: var(--glassy-shadow);
 }
 .dark-custom .journal-entry-page section.secret button.reveal:hover {
 	color: var(--color-cool-5);
     background: var(--green);
-    box-shadow: var(--glassy) , var(--box-shadow);
+    box-shadow: var(--glassy-shadow);
 }
 
 
@@ -769,7 +770,7 @@ h6+ul+blockquote, h6+blockquote) {
 	margin-left: auto;
 	margin-right: auto;
 	border: unset;
-	box-shadow: var(--glassy) , var(--box-shadow);
+	box-shadow: var(--glassy-shadow);
 }
 .dark-custom .journal-entry-page table th {
     color: var(--color-warm-1);
@@ -808,9 +809,9 @@ h6+ul+blockquote, h6+blockquote) {
 	padding: 4px 12px;
 	margin-left: 0;
 	margin-right: 0;
-    box-shadow: var(--glassy) , var(--box-shadow);
+    box-shadow: var(--glassy-shadow);
 }
 .dark-custom .journal-entry-page .journal-page-content .info {
     background-color: var(--color-level-info-bg);
-    box-shadow: var(--glassy) , var(--box-shadow);
+    box-shadow: var(--glassy-shadow);
 }

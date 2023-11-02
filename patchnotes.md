@@ -4,6 +4,9 @@
 - Ready for v11 version.
 
 
+## v11.313.8.16
+- Update core code.
+- Update Compatibility PF2e v5.8.0
 
 ## v11.313.15
 - Update core code.
