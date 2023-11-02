@@ -303,26 +303,6 @@ h6+p+blockquote, h6+p+ul+blockquote) {
 }
 
 
-/* Critical Hit/Fumble Deck */
-.dark-custom .journal-entry-page .journal-page-content .fumble-deck h1 {
-	font-family: "Taroca";
-}
-.dark-custom .journal-entry-page .journal-page-content .fumble-deck blockquote {
-	font-family: "Good OT";
-}
-.dark-custom .journal-entry-page .journal-page-content .fumble-deck code {
-	font-family: "Good OT Bold";
-}
-.dark-custom .journal-entry-page .journal-page-content .critical-deck h1 {
-	font-family: "Taroca";
-}
-.dark-custom .journal-entry-page .journal-page-content .critical-deck blockquote {
-	font-family: "Good OT";
-}
-.dark-custom .journal-entry-page .journal-page-content .critical-deck code {
-	font-family: "Good OT Bold";
-}
-
 
 
 /* ====================================================== */
@@ -535,6 +515,36 @@ h6+ul+blockquote, h6+blockquote) {
     background-color: var(--secondary);
     box-shadow: unset;
 }
+
+
+/* Critical Hit/Fumble Deck */
+.light.dark-custom .journal-entry-page .journal-page-content .fumble-deck h1 {
+    font-family: "Taroca";
+    box-shadow: unset;
+}
+.light.dark-custom .journal-entry-page .journal-page-content .fumble-deck blockquote {
+	font-family: "Good OT";
+    background-color: #000059;
+    color: var(--pfui-main-color);
+}
+.light.dark-custom .journal-entry-page .journal-page-content .fumble-deck code {
+    font-family: "Good OT Bold";
+    box-shadow: unset;
+}
+.light.dark-custom .journal-entry-page .journal-page-content .critical-deck h1 {
+    font-family: "Taroca";
+    box-shadow: unset;
+}
+.light.dark-custom .journal-entry-page .journal-page-content .critical-deck blockquote {
+    font-family: "Good OT";
+    color: var(--pfui-main-color);
+}
+.light.dark-custom .journal-entry-page .journal-page-content .critical-deck code {
+    font-family: "Good OT Bold";
+    color: var(--color-text-dark-primary);
+    box-shadow: unset;
+}
+
 
 
 
@@ -815,5 +825,34 @@ h6+ul+blockquote, h6+blockquote) {
 }
 .dark-custom .journal-entry-page .journal-page-content .info {
     background-color: var(--color-level-info-bg);
+    box-shadow: var(--glassy-shadow);
+}
+
+
+/* Critical Hit/Fumble Deck */
+.dark-custom .journal-entry-page .journal-page-content .fumble-deck h1 {
+	font-family: "Taroca";
+
+    box-shadow: var(--glassy-shadow);
+}
+.dark-custom .journal-entry-page .journal-page-content .fumble-deck blockquote {
+	font-family: "Good OT";
+    background-color: #000059;
+}
+.dark-custom .journal-entry-page .journal-page-content .fumble-deck code {
+    font-family: "Good OT Bold";
+    color: var(--color-text-dark-primary);
+    box-shadow: var(--glassy-shadow);
+}
+.dark-custom .journal-entry-page .journal-page-content .critical-deck h1 {
+	font-family: "Taroca";
+    box-shadow: var(--glassy-shadow);
+}
+.dark-custom .journal-entry-page .journal-page-content .critical-deck blockquote {
+	font-family: "Good OT";
+}
+.dark-custom .journal-entry-page .journal-page-content .critical-deck code {
+    font-family: "Good OT Bold";
+    color: var(--color-text-dark-primary);
     box-shadow: var(--glassy-shadow);
 }

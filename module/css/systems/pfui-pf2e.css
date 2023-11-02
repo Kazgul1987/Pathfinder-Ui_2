@@ -509,8 +509,12 @@ a.content-link.broken {
     line-height: 20px;
     background: var(--color-cool-5-50);
     border: 1px solid var(--color-cool-5);
-    box-shadow: var(--glassy);
+    box-shadow: var(--glassy-shadow);
     border-radius: 10px;
+}
+.pf2e.chat-card .card-buttons .spell-button button.small {
+    background: var(--color-cool-4)!important;
+    border-radius: var(--border-radius)!important;
 }
 #chat-log .message [data-visibility="gm"]:is(div,em,p,span,strong) {
     font-style: italic;
