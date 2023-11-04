@@ -116,6 +116,14 @@
 
 
 
+/* Cautious Gamemaster's Pack */
+/* https://github.com/cs96and/FoundryVTT-CGMP */
+#chat-log .message.emote .message-content {
+    color: var(--pfui-main-grey-color);
+}
+
+
+
 
 /* DF Chat Enhancements */
 /* https://github.com/flamewave000/dragonflagon-fvtt/tree/master/df-chat-enhance */

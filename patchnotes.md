@@ -4,14 +4,17 @@
 - Ready for v11 version.
 
 
+## v11.314.1.1
+- Added Compatibility Cautious Gamemaster's Pack.
+
 ## v11.314.1
 - Updated core code.
 - Updated Compatibility PF2e v5.8.2.
 - Updated Compatibility Dice Tray.
 - Updated Custom Journal Sheet.
-- Addeded styling for inline roll tooltips.
-- Addeded Compatibility Health Estimate.
-- Addeded Compatibility Customizable Chat Tabs.
+- Added styling for inline roll tooltips.
+- Added Compatibility Health Estimate.
+- Added Compatibility Customizable Chat Tabs.
 
 ## v11.313.16.2
 - Updated core code.
@@ -45,7 +48,7 @@
 - Updated Cursor compatibility.
 - Updated new Drag cursor.
 - Fixed error with Windows Foundry App.
-- Addeded 3 new functions (thanks at @DjLeChuck for the great work.): 
+- - added 3 new functions (thanks at @DjLeChuck for the great work.): 
     - Roll Buttons like DFCE modules.
     - Auto collapse scene navigator (when you activate option, not default by default).
     - Open a pc/npc sheet from chat.
