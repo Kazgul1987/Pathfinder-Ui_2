@@ -157,6 +157,24 @@
 
 
 
+/*  Customizable Chat Tabs */
+/* https://github.com/mclemente/fvtt-chat-tabs */
+.tabbedchatlog.tabs {
+    color: var(--pfui-main-color);
+    border-radius: var(--border-radius);
+    background: radial-gradient(circle, var(--color-cool-3)25%, var(--color-cool-4)50%, var(--color-cool-5)100%);
+    box-shadow: var(
+    --glassy-shadow)!important;
+}
+.tabbedchatlog.tabs a:hover {
+    color: var(--green);
+}
+.tabbedchatlog .item.active {
+    color: var(--color-warm-1);
+}
+
+
+
 
 /* Dice Tray */
 /* https://gitlab.com/asacolips-projects/foundry-mods/foundry-vtt-dice-calculator */
@@ -188,8 +206,27 @@
 .dice-calculator > button, .dice-calculator .dice-calculator--button {
     color: var(--pfui-main-color)
 }
+ 
 
 
+/* Health Estimate */ 
+/* https://github.com/mclemente/healthEstimate */
+li.hm_messageheal {
+    background: var(--green) !important;
+    text-shadow: var(--text-shadow);
+    margin: 2px!important;
+    padding: 2px!important;
+    border: 2px solid var(--color-cool-5)!important;
+    box-shadow: var(--glassy-shadow);
+}
+li.hm_messagetaken {
+	background: var(--color-warm-3) !important;
+    text-shadow: var(--text-shadow);
+    margin: 2px!important;
+    padding: 2px!important;
+    border: 2px solid var(--color-cool-5)!important;
+    box-shadow: var(--glassy-shadow);
+}
 
 
 /* Minimal UI */
@@ -465,10 +502,10 @@ wrapper.pf2e-td {
     align-items: stretch;
 }
 wrapper.pf2e-td.name-left .pf2e-td.name {
-    margin: 6px 0 0 0;
+    margin: 8px 0 0 0;
     font-size: var(--font-size-9);
     background: var(--color-cool-5-50);
-    box-shadow: var(--box-shadow);
+    box-shadow: var(--glassy-shadow);
     border: none!important;
     color: var(--pfui-main-color);
     border-radius: var(--border-radius);
@@ -479,7 +516,7 @@ wrapper.pf2e-td.name-left .pf2e-td.name:hover {
     color: white;
     border: 1px solid #7B322F;
     background-color: var(--red);
-    box-shadow: var(--box-shadow-light);
+    box-shadow: var(--glassy-shadow);
     border-radius: var(--border-radius);
 }
 wrapper.pf2e-td.name-left .pf2e-td.damage-application {

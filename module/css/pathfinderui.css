@@ -68,8 +68,9 @@ body {
     --rpg-styled-ui-background: #ffffff14;
     --green: #91a82a;
     --blue: #171f69;
-    --success:rgb(100, 216, 255);
-    --failure: #ff7644;
+    --success-critical:rgb(107, 255, 0);
+    --success: rgb(0, 241, 255);
+    --failure: rgb(255, 129, 0);
     --criticalFailure:rgb(247, 59, 59);
     --red: #5e0000;
     --red-light:#ff0000;
@@ -90,7 +91,40 @@ body {
 
     --primary-remaster: hsl(153, 100%, 8%);
 	--primary-light-remaster: hsl(170, 96%, 19%);
+    --text-shadow: 0px 1px 2px black;
 
+/* Foundry2
+====================================================== */
+    --color-warm-1: #ee9b3a;
+    --color-warm-2: #c9593f;
+    --color-warm-3: #5d142b;
+    --color-cool-3: #584a75;
+    --color-cool-4: #302831;
+    --color-cool-5: #0b0a13;
+    --color-cool-5-25: rgba(11, 10, 19, 0.25);
+    --color-cool-5-50: rgba(11, 10, 19, 0.5);
+    --color-cool-5-75: rgba(11, 10, 19, 0.75);
+    --color-cool-5-90: rgba(11, 10, 19, 0.9);
+    --color-light-1: #f7f3e8;
+    --color-light-2: #efe6d8;
+    --color-light-3: #e7d1b1;
+    --color-light-4: #d0b8a3;
+    --color-light-5: #9f8475;
+    --color-light-6: #816b66;
+    --color-level-error: #ce0707;
+    --color-level-error-bg: rgba(105, 0, 8, 0.8);
+    --color-level-error-border: #750003;
+    --color-level-info: #59a1f6;
+    --color-level-info-bg: rgba(47, 80, 132, 0.8);
+    --color-level-info-border: #5c87b9;
+    --color-level-success: #26b231;
+    --color-level-success-bg: rgba(26, 107, 34, 0.8);
+    --color-level-success-border: #1b8f23;
+    --color-level-warning: #ee9b3a;
+    --color-level-warning-bg: rgba(214, 150, 0, 0.8);
+    --color-level-warning-border: #b18404;
+    --color-scrollbar: #5d142b;
+    --color-scrollbar-border: #8d151b;
 }
 
 #logo {
@@ -197,6 +231,25 @@ body.compact-mode #logo {
     left: 0;
     background: url(../ui/frames/header.webp);
     background-size: 310px 76px;
+}
+
+#sidebar .inline-roll .dice-tooltip {
+    background: var(--color-cool-5);
+    border: 1px solid var(--color-cool-5);
+    box-shadow: var(--glassy-shadow);
+}
+.chat-message .dice-tooltip .dice-rolls .roll.die.min {
+    color: var(--criticalFailure);
+    text-shadow: var(--text-shadow);
+    filter: sepia(0.5) hue-rotate(-60deg);
+}
+.chat-message .dice-tooltip .dice-rolls .roll.die.max {
+    color: var(--success-critical);
+    text-shadow: var(--text-shadow);
+}
+#sidebar .dice-tooltip .part-header .part-total {
+    background: var(--color-warm-3);
+    text-shadow: var(--text-shadow);
 }
 
 #sidebar a.entity-link,
@@ -471,7 +524,7 @@ body.compact-mode #logo {
 #chat-log .message {
     position: relative;
     color: var(--rpg-styled-ui-color);
-    border: none !important;
+    border: unset;
     background: transparent;
     padding: 10px 10px 15px 10px;
     margin: 0px 0px;
@@ -505,13 +558,14 @@ body.compact-mode #logo {
 }
 
 #chat-log .message .message-header {
-    color: var(--pfui-main-color) !important; /*92887f*/
+    color: var(--pfui-main-color);
     font-size: 16px;
     font-weight: 600;
 }
 
 .chat-message .message-content {
-    color: var(--pfui-main-grey-color) !important;/*8e8073*/
+    color: var(--pfui-main-grey-color);
+    text-shadow: 0px 1px 1px black;
 }
 
 .chat-message .table-draw .table-description {
@@ -549,16 +603,20 @@ body.compact-mode #logo {
 
 }
 .flavor-text div.degree-of-success .criticalSuccess{
-    color: var(--green)!important;
+    color: var(--success-critical)!important;
+    text-shadow: var(--text-shadow);
 }
 .flavor-text div.degree-of-success .success{
     color: var(--success)!important;
+    text-shadow: var(--text-shadow);
 }
 .flavor-text div.degree-of-success .failure{
     color:var(--failure)!important;
+    text-shadow: var(--text-shadow);
 }
 .flavor-text div.degree-of-success .criticalFailure{
     color: var(--criticalFailure)!important;
+    text-shadow: var(--text-shadow);
 }
 
 .dice-roll .dice-total {
@@ -573,10 +631,10 @@ body.compact-mode #logo {
     border-radius: 10px;
   }
   .dice-roll .dice-total.success {
-    color: #91a82a !important;
+    color: var(--success-critical)!important;
   }
   .dice-roll .dice-total.failure {
-    color: rgb(247, 59, 59) !important;
+    color: var(--criticalFailure)!important;
   }
   .dice-roll .dice-tooltip {
     display: none;
