@@ -5,6 +5,9 @@
 
 
 
+## v11.314.2.1
+- Updated Compatibility Forien's Quest Log (player side).
+
 ## v11.314.2
 - Updated core code.
 - Added Compatibility Cautious Gamemaster's Pack.

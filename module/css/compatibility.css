@@ -1147,10 +1147,6 @@ nav.damage-log-nav .item.active:before,
     border: 2px solid var(--color-cool-5);
     box-shadow: var(--box-shadow);
 }
-#forien-quest-log .editor, .window-app.forien-quest-preview .editor {
-    background: transparent;
-    padding: 3px;
-}
 #forien-quest-log h2, .window-app.forien-quest-preview h2 {
     color: var(--pfui-main-grey-color);
     text-shadow: var(--text-shadow);
@@ -1236,6 +1232,27 @@ nav.damage-log-nav .item.active:before,
     margin-right: 0;
     box-shadow: var(--glassy-shadow);
 }
+#forien-quest-log .editor, .window-app.forien-quest-preview .editor {
+    background: transparent;
+    padding: 3px;
+}
+.window-app.forien-quest-preview .quest-body .quest-info .quest-description .description .description-content {
+    font-family: "Good OT Italic";
+    color: var(--pfui-main-color);
+    text-shadow: var(--text-shadow);
+    border-left-width: 0;
+    border-top: 2px solid var(--color-cool-5);
+    border-bottom: 2px solid var(--color-cool-5);
+    background-color: var(--color-warm-3);
+    border-radius: 5px;
+    padding: 4px 12px;
+    margin-left: 0;
+    margin-right: 0;
+    box-shadow: var(--glassy-shadow);
+}
+.window-app.forien-quest-preview .quest-body .quest-info .quest-description .description {
+    background: transparent;
+}
 .window-app.forien-quest-preview .editor .editor-edit {
     background-color: var(--green);
     color: var(--color-cool-5);
@@ -1314,7 +1331,11 @@ nav.damage-log-nav .item.active:before,
     border: 1px solid var(--color-cool-5);
 }
 .window-app.forien-quest-preview .quest-body .quest-info .quest-col-right .quest-rewards .editable-container p.can-edit, .window-app.forien-quest-preview .quest-body .quest-info .quest-col-right .quest-tasks .editable-container p.can-edit {
-    color: var(--pfui-main-color);
+    color: var(--color-warm-1);
+    text-shadow: var(--text-shadow);
+}
+.window-app.forien-quest-preview .quest-body .quest-info .quest-col-right .quest-rewards .editable-container p.player, .window-app.forien-quest-preview .quest-body .quest-info .quest-col-right .quest-tasks .editable-container p.player {
+    color: var(--color-warm-1);
     text-shadow: var(--text-shadow);
 }
 .window-app.forien-quest-preview .quest-body .quest-info .quest-col-right .quest-tasks .task-hidden {
@@ -1343,4 +1364,7 @@ nav.damage-log-nav .item.active:before,
     background: var(--color-cool-3);
     text-shadow: var(--text-shadow);
     box-shadow: var(--box-shadow);
+}
+.window-app.forien-quest-preview .quest-body .quest-info .quest-col-right .quest-tasks .state-container .state-display {
+    background: var(--color-warm-3);
 }
