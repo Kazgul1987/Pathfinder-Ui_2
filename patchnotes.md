@@ -5,7 +5,7 @@
 
 
 
-## v11.314.2.1
+## v11.314.2.2
 - Updated Compatibility Forien's Quest Log (player side).
 
 ## v11.314.2

@@ -1089,6 +1089,18 @@ nav.damage-log-nav .item.active:before,
     text-shadow: var(--text-shadow);
     border-bottom: unset;
 }
+.window-app.forien-quest-preview .quest-body .details-header .quest-giver-gc .deleteQuestGiver {
+    color: var(--color-cool-5);
+    text-shadow: var(--text-shadow);
+    background: var(--green);
+    border-radius: 15px;
+}
+.window-app.forien-quest-preview .quest-body .details-header .quest-giver-gc .toggleImage {
+    color: var(--green);
+    text-shadow: var(--text-shadow);
+    background: var(--color-warm-3);
+    border-radius: 15px;
+}
 #forien-quest-log .quest-log .table ul li.drag-quest {
     color: var(--color-warm-2);
     text-shadow: var(--text-shadow);
