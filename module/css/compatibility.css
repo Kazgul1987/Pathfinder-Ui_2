@@ -1105,7 +1105,12 @@ nav.damage-log-nav .item.active:before,
     box-shadow: var(--glassy-shadow);
     border: 1px solid var(--color-cool-5);
 }
-
+#forien-quest-log .pad-l-8, #quest-tracker .pad-l-8, .window-app.forien-quest-preview .pad-l-8 {
+    color: var(--green);
+}
+#forien-quest-log .pad-l-8, #quest-tracker .pad-l-8, .window-app.forien-quest-preview .pad-l-8:hover {
+    color: var(--color-warm-2);
+}
 
 
 /* Quest window
@@ -1307,4 +1312,35 @@ nav.damage-log-nav .item.active:before,
     background: var(--color-cool-3);
     box-shadow: var(--glassy-shadow);
     border: 1px solid var(--color-cool-5);
+}
+.window-app.forien-quest-preview .quest-body .quest-info .quest-col-right .quest-rewards .editable-container p.can-edit, .window-app.forien-quest-preview .quest-body .quest-info .quest-col-right .quest-tasks .editable-container p.can-edit {
+    color: var(--pfui-main-color);
+    text-shadow: var(--text-shadow);
+}
+.window-app.forien-quest-preview .quest-body .quest-info .quest-col-right .quest-tasks .task-hidden {
+    text-shadow: var(--text-shadow);
+    box-shadow: var(--box-shadow);
+    background: linear-gradient(45deg, var(--color-cool-4), var(--color-cool-5-90));
+}
+.window-app.forien-quest-preview .quest-body .quest-info .quest-col-right .quest-tasks .task-hidden:hover {
+    background: var(--color-cool-3);
+    text-shadow: var(--text-shadow);
+    box-shadow: var(--box-shadow);
+}
+.window-app.forien-quest-preview .quest-body .quest-info .quest-col-right .quest-rewards ul li, .window-app.forien-quest-preview .quest-body .quest-info .quest-col-right .quest-tasks ul li {
+    background: var(--color-cool-3);
+}
+.window-app.forien-quest-preview .quest-body .quest-info .quest-col-right .quest-rewards .reward-hidden .reward-image, .window-app.forien-quest-preview .quest-body .quest-info .quest-col-right .quest-rewards .reward-hidden .reward-name {
+    color: var(--pfui-main-color);
+    text-shadow: var(--text-shadow);
+}
+.window-app.forien-quest-preview .quest-body .quest-info .quest-col-right .quest-rewards .reward-hidden {
+    text-shadow: var(--text-shadow);
+    box-shadow: var(--box-shadow);
+    background: linear-gradient(45deg, var(--color-cool-4), var(--color-cool-5-90));
+}
+.window-app.forien-quest-preview .quest-body .quest-info .quest-col-right .quest-rewards .reward-hidden:hover {
+    background: var(--color-cool-3);
+    text-shadow: var(--text-shadow);
+    box-shadow: var(--box-shadow);
 }
