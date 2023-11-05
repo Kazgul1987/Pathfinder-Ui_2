@@ -1019,3 +1019,292 @@ nav.damage-log-nav .item.active:before,
     box-shadow: var(--box-shadow);
     text-shadow: 0px 1px 2px black;
 }
+
+
+/* Forien's Quest Log */
+/* https://github.com/League-of-Foundry-Developers/foundryvtt-forien-quest-log */
+
+.window-app.forien-quest-preview {
+    background: linear-gradient(315deg, var(--color-cool-4), var(--color-cool-5-90));
+    color: var(--pfui-main-color);
+    text-shadow: var(--text-shadow);
+    box-shadow: var(--box-shadow);
+}
+#forien-quest-log .window-header, .window-app.forien-quest-preview .window-header {
+    background: linear-gradient(315deg, var(--color-cool-4), var(--color-cool-5-90));
+    color: var(--pfui-main-color);
+    text-shadow: var(--text-shadow);
+    box-shadow: var(--box-shadow);
+    border: 1px solid var(--color-cool-5);
+}
+#forien-quest-log.window-app .window-content {
+    background: linear-gradient(315deg, var(--color-cool-4), var(--color-cool-5-90));
+    color: var(--pfui-main-color);
+    text-shadow: var(--text-shadow);
+    box-shadow: var(--box-shadow);
+    border: 1px solid var(--color-cool-5);
+}
+#forien-quest-log .quest-log {
+    background: linear-gradient(45deg, var(--color-cool-4), var(--color-cool-5-90));
+    color: var(--pfui-main-color);
+    text-shadow: var(--text-shadow);
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius-5);
+    border: 1px solid var(--color-cool-5);
+}
+#forien-quest-log .quest-log.bookmarks nav.log-tabs .item.active, #forien-quest-log .quest-log.bookmarks nav.log-tabs .item {
+    background: linear-gradient(315deg, var(--color-cool-4), var(--color-cool-5-90));
+    color: var(--green);
+    text-shadow: var(--text-shadow);
+    box-shadow: var(--box-shadow);
+    border: 1px solid var(--color-cool-5);
+}
+#forien-quest-log .quest-log.bookmarks nav.log-tabs .item.active, #forien-quest-log .quest-log.bookmarks nav.log-tabs .item:hover {
+    color: var(--color-warm-2);
+    text-shadow: var(--text-shadow);
+}
+#forien-quest-log .quest-log .log-body header button {
+    background: linear-gradient(45deg, var(--color-cool-4), var(--color-cool-5-90));
+    color: var(--pfui-main-color);
+    text-shadow: var(--text-shadow);
+    border: unset;
+    box-shadow: var(--glassy-shadow);
+    border: 1px solid var(--color-cool-5);
+}
+#forien-quest-log .quest-log .log-body header button:hover {
+    background: var(--green);
+    color: var(--color-cool-5);
+    box-shadow: var(--glassy-shadow);
+}
+
+
+
+/* New Quest
+-------------------------------------------------------*/
+#forien-quest-log .quest-log .log-body header {
+    border-bottom: unset;
+}
+#forien-quest-log h1, .window-app.forien-quest-preview h1 {
+    color: var(--color-warm-1);
+    text-shadow: var(--text-shadow);
+    border-bottom: unset;
+}
+#forien-quest-log .quest-log .table ul li.drag-quest {
+    color: var(--color-warm-2);
+    text-shadow: var(--text-shadow);
+    background: linear-gradient(315deg, var(--color-cool-4), var(--color-cool-5-90));
+    box-shadow: var(--box-shadow);
+}
+#forien-quest-log .actions i, .window-app.forien-quest-preview .actions i {
+    color: var(--green);
+}
+#forien-quest-log .quest-log .table ul li.drag-quest:hover {
+    color: var(--color-warm-1);
+    text-shadow: var(--text-shadow);
+    background: var(--color-cool-3);
+    box-shadow: var(--glassy-shadow);
+    border: 1px solid var(--color-cool-5);
+}
+
+
+
+/* Quest window
+-------------------------------------------------------*/
+#forien-quest-log .window-content, .window-app.forien-quest-preview .window-content {
+    background: linear-gradient(315deg, var(--color-cool-4), var(--color-cool-5-90));
+    color: var(--pfui-main-color);
+    text-shadow: var(--text-shadow);
+    box-shadow: var(--box-shadow);
+}
+.window-app.forien-quest-preview .quest-body .quest-info .quest-col-right button {
+    background: linear-gradient(45deg, var(--color-cool-4), var(--color-cool-5-90));
+    color: var(--pfui-main-color);
+    text-shadow: var(--text-shadow);
+    box-shadow: var(--glassy-shadow);
+    border: 1px solid var(--color-cool-5);
+}
+.window-app.forien-quest-preview .quest-body .quest-info .quest-col-right button:hover {
+    background: var(--green);
+    color: var(--color-cool-5);
+    box-shadow: var(--glassy-shadow);
+}
+.window-app.forien-quest-preview .quest-body .details-header .quest-giver-gc .drop-info {
+    color: var(--pfui-main-grey-color);
+    text-shadow: var(--text-shadow);
+    background: var(--color-cool-4);
+    box-shadow: var(--glassy-shadow);
+    border: 2px solid var(--color-cool-5);
+}
+.window-app.forien-quest-preview .quest-body .details-header .quest-giver-gc .drop-info:hover {
+    background: var(--color-cool-3);
+    color: var(--color-warm-1);
+    text-shadow: var(--text-shadow);
+    border: 2px solid var(--color-cool-5);
+    box-shadow: var(--box-shadow);
+}
+#forien-quest-log .editor, .window-app.forien-quest-preview .editor {
+    background: transparent;
+    padding: 3px;
+}
+#forien-quest-log h2, .window-app.forien-quest-preview h2 {
+    color: var(--pfui-main-grey-color);
+    text-shadow: var(--text-shadow);
+    border-bottom: unset;
+}
+.window-app.forien-quest-preview .quest-body .quest-info .quest-col-right header {
+    color: var(--pfui-main-grey-color);
+    text-shadow: var(--text-shadow);
+    border-bottom: unset;
+}
+#forien-quest-log nav.tabs .item, .window-app.forien-quest-preview nav.tabs .item {
+    flex: 0 0 1px;
+    margin-left: 1rem;
+    text-align: left;
+    transition: color .3s ease;
+    white-space: nowrap;
+    background: linear-gradient(45deg, var(--color-cool-4), var(--color-cool-5-90));
+    color: var(--pfui-main-grey-color);
+    text-shadow: var(--text-shadow);
+    box-shadow: var(--glassy-shadow);
+    border: 1px solid var(--color-cool-5);
+    border-radius: var(--border-radius);
+    padding: 5px;
+}
+#forien-quest-log nav.tabs, .window-app.forien-quest-preview nav.tabs {
+    background: none;
+}
+#forien-quest-log .actions-single, .window-app.forien-quest-preview .actions-single {
+    flex: 0 0 1px;
+    padding: 0 8px;
+    color: var(--green);
+}
+#forien-quest-log nav.tabs .item.active, #forien-quest-log nav.tabs .item.active:hover, .window-app.forien-quest-preview nav.tabs .item.active, .window-app.forien-quest-preview nav.tabs .item.active:hover {
+    background: var(--color-warm-3);
+    color: var(--color-warm-1);
+    text-shadow: var(--text-shadow);
+    box-shadow: var(--glassy-shadow);
+    border: 1px solid var(--color-cool-5);
+    border-radius: var(--border-radius);
+    padding: 5px;
+}
+#forien-quest-log nav.tabs .item, .window-app.forien-quest-preview nav.tabs .item:hover {
+    background: var(--color-cool-3);
+    color: var(--color-warm-2);
+    text-shadow: var(--text-shadow);
+    box-shadow: var(--glassy-shadow);
+    border: 1px solid var(--color-cool-5);
+    border-radius: var(--border-radius);
+    padding: 5px;
+}
+.window-app.forien-quest-preview .quest-body .details-header .quest-setup section {
+    color: var(--color-warm-2);
+    text-shadow: var(--text-shadow);
+    box-shadow: var(--box-shadow);
+    background: linear-gradient(45deg, var(--color-cool-4), var(--color-cool-5-90));
+}
+.window-app.forien-quest-preview .quest-body .details-header .quest-setup section:hover {
+    background: var(--color-cool-3);
+    color: var(--color-warm-1);
+    text-shadow: var(--text-shadow);
+    border: 2px solid var(--color-cool-5);
+    box-shadow: var(--box-shadow);
+}
+.window-app.forien-quest-preview .tox.tox-tinymce .tox-tbtn {
+    box-shadow: var(--glassy-shadow);
+}
+.window-app.forien-quest-preview .tox.tox-tinymce .tox-tbtn:hover {
+    background-color: var(--color-warm-3);
+    color: var(--pfui-main-color)!important;
+    box-shadow: var(--glassy-shadow);
+}
+.window-app.forien-quest-preview .editor .editor-content {
+    font-family: "Good OT Italic";
+    color: var(--pfui-main-color);
+    text-shadow: var(--text-shadow);
+    border-left-width: 0;
+    border-top: 2px solid var(--color-cool-5);
+    border-bottom: 2px solid var(--color-cool-5);
+    background-color: var(--color-warm-3);
+    border-radius: 5px;
+    padding: 4px 12px;
+    margin-left: 0;
+    margin-right: 0;
+    box-shadow: var(--glassy-shadow);
+}
+.window-app.forien-quest-preview .editor .editor-edit {
+    background-color: var(--green);
+    color: var(--color-cool-5);
+    box-shadow: var(--glassy-shadow);
+}
+.window-app.forien-quest-preview .quest-body .quest-info .quest-col-right .quest-rewards .drop-info {
+    background: var(--color-cool-4);
+    color: var(--pfui-main-grey-color);
+    text-shadow: var(--text-shadow);
+    border: 2px dashed var(--color-cool-5);
+    box-shadow: var(--box-shadow);
+}
+.window-app.forien-quest-preview .quest-body .quest-info .quest-col-right .quest-rewards .drop-info:hover {
+    background: var(--color-cool-3);
+    color: var(--color-warm-1);
+    text-shadow: var(--text-shadow);
+    border: 2px dashed var(--color-cool-5);
+    box-shadow: var(--box-shadow);
+}
+#forien-quest-log button:first-child, .window-app.forien-quest-preview button:first-child {
+    background: var(--color-cool-4);
+    color: var(--pfui-main-color);
+    text-shadow: var(--text-shadow);
+    border: 2px solid var(--color-cool-5);
+    box-shadow: var(--box-shadow);
+}
+#forien-quest-log button:first-child, .window-app.forien-quest-preview button:first-child:hover {
+    background-color: var(--green);
+    color: var(--color-cool-5)!important;
+    box-shadow: var(--glassy-shadow);
+}
+.window-app.forien-quest-preview .quest-body .management .subquests header {
+    border: unset;
+}
+.window-app.forien-quest-preview .quest-body .management .subquests button {
+    background: linear-gradient(45deg, var(--color-cool-4), var(--color-cool-5-90));
+    color: var(--pfui-main-color);
+    text-shadow: var(--text-shadow);
+    box-shadow: var(--glassy-shadow);
+    border: 1px solid var(--color-cool-5);
+    border-radius: var(--border-radius);
+}
+.window-app.forien-quest-preview .quest-body .management .subquests button:hover {
+    background: var(--green);
+    color: var(--color-cool-5);
+    box-shadow: var(--glassy-shadow);
+}
+.window-app.forien-quest-preview .quest-body .management .quest-splash .state-container input[type="checkbox"]:checked {
+    accent-color: var(--green);
+}
+.window-app.forien-quest-preview .quest-body .management .quest-splash .drop-info {
+    background: var(--color-cool-4);
+    color: var(--pfui-main-grey-color);
+    text-shadow: var(--text-shadow);
+    border: 2px dashed var(--color-cool-5);
+    box-shadow: var(--box-shadow);
+}
+.window-app.forien-quest-preview .quest-body .management .quest-splash .drop-info:hover {
+    background: var(--color-cool-3);
+    color: var(--color-warm-1);
+    text-shadow: var(--text-shadow);
+    border: 2px dashed var(--color-cool-5);
+    box-shadow: var(--box-shadow);
+}
+.window-app.forien-quest-preview .quest-body .management .subquests .subquests-box li {
+    color: var(--color-warm-2);
+    text-shadow: var(--text-shadow);
+    background: linear-gradient(315deg, var(--color-cool-4), var(--color-cool-5-90));
+    box-shadow: var(--box-shadow);
+}
+.window-app.forien-quest-preview .quest-body .management .subquests .subquests-box li:hover {
+    color: var(--color-warm-1);
+    text-shadow: var(--text-shadow);
+    background: var(--color-cool-3);
+    box-shadow: var(--glassy-shadow);
+    border: 1px solid var(--color-cool-5);
+}

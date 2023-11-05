@@ -4,8 +4,11 @@
 - Ready for v11 version.
 
 
-## v11.314.1.1
+
+## v11.314.2
+- Updated core code.
 - Added Compatibility Cautious Gamemaster's Pack.
+- Added Compatibility Forien's Quest Log.
 
 ## v11.314.1
 - Updated core code.
