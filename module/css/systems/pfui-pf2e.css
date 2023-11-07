@@ -350,11 +350,13 @@
 
 #chat-log .tag {
     color:antiquewhite;
+    text-shadow: var(--text-shadow);
     box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
 }
 #chat-log .tags .tag_alt.tag {
     color:antiquewhite;
+    text-shadow: var(--text-shadow);
     background-color: var(--color-cool-3);
     box-shadow: var(--box-shadow);
 }
@@ -363,6 +365,7 @@
 }
 #chat-log .tags.paizo-style .tag {
     color:antiquewhite;
+    text-shadow: var(--text-shadow);
     border: none;
     box-shadow: var(--box-shadow);
 }
@@ -370,6 +373,7 @@
 #chat-log .tags .tag.tag_transparent, #chat-log .tags .tag option.tag_transparent {
     font-size: var(--font-size-11);
     color:antiquewhite;
+    text-shadow: var(--text-shadow);
     background-color: var(--color-cool-4);
     box-shadow: var(--box-shadow);
 }
@@ -497,9 +501,9 @@ a.content-link.broken {
     transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
     margin: 2px 2px 2px 2px;
     color: var(--pfui-main-color);
-    text-shadow: var(--pf2e-shadow-is-dark);
+    text-shadow: var(--text-shadow);
     line-height: 20px;
-    background: var(--color-cool-4);
+    background: var(--color-cool-5-50);
     border: 1px solid var(--color-cool-5);
     box-shadow: var(--glassy-shadow);
     border-radius: 10px;
@@ -530,15 +534,18 @@ a.content-link.broken {
     border:none;
     background: hsl(0,0%,15%);
     color: #fff;
+    text-shadow: var(--text-shadow);
 }
 #chat-log .pf2e.chat-card [data-visibility=owner] button:hover {
     text-transform: uppercase;
     border:none;
     background: rgba(110,0,0,1);
     color: #fff;
+    text-shadow: var(--text-shadow);
 }
 #chat-log i[data-pf2-repost]:hover {
     color: var(--color-cool-5);
+    text-shadow: var(--text-shadow);
     background: var(--green);
     text-shadow: 0px 0px 2px var(--green);
     border-radius: var(--border-radius);
@@ -546,6 +553,7 @@ a.content-link.broken {
 #chat-log [data-visibility]:not([data-visibility=all])[data-visibility=gm] {
     font-style: italic;
     color: var(--pfui-main-color);
+    text-shadow: var(--text-shadow);
     background: var(--color-warm-3);
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
@@ -559,7 +567,7 @@ a.content-link.broken {
     font-family: 'Good OT';
     color: var(--pfui-main-color);
     text-shadow: var(--text-shadow);
-    background: var(--custom-trait);
+    background: var(--color-warm-3);
     padding: 0px 3px;
     border: 1px solid var(--glassy);
     box-shadow: var(--box-shadow);
@@ -569,7 +577,7 @@ a.content-link.broken {
     font-family: 'Good OT';
     color: var(--pfui-main-color);
     text-shadow: var(--text-shadow);
-    background: var(--custom-trait);
+    background: var(--color-warm-3);
     padding: 0px 3px;
     border: 1px solid var(--glassy);
     box-shadow: var(--box-shadow);
@@ -579,7 +587,7 @@ a.content-link.broken {
     font-family: 'Good OT';
     color: var(--pfui-main-color);
     text-shadow: var(--text-shadow);
-    background: var(--custom-trait);
+    background: var(--color-warm-3);
     padding: 0px 3px;
     border: 1px solid var(--glassy);
     box-shadow: var(--box-shadow);
@@ -589,7 +597,7 @@ a.content-link.broken {
     font-family: 'Good OT';
     color: var(--pfui-main-color);
     text-shadow: var(--text-shadow);
-    background: var(--custom-trait);
+    background: var(--color-warm-3);
     padding: 0px 3px;
     border: 1px solid var(--glassy);
     box-shadow: var(--box-shadow);
@@ -599,7 +607,7 @@ a.content-link.broken {
     font-family: 'Good OT';
     color: var(--pfui-main-color);
     text-shadow: var(--text-shadow);
-    background: var(--custom-trait);
+    background: var(--color-warm-3);
     padding: 0px 3px;
     border: 1px solid var(--glassy);
     box-shadow: var(--box-shadow);
@@ -609,7 +617,7 @@ a.content-link.broken {
     font-family: 'Good OT';
     color: var(--pfui-main-color);
     text-shadow: var(--text-shadow);
-    background: var(--custom-trait);
+    background: var(--color-warm-3);
     padding: 0px 3px;
     border: 1px solid var(--glassy);
     box-shadow: var(--box-shadow);
