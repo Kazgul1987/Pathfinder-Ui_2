@@ -252,17 +252,6 @@ body.compact-mode #logo {
     text-shadow: var(--text-shadow);
 }
 
-#sidebar a.entity-link,
-#sidebar a.inline-roll {
-    font-family: "Good OT";
-    color: var(--pfui-main-color);
-    background: var(--custom-trait);
-    padding: 0px 3px;
-    border: 1px solid var(--glassy);
-    box-shadow: var(--box-shadow);
-    border-radius: var(--border-radius);
-}
-
 #sidebar-tabs > .item:before {
     position: absolute;
     content: ' ';
@@ -1222,6 +1211,7 @@ button#roll-hd:hover::before {
 #navigation #scene-list .scene.nav-item {
     position: relative;
     color: var(--pfui-main-color);
+    text-shadow: var(--text-shadow);
     font-weight: 600;
 }
 
