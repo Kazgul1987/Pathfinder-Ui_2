@@ -5,6 +5,10 @@
 
 
 
+## v11.315.1
+- Updated core code.
+- Updated Compatibility PF2e v5.8.3.
+
 ## v11.314.2.4
 - Updated core code.
 - Updated Compatibility Forien's Quest Log (player side).

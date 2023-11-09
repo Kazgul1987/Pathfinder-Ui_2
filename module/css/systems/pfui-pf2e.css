@@ -217,10 +217,10 @@
     color: revert;
 }
 
-.system-pf2e .window-app.dice-checks.dialog .window-content{
+/*.system-pf2e .window-app.dice-checks.dialog .window-content{
     background: url(../../ui/frames/parchment.webp) repeat;
     color: #191813;
-}
+}*/
 
 .pf2e.chat-card .card-header,
 .pf2e.chat-card .card-footer,
@@ -573,7 +573,8 @@ a.content-link.broken {
     box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
 }
-#chat-log a.inline-check, span[data-pf2-action] {
+#chat-log a.inline-check,
+#chat-log span[data-pf2-action] {
     font-family: 'Good OT';
     color: var(--pfui-main-color);
     text-shadow: var(--text-shadow);
@@ -583,7 +584,8 @@ a.content-link.broken {
     box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
 }
-#chat-log a.inline-check, span[data-pf2-check] {
+#chat-log a.inline-check,
+#chat-log span[data-pf2-check] {
     font-family: 'Good OT';
     color: var(--pfui-main-color);
     text-shadow: var(--text-shadow);
@@ -593,7 +595,8 @@ a.content-link.broken {
     box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
 }
-#chat-log a.inline-check[data-pf2-traits*=secret], span[data-pf2-check][data-pf2-traits*=secret] {
+#chat-log a.inline-check[data-pf2-traits*=secret], 
+#chat-log span[data-pf2-check][data-pf2-traits*=secret] {
     font-family: 'Good OT';
     color: var(--pfui-main-color);
     text-shadow: var(--text-shadow);
@@ -624,8 +627,6 @@ a.content-link.broken {
     border-radius: var(--border-radius);
 }
 #chat-log .chat-message .message-header .flavor-text ul.notes li {
-    font-family: "Good OT";
-    font-size: var(--font-size-13);
     color: var(--pfui-main-grey-color);
     text-shadow: var(--text-shadow);
     box-shadow: var(--box-shadow);

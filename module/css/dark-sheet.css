@@ -36,6 +36,7 @@
     --border-radius: 3px;
     --border-radius-5: 5px;
     --box-shadow: 0px 1px 3px 1px black;
+    --text-shadow: 0px 1px 2px black;
 
     --alt: #786452;
     --sub: var(--background);
@@ -358,9 +359,9 @@
 
 .actor.sheet.character.dark-theme .crb-style select {
     background-color: var(--color-cool-4);
-    box-shadow: var(--box-shadow-light);
+    box-shadow: var(--box-shadow);
+    text-shadow: var(--text-shadow);
 }
-
 .actor.sheet.character.dark-theme input {
     color: var(--pfui-main-color) !important;
     background: transparent;
@@ -429,6 +430,7 @@ background: radial-gradient(var(--background-2), transparent);
 
 .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.actions .actions-container .actions-tabs-wrapper .actions-panels ol.actions-list.strikes-list li.strike .button-group button:not(:disabled) {
     background: var(--blue);
+    text-shadow: var(--text-shadow);
     border-radius: var(--border-radius);
 }
 
@@ -450,6 +452,7 @@ background: radial-gradient(var(--background-2), transparent);
 
 .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.actions .actions-container .actions-tabs-wrapper .actions-panels ol.actions-list.strikes-list li.strike .button-group button:not(:disabled).damage {
     background: var(--red);
+    text-shadow: var(--text-shadow);
     border-radius: var(--border-radius);
 }
 
@@ -502,6 +505,7 @@ background: radial-gradient(var(--background-2), transparent);
 }
 .actor.sheet.dark-theme .crb-style .sheet-body .sheet-content .tab.actions ol.actions-list li.action button.use-action:not(:disabled), .actor.sheet.dark-theme .crb-style .sheet-body .sheet-content .tab.actions ol.actions-list li.strike button.use-action:not(:disabled) {
     background: var(--red);
+    text-shadow: var(--text-shadow);
 }
 
 .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content h3.header button .fa-solid.fa-eye {
@@ -558,25 +562,30 @@ background: radial-gradient(var(--background-2), transparent);
 
 .actor.sheet.dark-theme .inventory .item-name h3:hover, .actor.sheet.dark-theme .inventory .item-name h4:hover {
     color: var(--color-warm-2);
+    text-shadow: var(--text-shadow);
 }
 .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.inventory .inventory-list .item .item-name h4.rarity-common {
     border-color: #7e7e7e;
     color: #7e7e7e;
+    text-shadow: var(--text-shadow);
 }
 
 .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.inventory .inventory-list .item .item-name h4.rarity-uncommon {
     border-color: #ff6400;
     color: #ff6400;
+    text-shadow: var(--text-shadow);
 }
 
 .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.inventory .inventory-list .item .item-name h4.rarity-unique {
     border-color: #e127e1;
     color: #e127e1;
+    text-shadow: var(--text-shadow);
 }
 
 .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.inventory .inventory-list .item .item-name h4.rarity-rare {
     border-color: #0062ff;
     color: #0062ff;
+    text-shadow: var(--text-shadow);
 }
 
 .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.inventory .inventory-list .item .item-name h4.rarity-common:hover {
@@ -597,6 +606,7 @@ background: radial-gradient(var(--background-2), transparent);
 
 .actor.sheet.dark-theme .tags .tag.tag_alt {
     background-color: var(--color-cool-4);
+    text-shadow: var(--text-shadow);
     border-radius: var(--border-radius);
 }
 .actor.sheet.dark-theme .tags .tag.tag_secondary {
@@ -952,6 +962,7 @@ color: var(--green)!important;
 .red.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content h3.header button {
     background: radial-gradient(darkred, var(--red));
     border: 1px solid var(--red);
+    text-shadow: var(--text-shadow);
 }
 .red.actor.sheet.character .crb-style .sheet-body .sheet-content .tab.character .attributes .attribute h3.modifier {
     background: radial-gradient(var(--red), transparent)!important;
@@ -969,6 +980,7 @@ color: var(--green)!important;
 }
 .red.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.spellcasting .pf-add-item-row a {
     background: radial-gradient(var(--red), transparent)!important;
+    text-shadow: var(--text-shadow);
     box-shadow: var(--box-shadow);
     border-radius: 15px;
 }
