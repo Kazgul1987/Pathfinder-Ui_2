@@ -116,6 +116,108 @@
 
 
 
+/* Carousel Combat Tracker */
+/* https://github.com/theripper93/combat-tracker-dock */
+#combat-dock .combatant-portrait {
+    background: unset;
+    border-left: unset;
+    border-right: unset;
+    backdrop-filter: blur(3px);
+}
+#combat-dock .combatant-portrait.active {
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    border-bottom: unset;
+    backdrop-filter: blur(5px);
+    background: var(--background-2);
+}
+#combat-dock .combatant-wrapper .image-border {
+    --combatant-portrait-image-border: url(./assets/combat-tracker-dock/border.webp);
+    background-image: var(--combatant-portrait-image-border);
+    bottom: -22%;
+    opacity: 1;
+}
+
+#combat-dock .separator {
+    border: 2px solid var(--green);
+    filter: contrast(2);
+    text-shadow: var(--text-shadow);
+    opacity: 1;
+}
+#combat-dock .roll-initiative {
+    color: var(--color-warm-1);
+    filter: contrast(2);
+    text-shadow: var(--text-shadow);
+}
+#combat-dock .roll-initiative:hover {
+    color: var(--color-warm-2);
+    text-shadow: var(--text-shadow);
+}
+#combat-dock .buttons-container {
+    color: var(--green);
+    filter: contrast(2);
+    --text-shadow: 0px 1px 3px black;
+    text-shadow: var(--text-shadow);
+}
+#combat-dock .buttons-container i:hover {
+    color: var(--color-warm-2);
+    text-shadow: var(--text-shadow);
+}
+#combat-dock .combatant-wrapper .portrait-initiative {
+    color: var(--pfui-main-color);
+    opacity: 1!important;
+    filter: contrast(2);
+    text-shadow: var(--text-shadow);
+}
+#combat-dock .combatant-wrapper .portrait-initiative i {
+    color: var(--color-warm-2);
+    text-shadow: var(--text-shadow);
+}
+#combat-dock .combatant-wrapper .combatant-buttons {
+    color: var(--color-warm-1);
+    filter: contrast(2);
+    text-shadow: var(--text-shadow);
+}
+#combat-dock .combatant-wrapper .combatant-buttons i:hover {
+    color: var(--color-warm-2);
+    text-shadow: var(--text-shadow);
+}
+#combat-dock .combatant-wrapper .effects-container li {
+    border-radius: 50%;
+    border: 1px solid var(--color-warm-2);
+    box-shadow: var(--box-shadow);
+}
+#tooltip.combat-dock-tooltip {
+    color: var(--pfui-main-color);
+    background: var(--color-cool-5);
+    border-radius: var(--border-radius-5);
+    border: 1px solid var(--color-cool-5);
+    box-shadow: var(--glassy-shadow);
+    backdrop-filter: blur(10px);
+}
+#tooltip.combat-dock-tooltip
+.combat-dock-tooltip-wrapper
+ul
+.effect-description {
+color: var(--pfui-main-grey-color);
+}
+#tooltip.combat-dock-tooltip
+.combat-dock-tooltip-wrapper
+ul
+.effect-description
+.content-link {
+    font-family: 'Good OT';
+    color: var(--pfui-main-color);
+    text-shadow: var(--text-shadow);
+    background: var(--color-warm-3);
+    padding: 0px 3px;
+    border: 1px solid var(--glassy);
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+}
+
+
+
 /* Cautious Gamemaster's Pack */
 /* https://github.com/cs96and/FoundryVTT-CGMP */
 #chat-log .message.emote .message-content {

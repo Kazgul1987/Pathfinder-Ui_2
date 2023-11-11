@@ -1145,9 +1145,12 @@ hr {
     box-shadow: none;
     outline: 2px solid #782e22;
 }
-input[type="checkbox"]:checked, input[type="radio"]:checked {
+input[type="checkbox"]:checked,
+input[type="radio"]:checked {
     accent-color: var(--green);
-    box-shadow: var(--glassy-shadow);
+}
+input[type="checkbox"]:checked:hover {
+    accent-color: var(--color-warm-2);
 }
 .roll-modifiers-dialog .roll {
     color: var(--text-light);

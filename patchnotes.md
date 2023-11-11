@@ -4,6 +4,10 @@
 - Ready for v11 version.
 
 
+## v11.315.2
+- Updated core code.
+- Updated Cursor compatibility.
+- Added Compatibility Carousel Combat Tracker.
 
 ## v11.315.1
 - Updated core code.

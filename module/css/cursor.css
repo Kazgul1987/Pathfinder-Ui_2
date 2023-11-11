@@ -260,6 +260,18 @@ form button {
 
 
 
+/* Carousel Combat Tracker */
+/* https://github.com/theripper93/combat-tracker-dock */
+#combat-dock .roll-initiative:hover {
+    cursor: url(../ui/cursors/pointer.webp), pointer;
+}
+
+#combat-dock .buttons-container i:hover {
+    cursor: url(../ui/cursors/pointer.webp), pointer;
+}
+#combat-dock .combatant-wrapper .combatant-buttons i:hover {
+    cursor: url(../ui/cursors/pointer.webp), pointer;
+}
 
 
 
