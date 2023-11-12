@@ -663,6 +663,31 @@ wrapper.pf2e-td.name-left .pf2e-td.damage-application {
     border-radius: 50%!important;
 }
 
+/* PF2e Action Support Engine */
+/* https://github.com/reyzor1991/pf2e-wiki/wiki */
+.token-info.criticalSuccess {
+    color: var(--red)!important;
+    background-color: var(--green)!important;
+    filter: brightness(.7);
+}
+.token-info.criticalSuccess button {
+    color: var(--red)!important;
+    background-color: var(--green)!important;
+    filter: drop-shadow(2px 4px 6px black) brightness(1.5);
+}
+.token-info .damage-application button.success {
+	background-color: var(--rarity-rare)!important;
+    filter: drop-shadow(2px 4px 6px black) brightness(1.5);
+}
+.token-info .damage-application button.failure {
+	background-color: var(--rarity-uncommon)!important;
+    filter: drop-shadow(2px 4px 6px black) brightness(1.5);
+}
+.token-info .damage-application button.criticalFailure {
+	background-color: var(--red-light)!important;
+    filter: drop-shadow(2px 4px 6px black) brightness(1.5);
+}
+
 
 
 

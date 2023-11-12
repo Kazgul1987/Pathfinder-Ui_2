@@ -4,6 +4,10 @@
 - Ready for v11 version.
 
 
+
+## v11.315.4
+- Added Compatibility PF2e Action Support Engine.
+
 ## v11.315.3
 - Updated core code.
 - Updated Compatibility PF2e v5.8.3.
