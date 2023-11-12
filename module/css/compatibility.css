@@ -668,12 +668,12 @@ wrapper.pf2e-td.name-left .pf2e-td.damage-application {
 .token-info.criticalSuccess {
     color: var(--red)!important;
     background-color: var(--green)!important;
-    filter: brightness(.7);
+    filter: hue-rotate(90deg) contrast(200%) brightness(.7);
 }
 .token-info.criticalSuccess button {
-    color: var(--red)!important;
+    color: var(--red-light)!important;
     background-color: var(--green)!important;
-    filter: drop-shadow(2px 4px 6px black) brightness(1.5);
+    filter: drop-shadow(2px 4px 6px black) hue-rotate(-90deg) contrast(1);
 }
 .token-info .damage-application button.success {
 	background-color: var(--rarity-rare)!important;
@@ -687,7 +687,9 @@ wrapper.pf2e-td.name-left .pf2e-td.damage-application {
 	background-color: var(--red-light)!important;
     filter: drop-shadow(2px 4px 6px black) brightness(1.5);
 }
-
+.token-info .damage-application button.applied {
+    filter: hue-rotate(90deg) contrast(200%);
+}
 
 
 
