@@ -759,7 +759,6 @@ hr {
 /*************************************************************/
 .settings-sidebar #game-details {
     color: var(--pfui-main-grey-color);
-    backdrop-filter: blur(5px);
 }
 
 #settings button,
@@ -774,7 +773,6 @@ hr {
     border: 1px solid #332a1f;
     box-shadow: 0px 0px 0px 1px #675241;
     transition: all 0.2s;
-    backdrop-filter: blur(5px);
 }
 
 #sidebar .directory .action-buttons button {
@@ -782,13 +780,13 @@ hr {
     height: auto;
 }
 
-#settings button:hover,
+#settings button:hover, 
 #sidebar .directory .action-buttons button:hover {
-    color: var(--pfui-main-color);
+    color: var(--color-warm-1);
     text-shadow: 0 0 15px var(--red-light);
     background: url(../ui/frames/header.webp) center center;
     background-size: 100% 45px;
-    backdrop-filter: brightness(0.5);
+    backdrop-filter: blur(5px);
 }
 
 #settings button::before,
@@ -870,12 +868,20 @@ hr {
 /*========================= HOTBAR ==========================*/
 /*************************************************************/
 #fps {
-    margin-left: 200px;
-    order: 2;
-    border: 0px solid var(--color-border-light-tertiary);
-    border-radius: 5px;
+    position: absolute;
+    right: -25px;
+    bottom: 7px;
+    width: 60px;
+    color: var(--pfui-main-color);
+    text-shadow: var(--text-shadow);
+    background: var(--color-cool-5);
+    border: 1px solid var(--color-cool-5);
+    border-radius: unset;
+    box-shadow: var(--glassy-shadow);
 }
-
+#fps label {
+    display: none;
+}
 #ui-bottom > div {
     justify-content: center;
 

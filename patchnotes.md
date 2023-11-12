@@ -4,6 +4,14 @@
 - Ready for v11 version.
 
 
+## v11.315.3
+- Updated core code.
+- Updated Compatibility PF2e v5.8.3.
+- Updated Cursor compatibility.
+- Updated FPS counter compatibility.
+- Updated Forien's Copy environment compatibility.
+- Updated NPC Dark Sheet.
+
 ## v11.315.2
 - Updated core code.
 - Updated Cursor compatibility.

@@ -82,17 +82,7 @@ option, optgroup {
 #sidebar .sidebar-tab option, .sidebar-tab optgroup {
     cursor:url(../ui/cursors/pointer.webp), pointer;
 }
-.app.window-app.sheet.wfrp4e.actor.character-sheet .tab.main.active .main-row .movement.row-section .move-value .auto-calc-toggle {
-    cursor:url(../ui/cursors/pointer.webp), pointer;
-}
 
-.app.window-app.sheet.wfrp4e.actor.npc-sheet.main-row .movement.row-section .move-value .auto-calc-toggle {
-    cursor:url(../ui/cursors/pointer.webp), pointer;
-}
-
-.app.window-app.sheet.wfrp4e.actor.creature-sheet.main-row .movement.row-section .move-value .auto-calc-toggle {
-    cursor:url(../ui/cursors/pointer.webp), pointer;
-}
 
 #navigation #scene-list .scene.view, #navigation #scene-list .scene.context {
     cursor:url(../ui/cursors/normal.webp), default; 
@@ -257,6 +247,13 @@ form button {
 .actor.sheet .crb-style .sheet-body .sheet-content .tab.actions ol.actions-list li.action .item-name .item-image, .actor.sheet .crb-style .sheet-body .sheet-content .tab.actions ol.actions-list li.strike .item-name .item-image {
     cursor: url(../ui/cursors/pointer.webp), pointer;
 }
+.actor.npc.sheet form ol.spell-list > li .item-name h4 {
+    cursor: url(../ui/cursors/pointer.webp), pointer;
+}
+.actor.npc.sheet form ol.spell-list > li button.cast-spell {
+    cursor: url(../ui/cursors/pointer.webp), pointer;
+}
+
 
 
 

@@ -36,6 +36,7 @@
     
     --alt: #786452;
     --sub: var(--background);
+    --text-shadow: 0px 1px 2px black;
 
     --rarity-common: #7e7e7e;
     --rarity-uncommon: #ff6400;
@@ -92,18 +93,31 @@
     border-radius: var(--border-radius);
     backdrop-filter: blur(5px);
 }
-.dark-npc-theme.actor.npc form .disabled {
-    color: var(--color-warm-1);
-    border-color: var(--color-disabled);
+.dark-npc-theme.actor.npc .tabs .item.active {
+    color: var(--green);
+    text-shadow: 0 0 10px var(--green);
 }
-.dark-npc-theme.actor.npc .disabled:hover {
+.dark-npc-theme.actor.npc form .item {
+    text-shadow: var(--text-shadow);
+}
+.dark-npc-theme.actor.npc form .item:hover {
+    color: var(--text-dark);
+    text-shadow: var(--text-shadow);
+}
+.dark-npc-theme.actor.npc form .empty {
+    color: var(--color-warm-2);
+    text-shadow: var(--text-shadow);
+}
+.dark-npc-theme.actor.npc .empty:hover {
     color: var(--green);
     text-shadow: 0 0 8px var(--green);
 }
-.dark-npc-theme.actor.npc form .disabled:hover, .dark-npc-theme.actor.npc form .disabled.active {
-    color: var(--color-warm-1);
-    border-color: #7a7971;
+.dark-npc-theme.actor.npc form a.empty:hover, 
+.dark-npc-theme.actor.npc form a.empty:active {
+    color: var(--text-dark);
+    text-shadow: var(--text-shadow);
 }
+
 .dark-npc-theme.actor.npc .section-container .section-header {
     color: var(--green)!important;
     background: radial-gradient(var(--primary-remaster), var(--glass-bg-dark))!important;
@@ -161,10 +175,6 @@
     background-color: var(--red);
 
 }
-.dark-npc-theme.actor.npc .tabs .item.active {
-    color: var(--green)!important;
-    text-shadow: 0 0 10px var(--green);
-}
 .dark-npc-theme.actor.npc .tags.paizo-style tag, .dark-npc-theme.actor.npc .tags.paizo-style .tag, .dark-npc-theme.actor.npc .tags.paizo-style select.tag {
     color: antiquewhite;
     text-transform: uppercase;
@@ -210,9 +220,12 @@
     background-color: var(--green);
     box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15), inset 0 0 0 2px rgba(0, 0, 0, 0.4);
     transition: text-shadow 0.15s ease-in-out, background-color 0.15s ease-in-out, border 0.15s ease-in-out, color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, backdrop-filter 0.15s ease-in-out, border-radius 0.15s;
-    text-shadow: 0 0 1px black!important;
+    text-shadow: 0 0 1px black;
     color: var(--background);
     border-radius: var(--border-radius);
+}
+.dark-npc-theme.actor.npc form .tag-legacy a:hover {
+    text-shadow: unset;
 }
 .dark-npc-theme.actor.npc .section-container.recall-knowledge .section-header .breakdown:hover {
     border: none;
@@ -258,37 +271,45 @@
     box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
 }
-.dark-npc-theme.actor.npc a.inline-check[data-pf2-traits*=secret], .dark-npc-theme.actor.npc span[data-pf2-check][data-pf2-traits*=secret] {
+.dark-npc-theme.actor.npc a.inline-check[data-pf2-traits*=secret], 
+.dark-npc-theme.actor.npc span[data-pf2-check][data-pf2-traits*=secret] {
     font-family: "Good OT";
     color: var(--pfui-main-color);
-    background: var(--custom-trait);
+    text-shadow: var(--text-shadow);
+    background: var(--color-warm-3);
     padding: 0px 3px;
     border: 1px solid var(--glassy);
     box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
 }	
-.dark-npc-theme.actor.npc a.inline-check, .dark-npc-theme.actor.npc span[data-pf2-check] {
+.dark-npc-theme.actor.npc a.inline-check, 
+.dark-npc-theme.actor.npc span[data-pf2-check] {
     font-family: "Good OT";
     color: var(--pfui-main-color);
-    background: var(--custom-trait);
+    text-shadow: var(--text-shadow);
+    background: var(--color-warm-3);
     padding: 0px 3px;
     border: 1px solid var(--glassy);
     box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
 }
-.dark-npc-theme.actor.npc a.inline-check, .dark-npc-theme.actor.npc span[data-pf2-action] {
+.dark-npc-theme.actor.npc a.inline-check, 
+.dark-npc-theme.actor.npc span[data-pf2-action] {
     font-family: "Good OT";
     color: var(--pfui-main-color);
-    background: var(--custom-trait);
+    text-shadow: var(--text-shadow);
+    background: var(--color-warm-3);
     padding: 0px 3px;
     border: 1px solid var(--glassy);
     box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
 }
-.dark-npc-theme.actor.npc a.content-link, .dark-npc-theme.actor.npc a.inline-roll {
+.dark-npc-theme.actor.npc a.content-link, 
+.dark-npc-theme.actor.npc a.inline-roll {
     font-family: "Good OT";
     color: var(--pfui-main-color);
-    background: var(--custom-trait);
+    text-shadow: var(--text-shadow);
+    background: var(--color-warm-3);
     padding: 0px 3px;
     border: 1px solid var(--glassy);
     box-shadow: var(--box-shadow);
@@ -302,6 +323,7 @@
 .dark-npc-theme.actor.npc form .actions-options .actions-option input[type="checkbox"]:checked, input[type="radio"]:checked {
     accent-color: var(--green);
 }
+
 
 
 
@@ -455,8 +477,27 @@ max-width: 24px;
     text-shadow: 0 0 3px black;
     border-radius: var(--border-radius);
 }
-.dark-npc-theme.actor.npc ol.spell-list > li .item-name h4:hover {
-    color: var(--green)!important;
+.dark-npc-theme.actor.npc form .sheet-body .entries-list .spellcasting-entry .header .attribute select {
+    color: var(--pfui-main-color);
+    text-shadow: var(--text-shadow);
+    background: var(--background-2);
+    border: unset;
+}
+.dark-npc-theme.actor.npc form ol.spell-list > li.spell {
+    text-shadow: var(--text-shadow);
+    box-shadow: var(--box-shadow);
+    background-color: var(--color-cool-5-90);
+    border-radius: var(--border-radius);
+    backdrop-filter: blur(5px);
+}
+.dark-npc-theme.actor.npc form ol.spell-list > li .item-name h4:hover {
+    color: var(--green);
+}
+.dark-npc-theme.actor.npc form ol.spell-list > li .item-control.item-edit:hover {
+    color: var(--green);
+}
+.dark-npc-theme.actor.npc form ol.spell-list > li .item-control.item-delete:hover {
+    color: var(--green);
 }
 .dark-npc-theme.actor.npc .entries-list .spellcasting-entry .header .ability-score select {
     color: var(--pfui-main-color);
@@ -471,7 +512,6 @@ max-width: 24px;
     background-color: transparent!important;
 }
 .dark-npc-theme.actor.npc .item-summary .item-buttons button {
-    color: var(--green);
     background: radial-gradient(var(--primary-remaster), transparent);
     border: none;
     box-shadow: var(--box-shadow);
@@ -663,12 +703,6 @@ max-width: 24px;
     backdrop-filter: blur(5px);
 }
 .glassy.dark-npc-theme.actor.npc .entries-list .spellcasting-entry .header {
-    backdrop-filter: blur(5px);
-}
-.glassy.dark-npc-theme.actor.npc ol.spell-list > li.spell {
-    box-shadow: var(--box-shadow);
-    background-color: var(--color-cool-5-90);
-    border-radius: var(--border-radius);
     backdrop-filter: blur(5px);
 }
 .glassy.dark-npc-theme.actor.npc .section-container {
