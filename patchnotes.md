@@ -4,6 +4,11 @@
 - Ready for v11 version.
 
 
+## v11.315.5
+- Updated core code.
+- Updated Cursor compatibility.
+- Updated Dark Party Sheet.
+- Updated PF2e Party Sheet Helper compatibility.
 
 ## v11.315.4.1
 - Added Compatibility PF2e Action Support Engine.

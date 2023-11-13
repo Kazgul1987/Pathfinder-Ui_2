@@ -3,7 +3,7 @@
 /*************************************************************/
 
 a{
-    cursor:url(../ui/cursors/pointer.webp), pointer; 
+    cursor:url(../ui/cursors/pointer.webp), pointer!important; 
 }
 
 body {
@@ -253,6 +253,14 @@ form button {
 .actor.npc.sheet form ol.spell-list > li button.cast-spell {
     cursor: url(../ui/cursors/pointer.webp), pointer;
 }
+.sheet.party .actor-link {
+    cursor: url(../ui/cursors/pointer.webp), pointer;
+}
+.sheet.party form > header .frame-container .player-image {
+    cursor: url(../ui/cursors/pointer.webp), pointer;
+}
+
+
 
 
 

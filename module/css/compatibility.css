@@ -915,68 +915,78 @@ box-shadow: var(--box-shadow-light);
 /* Smalltime */
 /* https://github.com/unsoluble/smalltime */
 #smalltime-app .window-content {
-    box-shadow: var(--box-shadow-light);
     filter: drop-shadow(2px 4px 6px var(--color-cool-5));
-    border-radius: var(--border-radius);
+    background: var(--color-cool-5);
+    border-radius: var(--border-radius-5);
+    border: 1px solid var(--color-cool-5);
+    box-shadow: var(--glassy-shadow);
 }
 #smalltime-app #slideContainer {
-    box-shadow: var(--box-shadow-light);
+    box-shadow: var(--glassy-shadow);
     border-radius: var(--border-radius-5);
 }
 #smalltime-app.show-date #dateDisplay {
-    background: var(--color-cool-5);
-    box-shadow: var(--box-shadow-light);
-    border: none;
+    background: var(--color-cool-4);
+    box-shadow: var(--glassy-shadow);
     color: var(--color-warm-1);
+    text-shadow: var(--text-shadow);
     border-radius: var(--border-radius);
+    border: 1px solid var(--color-cool-5);
 }
 #smalltime-app #timeDisplay {
     background: var(--color-cool-5);
-    border: none;    
     color: var(--green);
+    border: 1px solid var(--color-cool-5);
+    text-shadow: var(--text-shadow);
 }
 #smalltime-app #timeDisplay:hover {
-    color: var(--color-warm-1);
+    color: var(--color-warm-2);
 }
 #smalltime-app #dragHandle {
     background: var(--color-cool-5);
-    box-shadow: var(--box-shadow-light);
+    box-shadow: var(--box-shadow);
     border: none;
     color: var(--pfui-main-color);
     border-radius: var(--border-radius);
 }
 #smalltime-app #displayContainer {
     background: var(--color-cool-5);
-    box-shadow: var(--box-shadow-light);
+    box-shadow: var(--box-shadow);
     border: none;
     color: var(--pfui-main-color);
     border-radius: var(--border-radius);
 }
 #smalltime-app .arrow-right {
-    background: var(--color-cool-5);
-    box-shadow: var(--box-shadow-light);
-    border: none;
-    color: var(--pfui-main-color);
+    background: var(--color-cool-5-25);
+    box-shadow: var(--glassy-shadow);
+    color: var(--color-warm-1);
+    text-shadow: var(--text-shadow);
     border-radius: var(--border-radius);
+    border: 1px solid var(--color-cool-5);
     padding-top: 2px;
 }
 #smalltime-app .arrow-right:hover {
     color: var(--color-cool-5);
+    text-shadow: var(--text-shadow);
     background: var(--green);
     padding-top: 2px;
+    border: 1px solid var(--color-cool-5);
 }
 #smalltime-app .arrow-left {
-    background: var(--color-cool-5);
-    box-shadow: var(--box-shadow-light);
-    border: none;
-    color: var(--pfui-main-color);
+    background: var(--color-cool-5-25);
+    box-shadow: var(--glassy-shadow);
+    color: var(--color-warm-1);
+    text-shadow: var(--text-shadow);
     border-radius: var(--border-radius);
+    border: 1px solid var(--color-cool-5);
     padding-top: 2px;
 }
 #smalltime-app .arrow-left:hover {
     color: var(--color-cool-5);
+    text-shadow: var(--text-shadow);
     background: var(--green);
     padding-top: 2px;
+    border: 1px solid var(--color-cool-5);
 }
 
 
