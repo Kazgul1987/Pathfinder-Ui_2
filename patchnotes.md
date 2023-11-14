@@ -4,6 +4,10 @@
 - Ready for v11 version.
 
 
+## v11.315.6
+- Updated Dark NPC Sheet.
+- Updated Compatibility Carousel Combat Tracker.
+
 ## v11.315.5
 - Updated core code.
 - Updated Cursor compatibility.
