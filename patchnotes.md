@@ -4,9 +4,10 @@
 - Ready for v11 version.
 
 
-## v11.315.6
+## v11.315.6.1
 - Updated Dark NPC Sheet.
 - Updated Compatibility Carousel Combat Tracker.
+- Fixed Status Halo Icon size.(@KaZlos)
 
 ## v11.315.5
 - Updated core code.
