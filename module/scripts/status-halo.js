@@ -77,7 +77,7 @@ function updateIconPosition(effectIcon, i, effectIcons, token) {
     } else if (size == "med") {
       return 1.4;
     } else if (size == "lg") {
-      return 1.25;
+      return 1.55;
     } else if (size == "huge") {
       return 1.55;
     } else if (size == "grg") {
@@ -118,7 +118,7 @@ function updateEffectScales(token) {
 
             effectIcon.anchor.set(0.5);
 
-            const iconScale = sizeToIconScale(Math.min(token?.document?.height, token?.document?.width));
+            const iconScale = sizeToIconScale(token?.actor?.size);
             const gridScale = gridSize / 100;
             const scaledSize = 12 * iconScale * gridScale;
             updateIconSize(effectIcon, scaledSize);
