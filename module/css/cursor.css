@@ -277,7 +277,9 @@ form button {
 #combat-dock .combatant-wrapper .combatant-buttons i:hover {
     cursor: url(../ui/cursors/pointer.webp), pointer;
 }
-
+#combat-dock .portrait-pass i:hover {
+    cursor: url(../ui/cursors/pointer.webp), pointer;
+}
 
 
 /* DF Chat Enhancements */

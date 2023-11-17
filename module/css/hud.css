@@ -171,6 +171,8 @@
 #pf2e-token-hud .distance, #pf2e-token-hud .status {
   color: var(--green)!important;
   font-weight: normal;
+  text-shadow: var(--text-shadow);
+  backdrop-filter: blur(3px);
 }
 /**/
 
@@ -201,10 +203,11 @@
 }
 #pf2e-token-hud .sidebar, #pf2e-token-hud .inner, #pf2e-token-hud .popup {
   color: var(--pfui-main-grey-color);
+  text-shadow: var(--text-shadow);
   border: 1px solid var(--color-cool-5);
   border-radius: var(--border-radius);
   background: linear-gradient(45deg, var(--color-cool-4), var(--color-cool-5-75));
-  box-shadow: var(--glassy);
+  box-shadow: var(--glassy-shadow);
   backdrop-filter: blur(3px);
 }
 #pf2e-token-hud .sidebar .sidebar-content .details .name {

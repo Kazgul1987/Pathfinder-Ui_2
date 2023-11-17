@@ -1267,3 +1267,25 @@ color: var(--primary-remaster);
     box-shadow: unset;
     border-radius: unset;
 }
+.remaster.actor.sheet.character.dark-theme .crb-style select {
+    box-shadow: unset;
+}
+.remaster.actor.sheet.character.dark-theme .tags .tag, 
+.remaster.actor.sheet.character.dark-theme .tags .tag option {
+    box-shadow: unset;
+}
+.remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.actions .actions-container .actions-tabs-wrapper .actions-panels ol.actions-list.strikes-list li.strike .button-group button:not(:disabled) {
+    box-shadow: unset;
+}
+.remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.inventory .inventory-list .item .item-name h4.rarity-common {
+    text-shadow: unset;
+}
+.remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.inventory .inventory-list .item .item-name h4.rarity-uncommon {
+    text-shadow: unset;
+}
+.remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.inventory .inventory-list .item .item-name h4.rarity-unique {
+    text-shadow: unset;
+}
+.remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.inventory .inventory-list .item .item-name h4.rarity-rare {
+    text-shadow: unset;
+}
