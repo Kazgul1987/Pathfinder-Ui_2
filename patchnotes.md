@@ -4,6 +4,15 @@
 - Ready for v11 version.
 
 
+## v11.315.7
+- Updated core code.
+- Updated Compatibility PF2e v5.9.1.
+- Updated Cursor compatibility.
+- Updated Dark NPC Sheet.
+- Updated Carousel Combat Tracker Compatibility .
+- Updated PF2e Party Sheet Helper compatibility.
+- Updated PF2e Action Support Engine Compatibility.
+
 ## v11.315.6.1
 - Updated Dark NPC Sheet.
 - Updated Compatibility Carousel Combat Tracker.
