@@ -415,7 +415,40 @@
   text-shadow: unset;
   color: var(--color-warm-1)!important;
 }
-#pf2e-token-hud .popup a.content-link, #pf2e-token-hud .popup a.inline-roll {
+#pf2e-token-hud .sidebar.actions .sidebar-content .section .strike .description a.content-link, 
+#pf2e-token-hud .sidebar.actions .sidebar-content .section .strike .description a.inline-roll {
+  font-family: 'Good OT';
+  color: var(--pfui-main-color);
+  text-shadow: var(--text-shadow);
+  background: var(--color-cool-3);
+  padding: 0px 3px;
+  border: 1px solid var(--glassy);
+  box-shadow: var(--glassy);
+  border-radius: var(--border-radius);
+}
+#pf2e-token-hud .sidebar.actions .sidebar-content .section .strike .description span[data-pf2-effect-area] {
+  font-family: 'Good OT';
+  color: var(--pfui-main-color);
+  text-shadow: var(--text-shadow);
+  background: var(--color-cool-3);
+  padding: 0px 3px;
+  border: 1px solid var(--glassy);
+  box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius);
+}
+#pf2e-token-hud .sidebar.actions .sidebar-content .section .strike .description  a.inline-check, 
+#pf2e-token-hud .sidebar.actions .sidebar-content .section .strike .description  span[data-pf2-check] {
+  font-family: 'Good OT';
+  color: var(--pfui-main-color);
+  text-shadow: var(--text-shadow);
+  background: var(--color-cool-3);
+  padding: 0px 3px;
+  border: 1px solid var(--glassy);
+  box-shadow: var(--glassy);
+  border-radius: var(--border-radius);
+}
+#pf2e-token-hud .popup a.content-link, 
+#pf2e-token-hud .popup a.inline-roll {
   font-family: 'Good OT';
   color: var(--pfui-main-color);
   text-shadow: var(--text-shadow);
@@ -435,7 +468,8 @@
   box-shadow: var(--box-shadow);
   border-radius: var(--border-radius);
 }
-#pf2e-token-hud .popup a.inline-check, #pf2e-token-hud .popup span[data-pf2-check] {
+#pf2e-token-hud .popup a.inline-check, 
+#pf2e-token-hud .popup span[data-pf2-check] {
   font-family: 'Good OT';
   color: var(--pfui-main-color);
   text-shadow: var(--text-shadow);

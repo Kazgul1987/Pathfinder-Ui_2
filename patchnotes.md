@@ -4,17 +4,27 @@
 - Ready for v11 version.
 
 
+
+## v11.315.8
+- Updated core code.
+- Updated Compatibility PF2e v5.9.3.
+- Updated Dark Sheet Player.
+- Updated compatibility Interactive Token Tooltip.
+- Improved color for chat damage types.
+- Corrected color of chat buttons.
+
+
 ## v11.315.7
 - Updated core code.
 - Updated Compatibility PF2e v5.9.1.
 - Updated Cursor compatibility.
-- Updated Dark NPC Sheet.
+- Updated Dark Sheet NPC.
 - Updated Carousel Combat Tracker Compatibility .
 - Updated PF2e Party Sheet Helper compatibility.
 - Updated PF2e Action Support Engine Compatibility.
 
 ## v11.315.6.1
-- Updated Dark NPC Sheet.
+- Updated Dark Sheet NPC.
 - Updated Compatibility Carousel Combat Tracker.
 - Fixed Status Halo Icon size.(@KaZlos)
 
@@ -175,7 +185,7 @@
 - Updated core code.
 - Updated Player Sheet.
 - Updated Polyglot compatibility.
-- Replace the Dark NPC Sheet with a Dark Glassy NPC Sheet.
+- Replace the Dark Sheet NPC with a Dark Glassy NPC Sheet.
 - Fixed the problem with a white texture in the GM Chat.
 - Fixed the problem with the jump button.
 

@@ -246,6 +246,7 @@
 
 .sheet.actor.character.dark-theme .crb-style .sheet-body .sheet-content ol.directory-list .action-header h3 input.item-name-input {
     color: var(--pfui-main-color);
+    text-shadow: var(--text-shadow);
 }
 
 .sheet.actor.character.dark-theme .item-name {
@@ -401,7 +402,8 @@ background: radial-gradient(var(--background-2), transparent);
 
 /* Actions        
 *************************/
-.actor.sheet.dark-theme .crb-style .sheet-body .sheet-content .tab.actions ol.actions-list li.action, .actor.sheet.dark-theme .crb-style .sheet-body .sheet-content .tab.actions ol.actions-list li.strike {
+.actor.sheet.dark-theme .crb-style .sheet-body .sheet-content .tab.actions ol.actions-list li.action, 
+.actor.sheet.dark-theme .crb-style .sheet-body .sheet-content .tab.actions ol.actions-list li.strike {
     border: none;
 }
 .actor.sheet.dark-theme .crb-style .sheet-body .sheet-content .tab.actions .actions-container .actions-tabs-wrapper .actions-panels ol.actions-list li.action {
@@ -483,27 +485,33 @@ background: radial-gradient(var(--background-2), transparent);
     border-radius: var(--border-radius);
 }
 
-.actor.sheet.dark-theme .crb-style nav.sub-nav a.active, .actor.sheet.dark-theme .crb-style nav.sub-nav .tab.active {
+.actor.sheet.dark-theme .crb-style nav.sub-nav a.active, 
+.actor.sheet.dark-theme .crb-style nav.sub-nav .tab.active {
     color: var(--green) !important;
     text-shadow: 0 0 5px var(--color-shadow-primary);
 }
 
-.actor.sheet.dark-theme .crb-style nav.sub-nav a:hover, .actor.sheet.dark-theme .crb-style nav.sub-nav .tab:hover {
+.actor.sheet.dark-theme .crb-style nav.sub-nav a:hover, 
+.actor.sheet.dark-theme .crb-style nav.sub-nav .tab:hover {
     color: var(--green)!important;
     text-shadow: 0 0 3px var(--red-light) !important;
 }
 
-.actor.sheet.dark-theme .crb-style nav.sub-nav a, .actor.sheet.dark-theme .crb-style nav.sub-nav .tab {
+.actor.sheet.dark-theme .crb-style nav.sub-nav a, 
+.actor.sheet.dark-theme .crb-style nav.sub-nav .tab {
     color: var(--pfui-main-color);
+    text-shadow: var(--text-shadow);
 }
 .actor.sheet.dark-theme .crb-style .sheet-body .sheet-content .tab.actions .actions-container .actions-tabs-wrapper .actions-panels ol.actions-list li.action .item-name {
     background: radial-gradient(var(--background-2), transparent);
 }
-.actor.sheet.dark-theme .crb-style .sheet-body .sheet-content .tab.actions ol.actions-list li.action .item-name .actions-title .action-name > h4:hover, .actor.sheet .crb-style .sheet-body .sheet-content .tab.actions ol.actions-list li.strike .item-name .actions-title .action-name > h4:hover {
+.actor.sheet.dark-theme .crb-style .sheet-body .sheet-content .tab.actions ol.actions-list li.action .item-name .actions-title .action-name > h4:hover, 
+.actor.sheet.dark-theme .crb-style .sheet-body .sheet-content .tab.actions ol.actions-list li.strike .item-name .actions-title .action-name > h4:hover {
     color: var(--green);
     text-shadow: 0 0 8px var(--green);
 }
-.actor.sheet.dark-theme .crb-style .sheet-body .sheet-content .tab.actions ol.actions-list li.action button.use-action:not(:disabled), .actor.sheet.dark-theme .crb-style .sheet-body .sheet-content .tab.actions ol.actions-list li.strike button.use-action:not(:disabled) {
+.actor.sheet.dark-theme .crb-style .sheet-body .sheet-content .tab.actions ol.actions-list li.action button.use-action:not(:disabled), 
+.actor.sheet.dark-theme .crb-style .sheet-body .sheet-content .tab.actions ol.actions-list li.strike button.use-action:not(:disabled) {
     background: var(--red);
     text-shadow: var(--text-shadow);
 }
@@ -634,24 +642,25 @@ background: radial-gradient(var(--background-2), transparent);
 /* Spellcrafting 
 *************************/
 .actor.sheet.dark-theme .crb-style .sheet-body .sheet-content ol.spell-list > li.spell-level-header .item-name h3 {
-    color: darkorange!important;
+    color: var(--color-warm-1)!important;
+    text-shadow: var(--text-shadow);
 }
 .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .blue-button:hover {
     text-shadow: 0 0 3px var(--red-light) !important;
 }
-
-.actor.sheet.dark-theme .crb-style .sheet-body .sheet-content ol.spell-list > li button.cast-spell {
-    color: var(--background);
-    background: var(--primary-light-remaster);
-    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15), inset 0 0 0 2px rgba(0, 0, 0, 0.4);
+.actor.sheet.dark-theme .crb-style .sheet-body .sheet-content ol.spell-list > li .cast-spell button {
+    box-shadow: var(--box-shadow);
+    text-shadow: var(--text-shadow);
+}
+.actor.sheet.dark-theme .crb-style .sheet-body .sheet-content ol.spell-list > li[data-expended-state=true] .cast-spell button {
+    cursor: not-allowed;
+    border: none;
+    text-shadow: 0 0 8px var(--color-shadow-primary);
     border-radius: var(--border-radius);
+    filter: drop-shadow(0px 0px 0px var(--red-light));
+    background: var(--color-cool-5);
+    color: var(--red-light)!important;
 }
-
-.actor.sheet.dark-theme .crb-style .sheet-body .sheet-content ol.spell-list > li[data-expended-state=true] .cast-spell {
-    color: var(--pfui-main-color);
-    background: var(--red);
-}
-
 .actor.sheet.dark-theme .crb-style .sheet-body .sheet-content ol.spell-list > li .item-summary {
     background-color: transparent;
 }
@@ -664,12 +673,14 @@ background: radial-gradient(var(--background-2), transparent);
     background: radial-gradient(var(--background-2), transparent);
     border: 1px dotted rgba(255, 255, 255, 0.2);
     box-shadow: 0 0 6px inset var(--glass-bg-light-2);
+    text-shadow: var(--text-shadow);
 }
 
 .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.spellcasting .spellcasting-entry .rollable .d20-svg path {
     fill: var(--green);
 }
-.actor.sheet.dark-theme .crb-style .sheet-body .sheet-content ol.directory-list .action-header > a .fas, .actor.sheet.dark-theme .crb-style .sheet-body .sheet-content ol.directory-list .action-header > a > .fa {
+.actor.sheet.dark-theme .crb-style .sheet-body .sheet-content ol.directory-list .action-header > a .fas, 
+.actor.sheet.dark-theme .crb-style .sheet-body .sheet-content ol.directory-list .action-header > a > .fa {
     color: var(--green);
 }
 .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.spellcasting .spellcasting-entry .spell-ability-data button:hover {
@@ -681,16 +692,19 @@ color: var(--green)!important;
 .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.spellcasting .spellcasting-entry .spell-ability-data .focus-pool .pips i.fa-circle {
     color: var(--red-light);
 }
-.actor.sheet.dark-theme .crb-style .sheet-body .sheet-content ol.spell-list > li.spell-level-header input, .actor.sheet.dark-theme .crb-style .sheet-body .sheet-content ol.spell-list > li .uses input {
+.actor.sheet.dark-theme .crb-style .sheet-body .sheet-content ol.spell-list > li.spell-level-header input, 
+.actor.sheet.dark-theme .crb-style .sheet-body .sheet-content ol.spell-list > li .uses input {
     color: var(--green)!important;
+    text-shadow: var(--text-shadow);
     background: none;
     border-radius: 50%;
-    border: 4px dotted var(--color-cool-5-50);
+    border: 4px dotted var(--color-warm-2);
 }
 .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.spellcasting .pf-add-item-row a {
     color: var(--pfui-main-color)!important;
     background: radial-gradient(var(--primary-remaster), var(--primary-light-remaster))!important;
     border-radius: 15px;
+    text-shadow: var(--text-shadow);
 }
 .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.spellcasting .pf-add-item-row a:hover {
     color: var(--background)!important;
@@ -698,7 +712,8 @@ color: var(--green)!important;
     text-shadow:none!important;
     box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15), inset 0 0 0 2px rgba(0, 0, 0, 0.4);
 }
-.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .item-image.framed, .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .item-image.framed i {
+.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .item-image.framed, 
+.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .item-image.framed i {
     background: var(--green);
     color: var(--background);
 }
@@ -711,16 +726,7 @@ color: var(--green)!important;
 .actor.sheet.character.dark-theme form ol.spell-list > li[data-expended-state=true] h4 {
     color: #ff6400!important;
 }
-.actor.sheet.character.dark-theme form ol.spell-list > li[data-expended-state=true] .cast-spell {
-    background: var(--color-cool-5)!important;
-    color: var(--red-light)!important;
-    box-shadow: inset 0 0 0 1px rgba(255, 0, 0, 0.5)!important;
-}
-.actor.sheet.character.dark-theme form ol.spell-list > li[data-expended-state=true] .cast-spell:hover {
-    background: var(--red-light)!important;
-    color:  var(--color-cool-5)!important;
-    box-shadow: inset 0 0 0 1px  var(--color-cool-5)!important;
-}
+
 
 
 
@@ -738,6 +744,7 @@ color: var(--green)!important;
 }
 .actor.sheet.dark-theme .crb-style .sheet-body .sheet-content ol.directory-list .action-header h3 {
     background: radial-gradient(var(--background-2), transparent);
+    text-shadow: var(--text-shadow);
 }
 
 
@@ -997,11 +1004,6 @@ color: var(--green)!important;
     background: radial-gradient(var(--red),transparent);
     border-radius: 15px;
 }
-.red.actor.sheet.dark-theme .crb-style .sheet-body .sheet-content ol.spell-list > li button.cast-spell {
-    color: var(--background);
-    background: var(--red);
-    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15), inset 0 0 0 2px rgba(0, 0, 0, 0.4);
-}
 .red.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.character .attributes .attribute .label {
     color: var(--green) !important;
     opacity: 0.7;
@@ -1090,6 +1092,7 @@ color: var(--green)!important;
 .remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content h3.header button {
     background: radial-gradient( var(--primary-remaster), var(--primary-light-remaster));
     border-radius: var(--border-radius);
+    text-shadow: var(--text-shadow);
 }
 .remaster.actor.sheet.dark-theme .crb-style aside .sidebar .roll-data h3 {
     color: var(--pfui-main-color) !important;
@@ -1120,6 +1123,7 @@ color: var(--green)!important;
 }
 .remaster.actor.sheet.dark-theme .crb-style nav.sub-nav a.active, .remaster.actor.sheet.dark-theme .crb-style nav.sub-nav .tab.active {
     color: var(--primary-light-remaster);
+    text-shadow: var(--text-shadow);
 }
 .remaster.actor.sheet.dark-theme a:hover {
     text-shadow: 0 0 8px var(--primary-light-remaster) !important;
@@ -1181,9 +1185,11 @@ color: var(--green)!important;
 }
 .remaster.sheet.actor.character.dark-theme .crb-style .sheet-body .sheet-content ol.directory-list .action-header h3 input.item-name-input {
     color: var(--pfui-main-color)!important;
+    text-shadow: var(--text-shadow);
 }
 .remaster.actor.sheet.dark-theme .crb-style .sheet-body .sheet-content ol.directory-list .action-header .item-controls {
     color: var(--pfui-main-color)!important;
+    text-shadow: var(--text-shadow);
 }
 .remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .blue-button {
     color: var(--pfui-main-color) !important;
@@ -1198,6 +1204,7 @@ color: var(--green)!important;
     border: 1px dotted rgba(255, 255, 255, 0.2);
     box-shadow: 0 0 6px inset var(--glass-bg-light-2);
     border-radius: var(--border-radius);
+    text-shadow: var(--text-shadow);
 }
 .remaster.actor.sheet.dark-theme .inventory .item-summary {
     background: none!important;
@@ -1288,4 +1295,10 @@ color: var(--primary-remaster);
 }
 .remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.inventory .inventory-list .item .item-name h4.rarity-rare {
     text-shadow: unset;
+}
+.remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content ol.spell-list > li .cast-spell button {
+    box-shadow: unset;
+}
+.remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content ol.spell-list > li[data-expended-state=true] .cast-spell button {
+    box-shadow: inset 0 0 0 1px rgba(255, 0, 0, 0.5)!important;
 }
