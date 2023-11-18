@@ -22,7 +22,7 @@
         "type": "system",
         "compatibility": {
           "minimum": "5.9.0",
-          "verified": "5.9.1"
+          "verified": "5.9.3"
         }
       }
     ]
