@@ -247,12 +247,28 @@ form button {
 .actor.sheet .crb-style .sheet-body .sheet-content .tab.actions ol.actions-list li.action .item-name .item-image, .actor.sheet .crb-style .sheet-body .sheet-content .tab.actions ol.actions-list li.strike .item-name .item-image {
     cursor: url(../ui/cursors/pointer.webp), pointer;
 }
+
+
+
+/* PF2e NPC Sheet */
 .actor.npc.sheet form ol.spell-list > li .item-name h4 {
     cursor: url(../ui/cursors/pointer.webp), pointer;
 }
 .actor.npc.sheet form ol.spell-list > li button.cast-spell {
     cursor: url(../ui/cursors/pointer.webp), pointer;
 }
+.actor.npc.sheet form ol.spell-list > li .cast-spell button {
+    cursor: url(../ui/cursors/pointer.webp), pointer;
+}
+.actor.npc.sheet form .section-container.recall-knowledge .section-header .breakdown {
+    cursor: url(../ui/cursors/pointer.webp), pointer!important;
+}
+.actor.npc.sheet form .sheet-body .effects .section-body .effects-list .item .item-name h4 {
+    cursor: url(../ui/cursors/pointer.webp), pointer;
+}
+
+
+/*PF2e Party sheet */
 .sheet.party .actor-link {
     cursor: url(../ui/cursors/pointer.webp), pointer;
 }

@@ -225,6 +225,12 @@
 .dark-npc-theme.actor.npc form .tag-legacy a:hover {
     text-shadow: unset;
 }
+.dark-npc-theme.actor.npc form .section-container.recall-knowledge .section-header .breakdown {
+    border: 1px solid black;
+    color: var(--pfui-main-color);
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+}
 .dark-npc-theme.actor.npc .section-container.recall-knowledge .section-header .breakdown:hover {
     border: none;
     background: none;
@@ -235,7 +241,19 @@
     color: var(--background);
     border-radius: var(--border-radius);
 }
-.dark-npc-theme.actor.npc .actions-list li.action .button-group button:hover, .dark-npc-theme.actor.npc .actions-list li.attack .button-group button:hover, .dark-npc-theme.actor.npc .attacks-list li.action .button-group button:hover, .dark-npc-theme.actor.npc .attacks-list li.attack .button-group button:hover {
+.dark-npc-theme.actor.npc form .sheet-body .actions-list li.action .button-group button, 
+.dark-npc-theme.actor.npc form .sheet-body .actions-list li.attack .button-group button, 
+.dark-npc-theme.actor.npc form .sheet-body .attacks-list li.action .button-group button, 
+.dark-npc-theme.actor.npc form .sheet-body .attacks-list li.attack .button-group button {
+    border: 1px solid black;
+    color: var(--pfui-main-color);
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+}
+.dark-npc-theme.actor.npc form .sheet-body .actions-list li.action .button-group button:hover, 
+.dark-npc-theme.actor.npc form .sheet-body .actions-list li.attack .button-group button:hover, 
+.dark-npc-theme.actor.npc form .sheet-body .attacks-list li.action .button-group button:hover, 
+.dark-npc-theme.actor.npc form .sheet-body .attacks-list li.attack .button-group button:hover {
     border: none;
     background: none;
     background-color: var(--green)!important;
@@ -245,7 +263,9 @@
     color: var(--background)!important;
     border-radius: var(--border-radius);
 }
-.dark-npc-theme.actor.npc form input.adjustable:not(:focus).adjusted-lower, .dark-npc-theme.actor.npc form span.adjustable.adjusted-lower, .dark-npc-theme.actor.npc form div.adjustable.adjusted-lower {
+.dark-npc-theme.actor.npc form input.adjustable:not(:focus).adjusted-lower, 
+.dark-npc-theme.actor.npc form span.adjustable.adjusted-lower, 
+.dark-npc-theme.actor.npc form div.adjustable.adjusted-lower {
     color: var(--color-warm-1);
 }
 .dark-npc-theme.actor.npc [data-visibility]:not([data-visibility=all])[data-visibility=gm] {
@@ -405,13 +425,18 @@ text-shadow: var(--text-shadow);
 .dark-npc-theme.actor.npc .inventory .list-row .item-controls {
     color: var(--pfui-main-color);
 }
-.dark-npc-theme.actor.npc .inventory .item .quantity, .dark-npc-theme.actor.npc .inventory .item .bulk, .dark-npc-theme.actor.npc .inventory .item .item-controls, .dark-npc-theme.actor.npc .inventory .item .sell-value {
+.dark-npc-theme.actor.npc .inventory .item .quantity, 
+.dark-npc-theme.actor.npc .inventory .item .bulk, 
+.dark-npc-theme.actor.npc .inventory .item .item-controls, 
+.dark-npc-theme.actor.npc .inventory .item .sell-value {
     border: none;
 }
-.dark-npc-theme.actor.npc .inventory .list-row .item-controls .item-control.toggle-invested.active, .dark-npc-theme.actor.npc .inventory .list-row .item-controls .item-control.item-carry-type.active {
+.dark-npc-theme.actor.npc .inventory .list-row .item-controls .item-control.toggle-invested.active, 
+.dark-npc-theme.actor.npc .inventory .list-row .item-controls .item-control.item-carry-type.active {
     color: var(--green);
 }
-.dark-npc-theme.actor.npc .inventory .list-row .item-controls .item-control.toggle-invested, .dark-npc-theme.actor.npc .inventory .list-row .item-controls .item-control.item-carry-type {
+.dark-npc-theme.actor.npc .inventory .list-row .item-controls .item-control.toggle-invested, 
+.dark-npc-theme.actor.npc .inventory .list-row .item-controls .item-control.item-carry-type {
     color: var(--green);
 }
 .dark-npc-theme.actor.npc .inventory .item-summary {
@@ -446,7 +471,8 @@ max-width: 24px;
     border-radius: var(--border-radius);
     backdrop-filter: blur(5px);
 }
-.dark-npc-theme.actor.npc .entries-list .spellcasting-entry .header .inline-field .attack-input, .dark-npc-theme.actor.npc .entries-list .spellcasting-entry .header .inline-field .dc-input {
+.dark-npc-theme.actor.npc .entries-list .spellcasting-entry .header .inline-field .attack-input, 
+.dark-npc-theme.actor.npc .entries-list .spellcasting-entry .header .inline-field .dc-input {
     color: var(--pfui-main-color);
     border: none;
     background: none;
@@ -543,7 +569,7 @@ text-shadow: var(--text-shadow);
     text-shadow: var(--text-shadow)!important;
     color: var(--background)!important;
 }
-.dark-npc-theme.actor.npc ol.spell-list > li button.cast-spell {
+.dark-npc-theme.actor.npc form ol.spell-list > li .cast-spell button {
     color: var(--pfui-main-color);
     text-transform: uppercase;
     background: var(--blue);
@@ -552,7 +578,7 @@ text-shadow: var(--text-shadow);
     text-shadow: var(--text-shadow);
     border-radius: var(--border-radius);
 }
-.dark-npc-theme.actor.npc ol.spell-list > li button.cast-spell:hover {
+.dark-npc-theme.actor.npc form ol.spell-list > li .cast-spell button:hover {
     border: 1px solid black;
     background: none;
     background-color: var(--green);
@@ -565,12 +591,13 @@ text-shadow: var(--text-shadow);
 .dark-npc-theme.actor.npc form ol.spell-list > li[data-expended-state=true] h4 {
     color: #ff6400;
 }
-.dark-npc-theme.actor.npc form ol.spell-list > li[data-expended-state=true] .cast-spell {
+.dark-npc-theme.actor.npc form ol.spell-list > li[data-expended-state=true] .cast-spell button {
     background: var(--color-cool-5);
     color: var(--red-light);
+    text-shadow: 0 0 8px var(--color-shadow-primary);
     box-shadow: inset 0 0 0 1px rgba(255, 0, 0, 0.5);
 }
-.dark-npc-theme.actor.npc form ol.spell-list > li[data-expended-state=true] .cast-spell:hover {
+.dark-npc-theme.actor.npc form ol.spell-list > li[data-expended-state=true] .cast-spell button:hover {
     background: var(--red-light);
     color:  var(--color-cool-5);
     box-shadow: inset 0 0 0 1px  var(--color-cool-5);
@@ -598,7 +625,8 @@ text-shadow: var(--text-shadow);
 .dark-npc-theme.actor.npc .notes .notes-text {
     color: var(--pfui-main-color)!important;
 }
-.dark-npc-theme.actor.npc form input[type=text], .dark-npc-theme.actor.npc form input[type=number] {
+.dark-npc-theme.actor.npc form input[type=text], 
+.dark-npc-theme.actor.npc form input[type=number] {
     color: var(--rarity-common);
 }
 .dark-npc-theme.actor.npc form .notes .notes-section > h4 {

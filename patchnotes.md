@@ -5,6 +5,15 @@
 
 
 
+## v11.315.9
+- Updated core code.
+- Updated Compatibility PF2e v5.9.3.
+- Updated Cursor compatibility.
+- Updated Dark Sheet Player.
+- Updated Dark Sheet NPC.
+- Updated Carousel Combat Tracker Compatibility .
+- Updated PF2e Action Support Engine Compatibility.
+
 ## v11.315.8
 - Updated core code.
 - Updated Compatibility PF2e v5.9.3.
@@ -12,7 +21,6 @@
 - Updated compatibility Interactive Token Tooltip.
 - Improved color for chat damage types.
 - Corrected color of chat buttons.
-
 
 ## v11.315.7
 - Updated core code.

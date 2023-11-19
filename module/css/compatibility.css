@@ -42,6 +42,10 @@
     --color-warm-1: #ee9b3a;
     --color-warm-2: #c9593f;
     --color-warm-3: #5d142b;
+    --color-warm-4: #420418;
+    --color-warm-5: #26020d;
+    --color-cool-1: #b1a0d4;
+    --color-cool-2: #79689c;
     --color-cool-3: #584a75;
     --color-cool-4: #302831;
     --color-cool-5: #0b0a13;
@@ -130,6 +134,8 @@
     border-bottom: unset;
     backdrop-filter: blur(5px);
     background: var(--background-2);
+    box-shadow: 0 0 0 1px var(--color-warm-1), 0 0 0 2px #9f725b, inset 0 0 4px rgba(0, 0, 0, 0.25);
+    animation: glow 0.75s infinite alternate;
 }
 #combat-dock .combatant-wrapper .image-border {
     --combatant-portrait-image-border: url(./assets/combat-tracker-dock/border.webp);
@@ -153,15 +159,28 @@
     color: var(--color-warm-2);
     text-shadow: var(--text-shadow);
 }
-#combat-dock .buttons-container {
+
+#combat-dock .buttons-container i {
     color: var(--green);
     filter: contrast(2);
     --text-shadow: 0px 1px 3px black;
     text-shadow: var(--text-shadow);
+    border: 1px solid var(--color-cool-5);
+    border-radius: 50%;
+    background: var(--color-cool-4);
+    box-shadow: 0px 0px 6px var(--color-warm-1), 0px 2px 8px 1px var(--color-warm-2);
+    width: 2rem;
+    height: 2rem;
 }
 #combat-dock .buttons-container i:hover {
     color: var(--color-warm-2);
     text-shadow: var(--text-shadow);
+    fill: var(--color-warm-1);
+    background: var(--color-cool-4);
+    box-shadow: 0 0 0 1px var(--color-warm-1), 0 0 0 2px #9f725b, inset 0 0 4px rgba(0, 0, 0, 0.25);
+    animation: glow 0.75s infinite alternate;
+    filter: contrast(2);
+    border: 1px solid var(--color-cool-5);
 }
 #combat-dock .combatant-wrapper .portrait-initiative {
     color: var(--pfui-main-color);
@@ -580,7 +599,8 @@ li.hm_messagetaken {
 /* Monk's Sound Enhancements */
 /* https://github.com/ironmonk88/monks-sound-enhancements */
 #mseCharacterSound, #mseItemSound {
-    color: var(--pfui-main-color);
+    color: var(--green);
+    background: var(--color-cool-4);
 }
 
 
@@ -767,20 +787,18 @@ wrapper.pf2e-td.name-left .pf2e-td.damage-application {
 .glass {
     box-shadow: unset;
     background-color: unset;
-    backdrop-filter: unset;
+    backdrop-filter: blur(5px);
+    height: 47px;
 }
 .token-info.criticalSuccess {
-    color: var(--color-cool-5)!important;
-    background-color: var(--green)!important;
-    filter: drop-shadow(2px 4px 6px black) brightness(1.5);
+    color: var(--green)!important;
+    background-color: unset;
 }
-.token-info.criticalSuccess button {
-    filter: opacity(0);
-}
+
 .token-info button.save.criticalSuccess {
     color: var(--color-cool-5)!important;
 	background-color: var(--green)!important;
-    filter: drop-shadow(2px 4px 6px black) brightness(1.5);
+    filter: drop-shadow(2px 4px 6px black) brightness(1.2);
 }
 .token-info .damage-application button.success, .token-info button.save.success {
 	background-color: var(--rarity-rare)!important;
