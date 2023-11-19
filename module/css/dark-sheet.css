@@ -41,7 +41,8 @@
     --alt: #786452;
     --sub: var(--background);
 
-    --rarity-common: #7e7e7e;
+    /*--rarity-common: #7e7e7e;*/
+    --rarity-common: var(--color-cool-1);
     --rarity-uncommon: #ff6400;
     --rarity-rare: #0062ff;
     --rarity-unique: #e127e1;
@@ -51,6 +52,10 @@
     --color-warm-1: #ee9b3a;
     --color-warm-2: #c9593f;
     --color-warm-3: #5d142b;
+    --color-warm-4: #420418;
+    --color-warm-5: #26020d;
+    --color-cool-1: #b1a0d4;
+    --color-cool-2: #79689c;
     --color-cool-3: #584a75;
     --color-cool-4: #302831;
     --color-cool-5: #0b0a13;
@@ -573,8 +578,8 @@ background: radial-gradient(var(--background-2), transparent);
     text-shadow: var(--text-shadow);
 }
 .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.inventory .inventory-list .item .item-name h4.rarity-common {
-    border-color: #7e7e7e;
-    color: #7e7e7e;
+    border-color: var(--rarity-common);
+    color: var(--rarity-common);
     text-shadow: var(--text-shadow);
 }
 
@@ -649,6 +654,8 @@ background: radial-gradient(var(--background-2), transparent);
     text-shadow: 0 0 3px var(--red-light) !important;
 }
 .actor.sheet.dark-theme .crb-style .sheet-body .sheet-content ol.spell-list > li .cast-spell button {
+    --secondary: var(--color-cool-3);
+    background: var(--secondary);
     box-shadow: var(--box-shadow);
     text-shadow: var(--text-shadow);
 }
@@ -730,7 +737,9 @@ color: var(--green)!important;
     color: var(--green);
 }
 .actor.sheet.character.dark-theme form ol.spell-list > li[data-expended-state=true] h4 {
-    color: #ff6400!important;
+    border: none;
+    border-radius: var(--border-radius);
+    color: var(--pfui-main-grey-color) !important;
 }
 
 
@@ -869,36 +878,6 @@ color: var(--green)!important;
     border: 1px dotted var(--color-cool-5-50);
     box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
-}
-
-
-
-
-
-
-
-/* Support        
-*************************/
-
-/*Workbench*/
-.actor.sheet.character.dark-theme .xdy-pf2e-workbench-rarity-common {
-    border-color: #7e7e7e;
-    color: #7e7e7e;
-}
-
-.actor.sheet.character.dark-theme .xdy-pf2e-workbench-rarity-uncommon {
-    border-color: #ff6400;
-    color: #ff6400;
-}
-
-.actor.sheet.character.dark-theme .xdy-pf2e-workbench-rarity-rare {
-    border-color: #0062ff;
-    color: #0062ff;
-}
-
-.actor.sheet.character.dark-theme .xdy-pf2e-workbench-rarity-unique {
-    border-color: #e127e1;
-    color: #e127e1;
 }
 
 
@@ -1137,11 +1116,15 @@ color: var(--green)!important;
 .remaster.actor.sheet.dark-theme .crb-style .sheet-body .sheet-content ol.directory-list .action-header {
     background: var(--primary-remaster);
 }
-.remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.proficiencies .skills-list .skill .skill-score, .remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.proficiencies .lores-list .skill .skill-score, .remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.proficiencies .combat-list .skill .skill-score {
+.remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.proficiencies .skills-list .skill .skill-score, 
+.remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.proficiencies .lores-list .skill .skill-score, 
+.remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.proficiencies .combat-list .skill .skill-score {
     color: var(--green);
     text-shadow: 0 0 1px var(--primary-light-remaster);
 }
-.remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.proficiencies .skills-list .skill .rollable:hover, .remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.proficiencies .lores-list .skill .rollable:hover, .remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.proficiencies .combat-list .skill .rollable:hover {
+.remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.proficiencies .skills-list .skill .rollable:hover, 
+.remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.proficiencies .lores-list .skill .rollable:hover, 
+.remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.proficiencies .combat-list .skill .rollable:hover {
     color: var(--primary-light-remaster);
 }
 .remaster.actor.sheet.character.dark-theme nav.sub-nav {
@@ -1157,6 +1140,12 @@ color: var(--green)!important;
     color: var(--pfui-main-color)!important;
     background: radial-gradient(var(--background-2), transparent);
     text-shadow: none;
+}
+.remaster.sheet.actor.character.dark-theme .crb-style .sheet-body .sheet-content .tab.inventory .inventory-list .item .item-name h4.rarity-common {
+    --rarity-common: var(--color-cool-4);
+    border-color: var(--rarity-common);
+    color: var(--rarity-common);
+    text-shadow: var(--text-shadow);
 }
 .remaster.sheet.actor.character.dark-theme .item-controls {
     color: var(--green) !important;
@@ -1307,4 +1296,60 @@ color: var(--primary-remaster);
 }
 .remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content ol.spell-list > li[data-expended-state=true] .cast-spell button {
     box-shadow: inset 0 0 0 1px rgba(255, 0, 0, 0.5)!important;
+}
+.remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content ol.spell-list > li.spell-level-header input, 
+.remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content ol.spell-list > li .uses input {
+    color: var(--primary-remaster) !important;
+    text-shadow: unset;
+    background: none;
+    border-radius: 50%;
+    border: 4px dotted var(--color-warm-2);
+}
+
+
+
+
+/* Support        
+*************************/
+/*Workbench*/
+.actor.sheet.character.dark-theme .xdy-pf2e-workbench-rarity-common {
+    border-color: var(--rarity-common);
+    color: var(--rarity-common);
+    text-shadow: var(--text-shadow);
+}
+.remaster.sheet.actor.character.dark-theme .xdy-pf2e-workbench-rarity-common {
+    --rarity-common: var(--color-cool-4);
+    border-color: var(--rarity-common) !important;
+    color: var(--rarity-common) !important;
+    text-shadow: unset;
+}
+.actor.sheet.character.dark-theme .xdy-pf2e-workbench-rarity-uncommon {
+    border-color: #ff6400;
+    color: #ff6400;
+    text-shadow: var(--text-shadow);
+}
+.remaster.sheet.actor.character.dark-theme .xdy-pf2e-workbench-rarity-uncommon {
+    border-color: #ff6400 !important;
+    color: #ff6400 !important;
+    text-shadow: unset;
+}
+.actor.sheet.character.dark-theme .xdy-pf2e-workbench-rarity-rare {
+    border-color: #0062ff;
+    color: #0062ff;
+    text-shadow: var(--text-shadow);
+}
+.remaster.sheet.actor.character.dark-theme .xdy-pf2e-workbench-rarity-rare {
+    border-color: #0062ff !important;
+    color: #0062ff !important;
+    text-shadow: unset;
+}
+.actor.sheet.character.dark-theme .xdy-pf2e-workbench-rarity-unique {
+    border-color: #e127e1;
+    color: #e127e1;
+    text-shadow: var(--text-shadow);
+}
+.remaster.sheet.actor.character.dark-theme .xdy-pf2e-workbench-rarity-unique {
+    border-color: #e127e1 !important;
+    color: #e127e1 !important;
+    text-shadow: unset;
 }

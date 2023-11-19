@@ -107,7 +107,7 @@
     backdrop-filter: blur(5px);
 }
 .sheet.kingdom-builder form > nav a:not(.active) {
-    background-color: var(--color-cool-3);
+    background-color: var(--background-2);
 }
 .sheet.kingdom-builder form > nav a.active {
     background-color: var(--color-cool-5-25);
@@ -131,21 +131,26 @@
     color: var(--pfui-main-color);
     background: radial-gradient( var(--primary-light-remaster), var(--primary-remaster));
     border-radius: var(--border-radius);
+    box-shadow: var(--glassy-shadow);
+    border: unset;
 }
 .sheet.kingdom-builder button.complete:hover {
     color: var(--background);
     background: var(--green);
     box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15), inset 0 0 0 2px rgba(0, 0, 0, 0.4);
     border-radius: var(--border-radius);
+    animation: glow 0.75s infinite alternate;
 }
 .sheet.kingdom-builder .build-element .choices .choice img {
 filter: grayscale(0.75);
 }
-.sheet.kingdom-builder .build-element .choices .choice.selected img, .sheet.kingdom-builder .build-element .choices .choice:hover img {
+.sheet.kingdom-builder .build-element .choices .choice.selected img, 
+.sheet.kingdom-builder .build-element .choices .choice:hover img {
     box-shadow: 0 0 1px var(--green);
     filter: drop-shadow(1px 2px 5px var(--green)) brightness(1) ;
 }
-.sheet.kingdom-builder .build-element .choices .choice.selected, .sheet.kingdom-builder .build-element .choices .choice:hover {
+.sheet.kingdom-builder .build-element .choices .choice.selected, 
+.sheet.kingdom-builder .build-element .choices .choice:hover {
     text-shadow: none;
     filter: drop-shadow(1px 2px 5px var(--green));
 }
@@ -160,7 +165,8 @@ filter: grayscale(0.75);
 }
 
 /*Government*/
-.sheet.kingdom-builder a.content-link, .sheet.kingdom-builder a.inline-roll {
+.sheet.kingdom-builder a.content-link, 
+.sheet.kingdom-builder a.inline-roll {
     font-family: "Good OT";
     color: var(--pfui-main-color);
     background: var(--custom-trait);
@@ -200,8 +206,13 @@ filter: grayscale(0.75);
     text-shadow: 0 0 3px black;
     border-radius: var(--border-radius);
 }
-.sheet.kingdom-builder .ability-builder .summary-row .hint-container .aspiration select option, .sheet.kingdom-builder .ability-builder .summary-row .hint-container .aspiration select optgroup {
+.sheet.kingdom-builder .ability-builder .summary-row .hint-container .aspiration select option, 
+.sheet.kingdom-builder .ability-builder .summary-row .hint-container .aspiration select optgroup {
     background: var(--glass-bg-dark) ;
+}
+.sheet.kingdom-builder .ability-builder .summary-row .row-column input {
+    color: darkgray;
+    filter: drop-shadow(1px 2px 5px var(--red));
 }
 .sheet.kingdom-builder .ability-builder .summary-row .row-column .value {
     color: darkgray;
@@ -272,7 +283,8 @@ filter: grayscale(0.75);
     box-shadow: 0 0 6px inset var(--glass-bg-light-2);
     border-radius: var(--border-radius);
 }
-.dark-kingdom-theme.sheet.kingdom form > header .details input[type=text], .dark-kingdom-theme.sheet.kingdom form > header .details input[type=number] {
+.dark-kingdom-theme.sheet.kingdom form > header .details input[type=text], 
+.dark-kingdom-theme.sheet.kingdom form > header .details input[type=number] {
     background: none;
 }
 .dark-kingdom-theme.sheet.kingdom form > header .details .name {
@@ -281,7 +293,10 @@ filter: grayscale(0.75);
     text-shadow: 0 0 8px var(--color-shadow-primary);
     border-radius: var(--border-radius);
 }
-.dark-kingdom-theme.sheet.kingdom form > header input[type=text]:not(:disabled):hover, .dark-kingdom-theme.sheet.kingdom form > header input[type=text]:focus, .dark-kingdom-theme.sheet.kingdom form > header input[type=number]:not(:disabled):hover, .dark-kingdom-theme.sheet.kingdom form > header input[type=number]:focus {
+.dark-kingdom-theme.sheet.kingdom form > header input[type=text]:not(:disabled):hover, 
+.dark-kingdom-theme.sheet.kingdom form > header input[type=text]:focus, 
+.dark-kingdom-theme.sheet.kingdom form > header input[type=number]:not(:disabled):hover, 
+.dark-kingdom-theme.sheet.kingdom form > header input[type=number]:focus {
     border: none;
     text-shadow: 0 0 8px var(--color-shadow-primary);
     box-shadow: none;
@@ -291,10 +306,12 @@ filter: grayscale(0.75);
     background: radial-gradient(var(--primary-remaster), transparent);
     border-radius: var(--border-radius);
 }
-.dark-kingdom-theme.sheet.kingdom nav.sub-nav a.active, .dark-kingdom-theme.sheet.kingdom nav.sub-nav .tab.active {
+.dark-kingdom-theme.sheet.kingdom nav.sub-nav a.active, 
+.dark-kingdom-theme.sheet.kingdom nav.sub-nav .tab.active {
     color: var(--green);
 }
-.dark-kingdom-theme.sheet.kingdom nav.sub-nav a, .dark-kingdom-theme.sheet.kingdom nav.sub-nav .tab {
+.dark-kingdom-theme.sheet.kingdom nav.sub-nav a, 
+.dark-kingdom-theme.sheet.kingdom nav.sub-nav .tab {
     color: var(--pfui-main-color);
 }
 .dark-kingdom-theme.sheet.kingdom [data-visibility]:not([data-visibility=all])[data-visibility=gm] {
@@ -318,7 +335,8 @@ filter: grayscale(0.75);
     box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
 }
-.dark-kingdom-theme.sheet.kingdom a.inline-check[data-pf2-traits*=secret], .dark-kingdom-theme.sheet.kingdom span[data-pf2-check][data-pf2-traits*=secret] {
+.dark-kingdom-theme.sheet.kingdom a.inline-check[data-pf2-traits*=secret], 
+.dark-kingdom-theme.sheet.kingdom span[data-pf2-check][data-pf2-traits*=secret] {
     font-family: "Good OT";
     color: var(--pfui-main-color);
     background: var(--custom-trait);
@@ -326,7 +344,8 @@ filter: grayscale(0.75);
     border: 1px solid var(--glassy);
     border-radius: var(--border-radius);
 }	
-.dark-kingdom-theme.sheet.kingdom a.inline-check, .dark-kingdom-theme.sheet.kingdom span[data-pf2-check] {
+.dark-kingdom-theme.sheet.kingdom a.inline-check, 
+.dark-kingdom-theme.sheet.kingdom span[data-pf2-check] {
     font-family: "Good OT";
     color: var(--pfui-main-color);
     background: var(--custom-trait);
@@ -335,7 +354,8 @@ filter: grayscale(0.75);
     box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
 }
-.dark-kingdom-theme.sheet.kingdom a.inline-check, .dark-kingdom-theme.sheet.kingdom span[data-pf2-action] {
+.dark-kingdom-theme.sheet.kingdom a.inline-check, 
+.dark-kingdom-theme.sheet.kingdom span[data-pf2-action] {
     font-family: "Good OT";
     color: var(--pfui-main-color);
     background: var(--custom-trait);
@@ -344,7 +364,8 @@ filter: grayscale(0.75);
     box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
 }
-.dark-kingdom-theme.sheet.kingdom a.content-link, .dark-kingdom-theme.sheet.kingdom a.inline-roll {
+.dark-kingdom-theme.sheet.kingdom a.content-link, 
+.dark-kingdom-theme.sheet.kingdom a.inline-roll {
     font-family: "Good OT";
     color: var(--pfui-main-color);
     background: var(--custom-trait);
@@ -421,7 +442,8 @@ filter: grayscale(0.75);
     color: var(--color-warm-1);
     box-shadow: 0 0 6px inset var(--glass-bg-light-2);
 }
-.dark-kingdom-theme.sheet.kingdom .tab.active[data-tab=main] input[type=text], .dark-kingdom-theme.sheet.kingdom .tab.active[data-tab=main] input[type=number] {
+.dark-kingdom-theme.sheet.kingdom .tab.active[data-tab=main] input[type=text], 
+.dark-kingdom-theme.sheet.kingdom .tab.active[data-tab=main] input[type=number] {
     color: var(--pfui-main-grey-color);
     background: none;
     background-color: var(--color-cool-5-90);
@@ -519,7 +541,8 @@ filter: grayscale(0.75);
     text-shadow: 0 0 3px black;
     border-radius: var(--border-radius);
 }
-.dark-kingdom-theme.sheet.kingdom .tab.active[data-tab=world] .settlement .item-name select option, .dark-kingdom-theme.sheet.kingdom .tab.active[data-tab=world] .settlement .item-name select optgroup {
+.dark-kingdom-theme.sheet.kingdom .tab.active[data-tab=world] .settlement .item-name select option, 
+.dark-kingdom-theme.sheet.kingdom .tab.active[data-tab=world] .settlement .item-name select optgroup {
     background: var(--glass-bg-dark);
 }
 .dark-kingdom-theme.sheet.kingdom .tab.active[data-tab=world] .settlement .item-name .level input[type=number] {
@@ -588,7 +611,8 @@ filter: grayscale(0.75);
     color: var(--green);
     text-shadow: 0 0 3px var(--color-shadow-primary);
 }
-.dark-kingdom-theme.sheet.kingdom .tab.active[data-tab=ongoing] .events .event-dc, .dark-kingdom-theme.sheet.kingdom .tab.active[data-tab=ongoing] .events .event-dc input {
+.dark-kingdom-theme.sheet.kingdom .tab.active[data-tab=ongoing] .events .event-dc, 
+.dark-kingdom-theme.sheet.kingdom .tab.active[data-tab=ongoing] .events .event-dc input {
     color: var(--color-warm-1);
     border: none;
     background: none;

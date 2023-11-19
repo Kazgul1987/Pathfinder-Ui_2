@@ -572,7 +572,7 @@ text-shadow: var(--text-shadow);
 .dark-npc-theme.actor.npc form ol.spell-list > li .cast-spell button {
     color: var(--pfui-main-color);
     text-transform: uppercase;
-    background: var(--blue);
+    --secondary: var(--color-cool-3);
     border: 1px solid black;
     box-shadow: var(--box-shadow);
     text-shadow: var(--text-shadow);
