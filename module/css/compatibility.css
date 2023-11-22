@@ -36,6 +36,15 @@
     --rarity-rare: #0062ff;
     --rarity-unique: #e127e1;
 
+    --input-background-color: var(--color-cool-4);
+    --input-border-color: transparent;
+    --input-border-color: var(--color-cool-3);
+    --input-focus-text-color: var(--color-light-2);
+    --input-text-color: var(--color-light-3);
+    --input-placeholder-color: var(--color-light-4);
+    --input-text-selection-color: var(--color-cool-3);
+    --input-focus-outline-color: var(--color-cool-3);
+
 
 /* Foundry2
 ====================================================== */
@@ -202,6 +211,7 @@
     text-shadow: var(--text-shadow);
 }
 #combat-dock .combatant-wrapper .effects-container li {
+    margin: 2px 0 0 0;
     border-radius: 50%;
     border: 1px solid var(--color-warm-2);
     box-shadow: var(--box-shadow);
@@ -829,7 +839,26 @@ wrapper.pf2e-td.name-left .pf2e-td.damage-application {
 .chat-message .message-content .dice-result .dice-total .pf2e-toolbelt-merge button:hover {
     background: var(--green)!important;
 }
-
+.chat-message .message-content+.pf2e-toolbelt-target-helper .target-header {
+    color: var(--pfui-main-color);
+    text-shadow: var(--text-shadow);
+}
+.chat-message .message-content+.pf2e-toolbelt-target-helper .target-header .controls .criticalSuccess {
+    color: var(--green);
+    text-shadow: var(--text-shadow);
+}
+.chat-message .message-content+.pf2e-toolbelt-target-helper .target-header .controls .success {
+    color: var(--rarity-rare);
+    text-shadow: var(--text-shadow);
+}
+.chat-message .message-content+.pf2e-toolbelt-target-helper .target-header .controls .failure {
+    color: var(--rarity-uncommon);
+    text-shadow: var(--text-shadow);
+}
+.chat-message .message-content+.pf2e-toolbelt-target-helper .target-header .controls .criticalFailure {
+    color: var(--red-light);
+    text-shadow: var(--text-shadow);
+}
 
 
 
@@ -1644,3 +1673,4 @@ nav.damage-log-nav .item.active:before,
 .window-app.forien-quest-preview .quest-body .quest-info .quest-col-right .quest-tasks .state-container .state-display {
     background: var(--color-warm-3);
 }
+

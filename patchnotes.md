@@ -5,13 +5,17 @@
 
 
 
+## v11.315.9.2
+- Updated Carousel Combat Tracker Compatibility.
+- Improved visibility of PF2e Toolbet.
+
 ## v11.315.9.1
 - Updated core code.
 - Updated Compatibility PF2e v5.9.3.
 - Updated Cursor compatibility.
 - Updated Dark Sheet Player.
 - Updated Dark Sheet NPC.
-- Updated Carousel Combat Tracker Compatibility .
+- Updated Carousel Combat Tracker Compatibility.
 - Updated PF2e Action Support Engine Compatibility.
 
 ## v11.315.8
