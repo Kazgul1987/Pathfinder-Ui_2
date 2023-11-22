@@ -38,7 +38,8 @@
     --sub: var(--background);
     --text-shadow: 0px 1px 2px black;
 
-    --rarity-common: #7e7e7e;
+    /*--rarity-common: #7e7e7e;*/
+    --rarity-common: var(--color-cool-1);
     --rarity-uncommon: #ff6400;
     --rarity-rare: #0062ff;
     --rarity-unique: #e127e1;
@@ -48,6 +49,10 @@
     --color-warm-1: #ee9b3a;
     --color-warm-2: #c9593f;
     --color-warm-3: #5d142b;
+    --color-warm-4: #420418;
+    --color-warm-5: #26020d;
+    --color-cool-1: #b1a0d4;
+    --color-cool-2: #79689c;
     --color-cool-3: #584a75;
     --color-cool-4: #302831;
     --color-cool-5: #0b0a13;
@@ -404,22 +409,23 @@ text-shadow: var(--text-shadow);
     border-radius: var(--border-radius);
 }
 .dark-npc-theme.actor.npc .inventory .item-name h4:not(:hover).rarity-common {
-    border-color: #7e7e7e;
-    color: #7e7e7e;
+    border-color: var(--rarity-common);
+    color: var(--rarity-common);
 }
 .dark-npc-theme.actor.npc .inventory .item-name h4:not(:hover).rarity-uncommon {
-    border-color: #ff6400;
-    color: #ff6400;
+    border-color: var(--rarity-uncommon);
+    color: var(--rarity-uncommon);
 }
 .dark-npc-theme.actor.npc .inventory .item-name h4:not(:hover).rarity-rare {
-    border-color: #0062ff;
-    color: #0062ff;
+    border-color: var(--rarity-rare);
+    color: var(--rarity-rare);
 }
 .dark-npc-theme.actor.npc .inventory .item-name h4:not(:hover).rarity-unique {
-    border-color: #e127e1;
-    color: #e127e1;
+    border-color: var(--rarity-unique);
+    color: var(--rarity-unique);
 }
-.dark-npc-theme.actor.npc .inventory .item-name h3:hover, .dark-npc-theme.actor.npc .inventory .item-name h4:hover {
+.dark-npc-theme.actor.npc .inventory .item-name h3:hover, 
+.dark-npc-theme.actor.npc .inventory .item-name h4:hover {
     color: var(--green);
 }
 .dark-npc-theme.actor.npc .inventory .list-row .item-controls {

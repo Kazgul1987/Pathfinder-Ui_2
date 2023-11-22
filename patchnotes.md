@@ -5,7 +5,7 @@
 
 
 
-## v11.315.9.2
+## v11.315.9.3
 - Updated Carousel Combat Tracker Compatibility.
 - Improved visibility of PF2e Toolbet.
 

@@ -582,22 +582,19 @@ background: radial-gradient(var(--background-2), transparent);
     color: var(--rarity-common);
     text-shadow: var(--text-shadow);
 }
-
 .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.inventory .inventory-list .item .item-name h4.rarity-uncommon {
-    border-color: #ff6400;
-    color: #ff6400;
+    border-color: var(--rarity-uncommon);
+    color: var(--rarity-uncommon);
     text-shadow: var(--text-shadow);
 }
-
-.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.inventory .inventory-list .item .item-name h4.rarity-unique {
-    border-color: #e127e1;
-    color: #e127e1;
-    text-shadow: var(--text-shadow);
-}
-
 .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.inventory .inventory-list .item .item-name h4.rarity-rare {
-    border-color: #0062ff;
-    color: #0062ff;
+    border-color: var(--rarity-rare);
+    color: var(--rarity-rare);
+    text-shadow: var(--text-shadow);
+}
+.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.inventory .inventory-list .item .item-name h4.rarity-unique {
+    border-color: var(--rarity-unique);
+    color: var(--rarity-unique);
     text-shadow: var(--text-shadow);
 }
 
