@@ -5,9 +5,10 @@
 
 
 
-## v11.315.9.3
+## v11.315.9.4
 - Updated Carousel Combat Tracker Compatibility.
-- Improved visibility of PF2e Toolbet.
+- Improved visibility of PF2e Toolbelt.
+- fixed for the different colors in inventories. Grey color was unreadible 
 
 ## v11.315.9.1
 - Updated core code.
