@@ -843,23 +843,35 @@ wrapper.pf2e-td.name-left .pf2e-td.damage-application {
     color: var(--pfui-main-color);
     text-shadow: var(--text-shadow);
 }
-.chat-message .message-content+.pf2e-toolbelt-target-helper .target-header .controls .criticalSuccess {
+.chat-message .message-content+.pf2e-toolbelt-target-damage .target-header .controls .criticalSuccess, 
+.chat-message .message-content+.pf2e-toolbelt-target-spell .target-header .controls .criticalSuccess {
     color: var(--green);
     text-shadow: var(--text-shadow);
 }
-.chat-message .message-content+.pf2e-toolbelt-target-helper .target-header .controls .success {
+.chat-message .message-content+.pf2e-toolbelt-target-damage .target-header .controls .success, 
+.chat-message .message-content+.pf2e-toolbelt-target-spell .target-header .controls .success {
     color: var(--rarity-rare);
     text-shadow: var(--text-shadow);
 }
-.chat-message .message-content+.pf2e-toolbelt-target-helper .target-header .controls .failure {
+.chat-message .message-content+.pf2e-toolbelt-target-damage .target-damage-application.success [data-action=target-half-damage]::after {
+    box-shadow: inset 0 0 6px var(--rarity-rare);
+}
+.chat-message .message-content+.pf2e-toolbelt-target-damage .target-header .controls .failure, 
+.chat-message .message-content+.pf2e-toolbelt-target-spell .target-header .controls .failure {
     color: var(--rarity-uncommon);
     text-shadow: var(--text-shadow);
 }
-.chat-message .message-content+.pf2e-toolbelt-target-helper .target-header .controls .criticalFailure {
+.chat-message .message-content+.pf2e-toolbelt-target-damage .target-damage-application.failure [data-action=target-apply-damage]::after {
+    box-shadow: inset 0 0 6px var(--rarity-uncommon);
+}
+.chat-message .message-content+.pf2e-toolbelt-target-damage .target-header .controls .criticalFailure, 
+.chat-message .message-content+.pf2e-toolbelt-target-spell .target-header .controls .criticalFailure {
     color: var(--red-light);
     text-shadow: var(--text-shadow);
 }
-
+.chat-message .message-content+.pf2e-toolbelt-target-damage .target-damage-application.criticalFailure [data-action=target-double-damage]::after {
+    box-shadow: inset 0 0 6px var(--red-light);
+}
 
 
 /*PF2e Utility Buttons*/

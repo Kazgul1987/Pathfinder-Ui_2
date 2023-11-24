@@ -5,6 +5,10 @@
 
 
 
+## v11.315.9.5
+- Updated core code.
+- Improved visibility of PF2e Toolbelt.
+
 ## v11.315.9.4
 - Updated Carousel Combat Tracker Compatibility.
 - Improved visibility of PF2e Toolbelt.
