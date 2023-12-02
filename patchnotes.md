@@ -5,6 +5,10 @@
 
 
 
+## v11.315.9.6
+- Updated Compatibility PF2e v5.10.2.
+- added Compatibility PF2e Item Revitalizer.
+
 ## v11.315.9.5
 - Updated core code.
 - Improved visibility of PF2e Toolbelt.

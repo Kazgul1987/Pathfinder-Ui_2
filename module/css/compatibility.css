@@ -442,6 +442,25 @@ li.hm_messagetaken {
 }
 
 
+
+/* PF2e Item Revitalizer */
+/*  */
+.pir-button:disabled {
+    background-color: transparent;
+}
+.pir-table-cell a.content-link,
+.pir-table-cell a.inline-roll {
+    font-family: "Good OT";
+    color: var(--pfui-main-color);
+    text-shadow: var(--text-shadow);
+    background: var(--color-warm-3);
+    padding: 0px 3px;
+    border: 1px solid var(--glassy);
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+}
+
+
 /* Minimal UI */
 /* https://github.com/saif-ellafi/foundryvtt-minimal-ui/issues */
 .minimal-ui-mode .new-logo {

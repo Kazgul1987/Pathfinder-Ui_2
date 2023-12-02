@@ -704,11 +704,10 @@ color: var(--green)!important;
 }
 .actor.sheet.dark-theme .crb-style .sheet-body .sheet-content ol.spell-list > li.spell-level-header input, 
 .actor.sheet.dark-theme .crb-style .sheet-body .sheet-content ol.spell-list > li .uses input {
-    color: var(--green)!important;
+    color: var(--color-warm-1)!important;
+    background: var(--color-cool-3);
+    font-weight: bold;
     text-shadow: var(--text-shadow);
-    background: none;
-    border-radius: 50%;
-    border: 4px dotted var(--color-warm-2);
 }
 .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.spellcasting .pf-add-item-row a {
     color: var(--pfui-main-color)!important;
@@ -766,31 +765,37 @@ color: var(--green)!important;
 
 /* Proficiencies
 *************************/
-.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.proficiencies .skills-list .skill, .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.proficiencies .lores-list .skill, .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.proficiencies .combat-list .skill {
+.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.proficiencies ul.proficiencies-list li {
     background: linear-gradient(45deg, var(--color-cool-4), var(--color-cool-5-75));
     box-shadow: var(--box-shadow);
     border: none;
-    color: var(--pfui-main-grey-color);
+    color: var(--color-warm-1);
     border-radius: var(--border-radius);
+    border-image-repeat: repeat;
+    border-image-slice: 11;
+    border-image-source: var(--ornement);
+    border-image-width: 14px;
+    border-style: double;
 }
 
-.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.proficiencies h1, .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.proficiencies h4, .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.proficiencies h6 {
-    text-shadow: 0 0 3px var(--red-light) !important;
+.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.proficiencies h1, 
+.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.proficiencies h4, 
+.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.proficiencies h6 {
+    text-shadow: var(--text-shadow);
 }
-
-.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.proficiencies .skills-list .skill .rollable:hover, .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.proficiencies .lores-list .skill .rollable:hover, .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.proficiencies .combat-list .skill .rollable:hover {
+.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.proficiencies ul.proficiencies-list li a.skill-name:hover,
+.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.proficiencies ul.proficiencies-list li a.modifier:hover {
     color: var(--green);
-    text-shadow: none;
+    text-shadow: var(--text-shadow);
 }
-
-.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.proficiencies .skills-list .skill .skill-score, .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.proficiencies .lores-list .skill .skill-score, .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.proficiencies .combat-list .skill .skill-score {
+.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.proficiencies ul.proficiencies-list li .modifier {
     color: var(--green);
-    text-shadow: 0 0 3px var(--red-light);
+    text-shadow: var(--text-shadow);
 }
-
-
-
-
+.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.proficiencies ul.proficiencies-list li .modifier:hover {
+    color: var(--color-warm-1);
+    text-shadow: var(--text-shadow);
+}
 
 
 /* Feats        
@@ -1301,6 +1306,24 @@ color: var(--primary-remaster);
     background: none;
     border-radius: 50%;
     border: 4px dotted var(--color-warm-2);
+}
+.remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.proficiencies ul.proficiencies-list li .modifier {
+    color: var(--color-warm-3);
+    text-shadow: var(--text-shadow);
+}
+.remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.proficiencies ul.proficiencies-list li .modifier:hover {
+    color: var(--green);
+    text-shadow: var(--text-shadow);
+}
+.remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.proficiencies ul.proficiencies-list li {
+    background: unset;
+    border: unset;
+    box-shadow: unset;
+    border-image-repeat: repeat;
+    border-image-slice: 11;
+    border-image-width: 14px;
+    border-style: double;
+    border-image-source: url(../css/assets/remaster-pc-sheet/frame-elegant.svg);
 }
 
 
