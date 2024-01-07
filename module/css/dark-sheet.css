@@ -1,6 +1,7 @@
 /* A bunch of disgusting CSS overrides that hit the system's CSS like a hammer to remove as much colour as possible */
 
 .dark-theme {
+    --alternate-background: darkgrey;
     --pfui-main-color: #cfbda7;
     --pfui-main-grey-color: #98968a;
     --green: #91a82a;
@@ -197,13 +198,13 @@
     fill: none;
 }
 .actor.sheet.dark-theme .crb-style .details-label {
-    color: darkgray;
+    color: var(--alternate-background);
 }
 .actor.sheet.dark-theme .crb-style .sheet-body .sheet-content h3.header {
     border: none;
 }
 .actor.sheet.dark-theme .crb-style aside .sidebar_title h2 {
-    color: darkgray;
+    color: var(--alternate-background);
 }
 .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.character .attributes .attribute .abbreviation {
     color: var(--primary-light-remaster);
@@ -296,7 +297,9 @@
     background: none;
     backdrop-filter: blur(5px);
 }
-
+.sheet.actor.character.dark-theme .crb-style aside .sidebar header button {
+    background: unset;
+}
 .sheet.actor.character.dark-theme button {
     color: var(--pfui-main-color) !important;
     background: var(--glass-bg);
@@ -304,11 +307,11 @@
     border-radius: var(--border-radius);
 }
 
-.actor.sheet.dark-theme .item-summary .item-buttons button {
+.actor.sheet.dark-theme .window-content .item-summary .button-group button {
     background: radial-gradient(var(--primary-light-remaster), var(--primary-remaster));
     border-radius: 15px;
 }
-.actor.sheet.dark-theme .item-summary .item-buttons button:hover {
+.actor.sheet.dark-theme .window-content .item-summary .button-group button:hover {
     color: var(--background) !important;
     background: var(--green)!important;
     box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15), inset 0 0 0 2px rgba(0, 0, 0, 0.4);
@@ -360,7 +363,7 @@
 }
 
 .actor.sheet.dark-theme .crb-style aside .sidebar_label {
-    color: darkgray;
+    color: var(--alternate-background);
 }
 
 .actor.sheet.character.dark-theme .crb-style select {
@@ -393,14 +396,29 @@ background: radial-gradient(var(--background-2), transparent);
 .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.character .attributes .attribute .abbreviation i.key, .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.character .attributes .attribute .abbreviation i.apex {
     color: var(--green);
 }
-.actor.sheet.dark-theme a:hover {
-    text-shadow: 0 0 8px var(--green);
-}
 .actor.sheet.dark-theme button:hover, .dark-theme button:focus {
     color: var(--background)!important;
     background: var(--green)!important;
 }
-
+.actor.sheet.dark-theme .crb-style section.major > header {
+    color: var(--alternate-background);
+}
+.actor.sheet.dark-theme .crb-style .sheet-body .sheet-content .tab.character .character-speeds {
+    background: radial-gradient(var(--background-2), transparent);
+    border-radius: var(--border-radius);
+}
+.actor.sheet.dark-theme .crb-style .sheet-body .sheet-content .tab.character .character-speeds .speed .label {
+    color: var(--pfui-main-color);
+}
+.actor.sheet.dark-theme .crb-style .sheet-body .sheet-content .tab.character .character-speeds .speed .value {
+    color: var(--color-cool-1);
+}
+.actor.sheet.dark-theme .crb-style .sheet-body .sheet-content .tab.character .character-speeds .speed .value i {
+    color: var(--alternate-background);
+}
+.actor.sheet.dark-theme .crb-style .sheet-body .sheet-content .tab.character .character-speeds .speed .value.rollable svg path {
+    fill: var(--color-cool-1);
+}
 
 
 
@@ -444,19 +462,20 @@ background: radial-gradient(var(--background-2), transparent);
 .actor.sheet.dark-theme .crb-style .sheet-body .sheet-content .tab.actions .actions-container .actions-tabs-wrapper .actions-panels ol.actions-list li.action .item-name .actions-title .action-name h4:hover .activity-icon {
     color: revert;
 }
-
-.actor.sheet.dark-theme .crb-style .sheet-body .sheet-content .tab.actions .actions-container .actions-tabs-wrapper .actions-panels ol.actions-list li.action .item-name .actions-title .action-name h4:hover {
+.actor.sheet.dark-theme .crb-style .sheet-body .sheet-content .tab.actions ol.actions-list li.action .item-name h4, 
+.actor.sheet.dark-theme .crb-style .sheet-body .sheet-content .tab.actions ol.actions-list li.strike .item-name h4 {
+    color: var(--rarity-common);
+}
+.actor.sheet.dark-theme .crb-style .sheet-body .sheet-content .tab.actions ol.actions-list li.action .item-name .actions-title .action-name > h4 a:hover, 
+.actor.sheet.dark-theme .crb-style .sheet-body .sheet-content .tab.actions ol.actions-list li.strike .item-name .actions-title .action-name > h4 a:hover {
     color: var(--green);
 }
-
-.actor.sheet.dark-theme .crb-style .sheet-body .sheet-content .tab.actions .actions-container .actions-tabs-wrapper .actions-panels ol.actions-list li.action .item-name h4:hover {
+.actor.sheet.dark-theme .crb-style .sheet-body .sheet-content .tab.actions ol.actions-list li.action .name {
+    color: var(--rarity-common);
+}
+.actor.sheet.dark-theme .crb-style .sheet-body .sheet-content .tab.actions ol.actions-list li.action .name > a:hover {
     color: var(--green);
 }
-
-.actor.sheet.dark-theme .crb-style .sheet-body .sheet-content .tab.actions .actions-container .actions-tabs-wrapper .actions-panels ol.actions-list li.action.expanded h4 {
-    color: var(--green);
-}
-
 .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.actions .actions-container .actions-tabs-wrapper .actions-panels ol.actions-list.strikes-list li.strike .button-group button:not(:disabled).damage {
     background: var(--red);
     text-shadow: var(--text-shadow);
@@ -573,44 +592,45 @@ background: radial-gradient(var(--background-2), transparent);
     background: none !important;
 }
 
-.actor.sheet.dark-theme .inventory .item-name h3:hover, .actor.sheet.dark-theme .inventory .item-name h4:hover {
+.actor.sheet.character.dark-theme .window-content .inventory ul.items > li > .data .item-name h3:hover, 
+.actor.sheet.character.dark-theme .window-content .inventory ul.items > li > .data .item-name h4:hover {
     color: var(--color-warm-2);
     text-shadow: var(--text-shadow);
 }
-.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.inventory .inventory-list .item .item-name h4.rarity-common {
+.actor.sheet.character.dark-theme .window-content .inventory ul.items > li > .data .item-name h4:not(:hover).rarity-common {
     border-color: var(--rarity-common);
     color: var(--rarity-common);
     text-shadow: var(--text-shadow);
 }
-.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.inventory .inventory-list .item .item-name h4.rarity-uncommon {
+.actor.sheet.character.dark-theme .window-content .inventory ul.items > li > .data .item-name h4:not(:hover).rarity-uncommon {
     border-color: var(--rarity-uncommon);
     color: var(--rarity-uncommon);
     text-shadow: var(--text-shadow);
 }
-.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.inventory .inventory-list .item .item-name h4.rarity-rare {
+.actor.sheet.character.dark-theme .window-content .inventory ul.items > li > .data .item-name h4:not(:hover).rarity-rare {
     border-color: var(--rarity-rare);
     color: var(--rarity-rare);
     text-shadow: var(--text-shadow);
 }
-.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.inventory .inventory-list .item .item-name h4.rarity-unique {
+.actor.sheet.character.dark-theme .window-content .inventory ul.items > li > .data .item-name h4:not(:hover).rarity-unique {
     border-color: var(--rarity-unique);
     color: var(--rarity-unique);
     text-shadow: var(--text-shadow);
 }
 
-.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.inventory .inventory-list .item .item-name h4.rarity-common:hover {
+.actor.sheet.character.dark-theme .window-content .inventory ul.items > li > .data .item-name h4.rarity-common:hover {
     color: var(--green)!important;
 }
 
-.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.inventory .inventory-list .item .item-name h4.rarity-uncommon:hover {
+.actor.sheet.character.dark-theme .window-content .inventory ul.items > li > .data .item-name h4.rarity-uncommon:hover {
     color: var(--green)!important;
 }
 
-.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.inventory .inventory-list .item .item-name h4.rarity-rare:hover {
+.actor.sheet.character.dark-theme .window-content .inventory ul.items > li > .data .item-name h4.rarity-rare:hover {
     color: var(--green)!important;
 }
 
-.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.inventory .inventory-list .item .item-name h4.rarity-unique:hover {
+.actor.sheet.character.dark-theme .window-content .inventory ul.items > li > .data .item-name h4.rarity-unique:hover {
     color: var(--green)!important;
 }
 
@@ -619,44 +639,68 @@ background: radial-gradient(var(--background-2), transparent);
     text-shadow: var(--text-shadow);
     border-radius: var(--border-radius);
 }
-.actor.sheet.dark-theme .tags .tag.tag_secondary {
+.actor.sheet.dark-theme .window-content .item-summary .tags .tag:not(.property) + .tag.property {
     background-color: var(--secondary)!important;
     color: var(--pfui-main-color);
     box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
+    border: none;
 }
-.actor.sheet.dark-theme .tags .tag, .actor.sheet.dark-theme .tags .tag option {
+.actor.sheet.dark-theme .tags .tag, 
+.actor.sheet.dark-theme .tags .tag option {
     background-color: var(--primary);
     color: var(--pfui-main-color);
     box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
+    border: none;
 }
-.actor.sheet.dark-theme .inventory .item .item-quantity, .actor.sheet.dark-theme .inventory .item .item-weight, .actor.sheet.dark-theme .inventory .item .item-controls, .actor.sheet.dark-theme .inventory .item .item-sell-value {
+.actor.sheet.dark-theme .inventory .item .item-quantity, 
+.actor.sheet.dark-theme .inventory .item .item-weight, 
+.actor.sheet.dark-theme .inventory .item .item-controls, 
+.actor.sheet.dark-theme .inventory .item .item-sell-value {
     background: radial-gradient(var(--background-2), transparent);
 }
-
-
-
-
+.actor.sheet.dark-theme .window-content .inventory ul.items > li > .data .item-controls > a.toggle-invested.active,
+.actor.sheet.dark-theme .window-content .inventory ul.items > li > .data .item-controls > a.item-carry-type.active {
+    color: var(--rarity-rare);
+}
+.actor.sheet.dark-theme .window-content .inventory ul.items > li > .data .item-controls > a .fa-stack {
+    color: var(--rarity-rare);
+}
+.actor.sheet.dark-theme .window-content .inventory ul.items > li > .data .item-controls > a.item-carry-type {
+    color: var(--red);
+}
+.actor.sheet.dark-theme .window-content .inventory ul.items > li > .data .item-controls > a.toggle-invested, 
+.actor.sheet.dark-theme .window-content .inventory ul.items > li > .data .item-controls > a.item-carry-type {
+    color: var(--red);
+}
+.actor.sheet.dark-theme .window-content .inventory .inventory-list > header, 
+.actor.sheet.dark-theme .window-content .inventory .total-bulk {
+    color: var(--pfui-main-color);
+    background: linear-gradient(45deg, var(--color-cool-4), var(--color-cool-5-75));
+    border: 1px dotted rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 6px inset var(--glass-bg-light-2);
+    text-shadow: var(--text-shadow);
+}
 
 
 
 /* Spellcrafting 
 *************************/
-.actor.sheet.dark-theme .crb-style .sheet-body .sheet-content ol.spell-list > li.spell-level-header .item-name h3 {
+.actor.sheet.dark-theme .crb-style .sheet-body .sheet-content ol.spell-list > li.header-row .item-name h3 {
     color: var(--color-warm-1)!important;
     text-shadow: var(--text-shadow);
 }
 .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .blue-button:hover {
     text-shadow: 0 0 3px var(--red-light) !important;
 }
-.actor.sheet.dark-theme .crb-style .sheet-body .sheet-content ol.spell-list > li .cast-spell button {
+.actor.sheet.dark-theme .crb-style .sheet-body .sheet-content ol.spell-list > li button.cast-spell {
     --secondary: var(--color-cool-3);
     background: var(--secondary);
     box-shadow: var(--box-shadow);
     text-shadow: var(--text-shadow);
 }
-.actor.sheet.dark-theme .crb-style .sheet-body .sheet-content ol.spell-list > li[data-expended-state=true] .cast-spell button {
+.actor.sheet.dark-theme .crb-style .sheet-body .sheet-content ol.spell-list > li[data-slot-expended] button.cast-spell {
     cursor: not-allowed;
     border: none;
     text-shadow: 0 0 8px var(--color-shadow-primary);
@@ -666,7 +710,7 @@ background: radial-gradient(var(--background-2), transparent);
     color: var(--red-light)!important;
     box-shadow: inset 0 0 0 1px rgba(255, 0, 0, 0.5);
 }
-.actor.sheet.dark-theme .crb-style .sheet-body .sheet-content ol.spell-list > li[data-expended-state=true] .cast-spell button:hover {
+.actor.sheet.dark-theme .crb-style .sheet-body .sheet-content ol.spell-list > li[data-slot-expended] button.cast-spell:hover {
     background: var(--red-light)!important;
     color: var(--color-cool-5)!important;
     text-shadow: var(--text-shadow)!important;
@@ -679,7 +723,7 @@ background: radial-gradient(var(--background-2), transparent);
     background-color: var(--background);
 }
 
-.actor.sheet.dark-theme .crb-style .sheet-body .sheet-content ol.spell-list > li.spell-level-header {
+.actor.sheet.dark-theme .crb-style .sheet-body .sheet-content ol.spell-list > li.header-row {
     background: radial-gradient(var(--background-2), transparent);
     border: 1px dotted rgba(255, 255, 255, 0.2);
     box-shadow: 0 0 6px inset var(--glass-bg-light-2);
@@ -702,8 +746,8 @@ color: var(--green)!important;
 .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.spellcasting .spellcasting-entry .spell-ability-data .focus-pool .pips i.fa-circle {
     color: var(--red-light);
 }
-.actor.sheet.dark-theme .crb-style .sheet-body .sheet-content ol.spell-list > li.spell-level-header input, 
-.actor.sheet.dark-theme .crb-style .sheet-body .sheet-content ol.spell-list > li .uses input {
+.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content ol.spell-list > li.header-row input, 
+.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content ol.spell-list > li .uses input {
     color: var(--color-warm-1)!important;
     background: var(--color-cool-3);
     font-weight: bold;
@@ -729,7 +773,7 @@ color: var(--green)!important;
 .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.spellcasting .spellcasting-entry .spell-ability-data .skill-score {
     color: var(--green);
 }
-.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content ol.spell-list > li .item-name h4:hover {
+.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content ol.spell-list > li .item-name h4 > a:hover {
     color: var(--green);
 }
 .actor.sheet.character.dark-theme form ol.spell-list > li[data-expended-state=true] h4 {
@@ -762,7 +806,6 @@ color: var(--green)!important;
 
 
 
-
 /* Proficiencies
 *************************/
 .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.proficiencies ul.proficiencies-list li {
@@ -776,8 +819,14 @@ color: var(--green)!important;
     border-image-source: var(--ornement);
     border-image-width: 14px;
     border-style: double;
+    min-height: 2.8rem;
+    padding: 0 1rem 0 0.25rem;
 }
-
+.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.proficiencies ul.proficiencies-list li .button-group button {
+    border: unset;
+    box-shadow: var(--box-shadow);
+    background: var(--glass-bg);
+}
 .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.proficiencies h1, 
 .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.proficiencies h4, 
 .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.proficiencies h6 {
@@ -789,12 +838,24 @@ color: var(--green)!important;
     text-shadow: var(--text-shadow);
 }
 .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.proficiencies ul.proficiencies-list li .modifier {
-    color: var(--green);
+    color: var(--green)!important;
     text-shadow: var(--text-shadow);
 }
 .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.proficiencies ul.proficiencies-list li .modifier:hover {
     color: var(--color-warm-1);
     text-shadow: var(--text-shadow);
+}
+.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.proficiencies ul.proficiencies-list li a.d20 {
+    filter: drop-shadow(0px 0px 8px black);
+    padding: 0.4rem;
+}
+.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.proficiencies ul.proficiencies-list li a.d20 path {
+    fill: var(--green);
+    filter: contrast(2);
+}
+.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.proficiencies ul.proficiencies-list li .modifier, 
+.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.proficiencies ul.proficiencies-list li .dc {
+    color: var(--red-light);
 }
 
 
@@ -985,9 +1046,9 @@ color: var(--green)!important;
     box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15), inset 0 0 0 2px rgba(0, 0, 0, 0.4);
 }
 .red.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.character .attributes .attribute .abbreviation {
-    color: darkgray;
+    color: var(--alternate-background);
 }
-.red.actor.sheet.dark-theme .item-summary .item-buttons button {
+.red.actor.sheet.dark-theme .window-content .item-summary .button-group button {
     background: radial-gradient(var(--red),transparent);
     border-radius: 15px;
 }
@@ -1111,9 +1172,6 @@ color: var(--green)!important;
 .remaster.actor.sheet.dark-theme .crb-style nav.sub-nav a.active, .remaster.actor.sheet.dark-theme .crb-style nav.sub-nav .tab.active {
     color: var(--primary-light-remaster);
     text-shadow: var(--text-shadow);
-}
-.remaster.actor.sheet.dark-theme a:hover {
-    text-shadow: 0 0 8px var(--primary-light-remaster) !important;
 }
 .remaster.actor.sheet.dark-theme .crb-style .sheet-body .sheet-content ol.directory-list .action-header {
     background: var(--primary-remaster);
@@ -1281,18 +1339,6 @@ color: var(--primary-remaster);
 .remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.actions .actions-container .actions-tabs-wrapper .actions-panels ol.actions-list.strikes-list li.strike .button-group button:not(:disabled) {
     box-shadow: unset;
 }
-.remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.inventory .inventory-list .item .item-name h4.rarity-common {
-    text-shadow: unset;
-}
-.remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.inventory .inventory-list .item .item-name h4.rarity-uncommon {
-    text-shadow: unset;
-}
-.remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.inventory .inventory-list .item .item-name h4.rarity-unique {
-    text-shadow: unset;
-}
-.remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.inventory .inventory-list .item .item-name h4.rarity-rare {
-    text-shadow: unset;
-}
 .remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content ol.spell-list > li .cast-spell button {
     box-shadow: unset;
 }
@@ -1309,14 +1355,18 @@ color: var(--primary-remaster);
 }
 .remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.proficiencies ul.proficiencies-list li .modifier {
     color: var(--color-warm-3);
-    text-shadow: var(--text-shadow);
+    text-shadow: unset;
 }
 .remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.proficiencies ul.proficiencies-list li .modifier:hover {
     color: var(--green);
-    text-shadow: var(--text-shadow);
+    text-shadow: unset;
+}
+.remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.proficiencies ul.proficiencies-list li .button-group button {
+    box-shadow: unset;
 }
 .remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.proficiencies ul.proficiencies-list li {
     background: unset;
+    color: var(--color-warm-3);
     border: unset;
     box-shadow: unset;
     border-image-repeat: repeat;
@@ -1325,7 +1375,62 @@ color: var(--primary-remaster);
     border-style: double;
     border-image-source: url(../css/assets/remaster-pc-sheet/frame-elegant.svg);
 }
-
+.remaster.actor.sheet.character.dark-theme .crb-style section.major > header {
+    color: unset;
+}
+.remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.character .character-speeds .speed .label {
+    color: unset;
+}
+.remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.character .character-speeds .speed .value {
+    color: unset;
+}
+.remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.character .character-speeds .speed .value i {
+    color: unset;
+}
+.remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.character .character-speeds .speed .value.rollable svg path {
+    fill: unset;
+}
+.remaster.actor.sheet.character.dark-theme .crb-style section.major > header button {
+    background: var(--glass-bg);
+}
+.remaster.actor.sheet.character.dark-theme .window-content .inventory ul.items > li > .data .item-name h4:not(:hover).rarity-common {
+    --rarity-common: var(--color-cool-4);
+    border-color: var(--rarity-common);
+    color: var(--rarity-common);
+    text-shadow: unset;
+}
+.remaster.actor.sheet.character.dark-theme .window-content .inventory ul.items > li > .data .item-name h4:not(:hover).rarity-uncommon {
+    text-shadow: unset;
+}
+.remaster.actor.sheet.character.dark-theme .window-content .inventory ul.items > li > .data .item-name h4:not(:hover).rarity-rare {
+    text-shadow: unset;
+}
+.remaster.actor.sheet.character.dark-theme .window-content .inventory ul.items > li > .data .item-name h4:not(:hover).rarity-unique {
+    text-shadow: unset;
+}
+.remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content ol.spell-list > li.header-row .item-name h3 {
+    color: var(--color-warm-2)!important;
+    text-shadow: unset;
+}
+.remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content ol.spell-list > li.header-row {
+    background: rgba(96, 88, 86, 0.25);
+    border: 1px solid var(--color-border-light-2);
+    box-shadow: unset;
+    text-shadow: unset;
+}
+.remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.actions ol.actions-list li.action .item-name h4, 
+.remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.actions ol.actions-list li.strike .item-name h4 {
+    --rarity-common: var(--color-cool-4);
+    color: var(--rarity-common);
+}
+.remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.actions ol.actions-list li.action .name {
+    --rarity-common: var(--color-cool-4);
+    color: var(--rarity-common);
+}
+.remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.proficiencies ul.proficiencies-list li a.d20 path {
+    fill: var(--primary-remaster);
+    filter: contrast(2);
+}
 
 
 

@@ -264,15 +264,7 @@
 .dark-loot-theme.sheet.actor.loot .wealth h3.item-name {
     color: var(--pfui-main-color);
 }
-.dark-loot-theme.sheet.actor.loot .inventory .inventory-header {
-    color: var(--pfui-main-color)!important;
-    background: radial-gradient(var(--primary-remaster), var(--glass-bg-dark))!important;
-    border: none;
-    box-shadow: var(--box-shadow);
-    text-shadow: 0 0 1px black;
-    border-radius: var(--border-radius);
-    backdrop-filter: blur(5px);
-}
+
 .dark-loot-theme.sheet.actor.loot .currency li > button:hover:not(:disabled) {
     border: 1px solid black;
     background: none;
@@ -283,23 +275,68 @@
     color: var(--background)!important;
     border-radius: var(--border-radius);
 }
+.dark-loot-theme.sheet.actor.loot form section.content .inventory .wealth {
+    background: linear-gradient(45deg, var(--color-cool-4), var(--color-cool-5-75));
+}
+.dark-loot-theme.sheet.actor.loot .window-content .inventory .inventory-list > header, 
+.dark-loot-theme.sheet.actor.loot .window-content .inventory .total-bulk {
+    color: var(--pfui-main-color);
+    background: linear-gradient(45deg, var(--color-cool-4), var(--color-cool-5-90));
+    border: 1px dotted rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 6px inset var(--glass-bg-light-2);
+    text-shadow: var(--text-shadow);
+}
+.dark-loot-theme.sheet.actor.loot .window-content .inventory ul.items {
+    border: 1px solid var(--color-cool-4);
+    background: none;
+    background-color: var(--glass-bg);
+    box-shadow: var(--box-shadow);
+    text-shadow: 0 0 3px black;
+    border-radius: var(--border-radius);
+    backdrop-filter: blur(5px);
+}
 .dark-loot-theme.sheet.actor.loot .inventory .item-name h4:not(:hover).rarity-common {
     border-color: var(--rarity-common);
     color: var(--rarity-common);
 }
-.dark-loot-theme.sheet.actor.loot .inventory .item-name h4:not(:hover).rarity-uncommon {
+.dark-loot-theme.sheet.actor.loot .window-content .inventory ul.items > li > .data .item-name h4:not(:hover).rarity-common {
+    border-color: var(--rarity-common);
+    color: var(--rarity-common);
+    text-shadow: var(--text-shadow);
+}
+.dark-loot-theme.sheet.actor.loot .window-content .inventory ul.items > li > .data .item-name h4:not(:hover).rarity-uncommon {
     border-color: var(--rarity-uncommon);
     color: var(--rarity-uncommon);
+    text-shadow: var(--text-shadow);
 }
-.dark-loot-theme.sheet.actor.loot .inventory .item-name h4:not(:hover).rarity-rare {
+.dark-loot-theme.sheet.actor.loot .window-content .inventory ul.items > li > .data .item-name h4:not(:hover).rarity-rare {
     border-color: var(--rarity-rare);
     color: var(--rarity-rare);
+    text-shadow: var(--text-shadow);
 }
-.dark-loot-theme.sheet.actor.loot .inventory .item-name h4:not(:hover).rarity-unique {
+.dark-loot-theme.sheet.actor.loot .window-content .inventory ul.items > li > .data .item-name h4:not(:hover).rarity-unique {
     border-color: var(--rarity-unique);
     color: var(--rarity-unique);
+    text-shadow: var(--text-shadow);
 }
-.dark-loot-theme.sheet.actor.loot .inventory .item-name h3:hover, .dark-loot-theme.sheet.actor.loot .inventory .item-name h4:hover {
+
+.dark-loot-theme.sheet.actor.loot .window-content .inventory ul.items > li > .data .item-name h4.rarity-common:hover {
+    color: var(--green)!important;
+}
+
+.dark-loot-theme.sheet.actor.loot .window-content .inventory ul.items > li > .data .item-name h4.rarity-uncommon:hover {
+    color: var(--green)!important;
+}
+
+.dark-loot-theme.sheet.actor.loot .window-content .inventory ul.items > li > .data .item-name h4.rarity-rare:hover {
+    color: var(--green)!important;
+}
+
+.dark-loot-theme.sheet.actor.loot .window-content .inventory ul.items > li > .data .item-name h4.rarity-unique:hover {
+    color: var(--green)!important;
+}
+.dark-loot-theme.sheet.actor.loot .inventory .item-name h3:hover, 
+.dark-loot-theme.sheet.actor.loot .inventory .item-name h4:hover {
     color: var(--green);
 }
 .dark-loot-theme.sheet.actor.loot .inventory .list-row .item-controls {
@@ -314,14 +351,9 @@
 .dark-loot-theme.sheet.actor.loot .inventory .list-row .item-controls .item-control.toggle-invested, .dark-loot-theme.sheet.actor.loot .inventory .list-row .item-controls .item-control.item-carry-type {
     color: var(--green);
 }
-.dark-loot-theme.sheet.actor.loot .inventory .item-summary {
-    border: none;
+.dark-loot-theme.sheet.actor.loot .window-content .inventory ul.items > li .item-summary {
     background: none;
 }
-.dark-loot-theme.sheet.actor.loot .inventory .inventory-items {
-    border: none;
-}
-
 
 
 /*        Glassy       

@@ -362,6 +362,27 @@
 #pf2e-token-hud .sidebar.spells .sidebar-content .entry .spell.expended .details .name {
   color: #ff6400;
 }
+#pf2e-token-hud .sidebar.actions .sidebar-content .section .strike .variants .variant[data-action=strike-attack]:not(.disabled), 
+#pf2e-token-hud .sidebar.actions .sidebar-content .section .strike .variants .variant[data-action=roll-attack]:not(.disabled) {
+  color: var(--pfui-main-color);
+  text-shadow: var(--text-shadow);
+}
+#pf2e-token-hud .sidebar.actions .sidebar-content .section .strike .variants .variant[data-action=strike-damage]:not(.disabled), 
+#pf2e-token-hud .sidebar.actions .sidebar-content .section .strike .variants .variant[data-action=strike-critical]:not(.disabled), 
+#pf2e-token-hud .sidebar.actions .sidebar-content .section .strike .variants .variant[data-action=roll-damage]:not(.disabled) {
+  color: var(--pfui-main-color);
+  text-shadow: var(--text-shadow);
+}
+#pf2e-token-hud .sidebar.actions .sidebar-content .section .strike .variants .variant[data-action=strike-attack]:not(.disabled):hover, 
+#pf2e-token-hud .sidebar.actions .sidebar-content .section .strike .variants .variant[data-action=roll-attack]:not(.disabled):hover, 
+#pf2e-token-hud .sidebar.actions .sidebar-content .section .strike .variants .variant[data-action=strike-damage]:not(.disabled):hover, 
+#pf2e-token-hud .sidebar.actions .sidebar-content .section .strike .variants .variant[data-action=strike-critical]:not(.disabled):hover {
+  background: var(--green);
+  color: var(--color-cool-5);
+  box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius);
+  text-shadow: var(--text-shadow);
+}
 /**/
 
 
@@ -399,6 +420,9 @@
   background-color: var(--color-level-error-border);
   box-shadow: var(--box-shadow);
   border-radius: var(--border-radius);
+  border: unset;
+  border: solid var(--color-cool-5-75);
+  border-width: 1px 2px 1px 1px;
 }
 #pf2e-token-hud .popup.tags .tag.tag_alt, .popup .tags .tag option.tag_alt {
   color: var(--pfui-main-color);

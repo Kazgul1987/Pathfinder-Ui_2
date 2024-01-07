@@ -143,15 +143,15 @@
     color: var(--pfui-main-color);
     border: none!important;
     background: none;
-    background-color: var(--color-cool-5-90);
+    background-color: var(--color-cool-5-75);
     box-shadow: var(--box-shadow);
     text-shadow: var(--text-shadow);
     backdrop-filter: blur(5px);
 }
-.dark-npc-theme.actor.npc .side-bar-section.initiative select {
+.dark-npc-theme.actor.npc form .sidebar .subsection.initiative select {
     color: var(--pfui-main-color);
     text-transform: uppercase;
-    border: 1px solid black;
+    border: 1px solid var(--color-cool-4);
     background-color: var(--glass-bg);
     box-shadow: var(--box-shadow);
     text-shadow: var(--text-shadow);
@@ -346,8 +346,12 @@
 .dark-npc-theme.actor.npc form .actions-options .actions-option input[type="checkbox"]:checked, input[type="radio"]:checked {
     accent-color: var(--green);
 }
-
-
+.dark-npc-theme.actor.npc form a.roll {
+    color: var(--color-warm-1);
+}
+.dark-npc-theme.actor.npc form a.roll:hover {
+    color: var(--green);
+  }
 
 
 /*      Inventory       
@@ -387,17 +391,13 @@ text-shadow: var(--text-shadow);
 .dark-npc-theme.actor.npc .wealth h3.item-name {
     color: var(--pfui-main-color);
 }
+.dark-npc-theme.actor.npc form ol.spell-list > li .item-name h4 > a:hover {
+    color: var(--green);
+  }
 .dark-npc-theme.actor.npc .inventory .inventory-list {
     padding-right: 0.3rem;
 }
-.dark-npc-theme.actor.npc .inventory .inventory-header {
-    color: var(--pfui-main-color)!important;
-    background: radial-gradient(var(--primary-light-remaster), transparent)!important;
-    box-shadow: var(--box-shadow);
-    margin: 5px 2px;
-    backdrop-filter: blur(5px);
-    padding: 0px;
-}
+
 .dark-npc-theme.actor.npc .currency li > button:hover:not(:disabled) {
     border: 1px solid black;
     background: none;
@@ -408,21 +408,55 @@ text-shadow: var(--text-shadow);
     color: var(--background)!important;
     border-radius: var(--border-radius);
 }
-.dark-npc-theme.actor.npc .inventory .item-name h4:not(:hover).rarity-common {
+.dark-npc-theme.actor.npc .sheet-body .tab.inventory.active .inventory-section .coinage .wealth, 
+.dark-npc-theme.actor.npc .sheet-body .tab.inventory.active .inventory-section header {
+    background: linear-gradient(45deg, var(--color-cool-4), var(--color-cool-5-90))!important;
+}
+.dark-npc-theme.actor.npc .window-content .inventory .inventory-list > header, 
+.dark-npc-theme.actor.npc .window-content .inventory .total-bulk {
+    color: var(--pfui-main-color);
+    border: 1px dotted rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 6px inset var(--glass-bg-light-2);
+    text-shadow: var(--text-shadow);
+}
+.dark-npc-theme.actor.npc .window-content .inventory ul.items {
+    border: 1px solid var(--color-cool-4);
+}
+.dark-npc-theme.actor.npc .window-content .inventory ul.items > li > .data .item-name h4:not(:hover).rarity-common {
     border-color: var(--rarity-common);
     color: var(--rarity-common);
+    text-shadow: var(--text-shadow);
 }
-.dark-npc-theme.actor.npc .inventory .item-name h4:not(:hover).rarity-uncommon {
+.dark-npc-theme.actor.npc .window-content .inventory ul.items > li > .data .item-name h4:not(:hover).rarity-uncommon {
     border-color: var(--rarity-uncommon);
     color: var(--rarity-uncommon);
+    text-shadow: var(--text-shadow);
 }
-.dark-npc-theme.actor.npc .inventory .item-name h4:not(:hover).rarity-rare {
+.dark-npc-theme.actor.npc .window-content .inventory ul.items > li > .data .item-name h4:not(:hover).rarity-rare {
     border-color: var(--rarity-rare);
     color: var(--rarity-rare);
+    text-shadow: var(--text-shadow);
 }
-.dark-npc-theme.actor.npc .inventory .item-name h4:not(:hover).rarity-unique {
+.dark-npc-theme.actor.npc .window-content .inventory ul.items > li > .data .item-name h4:not(:hover).rarity-unique {
     border-color: var(--rarity-unique);
     color: var(--rarity-unique);
+    text-shadow: var(--text-shadow);
+}
+
+.dark-npc-theme.actor.npc .window-content .inventory ul.items > li > .data .item-name h4.rarity-common:hover {
+    color: var(--green)!important;
+}
+
+.dark-npc-theme.actor.npc .window-content .inventory ul.items > li > .data .item-name h4.rarity-uncommon:hover {
+    color: var(--green)!important;
+}
+
+.dark-npc-theme.actor.npc .window-content .inventory ul.items > li > .data .item-name h4.rarity-rare:hover {
+    color: var(--green)!important;
+}
+
+.dark-npc-theme.actor.npc .window-content .inventory ul.items > li > .data .item-name h4.rarity-unique:hover {
+    color: var(--green)!important;
 }
 .dark-npc-theme.actor.npc .inventory .item-name h3:hover, 
 .dark-npc-theme.actor.npc .inventory .item-name h4:hover {
@@ -455,6 +489,36 @@ text-shadow: var(--text-shadow);
     border-radius: var(--border-radius);
     backdrop-filter: blur(5px);
 }
+.dark-npc-theme.actor.npc .window-content .inventory ul.items > li > .data .item-controls > a.toggle-invested.active,
+.dark-npc-theme.actor.npc .window-content .inventory ul.items > li > .data .item-controls > a.item-carry-type.active {
+    color: var(--rarity-rare);
+}
+.dark-npc-theme.actor.npc .window-content .inventory ul.items > li > .data .item-controls > a .fa-stack {
+    color: var(--rarity-rare);
+}
+.dark-npc-theme.actor.npc .window-content .inventory ul.items > li > .data .item-controls > a.item-carry-type {
+    color: var(--red);
+}
+.dark-npc-theme.actor.npc .window-content .inventory ul.items > li > .data .item-controls > a.toggle-invested, 
+.dark-npc-theme.actor.npc .window-content .inventory ul.items > li > .data .item-controls > a.item-carry-type {
+    color: var(--red);
+}
+.dark-npc-theme.actor.npc .window-content .inventory ul.items > li .item-summary {
+    background: none;
+}
+.dark-npc-theme.actor.npc .window-content .item-summary .button-group button {
+    color: var(--pfui-main-color);
+    background: radial-gradient(var(--red),transparent);
+    border-radius: 15px;
+    border: 2px groove var(--color-border-light-highlight);
+}
+.dark-npc-theme.actor.npc .window-content .item-summary .button-group button:hover {
+    color: var(--background) !important;
+    background: var(--green)!important;
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15), inset 0 0 0 2px rgba(0, 0, 0, 0.4);
+    font-weight: bold;
+}
+
 
 /*Fix Size icon*/
 .actor.npc.sheet form .sheet-body .inventory .inventory-section .inventory-list .item .item-image {
@@ -487,7 +551,7 @@ max-width: 24px;
 text-shadow: var(--text-shadow);
     border-radius: var(--border-radius);
 }
-.dark-npc-theme.actor.npc ol.spell-list > li.spell-level-header {
+.dark-npc-theme.actor.npc form ol.spell-list > li.header-row {
     color: var(--pfui-main-color)!important;
     border: none!important;
     background: radial-gradient(var(--primary-remaster), transparent)!important;
@@ -516,7 +580,7 @@ text-shadow: var(--text-shadow);
 .dark-npc-theme.actor.npc form ol.spell-list > li.spell {
     text-shadow: var(--text-shadow);
     box-shadow: var(--box-shadow);
-    background-color: var(--color-cool-5-90);
+    background-color: var(--color-cool-5-75);
     border-radius: var(--border-radius);
     backdrop-filter: blur(5px);
 }
@@ -597,13 +661,13 @@ text-shadow: var(--text-shadow);
 .dark-npc-theme.actor.npc form ol.spell-list > li[data-expended-state=true] h4 {
     color: #ff6400;
 }
-.dark-npc-theme.actor.npc form ol.spell-list > li[data-expended-state=true] .cast-spell button {
+.dark-npc-theme.actor.npc form ol.spell-list > li[data-slot-expended] button.cast-spell {
     background: var(--color-cool-5);
     color: var(--red-light);
     text-shadow: 0 0 8px var(--color-shadow-primary);
     box-shadow: inset 0 0 0 1px rgba(255, 0, 0, 0.5);
 }
-.dark-npc-theme.actor.npc form ol.spell-list > li[data-expended-state=true] .cast-spell button:hover {
+.dark-npc-theme.actor.npc form ol.spell-list > li[data-slot-expended] button.cast-spell:hover {
     background: var(--red-light);
     color:  var(--color-cool-5);
     box-shadow: inset 0 0 0 1px  var(--color-cool-5);
@@ -636,7 +700,7 @@ text-shadow: var(--text-shadow);
     color: var(--rarity-common);
 }
 .dark-npc-theme.actor.npc form .notes .notes-section > h4 {
-    color: var(--color-warm-1);
+    color: var(--color-warm-1)!important;
 }
 .dark-npc-theme.actor.npc form .notes .notes-section.publication .notes-text .license select {
     color: var(--pfui-main-color);
@@ -674,7 +738,7 @@ text-shadow: var(--text-shadow);
     backdrop-filter: blur(5px);
     text-shadow: 0 0 8px var(--color-shadow-primary);
 }
-.glassy.dark-npc-theme.actor.npc .npc-sheet-header {
+.glassy.dark-npc-theme.actor.npc form > .npc-body > header  {
     --color-text-dark-input: var(--color-text-light-heading);
     box-shadow: var(--box-shadow);
     background: radial-gradient(var(--primary-remaster), var(--glass-bg-dark));
@@ -691,7 +755,7 @@ text-shadow: var(--text-shadow);
     backdrop-filter: blur(5px);
     width: 93%;
 }
-.glassy.dark-npc-theme.actor.npc .side-bar-section {
+.glassy.dark-npc-theme.actor.npc form .sidebar .subsection {
     box-shadow: var(--box-shadow);
     background-color: var(--color-cool-5-90);
     border-radius: var(--border-radius);
@@ -728,8 +792,6 @@ text-shadow: var(--text-shadow);
     border-radius: var(--border-radius);
 }
 .glassy.dark-npc-theme.actor.npc .inventory-section {
-    box-shadow: var(--box-shadow);
-    background-color: var(--color-cool-5-90);
     border-radius: var(--border-radius);
     margin: 5px 5px!important;
     backdrop-filter: blur(5px);
@@ -742,7 +804,7 @@ text-shadow: var(--text-shadow);
 }
 .glassy.dark-npc-theme.actor.npc .notes.active {
     box-shadow: var(--box-shadow);
-    background-color: var(--color-cool-5-90);
+    background-color: var(--color-cool-5-75);
     border-radius: var(--border-radius);
     margin: 5px 5px;
     backdrop-filter: blur(5px);
@@ -755,4 +817,12 @@ text-shadow: var(--text-shadow);
 .glassy.dark-npc-theme.actor.npc .window-resizable-handle {
     background: none;
     border: none;
+}
+.glassy.dark-npc-theme.actor.npc .window-content .inventory ul.items {
+    border: 1px solid var(--color-cool-4);
+    box-shadow: var(--box-shadow);
+    background-color: var(--color-cool-5-75);
+    border-radius: var(--border-radius);
+    margin: 5px 5px!important;
+    backdrop-filter: blur(5px);
 }

@@ -4,6 +4,13 @@
 - Ready for v11 version.
 
 
+## v11.315.10.1
+- Updated Compatibility PF2e v5.12.1.
+- Updated Dark Sheet Player.
+- Updated Dark Sheet NPC.
+- Updated Dark Sheet Loot.
+- Updated Dark Sheet Party.
+- Updated Compatibility with Interactive Token Tooltip.
 
 ## v11.315.9.6
 - Updated Compatibility PF2e v5.10.2.

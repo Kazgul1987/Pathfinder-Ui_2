@@ -434,6 +434,14 @@
 .dark-party-theme.sheet.party.actor.sheet .inventory .inventory-items {
     border: none;
 }
+.dark-party-theme.sheet.party.actor.sheet .window-content .inventory .inventory-list > header, 
+.dark-party-theme.sheet.party.actor.sheet .window-content .inventory .total-bulk {
+    color: var(--pfui-main-color);
+    background: linear-gradient(45deg, var(--color-cool-4), var(--color-cool-5-75));
+    border: 1px dotted rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 6px inset var(--glass-bg-light-2);
+    text-shadow: var(--text-shadow);
+}
 .dark-party-theme.sheet.party .currency {
     color: var(--pfui-main-color);
     border: none;
@@ -443,21 +451,36 @@
     box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
 }
-.dark-party-theme.sheet.party.actor.sheet .inventory .item-name h4:not(:hover).rarity-common {
+.dark-party-theme.sheet.party.actor.sheet .window-content .inventory ul.items > li > .data .item-name h4:not(:hover).rarity-common {
     border-color: var(--rarity-common);
     color: var(--rarity-common);
 }
-.dark-party-theme.sheet.party.actor.sheet .inventory .item-name h4:not(:hover).rarity-uncommon {
+.dark-party-theme.sheet.party.actor.sheet .window-content .inventory ul.items > li > .data .item-name h4:not(:hover).rarity-uncommon {
     border-color: var(--rarity-uncommon);
     color: var(--rarity-uncommon);
 }
-.dark-party-theme.sheet.party.actor.sheet .inventory .item-name h4:not(:hover).rarity-rare {
+.dark-party-theme.sheet.party.actor.sheet .window-content .inventory ul.items > li > .data .item-name h4:not(:hover).rarity-rare {
     border-color: var(--rarity-rare);
     color: var(--rarity-rare);
 }
-.dark-party-theme.sheet.party.actor.sheet .inventory .item-name h4:not(:hover).rarity-unique {
+.dark-party-theme.sheet.party.actor.sheet .window-content .inventory ul.items > li > .data .item-name h4:not(:hover).rarity-unique {
     border-color: var(--rarity-unique);
     color: var(--rarity-unique);
+}
+.dark-party-theme.sheet.party.actor.sheet .window-content .inventory ul.items > li > .data .item-name h4.rarity-common:hover {
+    color: var(--green)!important;
+}
+
+.dark-party-theme.sheet.party.actor.sheet .window-content .inventory ul.items > li > .data .item-name h4.rarity-uncommon:hover {
+    color: var(--green)!important;
+}
+
+.dark-party-theme.sheet.party.actor.sheet .window-content .inventory ul.items > li > .data .item-name h4.rarity-rare:hover {
+    color: var(--green)!important;
+}
+
+.dark-party-theme.sheet.party.actor.sheet .window-content .inventory ul.items > li > .data .item-name h4.rarity-unique:hover {
+    color: var(--green)!important;
 }
 .dark-party-theme.sheet.party .currency li > button {
     color: var(--pfui-main-color);
@@ -500,8 +523,13 @@
 .dark-party-theme.sheet.party.actor.sheet .inventory .list-row .item-controls {
     color: var(--green);
 }
+.dark-party-theme.sheet.party.actor.sheet .window-content .inventory ul.items {
+    border: 1px solid var(--color-cool-5);
+    color: var(--pfui-main-grey-color);
+}
 .dark-party-theme.sheet.party.actor.sheet .inventory .item-summary {
     background: none;
+    color: var(--pfui-main-grey-color);
 }
 .dark-party-theme.sheet.party [data-tab=overview] .summary nav label {
     color: var(--color-warm-1);
