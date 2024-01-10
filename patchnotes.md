@@ -4,6 +4,13 @@
 - Ready for v11 version.
 
 
+## v11.315.10.2
+- Updated Compatibility PF2e v5.12.3.
+- Updated Compatibility with Interactive Token Tooltip.
+- Updated PF2e Action Support Engine Compatibility.
+- Updated compatibility with Monk player setting.
+
+
 ## v11.315.10.1
 - Updated Compatibility PF2e v5.12.1.
 - Updated Dark Sheet Player.

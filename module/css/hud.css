@@ -332,6 +332,17 @@
   color: var(--color-cool-5);
   box-shadow: var(--box-shadow);
   border-radius: var(--border-radius);
+}#pf2e-token-hud .sidebar.actions .sidebar-content .section .strike .variants .versatiles .variant {
+  background: var(--red);
+  color: var(--pfui-main-color);
+  box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius);
+}
+#pf2e-token-hud .sidebar.actions .sidebar-content .section .strike .variants .versatiles .variant.selected {
+  background: var(--green);
+  color: var(--color-cool-5);
+  box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius);
 }
 #pf2e-token-hud .sidebar .sidebar-content .variants .variant:not(.disabled):hover {
   text-shadow: var(--text-shadow);

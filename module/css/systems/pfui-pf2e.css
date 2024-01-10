@@ -786,6 +786,10 @@ button.half-damage .fa-heart-broken::after {
 }
 .pf2e.chat-card .tags {
     margin: 3px 0 5px;
+    border-bottom: 2px dotted var(--border-color);
+}
+.pf2e.chat-card footer {
+    border-top: 2px dotted var(--border-color);
 }
 .pf2e.chat-card .card-footer span {
     border-right: 1px groove #fff;

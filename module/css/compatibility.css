@@ -587,6 +587,28 @@ li.hm_messagetaken {
 
 
 
+/* Monk's player settings */
+/*https://github.com/ironmonk88/monks-little-details*/
+.differences-list .setting-name {
+    background-color: var(--background);
+    color: var(--pfui-main-color);
+    border:none;
+}
+.differences-list .setting-oldvalue {
+    background-color: var(--background);
+    color: var(--pfui-main-color);
+}
+.differences-list .setting-direction {
+    background-color: var(--background);
+    color: var(--pfui-main-color);
+}
+.differences-list .setting-newvalue {
+    background-color: var(--background);
+}
+
+
+
+
 /* Monk's Little Details */
 /*https://github.com/ironmonk88/monks-little-details*/
 
@@ -846,6 +868,19 @@ wrapper.pf2e-td.name-left .pf2e-td.damage-application {
 .token-info .damage-application button.applied {
     filter: hue-rotate(90deg) contrast(200%);
 }
+.actor-target.criticalSuccess:not(.color-dice):not(.color-row) {
+    color: var(--pfui-main-color);
+}
+.actor-target.success:not(.color-dice):not(.color-row) {
+    color: var(--color-cool-4);
+  }
+.actor-target.failure:not(.color-dice):not(.color-row) {
+    color: var(--color-cool-4);
+}
+.actor-target.criticalFailure:not(.color-dice):not(.color-row) {
+    color: var(--color-cool-4);
+}
+
 
 
 
