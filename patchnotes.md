@@ -4,7 +4,13 @@
 - Ready for v11 version.
 
 
+## v11.315.10.3
+- Updated Compatibility PF2e v5.12.7.
+- Updated Cursor compatibility.
+- Updated Dark Kingdom Sheet.
+
 ## v11.315.10.2
+- Updated core code.
 - Updated Compatibility PF2e v5.12.3.
 - Updated Compatibility with Interactive Token Tooltip.
 - Updated PF2e Action Support Engine Compatibility.
