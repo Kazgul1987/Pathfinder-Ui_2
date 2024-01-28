@@ -4,6 +4,11 @@
 - Ready for v11 version.
 
 
+
+## v11.315.5127.4
+- Added Compatibility with Monk's PF2E Encounter Aftermath
+- Updated Cursor compatibility.
+
 ## v11.315.10.3
 - Updated Compatibility PF2e v5.12.7.
 - Updated Cursor compatibility.
