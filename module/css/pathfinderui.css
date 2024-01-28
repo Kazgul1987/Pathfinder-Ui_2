@@ -888,7 +888,6 @@ hr {
 }
 #ui-bottom > div {
     justify-content: center;
-
 }
 
 #hotbar {
@@ -898,20 +897,28 @@ hr {
 #hotbar #action-bar {
     position: relative;
     background-repeat: no-repeat;
-
 }
-
-#hotbar #action-bar .macro {
-    background: var(--color-cool-5-50);
+#hotbar .macro.inactive {
+    background: var(--color-cool-5-75);
     border-radius: 50%;
     border: 2px solid var(--rpg-styled-ui-color);
     box-shadow: var(--glassy) 0px 0px 10px 0px;
     backdrop-filter: blur(5px);
 }
+#hotbar .macro.active {
+    background: var(--color-cool-5-75);
+    border-radius: 50%;
+    border: 2px solid var(--rpg-styled-ui-color);
+    box-shadow: var(--glassy) 0px 0px 10px 0px;
+    backdrop-filter: blur(5px);
+}
+#hotbar .macro.active:hover {
+    border: 2px solid var(--color-warm-2);
+    filter: contrast(1.2);
+}
 .hotbar-page {
     width: calc(var(--hotbar-width) + 72px);
 }
-
 #action-bar:not(.collapsed)::before {
     position: absolute;
     z-index: -1;
@@ -924,35 +931,32 @@ hr {
     background-size: 100% 85px;
     background-repeat: no-repeat;
 }
-
 #hotbar .macro:hover {
     box-shadow: 0 0 10px var(--color-shadow-highlight) inset!important;
 }
-
 #hotbar .macro .macro-key {
     top: initial;
     bottom: 2px;
     z-index: 3;
-    color: var(--rpg-styled-ui-color);
+    color: var(--color-warm-1);
     background: none;
+    text-shadow: var(--text-shadow);
 }
-
 #hotbar .macro .macro-icon {
     position: relative;
     z-index: 2;
     border-radius: 50%;
 }
-
 #hotbar #macro-list {
     grid-gap: 8px;
     border:none;
 }
-
 #hotbar .bar-controls {
     color: var(--rpg-styled-ui-color);
-    background: none;
-    border: none;
-    box-shadow: none;
+    background: unset;
+    border: unset;
+    box-shadow: unset;
+    text-shadow: var(--text-shadow);
 }
 
 /* CONTROLS */

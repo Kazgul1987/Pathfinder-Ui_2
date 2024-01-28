@@ -551,7 +551,6 @@ li.hm_messagetaken {
     bottom: 70px;
 }
 #hotbar .action-bar.no-arrows + .bar-controls span.page-number, #hotbar .hotbar-page .bar-controls span.page-number, #hotbar .hotbar-page .bar-controls i {
-
     box-shadow: var(--box-shadow-light);
     background: var(--color-cool-5-75);
     border: 1px solid var(--color-warm-1);
@@ -566,18 +565,6 @@ li.hm_messagetaken {
     background-color: var(--color-cool-5-50);
     box-shadow: var(--box-shadow);
     border: 1px solid var(--color-border-dark);
-}
-#hotbar .macro.inactive {
-    box-shadow: var(--box-shadow-light);
-    background: var(--color-cool-5-75);
-    border-radius: 50%;
-    border: 2px solid var(--rpg-styled-ui-color);
-}
-#hotbar .macro.active {
-    box-shadow: var(--box-shadow-light);
-    background: var(--color-cool-5-75);
-    border-radius: 50%;
-    border: 2px solid var(--rpg-styled-ui-color);
 }
 #hotbar .hotbar-page .macro-list {
     gap: 7.5px;
@@ -1328,6 +1315,7 @@ nav.damage-log-nav .item.active:before,
     color: var(--pfui-main-color);
     text-shadow: 0px 0px 3px black;
     backdrop-filter: brightness(0.8) blur(5px);
+    filter: drop-shadow(0px 1px 1px black);
 }
 
 .placeable-hud .control-icon {
@@ -1338,6 +1326,10 @@ nav.damage-log-nav .item.active:before,
     color: var(--pfui-main-color);
     text-shadow: 0px 0px 5px black;
     backdrop-filter: blur(5px);
+    filter: drop-shadow(0px 1px 1px black);
+}
+.placeable-hud .control-icon img {
+    filter: brightness(0.7) sepia(1) grayscale(0.7) drop-shadow(0px 1px 1px black);
 }
 
 #token-hud .status-effects .effect-control {
