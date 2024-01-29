@@ -5,7 +5,7 @@
 
 
 
-## v11.315.5127.5
+## v11.315.5127.6
 - Updated core code.
 - Updated Cursor compatibility.
 - Added Compatibility with Monk's PF2E Encounter Aftermath
