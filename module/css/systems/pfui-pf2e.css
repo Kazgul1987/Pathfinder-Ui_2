@@ -774,7 +774,15 @@ button.half-damage .fa-heart-broken::after {
     box-shadow: var(--glassy);
     border-radius: 10px;
 }
-
+.chat-message > .message-content .participant-conditions h4 {
+    color: var(--color-warm-1);
+    border-bottom: 2px dotted var(--border-color);
+}
+.chat-message > .message-content .participant-conditions ul li .name {
+    border-bottom: 1px solid var(--red-light);
+    color: antiquewhite;
+    text-shadow: var(--text-shadow);
+}
 .message-content .chat-damage-buttons button {
     background: rgba(0, 0, 0, 0.1);
     box-shadow: 0 0 2px #fff inset;
@@ -794,6 +802,7 @@ button.half-damage .fa-heart-broken::after {
 .pf2e.chat-card .card-footer span {
     border-right: 1px groove #fff;
 }
+
 
 
 /*Shield*/

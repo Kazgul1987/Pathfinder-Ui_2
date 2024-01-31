@@ -4,6 +4,10 @@
 - Ready for v11 version.
 
 
+## v11.315.5130.1
+- Updated Compatibility PF2e v5.13.0.
+- Updated core code.
+- Updated Dark Sheet Player.
 
 ## v11.315.5127.6
 - Updated core code.

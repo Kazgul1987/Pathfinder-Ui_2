@@ -306,7 +306,9 @@
     border-color: var(--pfui-main-color) !important;
     border-radius: var(--border-radius);
 }
-
+.sheet.actor.character.dark-theme section.window-content button.blue {
+    background: var(--glass-bg);
+}
 .actor.sheet.dark-theme .window-content .item-summary .button-group button {
     background: radial-gradient(var(--primary-light-remaster), var(--primary-remaster));
     border-radius: 15px;
@@ -400,26 +402,35 @@ background: radial-gradient(var(--background-2), transparent);
     color: var(--background)!important;
     background: var(--green)!important;
 }
-.actor.sheet.dark-theme .crb-style section.major > header {
+.actor.sheet.dark-theme form.crb-style section.major > header, 
+.actor.sheet.dark-theme form.crb-style section.major > .subsection > header {
     color: var(--alternate-background);
 }
-.actor.sheet.dark-theme .crb-style .sheet-body .sheet-content .tab.character .character-speeds {
+.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.character .subsection.speeds {
     background: radial-gradient(var(--background-2), transparent);
     border-radius: var(--border-radius);
 }
-.actor.sheet.dark-theme .crb-style .sheet-body .sheet-content .tab.character .character-speeds .speed .label {
+.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.character .subsection.speeds .speed .label {
     color: var(--pfui-main-color);
 }
-.actor.sheet.dark-theme .crb-style .sheet-body .sheet-content .tab.character .character-speeds .speed .value {
+.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.character .subsection.speeds .speed .value {
     color: var(--color-cool-1);
 }
-.actor.sheet.dark-theme .crb-style .sheet-body .sheet-content .tab.character .character-speeds .speed .value i {
+.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.character .subsection.speeds .speed .value i {
     color: var(--alternate-background);
 }
-.actor.sheet.dark-theme .crb-style .sheet-body .sheet-content .tab.character .character-speeds .speed .value.rollable svg path {
+.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.character .subsection.speeds .speed .value.rollable svg path {
     fill: var(--color-cool-1);
 }
-
+.actor.sheet.character.dark-theme form.crb-style header.char-header .char-level .level input {
+    color: var(--green)!important;
+}
+.actor.sheet.character.dark-theme .crb-style header.char-header .char-level .exp-data .exp-input input {
+    color: var(--green)!important;
+}
+.actor.sheet.character.dark-theme .crb-style header.char-header .char-level .exp-data progress {
+    box-shadow: unset;
+}
 
 
 
@@ -660,7 +671,6 @@ background: radial-gradient(var(--background-2), transparent);
 .actor.sheet.dark-theme .inventory .item .item-sell-value {
     background: radial-gradient(var(--background-2), transparent);
 }
-.actor.sheet.dark-theme .window-content .inventory ul.items > li > .data .item-controls > a.toggle-invested.active,
 .actor.sheet.dark-theme .window-content .inventory ul.items > li > .data .item-controls > a.item-carry-type.active {
     color: var(--rarity-rare);
 }
@@ -668,11 +678,14 @@ background: radial-gradient(var(--background-2), transparent);
     color: var(--rarity-rare);
 }
 .actor.sheet.dark-theme .window-content .inventory ul.items > li > .data .item-controls > a.item-carry-type {
-    color: var(--red);
+    color: var(--color-level-error);
 }
-.actor.sheet.dark-theme .window-content .inventory ul.items > li > .data .item-controls > a.toggle-invested, 
+.actor.sheet.dark-theme .window-content .inventory ul.items > li > .data .item-controls > a.toggle-invested.active {
+    color: var(--green);
+} 
+.actor.sheet.dark-theme .window-content .inventory ul.items > li > .data .item-controls > a.toggle-invested,
 .actor.sheet.dark-theme .window-content .inventory ul.items > li > .data .item-controls > a.item-carry-type {
-    color: var(--red);
+    color: var(--color-level-error);
 }
 .actor.sheet.dark-theme .window-content .inventory .inventory-list > header, 
 .actor.sheet.dark-theme .window-content .inventory .total-bulk {
@@ -700,7 +713,7 @@ background: radial-gradient(var(--background-2), transparent);
     box-shadow: var(--box-shadow);
     text-shadow: var(--text-shadow);
 }
-.actor.sheet.dark-theme .crb-style .sheet-body .sheet-content ol.spell-list > li[data-slot-expended] button.cast-spell {
+.actor.sheet.dark-theme form.crb-style .sheet-body .sheet-content ol.spell-list > li.spell[data-slot-expended] button.cast-spell {
     cursor: not-allowed;
     border: none;
     text-shadow: 0 0 8px var(--color-shadow-primary);
