@@ -651,6 +651,62 @@ li.hm_messagetaken {
 :root{
     --monks-border-color: #6b6155;
 }
+#tokenbar .token {
+    border: 1px solid transparent;
+    border-radius: unset;
+    margin: 2px;
+    text-shadow: 0 0 15px var(--red-light);
+    background: unset;
+    box-shadow: unset;
+}
+#tokenbar .bar-controls div#tokenbar-move-handle {
+    background: unset;
+}
+#tokenbar .token-list {
+    border: 1px solid transparent;
+}
+#tokenbar .bar-controls > div > .toggle-collapse {
+    color: var(--color-warm-1);
+}
+#tokenbar .token .token-icon {
+    border: none;
+    box-shadow: unset;
+    background: transparent;
+    backdrop-filter: blur(5px);
+}#tokenbar .token .token-stat i {
+    color: var(--green);
+    filter: drop-shadow(0px 1px 1px black);
+}
+#tokenbar .token .token-stat {
+    color: var(--color-warm-1)!important;
+    filter: drop-shadow(0px 1px 1px black);
+}
+#tokenbar .token .token-stats {
+    background: var(--color-cool-5-75);
+    border-radius: 5px;
+    backdrop-filter: blur(5px);
+    filter: drop-shadow(0px 1px 1px black);
+}
+#tokenbar .bar-controls {
+    color: var(--pfui-main-color);
+    text-shadow: var(--text-shadow);
+    border: 1px solid transparent;
+    box-shadow: unset;
+    background: var(--color-cool-5-75);
+    border-radius: 5px;
+    backdrop-filter: blur(5px);
+    text-shadow: 0 0 15px var(--red-light);
+    filter: drop-shadow(0px 1px 1px black);
+}
+#tokenbar .bar-controls .tokenbar-buttons div.active:not(.disabled) i, 
+#tokenbar[movement="free"] #movement-free:not(.disabled) i, 
+#tokenbar[movement="none"] #movement-none:not(.disabled) i, 
+#tokenbar[movement="combat"] #movement-combat:not(.disabled) i {
+    color: var(--color-warm-1);
+    border: 1px solid var(--color-warm-2);
+    text-shadow: 0 0 15px var(--red-light);
+    filter: contrast(1.5);
+}
 
 #chat .monks-tokenbar.chat-card .card-header {
     padding: 3px 0;
@@ -949,6 +1005,9 @@ wrapper.pf2e-td.name-left .pf2e-td.damage-application {
 .polyglot-lang-select input {
     margin: 3px 5px;
 }
+.polyglot.polyglot-lang-select input:checked {
+    accent-color: var(--green);
+}
 .polyglot-lang-select input:checked {
     accent-color: var(--color-cool-5-50);
 }
@@ -970,7 +1029,7 @@ wrapper.pf2e-td.name-left .pf2e-td.damage-application {
 .polyglot-lang-select .select2-container--default .select2-selection--single .select2-selection__arrow b {
     border-color: var(--pfui-main-color) transparent transparent transparent;
 }
-.polyglot-lang-select span.select2-selection {
+.polyglot.polyglot-lang-select span.select2-selection {
     font-family: Taroca;
     font-size: 14px;
     text-align: center;
@@ -984,7 +1043,7 @@ wrapper.pf2e-td.name-left .pf2e-td.damage-application {
     backdrop-filter: blur(5px);
     transition: text-shadow 0.15s ease-in-out, background-color 0.15s ease-in-out, border 0.15s ease-in-out, color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, backdrop-filter 0.15s ease-in-out, border-radius 0.15s;
 }
-.polyglot-lang-select span.select2-selection:hover {
+.polyglot.polyglot-lang-select span.select2-selection:hover {
     border: none;
     outline: 2px solid var(--color-cool-4);
     box-shadow: var(--box-shadow);

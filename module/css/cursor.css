@@ -226,6 +226,9 @@ form button {
 button:disabled {
     cursor:url(../ui/cursors/normal.webp), default; 
 }
+.actor.sheet.character .crb-style .sheet-body .sheet-content .tab.spellcasting .spellcasting-entry .spell-ability-data .focus-pool {
+    cursor: url(../ui/cursors/pointer.webp), pointer;
+}
 
 
 /* PF2e NPC Sheet */

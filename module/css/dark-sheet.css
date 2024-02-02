@@ -194,6 +194,11 @@
 .actor.sheet.dark-theme .crb-style aside .sidebar a.roll-icon svg path {
     fill: var(--green);
 }
+.actor.sheet.dark-theme .crb-style aside .sidebar ol.tags li {
+    box-shadow: unset;
+    background-color: var(--glass-bg);
+    border: 1px solid #956d58;
+}
 .actor.sheet.dark-theme .crb-style .stroke-header svg {
     fill: none;
 }
@@ -333,9 +338,19 @@
 .sheet.actor.character.dark-theme .inventory .list-row .item-controls .item-control.toggle-invested, .sheet.actor.character.dark-theme .inventory .list-row .item-controls .item-control.item-carry-type {
     color: var(--pfui-main-color);
 }
-.sheet.actor.character.dark-theme .item-controls {
-    color: var(--pfui-main-color) !important;
+.actor.sheet.dark-theme section.window-content .inventory ul.items > li > .data .item-controls {
+    color: var(--pfui-main-grey-color);
     background: radial-gradient(var(--background-2), transparent);
+}
+.sheet.actor.character.dark-theme .item-controls {
+    color: var(--pfui-main-grey-color);
+    background: radial-gradient(var(--background-2), transparent);
+}
+.sheet.actor.character.dark-theme .item-controls .fa-regular.fa-fw.fa-star {
+    color: var(--color-warm-2);
+}
+.sheet.actor.character.dark-theme .item-controls .fa-solid.fa-fw.fa-star {
+    color: var(--green);
 }
 
 .sheet.actor.character.dark-theme h3 {
@@ -793,6 +808,24 @@ color: var(--green)!important;
     border: none;
     border-radius: var(--border-radius);
     color: var(--pfui-main-grey-color) !important;
+}
+.actor.sheet.dark-theme section.window-content .item-summary .description .addendum {
+    font-family: "Good OT Italic";
+    color: var(--pfui-main-color);
+    border-left-width: 0;
+    border-top: 2px solid var(--color-cool-5);
+    border-bottom: 2px solid var(--color-cool-5);
+    padding: 4px 12px;
+    margin-left: 0;
+    margin-right: 0;
+    background: #584a754d;
+    border-radius: var(--border-radius-5);
+    text-shadow: var(--text-shadow);
+}
+.actor.sheet.dark-theme section.window-content .item-summary .description .addendum h4 {
+    border-color: #ff6400;
+    color: #ff6400;
+    text-shadow: var(--text-shadow);
 }
 
 
@@ -1444,6 +1477,21 @@ color: var(--primary-remaster);
     fill: var(--primary-remaster);
     filter: contrast(2);
 }
+.remaster.actor.sheet.dark-theme section.window-content .item-summary .description .addendum {
+    font-family: unset;
+    border-left-width: unset;
+    text-shadow: unset;
+    background: rgba(68, 55, 48, 0.1);
+    border-radius: 2px;
+    color: var(--color-pf-alternate-darker);
+    padding: var(--space-4);
+    margin: 0 0 var(--space-8);
+}
+.remaster.actor.sheet.dark-theme section.window-content .item-summary .description .addendum h4 {
+    border-color: unset;
+    text-shadow: unset;
+}
+
 
 
 

@@ -462,7 +462,9 @@
     font-weight: 500;
     margin: 0px;
 }
-
+.message-content .pf2e.chat-card .addendum {
+    color: var(--pfui-main-grey-color);
+}
 div#scrollToBottom {
     padding: 4px;
     flex: 0;
