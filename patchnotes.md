@@ -4,6 +4,19 @@
 - Ready for v11 version.
 
 
+
+## v11.315.5132.1
+- Updated Compatibility PF2e v5.13.2.
+- Updated Dark Sheet Player.
+
+## v11.315.5131.1
+- Updated Compatibility PF2e v5.13.1.
+- Updated core code.
+- Updated Cursor compatibility.
+- Updated Dark Sheet Player.
+- Updated compatibility with Monk's TokenBar
+- Updated compatibility with new version of Polyglot.
+
 ## v11.315.5130.1
 - Updated Compatibility PF2e v5.13.0.
 - Updated core code.
@@ -25,7 +38,6 @@
 - Updated Compatibility with Interactive Token Tooltip.
 - Updated PF2e Action Support Engine Compatibility.
 - Updated compatibility with Monk player setting.
-
 
 ## v11.315.10.1
 - Updated Compatibility PF2e v5.12.1.

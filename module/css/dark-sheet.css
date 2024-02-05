@@ -478,7 +478,11 @@ background: radial-gradient(var(--background-2), transparent);
 .actor.sheet.dark-theme .crb-style .sheet-body .sheet-content .tab.actions .actions-container .actions-tabs-wrapper .actions-panels ol.actions-list .fa-solid.fa-eye-slash {
     color: var(--color-warm-1)!important;  
 }
-
+.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.actions ol.actions-list li.strike .alt-usage .alt-usage-icon {
+    background: var(--green);
+    box-shadow: var(--glassy);
+    border-radius: var(--border-radius);
+}
 .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.actions .actions-container .actions-tabs-wrapper .actions-panels ol.actions-list.strikes-list li.strike .button-group button:not(:disabled) {
     background: var(--blue);
     text-shadow: var(--text-shadow);
@@ -1491,8 +1495,15 @@ color: var(--primary-remaster);
     border-color: unset;
     text-shadow: unset;
 }
-
-
+.remaster.actor.sheet.dark-theme .crb-style .sheet-body .sheet-content .tab.actions ol.actions-list li.strike .alt-usage .alt-usage-icon {
+    background: unset;
+    box-shadow: unset;
+    border-radius: unset;
+}
+.remaster.actor.sheet.dark-theme .crb-style .sheet-body .sheet-content .tab.actions ol.actions-list li.action button.use-action:not(:disabled), 
+.remaster.actor.sheet.dark-theme .crb-style .sheet-body .sheet-content .tab.actions ol.actions-list li.strike button.use-action:not(:disabled) {
+    text-shadow: unset;
+}
 
 
 /* Support        
