@@ -5,7 +5,7 @@
 
 
 
-## v11.315.5132.1
+## v11.315.5132.2
 - Updated Compatibility PF2e v5.13.2.
 - Updated Dark Sheet Player.
 

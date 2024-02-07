@@ -925,7 +925,10 @@ color: var(--green)!important;
 .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.feats .feat-item .item-name .feat-slot-title {
     color: var(--green)!important;
 }
-
+.actor.sheet.character.dark-theme table.pf2e, 
+.actor.sheet.character.dark-theme table.pf2-table {
+    color: var(--color-cool-5);
+}
 
 
 
