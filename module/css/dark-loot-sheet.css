@@ -368,7 +368,7 @@
 .glassy.dark-loot-theme.sheet.actor.loot .section-container .section-header {
     backdrop-filter: blur(5px);
 }
-.system-pf2e .glassy.dark-loot-theme.sheet.actor.loot:not(.loot-sheet-npc), .system-pf2e .sheet.item {
+.system-pf2e .glassy.dark-loot-theme.sheet.actor.loot:not(.loot-sheet-npc) {
     background: none;
     box-shadow: none;
     border: none;

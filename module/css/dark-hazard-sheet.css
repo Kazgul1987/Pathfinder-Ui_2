@@ -282,7 +282,7 @@
 .glassy.dark-hazard-theme.sheet.hazard .section-container .section-header {
     backdrop-filter: blur(5px);
 }
-.system-pf2e .glassy.dark-hazard-theme.sheet.hazard:not(.loot-sheet-npc), .system-pf2e .sheet.item {
+.system-pf2e .glassy.dark-hazard-theme.sheet.hazard:not(.loot-sheet-npc) {
     background: none;
     box-shadow: none;
     border: none;

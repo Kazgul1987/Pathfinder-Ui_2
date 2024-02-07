@@ -725,7 +725,7 @@ text-shadow: var(--text-shadow);
 .glassy.dark-npc-theme.actor.npc .section-container .section-header {
     backdrop-filter: blur(5px);
 }
-.system-pf2e .glassy.dark-npc-theme.actor.npc:not(.loot-sheet-npc), .system-pf2e .sheet.item {
+.system-pf2e .glassy.dark-npc-theme.actor.npc:not(.loot-sheet-npc) {
     background: none;
     box-shadow: none;
     border: none;
