@@ -1428,9 +1428,6 @@ color: var(--primary-remaster);
     border-style: double;
     border-image-source: url(../css/assets/remaster-pc-sheet/frame-elegant.svg);
 }
-.remaster.actor.sheet.character.dark-theme .crb-style section.major > header {
-    color: unset;
-}
 .remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.character .character-speeds .speed .label {
     color: unset;
 }
@@ -1443,14 +1440,29 @@ color: var(--primary-remaster);
 .remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.character .character-speeds .speed .value.rollable svg path {
     fill: unset;
 }
-.remaster.actor.sheet.character.dark-theme .crb-style section.major > header button {
-    background: var(--glass-bg);
+.remaster.actor.sheet.character.dark-theme form.crb-style section.major > header, 
+.remaster.actor.sheet.character.dark-theme form.crb-style section.major > .subsection > header {
+    color: var(--primary-remaster);
+}
+.remaster.actor.sheet.character.dark-theme form.crb-style section.major > header button,
+.remaster.actor.sheet.character.dark-theme form.crb-style section.major > .subsection > header button {
+    background: transparent;
+    color: var(--primary-remaster)!important;
 }
 .remaster.actor.sheet.character.dark-theme .window-content .inventory ul.items > li > .data .item-name h4:not(:hover).rarity-common {
     --rarity-common: var(--color-cool-4);
     border-color: var(--rarity-common);
     color: var(--rarity-common);
     text-shadow: unset;
+}
+.remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.character .subsection.speeds .speed .label {
+    color: unset;
+}
+.remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.character .subsection.speeds .speed .value {
+    color: unset;
+}
+.remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.character .subsection.speeds .speed .value i {
+    color: unset;
 }
 .remaster.actor.sheet.character.dark-theme .window-content .inventory ul.items > li > .data .item-name h4:not(:hover).rarity-uncommon {
     text-shadow: unset;

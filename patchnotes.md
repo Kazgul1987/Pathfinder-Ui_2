@@ -5,6 +5,12 @@
 
 
 
+## v11.315.5135.1
+- Updated Compatibility PF2e v5.13.5.
+- Updated core code.
+- Updated Dark Sheet Player.
+- Fixed issue [#76](https://gitlab.com/sasmira/pathfinder-ui/-/issues/76)
+
 ## v11.315.5132.3
 - Updated Compatibility PF2e v5.13.2.
 - Updated Dark Sheet Player.

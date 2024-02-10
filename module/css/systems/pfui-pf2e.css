@@ -569,6 +569,10 @@ a.content-link.broken {
     box-shadow: var(--box-shadow);
     border: none;
 }
+#chat-log .dice-result [data-visibility]:not([data-visibility=all])[data-visibility=gm] {
+    border-radius: 10px;
+    box-shadow: var(--glassy-shadow);
+}
 #chat-log [data-visibility]:not([data-visibility=all]) {
     outline: none;
     padding: 2px;
