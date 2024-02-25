@@ -278,6 +278,30 @@ Hooks.on('renderSidebarTab', async (object, html) => {
 	}
   })
 
+Hooks.on('renderChatMessage', (chat, html) => {
+  if (!chat.speaker.actor) {
+    return;
+  }
+
+  const tokenImage = html[0].querySelector('header > img');
+  if (!tokenImage) {
+    return;
+  }
+
+  const actor = game.actors.get(chat.speaker.actor);
+  if (!actor) {
+    return;
+  }
+
+  const scale = actor?.prototypeToken?.texture?.scaleX;
+  if (!scale || 1 >= scale) {
+    return;
+  }
+
+  tokenImage.style.transform = `scale(${scale - 0.2})`;
+  tokenImage.style.boxShadow = 'none';
+});
+
 Hooks.on('renderChatLogPF2e', (chat, html) => {
   if (!game.settings.get('pathfinder-ui', 'openSheetOnChatClick')) {
     return;
