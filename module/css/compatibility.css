@@ -1027,7 +1027,7 @@ wrapper.pf2e-td.name-left .pf2e-td.damage-application {
     color: var(--pfui-main-grey-color)!important;
 }
 .polyglot-lang-select .select2-container--default .select2-selection--single .select2-selection__arrow b {
-    border-color: var(--pfui-main-color) transparent transparent transparent;
+    border-color: var(--pfui-main-color) transparent transparent transparent!important;
 }
 .polyglot.polyglot-lang-select span.select2-selection {
     font-family: Taroca;
@@ -1042,6 +1042,9 @@ wrapper.pf2e-td.name-left .pf2e-td.damage-application {
     border-radius: var(--border-radius);
     backdrop-filter: blur(5px);
     transition: text-shadow 0.15s ease-in-out, background-color 0.15s ease-in-out, border 0.15s ease-in-out, color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, backdrop-filter 0.15s ease-in-out, border-radius 0.15s;
+}
+.select2-dropdown {
+    border: none;
 }
 .polyglot.polyglot-lang-select span.select2-selection:hover {
     border: none;

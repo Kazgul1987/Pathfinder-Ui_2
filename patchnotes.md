@@ -5,6 +5,12 @@
 
 
 
+## v11.315.5136.1
+- Updated Compatibility PF2e v5.13.6.
+- Updated core code.
+- Updated compatibility modules.
+- adjust token image in chat
+
 ## v11.315.5135.1
 - Updated Compatibility PF2e v5.13.5.
 - Updated core code.

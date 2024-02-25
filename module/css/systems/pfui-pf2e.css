@@ -149,7 +149,7 @@
     border: 1px solid var(--color-warm-1);
     box-shadow: 0px 0px 6px var(--color-warm-2), 0px 2px 8px 1px var(--color-warm-3);
 }
-#sidebar .directory .directory-item.context,
+#sidebar .directory .directory-item.context, 
 #sidebar .directory .directory-item.active {
     background-color: var(--color-warm-3);
     border-radius: var(--border-radius-5);
@@ -218,6 +218,9 @@
 .pf2e.chat-card .card-footer span {
     border-top: 2px dotted var(--border-color);
     border-bottom: 2px dotted var(--border-color);
+}
+.pf2e.chat-card footer span {
+    border-right: var(--space-2) dotted var(--border-color);
 }
 
 .pf2e.chat-card.kingdom .confirmation {

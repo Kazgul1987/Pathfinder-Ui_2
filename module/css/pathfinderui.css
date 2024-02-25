@@ -5,7 +5,14 @@
 @import 'compatibility.css';
 @import 'privacy-button.css';
 @import 'alliance-viewer.css';
-
+@import 'dark-sheet.css';
+@import 'dark-party-sheet.css';
+@import 'dark-loot-sheet.css';
+@import 'dark-npc-sheet.css';
+@import 'dark-hazard-sheet.css';
+@import 'dark-kingdom-sheet.css';
+@import 'simply-portraits.css';
+@import 'dark-custom.css';
 
 /* POLICES
 ====================================================== */
@@ -1027,7 +1034,7 @@ hr {
 .app.window-app.chat-popout .window-content .chat-message {
     background: rgba(6, 4, 3, 0.92);
 }
-
+.app.window-app,
 .app.window-app.dialog,
 .app.window-app.folder-edit {
     background: rgba(6, 4, 3, 0.92);
@@ -1053,7 +1060,7 @@ hr {
     border: none;
     color: var(--pfui-main-color);
 }
-
+.window-app .window-header::after,
 .window-app.dialog .window-header::after,
 .window-app.folder-edit .window-header::after {
     position: absolute;
