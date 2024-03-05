@@ -5,6 +5,9 @@
 
 
 
+## v11.315.5136.3
+- Fixed scrollbar rendering with last versions of Chrome.
+
 ## v11.315.5136.2
 - Updated Compatibility PF2e v5.13.6.
 - Updated core code.

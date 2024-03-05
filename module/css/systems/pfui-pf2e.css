@@ -81,9 +81,13 @@
 
 /* scrollbar
 ====================================================== */
+* {
+    scrollbar-color: initial;
+    scrollbar-width: auto!important;
+}
 ::-webkit-scrollbar-thumb {
-    background: radial-gradient(var(--color-cool-4), var(--color-cool-5));
-    border: 1px dotted var(--color-cool-3);
+    background: radial-gradient(var(--color-cool-4), var(--color-cool-5))!important;
+    border: 1px dotted var(--color-cool-3)!important;
 }
 
 

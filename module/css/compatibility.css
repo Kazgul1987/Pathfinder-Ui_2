@@ -1197,6 +1197,7 @@ box-shadow: var(--box-shadow-light);
     border-radius: var(--border-radius-5);
 }
 #smalltime-app.show-date #dateDisplay {
+    font-size: 12px;
     background: var(--color-cool-4);
     box-shadow: var(--glassy-shadow);
     color: var(--color-warm-1);
@@ -1205,6 +1206,7 @@ box-shadow: var(--box-shadow-light);
     border: 1px solid var(--color-cool-5);
 }
 #smalltime-app #timeDisplay {
+    font-size: 12px;
     background: var(--color-cool-5);
     color: var(--green);
     border: 1px solid var(--color-cool-5);
