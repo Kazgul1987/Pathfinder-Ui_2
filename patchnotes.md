@@ -5,6 +5,14 @@
 
 
 
+## v11.315.5141.1
+- Updated Compatibility PF2e v5.14.1.
+- Updated core code.
+- Added indentation to different levels of journal pages.
+- Improved native token hud.
+- improved visibility of macro numbering.
+- Fixed some errors and added of others.
+
 ## v11.315.5136.3
 - Fixed scrollbar rendering with last versions of Chrome.
 

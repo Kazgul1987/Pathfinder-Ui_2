@@ -31,6 +31,14 @@
     --box-shadow: 0px 1px 3px 1px black;
     --box-shadow-light: inset 0 0 0 1px rgba(255, 255, 255, 0.15), inset 0 0 0 2px rgba(0, 0, 0, 0.4), inset 0px 0px 3px 1px var(--color-cool-3);
 
+    --bg3-blue: #183541;
+    --bg3-blue-light: #0c93bd;
+    --bg3-alliance-opposition-red: #de1847;
+    --button-hover-background: radial-gradient(circle, var(--bg3-alliance-opposition-red) 0, black 100%);
+    --button-toggle-hover-background: radial-gradient(circle, var(--bg3-blue-light) 0, var(--bg3-blue) 100%);
+    --text-color-1: #f7f3e8;
+    --button-hover-text-color: var(--text-color-1);
+
     --rarity-common: #7e7e7e;
     --rarity-uncommon: #ff6400;
     --rarity-rare: #0062ff;
@@ -609,9 +617,11 @@ li.hm_messagetaken {
   filter: brightness(1.1) saturate(1);
 }
 #token-hud.placeable-hud.monks-little-details .status-effects .effect-control {
-  border: none;
-  opacity: unset;
-  border-radius: var(--border-radius);
+    border: none;
+    opacity: unset;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    background: linear-gradient(45deg, var(--color-cool-3), var(--color-cool-5-25));
 }
 #token-hud.placeable-hud.monks-little-details .status-effects .effect-control.active {
     border: 1px solid var(--color-cool-5);
@@ -1359,13 +1369,8 @@ nav.damage-log-nav .item.active:before,
     box-shadow: var(--box-shadow);
     text-shadow: 0 0 3px black;
     border-radius: var(--border-radius);
-    backdrop-filter: blur(5px);
-}
-.placeable-hud .control-icon.active {
-    background: var(--color-cool-4);
-    border: 1px solid var(--color-warm-1);
-}
 
+}
 .placeable-hud .control-icon picture:hover {
     opacity: 1;
     filter: brightness(1.1) saturate(1.5)!important;
@@ -1381,29 +1386,110 @@ nav.damage-log-nav .item.active:before,
     backdrop-filter: brightness(0.8) blur(5px);
     filter: drop-shadow(0px 1px 1px black);
 }
-
-.placeable-hud .control-icon {
+.placeable-hud .control-icon[data-action=visibility], 
+.placeable-hud .control-icon[data-action=effects], 
+.placeable-hud .control-icon[data-action=combat], 
+.placeable-hud .control-icon[data-action=locked], 
+.placeable-hud .control-icon[data-action=target], 
+.placeable-hud .control-icon[data-action=active], 
+.placeable-hud .control-icon[data-action=mystify] {
     border-radius: 50%;
     background: none;
     box-shadow: var(--box-shadow);
     transition: text-shadow 0.15s ease-in-out, background-color 0.15s ease-in-out, border 0.15s ease-in-out, color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, backdrop-filter 0.15s ease-in-out, border-radius 0.15s;
     color: var(--pfui-main-color);
-    text-shadow: 0px 0px 5px black;
+    text-shadow: 0px 0px 3px black;
     backdrop-filter: blur(5px);
     filter: drop-shadow(0px 1px 1px black);
+    border: 1px solid black;
+}
+.placeable-hud  .control-icon {
+    border-radius: 50%;
+    background: none;
+    box-shadow: var(--box-shadow);
+    transition: text-shadow 0.15s ease-in-out, background-color 0.15s ease-in-out, border 0.15s ease-in-out, color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, backdrop-filter 0.15s ease-in-out, border-radius 0.15s;
+    color: var(--pfui-main-color);
+    text-shadow: 0px 0px 3px black;
+    backdrop-filter: brightness(0.8) blur(5px);
+    filter: drop-shadow(0px 1px 1px black);
+    border: 1px solid black;
 }
 .placeable-hud .control-icon img {
-    filter: brightness(0.7) sepia(1) grayscale(0.7) drop-shadow(0px 1px 1px black);
+    filter: drop-shadow(0px 1px 1px black);
+    transition: text-shadow 0.15s ease-in-out, background-color 0.15s ease-in-out, border 0.15s ease-in-out, color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, backdrop-filter 0.15s ease-in-out, border-radius 0.15s;
 }
-
-#token-hud .status-effects .effect-control {
+.placeable-hud .control-icon[data-action=visibility]:not(.disabled, :disabled):hover, 
+.placeable-hud .control-icon[data-action=effects]:not(.disabled, :disabled):hover, 
+.placeable-hud .control-icon[data-action=combat]:not(.disabled, :disabled):hover, 
+.placeable-hud .control-icon[data-action=locked]:not(.disabled, :disabled):hover, 
+.placeable-hud .control-icon[data-action=target]:not(.disabled, :disabled):hover, 
+.placeable-hud .control-icon[data-action=active]:not(.disabled, :disabled):hover, 
+.placeable-hud .control-icon[data-action=mystify]:not(.disabled, :disabled):hover {
+    background: var(--button-toggle-hover-background);
+    color: var(--button-hover-text-color);
+    border: 1px solid var(--color-cool-5);
     box-shadow: var(--box-shadow);
+}
+.placeable-hud .control-icon.active > img {
+    filter: sepia(100%) saturate(2000%) drop-shadow(2px 4px 6px black) hue-rotate(-50deg);
+}
+.placeable-hud .control-icon:hover > img {
+    filter: sepia() grayscale(0.95) brightness(1) drop-shadow(0px 1px 1px black);
+}
+.placeable-hud .control-icon:not(.disabled, :disabled):hover {
+    background: var(--button-hover-background);
+    color: var(--button-hover-text-color);
+    border: 1px solid var(--color-cool-5);
+    box-shadow: var(--box-shadow);
+}
+#token-hud .attribute i.fas {
+    position: absolute;
+    top: -15px;
+    left: -8px;
+    font-size: var(--font-size-18);
+    color: var(--color-cool-2);
+    text-shadow: 0px 1px 2px black;
+}
+.placeable-hud .control-icon[data-action=visibility].view, 
+.placeable-hud .control-icon[data-action=visibility].selected, 
+.placeable-hud .control-icon[data-action=visibility].active, 
+.placeable-hud .control-icon[data-action=effects].view, 
+.placeable-hud .control-icon[data-action=effects].selected, 
+.placeable-hud .control-icon[data-action=effects].active, 
+.placeable-hud .control-icon[data-action=combat].view, 
+.placeable-hud .control-icon[data-action=combat].selected, 
+.placeable-hud .control-icon[data-action=combat].active, 
+.placeable-hud .control-icon[data-action=locked].view, 
+.placeable-hud .control-icon[data-action=locked].selected, 
+.placeable-hud .control-icon[data-action=locked].active, 
+.placeable-hud .control-icon[data-action=target].view, 
+.placeable-hud .control-icon[data-action=target].selected, 
+.placeable-hud .control-icon[data-action=target].active, 
+.placeable-hud .control-icon[data-action=active].view, 
+.placeable-hud .control-icon[data-action=active].selected, 
+.placeable-hud .control-icon[data-action=active].active, 
+.placeable-hud .control-icon[data-action=mystify].view, 
+.placeable-hud .control-icon[data-action=mystify].selected, 
+.placeable-hud .control-icon[data-action=mystify].active {
+    background: var(--button-hover-background);
+    outline: 1px solid var(--color-warm-3);
+    text-decoration: none !important;
+    font-weight: unset !important;
+    text-shadow: var(--text-shadow);
+    animation: glow 0.75s infinite alternate;
+}
+#token-hud .status-effects .effect-control {
     filter: sepia(1) brightness(0.6);
     text-shadow: 0px 0px 3px black;
-    background: linear-gradient(45deg, var(--color-cool-3), var(--color-cool-5-25));
+}
+#token-hud .status-effects .effect-control:hover {
+    opacity: 1;
+    filter: contrast(1);
 }
 #token-hud .status-effects .effect-control.overlay {
     border: 2px solid var(--red-light);
+    border-radius: 50%;
+    filter: brightness(1);
 }
 #token-hud .status-effects .effect-control img {
     border: none;
@@ -1436,7 +1522,6 @@ nav.damage-log-nav .item.active:before,
     box-shadow: var(--box-shadow);
     text-shadow: 0px 1px 2px black;
 }
-
 
 /* Forien's Quest Log */
 /* https://github.com/League-of-Foundry-Developers/foundryvtt-forien-quest-log */

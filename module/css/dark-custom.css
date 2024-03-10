@@ -319,16 +319,13 @@ h6+p+blockquote, h6+p+ul+blockquote) {
     color: var(--color-text-dark-primary);
 }
 .light.dark-custom.sheet.journal-entry .pages-list .page-heading .page-title {
-    text-indent: 0rem;
     font-family: "Good OT Cond Bold";
     font-size: 1.1rem;
 }
 .light.dark-custom.sheet.journal-entry .pages-list .h2 .heading-link {
-    text-indent: 0.5rem;
     font-family: "Good OT";
 }
 .light.dark-custom.sheet.journal-entry .pages-list .h3 .heading-link {
-    text-indent: 0.5rem;
     font-family: "Good OT";
 }
 .light.dark-custom.sheet.journal-entry .journal-sidebar .directory-header .header-search input {
@@ -564,7 +561,6 @@ h6+ul+blockquote, h6+blockquote) {
 }
 .dark-custom.sheet.journal-entry .pages-list .page-heading .page-title {
     color: var(--pfui-main-grey-color);
-    text-indent: 0rem;
     font-family: "Good OT Cond Bold";
     font-size: 1.1rem;
 }
@@ -588,7 +584,6 @@ h6+ul+blockquote, h6+blockquote) {
 }
 .dark-custom.sheet.journal-entry .pages-list .h2 .heading-link {
 	color: gray;
-    text-indent: 0.5rem;
     font-family: "Good OT";
 }
 .dark-custom.sheet.journal-entry .pages-list .h2 .heading-link:hover {
@@ -596,7 +591,6 @@ h6+ul+blockquote, h6+blockquote) {
 }
 .dark-custom.sheet.journal-entry .pages-list .h3 .heading-link {
 	color: grey;
-    text-indent: 0.5rem;
     font-family: "Good OT";
 }
 .dark-custom.sheet.journal-entry .pages-list .h3 .heading-link:hover {

@@ -940,9 +940,10 @@ hr {
 }
 #hotbar .macro .macro-key {
     top: initial;
-    bottom: 2px;
+    bottom: -6px;
+    right: -8px;
     z-index: 3;
-    color: var(--color-warm-1);
+    color: var(--red-light);
     background: none;
     text-shadow: var(--text-shadow);
 }

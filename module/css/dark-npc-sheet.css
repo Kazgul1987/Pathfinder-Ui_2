@@ -356,7 +356,7 @@
 
 /*      Inventory       
 *************************/
-.dark-npc-theme.actor.npc .currency {
+.dark-npc-theme.actor.npc section.window-content .currency {
     color: var(--pfui-main-color);
     border: none;
     background: none;
@@ -365,13 +365,13 @@
 text-shadow: var(--text-shadow);
     border-radius: var(--border-radius);
 }
-.dark-npc-theme.actor.npc .currency .label {
+.dark-npc-theme.actor.npc section.window-content .currency .label {
     color: var(--green);
 }
-.dark-npc-theme.actor.npc .currency .denomination {
+.dark-npc-theme.actor.npc section.window-content .currency .denomination {
     color: var(--pfui-main-color);
 }
-.dark-npc-theme.actor.npc .currency li > button {
+.dark-npc-theme.actor.npc section.window-content .currency li > button {
     color: var(--pfui-main-color);
     border: none;
     background: none;
@@ -388,7 +388,7 @@ text-shadow: var(--text-shadow);
 text-shadow: var(--text-shadow);
     border-radius: var(--border-radius);
 }
-.dark-npc-theme.actor.npc .wealth h3.item-name {
+.dark-npc-theme.actor.npc section.window-content .wealth h3.item-name {
     color: var(--pfui-main-color);
 }
 .dark-npc-theme.actor.npc form ol.spell-list > li .item-name h4 > a:hover {
@@ -398,7 +398,7 @@ text-shadow: var(--text-shadow);
     padding-right: 0.3rem;
 }
 
-.dark-npc-theme.actor.npc .currency li > button:hover:not(:disabled) {
+.dark-npc-theme.actor.npc section.window-content .currency li > button:hover:not(:disabled) {
     border: 1px solid black;
     background: none;
     background-color: var(--green);
@@ -408,9 +408,10 @@ text-shadow: var(--text-shadow);
     color: var(--background)!important;
     border-radius: var(--border-radius);
 }
-.dark-npc-theme.actor.npc .sheet-body .tab.inventory.active .inventory-section .coinage .wealth, 
-.dark-npc-theme.actor.npc .sheet-body .tab.inventory.active .inventory-section header {
+.dark-npc-theme.actor.npc form .sheet-body .tab.inventory.active .inventory-section .coinage .wealth, 
+.dark-npc-theme.actor.npc form .sheet-body .tab.inventory.active .inventory-section header {
     background: linear-gradient(45deg, var(--color-cool-4), var(--color-cool-5-90))!important;
+    box-shadow: unset;
 }
 .dark-npc-theme.actor.npc .window-content .inventory .inventory-list > header, 
 .dark-npc-theme.actor.npc .window-content .inventory .total-bulk {
