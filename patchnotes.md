@@ -5,6 +5,10 @@
 
 
 
+## v11.315.5141.2
+- Updated Compatibility PF2e v5.14.1.
+- Fixed some errors and added of others.
+
 ## v11.315.5141.1
 - Updated Compatibility PF2e v5.14.1.
 - Updated core code.
