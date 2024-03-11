@@ -1,5 +1,3 @@
-let circularMaskTexture = null;
-
 function countEffects(token) {
     if (!token) {
       return 0;
@@ -129,7 +127,6 @@ function updateEffectScales(token) {
 };
 
 function enableStatusHalo() {
-
   const origRefreshEffects = Token.prototype._refreshEffects;
   Token.prototype._refreshEffects = function (...args) {
     if (this) {
@@ -137,43 +134,51 @@ function enableStatusHalo() {
       updateEffectScales(this);
     }
   };
+  const effectTextureCache = new Map();
   const origDrawEffect = Token.prototype._drawEffect;
   Token.prototype._drawEffect = async function (...args) {
     if (this) {
       const src = args[0];
       const tint = args[1];
-      // debugger;
+      // return if no icon is set
       if (!src) return;
-      let tex = await loadTexture(src, { fallback: "icons/svg/hazard.svg" });
-      let icon = new PIXI.Sprite(tex);
-      if (src != game.settings.get("pf2e", "deathIcon")) {
-        // If the circular mask hasn't been created yet
-        if (!circularMaskTexture) {
-          // Define a new render texture that is 110x110
-          circularMaskTexture = PIXI.RenderTexture.create(110, 110);
-          // Define the mask sprite
-          const renderedMaskSprite = new PIXI.Graphics().beginFill(0xffffff).drawCircle(55, 55, 55).endFill();
-          // Blur the mask sprite
-          const blurFilter = new PIXI.filters.BlurFilter(2);
-          renderedMaskSprite.filters = [blurFilter];
-          // Render the result of the mask sprite to the texture
-          canvas.app.renderer.render(renderedMaskSprite, circularMaskTexture);
+
+      // create texture cache key. SRC is fine if we make sure to also cache the fallback image
+      let fallbackEffectIcon = "icons/svg/hazard.svg";
+      const effectTextureCacheKey = src || fallbackEffectIcon;
+      // attempt do load pre-rendered, circular effect icon
+      let effectTexture = effectTextureCache.get(effectTextureCacheKey);
+      let icon;
+      if (effectTexture) {
+        // all set, return sprite with pre-rendered effect icon
+        icon = new PIXI.Sprite(effectTexture);
+      } else {
+        // load effect icon texture
+        let tex = await loadTexture(src, { fallback: fallbackEffectIcon });
+        icon = new PIXI.Sprite(tex);
+        // death icon is always layed over the whole token, don't do anything with that one
+        if (src === game.settings.get("pf2e", "deathIcon")) {
+          return this.effects.addChild(icon);
         }
 
+        // create circular mask and apply it to the icon sprite
         const minDimension = Math.min(icon.width, icon.height);
-        // Use the blurred pre-made texture and create a new mask sprite for the specific icon
         const myMask = new PIXI.Graphics().beginFill(0xffffff).drawCircle(55, 55, 55).endFill();
-        //const myMask = new PIXI.Sprite(circularMaskTexture);
-        //myMask.anchor.set(0.5,0.5);
         myMask.width = minDimension;
         myMask.height = minDimension;
-        myMask.x = -icon.width / 2;
-        myMask.y = -icon.height / 2;
-
         icon.mask = myMask;
         icon.addChild(myMask);
+
+        // render masked sprite to a texture to re-use later
+        effectTexture = PIXI.RenderTexture.create({
+          width: minDimension,
+          height: minDimension,
+        });
+        canvas.app.renderer.render(icon, { renderTexture: effectTexture });
+        effectTextureCache.set(effectTextureCacheKey, effectTexture);
+        // use rendered texture for icon sprite instead of masked one
+        icon = new PIXI.Sprite(effectTexture);
       }
-      // debugger;
       return this.effects.addChild(icon);
     }
   };
