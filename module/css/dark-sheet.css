@@ -191,24 +191,24 @@
 /*      Character       
 *************************/
 
-.actor.sheet.dark-theme .crb-style aside .sidebar a.roll-icon svg path {
+.actor.sheet.dark-theme section.window-content .crb-style aside .sidebar a.roll-icon svg path {
     fill: var(--green);
 }
-.actor.sheet.dark-theme .crb-style aside .sidebar ol.tags li {
+.actor.sheet.dark-theme section.window-content .crb-style aside .sidebar ol.tags li {
     box-shadow: unset;
     background-color: var(--glass-bg);
     border: 1px solid #956d58;
 }
-.actor.sheet.dark-theme .crb-style .stroke-header svg {
+.actor.sheet.dark-theme section.window-content .crb-style .stroke-header svg {
     fill: none;
 }
-.actor.sheet.dark-theme .crb-style .details-label {
+.actor.sheet.dark-theme section.window-content .crb-style .details-label {
     color: var(--alternate-background);
 }
-.actor.sheet.dark-theme .crb-style .sheet-body .sheet-content h3.header {
+.actor.sheet.dark-theme section.window-content .crb-style .sheet-body .sheet-content h3.header {
     border: none;
 }
-.actor.sheet.dark-theme .crb-style aside .sidebar_title h2 {
+.actor.sheet.dark-theme section.window-content .crb-style aside .sidebar_title h2 {
     color: var(--alternate-background);
 }
 .actor.sheet.character.dark-theme section.window-content .crb-style .sheet-body .sheet-content > .tab.active.character .subsection.attributes ul .abbreviation {
@@ -239,11 +239,11 @@
     background: radial-gradient(var(--background-2), transparent);
 }
 
-.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.character .pc h3 {
+.actor.sheet.character.dark-theme section.window-content .crb-style .sheet-body .sheet-content .tab.character .pc h3 {
     background: radial-gradient(var(--background-2), transparent);
 }
-
-.sheet.actor.character.dark-theme .crb-style .sheet-body .sheet-content ol.directory-list .action-header {
+.sheet.actor.character.dark-theme section.window-content .crb-style .sheet-body .sheet-content > .tab.active.crafting li.crafting-entry .action-header.alchemical-title,
+.sheet.actor.character.dark-theme section.window-content .crb-style .sheet-body .sheet-content ol.directory-list .action-header {
     color: var(--pfui-main-color) !important;
     background: var(--background);
     box-shadow: 0 0 6px inset var(--glass-bg-light-2)!important;
@@ -255,7 +255,7 @@
     border-image-source: var(--ornement);
 }
 
-.sheet.actor.character.dark-theme .crb-style .sheet-body .sheet-content ol.directory-list .action-header h3 input.item-name-input {
+.sheet.actor.character.dark-theme section.window-content .crb-style .sheet-body .sheet-content ol.directory-list .action-header h3 input.item-name-input {
     color: var(--pfui-main-color);
     text-shadow: var(--text-shadow);
 }
@@ -305,30 +305,28 @@
     background: none;
     backdrop-filter: blur(5px);
 }
+/*.sheet.actor.character.dark-theme section.window-content .crb-style aside .sidebar header button {
+    background: unset;
+}*/
+.sheet.actor.character.dark-theme section.window-content button,
+.sheet.actor.character.dark-theme section.window-content form.crb-style section.major > header button, 
+.sheet.actor.character.dark-theme section.window-content form.crb-style section.major > .subsection > header button,
 .sheet.actor.character.dark-theme section.window-content .crb-style aside .sidebar header button {
     background: unset;
-}
-.sheet.actor.character.dark-theme button {
-    color: var(--pfui-main-color) !important;
-    border-color: var(--pfui-main-color) !important;
-    box-shadow: var(--box-shadow-light);
-    border-radius: var(--border-radius)!important;
+    color: var(--pfui-main-color);
+    border-color: var(--pfui-main-color);
+    border-radius: var(--border-radius);
 }
 .sheet.actor.character.dark-theme section.window-content .currency li > button {
     background: var(--glass-bg);
 }
-.sheet.actor.character.dark-theme section.window-content .crb-style .sheet-body .sheet-content > .tab.active.spellcasting button.create-entry {
+.sheet.actor.character.dark-theme section.window-content button.blue,
+.sheet.actor.character.dark-theme section.window-content .crb-style .sheet-body .sheet-content > .tab.active.spellcasting button.create-entry,
+    .sheet.actor.character.dark-theme section.window-content .crb-style .sheet-body .sheet-content > .tab.active.spellcasting .spellcasting-entry .spell-ability-data button.prepare-spells {
     --secondary: var(--color-cool-3);
     background: var(--secondary);
     text-shadow: var(--text-shadow);
-    box-shadow: var(--box-shadow) !important;
-    border: none;
-}
-.sheet.actor.character.dark-theme section.window-content .crb-style .sheet-body .sheet-content > .tab.active.spellcasting .spellcasting-entry .spell-ability-data button.prepare-spells {
-    --secondary: var(--color-cool-3);
-    background: var(--secondary);
-    text-shadow: var(--text-shadow);
-    box-shadow: var(--box-shadow) !important;
+    box-shadow: var(--box-shadow);
     border: none;
 }
 .sheet.actor.character.dark-theme section.window-content .crb-style .sheet-body .sheet-content > .tab.active.spellcasting .spellcasting-entry .spell-ability-data button.prepare-spells:hover {
@@ -376,24 +374,24 @@
     color: var(--green);
 }
 
-.sheet.actor.character.dark-theme h3 {
+.sheet.actor.character.dark-theme section.window-content h3 {
     color: var(--pfui-main-color) !important;
 }
 
-.actor.sheet.character.dark-theme .crb-style nav.sheet-navigation .item:hover, .actor.sheet.character.dark-theme .crb-style nav.sheet-navigation .item.active {
+.actor.sheet.character.dark-theme section.window-content .crb-style nav.sheet-navigation .item:hover, .actor.sheet.character.dark-theme .crb-style nav.sheet-navigation .item.active {
     fill: var(--pfui-main-color);
 }
 
-.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .blue-button {
+.actor.sheet.character.dark-theme section.window-content .crb-style .sheet-body .sheet-content .blue-button {
     color: var(--pfui-main-color) !important;
     background: var(--background) !important;
     border-radius: 15px;
 }
-.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .item-image:hover i {
+.actor.sheet.character.dark-theme section.window-content .crb-style .sheet-body .sheet-content .item-image:hover i {
     background: var(--green);
     color: var(--background);
 }
-.actor.sheet.character.dark-theme nav.sub-nav {
+.actor.sheet.character.dark-theme section.window-content nav.sub-nav {
     color: var(--pfui-main-color) !important;
     background: var(--background) !important;
     box-shadow: var(--box-shadow);
@@ -402,12 +400,12 @@
     backdrop-filter: blur(5px);
 }
 
-.actor.sheet.dark-theme .crb-style aside .sidebar_label {
+.actor.sheet.dark-theme section.window-content .crb-style aside .sidebar_label {
     color: var(--alternate-background);
 }
 
-.actor.sheet.character.dark-theme .crb-style select {
-    background-color: var(--color-cool-4);
+.actor.sheet.character.dark-theme section.window-content .crb-style select,
+.actor.sheet.character.dark-theme section.window-content .crb-style .pf-rank {
     box-shadow: var(--box-shadow);
     text-shadow: var(--text-shadow);
 }
@@ -415,12 +413,13 @@
     color: var(--pfui-main-color) !important;
     background: transparent;
 }
-.actor.sheet.character.dark-theme .crb-style .details-input {
+.actor.sheet.character.dark-theme section.window-content .crb-style .details-input {
 background: radial-gradient(var(--background-2), transparent);
     border-radius: var(--border-radius);
 }
 
-.actor.sheet.dark-theme .crb-style header.char-header .char-details h1.char-name input[type=text], .actor.sheet.dark-theme .crb-style header.char-header .char-details h1.char-name span.non-editable {
+.actor.sheet.dark-theme .crb-style header.char-header .char-details h1.char-name input[type=text], 
+.actor.sheet.dark-theme .crb-style header.char-header .char-details h1.char-name span.non-editable {
     color: var(--pfui-main-color)!important;
     background: radial-gradient(var(--background-2), transparent);
     text-shadow: 0 0 8px var(--color-shadow-primary);
@@ -553,35 +552,35 @@ background: radial-gradient(var(--background-2), transparent);
     border-radius: var(--border-radius);
 }
 
-.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.actions .actions-container .actions-tabs-wrapper .actions-panels ol.actions-list.strikes-list li.strike .auxiliary-actions button:not(:disabled):hover {
+.actor.sheet.character.dark-theme section.window-content .crb-style .sheet-body .sheet-content .tab.actions .actions-container .actions-tabs-wrapper .actions-panels ol.actions-list.strikes-list li.strike .auxiliary-actions button:not(:disabled):hover {
     color: var(--pfui-main-color) !important;
     background: var(--red)!important;
     box-shadow: none;
     border-radius: var(--border-radius);
 }
 
-.actor.sheet.dark-theme .crb-style nav.sub-nav a.active, 
-.actor.sheet.dark-theme .crb-style nav.sub-nav .tab.active {
+.actor.sheet.dark-theme section.window-content .crb-style nav.sub-nav a.active, 
+.actor.sheet.dark-theme section.window-content .crb-style nav.sub-nav .tab.active {
     color: var(--green) !important;
     text-shadow: 0 0 5px var(--color-shadow-primary);
 }
 
-.actor.sheet.dark-theme .crb-style nav.sub-nav a:hover, 
-.actor.sheet.dark-theme .crb-style nav.sub-nav .tab:hover {
+.actor.sheet.dark-theme section.window-content .crb-style nav.sub-nav a:hover, 
+.actor.sheet.dark-theme section.window-content .crb-style nav.sub-nav .tab:hover {
     color: var(--green)!important;
     text-shadow: 0 0 3px var(--red-light) !important;
 }
 
-.actor.sheet.dark-theme .crb-style nav.sub-nav a, 
-.actor.sheet.dark-theme .crb-style nav.sub-nav .tab {
+.actor.sheet.dark-theme section.window-content .crb-style nav.sub-nav a, 
+.actor.sheet.dark-theme section.window-content .crb-style nav.sub-nav .tab {
     color: var(--pfui-main-color);
     text-shadow: var(--text-shadow);
 }
 .actor.sheet.dark-theme .crb-style .sheet-body .sheet-content .tab.actions .actions-container .actions-tabs-wrapper .actions-panels ol.actions-list li.action .item-name {
     background: radial-gradient(var(--background-2), transparent);
 }
-.actor.sheet.dark-theme .crb-style .sheet-body .sheet-content .tab.actions ol.actions-list li.action .item-name .actions-title .action-name > h4:hover, 
-.actor.sheet.dark-theme .crb-style .sheet-body .sheet-content .tab.actions ol.actions-list li.strike .item-name .actions-title .action-name > h4:hover {
+.actor.sheet.dark-theme section.window-content .crb-style .sheet-body .sheet-content .tab.actions ol.actions-list li.action .item-name .actions-title .action-name > h4:hover, 
+.actor.sheet.dark-theme section.window-content .crb-style .sheet-body .sheet-content .tab.actions ol.actions-list li.strike .item-name .actions-title .action-name > h4:hover {
     color: var(--green);
     text-shadow: 0 0 8px var(--green);
 }
@@ -591,10 +590,10 @@ background: radial-gradient(var(--background-2), transparent);
     text-shadow: var(--text-shadow);
 }
 
-.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content h3.header button .fa-solid.fa-eye {
+.actor.sheet.character.dark-theme section.window-content .crb-style .sheet-body .sheet-content h3.header button .fa-solid.fa-eye {
     color: var(--pfui-main-color)!important;
 }
-.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content h3.header button .fa-eye-slash:before {
+.actor.sheet.character.dark-theme section.window-content .crb-style .sheet-body .sheet-content h3.header button .fa-eye-slash:before {
     color: var(--pfui-main-color)!important;
     filter: brightness(2);
 }
@@ -698,8 +697,8 @@ background: radial-gradient(var(--background-2), transparent);
     border-radius: var(--border-radius);
     border: none;
 }
-.actor.sheet.dark-theme .tags .tag, 
-.actor.sheet.dark-theme .tags .tag option {
+.actor.sheet.dark-theme section.window-content .tags .tag, 
+.actor.sheet.dark-theme section.window-content .tags .tag option {
     background-color: var(--primary);
     color: var(--pfui-main-color);
     box-shadow: var(--box-shadow);
@@ -751,7 +750,7 @@ background: radial-gradient(var(--background-2), transparent);
 .actor.sheet.dark-theme section.window-content form.crb-style .sheet-body .sheet-content ol.spell-list > li button.cast-spell {
     --secondary: var(--color-cool-3);
     background: var(--secondary);
-    box-shadow: var(--box-shadow) !important;
+    box-shadow: var(--box-shadow);
     text-shadow: var(--text-shadow);
 }
 .actor.sheet.dark-theme section.window-content form.crb-style .sheet-body .sheet-content ol.spell-list > li.spell[data-slot-expended] button.cast-spell {
@@ -769,11 +768,11 @@ background: radial-gradient(var(--background-2), transparent);
     color: var(--color-cool-5)!important;
     text-shadow: var(--text-shadow)!important;
 }
-.actor.sheet.dark-theme .crb-style .sheet-body .sheet-content ol.spell-list > li .item-summary {
+.actor.sheet.dark-theme section.window-content .crb-style .sheet-body .sheet-content ol.spell-list > li .item-summary {
     background-color: transparent;
 }
 
-.actor.sheet.dark-theme .crb-style .sheet-body .sheet-content ol.spell-list > li:nth-child(odd) {
+.actor.sheet.dark-theme section.window-content .crb-style .sheet-body .sheet-content ol.spell-list > li:nth-child(odd) {
     background-color: var(--background);
 }
 
@@ -784,43 +783,43 @@ background: radial-gradient(var(--background-2), transparent);
     text-shadow: var(--text-shadow);
 }
 
-.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.spellcasting .spellcasting-entry .rollable .d20-svg path {
+.actor.sheet.character.dark-theme section.window-content .crb-style .sheet-body .sheet-content .tab.spellcasting .spellcasting-entry .rollable .d20-svg path {
     fill: var(--green);
 }
-.actor.sheet.dark-theme .crb-style .sheet-body .sheet-content ol.directory-list .action-header > a .fas, 
-.actor.sheet.dark-theme .crb-style .sheet-body .sheet-content ol.directory-list .action-header > a > .fa {
+.actor.sheet.dark-theme section.window-content .crb-style .sheet-body .sheet-content ol.directory-list .action-header > a .fas, 
+.actor.sheet.dark-theme section.window-content .crb-style .sheet-body .sheet-content ol.directory-list .action-header > a > .fa {
     color: var(--green);
 }
-.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.spellcasting .spellcasting-entry .spell-ability-data button:hover {
+.actor.sheet.character.dark-theme section.window-content .crb-style .sheet-body .sheet-content .tab.spellcasting .spellcasting-entry .spell-ability-data button:hover {
 color: var(--green)!important;
 }
-.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.spellcasting .spellcasting-entry .spell-ability-data .focus-pool .pips i.fa-dot-circle {
+.actor.sheet.character.dark-theme section.window-content .crb-style .sheet-body .sheet-content .tab.spellcasting .spellcasting-entry .spell-ability-data .focus-pool .pips i.fa-dot-circle {
     color: var(--green);
 }
-.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.spellcasting .spellcasting-entry .spell-ability-data .focus-pool .pips i.fa-circle {
+.actor.sheet.character.dark-theme section.window-content .crb-style .sheet-body .sheet-content .tab.spellcasting .spellcasting-entry .spell-ability-data .focus-pool .pips i.fa-circle {
     color: var(--red-light);
 }
-.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content ol.spell-list > li.header-row input, 
-.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content ol.spell-list > li .uses input {
+.actor.sheet.character.dark-theme section.window-content .crb-style .sheet-body .sheet-content ol.spell-list > li.header-row input, 
+.actor.sheet.character.dark-theme section.window-content .crb-style .sheet-body .sheet-content ol.spell-list > li .uses input {
     color: var(--color-warm-1)!important;
     background: var(--color-cool-3);
     font-weight: bold;
     text-shadow: var(--text-shadow);
 }
-.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.spellcasting .pf-add-item-row a {
+.actor.sheet.character.dark-theme section.window-content .crb-style .sheet-body .sheet-content .tab.spellcasting .pf-add-item-row a {
     color: var(--pfui-main-color)!important;
     background: radial-gradient(var(--primary-remaster), var(--primary-light-remaster))!important;
     border-radius: 15px;
     text-shadow: var(--text-shadow);
 }
-.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.spellcasting .pf-add-item-row a:hover {
+.actor.sheet.character.dark-theme section.window-content .crb-style .sheet-body .sheet-content .tab.spellcasting .pf-add-item-row a:hover {
     color: var(--background)!important;
     background: var(--green)!important;
     text-shadow:none!important;
     box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15), inset 0 0 0 2px rgba(0, 0, 0, 0.4);
 }
-.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .item-image.framed, 
-.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .item-image.framed i {
+.actor.sheet.character.dark-theme section.window-content .crb-style .sheet-body .sheet-content .item-image.framed, 
+.actor.sheet.character.dark-theme section.window-content .crb-style .sheet-body .sheet-content .item-image.framed i {
     background: var(--green);
     color: var(--background);
 }
@@ -830,6 +829,7 @@ color: var(--green)!important;
 .actor.sheet.character.dark-theme section.window-content .crb-style .sheet-body .sheet-content > .tab.active.spellcasting .spellcasting-entry .rollable .d20-svg {
     filter: invert(1);
 }
+.actor.sheet.character.dark-theme .spellcasting-entry.preparation > .window-content ol.spell-list > li .item-name h4 > a:hover,
 .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content ol.spell-list > li .item-name h4 > a:hover {
     color: var(--green);
 }
@@ -1091,7 +1091,7 @@ color: var(--green)!important;
     background: url("../css/assets/red-pc-sheet/red-level-badge.webp") no-repeat;
 }
 .red.actor.sheet.dark-theme .crb-style nav.sheet-navigation {
-    background: radial-gradient(var(--red), transparent)!important;
+    background: radial-gradient(var(--red), var(--color-cool-5))!important;
     border: none;
 }
 
@@ -1111,13 +1111,13 @@ color: var(--green)!important;
     text-shadow: var(--text-shadow);
 }
 .red.actor.sheet.character section.window-content .crb-style .sheet-body .sheet-content > .tab.active.character .subsection.attributes ul h3.modifier {
-    background: radial-gradient(var(--red), transparent)!important;
+    background: radial-gradient(var(--red), var(--color-cool-5))!important;
     color: darkgray!important;
     border-image-source: var(--ornement);
 }
 .red.sheet.actor.character.dark-theme .crb-style .sheet-body .sheet-content .tab.inventory .inventory-header {
     color: var(--pfui-main-color);
-    background: radial-gradient(var(--red), transparent)!important;
+    background: radial-gradient(var(--red), var(--color-cool-5))!important;
     box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
     margin: 5px 2px;
@@ -1125,7 +1125,7 @@ color: var(--green)!important;
     padding: 0px;
 }
 .red.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.spellcasting .pf-add-item-row a {
-    background: radial-gradient(var(--red), transparent)!important;
+    background: radial-gradient(var(--red), var(--color-cool-5))!important;
     text-shadow: var(--text-shadow);
     box-shadow: var(--box-shadow);
     border-radius: 15px;
@@ -1140,7 +1140,7 @@ color: var(--green)!important;
     color: var(--alternate-background);
 }
 .red.actor.sheet.dark-theme .window-content .item-summary .button-group button {
-    background: radial-gradient(var(--red),transparent);
+    background: radial-gradient(var(--red),var(--color-cool-5));
     border-radius: 15px;
 }
 .red.actor.sheet.character.dark-theme section.window-content .crb-style .sheet-body .sheet-content > .tab.active.character .subsection.attributes ul .label {
@@ -1366,19 +1366,22 @@ color: var(--green)!important;
     border-image-width: 14px;
     border-style: double;
 }
-.remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .directory-list h4 {
+.remaster.actor.sheet.character.dark-theme section.window-content .crb-style .sheet-body .sheet-content .directory-list h4 {
     color: var(--primary-remaster);
 }
-.remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .directory-list {
+.remaster.actor.sheet.character.dark-theme section.window-content .crb-style .sheet-body .sheet-content .directory-list, 
+.remaster.actor.sheet.character.dark-theme section.window-content .crb-style .sheet-body .sheet-content > .tab.active.crafting li.known-formulas ol.formula-list li.formula-level-header.formula-level-header {
     color: var(--primary-light-remaster);
 }
-.remaster.actor.sheet.dark-theme .crb-style .sheet-body .sheet-content ol.spell-list > li.spell {
+.remaster.actor.sheet.dark-theme section.window-content .crb-style .sheet-body .sheet-content ol.spell-list > li.spell {
     color: var(--primary-remaster);
 }
-.remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.crafting .crafting-options .crafting-option label * {
+.remaster.actor.sheet.character.dark-theme section.window-content .crb-style .sheet-body .sheet-content .tab.crafting .crafting-options .crafting-option label * {
     color: var(--primary-light-remaster);
 }
-.remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.proficiencies .skills-list .skill, .remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.proficiencies .lores-list .skill, .remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.proficiencies .combat-list .skill {
+.remaster.actor.sheet.character.dark-theme section.window-content .crb-style .sheet-body .sheet-content .tab.proficiencies .skills-list .skill, 
+.remaster.actor.sheet.character.dark-theme section.window-content .crb-style .sheet-body .sheet-content .tab.proficiencies .lores-list .skill, 
+.remaster.actor.sheet.character.dark-theme section.window-content .crb-style .sheet-body .sheet-content .tab.proficiencies .combat-list .skill {
     background: none;
     border: none;
     box-shadow: none;
@@ -1391,18 +1394,24 @@ color: var(--green)!important;
     display: flex;
     align-items: center;
 }
-.remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.proficiencies h1, .remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.proficiencies h4, .remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.proficiencies h6 {
+.remaster.actor.sheet.character.dark-theme section.window-content .crb-style .sheet-body .sheet-content .tab.proficiencies h1, 
+.remaster.actor.sheet.character.dark-theme section.window-content .crb-style .sheet-body .sheet-content .tab.proficiencies h4, 
+.remaster.actor.sheet.character.dark-theme section.window-content .crb-style .sheet-body .sheet-content .tab.proficiencies h6 {
     color: var(--primary-remaster);
     text-shadow: none!important;
 }
-.remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.proficiencies .lores-list .skill input, .remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.proficiencies .combat-list .skill input {
+.remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.proficiencies .lores-list .skill input, 
+.remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.proficiencies .combat-list .skill input {
     color: var(--primary-remaster) !important;
 }
 .remaster.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.feats .feat-item:nth-child(odd) {
     background-color: rgba(120, 100, 82, 0.1);
     border-radius: 6px;
 }
-.remaster.actor.sheet.dark-theme .crb-style .sheet-body .sheet-content .tab.biography .biography-content p, .remaster.actor.sheet.dark-theme .crb-style .sheet-body .sheet-content .tab.biography .biography-content p + p, .remaster.actor.sheet.dark-theme .crb-style .sheet-body .sheet-content .tab.biography .biography-content ul, .remaster.actor.sheet.dark-theme .crb-style .sheet-body .sheet-content .tab.biography .biography-content ol {
+.remaster.actor.sheet.dark-theme .crb-style .sheet-body .sheet-content .tab.biography .biography-content p, 
+.remaster.actor.sheet.dark-theme .crb-style .sheet-body .sheet-content .tab.biography .biography-content p + p, 
+.remaster.actor.sheet.dark-theme .crb-style .sheet-body .sheet-content .tab.biography .biography-content ul, 
+.remaster.actor.sheet.dark-theme .crb-style .sheet-body .sheet-content .tab.biography .biography-content ol {
 color: var(--primary-remaster);
 }
 .remaster.actor.sheet.character.dark-theme section.window-content .crb-style .sheet-body .sheet-content > .tab.active.biography section.editable .editor-content,

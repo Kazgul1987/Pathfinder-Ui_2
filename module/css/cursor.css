@@ -229,6 +229,9 @@ button:disabled {
 .actor.sheet.character .crb-style .sheet-body .sheet-content .tab.spellcasting .spellcasting-entry .spell-ability-data .focus-pool {
     cursor: url(../ui/cursors/pointer.webp), pointer;
 }
+.actor.sheet.character section.window-content .crb-style select.pf-rank {
+    cursor: url(../ui/cursors/pointer.webp), pointer;
+}
 
 
 /* PF2e NPC Sheet */

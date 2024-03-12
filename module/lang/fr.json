@@ -1,6 +1,9 @@
 {
     "RPGUI.SETTINGS.DORAKOUI":"Hello Hello, vous venez d'activer Pathfinder Ui v3 & Dorako Ui en même temps. Les deux modules sont des interfaces graphiques et elles ne peuvent être activées ensemble car elles partagent un code commun interférant l'une avec l'autre. Merci de bien vouloir désactiver l'une des deux Interfaces afin de profiter pleinement du jeu. Merci de votre compréhension et bon jeu à vous.",
 
+    "RPGUI.SETTINGS.DARKWINDOWS":"Toutes les Fenêtres sombres",
+    "RPGUI.SETTINGS.DARKWINDOWS_HINT":"Active les fenêtres sombres sur la plupart des fenêtres de l'interface utilisateur, à l'exception de celles liées aux paramètres ci-dessus.",
+
     "RPGUI.SETTINGS.DARKSHEET":"Couleur de la Feuille PJ",
     "RPGUI.SETTINGS.DARKSHEET_HINT":"Uniquement pour la feuille de personnage joueur.",
 

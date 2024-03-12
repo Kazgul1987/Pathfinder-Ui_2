@@ -16,6 +16,17 @@ Hooks.on('ready', async () => {
 Hooks.on('init', () => {
 	// Register module settings.
 
+	game.settings.register('pathfinder-ui', 'darkWindowsToggle', {
+		name: game.i18n.localize('RPGUI.SETTINGS.DARKWINDOWS'),
+		hint: game.i18n.localize('RPGUI.SETTINGS.DARKWINDOWS_HINT'),
+		scope: "world",
+		type: Boolean,
+		default: true,
+		config: true,
+		onChange: () => {
+			location.reload();
+		}
+	});
 	game.settings.register('pathfinder-ui', 'adjustTokenEffectsHudToggle', {
 		name: game.i18n.localize('RPGUI.SETTINGS.TOKEN_EFFECT_HUD'),
 		hint: game.i18n.localize('RPGUI.SETTINGS.TOKEN_EFFECT_HUD_HINT'),
@@ -164,6 +175,7 @@ Hooks.on('init', () => {
 	}
 
 	if (!game.settings.get('pathfinder-ui', 'disableAllStyles')) { rpgUIAddMainCss() }
+    if (game.settings.get('pathfinder-ui', 'darkWindowsToggle')) { rpgUIAddDarkWindows() }	
     if (game.settings.get('pathfinder-ui', 'adjustTokenEffectsHudToggle')) { rpgUIAddTokenEffectsHud() }
 	if (!game.settings.get('pathfinder-ui', 'tokenHud')) { rpgUIAddTokenHud() }
 	if (!game.settings.get('pathfinder-ui', 'journalSheet')) { rpgUIAddJournalSheet() }
@@ -217,6 +229,15 @@ function rpgUIAddMainCss() {
 	mainCss.setAttribute("rel", "stylesheet")
 	mainCss.setAttribute("type", "text/css")
 	mainCss.setAttribute("href", "modules/pathfinder-ui/css/pathfinderui.css")
+	mainCss.setAttribute("media", "all")
+	head.insertBefore(mainCss, head.lastChild);
+}
+function rpgUIAddDarkWindows() {
+	const head = document.getElementsByTagName("head")[0];
+	const mainCss = document.createElement("link");
+	mainCss.setAttribute("rel", "stylesheet")
+	mainCss.setAttribute("type", "text/css")
+	mainCss.setAttribute("href", "modules/pathfinder-ui/css/dark-windows.css")
 	mainCss.setAttribute("media", "all")
 	head.insertBefore(mainCss, head.lastChild);
 }

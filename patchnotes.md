@@ -5,6 +5,15 @@
 
 
 
+## v11.315.5141.3
+- Updated Compatibility PF2e v5.14.1.
+- Updated core code.
+- Added a new option to make all Dark Windows.
+- Updated Dark Sheet Player.
+- Updated Dark Sheet NPC.
+- Improved Halo effect icons perf by caching circular mask application (@ArneL)
+- Fixed some errors and added of others.
+
 ## v11.315.5141.2
 - Updated Compatibility PF2e v5.14.1.
 - Fixed some errors and added of others.

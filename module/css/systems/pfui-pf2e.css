@@ -133,7 +133,8 @@
     background-color: var(--color-cool-5-90);
     color: var(--pfui-main-color);
     border-radius: var(--border-radius-5);
-    border: 1px solid var(--color-warm-1);
+    border-top: 1px solid var(--color-warm-1);
+    border-bottom: 1px solid var(--color-warm-1);
     backdrop-filter: blur(3px);
     box-shadow: 0px 0px 6px var(--color-warm-2), 0px 2px 8px 1px var(--color-warm-3);
 }
@@ -150,14 +151,16 @@
 #sidebar .directory .directory-item.folder .context {
     background-color: var(--color-warm-3)!important;
     border-radius: var(--border-radius-5);
-    border: 1px solid var(--color-warm-1);
+    border-top: 1px solid var(--color-warm-1);
+    border-bottom: 1px solid var(--color-warm-1);
     box-shadow: 0px 0px 6px var(--color-warm-2), 0px 2px 8px 1px var(--color-warm-3);
 }
 #sidebar .directory .directory-item.context, 
 #sidebar .directory .directory-item.active {
     background-color: var(--color-warm-3);
     border-radius: var(--border-radius-5);
-    border: 1px solid var(--color-warm-1);
+    border-top: 1px solid var(--color-warm-1);
+    border-bottom: 1px solid var(--color-warm-1);
     box-shadow: 0px 0px 6px var(--color-warm-2), 0px 2px 8px 1px var(--color-warm-3);
 }
 #sidebar .directory .directory-item .document-name:hover {
@@ -1073,8 +1076,52 @@ button.half-damage .fa-heart-broken::after {
   color: orangered;
 }
 
-/*Mystification Icon*/
+/*MYSTIFICATION ICON*/
 .fa-circle-question:before, .fa-question-circle:before {
     color: var(--color-warm-2);
+}
+
+/*TABLES*/
+table,
+table.pf2e,
+table.pf2-table {
+	font-family: "Good OT";
+	max-width: calc(100% - 24px);
+	margin-left: auto;
+	margin-right: auto;
+	border: unset;
+	box-shadow: var(--glassy-shadow);
+}
+table th,
+table.pf2e th,
+table.pf2-table th {
+    color: var(--color-warm-1);
+    background-color: var(--color-cool-5);
+}
+table tr:nth-child(2n),
+table.pf2e tr:nth-child(2n)
+table.pf2-table tr:nth-child(2n) {
+	background-color: var(--color-cool-5);
+    color: var(--pfui-main-color);
+}
+table tr:nth-child(2n+1),
+table.pf2e tr:nth-child(2n+1),
+table.pf2-table tr:nth-child(2n+1) {
+	background-color: var(--color-cool-4);
+    color: var(--pfui-main-color);
+}
+table tr:hover,
+table.pf2e tr:hover,
+table.pf2-table tr:hover {
+	background-color: var(--green);
+    color: var(--color-cool-5);
+}
+table td,
+table th,
+table.pf2e table td,
+table.pf2e table th,
+table.pf2-table table td,
+table.pf2-table table th {
+	padding: 4px 6px;
 }
 /*-------------------------------------------------*/
