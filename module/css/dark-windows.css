@@ -134,6 +134,7 @@ h2 {
     border-bottom-color: var(--color-primary-3);
     border-right-color: var(--color-primary-3);
     color: var(--pfui-main-color);
+    filter: drop-shadow(0px 1px 1px black);
     bottom: -1px;
     right: -1px;
     z-index: 2;
@@ -388,8 +389,25 @@ a.inline-roll {
 
 /* Macro Sheet
 ***********************************/
-.macro-sheet .form-group.command textarea {
+textarea {
     color: var(--green);
+}
+
+
+/* Rules Elements
+***********************************/
+.pf2e.item.sheet form .tab.active.rules .rule-editing > .cm-editor .cm-scroller {
+    color: var(--green);
+}
+.ͼe {
+    color: var(--red-light);
+}
+.ͼc {
+    color: var(--rarity-rare);
+}
+.ͼ1 .cm-gutter {
+    color: var(--green);
+    background: var(--color-cool-4);
 }
 
 
