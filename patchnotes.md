@@ -5,6 +5,15 @@
 
 
 
+## v11.315.5142.1
+- Updated Compatibility PF2e v5.14.2.
+- Updated core code.
+- Updated Cursor compatibility.
+- Updated Dark Sheet Player.
+- Updated Polish language.
+- fixed the problem that all the windows were dark, even the ones that weren't supposed to be. 
+- Fixed some errors and added of others.
+
 ## v11.315.5141.5
 - Updated Compatibility PF2e v5.14.1.
 - Updated core code.

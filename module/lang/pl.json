@@ -1,6 +1,9 @@
 {
     "RPGUI.SETTINGS.DORAKOUI":"Witaj, właśnie aktywowałeś Pathfinder Ui v3 i Dorako Ui w tym samym czasie. Oba moduły są interfejsami graficznymi i nie mogą być aktywowane razem, ponieważ mają wspólny kod, który wzajemnie się zakłóca. Prosimy o dezaktywację jednego z dwóch interfejsów. Dziękujemy za zrozumienie.",
 
+    "RPGUI.SETTINGS.DARKWINDOWS":"Kolor ciemnych okien",
+    "RPGUI.SETTINGS.DARKWINDOWS_HINT":"Włącza ciemne okna w większości okien interfejsu użytkownika, z wyjątkiem tych związanych z powyższymi ustawieniami.",
+
     "RPGUI.SETTINGS.DARKSHEET":"Wybierz kolor Karty Postaci",
     "RPGUI.SETTINGS.DARKSHEET_HINT":"Tylko dla kart postaci graczy.",
 

@@ -89,10 +89,16 @@
 /*************************************************************/
 /*====================== Black Windows ======================*/
 /*************************************************************/
-.window-app .window-content {
+
+.window-app .window-content { 
     background: unset;
     color: var(--pfui-main-color);
     backdrop-filter: blur(5px);
+}
+.actor.sheet section.window-content {
+    background: url(../ui/frames/parchment.webp) repeat;
+    color: var(--color-text-dark-primary);
+    backdrop-filter: unset;
 }
 form .notes, 
 form .hint {
@@ -101,7 +107,10 @@ form .hint {
 h2 {
     border-bottom: 1px dotted var(--red);
 }
+.dialog-buttons button,
+#support-details button,
 .window-app form button,
+.loot-actor-popup .confirm-button,
 .package-configuration aside.sidebar .reset-all {
     font-family: 'Kurale', serif;
     font-weight: 600;
@@ -111,7 +120,10 @@ h2 {
     position: relative;
     box-shadow: none;
 }
+.dialog-buttons button::before,
+#support-details button::before,
 .window-app form button::before,
+.loot-actor-popup .confirm-button::before,
 .package-configuration aside.sidebar .reset-all::before {
     position: absolute;
     content: " ";
@@ -122,6 +134,16 @@ h2 {
     background-size: 100% 100%;
     z-index: -1;
     left: 0;
+}
+
+.window-app form button:hover,
+/*.dialog-buttons button:hover,
+#support-details button:hover,*/
+.loot-actor-popup .confirm-button:hover,
+.package-configuration aside.sidebar .reset-all:hover {
+    color: var(--pfui-main-color);
+    background: url(../ui/buttons/btn-accept.webp);
+    background-size: 100% 100%;
 }
 .window-app .window-resizable-handle {
     --color-primary-3: #5d142b;
@@ -144,6 +166,7 @@ h2 {
     box-shadow: none;
     outline: 1px solid #584a75;
 }
+.actor.sheet section.window-content::before,
 .actor.sheet section.window-content button.blue::before,
 .attribute-builder .window-content .row-column button:hover,
 .attribute-builder .window-content .row-column button::before,
@@ -156,43 +179,42 @@ nav.list-filters a.filter {
 nav.list-filters a.filter.active {
     border-bottom: 2px solid var(--red-light);
 }
-form button:hover,
-.package-configuration aside.sidebar .reset-all:hover {
-    color: var(--pfui-main-color);
-    background: url(../ui/buttons/btn-accept.webp);
-    background-size: 100% 100%;
-}
 .pf2e.item.sheet form > header input[type=text], 
 .pf2e.item.sheet form > header input[type=number] {
     color: var(--pfui-main-grey-color);
 }
-input[type="text"], 
-input[type="number"], 
-input[type="password"], 
 input[type="date"], 
 input[type="time"], 
-input[type="search"] {
+input[type="text"],
+input[type="number"],
+input[type="search"],
+input[type="password"] {
     --input-background: #302831;
     background: var(--input-background);
     border: unset;
     border-color: unset;
     color: var(--color-warm-1);
     --input-box-shadow: none;
-    box-shadow: var(--input-box-shadow) !important;
+    box-shadow: var(--input-box-shadow);
     border-radius: 4px;
     outline: 1px solid transparent;
     user-select: text;
     transition: outline-color 0.5s;
 }
-input[type=number], 
 input[type="range"] + .range-value {
     border: unset;
-    color: var(--color-warm-1) !important;
+    color: var(--color-warm-1);
     --input-background: #302831;
     background: var(--input-background);
     font-weight: bold;
-    text-shadow: var(--text-shadow);
     border-radius: var(--border-radius-5);
+}
+.actor.sheet input[type="text"],
+.actor.sheet input[type="number"] {
+    background: unset;
+}
+input[type=range] {
+    background: transparent!important
 }
 
 /* Package Configuration
@@ -259,7 +281,8 @@ select {
 .sheet nav.sheet-tabs {
     border: none;
 }
-.tabs .item.active {
+.tabs .item.active,
+.pf2e.item.sheet form > nav > .tabs > a.active {
     color: var(--color-warm-1);
     text-shadow: var(--text-shadow);
 }
@@ -277,7 +300,7 @@ input[type="color"][data-edit] {
     color: var(--color-warm-2);
 }
 .tags.paizo-style tag, .tags.paizo-style .tag, .tags.paizo-style select.tag {
-    border: solid black;
+    border: solid transparent;
 }
 .pf2e.item.sheet form .sheet-body .tab.active label {
     color: var(--color-cool-1);
@@ -318,6 +341,28 @@ input[type="color"][data-edit] {
 }
 .attribute-builder .window-content .summary-row .hint-container h3 {
     color: var(--red-light);
+}
+.actor.sheet section.window-content form.crb-style .sheet-body .sheet-content .tab.actions ol.actions-list li.action button.use-action:not(:disabled), 
+.actor.sheet section.window-content form.crb-style .sheet-body .sheet-content .tab.actions ol.actions-list li.strike button.use-action:not(:disabled) {
+    color: var(--text-dark);
+}
+
+.actor.sheet section.window-content button::before {
+    background: unset;
+}
+.sheet.party header.content-header button:hover,
+.actor.sheet section.window-content form.crb-style section.major > header button:hover, 
+.actor.sheet section.window-content form.crb-style section.major > .subsection > header button:hover,
+.actor.sheet.character section.window-content .crb-style aside .sidebar header button:hover,
+.sheet.actor.loot form section.sidebar .gm-settings .loot-distribution button:hover {
+    background: var(--green) !important;
+    color: var(--background) !important;
+    box-shadow: var(--box-shadow) !important;
+    filter: none;
+}
+.actor.sheet section.window-content .currency li > button::before {
+    background: unset;
+    background-color: var(--tertiary);
 }
 .tags.paizo-style tag > div,
 .tags.paizo-style tag:first-child, 
@@ -387,12 +432,24 @@ a.inline-roll {
 }
 
 
-/* Macro Sheet
+/* Sheet
 ***********************************/
+.tab.active[data-tab=appearance] fieldset > legend {
+    color: var(--color-cool-1);
+}
+form .form-group span.units {
+    color: var(--color-cool-1);
+}
+form .form-group.slim .form-fields > label {
+    color: var(--color-cool-1);
+}
 textarea {
     color: var(--green);
 }
-
+#support-report {
+    border: 2px dashed var(--color-cool-4);
+    color: var(--green);
+}
 
 /* Rules Elements
 ***********************************/

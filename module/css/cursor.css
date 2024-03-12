@@ -232,7 +232,10 @@ button:disabled {
 .actor.sheet.character section.window-content .crb-style select.pf-rank {
     cursor: url(../ui/cursors/pointer.webp), pointer;
 }
-
+.actor.sheet section.window-content form.crb-style .sheet-body .sheet-content .tab.actions ol.actions-list li.action button.use-action:not(:disabled), 
+.actor.sheet section.window-content form.crb-style .sheet-body .sheet-content .tab.actions ol.actions-list li.strike button.use-action:not(:disabled) {
+    cursor: url(../ui/cursors/pointer.webp), pointer;
+}
 
 /* PF2e NPC Sheet */
 .actor.npc.sheet form ol.spell-list > li .item-name h4 {
