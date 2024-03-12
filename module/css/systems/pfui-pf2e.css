@@ -1110,12 +1110,6 @@ table.pf2-table tr:nth-child(2n+1) {
 	background-color: var(--color-cool-4);
     color: var(--pfui-main-color);
 }
-table tr:hover,
-table.pf2e tr:hover,
-table.pf2-table tr:hover {
-	background-color: var(--green);
-    color: var(--color-cool-5);
-}
 table td,
 table th,
 table.pf2e table td,
