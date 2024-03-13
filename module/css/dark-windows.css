@@ -289,6 +289,15 @@ select {
 input[type="color"][data-edit] {
     border: unset;
 }
+.editor-edit {
+    background-color: transparent;
+    color: var(--green);
+    box-shadow: var(--box-shadow);
+    text-shadow: var(--text-shadow);
+}
+.editor-edit:hover {
+    color: var(--color-warm-2);
+}
 .pf2e.item.sheet form .sheet-body .tab.active.description .editor a.add-gm-notes, 
 .pf2e.item.sheet form .sheet-body .tab.active.description .editor a.editor-edit {
     background-color: transparent;
@@ -450,6 +459,14 @@ textarea {
     border: 2px dashed var(--color-cool-4);
     color: var(--green);
 }
+.pf2e.item.sheet form .sheet-content section.sidebar .item-summary, 
+.pf2e.item.sheet form .sheet-content section.sidebar .tags-title {
+    color: var(--color-cool-1);
+}
+.pf2e.item.sheet.feat form .sidebar .prerequisites ul .tag {
+    color: var(--color-cool-2);
+}
+
 
 /* Rules Elements
 ***********************************/

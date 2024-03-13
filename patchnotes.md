@@ -5,7 +5,7 @@
 
 
 
-## v11.315.5142.2
+## v11.315.5142.3
 - Updated Compatibility PF2e v5.14.2.
 - Updated core code.
 - Updated Cursor compatibility.
