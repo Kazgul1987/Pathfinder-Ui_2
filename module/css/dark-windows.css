@@ -139,6 +139,7 @@ form .hint {
 h2 {
     border-bottom: 1px dotted var(--red);
 }
+button,
 .dialog-buttons button,
 #support-details button,
 .window-app form button,
@@ -152,6 +153,7 @@ h2 {
     position: relative;
     box-shadow: none;
 }
+button::before,
 .dialog-buttons button::before,
 #support-details button::before,
 .window-app form button::before,
@@ -168,6 +170,7 @@ h2 {
     left: 0;
 }
 
+button:hover,
 .window-app form button:hover,
 /*.dialog-buttons button:hover,
 #support-details button:hover,*/
@@ -176,6 +179,7 @@ h2 {
     color: var(--pfui-main-color);
     background: url(../ui/buttons/btn-accept.webp);
     background-size: 100% 100%;
+    box-shadow: unset;
 }
 .window-app .window-resizable-handle {
     --color-primary-3: #5d142b;
@@ -199,9 +203,11 @@ h2 {
     outline: 1px solid #584a75;
 }
 .actor.sheet section.window-content::before,
+.sheet.kingdom-builder button.complete:disabled::before,
 .actor.sheet section.window-content button.blue::before,
 .attribute-builder .window-content .row-column button:hover,
 .attribute-builder .window-content .row-column button::before,
+.sheet.kingdom-builder .ability-builder .row-column button:disabled::before,
 .actor.npc.sheet form .sheet-body .footer button.spellcasting-create::before {
     background: unset;
 }
@@ -220,7 +226,8 @@ input[type="time"],
 input[type="text"],
 input[type="number"],
 input[type="search"],
-input[type="password"] {
+input[type="password"],
+.directory .directory-header .header-search input {
     --input-background: #302831;
     background: var(--input-background);
     border: unset;
@@ -364,6 +371,10 @@ input[type="color"][data-edit] {
 .attribute-builder .window-content .title {
     color: var(--color-cool-1);
 }
+.attribute-builder .window-content .row-column button:disabled {
+    background: rgb(0 0 0 / 96%);
+    opacity: 0.4;
+}
 .attribute-builder .window-content .row-column button.boost,
 .attribute-builder .window-content .row-column button.apex {
     --button-color: var(--green);
@@ -372,6 +383,13 @@ input[type="color"][data-edit] {
 .attribute-builder .window-content .row-column button.flaw {
     --button-color: var(--red-light);
     --button-locked-color: var(--red-light);
+}
+.attribute-builder .window-content .row-column button.boost:hover, 
+.attribute-builder .window-content .row-column button.apex:hover, 
+.attribute-builder .window-content .row-column button.flaw:hover {
+    background-color: var(--button-color);
+    color: revert;
+    opacity: 0.7;
 }
 .attribute-builder .window-content h4 {
     color: var(--pfui-main-grey-color);
@@ -611,4 +629,43 @@ textarea {
     background: var(--color-cool-3-90);
     color: var(--pfui-main-grey-color);
     border: unset;
+}
+/*TABLES*/
+table,
+table.pf2e,
+table.pf2-table {
+	font-family: "Good OT";
+	max-width: calc(100% - 24px);
+	margin-left: auto;
+	margin-right: auto;
+	border: unset;
+	box-shadow: var(--box-shadow);
+}
+table th,
+table.pf2e th,
+table.pf2-table th {
+    color: var(--color-warm-1);
+    background-color: var(--color-cool-5);
+}
+table tr:nth-child(2n), 
+table.pf2e tr:nth-child(even), 
+table.pf2-table tr:nth-child(even) {
+    background-color: var(--color-cool-5);
+    color: var(--pfui-main-color);
+    text-shadow: var(--text-shadow);
+}
+table tr:nth-child(2n+1),
+table.pf2e tr:nth-child(odd), 
+table.pf2-table tr:nth-child(odd) {
+	background-color: var(--color-cool-4);
+    color: var(--pfui-main-color);
+    text-shadow: var(--text-shadow);
+}
+table td,
+table th,
+table.pf2e table td,
+table.pf2e table th,
+table.pf2-table table td,
+table.pf2-table table th {
+	padding: 4px 6px;
 }

@@ -5,6 +5,11 @@
 
 
 
+## v11.315.5143.1
+- Deactivate drag rpg cursor 
+- Dark windows are no longer the default
+- Dark tables will be displayed with the dark windows option enabled.
+
 ## v11.315.5142.4
 - Updated Compatibility PF2e v5.14.3.
 - Updated core code.

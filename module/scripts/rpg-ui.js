@@ -21,7 +21,7 @@ Hooks.on('init', () => {
 		hint: game.i18n.localize('RPGUI.SETTINGS.DARKWINDOWS_HINT'),
 		scope: "client",
 		type: Boolean,
-		default: true,
+		default: false,
 		config: true,
 		onChange: () => {
 			location.reload();

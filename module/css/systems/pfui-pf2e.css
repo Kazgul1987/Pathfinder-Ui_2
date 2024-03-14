@@ -1097,43 +1097,5 @@ button.half-damage .fa-heart-broken::after {
     color: var(--color-warm-2);
 }
 
-/*TABLES*/
-table,
-table.pf2e,
-table.pf2-table {
-	font-family: "Good OT";
-	max-width: calc(100% - 24px);
-	margin-left: auto;
-	margin-right: auto;
-	border: unset;
-	box-shadow: var(--box-shadow);
-}
-table th,
-table.pf2e th,
-table.pf2-table th {
-    color: var(--color-warm-1);
-    background-color: var(--color-cool-5);
-}
-table tr:nth-child(2n), 
-table.pf2e tr:nth-child(even), 
-table.pf2-table tr:nth-child(even) {
-    background-color: var(--color-cool-5);
-    color: var(--pfui-main-color);
-    text-shadow: var(--text-shadow);
-}
-table tr:nth-child(2n+1),
-table.pf2e tr:nth-child(odd), 
-table.pf2-table tr:nth-child(odd) {
-	background-color: var(--color-cool-4);
-    color: var(--pfui-main-color);
-    text-shadow: var(--text-shadow);
-}
-table td,
-table th,
-table.pf2e table td,
-table.pf2e table th,
-table.pf2-table table td,
-table.pf2-table table th {
-	padding: 4px 6px;
-}
+
 /*-------------------------------------------------*/
