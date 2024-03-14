@@ -19,7 +19,7 @@ Hooks.on('init', () => {
 	game.settings.register('pathfinder-ui', 'darkWindowsToggle', {
 		name: game.i18n.localize('RPGUI.SETTINGS.DARKWINDOWS'),
 		hint: game.i18n.localize('RPGUI.SETTINGS.DARKWINDOWS_HINT'),
-		scope: "world",
+		scope: "client",
 		type: Boolean,
 		default: true,
 		config: true,

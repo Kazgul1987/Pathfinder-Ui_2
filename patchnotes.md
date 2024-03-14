@@ -5,6 +5,15 @@
 
 
 
+## v11.315.5142.4
+- Updated Compatibility PF2e v5.14.3.
+- Updated core code.
+- Dark windows can also be activated/deactivated by players.
+- Improved visibility in dark windows, they are slightly less dark
+- Suppression of table hover.
+- Fixed tables not displaying correctly.
+- Fixed some errors and added of others.
+
 ## v11.315.5142.3
 - Updated Compatibility PF2e v5.14.2.
 - Updated core code.

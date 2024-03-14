@@ -21,6 +21,7 @@
     --glassy-sharp-highlight: 0px 0px 0px 1px rgba(245, 222, 179, 0.7) inset, 0px 0px 5px 1px rgba(0, 0, 0, 0.8);
 	--primary-remaster: hsl(153, 100%, 8%);
 	--primary-light-remaster: hsl(170, 96%, 19%);
+    
     --ornement : url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='33' height='33' overflow='scroll'%3E%3Cstyle%3E.st1{stroke:wheat;stroke-miterlimit:10}.st1,.st2{fill:none}%3C/style%3E%3Cg opacity='0.75'%3E%3Cpath class='st1' d='M.5 20v-7'/%3E%3Cpath class='st2' d='M13 20v-7'/%3E%3Cpath class='st1' d='M13 .5h7'/%3E%3Cpath class='st2' d='M13 13h7'/%3E%3Cpath class='st1' d='M32.5 13v7'/%3E%3Cpath class='st2' d='M20 13v7'/%3E%3Cpath class='st1' d='M20 32.5h-7'/%3E%3Cpath class='st2' d='M20 20h-7'/%3E%3Cpath class='st1' d='M.5.5h3.1v3.1H.5zm3.1 3.1h3.1v3.1H3.6zm3.2 0h3.1v3.1H6.8zM3.6 6.8h3.1v3.1H3.6zm0 0H.5V13M13 .5H6.8v3.1M29.4.5h3.1v3.1h-3.1zm-3.1 3.1h3.1v3.1h-3.1zm0 3.2h3.1v3.1h-3.1zm-3.2-3.2h3.1v3.1h-3.1zm3.2 0V.5H20M32.5 13V6.8h-3.1M29.4 29.4h3.1v3.1h-3.1z'/%3E%3Cpath class='st1' d='M26.3 26.3h3.1v3.1h-3.1zm-3.2 0h3.1v3.1h-3.1zm3.2-3.2h3.1v3.1h-3.1z'/%3E%3Cpath class='st1' d='M29.4 26.3h3.1V20M20 32.5h6.3v-3.1'/%3E%3Cg%3E%3Cpath class='st1' d='M.5 29.4h3.1v3.1H.5zm3.1-3.1h3.1v3.1H3.6zm0-3.2h3.1v3.1H3.6zm3.2 3.2h3.1v3.1H6.8zM6.8 29.4v3.1H13M.5 20v6.3h3.1'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 
     --primary: var(--red);
@@ -34,6 +35,7 @@
     --sidebar-label: var(--pfui-main-color);
     --sidebar-title: var(--pfui-main-color);
     
+    --window-app-background: radial-gradient(circle at bottom right, #2c282433 0%, #2c2824ff 50%, #0c0804ee 100%), radial-gradient(circle at center, transparent 0, #0c0804ee 100%);
     --border-radius: 3px;
     --border-radius-5: 5px;
     --box-shadow: 0px 1px 3px 1px black;
@@ -50,26 +52,42 @@
     
 /* Foundry2
 ====================================================== */
+    --color-light-1: #f7f3e8;
+    --color-light-1-90: #f7f3e890;
+    --color-light-2: #efe6d8;
+    --color-light-2-90: #efe6d890;
+    --color-light-3: #e7d1b1;
+    --color-light-3-90: #e7d1b190;
+    --color-light-4: #d0b8a3;
+    --color-light-4-90: #d0b8a390;
+    --color-light-5: #9f8475;
+    --color-light-5-90: #9f847590;
+    --color-light-6: #816b66;
+    --color-light-6-90: #816b6690;
     --color-warm-1: #ee9b3a;
+    --color-warm-1-90: #ee9b3a90;
     --color-warm-2: #c9593f;
+    --color-warm-2-90: #c9593f90;
     --color-warm-3: #5d142b;
+    --color-warm-3-90: #5d142b90;
     --color-warm-4: #420418;
+    --color-warm-4-90: #42041890;
     --color-warm-5: #26020d;
+    --color-warm-5-90: #26020d90;
     --color-cool-1: #b1a0d4;
+    --color-cool-1-90: #b1a0d490;
     --color-cool-2: #79689c;
+    --color-cool-2-90: #79689c90;
     --color-cool-3: #584a75;
+    --color-cool-3-90: #584a7590;
     --color-cool-4: #302831;
+    --color-cool-4-90: #30283190;
     --color-cool-5: #0b0a13;
     --color-cool-5-25: rgba(11, 10, 19, 0.25);
     --color-cool-5-50: rgba(11, 10, 19, 0.5);
     --color-cool-5-75: rgba(11, 10, 19, 0.75);
     --color-cool-5-90: rgba(11, 10, 19, 0.9);
-    --color-light-1: #f7f3e8;
-    --color-light-2: #efe6d8;
-    --color-light-3: #e7d1b1;
-    --color-light-4: #d0b8a3;
-    --color-light-5: #9f8475;
-    --color-light-6: #816b66;
+
     --color-level-error: #ce0707;
     --color-level-error-bg: rgba(105, 0, 8, 0.8);
     --color-level-error-border: #750003;
@@ -89,11 +107,25 @@
 /*************************************************************/
 /*====================== Black Windows ======================*/
 /*************************************************************/
-
-.window-app .window-content { 
+.app.window-app, 
+.app.window-app.dialog, 
+.app.window-app.folder-edit {
+    background: unset;
+    background: radial-gradient(var(--color-cool-4-90) -200%, var(--color-cool-5-90));
+    backdrop-filter: blur(15px);
+}
+.window-app.dialog .window-header, 
+.window-app .window-header {
+    background: unset;
+    box-shadow: unset;
+    border: none;
+    color: var(--pfui-main-color);
+}
+.window-app .window-content,
+.window-app.dialog .window-content, 
+.window-app.folder-edit .window-content { 
     background: unset;
     color: var(--pfui-main-color);
-    backdrop-filter: blur(5px);
 }
 .actor.sheet section.window-content {
     background: url(../ui/frames/parchment.webp) repeat;
@@ -130,7 +162,7 @@ h2 {
     width: 100%;
     height: 110%;
     top: 0%;
-    background: url(../ui/buttons/btn-dnd5e-card.webp);
+    background: url(../ui/buttons/btn-dnd5e-card_hover.webp);
     background-size: 100% 100%;
     z-index: -1;
     left: 0;
@@ -551,9 +583,11 @@ textarea {
 .filepicker .display-modes a:hover {
     color: var(--color-warm-1);
 }
-.filepicker .display-modes a.active {
+.filepicker .display-modes a.active,
+.prosemirror menu button:hover,
+.prosemirror menu button.active {
     border: unset;
-    background: var(--color-warm-1);
+    background: var(--color-warm-1-90);
     color: var(--color-warm-5);
 }
 
@@ -562,4 +596,19 @@ textarea {
 ***********************************/
 .sheet.journal-entry .journal-entry-pages {
     color: var(--color-text-dark-primary);
+}
+.prosemirror menu button,
+.prosemirror menu .pm-dropdown {
+    border: unset;
+    background: var(--color-warm-3-90);
+}
+.prosemirror menu .pm-dropdown ul {
+    background: radial-gradient(var(--color-cool-4-90) -200%, var(--color-cool-5-90));
+    color: var(--pfui-main-grey-color);
+    border: unset;
+}
+.prosemirror menu .pm-dropdown li:hover {
+    background: var(--color-cool-3-90);
+    color: var(--pfui-main-grey-color);
+    border: unset;
 }
