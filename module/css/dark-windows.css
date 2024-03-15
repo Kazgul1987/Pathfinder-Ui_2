@@ -139,7 +139,6 @@ form .hint {
 h2 {
     border-bottom: 1px dotted var(--red);
 }
-button,
 .dialog-buttons button,
 #support-details button,
 .window-app form button,
@@ -153,7 +152,6 @@ button,
     position: relative;
     box-shadow: none;
 }
-button::before,
 .dialog-buttons button::before,
 #support-details button::before,
 .window-app form button::before,
@@ -169,8 +167,6 @@ button::before,
     z-index: -1;
     left: 0;
 }
-
-button:hover,
 .window-app form button:hover,
 /*.dialog-buttons button:hover,
 #support-details button:hover,*/
@@ -668,4 +664,20 @@ table.pf2e table th,
 table.pf2-table table td,
 table.pf2-table table th {
 	padding: 4px 6px;
+}
+
+
+/*KINGMAKER*/
+.pf2e-km table th,
+.pf2e-km table tr:nth-child(2n+1),
+.pf2e-km table tr:nth-child(2n),
+.pf2e-km table {
+    background: unset;
+    color: unset;
+    box-shadow: unset;
+    text-shadow: unset;
+}
+.pf2e-km a.content-link, 
+.pf2e-km a.inline-roll {
+    box-shadow: unset;
 }

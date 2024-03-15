@@ -5,7 +5,8 @@
 
 
 
-## v11.315.5143.1
+## v11.315.5143.2
+- Fixed tables not displaying correctly in Kingmaker module.
 - Deactivate drag rpg cursor 
 - Dark windows are no longer the default
 - Dark tables will be displayed with the dark windows option enabled.
