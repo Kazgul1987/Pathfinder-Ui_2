@@ -526,7 +526,7 @@ textarea {
 }
 .sheet.actor.loot form .sheet-header h1, 
 .sheet.actor.loot form .sheet-header input {
-    color: var(--color-warm-1);
+    color: var(--color-text-dark-input);
 }
 
 
