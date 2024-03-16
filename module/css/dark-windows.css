@@ -407,7 +407,6 @@ input[type="color"][data-edit] {
 .actor.sheet section.window-content form.crb-style .sheet-body .sheet-content .tab.actions ol.actions-list li.strike button.use-action:not(:disabled) {
     color: var(--text-dark);
 }
-
 .actor.sheet section.window-content button::before {
     background: unset;
 }
@@ -524,6 +523,10 @@ textarea {
 }
 .pf2e.item.sheet.feat form .sidebar .prerequisites ul .tag {
     color: var(--color-cool-2);
+}
+.sheet.actor.loot form .sheet-header h1, 
+.sheet.actor.loot form .sheet-header input {
+    color: var(--color-warm-1);
 }
 
 
