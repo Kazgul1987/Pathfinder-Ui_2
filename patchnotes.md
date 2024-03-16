@@ -4,6 +4,9 @@
 - Ready for v11 version.
 
 
+## v11.315.5143.3
+- Dark Windows: added compatibility with Item Piles.
+- Fixed some errors and added of others.
 
 ## v11.315.5143.2
 - Fixed tables not displaying correctly in Kingmaker module.

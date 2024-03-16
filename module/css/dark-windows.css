@@ -102,6 +102,7 @@
     --color-level-warning-border: #b18404;
     --color-scrollbar: #5d142b;
     --color-scrollbar-border: #8d151b;
+
 }
 
 /*************************************************************/
@@ -119,13 +120,15 @@
     background: unset;
     box-shadow: unset;
     border: none;
-    color: var(--pfui-main-color);
+    --input-text-color: var(--color-light-3);
+    color: var(--input-text-color);
 }
 .window-app .window-content,
 .window-app.dialog .window-content, 
 .window-app.folder-edit .window-content { 
     background: unset;
-    color: var(--pfui-main-color);
+    --input-text-color: var(--color-light-3);
+    color: var(--input-text-color);
 }
 .actor.sheet section.window-content {
     background: url(../ui/frames/parchment.webp) repeat;
@@ -172,7 +175,8 @@ h2 {
 #support-details button:hover,*/
 .loot-actor-popup .confirm-button:hover,
 .package-configuration aside.sidebar .reset-all:hover {
-    color: var(--pfui-main-color);
+    --input-text-color: var(--color-light-3);
+    color: var(--input-text-color);
     background: url(../ui/buttons/btn-accept.webp);
     background-size: 100% 100%;
     box-shadow: unset;
@@ -187,7 +191,8 @@ h2 {
     border-radius: 4px 0px var(--border-radius) 0px;
     border-bottom-color: var(--color-primary-3);
     border-right-color: var(--color-primary-3);
-    color: var(--pfui-main-color);
+    --input-text-color: var(--color-light-3);
+    color: var(--input-text-color);
     filter: drop-shadow(0px 1px 1px black);
     bottom: -1px;
     right: -1px;
@@ -224,23 +229,23 @@ input[type="number"],
 input[type="search"],
 input[type="password"],
 .directory .directory-header .header-search input {
-    --input-background: #302831;
-    background: var(--input-background);
-    border: unset;
-    border-color: unset;
-    color: var(--color-warm-1);
+    --input-background-color: var(--color-cool-4);
+    --input-border-color: transparent;
+    --input-text-color: var(--color-light-3);
+    background: var(--input-background-color);
+    border: 1px solid var(--input-border-color);
+    outline: 1px solid transparent;
+    color: var(--input-text-color);
     --input-box-shadow: none;
     box-shadow: var(--input-box-shadow);
     border-radius: 4px;
-    outline: 1px solid transparent;
     user-select: text;
     transition: outline-color 0.5s;
 }
 input[type="range"] + .range-value {
     border: unset;
     color: var(--color-warm-1);
-    --input-background: #302831;
-    background: var(--input-background);
+    background: var(--input-background-color);
     font-weight: bold;
     border-radius: var(--border-radius-5);
 }
@@ -274,7 +279,8 @@ select {
 #permissions-config header.table-header {
     background: unset;
     border: unset;
-    color: var(--pfui-main-color);
+    --input-text-color: var(--color-light-3);
+    color: var(--input-text-color);
 }
 #permissions-config .hint {
     color: var(--pfui-main-grey-color);
@@ -422,12 +428,14 @@ input[type="color"][data-edit] {
 .tags.paizo-style tag > div,
 .tags.paizo-style tag:first-child, 
 .tags.paizo-style select.tag:first-child {
-    color: var(--pfui-main-color);
+    --input-text-color: var(--color-light-3);
+    color: var(--input-text-color);
     text-shadow: var(--text-shadow);
 }
 [data-visibility]:not([data-visibility=all])[data-visibility=gm] {
     font-style: italic;
-    color: var(--pfui-main-color);
+    --input-text-color: var(--color-light-3);
+    color: var(--input-text-color);
     background: var(--color-warm-3);
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
@@ -439,7 +447,8 @@ input[type="color"][data-edit] {
 }
 span[data-pf2-effect-area] {
     font-family: "Good OT";
-    color: var(--pfui-main-color);
+    --input-text-color: var(--color-light-3);
+    color: var(--input-text-color);
     background: var(--custom-trait);
     padding: 0px 3px;
     border: 1px solid var(--glassy);
@@ -449,7 +458,8 @@ span[data-pf2-effect-area] {
 a.inline-check[data-pf2-traits*=secret], 
 span[data-pf2-check][data-pf2-traits*=secret] {
     font-family: "Good OT";
-    color: var(--pfui-main-color);
+    --input-text-color: var(--color-light-3);
+    color: var(--input-text-color);
     background: var(--custom-trait);
     padding: 0px 3px;
     border: 1px solid var(--glassy);
@@ -458,7 +468,8 @@ span[data-pf2-check][data-pf2-traits*=secret] {
 a.inline-check, 
 span[data-pf2-check] {
     font-family: "Good OT";
-    color: var(--pfui-main-color);
+    --input-text-color: var(--color-light-3);
+    color: var(--input-text-color);
     background: var(--custom-trait);
     padding: 0px 3px;
     border: 1px solid var(--glassy);
@@ -468,7 +479,8 @@ span[data-pf2-check] {
 a.inline-check, 
 span[data-pf2-action] {
     font-family: "Good OT";
-    color: var(--pfui-main-color);
+    --input-text-color: var(--color-light-3);
+    color: var(--input-text-color);
     background: var(--custom-trait);
     padding: 0px 3px;
     border: 1px solid var(--glassy);
@@ -478,7 +490,8 @@ span[data-pf2-action] {
 a.content-link, 
 a.inline-roll {
     font-family: "Good OT";
-    color: var(--pfui-main-color);
+    --input-text-color: var(--color-light-3);
+    color: var(--input-text-color);
     background: var(--custom-trait);
     padding: 0px 3px;
     border: 1px solid var(--glassy);
@@ -521,7 +534,8 @@ textarea {
     background: var(--color-cool-4);
     border-radius: var(--border-radius);
     border: 1px solid var(--input-border-color);
-    color: var(--pfui-main-color);
+    --input-text-color: var(--color-light-3);
+    color: var(--input-text-color);
 }
    .ͼ2 .cm-content {
     caret-color: white;
@@ -580,12 +594,14 @@ textarea {
     text-shadow: var(--text-shadow);
 }
 .filepicker .favorites .path {
-    color: var(--pfui-main-color);
+    --input-text-color: var(--color-light-3);
+    color: var(--input-text-color);
     background: var(--red);
     border: none;
 }
 .filepicker .favorites .path a.link[data-source]::before {
-    color: var(--pfui-main-color);
+    --input-text-color: var(--color-light-3);
+    color: var(--input-text-color);
 }
 .filepicker .favorites .path .remove {
     border-left: unset;
@@ -647,14 +663,16 @@ table tr:nth-child(2n),
 table.pf2e tr:nth-child(even), 
 table.pf2-table tr:nth-child(even) {
     background-color: var(--color-cool-5);
-    color: var(--pfui-main-color);
+    --input-text-color: var(--color-light-3);
+    color: var(--input-text-color);
     text-shadow: var(--text-shadow);
 }
 table tr:nth-child(2n+1),
 table.pf2e tr:nth-child(odd), 
 table.pf2-table tr:nth-child(odd) {
 	background-color: var(--color-cool-4);
-    color: var(--pfui-main-color);
+    --input-text-color: var(--color-light-3);
+    color: var(--input-text-color);
     text-shadow: var(--text-shadow);
 }
 table td,
@@ -680,4 +698,9 @@ table.pf2-table table th {
 .pf2e-km a.content-link, 
 .pf2e-km a.inline-roll {
     box-shadow: unset;
+}
+
+/*ITEM-PILES*/
+.item-piles-odd-color:nth-child(odd) {
+    --item-piles-even-color: var(--color-cool-5-25);
 }
