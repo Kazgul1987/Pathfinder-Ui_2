@@ -691,16 +691,6 @@ a.content-link.broken {
     background: blue;
 }
 
-.dice-total:hover,
-.dice-roll .dice-formula:hover,
-#chat-log button:hover,
-#chat-log button:focus {
-    transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
-    color: var(--pfui-main-color);
-    background-color:hsl(0,0%,15%);
-    box-shadow: var(--box-shadow);
-} 
-
 #chat-log .chat-message > .message-content .message-buttons button .cue i {
     --fa-primary-color: var(--color-warm-1);
     --fa-secondary-color: var(--red-light);
@@ -721,10 +711,13 @@ a.content-link.broken {
     border-radius: 50%;
     margin-right: 6px;
 }
+#chat-log button:focus {
+    transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
+    color: var(--pfui-main-color);
+    background-color:hsl(0,0%,15%);
+    box-shadow: var(--box-shadow);
+} 
 
-
-.dice-total:hover,
-.dice-roll .dice-formula:hover,
 #chat-log button:hover {
     transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
     color: var(--color-cool-5);

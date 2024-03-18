@@ -645,6 +645,8 @@ textarea {
     color: var(--pfui-main-grey-color);
     border: unset;
 }
+
+
 /*TABLES*/
 table,
 table.pf2e,
