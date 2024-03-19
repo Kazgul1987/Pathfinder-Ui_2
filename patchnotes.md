@@ -4,10 +4,10 @@
 - Ready for v11 version.
 
 
-## v11.315.5144.1
+## v11.315.5144.2
 - Updated Compatibility PF2e v5.14.4.
 - Updated core code.
-- Update comoatibility with PF2e Toolbelt
+- Update compatibility with PF2e Toolbelt
 - Update compatibility with PF2e Target Helper
 - Added compatibility with Quick Insert
 - Fixed some errors and added of others.

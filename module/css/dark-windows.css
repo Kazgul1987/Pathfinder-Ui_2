@@ -410,6 +410,9 @@ input[type="color"][data-edit] {
 .actor.sheet section.window-content button::before {
     background: unset;
 }
+.actor.sheet.character section.window-content .crb-style .sheet-body .sheet-content > .tab.active.proficiencies ul.proficiencies-list li .name {
+    color: unset;
+}
 .sheet.party header.content-header button:hover,
 .actor.sheet section.window-content form.crb-style section.major > header button:hover, 
 .actor.sheet section.window-content form.crb-style section.major > .subsection > header button:hover,
@@ -527,6 +530,63 @@ textarea {
 .sheet.actor.loot form .sheet-header h1, 
 .sheet.actor.loot form .sheet-header input {
     color: var(--color-text-dark-input);
+}
+.app.choice-set-prompt .window-content .choices.select-menu tags .tagify__input {
+    border: 0;
+    background: var(--rpg-styled-ui-color);
+    color: var(--color-cool-5);
+    text-shadow: var(--text-shadow);
+}
+.tagify__dropdown__wrapper {
+    background: var(--color-bg-option);
+    text-shadow: var(--text-shadow);
+}
+#compendium-browser > section.window-content > .content-box .spell-browser .filtercontainer, 
+#compendium-browser > section.window-content > .content-box .spell-browser .sortcontainer, 
+#license-viewer > section.window-content > .content-box .spell-browser .filtercontainer, 
+#license-viewer > section.window-content > .content-box .spell-browser .sortcontainer,
+#compendium-browser > section.window-content > .content-box .compendium-browser-settings form .setting-section, 
+#license-viewer > section.window-content > .content-box .compendium-browser-settings form .setting-section {
+    border: 1px dotted var(--color-cool-3-90);
+}
+#compendium-browser > section.window-content > .content-box > nav, #license-viewer > section.window-content > .content-box > nav {
+    --window-app-background: radial-gradient(circle at bottom right, #2c282433 0%, #2c2824ff 50%, #0c0804ee 100%), radial-gradient(circle at center, transparent 0, #0c0804ee 100%);
+    background: url("../assets/sheet/border-pattern.webp") repeat-x top, url("../assets/sheet/border-pattern.webp") repeat-x bottom, var(--window-app-background);
+}
+#compendium-browser > section.window-content > .content-box .spell-browser .filtercontainer button.clear-filters, 
+#compendium-browser > section.window-content > .content-box .spell-browser .sortcontainer button.clear-filters, 
+#license-viewer > section.window-content > .content-box .spell-browser .filtercontainer button.clear-filters, 
+#license-viewer > section.window-content > .content-box .spell-browser .sortcontainer button.clear-filters,
+#compendium-browser > section.window-content > .content-box .spell-browser .list-buttons button, 
+#license-viewer > section.window-content > .content-box .spell-browser .list-buttons button,
+#compendium-browser > section.window-content > .content-box .spell-browser .filtercontainer div.title button, 
+#compendium-browser > section.window-content > .content-box .spell-browser .sortcontainer div.title button, 
+#license-viewer > section.window-content > .content-box .spell-browser .filtercontainer div.title button, 
+#license-viewer > section.window-content > .content-box .spell-browser .sortcontainer div.title button {
+    transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
+    background: none;
+    border: 1px solid var(--color-cool-3-90);
+    --input-text-color: var(--color-light-3);
+    color: var(--input-text-color);
+    box-shadow: var(--box-shadow);
+    text-decoration: none;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+#compendium-browser > section.window-content > .content-box .spell-browser .filtercontainer button.clear-filters:hover, 
+#compendium-browser > section.window-content > .content-box .spell-browser .sortcontainer button.clear-filters:hover,
+#license-viewer > section.window-content > .content-box .spell-browser .filtercontainer button.clear-filters:hover,
+#license-viewer > section.window-content > .content-box .spell-browser .sortcontainer button.clear-filters:hover,
+#compendium-browser > section.window-content > .content-box .spell-browser .list-buttons button:hover,
+#license-viewer > section.window-content > .content-box .spell-browser .list-buttons button:hover,
+#compendium-browser > section.window-content > .content-box .spell-browser .filtercontainer div.title button:hover, 
+#compendium-browser > section.window-content > .content-box .spell-browser .sortcontainer div.title button:hover,
+#license-viewer > section.window-content > .content-box .spell-browser .filtercontainer div.title button:hover,
+#license-viewer > section.window-content > .content-box .spell-browser .sortcontainer div.title button:hover {
+    color: var(--color-cool-5);
+    background-color: var(--green);
+    border: 1px solid lightgreen;
+    box-shadow: var(--box-shadow-light);
 }
 
 
