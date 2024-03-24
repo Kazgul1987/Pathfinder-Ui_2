@@ -72,6 +72,8 @@
     "RPGUI.SETTINGS.EnableAllianceViewerTitle": "Afficher l’alliance d'un Acteur dans la barre latérale.",
     "RPGUI.SETTINGS.EnableAllianceViewerHint": "Affiche une pastille de couleur permettant de facilement voir l’alliance à laquelle appartient un acteur",
 
+    "PAUSEICON.path_name":       "Emplacement du fichier de l'icône de pause : ",
+    "PAUSEICON.path_hint":       "Dossier et nom de fichier où se trouve votre icône de pause alternative dans les données Foundry VTT. Cliquez sur le bouton du sélecteur pour sélectionner votre icône. Tapez 'None', pour aucune image.",
     "PAUSEICON.opacity_name":    "Opacité %:",
     "PAUSEICON.opacity_hint":    "Valeur comprise entre 0 et 100, plus la valeur est faible, plus le résultat est transparent.",
     "PAUSEICON.text_name":       "Message de pause : ",

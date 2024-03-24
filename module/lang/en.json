@@ -73,7 +73,7 @@
     "RPGUI.SETTINGS.EnableAllianceViewerHint": "Displays a colored dot allowing you to easily see the alliance to which an actor belongs",
 
     "PAUSEICON.path_name":       "Data path of pause icon: ",
-    "PAUSEICON.path_hint":       "Folder and filename of where your alternative pause icon is within the Foundry VTT data. Click the picker button to select your icon. Type None, for no image.",
+    "PAUSEICON.path_hint":       "Folder and filename of where your alternative pause icon is within the Foundry VTT data. Click the picker button to select your icon. Type 'None', for no image.",
     "PAUSEICON.opacity_name":    "Opacity %:",
     "PAUSEICON.opacity_hint":    "Value between 0 and 100, lower means more translucent",
     "PAUSEICON.text_name":       "Pause message: ",
