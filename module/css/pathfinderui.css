@@ -13,6 +13,7 @@
 @import 'dark-kingdom-sheet.css';
 @import 'simply-portraits.css';
 @import 'dark-custom.css';
+@import 'pause-icon-config.css';
 
 /* POLICES
 ====================================================== */
@@ -55,16 +56,6 @@
 body {
     background-image: url(../ui/artwork/pfrpg-background.webp);
     background-size: cover;
-}
-
-#pause img[src*="icons/svg/clockwork.svg"]{
-	box-sizing: border-box;
-	width: 128px;
-	height: 128px;
-	padding-left: 128px;
-
-	background-image: url("../ui/other/paused-pfrpg.webp");
-	animation: rotation 20s infinite linear;
 }
 
 :root {

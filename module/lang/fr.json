@@ -70,5 +70,25 @@
     "RPGUI.SETTINGS.OPEN_SHEET_ON_CHAT_CLICK_TEXT_HINT": "(Local) Ouvre la feuille de l’acteur au clic de son nom dans le chat",
 
     "RPGUI.SETTINGS.EnableAllianceViewerTitle": "Afficher l’alliance d'un Acteur dans la barre latérale.",
-    "RPGUI.SETTINGS.EnableAllianceViewerHint": "Affiche une pastille de couleur permettant de facilement voir l’alliance à laquelle appartient un acteur"
+    "RPGUI.SETTINGS.EnableAllianceViewerHint": "Affiche une pastille de couleur permettant de facilement voir l’alliance à laquelle appartient un acteur",
+
+    "PAUSEICON.opacity_name":    "Opacité %:",
+    "PAUSEICON.opacity_hint":    "Valeur comprise entre 0 et 100, plus la valeur est faible, plus le résultat est transparent.",
+    "PAUSEICON.text_name":       "Message de pause : ",
+    "PAUSEICON.text_hint":       "Message qui s'affiche lors de la pause.",
+    "PAUSEICON.speed_name":      "Vitesse: ",
+    "PAUSEICON.speed_hint":      "Secondes par rotation, 0 signifie aucune rotation.",
+    "PAUSEICON.dimensionX_name": "Dimension (largeur) : ",
+    "PAUSEICON.dimensionX_hint": "Largeur de l'icône en pixels.",
+    "PAUSEICON.dimensionY_name": "Dimension (hauteur) : ",
+    "PAUSEICON.dimensionY_hint": "Hauteur de l'icône en pixels.",
+    "PAUSEICON.fontSize_name":   "Taille de la police :",
+    "PAUSEICON.fontSize_hint":   "Taille de la police en em, la valeur par défaut est 2",
+    "PAUSEICON.shadow_name":     "Ombre portée (on/off) : ",
+    "PAUSEICON.shadow_hint":     "Lorsque cette option est activée, une ombre portée apparaît sous le texte.",
+    "PAUSEICON.textColor_name":  "Couleur : ",
+    "PAUSEICON.textColor_hint":  "Soit le code hexadécimal (par exemple #EEEEEE), soit le nom de la couleur HTML (par exemple CornflowerBlue).",
+    "PAUSEICON.saveButton":      "Enregistrer les paramètres",
+    "PAUSEICON.settings":        "Paramétrage de la Pause : ",
+    "PAUSEICON.settingsButton":  "Paramètres"
 }

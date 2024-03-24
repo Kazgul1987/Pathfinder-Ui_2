@@ -10,7 +10,7 @@
       "flags": {}
     }
   ],
-  "version": "11.315.5144.2",
+  "version": "11.315.5144.3",
   "compatibility": {
     "minimum": "11",
     "verified": "11"
@@ -36,6 +36,7 @@
     "scripts/dark-hazard-sheet.js",
     "scripts/dark-kingdom-sheet.js",
     "scripts/dark-custom.js",
+    "scripts/pause-icon-script.js",
     "scripts/simply-portraits.js",
     "scripts/rpg-ui.js"
   ],
@@ -79,5 +80,5 @@
   ],
   "url": "https://gitlab.com/sasmira/pathfinder-ui",
   "manifest": "https://gitlab.com/sasmira/pathfinder-ui/-/raw/master/module/module.json",
-  "download": "https://gitlab.com/sasmira/pathfinder-ui/-/jobs/artifacts/v11.315.5144.2/raw/pathfinder-ui.zip?job=build"
+  "download": "https://gitlab.com/sasmira/pathfinder-ui/-/jobs/artifacts/v11.315.5144.3/raw/pathfinder-ui.zip?job=build"
 }

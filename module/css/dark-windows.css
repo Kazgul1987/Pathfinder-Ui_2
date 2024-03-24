@@ -145,6 +145,7 @@ h2 {
 .dialog-buttons button,
 #support-details button,
 .window-app form button,
+.pause-icon.pi-settings-save,
 .loot-actor-popup .confirm-button,
 .package-configuration aside.sidebar .reset-all {
     font-family: 'Kurale', serif;
@@ -155,9 +156,11 @@ h2 {
     position: relative;
     box-shadow: none;
 }
+
 .dialog-buttons button::before,
 #support-details button::before,
 .window-app form button::before,
+.pause-icon.pi-settings-save::before,
 .loot-actor-popup .confirm-button::before,
 .package-configuration aside.sidebar .reset-all::before {
     position: absolute;
