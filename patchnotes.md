@@ -4,8 +4,10 @@
 - Ready for v11 version.
 
 
-## v11.315.5144.4
+
+## v11.315.5144.5
 - The Alternative Pause Icon module has been integrated into Pathfinder Ui v3.
+- Fixed some errors and added of others.
 
 ## v11.315.5144.2
 - Updated Compatibility PF2e v5.14.4.

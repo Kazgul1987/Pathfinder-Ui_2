@@ -690,6 +690,10 @@ textarea {
 
 /* Journal Sheet
 ***********************************/
+.journal-sheet .journal-header .title {
+    color: var(--color-text-dark-primary);
+    border: 1px solid var(--color-border-light-tertiary);
+}
 .sheet.journal-entry .journal-entry-pages {
     color: var(--color-text-dark-primary);
 }
