@@ -5,7 +5,8 @@
 
 
 
-## v11.315.5144.5
+## v11.315.5144.6
+- Updated Polish language.
 - The Alternative Pause Icon module has been integrated into Pathfinder Ui v3.
 - Fixed some errors and added of others.
 
