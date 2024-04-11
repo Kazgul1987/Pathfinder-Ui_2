@@ -285,7 +285,8 @@ h6+p+blockquote, h6+p+ul+blockquote) {
     box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
 }
-.dark-custom .journal-entry-page .journal-page-content a.inline-check[data-pf2-traits*=secret], .dark-custom .journal-page-content span[data-pf2-check][data-pf2-traits*=secret] {
+.dark-custom .journal-entry-page .journal-page-content a.inline-check[data-pf2-traits*=secret], 
+.dark-custom .journal-page-content span[data-pf2-check][data-pf2-traits*=secret] {
 	font-family: "Good OT";
 	color: var(--pfui-main-color);
     background: var(--custom-trait);
@@ -294,7 +295,8 @@ h6+p+blockquote, h6+p+ul+blockquote) {
     box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
 }	
-.dark-custom .journal-entry-page .journal-page-content a.inline-check, .dark-custom .journal-page-content span[data-pf2-check] {
+.dark-custom .journal-entry-page .journal-page-content a.inline-check, 
+.dark-custom .journal-page-content span[data-pf2-check] {
 	font-family: "Good OT";
 	color: var(--pfui-main-color);
     background: var(--custom-trait);
@@ -303,7 +305,8 @@ h6+p+blockquote, h6+p+ul+blockquote) {
     box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
 }
-.dark-custom .journal-entry-page .journal-page-content a.inline-check, .dark-custom .journal-page-content span[data-pf2-action] {
+.dark-custom .journal-entry-page .journal-page-content a.inline-check, 
+.dark-custom .journal-page-content span[data-pf2-action] {
 	font-family: "Good OT";
 	color: var(--pfui-main-color)!important;
     background: var(--custom-trait);
@@ -312,7 +315,8 @@ h6+p+blockquote, h6+p+ul+blockquote) {
     box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
 }
-.dark-custom .journal-entry-page .journal-page-content a.content-link, .dark-custom .journal-entry-page .journal-page-content a.inline-roll {
+.dark-custom .journal-entry-page .journal-page-content a.content-link, 
+.dark-custom .journal-entry-page .journal-page-content a.inline-roll {
 	font-family: 'Good OT';
     font-size: 14px;
     color: var(--pfui-main-color)!important;

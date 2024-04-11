@@ -772,6 +772,30 @@ table.pf2-table table th {
 .pf2e-km a.inline-roll {
     box-shadow: unset;
 }
+div.journal-sheet.window-app.pf2e-km .journal-page-content p, 
+div.adventure-importer.window-app.pf2e-km .window-content p, 
+div.journal-sheet.window-app.pf2e-km .journal-page-content li, 
+div.adventure-importer.window-app.pf2e-km .window-content li, 
+div.journal-sheet.window-app.pf2e-km .journal-page-content label, 
+div.adventure-importer.window-app.pf2e-km .window-content label {
+    color: var(--color-text-dark-primary);
+}
+div.journal-sheet.window-app.pf2e-km .journal-page-content section.social strong, 
+div.journal-sheet.window-app.pf2e-km .journal-page-content section.social ul.outcomes strong, 
+div.journal-sheet.window-app.pf2e-km .journal-page-content section.social h1, 
+div.journal-sheet.window-app.pf2e-km .journal-page-content section.social h2, 
+div.journal-sheet.window-app.pf2e-km .journal-page-content section.social h3, 
+div.journal-sheet.window-app.pf2e-km .journal-page-content section.social .with-repost, 
+div.journal-sheet.window-app.pf2e-km .journal-page-content section.social .content-link, 
+div.journal-sheet.window-app.pf2e-km .journal-page-content section.social .inline-roll, 
+div.journal-sheet.window-app.pf2e-km .journal-page-content section.social .inline-check, 
+div.journal-sheet.window-app.pf2e-km .journal-page-content section.social span[data-visibility]:not([data-visibility=all]), 
+div.journal-sheet.window-app.pf2e-km .journal-page-content section.social .with-repost > i, 
+div.journal-sheet.window-app.pf2e-km .journal-page-content section.social .content-link > i, 
+div.journal-sheet.window-app.pf2e-km .journal-page-content section.social span.magic {
+    box-shadow: none;
+}
+
 
 /*ITEM-PILES*/
 .item-piles-odd-color:nth-child(odd) {

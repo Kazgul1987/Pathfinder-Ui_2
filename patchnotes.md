@@ -5,6 +5,11 @@
 
 
 
+## v11.315.5150.4
+- Improved Compatibility with Kingmaker Module and the Dark windows option.
+- Fixed a readability problem with Forien quest when deactivating the dark windows option
+- Fixed some errors and added of others.
+
 ## v11.315.5150.3
 - Updated Polish language.
 - The Alternative Pause Icon module has been integrated into Pathfinder Ui v3.

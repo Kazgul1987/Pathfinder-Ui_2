@@ -1616,6 +1616,20 @@ nav.damage-log-nav .item.active:before,
     color: var(--color-cool-5);
     box-shadow: var(--glassy-shadow);
 }
+.window-app.forien-quest-preview .editor .editor-content a.content-link, 
+.window-app.forien-quest-preview .editor .editor-content a.inline-roll,
+.window-app.forien-quest-preview .editor .editor-content a.inline-check,
+.window-app.forien-quest-preview .editor .editor-content span[data-pf2-check],
+.window-app.forien-quest-preview .editor .editor-content [data-visibility=gm]:not(.dice-result > *) {
+	font-family: 'Good OT';
+    font-size: 14px;
+    color: var(--pfui-main-color)!important;
+    background: var(--custom-trait);
+    padding: 0px 3px;
+    border: 1px solid var(--glassy);
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+}
 
 
 
