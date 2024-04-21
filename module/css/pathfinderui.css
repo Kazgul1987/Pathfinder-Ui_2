@@ -1313,12 +1313,44 @@ button#roll-hd:hover::before {
     left: -10%;
     opacity: 0.88;
 }
-#navigation #scene-list .scene.gm {
-    background: url(../ui/buttons/controls_btn_accent.webp);
+#navigation #scene-list .scene.active {
+    color: var(--color-warm-1);
+    background: url(../ui/buttons/controls_btn_active.webp);
     background-size: 100% 100%;
     border: none;
+    text-shadow: var(--text-shadow);
 }
-#navigation #scene-list .scene.view, #navigation #scene-list .scene.context {
+#navigation #scene-list .scene.active.view {
+    color: var(--color-warm-1);
+    background: url(../ui/buttons/controls_btn_active_view_gm.webp);
+    background-size: 100% 100%;
+    border: none;
+    text-shadow: var(--text-shadow);
+}
+#navigation #scene-list .scene.view.gm {
+    color: var(--color-warm-1);
+    background: url(../ui/buttons/controls_btn_view_gm.webp);
+    background-size: 100% 100%;
+    border: none;
+    text-shadow: var(--text-shadow);
+}
+#navigation #scene-list .scene.view {
+    color: var(--color-warm-1);
+    background: url(../ui/buttons/controls_btn_active_view_gm.webp);
+    background-size: 100% 100%;
+    border: none;
+    text-shadow: var(--text-shadow);
+}
+#navigation #scene-list .scene.nav-item:hover,
+#navigation #scene-list .scene.active:hover,
+#navigation #scene-list .scene.active.view:hover,
+#navigation #scene-list .scene.view.gm:hover,
+#navigation #scene-list .scene.view:hover {
+    color: var(--green);
+    text-shadow: var(--text-shadow);
+}
+#navigation #scene-list .scene.view, 
+#navigation #scene-list .scene.context {
     box-shadow: none;
 }
 

@@ -661,6 +661,123 @@ li.hm_messagetaken {
 
 
 
+/* Monk's Scene Navigation */
+/* https://github.com/ironmonk88/monks-scene-navigation */
+#navigation.background .monks-scene-navigation .scene-list {
+    border: unset;
+    background-color: unset;
+    padding-top: 0;
+}
+#navigation .monks-scene-navigation .scene-list > li.context a {
+    color: var(--pfui-main-color);
+    background: url(../ui/buttons/controls_btn_accent.webp);
+    background-size: 100% 100%;
+    border: none;
+    border-bottom: unset;
+    box-shadow: unset;
+    text-shadow: var(--text-shadow);
+}
+#navigation .monks-scene-navigation .scene-list > li.active a {
+    color: var(--color-warm-1);
+    text-align: center;
+    background: url(../ui/buttons/controls_btn_active.webp);
+    background-size: 100% 100%;
+    border: none;
+    border-bottom: unset;
+    box-shadow: unset;
+    text-shadow: var(--text-shadow);
+}
+
+#navigation .monks-scene-navigation .scene-list > li.active.view a {
+    color: var(--color-warm-1);
+    text-align: center;
+    background: url(../ui/buttons/controls_btn_active_view_gm.webp);
+    background-size: 100% 100%;
+    border: none;
+    border-bottom: unset;
+    box-shadow: unset;
+    text-shadow: var(--text-shadow);
+}
+#navigation .monks-scene-navigation .scene-list > li.view.gm a {
+    color: var(--color-warm-1);
+    text-align: center;
+    background: url(../ui/buttons/controls_btn_view_gm.webp);
+    background-size: 100% 100%;
+    border: none;
+    border-bottom: unset;
+    box-shadow: unset;
+    text-shadow: var(--text-shadow);
+}
+#navigation .monks-scene-navigation .scene-list > li.view a {
+    color: var(--color-warm-1);
+    text-align: center;
+    background: url(../ui/buttons/controls_btn_active_view_gm.webp);
+    background-size: 100% 100%;
+    border: none;
+    border-bottom: unset;
+    box-shadow: unset;
+    text-shadow: var(--text-shadow);
+}
+
+#navigation .monks-scene-navigation .scene-list > li.folder a:hover,
+#navigation.background .monks-scene-navigation .scene-list > li.folder.expanded a:hover,
+#navigation .monks-scene-navigation .scene-list > li a:hover,
+#navigation .monks-scene-navigation .scene-list > li.context a:hover,
+#navigation .monks-scene-navigation .scene-list > li.active a:hover,
+#navigation .monks-scene-navigation .scene-list > li.active.view a:hover,
+#navigation .monks-scene-navigation .scene-list > li.view.gm a:hover,
+#navigation .monks-scene-navigation .scene-list > li.view a:hover {
+    color: var(--green);
+    text-shadow: var(--text-shadow);
+}
+#navigation .monks-scene-navigation .scene-list > li a {
+    color: var(--pfui-main-color);
+    text-align: center;
+    background: transparent;
+    border: none;
+    border-bottom: unset;
+    box-shadow: unset;
+    border-radius: unset;
+}
+#navigation .monks-scene-navigation .scene-list > li a::before {
+    position: absolute;
+    content: " ";
+    width: 115%;
+    height: 105%;
+    top: -3%;
+    background: url(../ui/buttons/controls_btn.webp);
+    background-size: 100% 100%;
+    z-index: -1;
+    left: -6%;
+    opacity: 0.88;
+}
+#navigation .monks-scene-navigation .scene-list > li li.active-indicator {
+    font-size: unset;
+    text-align: center;
+    color: var(--color-warm-1);
+    text-shadow: var(--text-shadow);
+}
+#navigation .monks-scene-navigation .scene-list > li.folder a {
+    color: var(--pfui-main-color);
+    background: url(../ui/buttons/button-green.webp);
+    background-size: 100% 100%;
+    border-top: unset;
+    padding-top: 7px;
+    border-left: unset;
+    border-right: unset;
+    border-radius: var(--border-radius);
+}
+#navigation.background .monks-scene-navigation .scene-list > li.folder.expanded a {
+    color: var(--pfui-main-color);
+    background: url(../ui/buttons/button-red.webp);
+    background-size: 100% 100%;
+    border-top: unset;
+    padding-top: 7px;
+    border-left: unset;
+    border-right: unset;
+    height: 32px;
+    border-radius: var(--border-radius);
+}
 
 /* Monk's Sound Enhancements */
 /* https://github.com/ironmonk88/monks-sound-enhancements */
@@ -668,7 +785,6 @@ li.hm_messagetaken {
     color: var(--green);
     background: var(--color-cool-4);
 }
-
 
 
 

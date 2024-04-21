@@ -5,6 +5,11 @@
 
 
 
+## v11.315.5151.1
+- Added compatibility with Monk's scene navigation.
+- - Improved visibility core ui scene navigation.
+- Fixed some errors and added of others.
+
 ## v11.315.5150.4
 - Improved Compatibility with Kingmaker Module and the Dark windows option.
 - Fixed a readability problem with Forien quest when deactivating the dark windows option
