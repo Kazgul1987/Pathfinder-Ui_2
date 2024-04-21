@@ -5,9 +5,9 @@
 
 
 
-## v11.315.5151.1
+## v11.315.5151.2
 - Added compatibility with Monk's scene navigation.
-- - Improved visibility core ui scene navigation.
+- Improved visibility core ui scene navigation.
 - Fixed some errors and added of others.
 
 ## v11.315.5150.4

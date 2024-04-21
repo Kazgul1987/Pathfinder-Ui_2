@@ -1341,6 +1341,12 @@ button#roll-hd:hover::before {
     border: none;
     text-shadow: var(--text-shadow);
 }
+#navigation #scene-list .scene.gm {
+    background: url(../ui/buttons/controls_btn_accent.webp);
+    background-size: 100% 100%;
+    border: none;
+    text-shadow: var(--text-shadow);
+}
 #navigation #scene-list .scene.nav-item:hover,
 #navigation #scene-list .scene.active:hover,
 #navigation #scene-list .scene.active.view:hover,
