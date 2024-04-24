@@ -591,7 +591,20 @@ textarea {
     border: 1px solid lightgreen;
     box-shadow: var(--box-shadow-light);
 }
-
+.pf2e.item.sheet form .sheet-body .tab.active.description .gm-notes {
+    background-color: unset;
+    border: unset;
+    flex: 0 0 auto;
+    background: radial-gradient(var(--color-cool-3-90), var(--color-cool-4-90));
+    box-shadow: var(--box-shadow);
+    border-image-repeat: repeat;
+    border-image-slice: 11;
+    border-image-source: var(--ornement);
+    border-image-width: 14px;
+    border-style: double;
+    padding: 3px 10px;
+    font-weight: 500;
+}
 
 /* Rules Elements
 ***********************************/
