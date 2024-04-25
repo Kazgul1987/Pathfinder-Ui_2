@@ -370,7 +370,19 @@
 .dark-loot-theme.sheet.actor.loot .window-content .inventory ul.items > li .item-summary {
     background: none;
 }
-
+.dark-loot-theme.actor.sheet section.window-content .item-summary .gm-notes {
+    border: unset;
+    flex: 0 0 auto;
+    background: radial-gradient(var(--color-cool-3-90), var(--color-cool-4-90));
+    box-shadow: var(--box-shadow);
+    border-image-repeat: repeat;
+    border-image-slice: 11;
+    border-image-source: var(--ornement);
+    border-image-width: 14px;
+    border-style: double;
+    padding: 3px 10px;
+    font-weight: 500;
+}
 
 /*        Glassy       
 *************************/

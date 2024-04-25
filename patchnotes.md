@@ -4,7 +4,7 @@
 - Ready for v11 version.
 
 
-## v11.315.5151.4
+## v11.315.5151.5
 - Updated visibility on Homebrew Elements in Full Dark Mode.
 - Improved visibility on GM notes description.
 - Fixed some errors and added of others.
