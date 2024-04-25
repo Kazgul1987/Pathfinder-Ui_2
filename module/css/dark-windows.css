@@ -727,6 +727,50 @@ textarea {
     border: unset;
 }
 
+/* Homebrew Elements
+***********************************/
+#homebrew-settings section.window-content .form-group.language-rarity ul li {
+    color: var(--background);
+    background: rgba(255, 255, 255, 0.4);
+}
+#homebrew-settings section.window-content .form-group.language-rarity ul {
+    border: 1px dotted var(--color-cool-3-90);
+}
+#homebrew-settings section.window-content .form-group.language-rarity.common li:hover {
+    --rarity-common: var(--color-cool-1);
+    --tag-color: var(--rarity-common);
+    background: var(--tag-color);
+    color: var(--background);
+}
+#homebrew-settings section.window-content .form-group.language-rarity.uncommon li:hover {
+    --tag-color: var(--rarity-uncommon);
+    background: var(--tag-color);
+    color: var(--background);
+}
+#homebrew-settings section.window-content .form-group.language-rarity.rare li:hover {
+    --tag-color: var(--rarity-rare);
+    background: var(--tag-color);
+    color: var(--background);
+}
+#homebrew-settings section.window-content .form-group.language-rarity.secret li:hover {
+    --tag-color: var(--red-light);
+    background: var(--tag-color);
+    color: var(--background);
+}
+#homebrew-settings section.window-content .form-group.setting tags {
+    --input-background-color: var(--color-cool-4);
+    --input-border-color: transparent;
+    --input-text-color: var(--color-light-3);
+    background: var(--input-background-color);
+    border: 1px solid var(--input-border-color);
+    outline: 1px solid transparent;
+    color: var(--input-text-color);
+    --input-box-shadow: none;
+    box-shadow: var(--input-box-shadow);
+    border-radius: 4px;
+    user-select: text;
+    transition: outline-color 0.5s;
+}
 
 /*TABLES*/
 table,

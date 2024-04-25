@@ -4,6 +4,10 @@
 - Ready for v11 version.
 
 
+## v11.315.5151.4
+- Updated visibility on Homebrew Elements in Full Dark Mode.
+- Improved visibility on GM notes description.
+- Fixed some errors and added of others.
 
 ## v11.315.5151.3
 - Added compatibility with Monk's scene navigation.
