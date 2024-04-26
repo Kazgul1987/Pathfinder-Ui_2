@@ -605,6 +605,16 @@ textarea {
     padding: 3px 10px;
     font-weight: 500;
 }
+.app.npc-skills-editor form ol li.skill:nth-child(even) {
+    background-color: var(--color-cool-5);
+}
+.app.npc-skills-editor form ol li.skill:nth-child(odd) {
+    background-color: var(--color-cool-4);
+}
+.app.npc-skills-editor form ol li.skill.header {
+    background-color: var(--color-warm-3);
+}
+
 
 /* Rules Elements
 ***********************************/

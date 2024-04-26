@@ -4,7 +4,8 @@
 - Ready for v11 version.
 
 
-## v11.315.5151.5
+## v11.315.5151.6
+- Updated visibility on Monster skills editing window.
 - Updated visibility on Homebrew Elements in Full Dark Mode.
 - Improved visibility on GM notes description.
 - Fixed some errors and added of others.
