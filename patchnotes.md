@@ -4,7 +4,7 @@
 - Ready for v11 version.
 
 
-## v11.315.5151.7
+## v11.315.5151.8
 - Smalltime skin reworked.
 - Interactive Token Tooltip skin reworked. 
 - Updated visibility on Monster skills editing window.

@@ -1351,6 +1351,7 @@ box-shadow: var(--box-shadow-light);
 /* https://github.com/unsoluble/smalltime */
 #smalltime-app {
     box-shadow: var(--box-shadow);
+    width: 205px !important;
 }
 #smalltime-app .window-content {
     border: 1px solid var(--color-cool-5);
@@ -1370,7 +1371,7 @@ box-shadow: var(--box-shadow-light);
     color: var(--color-cool-1);
 }
 #smalltime-app #timeDisplay {
-    font-size: medium;
+    font-size: 12px;
     background: transparent;
     border: unset;
     text-shadow: var(--text-shadow);
