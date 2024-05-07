@@ -2093,3 +2093,35 @@ nav.damage-log-nav .item.active:before,
 .quick-insert-result li span.sub {
     color: var(--text-color-5);
 }
+
+/*pf2e-kingmaker-tools
+-------------------------------------------------------*/
+.camping-dialog a.content-link, 
+.camping-dialog a.inline-roll {
+    font-family: "Good OT";
+    --input-text-color: var(--color-light-3);
+    color: var(--input-text-color);
+    background: var(--custom-trait);
+    padding: 0px 3px;
+    border: 1px solid var(--glassy);
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+}
+.camping-dialog .km-table th {
+    color: var(--color-warm-1);
+}
+.camping-dialog .km-table tr:nth-child(2n) {
+    background-color: var(--color-cool-5);
+    --input-text-color: var(--color-light-3);
+    color: var(--input-text-color);
+    text-shadow: var(--text-shadow);
+}
+.camping-dialog .km-table tr:nth-child(2n+1) {
+    background-color: var(--color-cool-4);
+    --input-text-color: var(--color-light-3);
+    color: var(--input-text-color);
+    text-shadow: var(--text-shadow);
+}
+.camping-dialog .km-table td {
+    border: 1px solid transparent;
+}

@@ -4,6 +4,9 @@
 - Ready for v11 version.
 
 
+## v11.315.5153.1
+- pf2e-kingmaker-tools skin added
+
 ## v11.315.5151.8
 - Smalltime skin reworked.
 - Interactive Token Tooltip skin reworked. 
