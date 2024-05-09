@@ -4,7 +4,8 @@
 - Ready for v11 version.
 
 
-## v11.315.5153.1
+## v11.315.5153.2
+- pf2e Modifiers Matter compatibility added
 - pf2e-kingmaker-tools skin added
 
 ## v11.315.5151.8
