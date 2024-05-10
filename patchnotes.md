@@ -4,7 +4,8 @@
 - Ready for v11 version.
 
 
-## v11.315.5153.2
+## v11.315.5153.3
+- Updated compatibility with PF2e Toolbelt
 - pf2e Modifiers Matter compatibility added
 - pf2e-kingmaker-tools skin added
 
