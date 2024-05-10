@@ -838,37 +838,33 @@ button.half-damage .fa-heart-broken::after {
 
 
 /*Shield*/
-
-#chat-log .message-content .damage-application button[data-action=shield-block]:hover {
-    color: var(--pfui-main-color);
-    background-color: var(--color-cool-3);
-    border: 1px solid var(--color-cool-1);
-    box-shadow: var(--box-shadow-light);
+.damage-application button[data-action=shield-block]:hover {
+    color: var(--pfui-main-color)!important;
+    background-color: var(--color-cool-3)!important;
+    border: 1px solid var(--color-cool-1)!important;
+    box-shadow: var(--box-shadow-light)!important;
 }
-
-#chat-log .message-content .dice-total-shield-btn.shield-activated {
-    color: var(--pfui-main-color);
-    background-color: var(--color-cool-2);
-    border: 1px solid var(--color-cool-1);
+.dice-total-shield-btn.shield-activated {
+    color: var(--pfui-main-color)!important;
+    background-color: var(--color-cool-2)!important;
+    border: 1px solid var(--color-cool-1)!important;
 }
-
-#chat-log .message-content .dice-total-shield-btn.shield-activated:hover {
-    color: var(--pfui-main-color);
-    background-color: var(--color-cool-3);
-    border: 1px solid var(--color-cool-1);
-    box-shadow: var(--box-shadow-light);
+.dice-total-shield-btn.shield-activated:hover {
+    color: var(--pfui-main-color)!important;
+    background-color: var(--color-cool-3)!important;
+    border: 1px solid var(--color-cool-1)!important;
+    box-shadow: var(--box-shadow-light)!important;
 }
 
 /*Heal*/
-#chat-log .message-content .damage-application button[data-action=apply-healing] .fa-stack i.fa-plus {
-    color: var(--green);
+.chat-message .message-content .damage-application button[data-action=apply-healing] .fa-stack i.fa-plus {
+    color: var(--color-cool-5);
     text-shadow: none;
 }
-#chat-log .message-content .damage-application button[data-action=apply-healing]:hover {
-    color: var(--color-cool-5);
-    background-color: var(--green);
-    border: 1px solid lightgreen;
-    box-shadow: var(--box-shadow-light);
+.chat-message .message-content .damage-application button[data-action=apply-healing]:hover {
+    background-color: var(--green)!important;
+    border: 1px solid lightgreen!important;
+    box-shadow: var(--box-shadow-light)!important;
 }
 
 
