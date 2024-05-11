@@ -746,6 +746,49 @@ text-shadow: var(--text-shadow);
 }
 
 
+/*TABLES*/
+.dark-npc-theme.actor.sheet table,
+.dark-npc-theme.actor.sheet table.pf2e,
+.dark-npc-theme.actor.sheet table.pf2-table {
+	font-family: "Good OT";
+	max-width: calc(100% - 24px);
+	margin-left: auto;
+	margin-right: auto;
+	border: unset;
+	box-shadow: var(--box-shadow);
+}
+.dark-npc-theme.actor.sheet table th,
+.dark-npc-theme.actor.sheet table.pf2e th,
+.dark-npc-theme.actor.sheet table.pf2-table th {
+    color: var(--color-warm-1);
+    background-color: var(--color-cool-5);
+}
+.dark-npc-theme.actor.sheet table tr:nth-child(2n), 
+.dark-npc-theme.actor.sheet table.pf2e tr:nth-child(even), 
+.dark-npc-theme.actor.sheet table.pf2-table tr:nth-child(even) {
+    background-color: var(--color-cool-5);
+    --input-text-color: var(--color-light-3);
+    color: var(--input-text-color);
+    text-shadow: var(--text-shadow);
+}
+.dark-npc-theme.actor.sheet table tr:nth-child(2n+1),
+.dark-npc-theme.actor.sheet table.pf2e tr:nth-child(odd), 
+.dark-npc-theme.actor.sheet table.pf2-table tr:nth-child(odd) {
+	background-color: var(--color-cool-4);
+    --input-text-color: var(--color-light-3);
+    color: var(--input-text-color);
+    text-shadow: var(--text-shadow);
+}
+.dark-npc-theme.actor.sheet table td,
+.dark-npc-theme.actor.sheet table th,
+.dark-npc-theme.actor.sheet table.pf2e table td,
+.dark-npc-theme.actor.sheet table.pf2e table th,
+.dark-npc-theme.actor.sheet table.pf2-table table td,
+.dark-npc-theme.actor.sheet table.pf2-table table th {
+	padding: 4px 6px;
+}
+
+
 /*        Glassy       
 *************************/
 .glassy.dark-npc-theme.actor.npc .window-content {

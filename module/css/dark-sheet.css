@@ -1036,7 +1036,7 @@ color: var(--green)!important;
 .actor.sheet.character.dark-theme section.window-content .crb-style .sheet-body .sheet-content .tab.biography h3.header a i.fa-solid.fa-fw.fa-eye {
     color: var(--green);
 }
-.actor.sheet.character .crb-style .sheet-body .sheet-content .tab.biography h3.header a i.fa-eye-slash {
+.actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.biography h3.header a i.fa-eye-slash {
     color: var(--color-warm-1);
 }
 
@@ -1068,7 +1068,47 @@ color: var(--green)!important;
     border-radius: var(--border-radius);
 }
 
-
+/*TABLES*/
+.actor.sheet.character.dark-theme table,
+.actor.sheet.character.dark-theme table.pf2e,
+.actor.sheet.character.dark-theme table.pf2-table {
+	font-family: "Good OT";
+	max-width: calc(100% - 24px);
+	margin-left: auto;
+	margin-right: auto;
+	border: unset;
+	box-shadow: var(--box-shadow);
+}
+.actor.sheet.character.dark-theme table th,
+.actor.sheet.character.dark-theme table.pf2e th,
+.actor.sheet.character.dark-theme table.pf2-table th {
+    color: var(--color-warm-1);
+    background-color: var(--color-cool-5);
+}
+.actor.sheet.character.dark-theme table tr:nth-child(2n), 
+.actor.sheet.character.dark-theme table.pf2e tr:nth-child(even), 
+.actor.sheet.character.dark-theme table.pf2-table tr:nth-child(even) {
+    background-color: var(--color-cool-5);
+    --input-text-color: var(--color-light-3);
+    color: var(--input-text-color);
+    text-shadow: var(--text-shadow);
+}
+.actor.sheet.character.dark-theme table tr:nth-child(2n+1),
+.actor.sheet.character.dark-theme table.pf2e tr:nth-child(odd), 
+.actor.sheet.character.dark-theme table.pf2-table tr:nth-child(odd) {
+	background-color: var(--color-cool-4);
+    --input-text-color: var(--color-light-3);
+    color: var(--input-text-color);
+    text-shadow: var(--text-shadow);
+}
+.actor.sheet.character.dark-theme table td,
+.actor.sheet.character.dark-theme table th,
+.actor.sheet.character.dark-theme table.pf2e table td,
+.actor.sheet.character.dark-theme table.pf2e table th,
+.actor.sheet.character.dark-theme table.pf2-table table td,
+.actor.sheet.character.dark-theme table.pf2-table table th {
+	padding: 4px 6px;
+}
 
 
 

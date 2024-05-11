@@ -4,7 +4,8 @@
 - Ready for v11 version.
 
 
-## v11.315.5153.3
+## v11.315.5153.4
+- Fixed table content that was difficult to read in dark windows.
 - Updated compatibility with PF2e Toolbelt
 - pf2e Modifiers Matter compatibility added
 - pf2e-kingmaker-tools skin added
@@ -25,9 +26,6 @@
 ## v11.315.5150.4
 - Improved Compatibility with Kingmaker Module and the Dark windows option.
 - Fixed a readability problem with Forien quest when deactivating the dark windows option
-- Fixed some errors and added of others.
-
-## v11.315.5150.3
 - Updated Polish language.
 - The Alternative Pause Icon module has been integrated into Pathfinder Ui v3.
 - Fixed some errors and added of others.
@@ -43,8 +41,6 @@
 ## v11.315.5143.3
 - Dark Windows: added compatibility with Item Piles.
 - Fixed some errors and added of others.
-
-## v11.315.5143.2
 - Fixed tables not displaying correctly in Kingmaker module.
 - Deactivate drag rpg cursor 
 - Dark windows are no longer the default
