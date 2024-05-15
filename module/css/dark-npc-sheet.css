@@ -38,11 +38,11 @@
     --sub: var(--background);
     --text-shadow: 0px 1px 2px black;
 
-    /*--rarity-common: #7e7e7e;*/
-    --rarity-common: var(--color-cool-1);
-    --rarity-uncommon: #ff6400;
-    --rarity-rare: #0062ff;
-    --rarity-unique: #e127e1;
+    /*--color-rarity-common: #7e7e7e;*/
+    --color-rarity-common: var(--color-cool-1);
+    --color-rarity-uncommon: #ff6400;
+    --color-rarity-rare: #0062ff;
+    --color-rarity-unique: #e127e1;
     
 /* Foundry2
 ====================================================== */
@@ -440,23 +440,23 @@ text-shadow: var(--text-shadow);
     border: 1px solid var(--color-cool-4);
 }
 .dark-npc-theme.actor.npc .window-content .inventory ul.items > li > .data .item-name h4:not(:hover).rarity-common {
-    border-color: var(--rarity-common);
-    color: var(--rarity-common);
+    border-color: var(--color-rarity-common);
+    color: var(--color-rarity-common);
     text-shadow: var(--text-shadow);
 }
 .dark-npc-theme.actor.npc .window-content .inventory ul.items > li > .data .item-name h4:not(:hover).rarity-uncommon {
-    border-color: var(--rarity-uncommon);
-    color: var(--rarity-uncommon);
+    border-color: var(--color-rarity-uncommon);
+    color: var(--color-rarity-uncommon);
     text-shadow: var(--text-shadow);
 }
 .dark-npc-theme.actor.npc .window-content .inventory ul.items > li > .data .item-name h4:not(:hover).rarity-rare {
-    border-color: var(--rarity-rare);
-    color: var(--rarity-rare);
+    border-color: var(--color-rarity-rare);
+    color: var(--color-rarity-rare);
     text-shadow: var(--text-shadow);
 }
 .dark-npc-theme.actor.npc .window-content .inventory ul.items > li > .data .item-name h4:not(:hover).rarity-unique {
-    border-color: var(--rarity-unique);
-    color: var(--rarity-unique);
+    border-color: var(--color-rarity-unique);
+    color: var(--color-rarity-unique);
     text-shadow: var(--text-shadow);
 }
 
@@ -508,10 +508,10 @@ text-shadow: var(--text-shadow);
 }
 .dark-npc-theme.actor.npc .window-content .inventory ul.items > li > .data .item-controls > a.toggle-invested.active,
 .dark-npc-theme.actor.npc .window-content .inventory ul.items > li > .data .item-controls > a.item-carry-type.active {
-    color: var(--rarity-rare);
+    color: var(--color-rarity-rare);
 }
 .dark-npc-theme.actor.npc .window-content .inventory ul.items > li > .data .item-controls > a .fa-stack {
-    color: var(--rarity-rare);
+    color: var(--color-rarity-rare);
 }
 .dark-npc-theme.actor.npc .window-content .inventory ul.items > li > .data .item-controls > a.item-carry-type {
     color: var(--red);
@@ -714,7 +714,7 @@ text-shadow: var(--text-shadow);
 }
 .dark-npc-theme.actor.npc form input[type=text], 
 .dark-npc-theme.actor.npc form input[type=number] {
-    color: var(--rarity-common);
+    color: var(--color-rarity-common);
 }
 .dark-npc-theme.actor.npc form .notes .notes-section > h4 {
     color: var(--color-warm-1)!important;

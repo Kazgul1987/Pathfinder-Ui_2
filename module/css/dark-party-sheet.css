@@ -42,11 +42,11 @@
     --sub: var(--background);
     --text-shadow: 0px 1px 2px black;
 
-    /*--rarity-common: #7e7e7e;*/
-    --rarity-common: var(--color-cool-1);
-    --rarity-uncommon: #ff6400;
-    --rarity-rare: #0062ff;
-    --rarity-unique: #e127e1;
+    /*--color-rarity-common: #7e7e7e;*/
+    --color-rarity-common: var(--color-cool-1);
+    --color-rarity-uncommon: #ff6400;
+    --color-rarity-rare: #0062ff;
+    --color-rarity-unique: #e127e1;
     
 /* Foundry2
 ====================================================== */
@@ -480,20 +480,20 @@
     border-radius: var(--border-radius);
 }
 .dark-party-theme.sheet.party.actor.sheet .window-content .inventory ul.items > li > .data .item-name h4:not(:hover).rarity-common {
-    border-color: var(--rarity-common);
-    color: var(--rarity-common);
+    border-color: var(--color-rarity-common);
+    color: var(--color-rarity-common);
 }
 .dark-party-theme.sheet.party.actor.sheet .window-content .inventory ul.items > li > .data .item-name h4:not(:hover).rarity-uncommon {
-    border-color: var(--rarity-uncommon);
-    color: var(--rarity-uncommon);
+    border-color: var(--color-rarity-uncommon);
+    color: var(--color-rarity-uncommon);
 }
 .dark-party-theme.sheet.party.actor.sheet .window-content .inventory ul.items > li > .data .item-name h4:not(:hover).rarity-rare {
-    border-color: var(--rarity-rare);
-    color: var(--rarity-rare);
+    border-color: var(--color-rarity-rare);
+    color: var(--color-rarity-rare);
 }
 .dark-party-theme.sheet.party.actor.sheet .window-content .inventory ul.items > li > .data .item-name h4:not(:hover).rarity-unique {
-    border-color: var(--rarity-unique);
-    color: var(--rarity-unique);
+    border-color: var(--color-rarity-unique);
+    color: var(--color-rarity-unique);
 }
 .dark-party-theme.sheet.party.actor.sheet .window-content .inventory ul.items > li > .data .item-name h4.rarity-common:hover {
     color: var(--green)!important;

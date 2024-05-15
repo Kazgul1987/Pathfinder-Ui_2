@@ -39,10 +39,11 @@
     --text-color-1: #f7f3e8;
     --button-hover-text-color: var(--text-color-1);
 
-    --rarity-common: #7e7e7e;
-    --rarity-uncommon: #ff6400;
-    --rarity-rare: #0062ff;
-    --rarity-unique: #e127e1;
+    /*--color-rarity-common: #7e7e7e;*/
+    --color-rarity-common: var(--color-cool-1);
+    --color-rarity-uncommon: #ff6400;
+    --color-rarity-rare: #0062ff;
+    --color-rarity-unique: #e127e1;
 
     --input-background-color: var(--color-cool-4);
     --input-border-color: transparent;
@@ -798,7 +799,25 @@ li.hm_messagetaken {
     background: var(--color-cool-4);
 }
 
-
+/* Monk's Enhancement Journal */
+/* https://github.com/ironmonk88/monks-enhanced-journal */
+body[inline-roll-styling="true"] a.entity-link, 
+body[inline-roll-styling="true"] aside.locked-tooltip.link-matches a.content-link, 
+body[inline-roll-styling="true"] a.content-link, 
+body[inline-roll-styling="true"] a.inline-roll, 
+body[inline-roll-styling="true"] a.picture-link, 
+body[inline-roll-styling="true"] a.sound-link, 
+body[inline-roll-styling="true"] a.inline-request-roll, 
+body[inline-roll-styling="true"] a.tile-trigger-link {
+    font-family: 'Good OT';
+    color: var(--pfui-main-color);
+    text-shadow: var(--text-shadow);
+    background: var(--color-warm-3);
+    padding: 0px 3px;
+    border: 1px solid var(--glassy);
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius)
+}
 
 /* Monk's TokenBar */
 /* https://github.com/ironmonk88/monks-tokenbar */
@@ -1007,11 +1026,11 @@ wrapper.pf2e-td.name-left .pf2e-td.damage-application {
 }
 .pf2e-td.success {
     color: var(--color-cool-5)!important;
-	background-color: var(--rarity-rare)!important;
+	background-color: var(--color-rarity-rare)!important;
 }
 .pf2e-td.failure {
     color: var(--color-cool-5)!important;
-	background-color: var(--rarity-uncommon)!important;
+	background-color: var(--color-rarity-uncommon)!important;
 }
 .pf2e-td.criticalFailure {
     color: var(--color-cool-5)!important;
@@ -1051,11 +1070,11 @@ wrapper.pf2e-td.name-left .pf2e-td.damage-application {
     filter: drop-shadow(2px 4px 6px black) brightness(1.2);
 }
 .token-info .damage-application button.success, .token-info button.save.success {
-	background-color: var(--rarity-rare)!important;
+	background-color: var(--color-rarity-rare)!important;
     filter: drop-shadow(2px 4px 6px black) brightness(1.5);
 }
 .token-info .damage-application button.failure, .token-info button.save.failure  {
-	background-color: var(--rarity-uncommon)!important;
+	background-color: var(--color-rarity-uncommon)!important;
     filter: drop-shadow(2px 4px 6px black) brightness(1.5);
 }
 .token-info .damage-application button.criticalFailure, .token-info button.save.criticalFailure {
@@ -1110,19 +1129,19 @@ wrapper.pf2e-td.name-left .pf2e-td.damage-application {
 }
 .chat-message .message-content+.pf2e-toolbelt-target-damage .target-header .controls .success, 
 .chat-message .message-content+.pf2e-toolbelt-target-spell .target-header .controls .success {
-    color: var(--rarity-rare);
+    color: var(--color-rarity-rare);
     text-shadow: var(--text-shadow);
 }
 .chat-message .message-content+.pf2e-toolbelt-target-damage .target-damage-application.success [data-action=target-half-damage]::after {
-    box-shadow: inset 0 0 6px var(--rarity-rare);
+    box-shadow: inset 0 0 6px var(--color-rarity-rare);
 }
 .chat-message .message-content+.pf2e-toolbelt-target-damage .target-header .controls .failure, 
 .chat-message .message-content+.pf2e-toolbelt-target-spell .target-header .controls .failure {
-    color: var(--rarity-uncommon);
+    color: var(--color-rarity-uncommon);
     text-shadow: var(--text-shadow);
 }
 .chat-message .message-content+.pf2e-toolbelt-target-damage .target-damage-application.failure [data-action=target-apply-damage]::after {
-    box-shadow: inset 0 0 6px var(--rarity-uncommon);
+    box-shadow: inset 0 0 6px var(--color-rarity-uncommon);
 }
 .chat-message .message-content+.pf2e-toolbelt-target-damage .target-header .controls .criticalFailure, 
 .chat-message .message-content+.pf2e-toolbelt-target-spell .target-header .controls .criticalFailure {

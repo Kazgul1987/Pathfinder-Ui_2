@@ -44,11 +44,11 @@
     --alt: #786452;
     --sub: var(--background);
 
-    /*--rarity-common: #7e7e7e;*/
-    --rarity-common: var(--color-cool-1);
-    --rarity-uncommon: #ff6400;
-    --rarity-rare: #0062ff;
-    --rarity-unique: #e127e1;
+    /*--color-rarity-common: #7e7e7e;*/
+    --color-rarity-common: var(--color-cool-1);
+    --color-rarity-uncommon: #ff6400;
+    --color-rarity-rare: #0062ff;
+    --color-rarity-unique: #e127e1;
     
 /* Foundry2
 ====================================================== */
@@ -503,7 +503,10 @@ a.inline-roll {
     box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
 }
-
+.spellcasting-entry.preparation > .window-content ol.spell-list > li .item-name h4 > a:hover {
+    color: var(--green);
+    text-shadow: none;
+}
 
 /* Sheet
 ***********************************/
@@ -747,18 +750,18 @@ textarea {
     border: 1px dotted var(--color-cool-3-90);
 }
 #homebrew-settings section.window-content .form-group.language-rarity.common li:hover {
-    --rarity-common: var(--color-cool-1);
-    --tag-color: var(--rarity-common);
+    --color-rarity-common: var(--color-cool-1);
+    --tag-color: var(--color-rarity-common);
     background: var(--tag-color);
     color: var(--background);
 }
 #homebrew-settings section.window-content .form-group.language-rarity.uncommon li:hover {
-    --tag-color: var(--rarity-uncommon);
+    --tag-color: var(--color-rarity-uncommon);
     background: var(--tag-color);
     color: var(--background);
 }
 #homebrew-settings section.window-content .form-group.language-rarity.rare li:hover {
-    --tag-color: var(--rarity-rare);
+    --tag-color: var(--color-rarity-rare);
     background: var(--tag-color);
     color: var(--background);
 }
@@ -867,4 +870,25 @@ div.journal-sheet.window-app.pf2e-km .journal-page-content section.social span.m
 /*ITEM-PILES*/
 .item-piles-odd-color:nth-child(odd) {
     --item-piles-even-color: var(--color-cool-5-25);
+}
+
+
+/*xdy-pf2e-workbench*/
+/*https://github.com/xdy/xdy-pf2e-workbench/*/    
+.xdy-pf2e-workbench-rarity-common {
+    border-color: var(--color-cool-1);
+    color: var(--color-cool-1);
+}
+.xdy-pf2e-workbench-rarity-uncommon {
+    border-color: var(--color-rarity-uncommon);
+    color: var(--color-rarity-uncommon);
+}
+.xdy-pf2e-workbench-rarity-rare {
+    border-color: var(--color-rarity-rare);
+    color: var(--color-rarity-rare);
+}
+.xdy-pf2e-workbench-rarity-unique {
+    --color-rarity-unique: #e127e1;
+    border-color: var(--color-rarity-unique);
+    color: var(--color-rarity-unique);
 }

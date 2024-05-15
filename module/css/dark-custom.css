@@ -8,6 +8,12 @@
 	--border-radius: 3px;
     --glassy-shadow: var(--glassy) , var(--box-shadow);
 
+    /*--color-rarity-common: #7e7e7e;*/
+    --color-rarity-common: var(--color-cool-1);
+    --color-rarity-uncommon: #ff6400;
+    --color-rarity-rare: #0062ff;
+    --color-rarity-unique: #e127e1;
+
 /* Foundry2
 ====================================================== */
     --color-light-1: #f7f3e8;
@@ -60,6 +66,7 @@
     --color-level-warning-border: #b18404;
     --color-scrollbar: #5d142b;
     --color-scrollbar-border: #8d151b;
+
 }
 
 
