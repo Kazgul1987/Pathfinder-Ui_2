@@ -1,9 +1,13 @@
 # Patch Notes
 
 ## Compatibility
-- Ready for v11 version.
+- Ready for v12 version.
 
 
+## v12.327.601.1
+- Update core code.
+- fix roll mode selection.
+- Initial release v12.
 
 ## v11.315.5153.5
 - Update core code.
