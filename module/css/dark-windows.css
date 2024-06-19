@@ -174,8 +174,6 @@ h2 {
     left: 0;
 }
 .window-app form button:hover,
-/*.dialog-buttons button:hover,
-#support-details button:hover,*/
 .loot-actor-popup .confirm-button:hover,
 .package-configuration aside.sidebar .reset-all:hover {
     --input-text-color: var(--color-light-3);
@@ -288,7 +286,12 @@ select {
 #permissions-config .hint {
     color: var(--pfui-main-grey-color);
 }
-
+.standard-form .form-group > label {
+    color: var(--color-warm-1);
+}
+.standard-form .form-group > label:hover {
+    color: var(--green);
+}
 
 /* Package List
 ***********************************/
@@ -896,3 +899,4 @@ div.journal-sheet.window-app.pf2e-km .journal-page-content section.social span.m
     border-color: var(--color-rarity-unique);
     color: var(--color-rarity-unique);
 }
+

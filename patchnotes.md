@@ -4,7 +4,7 @@
 - Ready for v12 version.
 
 
-## v12.327.603.1
+## v12.327.603.2
 - Update core code.
 - fix traits dropdown.
 
