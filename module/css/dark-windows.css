@@ -544,7 +544,11 @@ textarea {
     text-shadow: var(--text-shadow);
 }
 .tagify__dropdown__wrapper {
-    background: var(--color-bg-option);
+    color: var(--pfui-main-color);
+    background: var(--background);
+    border: unset;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
     text-shadow: var(--text-shadow);
 }
 #compendium-browser > section.window-content > .content-box .spell-browser .filtercontainer, 

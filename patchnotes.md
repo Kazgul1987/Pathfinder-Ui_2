@@ -4,6 +4,10 @@
 - Ready for v12 version.
 
 
+## v12.327.603.1
+- Update core code.
+- fix traits dropdown.
+
 ## v12.327.601.1
 - Update core code.
 - fix roll mode selection.
