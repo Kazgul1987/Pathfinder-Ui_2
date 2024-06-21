@@ -121,6 +121,9 @@
 .dark-custom.sheet.journal-entry .pages-list .directory-item.active:first-of-type {
     border-top: none;
 }
+.dark-custom.sheet.journal-entry .directory .directory-item:is(.context, .active)::after {
+border: 1px solid transparent;
+}
 .dark-custom.sheet.journal-entry .pages-list .directory-item.active:last-of-type {
     border-bottom: 2px solid var(--custom-green-light);
 }

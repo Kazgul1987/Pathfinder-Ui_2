@@ -148,39 +148,24 @@ h2 {
 .pause-icon.pi-settings-save,
 .loot-actor-popup .confirm-button,
 .package-configuration aside.sidebar .reset-all {
-    font-family: 'Kurale', serif;
     font-weight: 600;
     color: var(--pfui-main-grey-color);
-    background: transparent;
-    border: none !important;
-    position: relative;
-    box-shadow: none;
-}
-
-.dialog-buttons button::before,
-#support-details button::before,
-.window-app form button::before,
-.pause-icon.pi-settings-save::before,
-.loot-actor-popup .confirm-button::before,
-.package-configuration aside.sidebar .reset-all::before {
-    position: absolute;
-    content: " ";
-    width: 100%;
-    height: 110%;
-    top: 0%;
-    background: url(../ui/buttons/btn-dnd5e-card_hover.webp);
-    background-size: 100% 100%;
-    z-index: -1;
-    left: 0;
+    background: var(--color-warm-3);
+    border: 1px solid transparent;
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
 }
 .window-app form button:hover,
 .loot-actor-popup .confirm-button:hover,
 .package-configuration aside.sidebar .reset-all:hover {
-    --input-text-color: var(--color-light-3);
-    color: var(--input-text-color);
-    background: url(../ui/buttons/btn-accept.webp);
-    background-size: 100% 100%;
-    box-shadow: unset;
+    border: none;
+    background: none;
+    background-color: var(--green) !important;
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15), inset 0 0 0 2px rgba(0, 0, 0, 0.4);
+    transition: text-shadow 0.15s ease-in-out, background-color 0.15s ease-in-out, border 0.15s ease-in-out, color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, backdrop-filter 0.15s ease-in-out, border-radius 0.15s;
+    text-shadow: var(--text-shadow) !important;
+    color: var(--background) !important;
+    border-radius: var(--border-radius);
 }
 .window-app .window-resizable-handle {
     --color-primary-3: #5d142b;
@@ -513,8 +498,16 @@ a.inline-roll {
 
 /* Sheet
 ***********************************/
-.tab.active[data-tab=appearance] fieldset > legend {
+.app.token-sheet .tab.active[data-tab=appearance] fieldset > legend {
     color: var(--color-cool-1);
+}
+.app.token-sheet .tab.active[data-tab=appearance] fieldset {
+    border: 1px dotted var(--color-cool-3);
+}
+form .form-group .form-fields string-tags > button,
+form .form-group .form-fields document-tags > button,
+form .form-group .form-fields file-picker > button {
+    color: var(--green);
 }
 form .form-group span.units {
     color: var(--color-cool-1);
@@ -716,7 +709,7 @@ textarea {
 .prosemirror menu button:hover,
 .prosemirror menu button.active {
     border: unset;
-    background: var(--color-warm-1-90);
+    background: var(--color-warm-1);
     color: var(--color-warm-5);
 }
 

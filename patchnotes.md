@@ -4,6 +4,10 @@
 - Ready for v12 version.
 
 
+## v12.327.604.1
+- Update Compatibility Foundry v12.
+- Update Compatibility PF2e v6.0.4.
+
 ## v12.327.603.2
 - Update core code.
 - fix traits dropdown.
