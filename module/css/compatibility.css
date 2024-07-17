@@ -2232,26 +2232,32 @@ nav.damage-log-nav .item.active:before,
 #pf2e-hud-persistent-main .group.stretch .bottom .shortcuts .shortcut-group .shortcut.empty,
 #pf2e-hud-persistent-main .group.stretch .bottom .shortcuts .shortcut-group .shortcut {
     background: var(--color-warm-5-90);
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(10px);
     border-radius: 10px;
     text-shadow: var(--text-shadow);
     color: var(--color-cool-1);
-    border: 1px solid var(--color-border-dark);
+    border: 1px solid var(--color-warm-5);
+    filter: drop-shadow(0px 1px 1px var(--color-warm-5-90));
+    box-shadow: var(--box-shadow);
 }
 
 #pf2e-hud-persistent #hotbar #macro-list, 
 #pf2e-hud-persistent #hotbar #hotbar-page-controls {
-    background: none;
     background: var(--color-warm-5-90);
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(10px);
     border-radius: 10px;
-    border: 1px solid var(--color-border-dark);
+    border: 1px solid var(--color-warm-5);
     text-shadow: var(--text-shadow);
     color: var(--color-cool-1);
+    filter: drop-shadow(0px 1px 1px var(--color-warm-5-90));
+    box-shadow: var(--box-shadow);
 }
 #pf2e-hud-persistent #action-bar:not(.collapsed)::before {
     background-image: none !important;
+    position: unset;
 }
+#pf2e-hud-sidebar .item.statistic:hover .skill,
+#pf2e-hud-sidebar .item:has(.image):hover,
 #pf2e-hud-persistent a:hover {
     text-shadow: var(--text-shadow);
     color: var(--color-warm-1);
@@ -2265,4 +2271,26 @@ nav.damage-log-nav .item.active:before,
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
     text-shadow: var(--text-shadow);
+}
+#pf2e-hud-sidebar .item-list {
+    background: var(--color-warm-5-90);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    border: 1px solid var(--color-warm-5);
+    text-shadow: var(--text-shadow);
+    color: var(--color-cool-1);
+    filter: drop-shadow(0px 1px 1px var(--color-warm-5-90));
+    box-shadow: var(--box-shadow);
+}
+#pf2e-hud-token-main.exploded .panel.bottom, 
+#pf2e-hud-token-main.exploded .panel.top,
+#pf2e-hud-token-main.exploded .panel.right,
+#pf2e-hud-token-main.exploded .panel.left {
+    background: var(--color-warm-5-90);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--color-warm-5);
+    text-shadow: var(--text-shadow);
+    color: var(--color-cool-1);
+    filter: drop-shadow(0px 1px 1px var(--color-warm-5-90));
+    box-shadow: var(--box-shadow);
 }
