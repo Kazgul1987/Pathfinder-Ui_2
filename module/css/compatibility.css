@@ -2222,4 +2222,7 @@ nav.damage-log-nav .item.active:before,
 #pf2e-hud-persistent #action-bar:not(.collapsed)::before {
     background-image: none !important;
     position: unset;
-  }
+}
+#interface:has(#pf2e-hud-tracker) #sidebar {
+    box-shadow: unset;
+}

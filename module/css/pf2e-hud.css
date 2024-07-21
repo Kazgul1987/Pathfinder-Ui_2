@@ -306,3 +306,22 @@ background: var(--green);
   --color-disabled: #ff6400;
   color: var(--color-disabled)!important;
 }
+
+/*Combat Tracker*/
+#pf2e-hud-tracker {
+  color: var(--pfui-main-color);
+  text-shadow: var(--text-shadow);
+  outline: 1px solid var(--color-cool-5);
+  border-radius: var(--border-radius);
+  background: var(--color-cool-5-75);
+  box-shadow: var(--box-shadow);
+  backdrop-filter: blur(10px);
+}
+
+/*ressources*/
+#pf2e-hud-resources .window-content {
+  color: var(--pfui-main-color);
+  text-shadow: var(--text-shadow);
+  border-radius: var(--border-radius);
+  backdrop-filter: blur(10px);
+}
