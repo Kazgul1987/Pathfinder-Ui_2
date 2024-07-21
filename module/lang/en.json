@@ -29,7 +29,10 @@
     "RPGUI.SETTINGS.TOKEN_EFFECT_HUD_HINT": "Makes effects circular and arranges them outside the token, or on the token ring for larger tokens",
 
     "RPGUI.SETTINGS.TOKEN_HUD": "Disable Dark PF2e Interactive Token Tooltip?",
-    "RPGUI.SETTINGS.TOKEN_HUD_HINT": "Disables the dark theme of PF2e Interactive Token Tooltip by default theme",
+    "RPGUI.SETTINGS.TOKEN_HUD_HINT": "Disables the dark theme of PF2e Interactive Token Tooltip and restores default theme",
+
+    "RPGUI.SETTINGS.PF2E_HUD": "Disable PF2e HUD Theme?",
+    "RPGUI.SETTINGS.PF2E_HUD_HINT": "Disable PF2e HUD theme and restores default theme",
 
     "RPGUI.SETTINGS.SIMPLY_PORTRAITS": "Portrait Size (px)",
     "RPGUI.SETTINGS.SIMPLY_PORTRAITS_HINT": "The width and height of chat portraits in the chat log, given in pixels. (Set 0 to hide portraits)",

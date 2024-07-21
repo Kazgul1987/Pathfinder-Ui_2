@@ -4,6 +4,11 @@
 - Ready for v12 version.
 
 
+## v12.329.610.1
+- Update compatibility with PF2e HUD :
+    - a option to enable/disable the new theme of PF2e HUD
+    - harmonization of colors to make it look more like ITT
+
 ## v12.328.604.1
 - Update compatibility with PF2e HUD.
 
