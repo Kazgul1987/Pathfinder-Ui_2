@@ -427,7 +427,7 @@ section.secret button.reveal {
     color:var(--pfui-main-color);
 }
 label.checkbox {
-    color: var(--color-text-dark-primary);
+    color: revert;
 }
 .prosemirror menu {
     background: unset;
