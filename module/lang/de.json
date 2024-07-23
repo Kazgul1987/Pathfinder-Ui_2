@@ -34,9 +34,6 @@
     "RPGUI.SETTINGS.SIMPLY_PORTRAITS": "Portrait Size (px)",
     "RPGUI.SETTINGS.SIMPLY_PORTRAITS_HINT": "The width and height of chat portraits in the chat log, given in pixels. (Set 0 to hide portraits)",
 
-    "RPGUI.SETTINGS.HIGHLIGHT_GM_OWNER_TEXT": "Constrast enhancement",
-    "RPGUI.SETTINGS.HIGHLIGHT_GM_OWNER_TEXT_HINT": "This is a local setting that will highlight text.",
-
     "RPGUI.SETTINGS.NAVIGATION": "Schalte die Navigation zurück in den horizontalen Modus",
     "RPGUI.SETTINGS.NAVIGATION_HINT": "Verwende diesen Schalter, wenn du die Combat Carousel-Integration nicht verwendest",
  

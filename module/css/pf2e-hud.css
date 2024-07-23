@@ -360,7 +360,7 @@ background: var(--green);
 #pf2e-hud-tracker .combatants .combatant.active {
   background: rgba(var(--disposition-color), 0.05);
   border-color: unset;
-  border: 1px solid rgb(var(--disposition-color));
+  border: 1px dotted rgb(var(--disposition-color));
 }
 #pf2e-hud-tracker .combatants .combatant .extras .initiative span {
   color: var(--color-warm-1)!important;
@@ -369,7 +369,7 @@ background: var(--green);
   color: var(--color-warm-1)!important;
 }
 #pf2e-hud-tracker .combatants .combatant .extras .health {
-  color: green;
+  color: var(--green);
 }
 
 /*ressources*/

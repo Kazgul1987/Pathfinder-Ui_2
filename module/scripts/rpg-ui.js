@@ -140,17 +140,6 @@ Hooks.on('init', () => {
 			location.reload();
 		}
 	});
-	game.settings.register('pathfinder-ui', 'highlightGmOwnerText', {
-		name: game.i18n.localize('RPGUI.SETTINGS.HIGHLIGHT_GM_OWNER_TEXT'),
-		hint: game.i18n.localize('RPGUI.SETTINGS.HIGHLIGHT_GM_OWNER_TEXT_HINT'),
-		scope: "client",
-		type: Boolean,
-		default: false,
-		config: true,
-		onChange: () => {
-			location.reload();
-		}
-	});
 	game.settings.register('pathfinder-ui', 'autoCollapseSceneNavigation', {
 		name: game.i18n.localize('RPGUI.SETTINGS.AUTO_COLLAPSE_SCENE_NAVIGATION_TEXT'),
 		hint: game.i18n.localize('RPGUI.SETTINGS.AUTO_COLLAPSE_SCENE_NAVIGATION_TEXT_HINT'),
@@ -234,9 +223,6 @@ function addClassByQuerySelector(className, selector) {
 }
 
 function rpgUIAddMainCss() {
-	if(game.settings.get('pathfinder-ui', 'highlightGmOwnerText')) { rpgUIAddOptionalCss() }
-
-
 	const head = document.getElementsByTagName("head")[0];
 	const mainCss = document.createElement("link");
 	mainCss.setAttribute("rel", "stylesheet")
@@ -303,15 +289,6 @@ function rpgUIAddCursor() {
 	head.insertBefore(mainCss, head.lastChild);
 }
 
-function rpgUIAddOptionalCss() {
-	const head = document.getElementsByTagName("head")[0];
-	const mainCss = document.createElement("link");
-	mainCss.setAttribute("rel", "stylesheet")
-	mainCss.setAttribute("type", "text/css")
-	mainCss.setAttribute("href", "modules/pathfinder-ui/css/optional.css")
-	mainCss.setAttribute("media", "all")
-	head.insertBefore(mainCss, head.lastChild);
-}
 
 Hooks.on('renderSidebarTab', async (object, html) => {
 	if (object instanceof Settings) {

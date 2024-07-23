@@ -911,7 +911,7 @@ hr {
 /*************************************************************/
 #fps {
     position: absolute;
-    right: -25px;
+    right: 0px;
     bottom: 7px;
     width: 60px;
     color: var(--color-warm-1);

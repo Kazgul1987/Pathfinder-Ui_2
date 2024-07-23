@@ -165,29 +165,6 @@
     border-radius: var(--border-radius);
 }
 
-#sidebar .directory .directory-item.folder .context {
-    background-color: var(--color-warm-3)!important;
-    border-radius: var(--border-radius-5);
-    border-top: 1px solid var(--color-warm-1);
-    border-bottom: 1px solid var(--color-warm-1);
-    box-shadow: 0px 0px 6px var(--color-warm-2), 0px 2px 8px 1px var(--color-warm-3);
-}
-#sidebar .directory .directory-item.context, 
-#sidebar .directory .directory-item.active {
-    background-color: var(--color-warm-3);
-    border-radius: var(--border-radius-5);
-    border-top: 1px solid var(--color-warm-1);
-    border-bottom: 1px solid var(--color-warm-1);
-    box-shadow: 0px 0px 6px var(--color-warm-2), 0px 2px 8px 1px var(--color-warm-3);
-}
-#sidebar .directory .directory-item .document-name:hover {
-    color: var(--green);
-}
-
-.system-pf2e .directory .directory-list {
-    padding: 0 0 0 5px;
-}
-
 .system-pf2e section.chat-sidebar .jump-to-bottom > a {
     color: var(--pfui-main-color);
     border-radius: 20px;
@@ -1081,13 +1058,45 @@ button.half-damage .fa-heart-broken::after {
 }
 
 /*COMBAT TRACKER*/
-#combat .threat-award > *, #combat-popout .threat-award > * {
-    color: var(--pfui-main-color);
+.system-pf2e .combat-sidebar #combat-tracker {
+    padding: 0 5px 0 5px;
+    backdrop-filter: blur(5px);
+}
+#combat .threat-award > *, 
+#combat-popout .threat-award > * {
+    color: var(--pfui-main-grey-color);
 }
 #combat .threat-award .threat .value.extreme,
 #combat-popout .threat-award .threat .value.extreme {
   color: orangered;
 }
+.system-pf2e .combat-sidebar .combat-tracker-header {
+    border-bottom: unset;
+}
+.system-pf2e .combat-sidebar li.combatant .token-name {
+    color: var(--color-cool-1);
+    text-shadow: var(--text-shadow);
+}
+.system-pf2e .directory .directory-item:is(.context, .active)::after {
+    border: unset;
+    border-radius: var(--border-radius-5);
+    border-top: 1px dotted var(--color-border-highlight);
+    border-bottom: 1px dotted var(--color-border-highlight);
+}
+.system-pf2e .combat-sidebar li.combatant .token-initiative {
+    color: var(--color-warm-1);
+    text-shadow: var(--text-shadow);
+}
+.system-pf2e .combat-sidebar #combat-controls {
+    color: var(--green);
+    text-shadow: var(--text-shadow);
+    border-top: unset;
+}
+.system-pf2e .combat-sidebar a:hover {
+    text-shadow: var(--text-shadow);
+    color: var(--color-warm-1) !important;
+}
+
 
 /*MYSTIFICATION ICON*/
 .fa-circle-question:before, .fa-question-circle:before {
