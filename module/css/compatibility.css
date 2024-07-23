@@ -505,69 +505,36 @@ li.hm_messagetaken {
 .minimal-ui-mode .new-logo {
     display: none!important;
 }
-.minimal-ui-mode #controls ol li.scene-control[data-control="combat-carousel"] {
-    width: var(--controlsw)!important;
-    height: var(--controlsh)!important;
+.minimal-ui-mode #navigation {
+    margin: 5px 0 0 25px;
 }
-.minimal-ui-mode #controls li[data-control="combat-carousel"]::after {
-    width: calc(var(--controlsw) - 10px)!important;
-    height: calc(var(--controlsh) - 10px)!important;
+.minimal-ui-mode #action-bar:not(.collapsed)::before {
+    background-image: none !important;
+    position: unset;
 }
-
-.minimal-ui-mode #ui-bottom > div {
-    justify-content: inherit!important;
+.minimal-ui-mode #hotbar #macro-list {
+    border: unset;
+    box-shadow: unset;
 }
-:root {
-    --hotbarvis: visible;
-    --hotbarypos: -5px;
-    --hotbarxpos: 500px;
-    --hotbarlh1: 24px;
-    --hotbarlh2: 8px;
-    --hotbarhv: -5px;
-    --hotbarmg: 0px;
-    --hotbarhh: 100%;
-    --hotbarshp: 0px;
+.minimal-ui-mode #hotbar .bar-controls {
+    box-shadow: var(--glassy);
+    background: var(--color-cool-5-50);
+    backdrop-filter: blur(10px);
+    border-radius: var(--border-radius);
+    text-shadow: var(--text-shadow);
+    color: var(--pfui-main-grey-color);
+    border: 1px solid var(--color-warm-5);
 }
-
-.minimal-ui-mode #hotbar {
-    left: var(--hotbarxpos);
-    bottom: var(--hotbarypos);
-    visibility: var(--hotbarvis);
-    transition: 0.5s ease-out 0.5s;
-    opacity: var(--opacity);
-    position: absolute;
+.minimal-ui-mode #hotbar .macro.inactive {
+    background: radial-gradient(var(--color-cool-4-90) -200%, var(--color-cool-5-90));
+    backdrop-filter: blur(5px);
+}
+.minimal-ui-mode a:hover {
+    color: var(--color-warm-1);
+    text-shadow: var(--text-shadow);
 }
 
-:root {
-    --playervis: hidden;
-    --playerfsize: 0px;
-    --playerfsizehv: 12px;
-    --playerwidthhv: 150px;
-    --playerslh: 20px;
-    --playerbennies: none;
-    --playerh3w: unset;
-    --playerbot: -8px;
-    --playerleft: -8px;
-    --playerpingdisplay: initial;
-}
 
-.minimal-ui-mode #players {
-    bottom: var(--playerbot);
-    left: var(--playerleft);
-    font-size: var(--playerfsize);
-    visibility: var(--playervis);
-    opacity: var(--opacity);
-    box-shadow:none;
-    position: absolute;
-    border: none;
-}
-
-.minimal-ui-mode #navigation #scene-list {
-    margin-left: 16px;
-}
-.minimal-ui-mode #controls ol.main-controls {
-    width: 60px;
-}
 
 
 

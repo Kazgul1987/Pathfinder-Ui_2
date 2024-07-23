@@ -109,7 +109,7 @@
 #pf2e-hud-persistent-main .group.stretch .bottom .shortcuts .shortcut-group .shortcut {
   display: grid;
   gap: 5px;
-   background: radial-gradient(var(--color-cool-4-90) -200%, var(--color-cool-5-90));
+  background: radial-gradient(var(--color-cool-4-90) -200%, var(--color-cool-5-90));
   backdrop-filter: blur(10px);
   border-radius: var(--border-radius);
   text-shadow: var(--text-shadow);
