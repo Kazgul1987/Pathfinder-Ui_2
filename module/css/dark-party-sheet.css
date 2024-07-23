@@ -676,3 +676,39 @@
 .dark-party-theme.sheet.party [data-tab=aftermath] .activities .member-activity .hint:hover {
     color: var(--red-light);
 }
+
+.dark-party-theme.sheet.party table {
+    border-top: unset;
+    border-bottom: unset;
+}
+
+
+/*Table*/
+.dark-party-theme.sheet.party table td, 
+.dark-party-theme.sheet.party table th, 
+.dark-party-theme.sheet.party table.pf2e table td, 
+.dark-party-theme.sheet.party table.pf2e table th, 
+.dark-party-theme.sheet.party table.pf2-table table td, 
+.dark-party-theme.sheet.party table.pf2-table table th {
+    padding: 4px 6px;
+}
+.dark-party-theme.sheet.party table th, 
+.dark-party-theme.sheet.party table.pf2e th, 
+.dark-party-theme.sheet.party table.pf2-table th {
+    color: var(--color-warm-1);
+    background-color: var(--color-cool-5);
+}
+.dark-party-theme.sheet.party table tr:nth-child(2n+1), 
+.dark-party-theme.sheet.party table.pf2e tr:nth-child(odd), 
+.dark-party-theme.sheet.party table.pf2-table tr:nth-child(odd) {
+    background-color: var(--color-cool-4);
+    --input-text-color: var(--color-light-3);
+    color: var(--input-text-color);
+    text-shadow: var(--text-shadow);
+}
+.dark-party-theme.sheet.party table tr:nth-child(even) {
+    background-color: unset;
+    --input-text-color: var(--color-light-3);
+    color: var(--input-text-color);
+    text-shadow: var(--text-shadow);
+}

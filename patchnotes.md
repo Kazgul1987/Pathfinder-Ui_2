@@ -4,6 +4,11 @@
 - Ready for v12 version.
 
 
+## v12.329.611.1
+- Update compatibility with PF2e HUD :
+    - attempt to improve PF2e HUD visual
+- Update compatibility with Reyzor Party Sheet Helper.
+
 ## v12.329.610.2
 - Update compatibility with PF2e HUD :
     - a option to enable/disable the new theme of PF2e HUD
