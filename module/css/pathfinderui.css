@@ -1105,6 +1105,29 @@ hr {
     background: url(../ui/frames/header.webp);
     background-size: 100% 45px;
 }
+.application button,
+.application a.button, 
+.dialog .dialog-buttons button.default {
+    font-weight: 600;
+    color: var(--pfui-main-grey-color);
+    background: var(--color-warm-3);
+    border: 1px solid transparent;
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+}
+.application button:hover,
+.application a.button:hover,
+.dialog-buttons button:hover,
+.dialog .dialog-buttons button.default:hover {
+    border: none;
+    background: none;
+    background-color: var(--green) !important;
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15), inset 0 0 0 2px rgba(0, 0, 0, 0.4);
+    transition: text-shadow 0.15s ease-in-out, background-color 0.15s ease-in-out, border 0.15s ease-in-out, color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, backdrop-filter 0.15s ease-in-out, border-radius 0.15s;
+    text-shadow: var(--text-shadow) !important;
+    color: var(--background) !important;
+    border-radius: var(--border-radius);
+}
 
 .dialog button,
 .folder-edit button {
@@ -1121,51 +1144,13 @@ hr {
 .folder-edit form .form-group label {
     color: var(--pfui-main-color)
 }
-
-.dialog button::before,
-.folder-edit button::before {
-    position: absolute;
-    content: " ";
-    width: 100%;
-    height: 110%;
-    top: 0%;
-    background: url(../ui/buttons/btn-dnd5e-card.webp);
-    background-size: 100% 100%;
-    z-index: -1;
-    left: 0;
-}
-
-.dialog button::after,
-.folder-edit button::after {
-    position: absolute;
-    content: " ";
-    width: 100%;
-    height: 130%;
-    top: -15%;
-    background: url(../ui/buttons/btn-accept.webp);
-    background-size: 100% 100%;
-    z-index: -1;
-    left: 0;
-    opacity: 0;
-    -webkit-transition: opacity 0.2s ease-in-out;
-    transition: opacity 0.2s ease-in-out;
-}
-
 .dialog .dialog-buttons {
     border: none;
 }
-
-.dialog button.default::before,
-.folder-edit button.default::before {
-    background: url(../ui/buttons/btn-dnd5e-card_hover.webp);
-    background-size: 100% 100%;
-}
-
 .dialog button:hover::after,
 .folder-edit button:hover::after {
     opacity: 1;
 }
-
 .dialog input,
 .folder-edit input {
     border: none;
@@ -1193,7 +1178,7 @@ hr {
 .dialog input:focus,
 .folder-edit input:focus {
     box-shadow: none;
-    outline: 2px solid #782e22;
+    outline: 1px solid #584a75;
 }
 input[type="checkbox"]:checked,
 input[type="radio"]:checked {

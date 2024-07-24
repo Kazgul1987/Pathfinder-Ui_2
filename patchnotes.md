@@ -4,7 +4,8 @@
 - Ready for v12 version.
 
 
-## v12.329.611.3
+## v12.329.611.4
+- Update core code.
 - Update Compatibility Foundry v12.
 - Update Compatibility PF2e v6.1.1.
     - removed Contrast Enhancement option as it had become unnecessary over time.

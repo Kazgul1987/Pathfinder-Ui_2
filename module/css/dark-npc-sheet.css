@@ -396,12 +396,14 @@ text-shadow: var(--text-shadow);
 text-shadow: var(--text-shadow);
     border-radius: var(--border-radius);
 }
-.dark-npc-theme.actor.npc .wealth {
+.dark-npc-theme.actor.npc form .sheet-body .tab.inventory.active .coinage .wealth, 
+.dark-npc-theme.actor.npc form .sheet-body .tab.inventory.active header {
+    background: var(--primary-background);
+    background: linear-gradient(45deg, var(--color-cool-4), var(--color-cool-5-75));
     border: none;
-    background: none;
     background-color: var(--glass-bg);
     box-shadow: var(--box-shadow);
-text-shadow: var(--text-shadow);
+    text-shadow: 0 0 3px black;
     border-radius: var(--border-radius);
 }
 .dark-npc-theme.actor.npc section.window-content .wealth h3.item-name {
@@ -656,16 +658,16 @@ text-shadow: var(--text-shadow);
     text-shadow: var(--text-shadow)!important;
     color: var(--background)!important;
 }
-.dark-npc-theme.actor.npc form ol.spell-list > li .cast-spell button {
+.dark-npc-theme.actor.npc form ol.spell-list > li button.cast-spell {
     color: var(--pfui-main-color);
     text-transform: uppercase;
-    --secondary: var(--color-cool-3);
+    --color-pf-secondary: var(--color-cool-3);
     border: 1px solid black;
     box-shadow: var(--box-shadow);
     text-shadow: var(--text-shadow);
     border-radius: var(--border-radius);
 }
-.dark-npc-theme.actor.npc form ol.spell-list > li .cast-spell button:hover {
+.dark-npc-theme.actor.npc form ol.spell-list > li button.cast-spell:hover {
     border: 1px solid black;
     background: none;
     background-color: var(--green);
@@ -678,13 +680,13 @@ text-shadow: var(--text-shadow);
 .dark-npc-theme.actor.npc form ol.spell-list > li[data-expended-state=true] h4 {
     color: #ff6400;
 }
-.dark-npc-theme.actor.npc form ol.spell-list > li[data-slot-expended] button.cast-spell {
+.dark-npc-theme.actor.npc form ol.spell-list > li.spell[data-slot-expended] button.cast-spell {
     background: var(--color-cool-5);
     color: var(--red-light);
     text-shadow: 0 0 8px var(--color-shadow-primary);
     box-shadow: inset 0 0 0 1px rgba(255, 0, 0, 0.5);
 }
-.dark-npc-theme.actor.npc form ol.spell-list > li[data-slot-expended] button.cast-spell:hover {
+.dark-npc-theme.actor.npc form ol.spell-list > li.spell[data-slot-expended] button.cast-spell:hover {
     background: var(--red-light);
     color:  var(--color-cool-5);
     box-shadow: inset 0 0 0 1px  var(--color-cool-5);

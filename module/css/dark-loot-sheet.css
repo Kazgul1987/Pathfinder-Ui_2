@@ -269,14 +269,6 @@
     text-shadow: 0 0 1px black;
     border-radius: var(--border-radius);
 }
-.dark-loot-theme.sheet.actor.loot .wealth {
-    border: none;
-    background: none;
-    background-color: var(--glass-bg);
-    box-shadow: var(--box-shadow);
-    text-shadow: 0 0 3px black;
-    border-radius: var(--border-radius);
-}
 .dark-loot-theme.sheet.actor.loot .wealth h3.item-name {
     color: var(--pfui-main-color);
 }
@@ -293,6 +285,11 @@
 }
 .dark-loot-theme.sheet.actor.loot form section.content .inventory .wealth {
     background: linear-gradient(45deg, var(--color-cool-4), var(--color-cool-5-75));
+    border: none;
+    background-color: var(--glass-bg);
+    box-shadow: var(--box-shadow);
+    text-shadow: 0 0 3px black;
+    border-radius: var(--border-radius);
 }
 .dark-loot-theme.sheet.actor.loot .window-content .inventory .inventory-list > header, 
 .dark-loot-theme.sheet.actor.loot .window-content .inventory .total-bulk {
