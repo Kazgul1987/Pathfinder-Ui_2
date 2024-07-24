@@ -4,7 +4,7 @@
 - Ready for v12 version.
 
 
-## v12.329.611.4
+## v12.329.611.5
 - Update core code.
 - Update Compatibility Foundry v12.
 - Update Compatibility PF2e v6.1.1.

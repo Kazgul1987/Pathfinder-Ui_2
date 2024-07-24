@@ -1107,6 +1107,7 @@ hr {
 }
 .application button,
 .application a.button, 
+.roll-modifiers-dialog .roll,
 .dialog .dialog-buttons button.default {
     font-weight: 600;
     color: var(--pfui-main-grey-color);
@@ -1118,6 +1119,7 @@ hr {
 .application button:hover,
 .application a.button:hover,
 .dialog-buttons button:hover,
+.roll-modifiers-dialog .roll:hover,
 .dialog .dialog-buttons button.default:hover {
     border: none;
     background: none;
@@ -1186,10 +1188,6 @@ input[type="radio"]:checked {
 }
 input[type="checkbox"]:checked:hover {
     accent-color: var(--color-warm-2);
-}
-.roll-modifiers-dialog .roll {
-    color: var(--text-light);
-    background-color: unset;
 }
 
 .dialog select,

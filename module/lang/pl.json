@@ -28,11 +28,11 @@
     "RPGUI.SETTINGS.TOKEN_EFFECT_HUD": "Dostosować efekty tokenów do HUD?",
     "RPGUI.SETTINGS.TOKEN_EFFECT_HUD_HINT": "Sprawia, że efekty są okrągłe i układa je poza tokenem lub na pierścieniu tokena w przypadku większych tokenów.",
 
-    "RPGUI.SETTINGS.TOKEN_HUD": "Disable Dark PF2e Interactive Token Tooltip?",
-    "RPGUI.SETTINGS.TOKEN_HUD_HINT": "Disables the dark theme of PF2e Interactive Token Tooltip and restores default theme",
+    "RPGUI.SETTINGS.TOKEN_HUD": "Wyłączyć Ciemny PF2e Interactive Token Tooltip?",
+    "RPGUI.SETTINGS.TOKEN_HUD_HINT": "Wyłącza ciemny motyw PF2e Interactive Token Tooltip i przywraca domyślny motyw.",
 
-    "RPGUI.SETTINGS.PF2E_HUD": "Disable PF2e HUD Theme?",
-    "RPGUI.SETTINGS.PF2E_HUD_HINT": "Disable PF2e HUD theme and restores default theme",
+    "RPGUI.SETTINGS.PF2E_HUD": "Wyłączyć motyw PF2e HUD?",
+    "RPGUI.SETTINGS.PF2E_HUD_HINT": "Wyłącza motyw PF2e HUD i przywraca domyślny motyw",
 
     "RPGUI.SETTINGS.SIMPLY_PORTRAITS": "Rozmiar portretu (px)",
     "RPGUI.SETTINGS.SIMPLY_PORTRAITS_HINT": "Szerokość i wysokość portretów czatu w dzienniku czatu, podana w pikselach. (Ustaw 0, aby ukryć portrety)",
