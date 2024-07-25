@@ -4,6 +4,12 @@
 - Ready for v12 version.
 
 
+## v12.330.611.1
+- Update core code.
+- Update Compatibility Foundry v12.
+- Update compatibility with PF2e HUD
+- fix some errors and added of others.
+
 ## v12.329.611.5
 - Update core code.
 - Update Compatibility Foundry v12.

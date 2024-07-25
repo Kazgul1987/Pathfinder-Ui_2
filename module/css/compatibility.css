@@ -2193,3 +2193,40 @@ nav.damage-log-nav .item.active:before,
 #interface:has(#pf2e-hud-tracker) #sidebar {
     box-shadow: unset;
 }
+/*Other*/
+.chat-message.message .pf2e-hud-rk .rk .header {
+    color: var(--pfui-main-color);
+    text-shadow: var(--text-shadow);
+}
+  .chat-message.message .pf2e-hud-rk .rk {
+    color: var(--pfui-main-grey-color);
+    background: repeating-linear-gradient(var(--color-cool-3) 0 var(--row-height), var(--color-cool-4-90) var(--row-height) calc(var(--row-height) * 2));
+    text-shadow: var(--text-shadow);
+}
+.chat-message.message .pf2e-hud-rk .rk-skills .header {
+    color: var(--pfui-main-color);
+    text-shadow: var(--text-shadow);
+}
+.chat-message.message .pf2e-hud-rk .rk-skills {
+    color: var(--pfui-main-grey-color);
+    background: repeating-linear-gradient(var(--color-cool-3) 0 var(--row-height), var(--color-cool-4-90) var(--row-height) calc(var(--row-height) * 2));
+    text-shadow: var(--text-shadow);
+}
+.chat-message.message .pf2e-hud-rk .rk-lores .header {
+    color: var(--pfui-main-color);
+    text-shadow: var(--text-shadow);
+}
+.chat-message.message .pf2e-hud-rk .rk-lores {
+    color: var(--pfui-main-grey-color);
+    background: repeating-linear-gradient(var(--color-cool-3) 0 var(--row-height), var(--color-cool-4-90) var(--row-height) calc(var(--row-height) * 2));
+    text-shadow: var(--text-shadow);
+}
+.chat-message.message .pf2e-hud-rk .rk-lores-rolls .header {
+    color: var(--pfui-main-color);
+    text-shadow: var(--text-shadow);
+}
+.chat-message.message .pf2e-hud-rk .rk-lores-rolls {
+    color: var(--pfui-main-grey-color);
+    background: repeating-linear-gradient(var(--color-cool-3) 0 var(--row-height), var(--color-cool-4-90) var(--row-height) calc(var(--row-height) * 2));
+    text-shadow: var(--text-shadow);
+}

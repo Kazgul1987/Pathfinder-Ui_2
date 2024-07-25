@@ -427,6 +427,22 @@
     box-shadow: var(--box-shadow);
     text-shadow: var(--text-shadow);
 }
+.actor.sheet.character.dark-theme section.window-content .crb-style .sheet-body .sheet-content > .tab.active.actions ol.actions-list li.strike .auxiliary-actions button select.modular {
+    border: none;
+    text-shadow: var(--text-shadow);
+    color: revert;
+    box-shadow: none;
+}
+.actor.sheet.character.dark-theme section.window-content .crb-style .sheet-body .sheet-content > .tab.active.actions ol.actions-list li.strike .auxiliary-actions button select.modular:hover {
+    color: var(--text-light);
+}
+.actor.sheet.character section.window-content .crb-style .sheet-body .sheet-content > .tab.active.actions ol.actions-list li.strike .auxiliary-actions button select.modular option {
+    background: var(--color-cool-5);
+    box-shadow: var(--box-shadow);
+    border: none;
+    color: var(--pfui-main-color);
+    border-radius: var(--border-radius);
+}
 .actor.sheet.character.dark-theme input {
     color: var(--pfui-main-color) !important;
     background: transparent;
@@ -1286,7 +1302,13 @@ color: var(--green)!important;
 .remaster.actor.sheet.character.dark-theme input {
     color: var(--primary-remaster) !important;
 }
-.remaster.actor.sheet.character section.window-content .crb-style .sheet-body .sheet-content .tab.character .character-details .alignment select {
+.remaster.actor.sheet.character.dark-theme section.window-content .crb-style .sheet-body .sheet-content > .tab.active.crafting li.known-formulas ol.formula-list li.formula-level-header.formula-level-header .formula-number, 
+.remaster.actor.sheet.character.dark-theme section.window-content .crb-style .sheet-body .sheet-content > .tab.active.crafting li.known-formulas ol.formula-list li.formula-item.formula-level-header .formula-number, 
+.remaster.actor.sheet.character.dark-theme section.window-content .crb-style .sheet-body .sheet-content > .tab.active.crafting li.crafting-entry ol.formula-list li.formula-level-header.formula-level-header .formula-number, 
+.remaster.actor.sheet.character.dark-theme section.window-content .crb-style .sheet-body .sheet-content > .tab.active.crafting li.crafting-entry ol.formula-list li.formula-item.formula-level-header .formula-number {
+    color: var(--primary-remaster);
+}
+.remaster.actor.sheet.character.dark-theme section.window-content .crb-style .sheet-body .sheet-content .tab.character .character-details .alignment select {
     color: var(--primary-remaster) !important;
 }
 .remaster.actor.sheet.character.dark-theme section.window-content .crb-style .sheet-body .sheet-content h3.header {
