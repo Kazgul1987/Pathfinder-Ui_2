@@ -4,6 +4,10 @@
 - Ready for v12 version.
 
 
+## v12.330.612.1
+- Update Compatibility PF2e v6.1.2.
+- Update compatibility with Monk's Tokenbar and the Dark Windows option.
+
 ## v12.330.611.1
 - Update core code.
 - Update Compatibility Foundry v12.

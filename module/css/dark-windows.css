@@ -903,3 +903,58 @@ div.journal-sheet.window-app.pf2e-km .journal-page-content section.social span.m
     color: var(--color-rarity-unique);
 }
 
+/*Monk's TokenBar*/
+.monks-tokenbar .sheet .items-list .item-name h3, 
+.monks-tokenbar .sheet .items-list .item-name h4 {
+    color: var(--pfui-main-grey-color);
+}
+#requestsavingthrow .request-grid > div {
+    color: var(--pfui-main-grey-color);
+}
+#requestsavingthrow .request-header {
+    color:var(--color-warm-1);
+}
+.monks-tokenbar .sheet .items-list .items-header {
+    color: var(--color-cool-1);
+    border: unset;
+    text-shadow: var(--text-shadow);
+}
+.monks-tokenbar a:hover {
+    color: var(--color-warm-1);
+    text-shadow: var(--text-shadow);
+}
+#requestsavingthrow .request-grid > div.selected, 
+#requestsavingthrow .request-grid > div:hover {
+    --input-background-color: var(--color-cool-4);
+    --input-border-color: transparent;
+    --input-text-color: var(--color-light-3);
+    background: var(--input-background-color);
+    border: 1px solid var(--input-border-color);
+    outline: 1px solid transparent;
+    color: var(--input-text-color);
+    --input-box-shadow: none;
+    box-shadow: var(--input-box-shadow);
+    border-radius: 4px;
+    user-select: text;
+    transition: outline-color 0.5s;
+}
+#requestsavingthrow .request-grid > div.selected {
+    --input-background-color: var(--color-cool-4);
+    --input-border-color: transparent;
+    --input-text-color: var(--color-light-3);
+    background: var(--input-background-color);
+    border: 1px solid var(--input-border-color);
+    outline: 1px solid transparent;
+    color: var(--input-text-color);
+    --input-box-shadow: none;
+    box-shadow: var(--input-box-shadow);
+    border-radius: 4px;
+    user-select: text;
+    transition: outline-color 0.5s;
+    box-shadow: none;
+    outline: 1px solid #584a75;
+}
+.monks-tokenbar .sheet select {
+    border: 0;
+    background: var(--rpg-styled-ui-color);
+}
