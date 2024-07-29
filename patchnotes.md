@@ -4,9 +4,10 @@
 - Ready for v12 version.
 
 
-## v12.330.613.1
+## v12.330.613.2
 - Update core code.
 - (WIP) add compatibility with Macro Manager module.
+- fix some errors and added of others.
 
 ## v12.330.612.1
 - Update Compatibility PF2e v6.1.2.

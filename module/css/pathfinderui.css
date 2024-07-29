@@ -1110,6 +1110,7 @@ hr {
 .application button,
 .application a.button, 
 .roll-modifiers-dialog .roll,
+.dialog .dialog-buttons button,
 .dialog .dialog-buttons button.default,
 .dialog .dialog-buttons button:last-child {
     font-family: 'Kurale', serif;
