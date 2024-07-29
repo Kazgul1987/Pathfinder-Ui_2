@@ -148,6 +148,7 @@ h2 {
 .roll-modifiers-dialog .roll,
 .pause-icon.pi-settings-save,
 .loot-actor-popup .confirm-button,
+.dialog .dialog-buttons button:last-child,
 .package-configuration aside.sidebar .reset-all {
     font-weight: 600;
     color: var(--pfui-main-grey-color);

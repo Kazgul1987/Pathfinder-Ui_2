@@ -1105,22 +1105,30 @@ hr {
     background: url(../ui/frames/header.webp);
     background-size: 100% 45px;
 }
+.dialog button, 
+.folder-edit button,
 .application button,
 .application a.button, 
 .roll-modifiers-dialog .roll,
-.dialog .dialog-buttons button.default {
+.dialog .dialog-buttons button.default,
+.dialog .dialog-buttons button:last-child {
+    font-family: 'Kurale', serif;
     font-weight: 600;
     color: var(--pfui-main-grey-color);
     background: var(--color-warm-3);
     border: 1px solid transparent;
+    text-shadow: var(--text-shadow);
     box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
 }
+.dialog button:hover, 
+.folder-edit button:hover,
 .application button:hover,
 .application a.button:hover,
 .dialog-buttons button:hover,
 .roll-modifiers-dialog .roll:hover,
-.dialog .dialog-buttons button.default:hover {
+.dialog .dialog-buttons button.default:hover,
+.dialog .dialog-buttons button:last-child:hover {
     border: none;
     background: none;
     background-color: var(--green) !important;
@@ -1130,21 +1138,10 @@ hr {
     color: var(--background) !important;
     border-radius: var(--border-radius);
 }
-.dialog button,
-.folder-edit button {
-    font-family: 'Kurale', serif;
-    font-weight: 600;
-    color: var(--rpg-styled-ui-color);
-    border: none !important;
-    position: relative;
-    text-shadow: var(--text-shadow);
-    box-shadow: var(--glassy);
-    border-radius: var(--border-radius);
-}
 
 .folder-edit form .form-group label,
 .folder-edit form .form-group label {
-    color: var(--pfui-main-color)
+    color: var(--pfui-main-color);
 }
 .dialog .dialog-buttons {
     border: none;
@@ -1191,7 +1188,8 @@ input[type="checkbox"]:checked:hover {
 }
 
 .dialog select,
-.folder-edit select {
+.folder-edit select,
+#generate-check-prompt .dialog-content tags.tagify {
     border: 0;
     background: var(--rpg-styled-ui-color);
 }
