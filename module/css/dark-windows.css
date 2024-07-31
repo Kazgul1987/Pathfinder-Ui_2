@@ -22,6 +22,8 @@
 	--primary-remaster: hsl(153, 100%, 8%);
 	--primary-light-remaster: hsl(170, 96%, 19%);
     
+    --ornamentation-gray: url(data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='33' height='33' overflow='scroll'%3E%3Cstyle%3E.st1%7Bstroke:%23231f20;stroke-miterlimit:10%7D.st1,.st2%7Bfill:none%7D%3C/style%3E%3Cg opacity='.25'%3E%3Cpath class='st1' d='M.5 20v-7'/%3E%3Cpath class='st2' d='M13 20v-7'/%3E%3Cpath class='st1' d='M13 .5h7'/%3E%3Cpath class='st2' d='M13 13h7'/%3E%3Cpath class='st1' d='M32.5 13v7'/%3E%3Cpath class='st2' d='M20 13v7'/%3E%3Cpath class='st1' d='M20 32.5h-7'/%3E%3Cpath class='st2' d='M20 20h-7'/%3E%3Cg%3E%3Cpath class='st1' d='M.5.5h3.1v3.1H.5zM3.6 3.6h3.1v3.1H3.6zM6.8 3.6h3.1v3.1H6.8zM3.6 6.8h3.1v3.1H3.6zM3.6 6.8H.5V13M13 .5H6.8v3.1'/%3E%3C/g%3E%3Cg%3E%3Cpath class='st1' d='M29.4.5h3.1v3.1h-3.1zM26.3 3.6h3.1v3.1h-3.1zM26.3 6.8h3.1v3.1h-3.1zM23.1 3.6h3.1v3.1h-3.1zM26.3 3.6V.5H20'/%3E%3Cpath class='st1' d='M32.5 13V6.8h-3.1'/%3E%3C/g%3E%3Cg%3E%3Cpath class='st1' d='M29.4 29.4h3.1v3.1h-3.1z'/%3E%3Cpath class='st1' d='M26.3 26.3h3.1v3.1h-3.1zM23.1 26.3h3.1v3.1h-3.1zM26.3 23.1h3.1v3.1h-3.1z'/%3E%3Cpath class='st1' d='M29.4 26.3h3.1V20M20 32.5h6.3v-3.1'/%3E%3C/g%3E%3Cg%3E%3Cpath class='st1' d='M.5 29.4h3.1v3.1H.5zM3.6 26.3h3.1v3.1H3.6zM3.6 23.1h3.1v3.1H3.6zM6.8 26.3h3.1v3.1H6.8z'/%3E%3Cpath class='st1' d='M6.8 29.4v3.1H13M.5 20v6.3h3.1'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E);
+    
     --ornement : url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='33' height='33' overflow='scroll'%3E%3Cstyle%3E.st1{stroke:wheat;stroke-miterlimit:10}.st1,.st2{fill:none}%3C/style%3E%3Cg opacity='0.75'%3E%3Cpath class='st1' d='M.5 20v-7'/%3E%3Cpath class='st2' d='M13 20v-7'/%3E%3Cpath class='st1' d='M13 .5h7'/%3E%3Cpath class='st2' d='M13 13h7'/%3E%3Cpath class='st1' d='M32.5 13v7'/%3E%3Cpath class='st2' d='M20 13v7'/%3E%3Cpath class='st1' d='M20 32.5h-7'/%3E%3Cpath class='st2' d='M20 20h-7'/%3E%3Cpath class='st1' d='M.5.5h3.1v3.1H.5zm3.1 3.1h3.1v3.1H3.6zm3.2 0h3.1v3.1H6.8zM3.6 6.8h3.1v3.1H3.6zm0 0H.5V13M13 .5H6.8v3.1M29.4.5h3.1v3.1h-3.1zm-3.1 3.1h3.1v3.1h-3.1zm0 3.2h3.1v3.1h-3.1zm-3.2-3.2h3.1v3.1h-3.1zm3.2 0V.5H20M32.5 13V6.8h-3.1M29.4 29.4h3.1v3.1h-3.1z'/%3E%3Cpath class='st1' d='M26.3 26.3h3.1v3.1h-3.1zm-3.2 0h3.1v3.1h-3.1zm3.2-3.2h3.1v3.1h-3.1z'/%3E%3Cpath class='st1' d='M29.4 26.3h3.1V20M20 32.5h6.3v-3.1'/%3E%3Cg%3E%3Cpath class='st1' d='M.5 29.4h3.1v3.1H.5zm3.1-3.1h3.1v3.1H3.6zm0-3.2h3.1v3.1H3.6zm3.2 3.2h3.1v3.1H6.8zM6.8 29.4v3.1H13M.5 20v6.3h3.1'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 
     --primary: var(--red);
@@ -150,7 +152,9 @@ h2 {
 .loot-actor-popup .confirm-button,
 .dialog .dialog-buttons button,
 .dialog .dialog-buttons button:last-child,
-.package-configuration aside.sidebar .reset-all {
+.package-configuration aside.sidebar .reset-all,
+#module-management .package-list .package .package-overview .tag.expand,
+.attribute-builder .window-content .summary-row button.complete {
     font-weight: 600;
     color: var(--pfui-main-grey-color);
     background: var(--color-warm-3);
@@ -201,6 +205,9 @@ h2 {
 .actor.npc.sheet form .sheet-body .footer button.spellcasting-create::before {
     background: unset;
 }
+.app.tag-selector form > footer {
+    border: unset;
+}
 nav.list-filters a.filter {
     border-bottom: 2px solid var(--color-warm-2);
 }
@@ -217,7 +224,8 @@ input[type="text"],
 input[type="number"],
 input[type="search"],
 input[type="password"],
-.directory .directory-header .header-search input {
+.directory .directory-header .header-search input,
+.attribute-builder .window-content .summary-row .row-column input {
     --input-background-color: var(--color-cool-4);
     --input-border-color: transparent;
     --input-text-color: var(--color-light-3);
@@ -295,6 +303,12 @@ select {
 .package-list .package {
     border-bottom: 1px dotted var(--color-cool-4);
 }
+.package-list .package:hover {
+    color: var(--pfui-main-color);
+    background: var(--color-cool-4-90);
+}
+/* Module Management +
+***********************************/
 #module-management .package-list .package-title {
     color: var(--pfui-main-grey-color);
 }
@@ -304,7 +318,12 @@ select {
 #module-management .package-list .package-metadata {
     color: var(--color-cool-2);
 }
-
+#module-management .package-list,
+#module-management nav.list-filters button,
+#module-management nav.list-filters input, 
+#module-management nav.list-filters select {
+    border: 1px solid transparent;
+}
 
 /* Keybinding
 ***********************************/
@@ -416,14 +435,20 @@ input[type="color"][data-edit] {
 .actor.sheet.character section.window-content .crb-style .sheet-body .sheet-content > .tab.active.proficiencies ul.proficiencies-list li .name {
     color: unset;
 }
+.actor.sheet section.window-content form.crb-style section.major > header button, 
+.actor.sheet section.window-content form.crb-style section.major > .subsection > header button {
+    background: unset;
+    color: unset;
+    box-shadow: unset;
+}
 .sheet.party header.content-header button:hover,
 .actor.sheet section.window-content form.crb-style section.major > header button:hover, 
 .actor.sheet section.window-content form.crb-style section.major > .subsection > header button:hover,
 .actor.sheet.character section.window-content .crb-style aside .sidebar header button:hover,
 .sheet.actor.loot form section.sidebar .gm-settings .loot-distribution button:hover {
-    background: var(--green) !important;
-    color: var(--background) !important;
-    box-shadow: var(--box-shadow) !important;
+    background: var(--green);
+    color: var(--background);
+    box-shadow: var(--box-shadow);
     filter: none;
 }
 .actor.sheet section.window-content .currency li > button::before {
@@ -905,6 +930,9 @@ div.journal-sheet.window-app.pf2e-km .journal-page-content section.social span.m
     border-color: var(--color-rarity-unique);
     color: var(--color-rarity-unique);
 }
+
+/*Module Management+*/
+
 
 /*Monk's TokenBar*/
 .monks-tokenbar .sheet .items-list .item-name h3, 

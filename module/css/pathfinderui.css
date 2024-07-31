@@ -1112,8 +1112,8 @@ hr {
 .roll-modifiers-dialog .roll,
 .dialog .dialog-buttons button,
 .dialog .dialog-buttons button.default,
-.dialog .dialog-buttons button:last-child {
-    font-family: 'Kurale', serif;
+.dialog .dialog-buttons button:last-child,
+.application .window-header button.header-control {
     font-weight: 600;
     color: var(--pfui-main-grey-color);
     background: var(--color-warm-3);
@@ -1129,7 +1129,8 @@ hr {
 .dialog-buttons button:hover,
 .roll-modifiers-dialog .roll:hover,
 .dialog .dialog-buttons button.default:hover,
-.dialog .dialog-buttons button:last-child:hover {
+.dialog .dialog-buttons button:last-child:hover,
+.application .window-header button.header-control:hover {
     border: none;
     background: none;
     background-color: var(--green) !important;

@@ -194,13 +194,11 @@
     border-image-outset: 1px 2px 2px 2px;
     border-radius: 0;
 }
-
 .system-pf2e .sheet.actor .window-header,
 .system-pf2e .sheet.item .window-header {
     border: none;
     color: var(--pfui-main-color);
 }
-
 .system-pf2e .sheet.actor:not(.loot-sheet-npc) .window-header::after,
 .system-pf2e .sheet.item .window-header::after {
     position: absolute;

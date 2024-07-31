@@ -4,9 +4,11 @@
 - Ready for v12 version.
 
 
-## v12.330.613.2
+## v12.330.613.3
 - Update core code.
-- (WIP) add compatibility with Macro Manager module.
+- add compatibility with Macro Manager module.
+- Update compatibility with PF2e HUD.
+- Update compatibility with Module Management +.
 - fix some errors and added of others.
 
 ## v12.330.612.1
