@@ -2078,7 +2078,6 @@ nav.damage-log-nav .item.active:before,
     background: none;
     background-color: var(--glass-bg);
     box-shadow: var(--glassy);
-    box-shadow: var(--box-shadow-light);
     backdrop-filter: blur(5px);
     color: var(--text-color-1);
     text-shadow: 0px 1px 2px black;
@@ -2092,6 +2091,9 @@ nav.damage-log-nav .item.active:before,
     background: var(--primary);
     text-shadow: 0px 1px 2px black !important;
     border-radius: var(--border-radius);
+}
+.quick-insert-result li a {
+    color: var(--text-color-1);
 }
 .quick-insert-result li a:hover {
     background: none;

@@ -4,6 +4,9 @@
 - Ready for v12 version.
 
 
+## v12.330.620.1
+- Update compatibility with Quick Insert.
+
 ## v12.330.613.3
 - Update core code.
 - add compatibility with Macro Manager module.
