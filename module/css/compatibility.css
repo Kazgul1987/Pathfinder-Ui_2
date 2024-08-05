@@ -164,7 +164,9 @@
 /* Babele */
 /* https://gitlab.com/riccisi/foundryvtt-babele */
 #actor-translate-log {
-    color: var(--main-text-very-light-color)
+    color: var(--green);
+    text-shadow: var(--text-shadow);
+    background: unset;
 }
 
 

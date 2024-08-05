@@ -570,6 +570,37 @@ textarea {
 .sheet.actor.loot form .sheet-header input {
     color: var(--color-text-dark-input);
 }
+.app.choice-set-prompt .window-content .choices .drop-zone span {
+    color: var(--pfui-main-grey-color);
+}
+.app.choice-set-prompt .window-content .choices .drop-zone span:hover {
+    color: var(--background) !important;
+}
+.app.choice-set-prompt .window-content .choices button.with-image,
+.app.choice-set-prompt .window-content .choices .drop-zone.with-image,
+.app.choice-set-prompt .window-content .choices button:not(.with-image),
+.app.choice-set-prompt .window-content .choices .drop-zone:not(.with-image),
+.app.choice-set-prompt .window-content .choices .choice-buttons .choice a.item-info {
+    color: var(--pfui-main-grey-color);
+    background: var(--color-warm-3);
+    border: 1px solid transparent;
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+}
+.app.choice-set-prompt .window-content .choices button.with-image:hover,
+.app.choice-set-prompt .window-content .choices .drop-zone.with-image:hover,
+.app.choice-set-prompt .window-content .choices button:not(.with-image):hover,
+.app.choice-set-prompt .window-content .choices .drop-zone:not(.with-image):hover,
+.app.choice-set-prompt .window-content .choices .choice-buttons .choice a.item-info:hover {
+    border: none;
+    background: none;
+    background-color: var(--green) !important;
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15), inset 0 0 0 2px rgba(0, 0, 0, 0.4);
+    transition: text-shadow 0.15s ease-in-out, background-color 0.15s ease-in-out, border 0.15s ease-in-out, color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, backdrop-filter 0.15s ease-in-out, border-radius 0.15s;
+    text-shadow: var(--text-shadow) !important;
+    color: var(--background) !important;
+    border-radius: var(--border-radius);
+}
 .app.choice-set-prompt .window-content .choices.select-menu tags .tagify__input {
     border: 0;
     background: var(--rpg-styled-ui-color);
@@ -630,6 +661,12 @@ textarea {
     background-color: var(--green);
     border: 1px solid lightgreen;
     box-shadow: var(--box-shadow-light);
+}
+#compendium-browser > section.window-content > .content-box .spell-browser ul.result-list > li:hover, 
+#license-viewer > section.window-content > .content-box .spell-browser ul.result-list > li:hover {
+    color: var(--green);
+    background: radial-gradient(var(--background-2), transparent);
+    text-shadow: var(--text-shadow);
 }
 .pf2e.item.sheet form .sheet-body .tab.active.description .gm-notes {
     background-color: unset;

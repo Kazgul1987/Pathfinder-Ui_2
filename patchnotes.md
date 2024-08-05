@@ -4,8 +4,10 @@
 - Ready for v12 version.
 
 
-## v12.330.620.1
+## v12.330.620.2
+- Update core code.
 - Update compatibility with Quick Insert.
+- fix some errors and added of others.
 
 ## v12.330.613.3
 - Update core code.

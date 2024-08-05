@@ -393,8 +393,8 @@
 
 .sheet.actor.character.dark-theme section.window-content h3 {
     color: var(--pfui-main-color) !important;
+    background: radial-gradient(var(--background-2), transparent);
 }
-
 .actor.sheet.character.dark-theme section.window-content .crb-style nav.sheet-navigation .item:hover, 
 .actor.sheet.character.dark-theme section.window-content .crb-style nav.sheet-navigation .item.active {
     fill: var(--pfui-main-color);
