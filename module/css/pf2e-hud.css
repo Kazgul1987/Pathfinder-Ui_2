@@ -116,7 +116,8 @@
   backdrop-filter: blur(10px);
   border-radius: var(--border-radius);
   text-shadow: var(--text-shadow);
-  color: var(--pfui-main-grey-color);
+  --icon-color: var(--green);
+  color: var(--color-light-3);
   border: 1px solid var(--color-warm-5);
   box-shadow: var(--box-shadow);
 }
@@ -210,8 +211,9 @@ filter: grayscale(1);
 #pf2e-hud-sidebar .item.statistic:hover .skill,
 #pf2e-hud-sidebar .item:has(.image):hover,
 #pf2e-hud-persistent a:hover {
-    text-shadow: var(--text-shadow);
-    color: var(--color-warm-1);
+  --icon-color: var(--color-warm-1);
+  text-shadow: var(--text-shadow);
+  color: var(--color-warm-1);
 }
 #pf2e-hud-sidebar .inner.actions {
   --max-column-width: 19em;
@@ -222,7 +224,7 @@ filter: grayscale(1);
   --category-width: 1.2em;
 }
 #pf2e-hud-sidebar .item-list {
-  color: var(--pfui-main-grey-color);
+  color: var(--color-light-3);
   text-shadow: var(--text-shadow);
   outline: 1px solid var(--color-cool-5);
   border-radius: var(--border-radius);
@@ -276,6 +278,12 @@ background: var(--green);
 }
 
 /*Other*/
+[id^=pf2e-hud] [data-section] i {
+  color: unset;
+}
+[id^=pf2e-hud] [data-section] span:has(i) {
+  color:firebrick;
+}
 [id^=pf2e-hud] [data-section][data-section=sidebar].active {
   color: var(--red-light) !important;
   text-shadow: none;
@@ -300,6 +308,22 @@ background: var(--green);
   background: var(--color-cool-5-50);
   box-shadow: var(--box-shadow);
   backdrop-filter: blur(10px);
+}
+#pf2e-hud-persistent .fa-lock:before,
+#pf2e-hud-persistent .fa-shield:before,
+#pf2e-hud-persistent .fa-duotone:before,
+#pf2e-hud-persistent .fad:before,
+#pf2e-hud-persistent .fa-tombstone:before,
+#pf2e-hud-persistent .fa-shoe-prints:before,
+#pf2e-hud-persistent .fa-shield-blank:before, 
+#pf2e-hud-persistent .fa-helmet-battle:before {
+  color: var(--color-warm-1);
+  text-shadow: var(--text-shadow);
+}
+#pf2e-hud-persistent .fa-duotone.fa-eye-slash:after, 
+#pf2e-hud-persistent .fad.fa-eye-slash:after {
+  color: var(--color-light-3);
+  text-shadow: var(--text-shadow);
 }
 
 
@@ -335,9 +359,11 @@ background: var(--green);
 }
 [id^=pf2e-hud] [data-section].info, 
 [id^=pf2e-hud] [data-section][data-section=sidebar] {
-  color: var(--green);
+    --icon-color: var(--green);
+    color: var(--green);
 }
 [id^=pf2e-hud] a:hover {
+  --icon-color: var(--color-warm-1);
   text-shadow: var(--text-shadow);
   color: var(--color-warm-1) !important;
 }

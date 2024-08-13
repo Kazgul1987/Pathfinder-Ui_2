@@ -4,6 +4,9 @@
 - Ready for v12 version.
 
 
+## v12.330.621.1
+- Update compatibility with PF2e HUD.
+
 ## v12.330.620.2
 - Update core code.
 - Update compatibility with Quick Insert.
