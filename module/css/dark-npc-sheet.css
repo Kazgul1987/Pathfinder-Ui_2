@@ -125,6 +125,9 @@
     color: var(--text-dark);
     text-shadow: var(--text-shadow);
 }
+.dark-npc-theme.actor.npc form .sheet-body .actions-list li.action {
+    border-bottom: 1px dotted var(--color-cool-4) !important;
+}
 .dark-npc-theme.actor.npc form .empty {
     color: var(--color-warm-2);
     text-shadow: var(--text-shadow);
@@ -362,10 +365,10 @@
 .dark-npc-theme.actor.npc form .actions-options .actions-option input[type="checkbox"]:checked, input[type="radio"]:checked {
     accent-color: var(--green);
 }
-.dark-npc-theme.actor.npc form a.roll {
+.dark-npc-theme.actor.npc form a.roll:not(.inline-roll) {
     color: var(--color-warm-1);
 }
-.dark-npc-theme.actor.npc form a.roll:hover {
+.dark-npc-theme.actor.npc form a.roll:not(.inline-roll):hover {
     color: var(--green);
   }
 

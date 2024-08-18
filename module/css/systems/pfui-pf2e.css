@@ -40,6 +40,7 @@
     --color-rarity-uncommon: #ff6400;
     --color-rarity-rare: #0062ff;
     --color-rarity-unique: #e127e1;
+    --color-rarity-secret:var(--color-warm-4);
 
 
 /* Foundry2
@@ -1066,32 +1067,54 @@ button.half-damage .fa-heart-broken::after {
 }
 
 /*Rarity colors*/
-.tags .tag.rarity.common, .tags .tag.rarity[value=common],
-.tags .tag.rarity > option[value=common],
-.tags .tag option.rarity.common,
-.tags .tag option.rarity[value=common],
-.tags .tag option.rarity > option[value=common] {
-  background-color: var(--color-rarity-common);
+.tags.paizo-style .tag:last-child,
+.tags.paizo-style .tag:first-child {
+    border-right-width: 1px;
 }
-.tags .tag.rarity.uncommon, .tags .tag.rarity[value=uncommon],
-.tags .tag.rarity > option[value=uncommon],
-.tags .tag option.rarity.uncommon,
-.tags .tag option.rarity[value=uncommon],
-.tags .tag option.rarity > option[value=uncommon] {
-  background-color: var(--color-rarity-uncommon);
+.tags:not(.form-fields) .tag.rarity.common, 
+.tags:not(.form-fields) .tag.rarity[value=common], 
+.tags:not(.form-fields) .tag.rarity > option[value=common], 
+.tags:not(.form-fields) .tag option.rarity.common, 
+.tags:not(.form-fields) .tag option.rarity[value=common], 
+.tags:not(.form-fields) .tag option.rarity > option[value=common] {
+    background-color: var(--color-rarity-common);
+    text-shadow: var(--text-shadow);
 }
-.tags .tag.rarity.rare, .tags .tag.rarity[value=rare],
-.tags .tag.rarity > option[value=rare],
-.tags .tag option.rarity.rare,
-.tags .tag option.rarity[value=rare],
-.tags .tag option.rarity > option[value=rare] {
-  background-color: var(--color-rarity-rare);
+
+.tags:not(.form-fields) .tag.rarity.uncommon, 
+.tags:not(.form-fields) .tag.rarity[value=uncommon], 
+.tags:not(.form-fields) .tag.rarity > option[value=uncommon], 
+.tags:not(.form-fields) .tag option.rarity.uncommon, 
+.tags:not(.form-fields) .tag option.rarity[value=uncommon], 
+.tags:not(.form-fields) .tag option.rarity > option[value=uncommon] {
+    background-color: var(--color-rarity-uncommon);
+    text-shadow: var(--text-shadow);
 }
-.tags .tag.rarity.unique, .tags .tag.rarity[value=unique],
-.tags .tag.rarity > option[value=unique],
-.tags .tag option.rarity.unique,
-.tags .tag option.rarity[value=unique],
-.tags .tag option.rarity > option[value=unique] {
-  background-color: var(--color-rarity-unique);
+.tags:not(.form-fields) .tag.rarity.rare, 
+.tags:not(.form-fields) .tag.rarity[value=rare], 
+.tags:not(.form-fields) .tag.rarity > option[value=rare], 
+.tags:not(.form-fields) .tag option.rarity.rare, 
+.tags:not(.form-fields) .tag option.rarity[value=rare], 
+.tags:not(.form-fields) .tag option.rarity > option[value=rare] {
+    background-color: var(--color-rarity-rare);
+    text-shadow: var(--text-shadow);
+}
+.tags:not(.form-fields) .tag.rarity.unique, 
+.tags:not(.form-fields) .tag.rarity[value=unique], 
+.tags:not(.form-fields) .tag.rarity > option[value=unique], 
+.tags:not(.form-fields) .tag option.rarity.unique, 
+.tags:not(.form-fields) .tag option.rarity[value=unique], 
+.tags:not(.form-fields) .tag option.rarity > option[value=unique] {
+    background-color: var(--color-rarity-unique);
+    text-shadow: var(--text-shadow);
+}
+.tags:not(.form-fields) .tag.rarity.secret, 
+.tags:not(.form-fields) .tag.rarity[value=secret], 
+.tags:not(.form-fields) .tag.rarity > option[value=secret], 
+.tags:not(.form-fields) .tag option.rarity.secret, 
+.tags:not(.form-fields) .tag option.rarity[value=secret], 
+.tags:not(.form-fields) .tag option.rarity > option[value=secret] {
+    background-color: var(--color-rarity-secret);
+    text-shadow: var(--text-shadow);
 }
 /*-------------------------------------------------*/
