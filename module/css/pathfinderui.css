@@ -1045,6 +1045,10 @@ hr {
     z-index: -2;
     opacity: 0.88;
 }
+.application .controls-dropdown.expanded {
+    box-shadow: unset;
+    background: unset;
+}
 
 /* DIALOG */
 .dialog-content textarea {
@@ -1137,7 +1141,7 @@ hr {
     box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15), inset 0 0 0 2px rgba(0, 0, 0, 0.4);
     transition: text-shadow 0.15s ease-in-out, background-color 0.15s ease-in-out, border 0.15s ease-in-out, color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, backdrop-filter 0.15s ease-in-out, border-radius 0.15s;
     text-shadow: var(--text-shadow) !important;
-    color: var(--background) !important;
+    color: var(--color-cool-5) !important;
     border-radius: var(--border-radius);
 }
 

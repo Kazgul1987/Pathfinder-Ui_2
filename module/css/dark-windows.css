@@ -247,6 +247,7 @@ input[type="time"]:focus,
 input[type="search"]:focus {
     box-shadow: none;
     outline: 1px solid #584a75;
+    color: var(--color-light-3);
 }
 input[type="range"] + .range-value {
     border: unset;
@@ -518,8 +519,11 @@ span[data-pf2-action] {
     border-radius: var(--border-radius);
 }
 a.content-link, 
-a.inline-roll {
+a.inline-roll, 
+.application .content-link, 
+.application .inline-roll {
     font-family: "Good OT";
+    --content-link-background: var(--custom-trait);
     --input-text-color: var(--color-light-3);
     color: var(--input-text-color);
     background: var(--custom-trait);
@@ -528,6 +532,7 @@ a.inline-roll {
     box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
 }
+
 .spellcasting-entry.preparation > .window-content ol.spell-list > li .item-name h4 > a:hover {
     color: var(--green);
     text-shadow: none;

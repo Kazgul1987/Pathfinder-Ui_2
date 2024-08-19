@@ -4,6 +4,14 @@
 - Ready for v12 version.
 
 
+
+## v12.331.622.2
+- Update core code.
+- Update Compatibility PF2e v6.2.2.
+- Update compatibility with PF2e HUD.
+- Add compatibility with PF2e Bestiary Tracking (WIP)
+- fix some errors and added of others.
+
 ## v12.330.621.1
 - Update compatibility with PF2e HUD.
 
