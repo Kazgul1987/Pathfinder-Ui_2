@@ -5,6 +5,12 @@
 
 
 
+## v12.331.622.4
+- Update core code.
+- Color revamp for PF2e HUD.
+- Added option to disable PF2e Bestiary Tracking custom theme.
+- fix some errors and added of others.
+
 ## v12.331.622.3
 - Update core code.
 - Update Compatibility PF2e v6.2.2.

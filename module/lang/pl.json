@@ -34,6 +34,9 @@
     "RPGUI.SETTINGS.PF2E_HUD": "Wyłączyć motyw PF2e HUD?",
     "RPGUI.SETTINGS.PF2E_HUD_HINT": "Wyłącza motyw PF2e HUD i przywraca domyślny motyw",
 
+    "RPGUI.SETTINGS.PF2E_BESTIARY_TRACKING": "Wyłączyć motyw PF2e Bestiary Tracking?",
+    "RPGUI.SETTINGS.PF2E_BESTIARY_TRACKING_HINT": "Wyłącza motyw PF2e Bestiary Tracking i przywraca domyślny motyw",
+
     "RPGUI.SETTINGS.SIMPLY_PORTRAITS": "Rozmiar portretu (px)",
     "RPGUI.SETTINGS.SIMPLY_PORTRAITS_HINT": "Szerokość i wysokość portretów czatu w dzienniku czatu, podana w pikselach. (Ustaw 0, aby ukryć portrety)",
 

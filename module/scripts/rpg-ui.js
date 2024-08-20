@@ -107,6 +107,18 @@ Hooks.on('init', () => {
 		}
 	});
 
+	game.settings.register('pathfinder-ui', 'pf2eBestiaryTracking', {
+		name: game.i18n.localize('RPGUI.SETTINGS.PF2E_BESTIARY_TRACKING'),
+		hint: game.i18n.localize('RPGUI.SETTINGS.PF2E_BESTIARY_TRACKING_HINT'),
+		scope: "client",
+		type: Boolean,
+		default: false,
+		config: true,
+		onChange: () => {
+			location.reload();
+		}
+	});
+
 	game.settings.register('pathfinder-ui', 'journalSheet', {
 		name: game.i18n.localize('RPGUI.SETTINGS.JOURNAL_SHEET'),
 		hint: game.i18n.localize('RPGUI.SETTINGS.JOURNAL_SHEET_HINT'),
@@ -180,6 +192,7 @@ Hooks.on('init', () => {
     if (game.settings.get('pathfinder-ui', 'adjustTokenEffectsHudToggle')) { rpgUIAddTokenEffectsHud() }
 	if (!game.settings.get('pathfinder-ui', 'tokenHud')) { rpgUIAddTokenHud() }
 	if (!game.settings.get('pathfinder-ui', 'pf2eHud')) { rpgUIAddPf2eHud() }
+	if (!game.settings.get('pathfinder-ui', 'pf2eBestiaryTracking')) { rpgUIAddPf2eBestiaryTracking() }
 	if (!game.settings.get('pathfinder-ui', 'journalSheet')) { rpgUIAddJournalSheet() }
 	if (!game.settings.get('pathfinder-ui', 'cursor')) { rpgUIAddCursor() }
 	if (game.settings.get('pathfinder-ui', 'minimalUICompatibility')) { addClassByQuerySelector('minimal-ui-mode', 'body.vtt') }
@@ -265,6 +278,16 @@ function rpgUIAddPf2eHud() {
 	mainCss.setAttribute("rel", "stylesheet")
 	mainCss.setAttribute("type", "text/css")
 	mainCss.setAttribute("href", "modules/pathfinder-ui/css/pf2e-hud.css")
+	mainCss.setAttribute("media", "all")
+	head.insertBefore(mainCss, head.lastChild);
+}
+
+function rpgUIAddPf2eBestiaryTracking() {
+	const head = document.getElementsByTagName("head")[0];
+	const mainCss = document.createElement("link");
+	mainCss.setAttribute("rel", "stylesheet")
+	mainCss.setAttribute("type", "text/css")
+	mainCss.setAttribute("href", "modules/pathfinder-ui/css/pf2e-bestiary-tracking.css")
 	mainCss.setAttribute("media", "all")
 	head.insertBefore(mainCss, head.lastChild);
 }
