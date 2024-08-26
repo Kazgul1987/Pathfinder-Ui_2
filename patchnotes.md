@@ -5,6 +5,10 @@
 
 
 
+## v12.331.623.1
+- Update Polish translate
+- Update Monk's Tokenbar visual
+
 ## v12.331.622.4
 - Update core code.
 - Color revamp for PF2e HUD.

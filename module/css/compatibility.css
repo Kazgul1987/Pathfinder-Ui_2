@@ -819,25 +819,24 @@ body[inline-roll-styling="true"] a.tile-trigger-link {
     background: transparent;
     backdrop-filter: blur(5px);
 }#tokenbar .token .token-stat i {
-    color: var(--green);
     filter: drop-shadow(0px 1px 1px black);
 }
 #tokenbar .token .token-stat {
-    color: var(--color-warm-1)!important;
+    color: var(--color-light-3);
     filter: drop-shadow(0px 1px 1px black);
 }
 #tokenbar .token .token-stats {
-    background: var(--color-cool-5-75);
+    background: transparent;
     border-radius: 5px;
     backdrop-filter: blur(5px);
     filter: drop-shadow(0px 1px 1px black);
 }
 #tokenbar .bar-controls {
-    color: var(--pfui-main-color);
+    color: var(--color-light-3);
     text-shadow: var(--text-shadow);
     border: 1px solid transparent;
     box-shadow: unset;
-    background: var(--color-cool-5-75);
+    background: var(--color-cool-5-25);
     border-radius: 5px;
     backdrop-filter: blur(5px);
     text-shadow: 0 0 15px var(--red-light);
@@ -876,14 +875,14 @@ body[inline-roll-styling="true"] a.tile-trigger-link {
     padding: 0;
     overflow-y: auto;
     scrollbar-width: thin;
-    color: var(--pfui-main-color);
+    color: var(--color-light-3);
 }
 
 #chat #requestsavingthrow .request-header {
     border-radius: 4px;
     white-space: nowrap;
     overflow-x: hidden;
-    color: var(--pfui-main-color);
+    color: var(--color-light-3);
     background: black;
     border: 2px solid var(--border-color);
     padding: 1px 8px;
@@ -894,7 +893,7 @@ body[inline-roll-styling="true"] a.tile-trigger-link {
     margin: 0;
     white-space: nowrap;
     overflow-x: hidden;
-    color: var(--pfui-main-color);
+    color: var(--color-light-3);
     font-weight: bold;
     padding: 1px 4px;
 
