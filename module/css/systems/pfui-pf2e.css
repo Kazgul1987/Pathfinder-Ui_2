@@ -521,6 +521,19 @@ a.content-link.broken {
     border-radius: 50%;
     box-shadow: var(--box-shadow);
 }
+/*TEMP FIX PORTRAIT BUIT-IN*/
+.pf2e.chat-card .card-header img {
+    transform: scale(1)!important;
+    margin-right: var(--space-6);
+    outline: 2px solid var(--color-light-6);
+}
+.chat-message .message-header.with-image h4.message-sender {
+    color: var(--color-light-2);
+}
+.chat-message .message-header.with-image .user {
+    color: var(--color-light-4);
+}
+/*end*/
 
 #chat-log button {
     transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
@@ -1118,30 +1131,106 @@ button.half-damage .fa-heart-broken::after {
     text-shadow: var(--text-shadow);
 }
 
-/*TEMP FIX PORTRAIT BUIT-IN*/
-.chat-message .message-header.with-image .portrait {
-    display: none;
-    grid-area: unset;
-    padding: unset;
+/*Familiar sheet*/
+.sheet.familiar form {
+    color: var(--pfui-main-grey-color);
+    background: var(--color-cool-5);
+    backdrop-filter: blur(15px);
 }
-.chat-message .message-header.with-image h4.message-sender {
-    display: none;
+.sheet.familiar header .image-container img.actor-image {
+    border-radius: 5px;
+    background: linear-gradient(45deg, var(--color-cool-4), var(--color-cool-5-90));
 }
-.chat-message .message-header.with-image {
-    display: grid;
-    grid-template: "img name details" 0.5rem
-    "img user details" 2rem
-    "gap gap gap" var(--space-4)
-    "whisper whisper whisper" min-content
-    "flavor flavor flavor" 1fr/2.75rem 1fr min-content;
-    justify-content: stretch;
-    width: 100%;
+.sheet.familiar header .header-content .charname input:focus {
+    border-bottom: unset;
 }
-.chat-message .message-header.with-image .user {
-    grid-area: user;
-    font-size: unset;
-    line-height: unset;
-    padding-top:unset;
+.sheet.familiar header .header-content .charname input {
+--input-background-color: var(--color-cool-4);
+--input-border-color: transparent;
+--input-text-color: var(--color-light-3);
+background: var(--input-background-color);
+border: 1px solid var(--input-border-color);
+outline: 1px solid transparent;
+color: var(--input-text-color);
+--input-box-shadow: none;
+box-shadow: var(--input-box-shadow);
+border-radius: 4px;
+user-select: text;
+transition: outline-color 0.5s;
 }
-
+.sheet.familiar header .header-content .charname {
+    color: var(--pfui-main-grey-color);
+    background: var(--color-warm-3);
+    border-radius: 3px;
+}
+.sheet.familiar header .header-content .details-section .hp-section .value input {
+    background: var(--color-cool-4);
+    color: var(--color-warm-1);
+    border-radius: 3px;
+}
+.sheet.familiar header .header-content .dying-section .pips .fa-circle,
+.sheet.familiar header .header-content .details-section .hp-section .value .fa-dice-d20 {
+    color:var(--green);
+}
+.sheet.familiar header .header-content .dying-section .pips .fa-circle-x {
+    color:var(--color-warm-2);
+}
+.sheet.familiar header .header-content .details-section .hp-section .label h4,
+.sheet.familiar header .header-content .details-section .defenses-section .defenses-list .save .name,
+.sheet.familiar header .header-content .details-section .defenses-section .defenses-list .ac .name {
+    font-weight: bold;
+    text-transform: capitalize;
+    color: var(--color-light-4);
+}
+.sheet.familiar header .header-content .dying-section .pips .fa-circle:hover,
+.sheet.familiar header .header-content .dying-section .pips .fa-circle-x:hover,
+.sheet.familiar header .header-content .details-section .hp-section .value .fa-dice-d20:hover,
+.sheet.familiar header .header-content .details-section .defenses-section .defenses-list .save .name:hover,
+.sheet.familiar header .header-content .details-section .defenses-section .defenses-list .ac .name:hover {
+    color:var(--color-warm-1);
+}
+.sheet.familiar header .header-content .details-section .hp-section .label .fa-solid {
+    color:#1fb222;
+}
+.sheet.familiar header .header-content .details-section .hp-section .label .fa-heart-broken {
+    color:#b01717;
+}
+.sheet.familiar header .header-content .details-section .defenses-section .defenses-list .ac .value i.fa-shield-alt {
+    color:#aab0b3;
+}
+.sheet.familiar select {
+    border: 0;
+    background: var(--rpg-styled-ui-color);
+    border-radius: 3px;
+    font-family: inherit;
+    font-size: inherit;
+}
+.sheet.familiar .section-container .section-body {
+    background: linear-gradient(45deg, var(--color-cool-4), var(--color-cool-5-90));
+}
+.sheet.familiar .familiar-section .detail label {
+    color:var(--color-cool-1);
+}
+.sheet.familiar .skills-content .skills-list a {
+    color: var(--pfui-main-grey-color);
+    background: var(--color-warm-3);
+    border: 1px solid transparent;
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+}
+.sheet.familiar .skills-content .skills-list a .mod {
+    color:unset;
+}
+.sheet.familiar .skills-content .skills-list a:hover {
+    border: none;
+    background: none;
+    background-color: var(--green) !important;
+    transition: text-shadow 0.15s ease-in-out, background-color 0.15s ease-in-out, border 0.15s ease-in-out, color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, backdrop-filter 0.15s ease-in-out, border-radius 0.15s;
+    text-shadow: var(--text-shadow);
+    color: var(--background)!important;
+}
+.sheet.familiar a:hover {
+    text-shadow: var(--text-shadow);
+    color: var(--color-warm-1);
+}
 /*-------------------------------------------------*/

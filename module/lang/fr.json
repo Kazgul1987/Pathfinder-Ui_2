@@ -37,9 +37,6 @@
     "RPGUI.SETTINGS.PF2E_BESTIARY_TRACKING": "Désactiver le thème de PF2e Bestiary Tracking ?",
     "RPGUI.SETTINGS.PF2E_BESTIARY_TRACKING_HINT": "Désactive le thème custom PF2e Bestiary Tracking et rétablit le thème par défaut",
 
-    "RPGUI.SETTINGS.SIMPLY_PORTRAITS": "Taille du Portrait (px)",
-    "RPGUI.SETTINGS.SIMPLY_PORTRAITS_HINT": "Largeur et hauteur des portraits affichés dans le Chat en Pixels. (Mettre 0 pour cacher les portraits)",
-
     "RPGUI.SETTINGS.NAVIGATION": "Navigation Horizontale.",
     "RPGUI.SETTINGS.NAVIGATION_HINT": "Utilisez ce bouton si vous n'utilisez pas Combat Carousel.",
 

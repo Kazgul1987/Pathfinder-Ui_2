@@ -37,9 +37,6 @@
     "RPGUI.SETTINGS.PF2E_BESTIARY_TRACKING": "Wyłączyć motyw PF2e Bestiary Tracking?",
     "RPGUI.SETTINGS.PF2E_BESTIARY_TRACKING_HINT": "Wyłącza motyw PF2e Bestiary Tracking i przywraca domyślny motyw",
 
-    "RPGUI.SETTINGS.SIMPLY_PORTRAITS": "Rozmiar portretu (px)",
-    "RPGUI.SETTINGS.SIMPLY_PORTRAITS_HINT": "Szerokość i wysokość portretów czatu w dzienniku czatu, podana w pikselach. (Ustaw 0, aby ukryć portrety)",
-
     "RPGUI.SETTINGS.NAVIGATION": "Przełącza nawigację z powrotem do trybu poziomego",
     "RPGUI.SETTINGS.NAVIGATION_HINT": "Użyj tego przełącznika, jeśli nie korzystasz z integracji Combat Carousel",
 
