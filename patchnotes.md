@@ -5,12 +5,16 @@
 
 
 
-## v12.331.630.1
+## v12.331.630.2
 - Update compatibility PF2e v6.3.0
 - Update compatibility with PF2e HUD.
 - Update Dark Loot sheet.
 - Update Dark Hazard sheet.
-- Temporary fix for the token image built-in to chat.
+- Add Dark Familiar sheet.
+- Fix token image to chat :
+  - the name and player appear,
+  - clicking on the token selects the character,
+  - clicking on the character name opens the character sheet
 
 ## v12.331.623.1
 - Update Polish translate
