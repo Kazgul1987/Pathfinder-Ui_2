@@ -212,6 +212,24 @@ filter: grayscale(1);
   text-shadow: var(--text-shadow);
   box-shadow: var(--box-shadow);
 }
+#pf2e-hud-persistent-effects .effect-item .effect-info {
+  background: var(--color-cool-5-50);
+  color: var(--pfui-main-grey-color);
+  backdrop-filter: blur(10px);
+  border-radius: var(--border-radius);
+}
+#pf2e-hud-persistent-effects .effect-item .effect-info a.content-link, 
+#pf2e-hud-persistent-effects .effect-item .effect-info a.inline-roll {
+  font-family: 'Good OT';
+  color: var(--pfui-main-color);
+  text-shadow: var(--text-shadow);
+  background: var(--color-warm-3);
+  padding: 0px 3px;
+  border: 1px solid var(--glassy);
+  box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius);
+}
+
 
 
 

@@ -1117,4 +1117,31 @@ button.half-damage .fa-heart-broken::after {
     background-color: var(--color-rarity-secret);
     text-shadow: var(--text-shadow);
 }
+
+/*TEMP FIX PORTRAIT BUIT-IN*/
+.chat-message .message-header.with-image .portrait {
+    display: none;
+    grid-area: unset;
+    padding: unset;
+}
+.chat-message .message-header.with-image h4.message-sender {
+    display: none;
+}
+.chat-message .message-header.with-image {
+    display: grid;
+    grid-template: "img name details" 0.5rem
+    "img user details" 2rem
+    "gap gap gap" var(--space-4)
+    "whisper whisper whisper" min-content
+    "flavor flavor flavor" 1fr/2.75rem 1fr min-content;
+    justify-content: stretch;
+    width: 100%;
+}
+.chat-message .message-header.with-image .user {
+    grid-area: user;
+    font-size: unset;
+    line-height: unset;
+    padding-top:unset;
+}
+
 /*-------------------------------------------------*/

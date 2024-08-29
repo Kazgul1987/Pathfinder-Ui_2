@@ -113,7 +113,7 @@
     margin: unset;
     backdrop-filter: blur(5px);
 }
-.dark-hazard-theme.sheet.hazard form > header {
+.dark-hazard-theme.sheet.hazard  section.window-content form > header {
     background: radial-gradient(var(--primary-remaster), var(--glass-bg-dark));
 }
 .dark-hazard-theme.sheet.hazard .sidebar .armor-class input {
@@ -158,7 +158,7 @@
     background: radial-gradient(var(--primary-remaster), var(--glass-bg-dark));
     border: none;
     box-shadow: var(--box-shadow);
-    text-shadow: 0 0 1px black;
+    text-shadow: var(--text-shadow);
     border-radius: var(--border-radius);
     backdrop-filter: blur(5px);
 }
@@ -178,7 +178,7 @@
     text-transform: uppercase;
     border: 1px solid black;
     box-shadow: var(--box-shadow);
-    text-shadow: 0 0 1px black;
+    text-shadow: var(--text-shadow);
     border-radius: var(--border-radius);
 }
 .dark-hazard-theme.sheet.hazard .actions-list li.action .button-group button, .dark-hazard-theme.sheet.hazard .actions-list li.attack .button-group button, .dark-hazard-theme.sheet.hazard .attacks-list li.action .button-group button, .dark-hazard-theme.sheet.hazard .attacks-list li.attack .button-group button {
@@ -186,7 +186,7 @@
     text-transform: uppercase;
     border: 1px solid black;
     box-shadow: var(--box-shadow);
-    text-shadow: 0 0 1px black;
+    text-shadow: var(--text-shadow);
     border-radius: var(--border-radius);
 }
 .dark-hazard-theme.sheet.hazard .tags.paizo-style tag, .dark-hazard-theme.sheet.hazard .tags.paizo-style .tag, .dark-hazard-theme.sheet.hazard .tags.paizo-style select.tag {
@@ -194,10 +194,10 @@
     text-transform: uppercase;
     border: 1px solid black;
     box-shadow: var(--box-shadow);
-    text-shadow: 0 0 1px black;
+    text-shadow: var(--text-shadow);
     border-radius: var(--border-radius);
 }
-.dark-hazard-theme.sheet.hazard form > header .frame-container .edit-mode-button {
+.dark-hazard-theme.sheet.hazard section.window-content form > header .frame-container .edit-mode-button {
     color: var(--color-warm-1);
     box-shadow: 0 0 0 1px var(--color-warm-2), 0 0 0 2px var(--color-warm-3);
     background-color: var(--color-cool-5-90);
@@ -212,7 +212,7 @@
     text-transform: uppercase;
     border: 1px solid black;
     box-shadow: var(--box-shadow);
-    text-shadow: 0 0 1px black;
+    text-shadow: var(--text-shadow);
     background-color: var(--color-cool-4);
     border-radius: var(--border-radius);
 }
@@ -284,11 +284,30 @@
     border: 1px solid black;
     background-color: var(--glass-bg);
     box-shadow: var(--box-shadow);
-    text-shadow: 0 0 1px black;
+    text-shadow: var(--text-shadow);
     border-radius: var(--border-radius);
 }
 .dark-hazard-theme.sheet.hazard .section-container.publication .section-body input[type="checkbox"]:checked, input[type="radio"]:checked {
     accent-color: var(--green);
+}
+.dark-hazard-theme.sheet.hazard section.window-content .sidebar a.rollable {
+    --color-pf-primary-darker:var(--color-warm-1);
+    color: var(--color-pf-primary-darker);
+    text-shadow: var(--text-shadow);
+}
+.dark-hazard-theme.sheet.hazard section.window-content .sidebar a.rollable:hover {
+    --color-pf-primary-light: var(--red-light);
+    color: var(--color-pf-primary-light);
+    text-shadow: var(--text-shadow);
+}
+.dark-hazard-theme.sheet.hazard .section-container .section-header {
+    background-color: var(--color-pf-primary)!important;
+    backdrop-filter: blur(5px);
+}
+.dark-hazard-theme.sheet.hazard section.window-content .sidebar .sidebar-title {
+    box-shadow: var(--box-shadow);
+    background: radial-gradient(var(--primary-remaster), var(--glass-bg-dark));
+    border-radius: var(--border-radius);
 }
 
 
@@ -303,9 +322,7 @@
 .glassy.dark-hazard-theme.sheet.hazard .section-container {
     padding: 5px 0px 5px;
 }
-.glassy.dark-hazard-theme.sheet.hazard .section-container .section-header {
-    backdrop-filter: blur(5px);
-}
+
 .system-pf2e .glassy.dark-hazard-theme.sheet.hazard:not(.loot-sheet-npc) {
     background: none;
     box-shadow: none;
@@ -338,19 +355,16 @@
     backdrop-filter: blur(5px);
 }
 .glassy.dark-hazard-theme.sheet.hazard .sidebar {
-    box-shadow: var(--box-shadow);
-       background-color: var(--color-cool-5-90);
-    border-radius: var(--border-radius);
-    margin: 5px 5px;
-    backdrop-filter: blur(5px);
+    border: unset;
+    box-shadow: unset;
 }
 .glassy.dark-hazard-theme.sheet.hazard .section-container .section-body {
     color: var(--pfui-main-color);
     border: none;
     background: none;
-       background-color: var(--color-cool-5-90);
+    background-color: var(--color-cool-5-90);
     box-shadow: var(--box-shadow);
-    text-shadow: 0 0 1px black;
+    text-shadow: var(--text-shadow);
     border-radius: var(--border-radius);
     backdrop-filter: blur(5px);
 }

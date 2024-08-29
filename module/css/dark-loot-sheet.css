@@ -308,6 +308,10 @@
     border-radius: var(--border-radius);
     backdrop-filter: blur(5px);
 }
+.actor.sheet section.window-content .inventory ul.items > li > .data .item-name .uses {
+    border-color: var(--color-rarity-common);
+    color: var(--color-rarity-common);
+}
 .dark-loot-theme.sheet.actor.loot .inventory .item-name h4:not(:hover).rarity-common {
     border-color: var(--color-rarity-common);
     color: var(--color-rarity-common);

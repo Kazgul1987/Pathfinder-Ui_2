@@ -5,6 +5,13 @@
 
 
 
+## v12.331.630.1
+- Update compatibility PF2e v6.3.0
+- Update compatibility with PF2e HUD.
+- Update Dark Loot sheet.
+- Update Dark Hazard sheet.
+- Temporary fix for the token image built-in to chat.
+
 ## v12.331.623.1
 - Update Polish translate
 - Update Monk's Tokenbar visual
