@@ -96,6 +96,29 @@
     --color-scrollbar: #5d142b;
     --color-scrollbar-border: #8d151b;
 }
+.application,
+.theme-light .application {
+    --background: var(--color-cool-5-90);
+    --color-text-primary: var(--color-light-2);
+    --color-header-background: rgba(0, 0, 0, 0.5);
+    --color-border: var(--color-cool-4);
+    --color-fieldset-border: var(--color-light-6);
+    --color-form-hint: var(--color-light-5);
+    --color-form-hint-hover: var(--color-light-4);
+    --color-form-label: var(--color-light-4);
+    --color-form-label-hover: var(--color-light-2);
+    --color-select-option-bg: transparent;
+}
+input,
+select,
+.theme-light input, 
+.theme-light select {
+    --input-background-color: var(--color-cool-4);
+    --input-border-color: transparent;
+    --input-text-color: var(--color-light-3);
+    --input-placeholder-color: var(--color-light-4);
+    --input-focus-outline-color: var(--color-cool-3);
+}
 
 /* scrollbar
 ====================================================== */
@@ -1217,6 +1240,9 @@ transition: outline-color 0.5s;
     border: 1px solid transparent;
     box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
+}
+.sheet.familiar .familiar-section .familiar-content input[type=text] {
+    color: var(--pfui-main-color);
 }
 .sheet.familiar .skills-content .skills-list a .mod {
     color:unset;
