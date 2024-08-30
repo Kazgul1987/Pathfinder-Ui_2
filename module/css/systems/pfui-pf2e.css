@@ -1233,4 +1233,12 @@ transition: outline-color 0.5s;
     text-shadow: var(--text-shadow);
     color: var(--color-warm-1);
 }
+.sheet.familiar .actions-list li.action .button-group .frequency input {
+    font-weight: bold;
+    background: var(--color-cool-4);
+    border-radius: var(--border-radius);
+    color: var(--color-warm-1);
+    text-shadow: var(--text-shadow);
+    border: unset;
+}
 /*-------------------------------------------------*/
