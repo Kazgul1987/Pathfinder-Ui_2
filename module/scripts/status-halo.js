@@ -238,6 +238,7 @@ const createRoundedEffectIcon = (effectIcon) => {
   return container;
 };
 
+<<<<<<< HEAD
 function enableStatusHalo() {
     const origRefreshEffects = Token.prototype._refreshEffects;
     Token.prototype._refreshEffects = function (...args) {
@@ -254,11 +255,23 @@ function enableStatusHalo() {
       const src = args[0];
       if (!src) return;
   
+=======
+Hooks.once("ready", () => {
+  libWrapper.register("pathfinder-ui", "Token.prototype._refreshEffects", function (wrapped) {
+      wrapped();
+      updateEffectScales(this);
+  });
+
+  libWrapper.register("pathfinder-ui", "Token.prototype._drawEffect", async function (wrapped, src, tint) {
+      if (!src) return;
+
+>>>>>>> 30b08252fadd7bcbb55312ac15cd41b5ae83dd15
       const fallbackEffectIcon = "icons/svg/hazard.svg";
       const effectTextureCacheKey = src || fallbackEffectIcon;
       let effectTexture = effectCache.loadTexture(effectTextureCacheKey);
       let icon;
       if (effectTexture) {
+<<<<<<< HEAD
         icon = new PIXI.Sprite(effectTexture);
       } else {
         const texture = await loadTexture(src, { fallback: fallbackEffectIcon });
@@ -274,3 +287,20 @@ function enableStatusHalo() {
       return this.effects.addChild(icon);
     };
   }
+=======
+          icon = new PIXI.Sprite(effectTexture);
+      } else {
+          const texture = await loadTexture(src, { fallback: fallbackEffectIcon });
+          const rawEffectIcon = new PIXI.Sprite(texture);
+
+          if (game.system.id === "pf2e" && src == game.settings.get("pf2e", "deathIcon")) {
+              return this.effects.addChild(rawEffectIcon);
+          }
+          effectTexture = effectCache.addToCache(effectTextureCacheKey, createRoundedEffectIcon(rawEffectIcon));
+          icon = new PIXI.Sprite(effectTexture);
+      }
+
+      return this.effects.addChild(icon);
+  });
+});
+>>>>>>> 30b08252fadd7bcbb55312ac15cd41b5ae83dd15
