@@ -259,8 +259,6 @@ function rpgUIAddTokenEffectsHud() {
     mainCss.setAttribute("type", "text/javascript")
     mainCss.setAttribute("src", "modules/pathfinder-ui/scripts/status-halo.js")
     head.insertBefore(mainCss, head.lastChild);
-
-    setTimeout(() => enableStatusHalo(), 500);
 }
 function rpgUIAddTokenHud() {
 	const head = document.getElementsByTagName("head")[0];
