@@ -5,6 +5,9 @@
 
 
 
+## v12.331.631.2
+- Update Token Effects Halo
+
 ## v12.331.631.1
 - Update core code.
 - Update compatibility PF2e v6.3.0
