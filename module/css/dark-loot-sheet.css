@@ -9,6 +9,10 @@
     --red-light:#ff0000;
     --custom-trait:#61180e;
     --border-radius: 3px;
+    --border-radius-5: 5px;
+    --box-shadow: 0px 1px 3px 1px black;
+    --box-shadow-pf2e: inset 0 0 0 1px rgba(0, 0, 0, 0.3), inset 0 0 0 2px rgba(255, 255, 255, 0.2);
+    --box-shadow-light: inset 0 0 0 1px rgba(255, 255, 255, 0.15), inset 0 0 0 2px rgba(0, 0, 0, 0.4), inset 0px 0px 3px 1px var(--color-cool-3);
     --background: #100d0d;
     --background-2: #ffffff14;
     --highlight: 0 0 0 1px var(--pfui-main-color), 0 0 0 2px #93d1d3, inset 0 0 4px rgba(255, 255, 255, 0.25);
@@ -134,16 +138,23 @@
     text-shadow: 0 0 1px black;
     border-radius: var(--border-radius);
 }
-.dark-loot-theme.sheet.actor.loot section.sidebar .gm-settings .loot-distribution button {
-    color: var(--pfui-main-color);
-    text-transform: uppercase;
-    border: 2px solid black;
-    background: var(--background);
+.sheet.actor.loot form section.sidebar .gm-settings {
+    background: var(--color-cool-5-50);
+    border: unset;
     box-shadow: var(--box-shadow);
-    text-shadow: 0 0 3px black;
+    border-radius: var(--border-radius-5);
+    margin: 0.25rem;
+}
+.dark-loot-theme.sheet.actor.loot form section.sidebar .gm-settings .loot-distribution button:not(:hover) {
+    text-transform: uppercase;
+    color: var(--pfui-main-color);
+    text-shadow: var(--text-shadow);
+    background: var(--color-warm-3);
     border-radius: var(--border-radius);
+    box-shadow:var(--box-shadow-pf2e);
 }
 .dark-loot-theme.sheet.actor.loot section.sidebar .gm-settings .loot-distribution button:hover {
+    text-transform: uppercase;
     border: 1px solid black;
     background: none;
     background-color: var(--green);
@@ -227,7 +238,15 @@
     color: var(--background);
     box-shadow: 0 0 6px inset var(--glass-bg);
 }
-
+.dark-loot-theme.sheet.actor.loot form section.sidebar .image-container > img.actor-image {
+    background: var(--color-cool-5-75);
+    box-shadow: var(--box-shadow);
+    border: none;
+    border-radius: 8px;
+    margin: 5px 0px 5px 5px;
+    backdrop-filter: blur(5px);
+    width: 95%;
+}
 
 
 
@@ -411,7 +430,7 @@
     text-shadow: 0 0 8px var(--color-shadow-primary);
 }
 
-.glassy.dark-loot-theme.sheet.actor.loot .sidebar .image-container img.actor-image {
+/*.glassy.dark-loot-theme.sheet.actor.loot form section.sidebar .image-container > img.actor-image {
     box-shadow: var(--box-shadow);
     border: none;
     border-radius: 8px;
@@ -428,11 +447,11 @@
 }
 .glassy.dark-loot-theme.sheet.actor.loot section.sidebar {
     box-shadow: var(--box-shadow);
-       background-color: var(--color-cool-5-90);
+    background-color: var(--color-cool-5-90);
     border-radius: 10px;
     margin: 1px 5px 5px 5px;
     backdrop-filter: blur(5px);
-}
+}*/
 .glassy.dark-loot-theme.sheet.actor.loot .inventory {
     width: 102%;
 }

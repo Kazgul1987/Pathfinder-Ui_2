@@ -148,6 +148,8 @@ a:hover {
     text-shadow: var(--text-shadow);
     color: var(--color-warm-1);
 }
+
+button,
 .dialog-buttons button,
 #support-details button,
 .window-app form button,
@@ -166,6 +168,7 @@ a:hover {
     box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
 }
+button:hover,
 .window-app form button:hover,
 .loot-actor-popup .confirm-button:hover,
 .package-configuration aside.sidebar .reset-all:hover {
@@ -972,9 +975,68 @@ div.journal-sheet.window-app.pf2e-km .journal-page-content section.social span.m
 }
 
 
-/*ITEM-PILES*/
+/*item-piles*/
+/*https://github.com/fantasycalendar/FoundryVTT-ItemPiles*/
+.item-piles {
+    --item-piles-even-color: var(--color-cool-4);
+    --item-piles-odd-color: var(--color-cool-4-90);
+}
+.item-piles i {
+    color: var(--color-warm-2);
+    text-shadow: var(--text-shadow);
+}
+.item-piles a:hover,
+.item-piles i:hover,
+.item-piles-clickable-link:hover {
+    color: var(--green);
+    text-shadow: var(--text-shadow);
+}
+.item-piles h3 {
+    text-transform: uppercase;
+    color: var(--color-warm-1);
+    text-shadow: var(--text-shadow);
+}
+.item-piles-config-container footer {
+    border-top: 2px dotted var(--color-warm-3);
+}
+.item-piles-top-divider {
+    border-top: 2px dotted var(--color-warm-3);
+}
+.item-piles-bottom-divider {
+    border-bottom: 2px dotted var(--color-warm-3);
+}
+.item-piles-config-container .form-group {
+    color:var(--color-cool-1);
+    text-shadow: var(--text-shadow);
+}
+.item-piles-config-container p {
+    color: var(--pfui-main-grey-color);
+}
+.item-piles-disabled {
+    color: var(--red-light);
+    opacity: 0.75;
+    background-color: unset;
+}
+.item-piles .merchant-name {
+    color: var(--pfui-main-grey-color);
+    font: 700 var(--font-size-36) var(--serif-condensed);
+    text-shadow: var(--text-shadow);
+}
+.item-piles-odd-color:nth-child(even) {
+    --item-piles-odd-color: var(--color-cool-4-90);
+    background-color: var(--item-piles-odd-color);
+}
 .item-piles-odd-color:nth-child(odd) {
-    --item-piles-even-color: var(--color-cool-5-25);
+    --item-piles-even-color: var(--color-cool-4);
+    background-color: var(--item-piles-even-color);
+}
+.item-piles-player-list-trade-button {
+    font-weight: 600;
+    color: var(--pfui-main-grey-color);
+    background: var(--color-warm-3);
+    border: 1px solid transparent;
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
 }
 
 

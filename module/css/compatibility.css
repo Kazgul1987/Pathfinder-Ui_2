@@ -169,8 +169,6 @@
     background: unset;
 }
 
-
-
 /* Carousel Combat Tracker */
 /* https://github.com/theripper93/combat-tracker-dock */
 #combat-dock .combatant-portrait {
@@ -276,7 +274,6 @@
     color: var(--color-warm-2);
     text-shadow: var(--text-shadow);
 }
-
 #tooltip.combat-dock-tooltip
 .combat-dock-tooltip-wrapper
 ul
@@ -304,7 +301,6 @@ color: var(--pfui-main-grey-color);
     box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
 }
-
 #tooltip.combat-dock-tooltip .combat-dock-tooltip-wrapper [data-visibility]:not([data-visibility=all])[data-visibility=gm] {
     font-style: italic;
     color: var(--pfui-main-color);
@@ -372,48 +368,6 @@ color: var(--pfui-main-grey-color);
 }
 
 
-
-
-/* DF Chat Enhancements */
-/* https://github.com/flamewave000/dragonflagon-fvtt/tree/master/df-chat-enhance */
-#dfcp-rt-buttons button {
-    padding-top: 3px;
-    transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
-    background: radial-gradient(var(--color-cool-5-50), transparent);
-    border: none;
-    border-radius: 30px;
-    color: var(--pfui-main-grey-color);
-    box-shadow: var(--box-shadow);
-    border: 1px solid var(--color-cool-5-50);
-}
-#dfcp-rt-buttons button:hover {
-    color: var(--color-text-hyperlink);
-    border-color: var(--color-text-hyperlink);
-    box-shadow: 0 0 6px inset var(--color-text-hyperlink);
-}
-#dfcp-rt-buttons button[data-id=publicroll].active {
-    background-color: var(--green);
-    color: var(--background);
-    box-shadow: var(--box-shadow-light);
-}
-#dfcp-rt-buttons button[data-id=gmroll].active {
-    background-color: #f2ca27;
-    color: var(--background);
-    box-shadow: var(--box-shadow-light);
-}
-#dfcp-rt-buttons button[data-id=blindroll].active {
-    background-color: #e87e04;
-    color: var(--background);
-    box-shadow: var(--box-shadow-light);
-}
-#dfcp-rt-buttons button[data-id=selfroll].active {
-    background-color: var(--color-text-hyperlink);
-    color: var(--background);
-    box-shadow: var(--box-shadow-light);
-}
-
-
-
 /*  Customizable Chat Tabs */
 /* https://github.com/mclemente/fvtt-chat-tabs */
 .tabbedchatlog.tabs {
@@ -429,8 +383,6 @@ color: var(--pfui-main-grey-color);
 .tabbedchatlog .item.active {
     color: var(--color-warm-1);
 }
-
-
 
 
 /* Dice Tray */
@@ -465,7 +417,6 @@ color: var(--pfui-main-grey-color);
 }
  
 
-
 /* Health Estimate */ 
 /* https://github.com/mclemente/healthEstimate */
 li.hm_messageheal {
@@ -484,7 +435,6 @@ li.hm_messagetaken {
     border: 2px solid var(--color-cool-5)!important;
     box-shadow: var(--glassy-shadow);
 }
-
 
 
 /* PF2e Item Revitalizer */
@@ -540,16 +490,11 @@ li.hm_messagetaken {
 }
 
 
-
-
-
 /* Module Management + */
 /* https://github.com/mouse0270/module-credits */
 .dialog-content textarea#module-credits-copy-export {
     background-color: var(--background)!important;
 }
-
-
 
 
 /* Monk's hotbar expansion */
@@ -581,8 +526,6 @@ li.hm_messagetaken {
 }
 
 
-
-
 /* Monk's player settings */
 /*https://github.com/ironmonk88/monks-little-details*/
 .differences-list .setting-name {
@@ -601,8 +544,6 @@ li.hm_messagetaken {
 .differences-list .setting-newvalue {
     background-color: var(--background);
 }
-
-
 
 
 /* Monk's Little Details */
@@ -643,7 +584,6 @@ li.hm_messagetaken {
   color: var(--pfui-main-color);
   font-size:  12px;
 }
-
 
 
 /* Monk's Scene Navigation */
@@ -764,12 +704,14 @@ li.hm_messagetaken {
     border-radius: var(--border-radius);
 }
 
+
 /* Monk's Sound Enhancements */
 /* https://github.com/ironmonk88/monks-sound-enhancements */
 #mseCharacterSound, #mseItemSound {
     color: var(--green);
     background: var(--color-cool-4);
 }
+
 
 /* Monk's Enhancement Journal */
 /* https://github.com/ironmonk88/monks-enhanced-journal */
@@ -790,6 +732,7 @@ body[inline-roll-styling="true"] a.tile-trigger-link {
     box-shadow: var(--box-shadow);
     border-radius: var(--border-radius)
 }
+
 
 /* Monk's TokenBar */
 /* https://github.com/ironmonk88/monks-tokenbar */
@@ -960,6 +903,13 @@ li.chat-message.message .message-content .monks-tokenbar *.noselect * {
 }
 
 
+/* PF2e Graphics*/
+/*https://github.com/MrVauxs/pf2e-graphics*/
+.pf2e-g .bg-purple-400\/25 {
+    background-color: unset;
+}
+
+
 /* PF2e Party Sheet Helper */
 /* https://github.com/reyzor1991/pf2e-party-sheet-helper  */
 .show-party-members {
@@ -982,8 +932,6 @@ li.chat-message.message .message-content .monks-tokenbar *.noselect * {
     text-shadow: var(--text-shadow);
     box-shadow: var(--glassy-shadow);
 }
-
-
 
 
 /* PF2e Target-damage */
@@ -1050,6 +998,7 @@ wrapper.pf2e-td.name-left .pf2e-td.damage-application {
     border-radius: 50%!important;
 }
 
+
 /* PF2e Action Support Engine */
 /* https://github.com/reyzor1991/pf2e-wiki/wiki */
 .glass {
@@ -1096,6 +1045,7 @@ wrapper.pf2e-td.name-left .pf2e-td.damage-application {
     color: var(--color-cool-4);
 }
 
+
 /* PF2e target Helper */
 /* https://github.com/reyzor1991/pf2e-wiki/wiki */
 .token-info:not(.top) .name {
@@ -1103,7 +1053,6 @@ wrapper.pf2e-td.name-left .pf2e-td.damage-application {
     color: var(--color-warm-1);
     text-shadow: var(--text-shadow);
 }
-
 
 
 /* PF2e Toolbelt */
@@ -1186,8 +1135,6 @@ wrapper.pf2e-td.name-left .pf2e-td.damage-application {
     border-color: var(--color-text-hyperlink);
     box-shadow: 0 0 6px inset var(--color-text-hyperlink);
 }
-
-
 
 
 /* Polyglot */
@@ -1294,9 +1241,6 @@ box-shadow: var(--box-shadow-light);
 }
 
 
-
-
-
 /* Roll Tracker */
 /* https://github.com/drexl93/roll-tracker */
 .roll-tracker-comparison-card-heading {
@@ -1332,8 +1276,6 @@ box-shadow: var(--box-shadow-light);
 .roll-tracker-comparison-card-subli {
     color: var(--pfui-main-color);
 }
-
-
 
 
 /*Speaking As*/
@@ -1373,8 +1315,6 @@ box-shadow: var(--box-shadow-light);
     background: var(--background);
     box-shadow: var(--box-shadow);
 }
-
-
 
 
 /* Smalltime */
@@ -1446,7 +1386,6 @@ box-shadow: var(--box-shadow-light);
 }
 
 
-
 /* Tabbed Chatlog */
 /* https://github.com/cswendrowski/FoundryVTT-Tabbed-Chatlog */
 
@@ -1506,8 +1445,6 @@ nav.damage-log-nav .item.active:before,
 }
 
 
-
-
 /*Token Health*/
 /*https://github.com/schlosrat/token-health*/
 .dialog .dialog-buttons.token-health button[data-button='heal'] {
@@ -1516,8 +1453,6 @@ nav.damage-log-nav .item.active:before,
 .dialog .dialog-buttons.token-health button[data-button='heal']:hover {
     background-color: transparent;
 }
-
-
 
 
 /* Token Hud Remaster
@@ -1695,6 +1630,7 @@ nav.damage-log-nav .item.active:before,
     text-shadow: 0px 1px 2px black;
 }
 
+
 /* Forien's Quest Log */
 /* https://github.com/League-of-Foundry-Developers/foundryvtt-forien-quest-log */
 
@@ -1764,7 +1700,6 @@ nav.damage-log-nav .item.active:before,
     box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
 }
-
 
 
 /* New Quest
@@ -2125,6 +2060,7 @@ nav.damage-log-nav .item.active:before,
 .quick-insert-result li span.sub {
     color: var(--text-color-5);
 }
+
 
 /*pf2e-kingmaker-tools
 -------------------------------------------------------*/
