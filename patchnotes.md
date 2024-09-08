@@ -5,7 +5,7 @@
 
 
 
-## v12.331.631.3
+## v12.331.631.4
 - Update Compatibility Item Piles,
 - Update Compatibility PF2e Bestiary Tracking,
 - Update Dark Sheet loot,
