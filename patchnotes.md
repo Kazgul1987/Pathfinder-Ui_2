@@ -4,12 +4,12 @@
 - Ready for v12 version.
 
 
-
-## v12.331.631.5
+## v12.331.631.6
 - Update Compatibility Item Piles,
 - Update Compatibility PF2e Bestiary Tracking,
 - Update Dark Sheet loot,
 - Remove Compatibility with olds module.
+- fix some errors and added of others.
 
 ## v12.331.631.2
 - Update Token Effects Halo

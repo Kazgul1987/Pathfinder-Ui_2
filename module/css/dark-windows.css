@@ -113,8 +113,7 @@
 .app.window-app, 
 .app.window-app.dialog, 
 .app.window-app.folder-edit {
-    background: unset;
-    background: radial-gradient(var(--color-cool-4-90) -200%, var(--color-cool-5-90));
+    background: rgba(6, 4, 3, 0.90);
     backdrop-filter: blur(15px);
 }
 .window-app.dialog .window-header, 
@@ -122,13 +121,14 @@
     background: unset;
     box-shadow: unset;
     border: none;
-    --input-text-color: var(--color-light-3);
+    --input-text-color: var(--color-warm-1);
     color: var(--input-text-color);
 }
 .window-app .window-content,
 .window-app.dialog .window-content, 
 .window-app.folder-edit .window-content { 
     background: unset;
+    backdrop-filter: unset;
     --input-text-color: var(--color-light-3);
     color: var(--input-text-color);
 }
@@ -148,8 +148,26 @@ a:hover {
     text-shadow: var(--text-shadow);
     color: var(--color-warm-1);
 }
-
-button,
+.window-app .window-header a {
+    font-weight: 600;
+    color: var(--pfui-main-grey-color);
+    background: var(--color-warm-3);
+    border: 1px solid transparent;
+    box-shadow: var(--box-shadow);
+    text-shadow: var(--text-shadow);
+    border-radius: var(--border-radius);
+    --button-size: 27px;
+    flex: 0 0 var(--button-size);
+    height: var(--button-size);
+    width: var(--button-size);
+    text-align: center;
+    padding-left: 2px;
+    margin: 0px 0 0 5px;
+}
+.window-app .window-header .window-title .document-id-link {
+    opacity: 1;
+}
+.sheet footer.sheet-footer > *,
 .dialog-buttons button,
 #support-details button,
 .window-app form button,
@@ -166,9 +184,11 @@ button,
     background: var(--color-warm-3);
     border: 1px solid transparent;
     box-shadow: var(--box-shadow);
+    text-shadow: var(--text-shadow);
     border-radius: var(--border-radius);
 }
-button:hover,
+.window-app .window-header a:hover,
+.sheet footer.sheet-footer > *:hover,
 .window-app form button:hover,
 .loot-actor-popup .confirm-button:hover,
 .package-configuration aside.sidebar .reset-all:hover {
@@ -180,6 +200,11 @@ button:hover,
     text-shadow: var(--text-shadow) !important;
     color: var(--background) !important;
     border-radius: var(--border-radius);
+}
+.window-app .window-header::after, 
+.window-app.dialog .window-header::after, 
+.window-app.folder-edit .window-header::after {
+    background: unset;
 }
 .window-app .window-resizable-handle {
     --color-primary-3: #5d142b;

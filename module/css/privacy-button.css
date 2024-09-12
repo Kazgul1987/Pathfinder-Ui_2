@@ -86,7 +86,11 @@
   box-shadow: var(--box-shadow-pf2e);
   background: var(--color-cool-5-25);
 }
-
+#rpg-ui-buttons button:hover {
+  color: #ff6400;
+  border-color: #ff6400;
+  box-shadow: 0 0 6px inset #ff6400;
+}
 #rpg-ui-buttons button i {
   width: 20px;
   height: 20px;
