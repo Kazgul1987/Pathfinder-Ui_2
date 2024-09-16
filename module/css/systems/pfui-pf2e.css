@@ -239,6 +239,7 @@ select,
 .pf2e.chat-card .card-header,
 .pf2e.chat-card .card-footer,
 .pf2e.chat-card .card-footer span {
+    color: var(--color-light-2);
     border-top: 2px dotted var(--border-color);
     border-bottom: 2px dotted var(--border-color);
 }
@@ -551,10 +552,10 @@ a.content-link.broken {
     outline: 2px solid var(--color-light-6);
 }
 .chat-message .message-header.with-image h4.message-sender {
-    color: var(--color-light-2);
+    color: var(--color-light-1);
 }
 .chat-message .message-header.with-image .user {
-    color: var(--color-light-4);
+    color: var(--color-light-1-90);
 }
 /*end*/
 

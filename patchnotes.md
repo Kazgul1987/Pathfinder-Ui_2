@@ -4,7 +4,8 @@
 - Ready for v12 version.
 
 
-## v12.331.631.8
+## v12.331.640.1
+- Update Chat colors.
 - Update Compatibility Monk's Sound Enhancements,
 - fix some errors and added of others.
 

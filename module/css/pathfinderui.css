@@ -148,6 +148,7 @@ body {
     --color-scrollbar-border: #8d151b;
 
     --color-bg-physical: rgba(132, 132, 132, 0.125);
+    --color-bg-btn-minor-active: #b5b3a4;
     --color-border-physical: #737272;
     --color-text-physical: #a0a0a0;
 }
@@ -598,7 +599,7 @@ body.compact-mode #logo {
 }
 
 .chat-message .message-content {
-    color: var(--pfui-main-grey-color);
+    color: var(--color-bg-btn-minor-active);
     text-shadow: 0px 1px 1px black;
 }
 
