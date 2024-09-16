@@ -167,6 +167,8 @@ a:hover {
 .window-app .window-header .window-title .document-id-link {
     opacity: 1;
 }
+.directory .action-buttons button,
+.sheet-footer button,
 .sheet footer.sheet-footer > *,
 .dialog-buttons button,
 #support-details button,
@@ -187,6 +189,8 @@ a:hover {
     text-shadow: var(--text-shadow);
     border-radius: var(--border-radius);
 }
+.directory .action-buttons button:hover,
+.sheet-footer button:hover,
 .window-app .window-header a:hover,
 .sheet footer.sheet-footer > *:hover,
 .window-app form button:hover,
@@ -1085,8 +1089,21 @@ div.journal-sheet.window-app.pf2e-km .journal-page-content section.social span.m
     color: var(--color-rarity-unique);
 }
 
-/*Module Management+*/
-
+/*Monk's sound enhancements*/
+.sheet .sound-sheet .items-list .items-header {
+    color: var(--color-light-3);
+    background: var(--color-warm-3);
+    box-shadow: var(--box-shadow);
+    border: unset;
+    text-shadow: var(--text-shadow);
+    border-radius: var(--border-radius);
+}
+.sheet .sound-sheet .items-list .item .item-name {
+    color: var(--pfui-main-grey-color);
+}
+.sheet .sound-sheet .items-list .item {
+    border-bottom: 1px dotted var(--color-cool-3);
+}
 
 /*Monk's TokenBar*/
 .monks-tokenbar .sheet .items-list .item-name h3, 

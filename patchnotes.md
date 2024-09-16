@@ -4,6 +4,10 @@
 - Ready for v12 version.
 
 
+## v12.331.631.7
+- Update Compatibility Monk's Sound Enhancements,
+- fix some errors and added of others.
+
 ## v12.331.631.6
 - Update Compatibility Item Piles,
 - Update Compatibility PF2e Bestiary Tracking,
