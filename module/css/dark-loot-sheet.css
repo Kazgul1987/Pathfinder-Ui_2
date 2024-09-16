@@ -327,6 +327,15 @@
     border-radius: var(--border-radius);
     backdrop-filter: blur(5px);
 }
+.dark-loot-theme.sheet.actor.loot form section.content .inventory li.hidden-item {
+    border: 1px solid var(--color-cool-4);
+    background: none;
+    background-color: var(--glass-bg);
+    box-shadow: var(--box-shadow);
+    text-shadow: 0 0 3px black;
+    border-radius: var(--border-radius);
+    backdrop-filter: blur(5px);
+}
 .actor.sheet section.window-content .inventory ul.items > li > .data .item-name .uses {
     border-color: var(--color-rarity-common);
     color: var(--color-rarity-common);
@@ -430,28 +439,6 @@
     text-shadow: 0 0 8px var(--color-shadow-primary);
 }
 
-/*.glassy.dark-loot-theme.sheet.actor.loot form section.sidebar .image-container > img.actor-image {
-    box-shadow: var(--box-shadow);
-    border: none;
-    border-radius: 8px;
-    margin: 5px 0px 5px 7px;
-    backdrop-filter: blur(5px);
-    width: 93%;
-}
-.glassy.dark-loot-theme.sheet.actor.loot .side-bar-section {
-    box-shadow: var(--box-shadow);
-       background-color: var(--color-cool-5-90);
-    border-radius: var(--border-radius);
-    margin: 5px 5px;
-    backdrop-filter: blur(5px);
-}
-.glassy.dark-loot-theme.sheet.actor.loot section.sidebar {
-    box-shadow: var(--box-shadow);
-    background-color: var(--color-cool-5-90);
-    border-radius: 10px;
-    margin: 1px 5px 5px 5px;
-    backdrop-filter: blur(5px);
-}*/
 .glassy.dark-loot-theme.sheet.actor.loot .inventory {
     width: 102%;
 }
@@ -479,4 +466,3 @@
     background: none;
     border: none;
 }
-
