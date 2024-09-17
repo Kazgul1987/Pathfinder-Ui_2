@@ -205,7 +205,7 @@
     box-shadow: unset;
     text-shadow: var(--text-shadow);
 }
-.pf2e-bestiary-tracking .window-header {
+form.pf2e-bestiary-tracking.application > header {
     box-shadow: var(--box-shadow);
     background-color: var(--color-cool-5-25);
     border-radius: var(--border-radius);
@@ -217,6 +217,7 @@
     color: var(--color-warm-1);
     font-size: large;
     text-transform: uppercase;
+    text-shadow: var(--text-shadow);
 }
 .pf2e-bestiary-tracking.bestiary .bestiary-welcome {
     color: var(--color-light-3);
@@ -326,13 +327,13 @@
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    padding: 10px;
+    padding: 2px;
     border-width: 0 1px 1px 1px;
     border-color: black;
     border-style: solid;
     box-shadow: var(--box-shadow);
     background: var(--color-cool-5-25);
-    border-radius: var(--border-radius);
+    border-radius: var(--border-radius-5);
     backdrop-filter: blur(15px);
 }
 .pf2e-bestiary-tracking.bestiary .monster-container .right-monster-container .monster-name-container .monster-name.toggle-container {
@@ -406,4 +407,43 @@
 .pf2e-bestiary-tracking.bestiary .monster-container .right-monster-container .spell-list-container .spell-header-row {
     background: radial-gradient(var(--primary-remaster), var(--color-cool-5));
     text-shadow: var(--text-shadow);
+}
+.pf2e-bestiary-tracking.bestiary .monster-container .right-monster-container .tagify {
+    color: var(--pfui-main-color);
+    background: var(--color-warm-3);
+    border: 1px solid transparent;
+    text-shadow: var(--text-shadow);
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+}
+.tagify--empty .tagify__input::before,
+.tagify__input:focus:empty::before {
+    color:var(--pfui-main-grey-color);
+}
+.tagify__tag.tagify--noAnim.tagify-hover-parent {
+    border: 1px solid transparent;
+    box-shadow: var(--box-shadow);
+}
+.pf2e-bestiary-tracking.bestiary .monster-container .data-body .data-input.editor {
+    border: unset;
+    box-shadow: var(--box-shadow);
+}
+.pf2e-bestiary-tracking .primary-editor .editor-content[contenteditable="true"] {
+    border: none;
+    background: var(--color-cool-4);
+}
+.pf2e-bestiary-tracking .primary-editor menu {
+    background: var(--color-cool-4);
+    border: unset;
+}
+.pf2e-bestiary-tracking .primary-editor menu li button {
+    color: unset;
+}
+.pf2e-bestiary-tracking .primary-editor menu li button.pm-dropdown {
+    background: var(--color-warm-3);
+}
+.pf2e-bestiary-tracking.bestiary .monster-container .left-monster-container .disposition-container .disposition-inner-container .disposition-label {
+    text-transform: uppercase;
+    font-size: var(--font-h4);
+    font-weight: bold;
 }
