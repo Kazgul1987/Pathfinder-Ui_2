@@ -1089,7 +1089,129 @@ div.journal-sheet.window-app.pf2e-km .journal-page-content section.social span.m
     color: var(--color-rarity-unique);
 }
 
-/*Monk's sound enhancements*/
+/* Monk's Active Tile Triggers */
+/* https://github.com/ironmonk88/monks-active-tiles */
+.multiple-dropdown {
+    --input-background-color: var(--color-cool-4-90);
+    --input-border-color: transparent;
+    --input-text-color: var(--color-light-3);
+    background: var(--input-background-color);
+    border: 1px solid var(--input-border-color);
+    outline: 1px solid transparent;
+    color: var(--input-text-color);
+    --input-box-shadow: none;
+    box-shadow: var(--input-box-shadow);
+    border-radius: 4px;
+    user-select: text;
+    transition: outline-color 0.5s;
+}
+.multiple-dropdown:hover {
+border-color: var(--color-cool-3);
+}
+.multiple-dropdown > i {
+    --input-text-color: var(--color-light-3);
+    color: var(--input-text-color);
+}
+.multiple-dropdown-select .dropdown-list {
+    background: var(--color-cool-5-25);
+    border: 1px dotted var(--color-cool-3-90);
+}
+.multiple-dropdown-select .dropdown-list .multiple-dropdown-item {
+    --input-background-color: var(--color-cool-4);
+    --input-border-color: var(--color-cool-3-90);
+    --input-text-color: var(--color-light-3);
+    background: var(--input-background-color);
+    border: 1px solid var(--input-border-color);
+    outline: 1px solid transparent;
+    color: var(--input-text-color);
+    --input-box-shadow: none;
+    box-shadow: var(--input-box-shadow);
+    border-radius: 4px;
+    user-select: text;
+    transition: outline-color 0.5s;
+    text-shadow: var(--text-shadow);
+}
+.multiple-dropdown .multiple-dropdown-option {
+    color: var(--sta-main-color);
+    background: var(--color-warm-3) !important;
+    text-shadow: var(--text-shadow);
+    border: unset;
+    box-shadow: var(--box-shadow);
+}
+.multiple-dropdown .multiple-dropdown-option .remove-option:hover {
+    color:var(--green);
+}
+.monks-active-tiles.sheet .items-list .item-header {
+    color: var(--sta-main-color);
+    background: var(--color-warm-3);
+    text-shadow: var(--text-shadow);
+    border: unset;
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+}
+.action-sheet .display-value {
+    --input-background-color: var(--color-cool-4);
+    --input-border-color: var(--color-cool-3-90);
+    --input-text-color: var(--color-light-3);
+    background: var(--input-background-color);
+    border: 1px solid var(--input-border-color);
+    outline: 1px solid transparent;
+    color: var(--input-text-color);
+    --input-box-shadow: none;
+    box-shadow: var(--input-box-shadow);
+    border-radius: 4px;
+    user-select: text;
+    transition: outline-color 0.5s;
+    text-shadow: var(--text-shadow);
+}
+.monks-active-tiles.sheet .items-list .item {
+    --input-background-color: var(--color-cool-4-90);
+    --input-border-color: var(--color-cool-3-90);
+    border-bottom: 1px dotted var(--input-border-color);
+    background: var(--input-background-color);
+    color: var(--green);
+}
+.monks-active-tiles.sheet .items-list .item .item-name {
+    color: var(--color-cool-1);
+    text-shadow: var(--text-shadow);
+}
+.monks-active-tiles div[data-tab="triggers"] .action-items .action-style {
+    color: var(--color-warm-2);
+    text-shadow: var(--text-shadow);
+}
+
+.monks-active-tiles div[data-tab="triggers"] .action-items .filter-style {
+    color: var(--bg3-alliance-opposition-red);
+    text-shadow: var(--text-shadow);
+}
+
+.monks-active-tiles div[data-tab="triggers"] .action-items .logic-style {
+    color: var(--color-cool-1);
+    text-shadow: var(--text-shadow);
+}
+
+.monks-active-tiles div[data-tab="triggers"] .action-items .entity-style {
+    color: var(--pfui-main-grey-color);
+    text-shadow: var(--text-shadow);
+}
+
+.monks-active-tiles div[data-tab="triggers"] .action-items .details-style {
+    color: var(--color-warm-1);
+    text-shadow: var(--text-shadow);
+}
+
+.monks-active-tiles div[data-tab="triggers"] .action-items .value-style {
+    color: var(--pfui-main-grey-color);
+    text-shadow: var(--text-shadow);
+}
+
+.monks-active-tiles div[data-tab="triggers"] .action-items .tag-style {
+    color: var(--bg3-blue-light);
+    text-shadow: var(--text-shadow);
+}
+
+/* Monk's Sound Enhancements */
+/* https://github.com/ironmonk88/monks-sound-enhancements */
 .sheet .sound-sheet .items-list .items-header {
     color: var(--color-light-3);
     background: var(--color-warm-3);

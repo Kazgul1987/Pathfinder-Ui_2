@@ -4,6 +4,9 @@
 - Ready for v12 version.
 
 
+## v12.331.640.4
+- Update Compatibility Monk's Active Tile Triggers.
+
 ## v12.331.640.3
 - Update Chat colors.
 - Update Compatibility PF2e Bestiary Tracking,
