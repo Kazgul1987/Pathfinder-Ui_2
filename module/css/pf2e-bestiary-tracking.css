@@ -122,6 +122,12 @@
     --pf2emm-color-harmful-outline: #ff0000bf;
     --pf2emm-color-detrimental: #ff852f;
     --pf2emm-color-detrimental-outline: #ff852fbf;
+
+/*PF2e Bestiary Tracking
+=======================================================*/
+    --pf2e-bestiary-tracking-secondary-icon: var(--pfui-main-grey-color)!important;
+    --pf2e-bestiary-tracking-icon: #var(--color-light-2)!important;
+    --pf2e-bestiary-tracking-primary-color: var(--color-light-3)!important;
 }
 
 
@@ -427,6 +433,12 @@ form.pf2e-bestiary-tracking.application > header {
 .pf2e-bestiary-tracking.bestiary .monster-container .data-body .data-input.editor {
     border: unset;
     box-shadow: var(--box-shadow);
+}
+.pf2e-bestiary-tracking .primary-editor .editor-content {
+    --pf2e-bestiary-tracking-border: transparent;
+    border-color: unset;
+    border: 1px solid var(--pf2e-bestiary-tracking-border);
+    border-radius: 6px;
 }
 .pf2e-bestiary-tracking .primary-editor .editor-content[contenteditable="true"] {
     border: none;

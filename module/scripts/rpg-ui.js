@@ -243,6 +243,7 @@ function rpgUIAddMainCss() {
 	mainCss.setAttribute("href", "modules/pathfinder-ui/css/pathfinderui.css")
 	mainCss.setAttribute("media", "all")
 	head.insertBefore(mainCss, head.lastChild);
+	document.body.classList.add('pathfinderui-v3');
 }
 function rpgUIAddDarkWindows() {
 	const head = document.getElementsByTagName("head")[0];

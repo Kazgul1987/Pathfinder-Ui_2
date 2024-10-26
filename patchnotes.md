@@ -4,6 +4,9 @@
 - Ready for v12 version.
 
 
+## v12.331.650.1
+- Update Compatibility PF2e Bestiary Tracking.
+
 ## v12.331.640.4
 - Update Compatibility Monk's Active Tile Triggers.
 
