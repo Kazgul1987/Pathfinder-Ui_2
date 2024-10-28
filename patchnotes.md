@@ -4,6 +4,10 @@
 - Ready for v12 version.
 
 
+## v12.331.651.1
+- Update core code.
+- Update compatibility PF2e v6.5.x
+
 ## v12.331.650.1
 - Update Compatibility PF2e Bestiary Tracking.
 

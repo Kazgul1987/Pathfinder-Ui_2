@@ -805,7 +805,7 @@ h6+ul+blockquote, h6+blockquote) {
 /* TABLES
 ====================================================== */
 
-.dark-custom .journal-entry-page table {
+.dark-custom .scrollable .journal-entry-page table {
 	font-family: "Good OT";
 	max-width: calc(100% - 24px);
 	margin-left: auto;
@@ -813,24 +813,24 @@ h6+ul+blockquote, h6+blockquote) {
 	border: unset;
 	box-shadow: var(--glassy-shadow);
 }
-.dark-custom .journal-entry-page table th {
+.dark-custom .scrollable .journal-entry-page table th {
     color: var(--color-warm-1);
     background-color: var(--color-cool-5);
 }
-.dark-custom .journal-entry-page tr:nth-child(2n) {
+.dark-custom .scrollable .journal-entry-page tr:nth-child(2n) {
 	background-color: var(--color-cool-5);
     color: var(--pfui-main-color);
 }
-.dark-custom .journal-entry-page tr:nth-child(2n+1) {
+.dark-custom .scrollable .journal-entry-page tr:nth-child(2n+1) {
 	background-color: var(--color-cool-4);
     color: var(--pfui-main-color);
 }
-.dark-custom .journal-entry-page tr:hover {
+.dark-custom .scrollable .journal-entry-page tr:hover {
 	background-color: var(--green);
     color: var(--color-cool-5);
 }
-.dark-custom .journal-entry-page table td,
-.dark-custom .journal-entry-page table th {
+.dark-custom .scrollable .journal-entry-page table td,
+.dark-custom .scrollable .journal-entry-page table th {
 	padding: 4px 6px;
 }
 
