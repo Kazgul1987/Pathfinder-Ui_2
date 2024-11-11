@@ -283,7 +283,7 @@
 .dark-party-theme.sheet.party [data-tab=overview] .member > .data header .blurb {
     color: var(--pfui-main-color);
 }
-.dark-party-theme.sheet.party [data-tab=overview] .member > .data header .hero-points .empty {
+.dark-party-theme.sheet.party [data-tab=overview] .member > .data header .resource .empty {
     border: 2px dashed var(--green);
 }
 .dark-party-theme.sheet.party [data-tab=overview] .member .name .abc {

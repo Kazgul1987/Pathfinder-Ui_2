@@ -4,6 +4,9 @@
 - Ready for v12 version.
 
 
+## v12.331.662.1
+- corrects the problem of hero points not displaying correctly in the dark party sheet
+
 ## v12.331.651.1
 - Update core code.
 - Update compatibility PF2e v6.5.x
