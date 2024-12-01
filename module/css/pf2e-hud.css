@@ -489,3 +489,24 @@ background: var(--green);
   border: none;
   border-radius: var(--border-radius);
 }
+
+/*Dices*/
+#pf2e-hud-dice {
+border: unset;
+}
+#pf2e-hud-dice .dice {
+  justify-content: center;
+}
+#pf2e-hud-dice .dice .die {
+  --die-fill: var(--pfui-main-grey-color);
+  fill: var(--die-fill);
+}
+#pf2e-hud-dice .dice .die:hover {
+  --die-fill: var(--green);
+}
+
+/*Time*/
+#pf2e-hud-time {
+  padding-block: 1.2rem 0.5rem;
+  margin-bottom: -25px;
+}
