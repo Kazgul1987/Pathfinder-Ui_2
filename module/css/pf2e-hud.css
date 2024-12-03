@@ -494,15 +494,18 @@ background: var(--green);
 #pf2e-hud-dice {
 border: unset;
 }
-#pf2e-hud-dice .dice {
-  justify-content: center;
-}
-#pf2e-hud-dice .dice .die {
+#pf2e-hud-dice .flat,
+#pf2e-hud-dice .die {
   --die-fill: var(--pfui-main-grey-color);
   fill: var(--die-fill);
 }
-#pf2e-hud-dice .dice .die:hover {
+#pf2e-hud-dice .flat:hover,
+#pf2e-hud-dice .die:hover {
   --die-fill: var(--green);
+}
+#pf2e-hud-dice .flat span {
+  --flat-color:var(--red);
+  color: var(--flat-color);
 }
 
 /*Time*/
