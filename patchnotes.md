@@ -4,6 +4,11 @@
 - Ready for v12 version.
 
 
+## v12.331.680.1
+- Update core code.
+- Update compatibility PF2e v6.8.x
+- Fix a bug in Carousel Combat tracker when Combat carousel option is enabled.
+
 ## v12.331.672.2
 - Update compatibility with PF2e HUD.
 
