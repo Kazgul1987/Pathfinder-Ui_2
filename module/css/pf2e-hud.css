@@ -419,7 +419,6 @@ background: var(--green);
 #pf2e-hud-tooltip .distance, 
 #pf2e-hud-tooltip .status, 
 #pf2e-hud-tooltip .inner {
-  color: var(--color-light-3);
   text-shadow: var(--text-shadow);
   outline: 1px solid var(--color-cool-5);
   border-radius: var(--border-radius);

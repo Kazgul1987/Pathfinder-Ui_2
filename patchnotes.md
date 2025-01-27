@@ -4,6 +4,9 @@
 - Ready for v12 version.
 
 
+## v12.331.684.1
+- Update compatibility with PF2e HUD.
+
 ## v12.331.680.1
 - Update core code.
 - Update compatibility PF2e v6.8.x
