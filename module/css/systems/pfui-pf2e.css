@@ -1166,7 +1166,7 @@ button.half-damage .fa-heart-broken::after {
     background: linear-gradient(45deg, var(--color-cool-4), var(--color-cool-5-90));
 }
 .sheet.familiar header .header-content .charname input:focus {
-    border-bottom: unset;
+    border-bottom-color: transparent;
 }
 .sheet.familiar header .header-content .charname input {
 --input-background-color: var(--color-cool-4);
@@ -1223,7 +1223,6 @@ transition: outline-color 0.5s;
     color:#aab0b3;
 }
 .sheet.familiar select {
-    border: 0;
     background: var(--rpg-styled-ui-color);
     border-radius: 3px;
     font-family: inherit;
@@ -1249,7 +1248,7 @@ transition: outline-color 0.5s;
     color:unset;
 }
 .sheet.familiar .skills-content .skills-list a:hover {
-    border: none;
+    border-color: transparent;
     background: none;
     background-color: var(--green) !important;
     transition: text-shadow 0.15s ease-in-out, background-color 0.15s ease-in-out, border 0.15s ease-in-out, color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, backdrop-filter 0.15s ease-in-out, border-radius 0.15s;

@@ -179,7 +179,6 @@
 .dark-npc-theme.actor.npc form input[type=text]:hover:not(:disabled), .dark-npc-theme.actor.npc form input[type=text]:focus, .dark-npc-theme.actor.npc form input[type=number]:hover:not(:disabled), .dark-npc-theme.actor.npc form input[type=number]:focus {
     color: var(--pfui-main-color);
     text-transform: uppercase;
-    border: none;
     background-color: var(--glass-bg);
     box-shadow: var(--box-shadow);
     text-shadow: var(--text-shadow);
@@ -278,7 +277,7 @@
 .dark-npc-theme.actor.npc form .sheet-body .actions-list li.attack .button-group button:hover, 
 .dark-npc-theme.actor.npc form .sheet-body .attacks-list li.action .button-group button:hover, 
 .dark-npc-theme.actor.npc form .sheet-body .attacks-list li.attack .button-group button:hover {
-    border: none;
+    border-color: transparent;
     background: none;
     background-color: var(--green)!important;
     box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15), inset 0 0 0 2px rgba(0, 0, 0, 0.4);
