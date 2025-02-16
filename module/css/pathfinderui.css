@@ -1012,7 +1012,7 @@ hr {
 #controls ol .control-tool:hover {
     color: var(--pfui-main-color)!important;
     background: url(../ui/buttons/controls_btn_accent.webp);
-    border: none!important;
+    border-color: transparent !important;
     box-shadow: none!important;
 }
 
