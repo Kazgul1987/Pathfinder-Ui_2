@@ -4,6 +4,9 @@
 - Ready for v12 version.
 
 
+## v12.331.690.1
+- Some UI Elements Jump on Hover/Focus
+
 ## v12.331.684.1
 - Update compatibility with PF2e HUD.
 

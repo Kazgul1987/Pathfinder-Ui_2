@@ -11,7 +11,7 @@
       "flags": {}
     }
   ],
-  "version": "12.331.684.1",
+  "version": "12.331.690.1",
   "compatibility": {
     "minimum": "12",
     "verified": "12"
@@ -22,8 +22,8 @@
         "id": "pf2e",
         "type": "system",
         "compatibility": {
-          "minimum": "6.8.0",
-          "verified": "6.8.4"
+          "minimum": "6.9.0",
+          "verified": "6.9.0"
         }
       }
     ]
