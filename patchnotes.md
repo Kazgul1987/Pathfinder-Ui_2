@@ -4,6 +4,9 @@
 - Ready for v12 version.
 
 
+## v12.331.6111.1
+- Add compatibility with Kingdom Building, Camping & Weather
+
 ## v12.331.690.1
 - Some UI Elements Jump on Hover/Focus
 

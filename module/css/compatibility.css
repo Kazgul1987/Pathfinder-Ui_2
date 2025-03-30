@@ -2201,3 +2201,68 @@ nav.damage-log-nav .item.active:before,
     background: repeating-linear-gradient(var(--color-cool-3) 0 var(--row-height), var(--color-cool-4-90) var(--row-height) calc(var(--row-height) * 2));
     text-shadow: var(--text-shadow);
 }
+
+/*
+Kingdom Building, Camping & Weather
+====================================================== */
+.theme-light {
+    .application.km-kingdom-sheet,
+    .application.km-inspect-settlement {
+        .km-kingdom-sheet-sub-nav,
+        .km-kingdom-sheet-sub-content,
+        .km-kingdom-sheet-sidebar,
+        .km-choose-leaders li {
+            background-image: unset;
+            background-color: rgba(11, 10, 19, .95);
+            border-radius: 5px;
+            border: 1px solid;
+            box-shadow: 0 0 5px 1px rgba(0, 0, 0, .5);
+        }
+
+        h2,
+        h3,
+        .km-grow-subnav a[href],
+        .km-tabs a[href],
+        .km-kingdom-sheet-sub-nav a[href] {
+            color: var(--color-warm-2);
+            text-shadow: unset;
+        }
+
+        .km-leader-portrait {
+            &:hover button {
+                color: unset;
+                background-color: unset;
+            }
+        }
+
+    }
+}
+
+.theme-dark {
+    .km-kingdom-sheet {
+        .km-kingdom-sheet-sub-nav,
+        .km-kingdom-sheet-sub-content,
+        .km-kingdom-sheet-sidebar,
+        .km-choose-leaders li {
+            background-color: rgba(11, 10, 19, .95);
+            border-radius: 5px;
+            border: 1px solid;
+            box-shadow: 0 0 5px 1px rgba(0, 0, 0, .5);
+        }
+
+        h2,
+        h3,
+        .km-grow-subnav a[href],
+        .km-tabs a[href],
+        .km-kingdom-sheet-sub-nav a[href] {
+            color: var(--color-warm-2);
+            text-shadow: unset;
+        }
+
+        .km-leader-portrait {
+            &:hover button {
+                color: unset;
+                background-color: unset;
+            }
+        }    }
+}
