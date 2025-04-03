@@ -119,7 +119,11 @@ select,
     --input-placeholder-color: var(--color-light-4);
     --input-focus-outline-color: var(--color-cool-3);
 }
-
+.theme-light .browser-tab input[type="search"]:focus,
+.theme-light .browser-tab .levels-container select:focus {
+    --input-text-color: var(--color-light-3);
+    color: var(--input-text-color);
+}
 /* scrollbar
 ====================================================== */
 * {

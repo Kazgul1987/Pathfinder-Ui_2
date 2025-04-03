@@ -4,6 +4,10 @@
 - Ready for v12 version.
 
 
+## v12.331.6111.2
+- fix light theme color in the browser compendium
+- Update compatibility with Kingdom Building, Camping & Weather
+
 ## v12.331.6111.1
 - Add compatibility with Kingdom Building, Camping & Weather
 

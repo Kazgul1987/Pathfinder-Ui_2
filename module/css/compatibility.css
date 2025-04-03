@@ -2205,6 +2205,9 @@ nav.damage-log-nav .item.active:before,
 /*
 Kingdom Building, Camping & Weather
 ====================================================== */
+/**
+ * light Kingdom Theme
+ */
 .theme-light {
     .application.km-kingdom-sheet,
     .application.km-inspect-settlement {
@@ -2237,7 +2240,25 @@ Kingdom Building, Camping & Weather
 
     }
 }
-
+/**
+ * dark & light Kingdom Theme
+ */
+.theme-light,
+.theme-dark {
+    .empty-activity, 
+    .km-recipe-cost, 
+    .km-camping-eating-total, 
+    .km-recipe-actors li, 
+    .km-camping-tile-check {
+        --background: black;
+        background: var(--background);
+        box-shadow: var(--box-shadow);
+        border: transparent !important;
+    }
+}
+/**
+ * Dark Kingdom Theme
+ */
 .theme-dark {
     .km-kingdom-sheet {
         .km-kingdom-sheet-sub-nav,
@@ -2255,7 +2276,7 @@ Kingdom Building, Camping & Weather
         .km-grow-subnav a[href],
         .km-tabs a[href],
         .km-kingdom-sheet-sub-nav a[href] {
-            color: var(--color-warm-2);
+            color: var(--color-warm-1);
             text-shadow: unset;
         }
 
@@ -2265,4 +2286,87 @@ Kingdom Building, Camping & Weather
                 background-color: unset;
             }
         }    }
+}
+.theme-dark {
+    & .km-kingdom-sheet {
+        .km-kingdom-sheet-sub-nav, .km-kingdom-sheet-sub-content, .km-kingdom-sheet-sidebar, .km-choose-leaders li {
+            border: 1px dotted var(--color-warm-4);
+
+        }
+    }
+}
+/**
+ * Tabs
+ */
+.km-tabs {
+    & ul {
+        & li {
+            &.km-tab-active {
+                box-shadow: 0 0 10px #222;
+                z-index: 1;
+                font-weight: 600;
+                color: var(--pfui-main-grey-color);
+                background: var(--color-warm-3);
+                border: 1px solid transparent;
+                text-shadow: var(--text-shadow);
+                border-radius: var(--border-radius);
+            }
+        }
+    }
+}
+.km-kingdom-sheet {
+    & .km-kingdom-sheet-sub-nav, & .km-kingdom-sheet-main-nav {
+        & ul {
+            & a {
+                &:hover, &.active {
+                    font-weight: 600;
+                    color: var(--pfui-main-grey-color);
+                    background: var(--color-warm-3);
+                    border: 1px solid transparent;
+                    text-shadow: var(--text-shadow);
+                    box-shadow: var(--box-shadow);
+                    border-radius: var(--border-radius);
+                }
+            }
+        }
+    }
+}
+/**
+ * Camping  
+ */
+#km-camping-content {
+    & .km-camping-activities {
+        & .km-camping-recipe {
+            & .km-recipe-data {
+                &.km-no-skill-check {
+                    --background: black;
+                    background-color: var(--background);
+                    box-shadow: var(--box-shadow);
+                    border: transparent !important;
+                }
+            }
+        }
+    }
+}
+#km-camping-content {
+    & .km-camping-activities {
+        & .km-camping-tile {
+            header {
+                --background: black;
+                background: unset;
+                background-color: var(--background);
+            }
+        }
+    }
+}
+#km-camping-content {
+    & .km-camping-activities {
+        & .km-camping-recipe {
+            & .km-recipe-rations {
+                button {
+                    background: var(--color-warm-3);
+                }
+            }
+        }
+    }
 }
