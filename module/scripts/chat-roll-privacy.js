@@ -16,7 +16,7 @@ export default class ChatRollPrivacy {
       editable: [{ key: 'KeyQ', modifiers: [KeyboardManager.MODIFIER_KEYS.ALT] }],
       namespace: 'Roll Type Shortcuts',
       onDown: () => {
-        $('#rpg-ui-buttons > button[data-id="publicroll"]').trigger('click');
+        document.querySelector('#rpg-ui-buttons > button[data-id="publicroll"]')?.click();
       },
     });
     game.keybindings.register('pathfinder-ui', 'roll-mode.gmroll', {
@@ -24,7 +24,7 @@ export default class ChatRollPrivacy {
       editable: [{ key: 'KeyW', modifiers: [KeyboardManager.MODIFIER_KEYS.ALT] }],
       namespace: 'Roll Type Shortcuts',
       onDown: () => {
-        $('#rpg-ui-buttons > button[data-id="gmroll"]').trigger('click');
+        document.querySelector('#rpg-ui-buttons > button[data-id="gmroll"]')?.click();
       },
     });
     game.keybindings.register('pathfinder-ui', 'roll-mode.blindroll', {
@@ -32,7 +32,7 @@ export default class ChatRollPrivacy {
       editable: [{ key: 'KeyE', modifiers: [KeyboardManager.MODIFIER_KEYS.ALT] }],
       namespace: 'Roll Type Shortcuts',
       onDown: () => {
-        $('#rpg-ui-buttons > button[data-id="blindroll"]').trigger('click');
+        document.querySelector('#rpg-ui-buttons > button[data-id="blindroll"]')?.click();
       },
     });
     game.keybindings.register('pathfinder-ui', 'roll-mode.selfroll', {
@@ -40,7 +40,7 @@ export default class ChatRollPrivacy {
       editable: [{ key: 'KeyR', modifiers: [KeyboardManager.MODIFIER_KEYS.ALT] }],
       namespace: 'Roll Type Shortcuts',
       onDown: () => {
-        $('#rpg-ui-buttons > button[data-id="selfroll"]').trigger('click');
+        document.querySelector('#rpg-ui-buttons > button[data-id="selfroll"]')?.click();
       },
     });
   }
@@ -109,41 +109,54 @@ export default class ChatRollPrivacy {
         colour: ChatRollPrivacy.calcColour(iconKeys.findIndex(x => x == rt), iconKeys.length),
       });
     }
-    const buttonHtml = $(await renderTemplate('modules/pathfinder-ui/templates/privacy-button.hbs', { buttons }));
-    buttonHtml.find('button').on('click', function () {
-      const rollType = $(this).attr('data-id');
-      game.settings.set('core', 'rollMode', rollType);
-      buttonHtml.find('button.active').removeClass('active');
-      $(this).addClass('active');
+    const temp = document.createElement('div');
+    temp.innerHTML = await renderTemplate('modules/pathfinder-ui/templates/privacy-button.hbs', { buttons });
+    const buttonHtml = temp.firstElementChild;
+    buttonHtml.querySelectorAll('button').forEach(button => {
+      button.addEventListener('click', () => {
+        const rollType = button.getAttribute('data-id');
+        game.settings.set('core', 'rollMode', rollType);
+        const active = buttonHtml.querySelector('button.active');
+        if (active) active.classList.remove('active');
+        button.classList.add('active');
+      });
     });
-    html.find('select[name=rollMode]').after(buttonHtml);
-    html.find('select[name=rollMode]').remove();
+    const select = html[0].querySelector('select[name=rollMode]');
+    if (select) {
+      select.after(buttonHtml);
+      select.remove();
+    }
 
     if (!game.settings.get('pathfinder-ui', 'replace-buttons'))
       return;
 
     // Adjust the button container to remove the extra margin since those buttons are now moving in.
-    buttonHtml.attr('style', 'margin:0 0 0 0.5em');
+    buttonHtml.style.margin = '0 0 0 0.5em';
 
     // Convert the old <a> tag elements to <button> tags
     let first = true;
-    html.find('#chat-controls div.control-buttons a').each(function () {
-      const html = $(this).html();
-      const classes = $(this).attr('class');
-      const ariaLabel = $(this).attr('aria-label');
-      const tooltip = $(this).attr('data-tooltip');
-      const style = $(this).attr('style');
-      const click = $._data(this, 'events')['click'][0].handler;
-      const button = $(`<button class="${classes}" aria-label="${ariaLabel}" data-tooltip="${tooltip}" style="${style}">${html}</button>`);
-      button.on('click', click);
+    html[0].querySelectorAll('#chat-controls div.control-buttons a').forEach(a => {
+      const htmlContent = a.innerHTML;
+      const classes = a.className;
+      const ariaLabel = a.getAttribute('aria-label');
+      const tooltip = a.getAttribute('data-tooltip');
+      const style = a.getAttribute('style');
+      const button = document.createElement('button');
+      button.className = classes;
+      if (ariaLabel) button.setAttribute('aria-label', ariaLabel);
+      if (tooltip) button.setAttribute('data-tooltip', tooltip);
+      if (style) button.setAttribute('style', style);
+      button.innerHTML = htmlContent;
+      button.addEventListener('click', () => a.click());
       // Add a small margin between the first button and the RollTypes
       if (first) {
-        button.attr('style', 'margin-left:0.5em');
+        button.style.marginLeft = '0.5em';
         first = false;
       }
-      buttonHtml.append(button);
+      buttonHtml.appendChild(button);
     });
 
-    html.find('#chat-controls div.control-buttons').remove();
+    const controls = html[0].querySelector('#chat-controls div.control-buttons');
+    if (controls) controls.remove();
   }
 }

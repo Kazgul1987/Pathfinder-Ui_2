@@ -27,22 +27,24 @@ export default class AllianceViewer {
       return;
     }
 
-    const documentList = html.find('li.directory-item.document');
+    const documentList = html[0].querySelectorAll('li.directory-item.document');
     const collection = object.constructor.collection;
 
     // Interate through each directory list item.
-    for (let li of documentList) {
-      li = $(li);
-      const document = collection.get(li.attr('data-document-id'));
+    for (const li of documentList) {
+      const actorDoc = collection.get(li.dataset.documentId);
 
-      if (!['character', 'npc'].includes(document.type)) {
+      if (!['character', 'npc'].includes(actorDoc.type)) {
         continue;
       }
 
-      const alliance = AllianceViewer.#getDocumentAlliance(document);
+      const alliance = AllianceViewer.#getDocumentAlliance(actorDoc);
 
-      li.append($(`<div class="pfui-alliance-viewer alliance-${alliance}" data-actor-id="${document.id}" 
-data-tooltip="${AllianceViewer.#getTooltip(alliance)}"></div>`));
+      const marker = document.createElement('div');
+      marker.classList.add('pfui-alliance-viewer', `alliance-${alliance}`);
+      marker.dataset.actorId = actorDoc.id;
+      marker.dataset.tooltip = AllianceViewer.#getTooltip(alliance);
+      li.appendChild(marker);
     }
   }
 
