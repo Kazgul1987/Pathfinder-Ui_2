@@ -18,12 +18,22 @@ Hooks.on("init", () => {
     });
 })
 
-Hooks.on("renderActorSheet", () => {
-    if ( game.settings.get('pathfinder-ui', 'darkSheetKingdomToggle') !== "standard" ) {
-        for (const element of document.querySelectorAll(".sheet.kingdom, .sheet.kingdom-builder")) {
-            let mode = game.settings.get('pathfinder-ui', 'darkSheetKingdomToggle');
-            element.classList.add("dark-kingdom-theme");
-            element.classList.add(mode);
-        }
+Hooks.on("renderActorSheet", (app, html) => {
+    if (
+        game.settings.get('pathfinder-ui', 'darkSheetKingdomToggle') !== 'standard' &&
+        app.element.classList.contains('kingdom')
+    ) {
+        let mode = game.settings.get('pathfinder-ui', 'darkSheetKingdomToggle');
+        app.element.classList.add('dark-kingdom-theme');
+        app.element.classList.add(mode);
     }
 })
+
+Hooks.on("renderKingdomBuilder", (app, html) => {
+    if (game.settings.get('pathfinder-ui', 'darkSheetKingdomToggle') !== 'standard') {
+        let mode = game.settings.get('pathfinder-ui', 'darkSheetKingdomToggle');
+        app.element.classList.add('dark-kingdom-theme');
+        app.element.classList.add(mode);
+    }
+})
+

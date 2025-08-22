@@ -19,12 +19,11 @@ Hooks.on("init", () => {
     });
 })
 
-Hooks.on("renderHazardSheetPF2e", () => {
-    if ( game.settings.get('pathfinder-ui', 'darkHazardSheetToggle') !== "standard" ) {
-        for (const element of document.querySelectorAll(".sheet.hazard")) {
-            let mode = game.settings.get('pathfinder-ui', 'darkHazardSheetToggle');
-            element.classList.add("dark-hazard-theme");
-            element.classList.add(mode);
-        }
+Hooks.on("renderHazardSheetPF2e", (app, html) => {
+    if (game.settings.get('pathfinder-ui', 'darkHazardSheetToggle') !== 'standard') {
+        let mode = game.settings.get('pathfinder-ui', 'darkHazardSheetToggle');
+        app.element.classList.add('dark-hazard-theme');
+        app.element.classList.add(mode);
     }
 })
+

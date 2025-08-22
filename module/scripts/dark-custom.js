@@ -19,12 +19,11 @@ Hooks.on("init", () => {
     });
 })
 
-Hooks.on("renderJournalSheetPF2e", () => {
-    if ( game.settings.get('pathfinder-ui', 'darkJournalToggle') !== "standard" ) {
-        for (const element of document.querySelectorAll(".journal-entry")) {
-            let mode = game.settings.get('pathfinder-ui', 'darkJournalToggle');
-            element.classList.add("dark-custom");
-            element.classList.add(mode);
-        }
+Hooks.on("renderJournalSheetPF2e", (app, html) => {
+    if (game.settings.get('pathfinder-ui', 'darkJournalToggle') !== 'standard') {
+        let mode = game.settings.get('pathfinder-ui', 'darkJournalToggle');
+        app.element.classList.add('dark-custom');
+        app.element.classList.add(mode);
     }
 })
+

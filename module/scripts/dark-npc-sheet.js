@@ -19,12 +19,11 @@ Hooks.on("init", () => {
     });
 })
 
-Hooks.on("renderNPCSheetPF2e", () => {
-    if ( game.settings.get('pathfinder-ui', 'darkNpcSheetToggle') !== "standard" ) {
-        for (const element of document.querySelectorAll(".actor.npc")) {
-            let mode = game.settings.get('pathfinder-ui', 'darkNpcSheetToggle');
-            element.classList.add("dark-npc-theme");
-            element.classList.add(mode);
-        }
+Hooks.on("renderNPCSheetPF2e", (app, html) => {
+    if (game.settings.get('pathfinder-ui', 'darkNpcSheetToggle') !== 'standard') {
+        let mode = game.settings.get('pathfinder-ui', 'darkNpcSheetToggle');
+        app.element.classList.add('dark-npc-theme');
+        app.element.classList.add(mode);
     }
 })
+
