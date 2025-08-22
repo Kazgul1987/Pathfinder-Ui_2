@@ -32,6 +32,9 @@ Hooks.on("renderActorSheet", () => {
             element.classList.add("dark-theme");
             element.classList.add(mode);
         }
+    }
+})
+
 Hooks.on("renderActorSheet", (app, html) => {
     if (
         game.settings.get('pathfinder-ui', 'darkSheetToggle') !== 'standard' &&
