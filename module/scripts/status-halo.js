@@ -45,9 +45,20 @@ function updateIconPosition(effectIcon, i, token) {
   const hexNudgeX = gridSizeX > gridSizeY ? Math.abs(gridSizeX - gridSizeY) / 2 : 0;
   const hexNudgeY = gridSizeY > gridSizeX ? Math.abs(gridSizeY - gridSizeX) / 2 : 0;
 
-  const icon = effectIcon instanceof TokenEffectComponent && effectIcon.sprite ? effectIcon.sprite : effectIcon;
+  const icon = effectIcon.sprite ?? effectIcon;
   icon.position.x = hexNudgeX + ((x * offset + 1) / 2) * tokenTileFactor * gridSize;
   icon.position.y = hexNudgeY + ((-1 * y * offset + 1) / 2) * tokenTileFactor * gridSize;
+}
+
+// TokenEffectComponent was removed in Foundry VTT v13 in favour of a new effect manager.
+// Detect whichever implementation is available so this module remains compatible.
+const TOKEN_EFFECT_CLASS = globalThis.TokenEffectComponent ?? globalThis.TokenEffectsManager;
+
+function isTokenEffectIcon(icon) {
+  if (TOKEN_EFFECT_CLASS) {
+      return icon instanceof TOKEN_EFFECT_CLASS;
+  }
+  return icon?.texture || icon?.sprite?.texture;
 }
 
 function updateEffectScales(token) {
@@ -58,17 +69,36 @@ function updateEffectScales(token) {
   const gridSize = token?.scene?.grid?.size ?? 100;
   let i = 0;
   for (const effectIcon of effects.children) {
-      if (!(effectIcon instanceof TokenEffectComponent)) {
+      if (!isTokenEffectIcon(effectIcon)) {
           effectIcon.visible = false;
           continue;
       }
 
-      effectIcon.anchor.set(0.5);
+      const icon = effectIcon.sprite ?? effectIcon;
+
+      if (!icon._statusHaloProcessed) {
+          const src = icon.texture?.baseTexture?.resource?.url;
+          const fallbackEffectIcon = "icons/svg/hazard.svg";
+          const cacheKey = src || fallbackEffectIcon;
+          let effectTexture = effectCache.loadTexture(cacheKey);
+          if (!effectTexture) {
+              const rawEffectIcon = new PIXI.Sprite(icon.texture);
+              if (!(game.system.id === "pf2e" && src === game.settings.get("pf2e", "deathIcon"))) {
+                  effectTexture = effectCache.addToCache(cacheKey, createRoundedEffectIcon(rawEffectIcon));
+              }
+          }
+          if (effectTexture) {
+              icon.texture = effectTexture;
+          }
+          icon._statusHaloProcessed = true;
+      }
+
+      icon.anchor?.set?.(0.5);
 
       const iconScale = sizeToIconScale(tokenSize);
       const gridScale = gridSize / 100;
       const scaledSize = 14 * iconScale * gridScale;
-      updateIconSize(effectIcon, scaledSize);
+      updateIconSize(icon, scaledSize);
       updateIconPosition(effectIcon, i, token);
       i++;
   }
@@ -243,39 +273,14 @@ const createRoundedEffectIcon = (effectIcon) => {
   return container;
 };
 
+/**
+ * Register hooks to render status halos without overriding Token internals.
+ * Foundry VTT v13 exposes hooks for token drawing, allowing modules to
+ * augment status effects without touching protected methods.
+ */
 function enableStatusHalo() {
-    const origRefreshEffects = Token.prototype._refreshEffects;
-    Token.prototype._refreshEffects = function (...args) {
-      if (this) {
-        origRefreshEffects.apply(this, args);
-        updateEffectScales(this);
-      }
-    };
-  
-    Token.prototype._drawEffect = async function (...args) {
-      if (!this) {
-        return;
-      }
-      const src = args[0];
-      if (!src) return;
-  
-      const fallbackEffectIcon = "icons/svg/hazard.svg";
-      const effectTextureCacheKey = src || fallbackEffectIcon;
-      let effectTexture = effectCache.loadTexture(effectTextureCacheKey);
-      let icon;
-      if (effectTexture) {
-        icon = new PIXI.Sprite(effectTexture);
-      } else {
-        const texture = await loadTexture(src, { fallback: fallbackEffectIcon });
-        const rawEffectIcon = new PIXI.Sprite(texture);
-  
-        if (game.system.id === "pf2e" && src == game.settings.get("pf2e", "deathIcon")) {
-          return this.effects.addChild(rawEffectIcon);
-        }
-        effectTexture = effectCache.addToCache(effectTextureCacheKey, createRoundedEffectIcon(rawEffectIcon));
-        icon = new PIXI.Sprite(effectTexture);
-      }
-  
-      return this.effects.addChild(icon);
-    };
-  }
+  const update = (token) => updateEffectScales(token);
+  Hooks.on("drawToken", update);
+  Hooks.on("refreshToken", update);
+  Hooks.on("updateToken", (doc) => update(doc.object));
+}

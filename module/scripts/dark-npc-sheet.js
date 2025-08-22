@@ -31,5 +31,11 @@ Hooks.on("renderNPCSheetPF2e", () => {
             element.classList.add("dark-npc-theme");
             element.classList.add(mode);
         }
+Hooks.on("renderNPCSheetPF2e", (app, html) => {
+    if (game.settings.get('pathfinder-ui', 'darkNpcSheetToggle') !== 'standard') {
+        let mode = game.settings.get('pathfinder-ui', 'darkNpcSheetToggle');
+        app.element.classList.add('dark-npc-theme');
+        app.element.classList.add(mode);
     }
 })
+

@@ -31,5 +31,11 @@ Hooks.on("renderJournalSheetPF2e", () => {
             element.classList.add("dark-custom");
             element.classList.add(mode);
         }
+Hooks.on("renderJournalSheetPF2e", (app, html) => {
+    if (game.settings.get('pathfinder-ui', 'darkJournalToggle') !== 'standard') {
+        let mode = game.settings.get('pathfinder-ui', 'darkJournalToggle');
+        app.element.classList.add('dark-custom');
+        app.element.classList.add(mode);
     }
 })
+

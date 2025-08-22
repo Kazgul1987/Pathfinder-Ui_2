@@ -6,7 +6,7 @@ Hooks.on('ready', async () => {
     // Créer une erreur lorsque le module n'est pas activé
         if (game.settings.storage.get("client").has("monks-little-details.window-css-changes")) {
                 game.settings.set("monks-little-details", "window-css-changes", false);
-                $("body").removeClass("change-windows");
+                document.body.classList.remove("change-windows");
         }
 		if (game.modules.has('pf2e-dorako-ui') && game.modules.get('pf2e-dorako-ui').active) {
 			ui.notifications.error(game.i18n.localize('RPGUI.SETTINGS.DORAKOUI'));
@@ -209,23 +209,29 @@ Hooks.once('setup', function () {
 	ChatRollPrivacy.setup();
 });
 
-Hooks.on('getSceneNavigationContext', () => {
-	if (!game.settings.get('pathfinder-ui', 'navigationVerticalToggle')) {
-		navigation = document.querySelector("nav.app > ol#scene-list");
-		if (navigation) {
-			navigation.classList.add("vertical")
-		}
-	}
-	if (game.settings.get('pathfinder-ui', 'compactModeToggle')) {
-		addClassByQuerySelector("compact-mode", "body")
-	}
-});
+function updateSceneNavigation() {
+        if (!game.settings.get('pathfinder-ui', 'navigationVerticalToggle')) {
+                let navigation = document.querySelector("nav.app > ol#scene-list") ?? document.querySelector("nav.app scene-navigation");
+                if (navigation) {
+                        navigation.classList.add("vertical");
+                }
+        }
+        if (game.settings.get('pathfinder-ui', 'compactModeToggle')) {
+                addClassByQuerySelector("compact-mode", "body");
+        }
+}
 
-Hooks.on('renderSceneNavigation', (sceneNavigation) => {
-	if (game.settings.get('pathfinder-ui', 'autoCollapseSceneNavigation')) {
-		sceneNavigation.collapse();
-	}
-});
+Hooks.on('getSceneNavigationContext', updateSceneNavigation);
+Hooks.on('getSceneNavigationV2Context', updateSceneNavigation);
+
+function renderSceneNavigation(sceneNavigation) {
+        if (game.settings.get('pathfinder-ui', 'autoCollapseSceneNavigation')) {
+                sceneNavigation.collapse();
+        }
+}
+
+Hooks.on('renderSceneNavigation', renderSceneNavigation);
+Hooks.on('renderSceneNavigationV2', renderSceneNavigation);
 
 Hooks.on('renderCombatCarousel', () => {
 	let carouselSize = game.settings.get('combat-carousel', 'carouselSize')
@@ -400,6 +406,150 @@ Hooks.on('renderChatMessage', (chat, html) => {
   tokenImage.style.transform = `scale(${scale - 0.2})`;
   tokenImage.style.boxShadow = 'none';
 });
+        const element = document.querySelector(selector);
+        if (element) {
+                element.classList.add(className);
+        }
+}
+
+function rpgUIAddMainCss() {
+	const head = document.getElementsByTagName("head")[0];
+	const mainCss = document.createElement("link");
+	mainCss.setAttribute("rel", "stylesheet")
+	mainCss.setAttribute("type", "text/css")
+	mainCss.setAttribute("href", "modules/pathfinder-ui/css/pathfinderui.css")
+	mainCss.setAttribute("media", "all")
+	head.insertBefore(mainCss, head.lastChild);
+	document.body.classList.add('pathfinderui-v3');
+}
+function rpgUIAddDarkWindows() {
+	const head = document.getElementsByTagName("head")[0];
+	const mainCss = document.createElement("link");
+	mainCss.setAttribute("rel", "stylesheet")
+	mainCss.setAttribute("type", "text/css")
+	mainCss.setAttribute("href", "modules/pathfinder-ui/css/dark-windows.css")
+	mainCss.setAttribute("media", "all")
+	head.insertBefore(mainCss, head.lastChild);
+}
+function rpgUIAddTokenEffectsHud() {
+    const head = document.getElementsByTagName("head")[0];
+    const mainCss = document.createElement("script");
+    mainCss.setAttribute("type", "text/javascript")
+    mainCss.setAttribute("src", "modules/pathfinder-ui/scripts/status-halo.js")
+    head.insertBefore(mainCss, head.lastChild);
+
+    setTimeout(() => enableStatusHalo(), 500);
+}
+function rpgUIAddTokenHud() {
+	const head = document.getElementsByTagName("head")[0];
+	const mainCss = document.createElement("link");
+	mainCss.setAttribute("rel", "stylesheet")
+	mainCss.setAttribute("type", "text/css")
+	mainCss.setAttribute("href", "modules/pathfinder-ui/css/hud.css")
+	mainCss.setAttribute("media", "all")
+	head.insertBefore(mainCss, head.lastChild);
+}
+
+function rpgUIAddPf2eHud() {
+	const head = document.getElementsByTagName("head")[0];
+	const mainCss = document.createElement("link");
+	mainCss.setAttribute("rel", "stylesheet")
+	mainCss.setAttribute("type", "text/css")
+	mainCss.setAttribute("href", "modules/pathfinder-ui/css/pf2e-hud.css")
+	mainCss.setAttribute("media", "all")
+	head.insertBefore(mainCss, head.lastChild);
+}
+
+function rpgUIAddPf2eBestiaryTracking() {
+	const head = document.getElementsByTagName("head")[0];
+	const mainCss = document.createElement("link");
+	mainCss.setAttribute("rel", "stylesheet")
+	mainCss.setAttribute("type", "text/css")
+	mainCss.setAttribute("href", "modules/pathfinder-ui/css/pf2e-bestiary-tracking.css")
+	mainCss.setAttribute("media", "all")
+	head.insertBefore(mainCss, head.lastChild);
+}
+
+function rpgUIAddJournalSheet() {
+	const head = document.getElementsByTagName("head")[0];
+	const mainCss = document.createElement("link");
+	mainCss.setAttribute("rel", "stylesheet")
+	mainCss.setAttribute("type", "text/css")
+	mainCss.setAttribute("href", "modules/pathfinder-ui/css/journal-sheet.css")
+	mainCss.setAttribute("media", "all")
+	head.insertBefore(mainCss, head.lastChild);
+}
+
+function rpgUIAddCursor() {
+	const head = document.getElementsByTagName("head")[0];
+	const mainCss = document.createElement("link");
+	mainCss.setAttribute("rel", "stylesheet")
+	mainCss.setAttribute("type", "text/css")
+	mainCss.setAttribute("href", "modules/pathfinder-ui/css/cursor.css")
+	mainCss.setAttribute("media", "all")
+	head.insertBefore(mainCss, head.lastChild);
+}
+
+
+Hooks.on('renderSidebarTab', async (object, html) => {
+	if (object instanceof Settings) {
+          const details = html[0].querySelector('#game-details')
+          if (details) {
+            const list = document.createElement('ul')
+            list.innerHTML = await renderTemplate('modules/pathfinder-ui/templates/settings-info.hbs')
+            details.append(list.firstChild)
+          }
+	}
+  })
+
+Hooks.on('renderChatMessage', (chat, html) => {
+  if (!chat.speaker.actor) {
+    return;
+  }
+
+  const tokenImage = html[0].querySelector('header > img');
+  if (!tokenImage) {
+    return;
+  }
+
+  const actor = game.actors.get(chat.speaker.actor);
+  if (!actor) {
+    return;
+  }
+
+  const scale = actor?.prototypeToken?.texture?.scaleX;
+  if (!scale || 1 >= scale) {
+    return;
+  }
+
+  tokenImage.style.transform = `scale(${scale - 0.2})`;
+  tokenImage.style.boxShadow = 'none';
+});
+
+const openSheetOnChatClick = async (event) => {
+  const target = event.target;
+  if (
+    !target
+    || (
+      !target.classList.contains('message-sender') // Actor name
+      && !target.nextElementSibling?.classList.contains('message-sender') // Actor image
+    )
+  ) {
+    return;
+  }
+
+  const messageId = target.closest('[data-message-id]');
+  if (!messageId) {
+    return;
+  }
+
+  const message = game.messages.get(messageId.dataset.messageId);
+  if (!message || !message.actor || !message.actor.isOwner) {
+    return;
+  }
+
+  message.actor.sheet.render(true);
+};
 
 Hooks.on('renderChatLogPF2e', (chat, html) => {
   const root = html?.[0];
@@ -410,27 +560,9 @@ Hooks.on('renderChatLogPF2e', (chat, html) => {
     return;
   }
 
-  root.addEventListener('click', async (event) => {
-    const target = event.target;
-    if (!target || (
-      !target.classList.contains('message-sender') // Actor name
-      && !target.nextElementSibling?.classList.contains('message-sender') // Actor image
-    )) {
-      return;
-    }
-
-    const messageId = target.closest('[data-message-id]');
-    if (!messageId) {
-      return;
-    }
-
-    const message = game.messages.get(messageId.dataset.messageId);
-    if (!message || !message.actor || !message.actor.isOwner) {
-      return;
-    }
-
-    message.actor.sheet.render(true);
-  });
+  // Ensure the click handler is only bound once
+  root.removeEventListener('click', openSheetOnChatClick);
+  root.addEventListener('click', openSheetOnChatClick);
 });
 
 Hooks.on('hoverToken', (token, isHovered) => {
@@ -439,6 +571,15 @@ Hooks.on('hoverToken', (token, isHovered) => {
         console.error('#board element not found');
         return;
     }
+
+    if (isHovered) {
+        board.classList.add('rpg-ui-hover-token');
+    } else {
+        board.classList.remove('rpg-ui-hover-token');
+    }
+});
+Hooks.on('hoverToken', (token, isHovered) => {
+    const board = document.getElementById('board');
 
     if (isHovered) {
         board.classList.add('rpg-ui-hover-token');

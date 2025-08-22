@@ -33,3 +33,11 @@ Hooks.on("renderLootSheetPF2e", () => {
         }
     }
 })
+Hooks.on("renderLootSheetPF2e", (app, html) => {
+    if (game.settings.get('pathfinder-ui', 'darkLootSheetToggle') !== 'standard') {
+        let mode = game.settings.get('pathfinder-ui', 'darkLootSheetToggle');
+        app.element.classList.add('dark-loot-theme');
+        app.element.classList.add(mode);
+    }
+})
+

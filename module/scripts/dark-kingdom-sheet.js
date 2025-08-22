@@ -30,5 +30,22 @@ Hooks.on("renderActorSheet", () => {
             element.classList.add("dark-kingdom-theme");
             element.classList.add(mode);
         }
+Hooks.on("renderActorSheet", (app, html) => {
+    if (
+        game.settings.get('pathfinder-ui', 'darkSheetKingdomToggle') !== 'standard' &&
+        app.element.classList.contains('kingdom')
+    ) {
+        let mode = game.settings.get('pathfinder-ui', 'darkSheetKingdomToggle');
+        app.element.classList.add('dark-kingdom-theme');
+        app.element.classList.add(mode);
     }
 })
+
+Hooks.on("renderKingdomBuilder", (app, html) => {
+    if (game.settings.get('pathfinder-ui', 'darkSheetKingdomToggle') !== 'standard') {
+        let mode = game.settings.get('pathfinder-ui', 'darkSheetKingdomToggle');
+        app.element.classList.add('dark-kingdom-theme');
+        app.element.classList.add(mode);
+    }
+})
+

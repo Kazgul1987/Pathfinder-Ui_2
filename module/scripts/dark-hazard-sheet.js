@@ -33,3 +33,11 @@ Hooks.on("renderHazardSheetPF2e", () => {
         }
     }
 })
+Hooks.on("renderHazardSheetPF2e", (app, html) => {
+    if (game.settings.get('pathfinder-ui', 'darkHazardSheetToggle') !== 'standard') {
+        let mode = game.settings.get('pathfinder-ui', 'darkHazardSheetToggle');
+        app.element.classList.add('dark-hazard-theme');
+        app.element.classList.add(mode);
+    }
+})
+
