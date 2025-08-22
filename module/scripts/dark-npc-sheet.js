@@ -19,6 +19,18 @@ Hooks.on("init", () => {
     });
 })
 
+Hooks.on("renderNPCSheetPF2e", () => {
+    if ( game.settings.get('pathfinder-ui', 'darkNpcSheetToggle') !== "standard" ) {
+        const elements = document.querySelectorAll(".actor.npc");
+        if (!elements.length) {
+            console.error('No elements found for selector .actor.npc');
+            return;
+        }
+        const mode = game.settings.get('pathfinder-ui', 'darkNpcSheetToggle');
+        for (const element of elements) {
+            element.classList.add("dark-npc-theme");
+            element.classList.add(mode);
+        }
 Hooks.on("renderNPCSheetPF2e", (app, html) => {
     if (game.settings.get('pathfinder-ui', 'darkNpcSheetToggle') !== 'standard') {
         let mode = game.settings.get('pathfinder-ui', 'darkNpcSheetToggle');

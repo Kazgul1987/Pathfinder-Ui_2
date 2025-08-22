@@ -179,13 +179,17 @@ Hooks.on('init', () => {
 		if (!game.settings.get('pathfinder-ui', 'standardLogoToggle')) {
 			addClassByQuerySelector("hide", "img#logo")
 
-			let newLogo = document.createElement('div');
-			let uiLeft = document.getElementById('ui-left')
-			newLogo.classList.add("new-logo")
-			newLogo.innerText = "Pathfinder \n2e"
-			uiLeft.prepend(newLogo)
-		}
-	}
+                        let newLogo = document.createElement('div');
+                        let uiLeft = document.getElementById('ui-left');
+                        if (!uiLeft) {
+                                console.error('Element #ui-left not found');
+                        } else {
+                                newLogo.classList.add("new-logo");
+                                newLogo.innerText = "Pathfinder \n2e";
+                                uiLeft.prepend(newLogo);
+                        }
+                }
+        }
 
 	if (!game.settings.get('pathfinder-ui', 'disableAllStyles')) { rpgUIAddMainCss() }
     if (game.settings.get('pathfinder-ui', 'darkWindowsToggle')) { rpgUIAddDarkWindows() }	
@@ -237,6 +241,171 @@ Hooks.on('renderCombatCarousel', () => {
 });
 
 function addClassByQuerySelector(className, selector) {
+        const navigation = document.querySelector(selector);
+        if (!navigation) {
+                console.error(`Selector '${selector}' not found`);
+                return;
+        }
+        navigation.classList.add(className);
+}
+
+function rpgUIAddMainCss() {
+        const head = document.getElementsByTagName("head")[0];
+        if (!head) {
+                console.error('Head element not found');
+                return;
+        }
+        const mainCss = document.createElement("link");
+        mainCss.setAttribute("rel", "stylesheet");
+        mainCss.setAttribute("type", "text/css");
+        mainCss.setAttribute("href", "modules/pathfinder-ui/css/pathfinderui.css");
+        mainCss.setAttribute("media", "all");
+        head.insertBefore(mainCss, head.lastChild);
+        if (document.body) {
+                document.body.classList.add('pathfinderui-v3');
+        } else {
+                console.error('Body element not found');
+        }
+}
+function rpgUIAddDarkWindows() {
+        const head = document.getElementsByTagName("head")[0];
+        if (!head) {
+                console.error('Head element not found');
+                return;
+        }
+        const mainCss = document.createElement("link");
+        mainCss.setAttribute("rel", "stylesheet");
+        mainCss.setAttribute("type", "text/css");
+        mainCss.setAttribute("href", "modules/pathfinder-ui/css/dark-windows.css");
+        mainCss.setAttribute("media", "all");
+        head.insertBefore(mainCss, head.lastChild);
+}
+function rpgUIAddTokenEffectsHud() {
+    const head = document.getElementsByTagName("head")[0];
+    if (!head) {
+            console.error('Head element not found');
+            return;
+    }
+    const mainCss = document.createElement("script");
+    mainCss.setAttribute("type", "text/javascript");
+    mainCss.setAttribute("src", "modules/pathfinder-ui/scripts/status-halo.js");
+    head.insertBefore(mainCss, head.lastChild);
+
+    setTimeout(() => enableStatusHalo(), 500);
+}
+function rpgUIAddTokenHud() {
+        const head = document.getElementsByTagName("head")[0];
+        if (!head) {
+                console.error('Head element not found');
+                return;
+        }
+        const mainCss = document.createElement("link");
+        mainCss.setAttribute("rel", "stylesheet");
+        mainCss.setAttribute("type", "text/css");
+        mainCss.setAttribute("href", "modules/pathfinder-ui/css/hud.css");
+        mainCss.setAttribute("media", "all");
+        head.insertBefore(mainCss, head.lastChild);
+}
+
+function rpgUIAddPf2eHud() {
+        const head = document.getElementsByTagName("head")[0];
+        if (!head) {
+                console.error('Head element not found');
+                return;
+        }
+        const mainCss = document.createElement("link");
+        mainCss.setAttribute("rel", "stylesheet");
+        mainCss.setAttribute("type", "text/css");
+        mainCss.setAttribute("href", "modules/pathfinder-ui/css/pf2e-hud.css");
+        mainCss.setAttribute("media", "all");
+        head.insertBefore(mainCss, head.lastChild);
+}
+
+function rpgUIAddPf2eBestiaryTracking() {
+        const head = document.getElementsByTagName("head")[0];
+        if (!head) {
+                console.error('Head element not found');
+                return;
+        }
+        const mainCss = document.createElement("link");
+        mainCss.setAttribute("rel", "stylesheet");
+        mainCss.setAttribute("type", "text/css");
+        mainCss.setAttribute("href", "modules/pathfinder-ui/css/pf2e-bestiary-tracking.css");
+        mainCss.setAttribute("media", "all");
+        head.insertBefore(mainCss, head.lastChild);
+}
+
+function rpgUIAddJournalSheet() {
+        const head = document.getElementsByTagName("head")[0];
+        if (!head) {
+                console.error('Head element not found');
+                return;
+        }
+        const mainCss = document.createElement("link");
+        mainCss.setAttribute("rel", "stylesheet");
+        mainCss.setAttribute("type", "text/css");
+        mainCss.setAttribute("href", "modules/pathfinder-ui/css/journal-sheet.css");
+        mainCss.setAttribute("media", "all");
+        head.insertBefore(mainCss, head.lastChild);
+}
+
+function rpgUIAddCursor() {
+        const head = document.getElementsByTagName("head")[0];
+        if (!head) {
+                console.error('Head element not found');
+                return;
+        }
+        const mainCss = document.createElement("link");
+        mainCss.setAttribute("rel", "stylesheet");
+        mainCss.setAttribute("type", "text/css");
+        mainCss.setAttribute("href", "modules/pathfinder-ui/css/cursor.css");
+        mainCss.setAttribute("media", "all");
+        head.insertBefore(mainCss, head.lastChild);
+}
+
+
+Hooks.on('renderSidebarTab', async (object, html) => {
+        if (object instanceof Settings) {
+          const details = html.find('#game-details');
+          if (!details.length) {
+            console.error('#game-details not found');
+            return;
+          }
+          const list = document.createElement('ul');
+          list.innerHTML = await renderTemplate('modules/pathfinder-ui/templates/settings-info.hbs');
+          details.append(list.firstChild);
+        }
+  })
+
+Hooks.on('renderChatMessage', (chat, html) => {
+  if (!chat.speaker.actor) {
+    return;
+  }
+
+  const root = html?.[0];
+  if (!root) {
+    console.error('Chat message root element not found');
+    return;
+  }
+
+  const tokenImage = root.querySelector('header > img');
+  if (!tokenImage) {
+    return;
+  }
+
+  const actor = game.actors.get(chat.speaker.actor);
+  if (!actor) {
+    return;
+  }
+
+  const scale = actor?.prototypeToken?.texture?.scaleX;
+  if (!scale || 1 >= scale) {
+    return;
+  }
+
+  tokenImage.style.transform = `scale(${scale - 0.2})`;
+  tokenImage.style.boxShadow = 'none';
+});
         const element = document.querySelector(selector);
         if (element) {
                 element.classList.add(className);
@@ -396,6 +565,19 @@ Hooks.on('renderChatLogPF2e', (chat, html) => {
   root.addEventListener('click', openSheetOnChatClick);
 });
 
+Hooks.on('hoverToken', (token, isHovered) => {
+    const board = document.getElementById('board');
+    if (!board) {
+        console.error('#board element not found');
+        return;
+    }
+
+    if (isHovered) {
+        board.classList.add('rpg-ui-hover-token');
+    } else {
+        board.classList.remove('rpg-ui-hover-token');
+    }
+});
 Hooks.on('hoverToken', (token, isHovered) => {
     const board = document.getElementById('board');
 

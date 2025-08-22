@@ -18,6 +18,18 @@ Hooks.on("init", () => {
     });
 })
 
+Hooks.on("renderActorSheet", () => {
+    if ( game.settings.get('pathfinder-ui', 'darkPartySheetToggle') !== "standard" ) {
+        const elements = document.querySelectorAll(".sheet.party");
+        if (!elements.length) {
+            console.error('No elements found for selector .sheet.party');
+            return;
+        }
+        const mode = game.settings.get('pathfinder-ui', 'darkPartySheetToggle');
+        for (const element of elements) {
+            element.classList.add("dark-party-theme");
+            element.classList.add(mode);
+        }
 Hooks.on("renderActorSheet", (app, html) => {
     if (
         game.settings.get('pathfinder-ui', 'darkPartySheetToggle') !== "standard" &&
