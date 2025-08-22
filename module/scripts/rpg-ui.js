@@ -347,6 +347,31 @@ Hooks.on('renderChatMessage', (chat, html) => {
   tokenImage.style.boxShadow = 'none';
 });
 
+const openSheetOnChatClick = async (event) => {
+  const target = event.target;
+  if (
+    !target
+    || (
+      !target.classList.contains('message-sender') // Actor name
+      && !target.nextElementSibling?.classList.contains('message-sender') // Actor image
+    )
+  ) {
+    return;
+  }
+
+  const messageId = target.closest('[data-message-id]');
+  if (!messageId) {
+    return;
+  }
+
+  const message = game.messages.get(messageId.dataset.messageId);
+  if (!message || !message.actor || !message.actor.isOwner) {
+    return;
+  }
+
+  message.actor.sheet.render(true);
+};
+
 Hooks.on('renderChatLogPF2e', (chat, html) => {
   const root = html?.[0];
   if (!root) {
@@ -356,27 +381,9 @@ Hooks.on('renderChatLogPF2e', (chat, html) => {
     return;
   }
 
-  root.addEventListener('click', async (event) => {
-    const target = event.target;
-    if (!target || (
-      !target.classList.contains('message-sender') // Actor name
-      && !target.nextElementSibling?.classList.contains('message-sender') // Actor image
-    )) {
-      return;
-    }
-
-    const messageId = target.closest('[data-message-id]');
-    if (!messageId) {
-      return;
-    }
-
-    const message = game.messages.get(messageId.dataset.messageId);
-    if (!message || !message.actor || !message.actor.isOwner) {
-      return;
-    }
-
-    message.actor.sheet.render(true);
-  });
+  // Ensure the click handler is only bound once
+  root.removeEventListener('click', openSheetOnChatClick);
+  root.addEventListener('click', openSheetOnChatClick);
 });
 
 Hooks.on('hoverToken', (token, isHovered) => {
