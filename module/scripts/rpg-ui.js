@@ -6,7 +6,7 @@ Hooks.on('ready', async () => {
     // Créer une erreur lorsque le module n'est pas activé
         if (game.settings.storage.get("client").has("monks-little-details.window-css-changes")) {
                 game.settings.set("monks-little-details", "window-css-changes", false);
-                $("body").removeClass("change-windows");
+                document.body.classList.remove("change-windows");
         }
 		if (game.modules.has('pf2e-dorako-ui') && game.modules.get('pf2e-dorako-ui').active) {
 			ui.notifications.error(game.i18n.localize('RPGUI.SETTINGS.DORAKOUI'));
@@ -324,10 +324,12 @@ function rpgUIAddCursor() {
 
 Hooks.on('renderSidebarTab', async (object, html) => {
 	if (object instanceof Settings) {
-	  const details = html.find('#game-details')
-	  const list = document.createElement('ul')
-	  list.innerHTML = await renderTemplate('modules/pathfinder-ui/templates/settings-info.hbs')
-	  details.append(list.firstChild)
+          const details = html[0].querySelector('#game-details')
+          if (details) {
+            const list = document.createElement('ul')
+            list.innerHTML = await renderTemplate('modules/pathfinder-ui/templates/settings-info.hbs')
+            details.append(list.firstChild)
+          }
 	}
   })
 
