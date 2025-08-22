@@ -82,6 +82,6 @@
     }
   ],
   "url": "https://gitlab.com/sasmira/pathfinder-ui",
-  "manifest": "https://gitlab.com/sasmira/pathfinder-ui/-/raw/master/module/module.json",
+  "manifest": "https://raw.githubusercontent.com/Kazgul1987/Pathfinder-Ui_2/master/module/module.json",
   "download": "https://gitlab.com/sasmira/pathfinder-ui/-/jobs/artifacts/v13.400.741.1/raw/pathfinder-ui.zip?job=build"
 }
