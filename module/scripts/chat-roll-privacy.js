@@ -89,7 +89,7 @@ export default class ChatRollPrivacy {
     for (const [k, v] of Object.entries(data.rollModes)) {
       let rt, name;
 
-      if (foundry.utils.isNewerVersion(game.version, 12)) {
+      if (foundry.utils.isNewerVersion(game.release.version, "12")) {
         rt = v.value;
         name = v.label;
       } else {

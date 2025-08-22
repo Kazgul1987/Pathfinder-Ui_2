@@ -21,7 +21,7 @@ Hooks.on("renderPause", function (_,html, options) {
     }
     else {
         html.find("img").attr("src", path);
-        if(foundry.utils.isNewerVersion(game.version, "10")){
+        if(foundry.utils.isNewerVersion(game.release.version, "10")){
 			html.find("img").addClass("fa-spin")
             html.find("img").css({"top": top, "left": left, "width": dimensionX, "height": dimensionY, "opacity": opacity, "--fa-animation-duration": speed});
         }
@@ -30,7 +30,7 @@ Hooks.on("renderPause", function (_,html, options) {
             html.find("img").css({"top": top, "left": left, "width": dimensionX, "height": dimensionY, "opacity": opacity, "-webkit-animation": speed});
         }
     }
-    if(foundry.utils.isNewerVersion(game.version, "10")){
+    if(foundry.utils.isNewerVersion(game.release.version, "10")){
         html.find("figcaption").text(text);
         if (text.length !== 0 && shadow) {
             html.css({"background-size": size});
