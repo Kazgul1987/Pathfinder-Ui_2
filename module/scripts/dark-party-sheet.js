@@ -18,12 +18,14 @@ Hooks.on("init", () => {
     });
 })
 
-Hooks.on("renderActorSheet", () => {
-    if ( game.settings.get('pathfinder-ui', 'darkPartySheetToggle') !== "standard" ) {
-        for (const element of document.querySelectorAll(".sheet.party")) {
-            let mode = game.settings.get('pathfinder-ui', 'darkPartySheetToggle');
-            element.classList.add("dark-party-theme");
-            element.classList.add(mode);
-        }
+Hooks.on("renderActorSheet", (app, html) => {
+    if (
+        game.settings.get('pathfinder-ui', 'darkPartySheetToggle') !== "standard" &&
+        app.element.classList.contains('party')
+    ) {
+        let mode = game.settings.get('pathfinder-ui', 'darkPartySheetToggle');
+        app.element.classList.add('dark-party-theme');
+        app.element.classList.add(mode);
     }
 })
+
