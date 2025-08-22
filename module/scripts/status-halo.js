@@ -44,19 +44,24 @@ function updateIconPosition(effectIcon, i, token) {
   const { x, y } = polar_to_cartesian(theta);
   const hexNudgeX = gridSizeX > gridSizeY ? Math.abs(gridSizeX - gridSizeY) / 2 : 0;
   const hexNudgeY = gridSizeY > gridSizeX ? Math.abs(gridSizeY - gridSizeX) / 2 : 0;
-  effectIcon.position.x = hexNudgeX + ((x * offset + 1) / 2) * tokenTileFactor * gridSize;
-  effectIcon.position.y = hexNudgeY + ((-1 * y * offset + 1) / 2) * tokenTileFactor * gridSize;
+
+  const icon = effectIcon instanceof TokenEffectComponent && effectIcon.sprite ? effectIcon.sprite : effectIcon;
+  icon.position.x = hexNudgeX + ((x * offset + 1) / 2) * tokenTileFactor * gridSize;
+  icon.position.y = hexNudgeY + ((-1 * y * offset + 1) / 2) * tokenTileFactor * gridSize;
 }
 
 function updateEffectScales(token) {
-  token.effects.bg.visible = false;
+  const effects = token.effectsContainer ?? token.effects;
+  if (!effects) return;
 
   const tokenSize = token?.actor?.size;
   const gridSize = token?.scene?.grid?.size ?? 100;
   let i = 0;
-  for (const effectIcon of token.effects.children) {
-      if (effectIcon === token.effects.bg) continue;
-      if (effectIcon === token.effects.overlay) continue;
+  for (const effectIcon of effects.children) {
+      if (!(effectIcon instanceof TokenEffectComponent)) {
+          effectIcon.visible = false;
+          continue;
+      }
 
       effectIcon.anchor.set(0.5);
 
