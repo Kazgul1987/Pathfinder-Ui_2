@@ -348,11 +348,15 @@ Hooks.on('renderChatMessage', (chat, html) => {
 });
 
 Hooks.on('renderChatLogPF2e', (chat, html) => {
+  const root = html?.[0];
+  if (!root) {
+    return;
+  }
   if (!game.settings.get('pathfinder-ui', 'openSheetOnChatClick')) {
     return;
   }
 
-  html[0].addEventListener('click', async (event) => {
+  root.addEventListener('click', async (event) => {
     const target = event.target;
     if (!target || (
       !target.classList.contains('message-sender') // Actor name
