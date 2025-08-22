@@ -112,29 +112,13 @@ export default class ChatRollPrivacy {
     const temp = document.createElement('div');
     temp.innerHTML = await renderTemplate('modules/pathfinder-ui/templates/privacy-button.hbs', { buttons });
     const buttonHtml = temp.firstElementChild;
-    buttonHtml.querySelectorAll('button').forEach(button => {
+    buttonHtml.querySelectorAll('button').forEach((button) => {
       button.addEventListener('click', () => {
         const rollType = button.getAttribute('data-id');
         game.settings.set('core', 'rollMode', rollType);
         const active = buttonHtml.querySelector('button.active');
         if (active) active.classList.remove('active');
         button.classList.add('active');
-      });
-    });
-    const select = html[0].querySelector('select[name=rollMode]');
-    if (select) {
-      select.after(buttonHtml);
-      select.remove();
-    }
-    const fragment = document.createElement('template');
-    fragment.innerHTML = await renderTemplate('modules/pathfinder-ui/templates/privacy-button.hbs', { buttons });
-    const buttonHtml = fragment.content.firstElementChild;
-    buttonHtml.querySelectorAll('button').forEach((btn) => {
-      btn.addEventListener('click', () => {
-        const rollType = btn.getAttribute('data-id');
-        game.settings.set('core', 'rollMode', rollType);
-        buttonHtml.querySelector('button.active')?.classList.remove('active');
-        btn.classList.add('active');
       });
     });
 
@@ -152,12 +136,6 @@ export default class ChatRollPrivacy {
 
     // Convert the old <a> tag elements to <button> tags
     let first = true;
-    html[0].querySelectorAll('#chat-controls div.control-buttons a').forEach(a => {
-      const htmlContent = a.innerHTML;
-      const classes = a.className;
-      const ariaLabel = a.getAttribute('aria-label');
-      const tooltip = a.getAttribute('data-tooltip');
-      const style = a.getAttribute('style');
     const chatControls =
       html[0].querySelector('#chat-controls') || html[0].querySelector('.chat-controls');
     chatControls?.querySelectorAll('div.control-buttons a').forEach((anchor) => {
@@ -172,9 +150,8 @@ export default class ChatRollPrivacy {
       if (tooltip) button.setAttribute('data-tooltip', tooltip);
       if (style) button.setAttribute('style', style);
       button.innerHTML = htmlContent;
-      button.addEventListener('click', () => a.click());
-      // Add a small margin between the first button and the RollTypes
       button.addEventListener('click', () => anchor.click());
+      // Add a small margin between the first button and the RollTypes
       if (first) {
         button.style.marginLeft = '0.5em';
         first = false;
