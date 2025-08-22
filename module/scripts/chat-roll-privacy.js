@@ -76,7 +76,7 @@ export default class ChatRollPrivacy {
       return;
     }
 
-    Hooks.on('renderChatLog', this._handleChatLogRendering);
+    Hooks.once('renderChatLog', this._handleChatLogRendering);
   }
 
   static calcColour(current, count) {
@@ -126,6 +126,23 @@ export default class ChatRollPrivacy {
       select.after(buttonHtml);
       select.remove();
     }
+    const fragment = document.createElement('template');
+    fragment.innerHTML = await renderTemplate('modules/pathfinder-ui/templates/privacy-button.hbs', { buttons });
+    const buttonHtml = fragment.content.firstElementChild;
+    buttonHtml.querySelectorAll('button').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const rollType = btn.getAttribute('data-id');
+        game.settings.set('core', 'rollMode', rollType);
+        buttonHtml.querySelector('button.active')?.classList.remove('active');
+        btn.classList.add('active');
+      });
+    });
+
+    const rollModeSelect =
+      html[0].querySelector('select[name=rollMode]') ||
+      html[0].querySelector('select[name=messageVisibility]');
+    rollModeSelect?.insertAdjacentElement('afterend', buttonHtml);
+    rollModeSelect?.remove();
 
     if (!game.settings.get('pathfinder-ui', 'replace-buttons'))
       return;
@@ -141,6 +158,14 @@ export default class ChatRollPrivacy {
       const ariaLabel = a.getAttribute('aria-label');
       const tooltip = a.getAttribute('data-tooltip');
       const style = a.getAttribute('style');
+    const chatControls =
+      html[0].querySelector('#chat-controls') || html[0].querySelector('.chat-controls');
+    chatControls?.querySelectorAll('div.control-buttons a').forEach((anchor) => {
+      const htmlContent = anchor.innerHTML;
+      const classes = anchor.getAttribute('class') ?? '';
+      const ariaLabel = anchor.getAttribute('aria-label') ?? '';
+      const tooltip = anchor.getAttribute('data-tooltip') ?? '';
+      const style = anchor.getAttribute('style') ?? '';
       const button = document.createElement('button');
       button.className = classes;
       if (ariaLabel) button.setAttribute('aria-label', ariaLabel);
@@ -149,6 +174,7 @@ export default class ChatRollPrivacy {
       button.innerHTML = htmlContent;
       button.addEventListener('click', () => a.click());
       // Add a small margin between the first button and the RollTypes
+      button.addEventListener('click', () => anchor.click());
       if (first) {
         button.style.marginLeft = '0.5em';
         first = false;
@@ -158,5 +184,6 @@ export default class ChatRollPrivacy {
 
     const controls = html[0].querySelector('#chat-controls div.control-buttons');
     if (controls) controls.remove();
+    chatControls?.querySelector('div.control-buttons')?.remove();
   }
 }

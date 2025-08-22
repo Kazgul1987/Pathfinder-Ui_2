@@ -19,12 +19,11 @@ Hooks.on("init", () => {
     });
 })
 
-Hooks.on("renderLootSheetPF2e", () => {
-    if ( game.settings.get('pathfinder-ui', 'darkLootSheetToggle') !== "standard" ) {
-        for (const element of document.querySelectorAll(".sheet.actor.loot")) {
-            let mode = game.settings.get('pathfinder-ui', 'darkLootSheetToggle');
-            element.classList.add("dark-loot-theme");
-            element.classList.add(mode);
-        }
+Hooks.on("renderLootSheetPF2e", (app, html) => {
+    if (game.settings.get('pathfinder-ui', 'darkLootSheetToggle') !== 'standard') {
+        let mode = game.settings.get('pathfinder-ui', 'darkLootSheetToggle');
+        app.element.classList.add('dark-loot-theme');
+        app.element.classList.add(mode);
     }
 })
+
