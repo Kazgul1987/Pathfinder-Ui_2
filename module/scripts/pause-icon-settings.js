@@ -1,91 +1,100 @@
-class PauseIconSubmenu extends FormApplication {
-    constructor() {
-        super({});
-    }
-    static get defaultOptions() {
-        return mergeObject(super.defaultOptions, {
-            closeOnSubmit: false,
-            classes: ['form'],
-            popOut: true,
-            width: "550",
-            height: "auto",
-            template: `/modules/pathfinder-ui/templates/settings-submenu.html`,
-            id: 'pause-icon-settings-submenu',
-            title: 'Settings Submenu',
-            resizable: false,
-            
-        });
-    }
+class PauseIconSubmenu extends foundry.applications.forms.FormApplicationV2 {
+    static DEFAULT_OPTIONS = foundry.utils.mergeObject(super.DEFAULT_OPTIONS, {
+        id: 'pause-icon-settings-submenu',
+        classes: ['form'],
+        popOut: true,
+        position: { width: 550, height: 'auto' },
+        actions: [
+            { action: 'submit', label: 'Save', type: 'submit' }
+        ],
+        window: { title: 'Settings Submenu' }
+    });
+
+    static PARTS = {
+        form: { template: '/modules/pathfinder-ui/templates/settings-submenu.html' }
+    };
+
+    formConfig = {
+        onSubmit: this.onSubmit.bind(this)
+    };
+
     activateListeners(html) {
         super.activateListeners(html);
-        const picker = $(".pi-picker-button", html);
-        picker[0].addEventListener("click", async function(){
+        const picker = html.querySelector('.pi-picker-button');
+        picker?.addEventListener('click', async event => {
+            event.preventDefault();
             new FilePicker({
-                type: "image",
-                callback: async function (imagePath) {
-                  $(".pi-path").val(imagePath);
-                }}).render(true);
-        })
+                type: 'image',
+                callback: async imagePath => {
+                    html.querySelector('.pi-path').value = imagePath;
+                }
+            }).render(true);
+        });
     }
-    getData() {
-        let source = game.settings.get("pathfinder-ui", "allSettings");
+
+    async _prepareContext() {
+        let source = game.settings.get('pathfinder-ui', 'allSettings');
         if (foundry.utils.isEmpty(source)) {
             source = {
-                /*path: "icons/svg/clockwork.svg",*/
-                path: "modules/pathfinder-ui/ui/other/paused-pfrpg.webp",
+                /*path: 'icons/svg/clockwork.svg',*/
+                path: 'modules/pathfinder-ui/ui/other/paused-pfrpg.webp',
                 opacity: 50,
                 dimensionX: 128,
                 dimensionY: 128,
-                text: game.i18n.format("GAME.Paused"),
-                textColor: "#EEEEEE",
+                text: game.i18n.format('GAME.Paused'),
+                textColor: '#EEEEEE',
                 shadow: true,
                 fontSize: 2,
-                speed: "5"
+                speed: '5'
             };
         }
         return source;
     }
-    async _updateObject(event) {
+
+    async onSubmit(event) {
         const button = event.submitter;
-        if(button.name === "submit") {
-            await game.settings.set("pathfinder-ui", "allSettings", {
-                path: $(".pause-icon.pi-path").val(),
-                opacity: Number($(".pause-icon.pi-opacity").val()),
-                dimensionX: Number($(".pause-icon.pi-dimensionX").val()),
-                dimensionY: Number($(".pause-icon.pi-dimensionY").val()),
-                text: $(".pause-icon.pi-text").val(),
-                textColor: $(".pause-icon.pi-text-color").val(),
-                shadow: $(".pause-icon.pi-shadow").prop("checked"),
-                fontSize: $(".pause-icon.pi-font-size").val(),
-                speed: $(".pause-icon.pi-speed").val()
+        if (button?.name === 'submit') {
+            const form = event.target;
+            await game.settings.set('pathfinder-ui', 'allSettings', {
+                path: form.querySelector('.pause-icon.pi-path').value,
+                opacity: Number(form.querySelector('.pause-icon.pi-opacity').value),
+                dimensionX: Number(form.querySelector('.pause-icon.pi-dimensionX').value),
+                dimensionY: Number(form.querySelector('.pause-icon.pi-dimensionY').value),
+                text: form.querySelector('.pause-icon.pi-text').value,
+                textColor: form.querySelector('.pause-icon.pi-text-color').value,
+                shadow: form.querySelector('.pause-icon.pi-shadow').checked,
+                fontSize: form.querySelector('.pause-icon.pi-font-size').value,
+                speed: form.querySelector('.pause-icon.pi-speed').value
             });
             window.location.reload();
         }
     }
 }
+
 export const registerSettings = function () {
-    game.settings.register("pathfinder-ui", "allSettings", {
+    game.settings.register('pathfinder-ui', 'allSettings', {
         scope: 'world',
         config: false,
         type: Object,
         default: {
-            /*path: "icons/svg/clockwork.svg",*/
-            path: "modules/pathfinder-ui/ui/other/paused-pfrpg.webp",
+            /*path: 'icons/svg/clockwork.svg',*/
+            path: 'modules/pathfinder-ui/ui/other/paused-pfrpg.webp',
             opacity: 50,
             dimensionX: 128,
             dimensionY: 128,
-            text: game.i18n.format("GAME.Paused"),
-            textColor: "#EEEEEE",
+            text: game.i18n.format('GAME.Paused'),
+            textColor: '#EEEEEE',
             shadow: true,
             fontSize: 2,
-            speed: "8"
-        },
+            speed: '8'
+        }
     });
-    game.settings.registerMenu("pathfinder-ui", "allSettings", {
-        name: game.i18n.format("PAUSEICON.settings"),
-        label: game.i18n.format("PAUSEICON.settingsButton"),
+    game.settings.registerMenu('pathfinder-ui', 'allSettings', {
+        name: game.i18n.format('PAUSEICON.settings'),
+        label: game.i18n.format('PAUSEICON.settingsButton'),
         icon: 'fas fa-atlas',
         type: PauseIconSubmenu,
         restricted: true
-    })
+    });
 };
+
