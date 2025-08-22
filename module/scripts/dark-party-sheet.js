@@ -20,8 +20,13 @@ Hooks.on("init", () => {
 
 Hooks.on("renderActorSheet", () => {
     if ( game.settings.get('pathfinder-ui', 'darkPartySheetToggle') !== "standard" ) {
-        for (const element of document.querySelectorAll(".sheet.party")) {
-            let mode = game.settings.get('pathfinder-ui', 'darkPartySheetToggle');
+        const elements = document.querySelectorAll(".sheet.party");
+        if (!elements.length) {
+            console.error('No elements found for selector .sheet.party');
+            return;
+        }
+        const mode = game.settings.get('pathfinder-ui', 'darkPartySheetToggle');
+        for (const element of elements) {
             element.classList.add("dark-party-theme");
             element.classList.add(mode);
         }

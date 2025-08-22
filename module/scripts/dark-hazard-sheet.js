@@ -21,8 +21,13 @@ Hooks.on("init", () => {
 
 Hooks.on("renderHazardSheetPF2e", () => {
     if ( game.settings.get('pathfinder-ui', 'darkHazardSheetToggle') !== "standard" ) {
-        for (const element of document.querySelectorAll(".sheet.hazard")) {
-            let mode = game.settings.get('pathfinder-ui', 'darkHazardSheetToggle');
+        const elements = document.querySelectorAll(".sheet.hazard");
+        if (!elements.length) {
+            console.error('No elements found for selector .sheet.hazard');
+            return;
+        }
+        const mode = game.settings.get('pathfinder-ui', 'darkHazardSheetToggle');
+        for (const element of elements) {
             element.classList.add("dark-hazard-theme");
             element.classList.add(mode);
         }

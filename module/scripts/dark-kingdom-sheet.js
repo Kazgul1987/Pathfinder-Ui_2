@@ -20,8 +20,13 @@ Hooks.on("init", () => {
 
 Hooks.on("renderActorSheet", () => {
     if ( game.settings.get('pathfinder-ui', 'darkSheetKingdomToggle') !== "standard" ) {
-        for (const element of document.querySelectorAll(".sheet.kingdom, .sheet.kingdom-builder")) {
-            let mode = game.settings.get('pathfinder-ui', 'darkSheetKingdomToggle');
+        const elements = document.querySelectorAll(".sheet.kingdom, .sheet.kingdom-builder");
+        if (!elements.length) {
+            console.error('No elements found for selector .sheet.kingdom, .sheet.kingdom-builder');
+            return;
+        }
+        const mode = game.settings.get('pathfinder-ui', 'darkSheetKingdomToggle');
+        for (const element of elements) {
             element.classList.add("dark-kingdom-theme");
             element.classList.add(mode);
         }

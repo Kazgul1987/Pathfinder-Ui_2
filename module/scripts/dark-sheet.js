@@ -22,8 +22,13 @@ Hooks.on("init", () => {
 
 Hooks.on("renderActorSheet", () => {
     if ( game.settings.get('pathfinder-ui', 'darkSheetToggle') !== "standard" ) {
-        for (const element of document.querySelectorAll(".sheet.character")) {
-            let mode = game.settings.get('pathfinder-ui', 'darkSheetToggle');
+        const elements = document.querySelectorAll(".sheet.character");
+        if (!elements.length) {
+            console.error('No elements found for selector .sheet.character');
+            return;
+        }
+        const mode = game.settings.get('pathfinder-ui', 'darkSheetToggle');
+        for (const element of elements) {
             element.classList.add("dark-theme");
             element.classList.add(mode);
         }

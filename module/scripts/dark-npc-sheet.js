@@ -21,8 +21,13 @@ Hooks.on("init", () => {
 
 Hooks.on("renderNPCSheetPF2e", () => {
     if ( game.settings.get('pathfinder-ui', 'darkNpcSheetToggle') !== "standard" ) {
-        for (const element of document.querySelectorAll(".actor.npc")) {
-            let mode = game.settings.get('pathfinder-ui', 'darkNpcSheetToggle');
+        const elements = document.querySelectorAll(".actor.npc");
+        if (!elements.length) {
+            console.error('No elements found for selector .actor.npc');
+            return;
+        }
+        const mode = game.settings.get('pathfinder-ui', 'darkNpcSheetToggle');
+        for (const element of elements) {
             element.classList.add("dark-npc-theme");
             element.classList.add(mode);
         }

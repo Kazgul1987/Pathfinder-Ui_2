@@ -21,8 +21,13 @@ Hooks.on("init", () => {
 
 Hooks.on("renderLootSheetPF2e", () => {
     if ( game.settings.get('pathfinder-ui', 'darkLootSheetToggle') !== "standard" ) {
-        for (const element of document.querySelectorAll(".sheet.actor.loot")) {
-            let mode = game.settings.get('pathfinder-ui', 'darkLootSheetToggle');
+        const elements = document.querySelectorAll(".sheet.actor.loot");
+        if (!elements.length) {
+            console.error('No elements found for selector .sheet.actor.loot');
+            return;
+        }
+        const mode = game.settings.get('pathfinder-ui', 'darkLootSheetToggle');
+        for (const element of elements) {
             element.classList.add("dark-loot-theme");
             element.classList.add(mode);
         }
