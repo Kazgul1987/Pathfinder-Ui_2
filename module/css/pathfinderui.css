@@ -957,9 +957,9 @@ hr {
     position: absolute;
     z-index: -1;
     content: " ";
-    width: 146%;
-    bottom: -10px;
-    left: -23%;
+    width: 100%;
+    bottom: 0;
+    left: 0;
     height: 85px;
     background-image: url(../ui/frames/action_bar.webp);
     background-size: 100% 85px;
@@ -1234,7 +1234,7 @@ button#roll-hd:hover::before {
 
 /* NAVIGATION */
 #ui-top {
-    width: calc(103%);
+    width: 100%;
 }
 
 #navigation #nav-toggle {
