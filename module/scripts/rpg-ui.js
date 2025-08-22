@@ -205,23 +205,29 @@ Hooks.once('setup', function () {
 	ChatRollPrivacy.setup();
 });
 
-Hooks.on('getSceneNavigationContext', () => {
-	if (!game.settings.get('pathfinder-ui', 'navigationVerticalToggle')) {
-		navigation = document.querySelector("nav.app > ol#scene-list");
-		if (navigation) {
-			navigation.classList.add("vertical")
-		}
-	}
-	if (game.settings.get('pathfinder-ui', 'compactModeToggle')) {
-		addClassByQuerySelector("compact-mode", "body")
-	}
-});
+function updateSceneNavigation() {
+        if (!game.settings.get('pathfinder-ui', 'navigationVerticalToggle')) {
+                let navigation = document.querySelector("nav.app > ol#scene-list") ?? document.querySelector("nav.app scene-navigation");
+                if (navigation) {
+                        navigation.classList.add("vertical");
+                }
+        }
+        if (game.settings.get('pathfinder-ui', 'compactModeToggle')) {
+                addClassByQuerySelector("compact-mode", "body");
+        }
+}
 
-Hooks.on('renderSceneNavigation', (sceneNavigation) => {
-	if (game.settings.get('pathfinder-ui', 'autoCollapseSceneNavigation')) {
-		sceneNavigation.collapse();
-	}
-});
+Hooks.on('getSceneNavigationContext', updateSceneNavigation);
+Hooks.on('getSceneNavigationV2Context', updateSceneNavigation);
+
+function renderSceneNavigation(sceneNavigation) {
+        if (game.settings.get('pathfinder-ui', 'autoCollapseSceneNavigation')) {
+                sceneNavigation.collapse();
+        }
+}
+
+Hooks.on('renderSceneNavigation', renderSceneNavigation);
+Hooks.on('renderSceneNavigationV2', renderSceneNavigation);
 
 Hooks.on('renderCombatCarousel', () => {
 	let carouselSize = game.settings.get('combat-carousel', 'carouselSize')
@@ -231,8 +237,10 @@ Hooks.on('renderCombatCarousel', () => {
 });
 
 function addClassByQuerySelector(className, selector) {
-	let navigation = document.querySelector(selector);
-	navigation.classList.add(className)
+        const element = document.querySelector(selector);
+        if (element) {
+                element.classList.add(className);
+        }
 }
 
 function rpgUIAddMainCss() {
