@@ -216,7 +216,9 @@ body.compact-mode #logo {
     justify-content: flex-start;
     width: var(--sidebar-width);
     height: calc(100% - 10px);
-    position: relative;
+    position: fixed;
+    top: 0;
+    right: 0;
     overflow: visible;
     margin: -10px 0 0 0px;
     padding: 0;
@@ -235,6 +237,8 @@ body.compact-mode #logo {
 }
 
 #sidebar.app.collapsed::before {
+    position: absolute;
+    z-index: -1;
     width: 40px !important;
     left: -4px !important;
     height: 110% !important;
