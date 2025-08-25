@@ -224,7 +224,7 @@ body.compact-mode #logo {
     box-shadow: none;
     border: none;
 }
-#sidebar.collapsed #sidebar-tabs {
+#sidebar.collapsed .sidebar-tabs {
     padding: 10px 4px 0px 3px;
     margin-top: 0;
     margin-bottom: -30px;
@@ -282,7 +282,7 @@ body.compact-mode #logo {
     text-shadow: var(--text-shadow);
 }
 
-#sidebar-tabs > .item:before {
+#sidebar .sidebar-tabs > .item:before {
     position: absolute;
     content: ' ';
     background: url(../ui/frames/red_line.webp);
@@ -295,27 +295,27 @@ body.compact-mode #logo {
     transition-duration: 0.3s;
 }
 
-#sidebar-tabs {
+#sidebar .sidebar-tabs {
     text-align: center;
     box-shadow: none;
     border-bottom: none;
     padding: 0 10px;
-    margin-top: 25px;
+    margin-top: 10px;
 }
 
-#sidebar-tabs > .item {
-    line-height: 0px;
-    flex: 0 0 22px;
-    height: 22px;
+#sidebar .sidebar-tabs > .item {
+    line-height: 0;
+    flex: 0 0 32px;
+    height: 32px;
     border-radius: 100%;
-    margin-bottom: 3px;
+    margin-bottom: 4px;
 }
 
-#sidebar-tabs > .item.active {
+#sidebar .sidebar-tabs > .item.active {
     border: 1px solid var(--red-light);
 }
 
-#sidebar #sidebar-tabs i.fa-comments {
+#sidebar nav.sidebar-tabs a[data-tab="chat"] i {
     content: "";
     background-image: url("../ui/sidebar/sidebar-button-chat.webp") !important;
     width: 100% !important;
@@ -326,11 +326,11 @@ body.compact-mode #logo {
     background-repeat: no-repeat;
 }
 
-#sidebar #sidebar-tabs i.fa-comments::before {
+#sidebar nav.sidebar-tabs a[data-tab="chat"] i::before {
     content: "";
 }
 
-#sidebar #sidebar-tabs i.fa-swords {
+#sidebar nav.sidebar-tabs a[data-tab="combat"] i {
     content: "";
     background-image: url("../ui/sidebar/sidebar-button-combat.webp") !important;
     width: 100% !important;
@@ -341,11 +341,11 @@ body.compact-mode #logo {
     background-repeat: no-repeat;
 }
 
-#sidebar #sidebar-tabs i.fa-swords::before {
+#sidebar nav.sidebar-tabs a[data-tab="combat"] i::before {
     content: "";
 }
 
-#sidebar #sidebar-tabs i.fa-map {
+#sidebar nav.sidebar-tabs a[data-tab="scenes"] i {
     content: "";
     background-image: url("../ui/sidebar/sidebar-button-scenes.webp") !important;
     width: 100% !important;
@@ -356,11 +356,11 @@ body.compact-mode #logo {
     background-repeat: no-repeat;
 }
 
-#sidebar #sidebar-tabs i.fa-map::before {
+#sidebar nav.sidebar-tabs a[data-tab="scenes"] i::before {
     content: "";
 }
 
-#sidebar #sidebar-tabs i.fa-user {
+#sidebar nav.sidebar-tabs a[data-tab="actors"] i {
     content: "";
     background-image: url("../ui/sidebar/sidebar-button-actors.webp") !important;
     width: 100% !important;
@@ -371,11 +371,11 @@ body.compact-mode #logo {
     background-repeat: no-repeat;
 }
 
-#sidebar #sidebar-tabs i.fa-user::before {
+#sidebar nav.sidebar-tabs a[data-tab="actors"] i::before {
     content: "";
 }
 
-#sidebar #sidebar-tabs i.fa-suitcase {
+#sidebar nav.sidebar-tabs a[data-tab="items"] i {
     content: "";
     background-image: url("../ui/sidebar/sidebar-button-items.webp") !important;
     width: 100% !important;
@@ -386,11 +386,11 @@ body.compact-mode #logo {
     background-repeat: no-repeat;
 }
 
-#sidebar #sidebar-tabs i.fa-suitcase::before {
+#sidebar nav.sidebar-tabs a[data-tab="items"] i::before {
     content: "";
 }
 
-#sidebar #sidebar-tabs i.fa-book-open {
+#sidebar nav.sidebar-tabs a[data-tab="journal"] i {
     content: "";
     background-image: url("../ui/sidebar/sidebar-button-journal.webp") !important;
     width: 100% !important;
@@ -401,11 +401,11 @@ body.compact-mode #logo {
     background-repeat: no-repeat;
 }
 
-#sidebar #sidebar-tabs i.fa-book-open::before {
+#sidebar nav.sidebar-tabs a[data-tab="journal"] i::before {
     content: "";
 }
 
-#sidebar #sidebar-tabs i.fa-th-list {
+#sidebar nav.sidebar-tabs a[data-tab="tables"] i {
     content: "";
     background-image: url("../ui/sidebar/sidebar-button-tables.webp") !important;
     width: 100% !important;
@@ -416,11 +416,11 @@ body.compact-mode #logo {
     background-repeat: no-repeat;
 }
 
-#sidebar #sidebar-tabs i.fa-th-list::before {
+#sidebar nav.sidebar-tabs a[data-tab="tables"] i::before {
     content: "";
 }
 
-#sidebar #sidebar-tabs i.fa-music {
+#sidebar nav.sidebar-tabs a[data-tab="playlists"] i {
     content: "";
     background-image: url("../ui/sidebar/sidebar-button-playlists.webp") !important;
     width: 100% !important;
@@ -431,11 +431,11 @@ body.compact-mode #logo {
     background-repeat: no-repeat;
 }
 
-#sidebar #sidebar-tabs i.fa-music::before {
+#sidebar nav.sidebar-tabs a[data-tab="playlists"] i::before {
     content: "";
 }
 
-#sidebar #sidebar-tabs i.fa-atlas {
+#sidebar nav.sidebar-tabs a[data-tab="compendium"] i {
     content: "";
     background-image: url("../ui/sidebar/sidebar-button-compendium.webp") !important;
     width: 100% !important;
@@ -446,11 +446,11 @@ body.compact-mode #logo {
     background-repeat: no-repeat;
 }
 
-#sidebar #sidebar-tabs i.fa-atlas::before {
+#sidebar nav.sidebar-tabs a[data-tab="compendium"] i::before {
     content: "";
 }
 
-#sidebar #sidebar-tabs i.fa-cogs {
+#sidebar nav.sidebar-tabs a[data-tab="settings"] i {
     content: "";
     background-image: url("../ui/sidebar/sidebar-button-settings.webp") !important;
     width: 100% !important;
@@ -461,11 +461,11 @@ body.compact-mode #logo {
     background-repeat: no-repeat;
 }
 
-#sidebar #sidebar-tabs i.fa-cogs::before {
+#sidebar nav.sidebar-tabs a[data-tab="settings"] i::before {
     content: "";
 }
 
-#sidebar #sidebar-tabs i.fa-cards {
+#sidebar nav.sidebar-tabs a[data-tab="cards"] i {
     content: "";
     background-image: url("../ui/sidebar/sidebar-button-cards.webp") !important;
     width: 100% !important;
@@ -476,11 +476,11 @@ body.compact-mode #logo {
     background-repeat: no-repeat;
 }
 
-#sidebar #sidebar-tabs i.fa-cards::before {
+#sidebar nav.sidebar-tabs a[data-tab="cards"] i::before {
     content: "";
 }
 
-#sidebar #sidebar-tabs i.fa-code {
+#sidebar nav.sidebar-tabs a[data-tab="macros"] i {
     content: "";
     background-image: url("../ui/sidebar/sidebar-button-macros.webp") !important;
     width: 100% !important;
@@ -491,11 +491,11 @@ body.compact-mode #logo {
     background-repeat: no-repeat;
 }
 
-#sidebar #sidebar-tabs i.fa-code::before {
+#sidebar nav.sidebar-tabs a[data-tab="macros"] i::before {
     content: "";
 }
 
-#sidebar #sidebar-tabs i.fa-folder {
+#sidebar nav.sidebar-tabs a[data-tab="folders"] i {
     content: "";
     background-image: url("../ui/sidebar/sidebar-button-folder.webp") !important;
     width: 100% !important;
@@ -506,7 +506,7 @@ body.compact-mode #logo {
     background-repeat: no-repeat;
 }
 
-#sidebar #sidebar-tabs i.fa-folder::before {
+#sidebar nav.sidebar-tabs a[data-tab="folders"] i::before {
     content: "";
 }
 
