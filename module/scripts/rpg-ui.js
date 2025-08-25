@@ -211,7 +211,7 @@ Hooks.once('setup', function () {
 
 function updateSceneNavigation() {
         if (!game.settings.get('pathfinder-ui', 'navigationVerticalToggle')) {
-                let navigation = document.querySelector("nav.app > ol#scene-list") ?? document.querySelector("nav.app scene-navigation");
+                const navigation = document.querySelector("nav#navigation ol.scene-list") ?? document.querySelector("nav#navigation scene-navigation");
                 if (navigation) {
                         navigation.classList.add("vertical");
                 }
@@ -221,8 +221,7 @@ function updateSceneNavigation() {
         }
 }
 
-Hooks.on('getSceneNavigationContext', updateSceneNavigation);
-Hooks.on('getSceneNavigationV2Context', updateSceneNavigation);
+Hooks.on('getSceneNavigationContext', updateSceneNavigation);
 
 function renderSceneNavigation(sceneNavigation) {
         if (game.settings.get('pathfinder-ui', 'autoCollapseSceneNavigation')) {
