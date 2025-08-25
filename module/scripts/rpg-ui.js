@@ -176,8 +176,8 @@ Hooks.on('init', () => {
 	});
 
 	if (!game.settings.get('pathfinder-ui', 'compactModeToggle')) {
-		if (!game.settings.get('pathfinder-ui', 'standardLogoToggle')) {
-			addClassByQuerySelector("hide", "img#logo")
+                if (!game.settings.get('pathfinder-ui', 'standardLogoToggle')) {
+                        // addClassByQuerySelector("hide", "img#logo");
 
                         let newLogo = document.createElement('div');
                         let uiLeft = document.getElementById('ui-left');
@@ -186,7 +186,7 @@ Hooks.on('init', () => {
                         } else {
                                 newLogo.classList.add("new-logo");
                                 newLogo.innerText = "Pathfinder \n2e";
-                                uiLeft.prepend(newLogo);
+                                // uiLeft.prepend(newLogo);
                         }
                 }
         }
